@@ -1177,5 +1177,399 @@
         ]
       }
     ]
+  },
+  {
+    "id": "east-fork-road",
+    "name": "East Fork Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The canyon road along the East Fork of the San Gabriel River, closing the loop between the foot of Glendora Mountain Road and San Gabriel Canyon Road.",
+    "sources": [
+      {
+        "title": "Russ Brown · Glendora Mountain & Ridge Roads ride",
+        "url": "https://russbrown.com/glendora-mountain-ridge-roads-motorcycle-ride-by-carl-pulley/"
+      },
+      {
+        "title": "Dangerous Roads · Glendora Mountain Road",
+        "url": "https://www.dangerousroads.org/north-america/usa/5143-glendora-mountain-road.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "East Fork Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.771983,
+          34.2290588
+        ],
+        "junction": [
+          "Glendora Mountain Road"
+        ]
+      },
+      {
+        "near": [
+          -117.851308,
+          34.2391107
+        ],
+        "junction": [
+          "San Gabriel Canyon Road"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bouquet-canyon",
+    "name": "Bouquet Canyon Road",
+    "area": "Santa Clarita / Sierra Pelona",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A creekside canyon road north of Santa Clarita, running under oaks between Spunky Canyon and the Leona Valley end.",
+    "sources": [
+      {
+        "title": "SoCal Region · Scenic Drives: Bouquet Canyon Road",
+        "url": "https://www.socalregion.com/highways/scenic_drives/bouquet_canyon_road/"
+      },
+      {
+        "title": "Motowhere · Bouquet Canyon / Lake Hughes route",
+        "url": "https://www.motowhere.com/maps/route/OMC-BOUQUET-CANYON-LAKE-HUGHES"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Bouquet Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.455145,
+          34.5001915
+        ]
+      },
+      {
+        "near": [
+          -118.2711031,
+          34.6117189
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lake-hughes-road",
+    "name": "Lake Hughes Road",
+    "area": "Santa Clarita / Sierra Pelona",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The climb north out of Castaic over the Sierra Pelona to Lake Hughes, the usual outbound half of the Bouquet Canyon loop.",
+    "sources": [
+      {
+        "title": "Motowhere · Bouquet Canyon / Lake Hughes route",
+        "url": "https://www.motowhere.com/maps/route/OMC-BOUQUET-CANYON-LAKE-HUGHES"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Lake Hughes Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.6238422,
+          34.4958717
+        ]
+      },
+      {
+        "near": [
+          -118.4521579,
+          34.6790308
+        ]
+      }
+    ]
+  },
+  {
+    "id": "corral-canyon",
+    "name": "Corral Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep dead-end climb from the Pacific Coast Highway up a Malibu ridge, with switchbacks and ocean views on both sides near the top.",
+    "sources": [
+      {
+        "title": "PJAMM · Corral Canyon Road climb",
+        "url": "https://pjammcycling.com/climb/2492.Corral-Canyon-Road"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Corral Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.743272,
+          34.0331295
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.7575036,
+          34.081328
+        ]
+      }
+    ],
+    "access": {
+      "note": "A dead-end ridge road, not a through-route. It ends at the Corral Canyon park area.",
+      "status": "scoped"
+    }
+  },
+  {
+    "id": "deer-creek",
+    "name": "Deer Creek Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The steepest paved climb in the Santa Monica Mountains, rising narrow and fast from the coast at the Los Angeles and Ventura county line.",
+    "sources": [
+      {
+        "title": "Dangerous Roads · Deer Creek Road",
+        "url": "https://www.dangerousroads.org/north-america/usa/9013-deer-creek-road.html"
+      },
+      {
+        "title": "PezCycling News · My favorite climb: Deer Creek",
+        "url": "https://pezcyclingnews.com/features/my-favorite-climb-deer-creek/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Deer Creek Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.985518,
+          34.0621816
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.9866713,
+          34.0880012
+        ]
+      }
+    ]
+  },
+  {
+    "id": "modjeska-grade",
+    "name": "Modjeska Grade Road",
+    "area": "Orange County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A short, narrow grade off Santiago Canyon Road that climbs over a ridge and drops into Modjeska Canyon, described locally as the tightest couple of miles in Orange County.",
+    "sources": [
+      {
+        "title": "Orange County Outdoors · Modjeska Canyon scenic drive",
+        "url": "https://www.orangecountyoutdoors.com/get-out-there/scenic-drives/modjeska-canyon"
+      },
+      {
+        "title": "Orange Coast · Great drives: our favorite O.C. routes",
+        "url": "https://orangecoast.com/2019/great-drives-our-favorite-o-c-routes-eats-and-sights/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Modjeska Grade Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.6409525,
+          33.7076533
+        ]
+      },
+      {
+        "near": [
+          -117.6330825,
+          33.6972977
+        ]
+      }
+    ]
+  },
+  {
+    "id": "old-topanga-canyon",
+    "name": "Old Topanga Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The narrow older road through the eastern Santa Monica Mountains, running from Topanga Canyon Boulevard up to Mulholland Highway.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Old Topanga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.6043806,
+          34.0896367
+        ]
+      },
+      {
+        "near": [
+          -118.6332018,
+          34.1346785
+        ],
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tuna-canyon",
+    "name": "Tuna Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep, tight descent off the Saddle Peak ridge toward the coast. The lower part is one-way southbound.",
+    "sources": [
+      {
+        "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      },
+      {
+        "title": "City of Malibu · Malibu Evacuation Plan",
+        "url": "https://www.malibucity.org/DocumentCenter/View/34818"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Tuna Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.6111049,
+          34.0681393
+        ],
+        "junction": [
+          "Saddle Peak Road"
+        ]
+      },
+      {
+        "near": [
+          -118.5894654,
+          34.0394566
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      }
+    ],
+    "access": {
+      "note": "The lower part of Tuna Canyon Road is one-way southbound. Check signage at each end before planning to drive it in either direction.",
+      "status": "directional"
+    }
+  },
+  {
+    "id": "little-tujunga",
+    "name": "Little Tujunga Canyon Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The canyon climb north from the San Fernando Valley over Bear Divide toward Sand Canyon.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Reddit, r/socalbirding · Bear Divide is popping off",
+        "url": "https://www.reddit.com/r/socalbirding/comments/1sg9ii2/bear_divide_is_popping_off/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Little Tujunga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.3713154,
+          34.2822783
+        ]
+      },
+      {
+        "near": [
+          -118.3930907,
+          34.3601887
+        ]
+      }
+    ],
+    "access": {
+      "note": "Held back from the first release over unresolved reports of access problems at the northern end. Check current county and forest notices before relying on a through-route.",
+      "status": "needs-current-check"
+    }
   }
 ]

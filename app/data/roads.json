@@ -12077,5 +12077,1492 @@
       "climb": 14,
       "technical": 10
     }
+  },
+  {
+    "id": "east-fork-road",
+    "name": "East Fork Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The canyon road along the East Fork of the San Gabriel River, closing the loop between the foot of Glendora Mountain Road and San Gabriel Canyon Road.",
+    "sources": [
+      {
+        "title": "Russ Brown · Glendora Mountain & Ridge Roads ride",
+        "url": "https://russbrown.com/glendora-mountain-ridge-roads-motorcycle-ride-by-carl-pulley/"
+      },
+      {
+        "title": "Dangerous Roads · Glendora Mountain Road",
+        "url": "https://www.dangerousroads.org/north-america/usa/5143-glendora-mountain-road.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.8123556,
+      34.2373057
+    ],
+    "bounds": [
+      [
+        -117.851308,
+        34.2290588
+      ],
+      [
+        -117.771983,
+        34.2403667
+      ]
+    ],
+    "osmWayIds": [
+      4388642,
+      24739718,
+      31523664,
+      31523887,
+      31523985,
+      31524558,
+      53088993,
+      53089006,
+      53089016,
+      53089874,
+      53090259,
+      699825172
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -117.771983,
+        34.2290588
+      ],
+      "end": [
+        -117.851308,
+        34.2391107
+      ],
+      "wayNames": [
+        "East Fork Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 5.2,
+      "bends": 23,
+      "switchbacks": 0,
+      "curvature": 353,
+      "bendsPerMile": 4.4
+    },
+    "elevation": {
+      "climbFt": 792,
+      "highFt": 1858,
+      "lowFt": 1446,
+      "reliefFt": 412,
+      "maxGradient": 4.9,
+      "climbPerMile": 152
+    },
+    "profile": {
+      "points": [
+        1864,
+        1849,
+        1837,
+        1825,
+        1810,
+        1798,
+        1791,
+        1783,
+        1772,
+        1762,
+        1755,
+        1746,
+        1745,
+        1743,
+        1742,
+        1733,
+        1723,
+        1716,
+        1712,
+        1702,
+        1679,
+        1666,
+        1668,
+        1691,
+        1717,
+        1740,
+        1738,
+        1714,
+        1686,
+        1659,
+        1634,
+        1618,
+        1612,
+        1607,
+        1600,
+        1593,
+        1585,
+        1576,
+        1566,
+        1557,
+        1548,
+        1539,
+        1534,
+        1528,
+        1537,
+        1518,
+        1506,
+        1506,
+        1516,
+        1536,
+        1550,
+        1566,
+        1580,
+        1593,
+        1599,
+        1593,
+        1588,
+        1577,
+        1559,
+        1535,
+        1517,
+        1509,
+        1525,
+        1540,
+        1540,
+        1528,
+        1518,
+        1505,
+        1494,
+        1447,
+        1429,
+        1486
+      ],
+      "miles": 5.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 35,
+      "corners": 14,
+      "climb": 11,
+      "technical": 10
+    }
+  },
+  {
+    "id": "bouquet-canyon",
+    "name": "Bouquet Canyon Road",
+    "area": "Santa Clarita / Sierra Pelona",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A creekside canyon road north of Santa Clarita, running under oaks between Spunky Canyon and the Leona Valley end.",
+    "sources": [
+      {
+        "title": "SoCal Region · Scenic Drives: Bouquet Canyon Road",
+        "url": "https://www.socalregion.com/highways/scenic_drives/bouquet_canyon_road/"
+      },
+      {
+        "title": "Motowhere · Bouquet Canyon / Lake Hughes route",
+        "url": "https://www.motowhere.com/maps/route/OMC-BOUQUET-CANYON-LAKE-HUGHES"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.3806521,
+      34.5768267
+    ],
+    "bounds": [
+      [
+        -118.455145,
+        34.5001915
+      ],
+      [
+        -118.2709624,
+        34.6117189
+      ]
+    ],
+    "osmWayIds": [
+      190303470,
+      323163614
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.455145,
+        34.5001915
+      ],
+      "end": [
+        -118.2711031,
+        34.6117189
+      ],
+      "wayNames": [
+        "Bouquet Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 16.0,
+      "bends": 59,
+      "switchbacks": 1,
+      "curvature": 327,
+      "bendsPerMile": 3.7
+    },
+    "elevation": {
+      "climbFt": 2758,
+      "highFt": 3601,
+      "lowFt": 1665,
+      "reliefFt": 1936,
+      "maxGradient": 6.5,
+      "climbPerMile": 172
+    },
+    "profile": {
+      "points": [
+        1664,
+        1676,
+        1696,
+        1724,
+        1756,
+        1783,
+        1816,
+        1852,
+        1886,
+        1917,
+        1960,
+        2003,
+        2043,
+        2069,
+        2113,
+        2154,
+        2187,
+        2220,
+        2246,
+        2282,
+        2309,
+        2329,
+        2361,
+        2381,
+        2411,
+        2448,
+        2474,
+        2508,
+        2593,
+        2673,
+        2711,
+        2748,
+        2789,
+        2873,
+        2952,
+        3046,
+        3055,
+        3058,
+        3070,
+        3129,
+        3142,
+        3078,
+        3022,
+        3035,
+        3059,
+        3089,
+        3116,
+        3141,
+        3169,
+        3198,
+        3231,
+        3270,
+        3329,
+        3389,
+        3453,
+        3510,
+        3585,
+        3572,
+        3489,
+        3422,
+        3360,
+        3309,
+        3254,
+        3227,
+        3193,
+        3174,
+        3148,
+        3126,
+        3108,
+        3103,
+        3065,
+        3089
+      ],
+      "miles": 16.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 34,
+      "corners": 12,
+      "climb": 12,
+      "technical": 10
+    }
+  },
+  {
+    "id": "lake-hughes-road",
+    "name": "Lake Hughes Road",
+    "area": "Santa Clarita / Sierra Pelona",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The climb north out of Castaic over the Sierra Pelona to Lake Hughes, the usual outbound half of the Bouquet Canyon loop.",
+    "sources": [
+      {
+        "title": "Motowhere · Bouquet Canyon / Lake Hughes route",
+        "url": "https://www.motowhere.com/maps/route/OMC-BOUQUET-CANYON-LAKE-HUGHES"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.5615765,
+      34.5929937
+    ],
+    "bounds": [
+      [
+        -118.6238422,
+        34.4958717
+      ],
+      [
+        -118.4521579,
+        34.6790308
+      ]
+    ],
+    "osmWayIds": [
+      13469908,
+      84736428,
+      287000334,
+      287000335,
+      287000336,
+      477523631,
+      477523632,
+      477523633,
+      477523634,
+      557078151,
+      1020406591,
+      1029383932,
+      1029383934,
+      1029383936,
+      1119953138
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.6238422,
+        34.4958717
+      ],
+      "end": [
+        -118.4521579,
+        34.6790308
+      ],
+      "wayNames": [
+        "Lake Hughes Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 23.2,
+      "bends": 73,
+      "switchbacks": 7,
+      "curvature": 316,
+      "bendsPerMile": 3.1
+    },
+    "elevation": {
+      "climbFt": 4372,
+      "highFt": 3239,
+      "lowFt": 1147,
+      "reliefFt": 2092,
+      "maxGradient": 8.0,
+      "climbPerMile": 188
+    },
+    "profile": {
+      "points": [
+        1191,
+        1171,
+        1143,
+        1215,
+        1346,
+        1445,
+        1550,
+        1669,
+        1797,
+        1930,
+        2006,
+        2018,
+        1903,
+        1959,
+        1981,
+        2003,
+        2043,
+        2073,
+        2140,
+        2100,
+        2007,
+        2027,
+        2059,
+        2204,
+        2341,
+        2403,
+        2350,
+        2328,
+        2191,
+        2053,
+        1918,
+        1774,
+        1700,
+        1785,
+        1869,
+        1946,
+        1930,
+        1931,
+        1972,
+        1982,
+        1993,
+        2057,
+        2139,
+        2178,
+        2165,
+        2164,
+        2186,
+        2267,
+        2368,
+        2417,
+        2433,
+        2479,
+        2512,
+        2515,
+        2560,
+        2598,
+        2654,
+        2702,
+        2743,
+        2794,
+        2831,
+        2884,
+        2918,
+        2970,
+        2979,
+        2996,
+        3049,
+        3081,
+        3150,
+        3208,
+        3214,
+        3246
+      ],
+      "miles": 23.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 33,
+      "corners": 10,
+      "climb": 13,
+      "technical": 10
+    }
+  },
+  {
+    "id": "corral-canyon",
+    "name": "Corral Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep dead-end climb from the Pacific Coast Highway up a Malibu ridge, with switchbacks and ocean views on both sides near the top.",
+    "sources": [
+      {
+        "title": "PJAMM · Corral Canyon Road climb",
+        "url": "https://pjammcycling.com/climb/2492.Corral-Canyon-Road"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "A dead-end ridge road, not a through-route. It ends at the Corral Canyon park area.",
+      "status": "scoped"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.7409212,
+      34.059032
+    ],
+    "bounds": [
+      [
+        -118.7575036,
+        34.0331295
+      ],
+      [
+        -118.7361555,
+        34.081328
+      ]
+    ],
+    "osmWayIds": [
+      13440219,
+      74657070,
+      149210412,
+      149210418
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.743272,
+        34.0331295
+      ],
+      "end": [
+        -118.7575036,
+        34.081328
+      ],
+      "wayNames": [
+        "Corral Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 5.3,
+      "bends": 59,
+      "switchbacks": 7,
+      "curvature": 1074,
+      "bendsPerMile": 11.1
+    },
+    "elevation": {
+      "climbFt": 2011,
+      "highFt": 2009,
+      "lowFt": 44,
+      "reliefFt": 1965,
+      "maxGradient": 12.4,
+      "climbPerMile": 379
+    },
+    "profile": {
+      "points": [
+        34,
+        57,
+        59,
+        68,
+        105,
+        122,
+        143,
+        181,
+        224,
+        265,
+        313,
+        355,
+        403,
+        458,
+        502,
+        534,
+        599,
+        663,
+        724,
+        758,
+        787,
+        821,
+        859,
+        895,
+        928,
+        922,
+        946,
+        977,
+        1000,
+        1034,
+        1067,
+        1105,
+        1131,
+        1158,
+        1203,
+        1242,
+        1296,
+        1344,
+        1380,
+        1427,
+        1464,
+        1499,
+        1537,
+        1583,
+        1629,
+        1672,
+        1697,
+        1709,
+        1731,
+        1752,
+        1775,
+        1805,
+        1821,
+        1835,
+        1863,
+        1894,
+        1918,
+        1937,
+        1957,
+        1973,
+        1984,
+        1981,
+        1983,
+        1981,
+        1963,
+        1963,
+        1975,
+        1987,
+        2009,
+        2010,
+        2003,
+        1999
+      ],
+      "miles": 5.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 82,
+      "corners": 36,
+      "climb": 27,
+      "technical": 20
+    }
+  },
+  {
+    "id": "deer-creek",
+    "name": "Deer Creek Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The steepest paved climb in the Santa Monica Mountains, rising narrow and fast from the coast at the Los Angeles and Ventura county line.",
+    "sources": [
+      {
+        "title": "Dangerous Roads · Deer Creek Road",
+        "url": "https://www.dangerousroads.org/north-america/usa/9013-deer-creek-road.html"
+      },
+      {
+        "title": "PezCycling News · My favorite climb: Deer Creek",
+        "url": "https://pezcyclingnews.com/features/my-favorite-climb-deer-creek/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.9925087,
+      34.0721817
+    ],
+    "bounds": [
+      [
+        -118.9944086,
+        34.0621816
+      ],
+      [
+        -118.9848088,
+        34.0880012
+      ]
+    ],
+    "osmWayIds": [
+      321682750
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.985518,
+        34.0621816
+      ],
+      "end": [
+        -118.9866713,
+        34.0880012
+      ],
+      "wayNames": [
+        "Deer Creek Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 2.6,
+      "bends": 18,
+      "switchbacks": 4,
+      "curvature": 783,
+      "bendsPerMile": 6.8
+    },
+    "elevation": {
+      "climbFt": 1374,
+      "highFt": 1386,
+      "lowFt": 47,
+      "reliefFt": 1339,
+      "maxGradient": 13.5,
+      "climbPerMile": 528
+    },
+    "profile": {
+      "points": [
+        31,
+        50,
+        69,
+        89,
+        114,
+        141,
+        163,
+        182,
+        198,
+        217,
+        237,
+        260,
+        280,
+        298,
+        318,
+        338,
+        358,
+        381,
+        408,
+        433,
+        458,
+        484,
+        508,
+        531,
+        560,
+        588,
+        615,
+        638,
+        659,
+        677,
+        698,
+        727,
+        755,
+        784,
+        811,
+        838,
+        863,
+        891,
+        919,
+        945,
+        970,
+        997,
+        1022,
+        1046,
+        1067,
+        1086,
+        1103,
+        1127,
+        1152,
+        1173,
+        1194,
+        1214,
+        1233,
+        1254,
+        1279,
+        1301,
+        1321,
+        1338,
+        1355,
+        1373,
+        1387,
+        1396,
+        1388,
+        1380,
+        1378,
+        1368,
+        1354,
+        1359,
+        1365,
+        1369,
+        1372,
+        1376
+      ],
+      "miles": 2.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 77,
+      "corners": 22,
+      "climb": 35,
+      "technical": 20
+    }
+  },
+  {
+    "id": "modjeska-grade",
+    "name": "Modjeska Grade Road",
+    "area": "Orange County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A short, narrow grade off Santiago Canyon Road that climbs over a ridge and drops into Modjeska Canyon, described locally as the tightest couple of miles in Orange County.",
+    "sources": [
+      {
+        "title": "Orange County Outdoors · Modjeska Canyon scenic drive",
+        "url": "https://www.orangecountyoutdoors.com/get-out-there/scenic-drives/modjeska-canyon"
+      },
+      {
+        "title": "Orange Coast · Great drives: our favorite O.C. routes",
+        "url": "https://orangecoast.com/2019/great-drives-our-favorite-o-c-routes-eats-and-sights/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.6366513,
+      33.7027646
+    ],
+    "bounds": [
+      [
+        -117.6409525,
+        33.6972977
+      ],
+      [
+        -117.6330825,
+        33.7076533
+      ]
+    ],
+    "osmWayIds": [
+      13291682
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -117.6409525,
+        33.7076533
+      ],
+      "end": [
+        -117.6330825,
+        33.6972977
+      ],
+      "wayNames": [
+        "Modjeska Grade Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 0.9,
+      "bends": 7,
+      "switchbacks": 0,
+      "curvature": 658,
+      "bendsPerMile": 7.6
+    },
+    "elevation": {
+      "climbFt": 425,
+      "highFt": 1635,
+      "lowFt": 1411,
+      "reliefFt": 224,
+      "maxGradient": 10.4,
+      "climbPerMile": 472
+    },
+    "profile": {
+      "points": [
+        1418,
+        1425,
+        1432,
+        1439,
+        1446,
+        1454,
+        1462,
+        1470,
+        1478,
+        1486,
+        1494,
+        1501,
+        1509,
+        1517,
+        1525,
+        1533,
+        1540,
+        1547,
+        1554,
+        1561,
+        1567,
+        1573,
+        1579,
+        1585,
+        1591,
+        1598,
+        1605,
+        1612,
+        1618,
+        1624,
+        1629,
+        1634,
+        1639,
+        1644,
+        1644,
+        1643,
+        1642,
+        1641,
+        1639,
+        1631,
+        1623,
+        1615,
+        1607,
+        1600,
+        1593,
+        1585,
+        1578,
+        1571,
+        1565,
+        1560,
+        1555,
+        1550,
+        1545,
+        1538,
+        1531,
+        1525,
+        1518,
+        1511,
+        1503,
+        1496,
+        1488,
+        1481,
+        1472,
+        1462,
+        1451,
+        1441,
+        1431,
+        1423,
+        1415,
+        1408,
+        1401,
+        1393
+      ],
+      "miles": 0.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 77,
+      "corners": 24,
+      "climb": 33,
+      "technical": 20
+    }
+  },
+  {
+    "id": "old-topanga-canyon",
+    "name": "Old Topanga Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The narrow older road through the eastern Santa Monica Mountains, running from Topanga Canyon Boulevard up to Mulholland Highway.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.6336676,
+      34.1154427
+    ],
+    "bounds": [
+      [
+        -118.6421112,
+        34.0896367
+      ],
+      [
+        -118.6043806,
+        34.1346785
+      ]
+    ],
+    "osmWayIds": [
+      13423665,
+      46751378,
+      46752395,
+      687272275,
+      736577536,
+      736577537,
+      736577538,
+      736577539,
+      1079750100,
+      1255479697,
+      1255479698
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.6043806,
+        34.0896367
+      ],
+      "end": [
+        -118.6332018,
+        34.1346785
+      ],
+      "wayNames": [
+        "Old Topanga Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 5.7,
+      "bends": 40,
+      "switchbacks": 7,
+      "curvature": 751,
+      "bendsPerMile": 7.0
+    },
+    "elevation": {
+      "climbFt": 1207,
+      "highFt": 1516,
+      "lowFt": 756,
+      "reliefFt": 760,
+      "maxGradient": 7.1,
+      "climbPerMile": 212
+    },
+    "profile": {
+      "points": [
+        756,
+        757,
+        761,
+        772,
+        785,
+        791,
+        810,
+        829,
+        832,
+        833,
+        844,
+        855,
+        864,
+        873,
+        883,
+        895,
+        905,
+        918,
+        932,
+        942,
+        971,
+        976,
+        983,
+        989,
+        991,
+        1002,
+        1007,
+        1011,
+        1031,
+        1068,
+        1110,
+        1120,
+        1105,
+        1120,
+        1149,
+        1155,
+        1150,
+        1156,
+        1184,
+        1206,
+        1223,
+        1252,
+        1283,
+        1315,
+        1346,
+        1373,
+        1403,
+        1426,
+        1452,
+        1479,
+        1506,
+        1524,
+        1507,
+        1490,
+        1477,
+        1455,
+        1421,
+        1396,
+        1381,
+        1365,
+        1346,
+        1323,
+        1292,
+        1261,
+        1230,
+        1197,
+        1173,
+        1158,
+        1134,
+        1100,
+        1083,
+        1074
+      ],
+      "miles": 5.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 57,
+      "corners": 22,
+      "climb": 15,
+      "technical": 20
+    }
+  },
+  {
+    "id": "tuna-canyon",
+    "name": "Tuna Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep, tight descent off the Saddle Peak ridge toward the coast. The lower part is one-way southbound.",
+    "sources": [
+      {
+        "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      },
+      {
+        "title": "City of Malibu · Malibu Evacuation Plan",
+        "url": "https://www.malibucity.org/DocumentCenter/View/34818"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "The lower part of Tuna Canyon Road is one-way southbound. Check signage at each end before planning to drive it in either direction.",
+      "status": "directional"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.6009172,
+      34.0571814
+    ],
+    "bounds": [
+      [
+        -118.6176721,
+        34.0394566
+      ],
+      [
+        -118.5883171,
+        34.068456
+      ]
+    ],
+    "osmWayIds": [
+      13352663,
+      73156338,
+      791537002,
+      791537003,
+      970523438
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.6111049,
+        34.0681393
+      ],
+      "end": [
+        -118.5894654,
+        34.0394566
+      ],
+      "wayNames": [
+        "Tuna Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 4.3,
+      "bends": 61,
+      "switchbacks": 7,
+      "curvature": 1413,
+      "bendsPerMile": 14.3
+    },
+    "elevation": {
+      "climbFt": 1809,
+      "highFt": 1835,
+      "lowFt": 27,
+      "reliefFt": 1808,
+      "maxGradient": 14.6,
+      "climbPerMile": 421
+    },
+    "profile": {
+      "points": [
+        1832,
+        1838,
+        1830,
+        1810,
+        1792,
+        1768,
+        1742,
+        1729,
+        1698,
+        1669,
+        1638,
+        1605,
+        1592,
+        1588,
+        1587,
+        1590,
+        1577,
+        1556,
+        1531,
+        1501,
+        1480,
+        1465,
+        1446,
+        1423,
+        1406,
+        1403,
+        1394,
+        1373,
+        1366,
+        1366,
+        1358,
+        1330,
+        1310,
+        1309,
+        1300,
+        1270,
+        1251,
+        1213,
+        1188,
+        1159,
+        1126,
+        1093,
+        1046,
+        999,
+        955,
+        921,
+        877,
+        841,
+        807,
+        763,
+        716,
+        663,
+        614,
+        570,
+        524,
+        475,
+        427,
+        386,
+        348,
+        309,
+        273,
+        248,
+        221,
+        196,
+        176,
+        154,
+        129,
+        104,
+        79,
+        55,
+        31,
+        22
+      ],
+      "miles": 4.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 94,
+      "corners": 45,
+      "climb": 29,
+      "technical": 20
+    }
+  },
+  {
+    "id": "little-tujunga",
+    "name": "Little Tujunga Canyon Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The canyon climb north from the San Fernando Valley over Bear Divide toward Sand Canyon.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Reddit, r/socalbirding · Bear Divide is popping off",
+        "url": "https://www.reddit.com/r/socalbirding/comments/1sg9ii2/bear_divide_is_popping_off/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Held back from the first release over unresolved reports of access problems at the northern end. Check current county and forest notices before relying on a through-route.",
+      "status": "needs-current-check"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.3381417,
+      34.3358662
+    ],
+    "bounds": [
+      [
+        -118.3930907,
+        34.2822783
+      ],
+      [
+        -118.3371768,
+        34.3601887
+      ]
+    ],
+    "osmWayIds": [
+      13403009,
+      45265873,
+      45266720,
+      905081094,
+      907557666,
+      1165597833,
+      1165597834,
+      1165597835,
+      1165597838,
+      1165597839
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.3713154,
+        34.2822783
+      ],
+      "end": [
+        -118.3930907,
+        34.3601887
+      ],
+      "wayNames": [
+        "Little Tujunga Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 10.8,
+      "bends": 74,
+      "switchbacks": 16,
+      "curvature": 739,
+      "bendsPerMile": 6.9
+    },
+    "elevation": {
+      "climbFt": 2928,
+      "highFt": 2732,
+      "lowFt": 1142,
+      "reliefFt": 1591,
+      "maxGradient": 8.3,
+      "climbPerMile": 271
+    },
+    "profile": {
+      "points": [
+        1137,
+        1174,
+        1205,
+        1233,
+        1233,
+        1252,
+        1253,
+        1262,
+        1309,
+        1326,
+        1321,
+        1344,
+        1352,
+        1373,
+        1402,
+        1436,
+        1451,
+        1471,
+        1531,
+        1521,
+        1554,
+        1593,
+        1610,
+        1639,
+        1703,
+        1756,
+        1800,
+        1824,
+        1861,
+        1918,
+        1985,
+        2048,
+        2111,
+        2157,
+        2217,
+        2280,
+        2340,
+        2401,
+        2462,
+        2515,
+        2580,
+        2641,
+        2704,
+        2737,
+        2669,
+        2599,
+        2546,
+        2480,
+        2419,
+        2370,
+        2328,
+        2280,
+        2201,
+        2127,
+        2135,
+        2125,
+        2110,
+        2090,
+        2072,
+        2057,
+        2095,
+        2129,
+        2168,
+        2228,
+        2283,
+        2339,
+        2410,
+        2475,
+        2550,
+        2606,
+        2660,
+        2705
+      ],
+      "miles": 10.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 61,
+      "corners": 22,
+      "climb": 19,
+      "technical": 20
+    }
   }
 ]

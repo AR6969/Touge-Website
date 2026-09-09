@@ -421,5 +421,148 @@
         ]
       }
     ]
+  },
+  "east-fork-road": {
+    "names": [
+      "East Fork Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Glendora Mountain Road"
+        ]
+      },
+      {
+        "junction": [
+          "San Gabriel Canyon Road"
+        ]
+      }
+    ]
+  },
+  "bouquet-canyon": {
+    "names": [
+      "Bouquet Canyon Road"
+    ],
+    "box": [
+      -118.5,
+      34.5,
+      -118.25,
+      34.72
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "lake-hughes-road": {
+    "names": [
+      "Lake Hughes Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "corral-canyon": {
+    "names": [
+      "Corral Canyon Road"
+    ],
+    "box": [
+      -118.8,
+      34.0,
+      -118.68,
+      34.12
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "deer-creek": {
+    "names": [
+      "Deer Creek Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "modjeska-grade": {
+    "names": [
+      "Modjeska Grade Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "old-topanga-canyon": {
+    "names": [
+      "Old Topanga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ]
+  },
+  "tuna-canyon": {
+    "names": [
+      "Tuna Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Saddle Peak Road"
+        ]
+      },
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      }
+    ]
+  },
+  "little-tujunga": {
+    "names": [
+      "Little Tujunga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
   }
 }
