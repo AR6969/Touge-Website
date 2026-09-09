@@ -403,5 +403,23 @@
         "end": "west"
       }
     ]
+  },
+  "angeles-crest-newcombs": {
+    "names": [
+      "Angeles Crest Highway"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Upper Big Tujunga Canyon Road"
+        ]
+      },
+      {
+        "near": [
+          -118.00196,
+          34.32965
+        ]
+      }
+    ]
   }
 }

@@ -11909,5 +11909,173 @@
       "climb": 13,
       "technical": 10
     }
+  },
+  {
+    "id": "angeles-crest-newcombs",
+    "name": "Angeles Crest Highway · to Newcomb's Ranch",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The second stage of SR 2, climbing on from the Upper Big Tujunga junction along the San Gabriel crest to Newcomb's Ranch.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
+        "url": "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      },
+      {
+        "title": "Caltrans · SR 2 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=2"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Traced to Newcomb's Ranch and no further. The Caltrans SR 2 report read on September 9, 2026 placed the first closure 3.3 miles east of Newcomb's, running to Islip Saddle, and a second from Islip Saddle to Vincent Gulch. Check current conditions before relying on any of it; there is no through-route to Wrightwood.",
+      "status": "bounded-candidate"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.9987167,
+      34.2933697
+    ],
+    "bounds": [
+      [
+        -118.0433912,
+        34.2723241
+      ],
+      [
+        -117.9927092,
+        34.3294711
+      ]
+    ],
+    "osmWayIds": [
+      172244780,
+      723910248
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.0433912,
+        34.2729488
+      ],
+      "end": [
+        -118.0017709,
+        34.3294711
+      ],
+      "wayNames": [
+        "Angeles Crest Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 8.2,
+      "bends": 28,
+      "switchbacks": 6,
+      "curvature": 365,
+      "bendsPerMile": 3.4
+    },
+    "elevation": {
+      "climbFt": 1584,
+      "highFt": 5447,
+      "lowFt": 4637,
+      "reliefFt": 810,
+      "maxGradient": 5.3,
+      "climbPerMile": 193
+    },
+    "profile": {
+      "points": [
+        4627,
+        4661,
+        4696,
+        4732,
+        4768,
+        4789,
+        4811,
+        4841,
+        4873,
+        4905,
+        4937,
+        4970,
+        5002,
+        5031,
+        5046,
+        5054,
+        5058,
+        5063,
+        5051,
+        5029,
+        4996,
+        4970,
+        4974,
+        4999,
+        5018,
+        5041,
+        5064,
+        5096,
+        5114,
+        5136,
+        5162,
+        5190,
+        5219,
+        5245,
+        5272,
+        5302,
+        5335,
+        5367,
+        5401,
+        5416,
+        5409,
+        5404,
+        5389,
+        5393,
+        5422,
+        5444,
+        5449,
+        5426,
+        5400,
+        5370,
+        5344,
+        5319,
+        5296,
+        5271,
+        5243,
+        5214,
+        5206,
+        5205,
+        5229,
+        5254,
+        5285,
+        5315,
+        5346,
+        5376,
+        5394,
+        5371,
+        5342,
+        5318,
+        5306,
+        5298,
+        5311,
+        5320
+      ],
+      "miles": 8.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 34,
+      "corners": 11,
+      "climb": 14,
+      "technical": 10
+    }
   }
 ]

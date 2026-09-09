@@ -1125,5 +1125,57 @@
         ]
       }
     ]
+  },
+  {
+    "id": "angeles-crest-newcombs",
+    "name": "Angeles Crest Highway · to Newcomb's Ranch",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The second stage of SR 2, climbing on from the Upper Big Tujunga junction along the San Gabriel crest to Newcomb's Ranch.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
+        "url": "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      },
+      {
+        "title": "Caltrans · SR 2 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=2"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Traced to Newcomb's Ranch and no further. The Caltrans SR 2 report read on September 9, 2026 placed the first closure 3.3 miles east of Newcomb's, running to Islip Saddle, and a second from Islip Saddle to Vincent Gulch. Check current conditions before relying on any of it; there is no through-route to Wrightwood.",
+      "status": "bounded-candidate"
+    },
+    "names": [
+      "Angeles Crest Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.0433912,
+          34.2729488
+        ],
+        "junction": [
+          "Upper Big Tujunga Canyon Road"
+        ]
+      },
+      {
+        "near": [
+          -118.0017709,
+          34.3294711
+        ]
+      }
+    ]
   }
 ]
