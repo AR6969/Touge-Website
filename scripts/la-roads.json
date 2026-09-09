@@ -1,0 +1,714 @@
+[
+  {
+    "id": "latigo-canyon",
+    "name": "Latigo Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A tight canyon climb from the Pacific Coast Highway up to the Kanan Dume ridge, turning almost continuously through the coastal side of the Santa Monica Mountains.",
+    "sources": [
+      {
+        "title": "Rennlist · Question for CA members",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "City of Malibu · Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted April 30, 2019",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 30 mph (PCH to Malibu northern city limit); 30 mph (Kanan Dume to the Malibu boundary specified in the adopted April 30, 2019 county order). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Latigo Canyon Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "piuma-road",
+    "name": "Piuma Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A ridge road above Malibu Canyon, climbing east toward Rambla Pacifico with the canyon falling away on one side.",
+    "sources": [
+      {
+        "title": "Rennlist · Question for CA members",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "G35Driver · Official 9/11/04 Malibu cruise",
+        "url": "https://g35driver.com/forums/southern-california/32689-official-9-11-04-malibu-cruise.html"
+      },
+      {
+        "title": "Greg Drevenstedt, Rider Magazine · Cortech Piuma Jacket",
+        "url": "https://ridermagazine.com/2011/09/14/cortech-piuma-jacket/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Piuma Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "stunt-road",
+    "name": "Stunt Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A short mountain link from Mulholland Highway up to Schueren Road, climbing the ridge above Calabasas in close bends.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "G35Driver · Official 9/11/04 Malibu cruise",
+        "url": "https://g35driver.com/forums/southern-california/32689-official-9-11-04-malibu-cruise.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Stunt Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "schueren-saddle-peak",
+    "name": "Schueren / Saddle Peak connector",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The connector that actually joins Stunt Road to the Piuma ridge, with a Saddle Peak branch running out toward Tuna Canyon.",
+    "sources": [
+      {
+        "title": "G35Driver · Official 9/11/04 Malibu cruise",
+        "url": "https://g35driver.com/forums/southern-california/32689-official-9-11-04-malibu-cruise.html"
+      },
+      {
+        "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Schueren / Saddle Peak connector"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "decker-canyon",
+    "name": "Decker Road · SR 23",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The coastal climb of SR 23 from the Pacific Coast Highway to Mulholland Highway, narrow and steep through the western Santa Monica Mountains.",
+    "sources": [
+      {
+        "title": "Rennlist · Question for CA members",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "Caltrans · SR 23 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=23"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Decker Road · SR 23"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "encinal-canyon",
+    "name": "Encinal Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A western canyon connection inland from the Pacific Coast Highway to Mulholland Highway, more open than the canyons either side of it.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "City of Malibu · Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 40 mph (PCH to Malibu northern city limit only). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Encinal Canyon Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "mulholland-highway-malibu",
+    "name": "Mulholland Highway · Malibu mountains",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The paved mountain spine of the western Santa Monica Mountains, linking the canyon roads between Decker Road and Stunt Road.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted April 30, 2019",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors · Meeting transcript, March 3, 2026",
+        "url": "https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 40 mph (Westlake Boulevard to Encinal; historical April 30, 2019 order); 45 mph (Encinal to Stunt; historical April 30, 2019 order, check subsequent changes). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Mulholland Highway · Malibu mountains"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "malibu-canyon-las-virgenes",
+    "name": "Malibu Canyon / Las Virgenes",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The main coast-to-inland crossing: Malibu Canyon Road from the Pacific Coast Highway, continuing as Las Virgenes Road toward US 101.",
+    "sources": [
+      {
+        "title": "Rennlist · Question for CA members",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "City of Malibu · Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 40 mph (PCH to Malibu northern city limit only; not the Las Virgenes continuation). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Malibu Canyon / Las Virgenes"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "pch-malibu",
+    "name": "Pacific Coast Highway · Malibu",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The Malibu coast run of Highway 1, from Topanga Canyon Boulevard west toward Yerba Buena Road, through beach towns and open coastal stretches.",
+    "sources": [
+      {
+        "title": "Rennlist · Question for CA members",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "Caltrans District 7 · SR-27 pavement rehabilitation in Topanga Canyon restarts June 15, 2026",
+        "url": "https://dot.ca.gov/caltrans-near-me/district-7/district-7-news/sr-27-pavement-rehabilitation-topanga-canyon-restarts-june-15-2026"
+      },
+      {
+        "title": "City of Malibu · PCH safety",
+        "url": "https://www.malibucity.org/pchsafety"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Pacific Coast Highway · Malibu"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "angeles-crest-west",
+    "name": "Angeles Crest Highway · western SR 2",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The western approach of SR 2, climbing from La Cañada Flintridge into the San Gabriel Mountains as far as the Upper Big Tujunga junction.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
+        "url": "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      },
+      {
+        "title": "Caltrans · SR 2 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=2"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Angeles Crest Highway · western SR 2"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "Proposed western segment stops at Upper Big Tujunga. SR 2 has middle-mountain closures; do not publish a through-route to Wrightwood.",
+      "status": "bounded-candidate"
+    }
+  },
+  {
+    "id": "angeles-forest",
+    "name": "Angeles Forest Highway · N3",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The N3 mountain highway between Clear Creek and the Upper Big Tujunga junction, crossing open ridges inside the Angeles National Forest.",
+    "sources": [
+      {
+        "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
+        "url": "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      },
+      {
+        "title": "Gribblenation · Angeles Forest Highway (Los Angeles County Route N3)",
+        "url": "https://www.gribblenation.org/2023/09/angeles-forest-highway-los-angeles.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Angeles Forest Highway · N3"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "big-tujunga",
+    "name": "Big Tujunga Canyon Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A canyon approach following Big Tujunga Creek from the Los Angeles city boundary up to the Angeles Forest Highway.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted August 12, 2025",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/205649.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 45 mph (Los Angeles city boundary to Angeles Forest Highway; adopted August 12, 2025). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Big Tujunga Canyon Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "upper-big-tujunga",
+    "name": "Upper Big Tujunga Canyon Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The paved connector high in the San Gabriel Mountains, running between the Angeles Forest Highway and Angeles Crest Highway.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
+        "url": "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      },
+      {
+        "title": "Gribblenation · Angeles Forest Highway (Los Angeles County Route N3)",
+        "url": "https://www.gribblenation.org/2023/09/angeles-forest-highway-los-angeles.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Upper Big Tujunga Canyon Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "glendora-mountain",
+    "name": "Glendora Mountain Road · GMR",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The climb from the Glendora foothills to East Fork Road, passing the Glendora Ridge junction on the way.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Reddit, r/BikeLA · GMR closed to cars Labor Day",
+        "url": "https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Glendora Mountain Road · GMR"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "Recent holiday closure discussion does not prove gates subsequently reopened.",
+      "status": "gate-check-required"
+    }
+  },
+  {
+    "id": "glendora-ridge",
+    "name": "Glendora Ridge Road · GRR",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The ridge road between Glendora Mountain Road and Mount Baldy Road, following the crest with the range falling away on both sides.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Reddit, r/BikeLA · GMR closed to cars Labor Day",
+        "url": "https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Glendora Ridge Road · GRR"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "Verify vehicle access independently from bicycle access and scheduled reopening dates.",
+      "status": "gate-check-required"
+    }
+  },
+  {
+    "id": "mount-baldy-road",
+    "name": "Mount Baldy Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The approach up San Antonio Canyon from the Claremont boundary to the Glendora Ridge junction, below the ski-area ascent.",
+    "sources": [
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted August 12, 2025",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/205649.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 35 mph (Glendora Ridge Road to Mountain Avenue; August 12, 2025 order); 45 mph (Mountain Avenue to defined Claremont boundary; August 12, 2025 order). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Mount Baldy Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "santiago-canyon",
+    "name": "Santiago Canyon Road",
+    "area": "Orange County",
+    "difficulty": 2,
+    "character": "High speed",
+    "description": "A comparatively open inland run through the Santa Ana foothills, from the Jamboree and Chapman transition south to Live Oak Canyon Road.",
+    "sources": [
+      {
+        "title": "Reddit, r/orangecounty · Best Saturday drives",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/"
+      },
+      {
+        "title": "Reddit, r/orangecounty · Driving-road discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1e14d51/"
+      },
+      {
+        "title": "Iteris for Orange County Public Works · Master Plan of Arterial Highways Reclassification Study, Final Report",
+        "url": "https://ocds.ocpublicworks.com/sites/ocpwocds/files/2025-02/Attachment%203%20-%20MPAH_Final%20Transportation%20Assessment%20Report%2024.03.22%20compressed.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Varies",
+      "kind": "Documented sections",
+      "note": "Documented only where scoped: 55 mph (Surveyed corridor sections in March 22, 2024 study; not field-verified current signage); 50 mph (Live Oak junction described on report p. 89; report p. 92 instead assumes 55 mph, unresolved). These sections do not cover the whole selected trace and have not been checked against current signs.",
+      "source": null
+    },
+    "names": [
+      "Santiago Canyon Road"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "live-oak-trabuco",
+    "name": "Live Oak / Trabuco Canyon",
+    "area": "Orange County",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The shaded county-road corridor from Santiago Canyon Road through Live Oak and the paved part of Trabuco Canyon Road toward Plano Trabuco.",
+    "sources": [
+      {
+        "title": "Reddit, r/orangecounty · Best Saturday drives",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/"
+      },
+      {
+        "title": "Reddit, r/orangecounty · Driving-road discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1e14d51/"
+      },
+      {
+        "title": "Orange County Public Works · Live Oak Canyon / Trabuco Canyon lane-striping notice",
+        "url": "https://ocpublicworks.com/sites/ocpw/files/2023-07/Notification.Lane%20Striping.Live%20Oak%20Cyn%20Rd-Trabuco%20Cyn%20Rd%20%287-24-2023%29.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Live Oak / Trabuco Canyon"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "Trace the paved county corridor. Do not confuse it with Forest Road 6S13 in the current Airport Fire order.",
+      "status": "segment-verification-required"
+    }
+  },
+  {
+    "id": "ortega-highway",
+    "name": "Ortega Highway · SR 74",
+    "area": "Orange County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The SR 74 crossing of the Santa Ana Mountains, from San Juan Capistrano over the range toward Lake Elsinore.",
+    "sources": [
+      {
+        "title": "Reddit, r/orangecounty · Best Saturday drives",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/"
+      },
+      {
+        "title": "Reddit, r/orangecounty · Driving-road discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1e14d51/"
+      },
+      {
+        "title": "Caltrans · SR 74 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=74"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Ortega Highway · SR 74"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "Sept 9 report lists overnight one-way control in a Riverside-side segment through Sept 12, 2026. Refresh before publication.",
+      "status": "construction"
+    }
+  },
+  {
+    "id": "carbon-canyon",
+    "name": "Carbon Canyon Road · SR 142",
+    "area": "Orange County",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A short crossing of the Chino Hills on SR 142, between Brea and Chino Hills Parkway in northern Orange County.",
+    "sources": [
+      {
+        "title": "Orange County Outdoors · Carbon Canyon scenic drive",
+        "url": "https://www.orangecountyoutdoors.com/get-out-there/scenic-drives/carbon-canyon"
+      },
+      {
+        "title": "Reddit, r/orangecounty · Scenic-driving discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/14c1tx1/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Carbon Canyon Road · SR 142"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  },
+  {
+    "id": "pch-orange-county",
+    "name": "Pacific Coast Highway · Orange County",
+    "area": "Orange County",
+    "difficulty": 1,
+    "character": "Low speed",
+    "description": "The Orange County coast run from Newport Beach through Laguna Beach to Dana Point — scenic and urban rather than technical.",
+    "sources": [
+      {
+        "title": "Reddit, r/orangecounty · Best Saturday drives",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/"
+      },
+      {
+        "title": "Reddit, r/orangecounty · Driving-road discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/1e14d51/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Pacific Coast Highway · Orange County"
+    ],
+    "anchors": [],
+    "access": {
+      "note": "No current opening claim established for the complete proposed segment.",
+      "status": "needs-current-check"
+    }
+  }
+]

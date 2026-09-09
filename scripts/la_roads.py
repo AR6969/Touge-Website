@@ -11,7 +11,9 @@ from pathlib import Path
 from geometry import haversine, line_length
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_HIGHWAYS = {'primary', 'secondary', 'tertiary', 'unclassified', 'residential'}
+# 'trunk' included: SR 1 through Malibu and SR 74 over the Santa Anas are tagged
+# trunk in OSM. They are ordinary drivable roads, not motorways.
+PUBLIC_HIGHWAYS = {'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential'}
 
 
 def public_road(way):
