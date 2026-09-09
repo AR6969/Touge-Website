@@ -66,13 +66,16 @@ Stage 3 always measures the full-precision archive, so re-running it is safe and
 idempotent. See `docs/road-research.md` for sourcing and `/method` for the published
 version of the same rules.
 
-## The Touge Score
+## The Touge Score (dormant)
 
-A 0-100 score for how engaging a road is to drive, per mile: corner density (45),
-climb per mile (35) and our editorial difficulty rating (20). The weights and
-anchors live in `scripts/score.py`, are exported to `app/data/score-config.json`
-at build time, and are published in full at `/method`. Anchors are absolute
-rather than percentile, so adding roads never shifts an existing score.
+A 0-100 road score — corner density, climb per mile and editorial difficulty —
+is still computed on every build and stored on each road in
+`app/data/roads.json`. **It is intentionally not shown anywhere on the site.**
+
+Do not delete `scripts/score.py` or rebuild a scoring algorithm from scratch.
+See [`docs/touge-score.md`](docs/touge-score.md) for the formula, the evidence
+behind each input, the designs that were tested and rejected, and step-by-step
+instructions to switch it back on. Re-enabling is UI work only.
 
 ## Attribution
 

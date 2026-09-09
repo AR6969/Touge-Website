@@ -33,7 +33,6 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
   lengthMi: number;
   bends: number;
   speed: string;
-  score: number;
 };
 
 export const roads = catalog as Road[];
@@ -41,7 +40,11 @@ export const roads = catalog as Road[];
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 const curvatureRanks = new Map(byCurvature.map((road, index) => [road.id, index + 1]));
 
-/** Ranked by Touge Score, the site's headline ordering. */
+/**
+ * Ranked by Touge Score. DORMANT: the score is computed and stored on every
+ * road, but nothing in the UI shows it right now. See docs/touge-score.md for
+ * what it is and how to put it back.
+ */
 export const byScore = [...roads].sort((a, b) => b.score.score - a.score.score || a.name.localeCompare(b.name));
 const scoreRanks = new Map(byScore.map((road, index) => [road.id, index + 1]));
 
@@ -105,7 +108,6 @@ export function toSummary(road: Road): RoadSummary {
     lengthMi: road.shape.lengthMi,
     bends: road.shape.bends,
     speed: speedGuide(road).value,
-    score: road.score.score,
   };
 }
 

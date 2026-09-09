@@ -5,7 +5,7 @@ import RoadMap from "../../road-map";
 import ElevationProfile from "../../elevation-profile";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import {
-  curvatureRank, difficultyColors, difficultyLabels, getRoad, nearbyRoads, roads, scoreRank, slugifyArea, speedGuide,
+  curvatureRank, difficultyColors, difficultyLabels, getRoad, nearbyRoads, roads, slugifyArea, speedGuide,
 } from "../../lib/roads";
 import { reviewedOn, siteUrl } from "../../lib/site";
 
@@ -19,8 +19,8 @@ function summary(road: NonNullable<ReturnType<typeof getRoad>>) {
   const { lengthMi, bends, switchbacks } = road.shape;
   const switchbackText = switchbacks ? ` and ${switchbacks} switchbacks` : "";
   const climb = road.elevation ? `, ${road.elevation.climbPerMile} ft of climb per mile` : "";
-  return `Touge Score ${road.score.score}/100. ${road.name} in ${road.area}: ${lengthMi} miles, ` +
-    `${bends} counted bends${switchbackText}${climb}. Map, elevation profile and sourced speed-limit evidence.`;
+  return `${road.name} in ${road.area}: ${lengthMi} miles with ${bends} counted bends${switchbackText}${climb}. ` +
+    `Difficulty ${road.difficulty}/3. Map, elevation profile and sourced speed-limit evidence.`;
 }
 
 export async function generateMetadata({ params }: PageProps<"/roads/[slug]">): Promise<Metadata> {
@@ -88,35 +88,6 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </div>
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />
-
-        <section aria-labelledby="score">
-          <h2 id="score">Touge Score</h2>
-          <div className="score-block">
-            <div className="score-value">
-              <strong>{road.score.score}</strong>
-              <span>out of 100</span>
-              <em>#{scoreRank(road)} of {roads.length}</em>
-            </div>
-            <ul className="score-parts">
-              {([
-                ["Corners", road.score.corners, 45, `${road.shape.bendsPerMile} bends per mile`],
-                ["Climb", road.score.climb, 35, road.elevation ? `${road.elevation.climbPerMile} ft per mile` : "no data"],
-                ["Technical", road.score.technical, 20, `difficulty ${road.difficulty}/3`],
-              ] as [string, number, number, string][]).map(([label, got, max, detail]) => (
-                <li key={label}>
-                  <span className="part-label">{label}<em>{detail}</em></span>
-                  <span className="part-bar"><i style={{ width: `${(got / max) * 100}%` }} /></span>
-                  <span className="part-score">{got}<small>/{max}</small></span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <p className="fine">
-            Corners and climb are measured from the road itself; the technical rating is our editorial judgement.
-            The formula and its weights are published in full — <Link href="/method#score">see how it works</Link>.
-            It describes road shape and terrain, not safety and not an appropriate speed.
-          </p>
-        </section>
 
         <section aria-labelledby="shape">
           <h2 id="shape">Road shape</h2>
