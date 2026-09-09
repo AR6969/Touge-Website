@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { curviest, difficultyColors, longest, roads } from "../lib/roads";
+import { byScore, difficultyColors, longest, roads } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: `All ${roads.length} Driving Roads in Northern California`,
   description:
     `Compare ${roads.length} driving roads across the Bay Area, Santa Cruz, Napa and Monterey — ${totalMiles} miles ` +
-    "ranked by length, bend count and degrees of turning per mile, measured from OpenStreetMap geometry.",
+    "ranked by Touge Score, combining corner density, elevation gain and difficulty into one number per road.",
   alternates: { canonical: "/roads" },
   openGraph: { url: "/roads", title: `All ${roads.length} driving roads in Northern California` },
 };
@@ -20,8 +20,8 @@ export default function RoadsIndex() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `All ${roads.length} driving roads`,
-    numberOfItems: curviest.length,
-    itemListElement: curviest.map((road, index) => ({
+    numberOfItems: byScore.length,
+    itemListElement: byScore.map((road, index) => ({
       "@type": "ListItem", position: index + 1, url: `${siteUrl}/roads/${road.id}`, name: road.name,
     })),
   };
@@ -56,27 +56,27 @@ export default function RoadsIndex() {
         </section>
 
         <section aria-labelledby="ranked">
-        <h2 id="ranked">Every road, ranked by turning per mile</h2>
+        <h2 id="ranked">Every road, ranked by Touge Score</h2>
         <div className="table-scroll">
           <table className="rank-table">
             <thead>
               <tr>
-                <th>#</th><th>Road</th><th>Area</th><th>Difficulty</th><th>Character</th>
-                <th>Length</th><th>Bends</th><th>Switchbacks</th><th>°/mile</th>
+                <th>#</th><th>Road</th><th>Score</th><th>Area</th><th>Difficulty</th>
+                <th>Length</th><th>Bends</th><th>Climb/mi</th><th>°/mile</th>
               </tr>
             </thead>
             <tbody>
-              {curviest.map((road, index) => (
+              {byScore.map((road, index) => (
                 <tr key={road.id}>
                   <td className="rank">{index + 1}</td>
                   <td><Link href={`/roads/${road.id}`}>{road.name}</Link></td>
+                  <td className="figure score-cell">{road.score.score}</td>
                   <td className="dim">{road.area}</td>
                   <td><i style={{ background: difficultyColors[road.difficulty - 1] }} /> {road.difficulty}/3</td>
-                  <td className="dim">{road.character}</td>
                   <td>{road.shape.lengthMi} mi</td>
                   <td>{road.shape.bends}</td>
-                  <td>{road.shape.switchbacks}</td>
-                  <td className="figure">{road.shape.curvature}</td>
+                  <td>{road.elevation ? `${road.elevation.climbPerMile} ft` : "—"}</td>
+                  <td className="dim">{road.shape.curvature}</td>
                 </tr>
               ))}
             </tbody>

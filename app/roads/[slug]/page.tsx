@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RoadMap from "../../road-map";
+import ElevationProfile from "../../elevation-profile";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import {
-  curvatureRank, difficultyColors, difficultyLabels, getRoad, nearbyRoads, roads, slugifyArea, speedGuide,
+  curvatureRank, difficultyColors, difficultyLabels, getRoad, nearbyRoads, roads, scoreRank, slugifyArea, speedGuide,
 } from "../../lib/roads";
 import { reviewedOn, siteUrl } from "../../lib/site";
 
@@ -17,8 +18,9 @@ export function generateStaticParams() {
 function summary(road: NonNullable<ReturnType<typeof getRoad>>) {
   const { lengthMi, bends, switchbacks } = road.shape;
   const switchbackText = switchbacks ? ` and ${switchbacks} switchbacks` : "";
-  return `${road.name} in ${road.area}: ${lengthMi} miles with ${bends} counted bends${switchbackText}. ` +
-    `Difficulty ${road.difficulty}/3. Map, corner statistics and sourced speed-limit evidence.`;
+  const climb = road.elevation ? `, ${road.elevation.climbPerMile} ft of climb per mile` : "";
+  return `Touge Score ${road.score.score}/100. ${road.name} in ${road.area}: ${lengthMi} miles, ` +
+    `${bends} counted bends${switchbackText}${climb}. Map, elevation profile and sourced speed-limit evidence.`;
 }
 
 export async function generateMetadata({ params }: PageProps<"/roads/[slug]">): Promise<Metadata> {
@@ -87,6 +89,35 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />
 
+        <section aria-labelledby="score">
+          <h2 id="score">Touge Score</h2>
+          <div className="score-block">
+            <div className="score-value">
+              <strong>{road.score.score}</strong>
+              <span>out of 100</span>
+              <em>#{scoreRank(road)} of {roads.length}</em>
+            </div>
+            <ul className="score-parts">
+              {([
+                ["Corners", road.score.corners, 45, `${road.shape.bendsPerMile} bends per mile`],
+                ["Climb", road.score.climb, 35, road.elevation ? `${road.elevation.climbPerMile} ft per mile` : "no data"],
+                ["Technical", road.score.technical, 20, `difficulty ${road.difficulty}/3`],
+              ] as [string, number, number, string][]).map(([label, got, max, detail]) => (
+                <li key={label}>
+                  <span className="part-label">{label}<em>{detail}</em></span>
+                  <span className="part-bar"><i style={{ width: `${(got / max) * 100}%` }} /></span>
+                  <span className="part-score">{got}<small>/{max}</small></span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="fine">
+            Corners and climb are measured from the road itself; the technical rating is our editorial judgement.
+            The formula and its weights are published in full — <Link href="/method#score">see how it works</Link>.
+            It describes road shape and terrain, not safety and not an appropriate speed.
+          </p>
+        </section>
+
         <section aria-labelledby="shape">
           <h2 id="shape">Road shape</h2>
           <dl className="stat-grid">
@@ -102,6 +133,24 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
             or speed judgement. <Link href="/method#geometry">How bends are counted</Link>.
           </p>
         </section>
+
+        {road.elevation && (
+          <section aria-labelledby="elevation">
+            <h2 id="elevation">Elevation</h2>
+            <ElevationProfile road={road} />
+            <dl className="stat-grid">
+              <div><dt>Total climb</dt><dd>{road.elevation.climbFt.toLocaleString()}<small>ft</small></dd></div>
+              <div><dt>Climb per mile</dt><dd>{road.elevation.climbPerMile}<small>ft</small></dd></div>
+              <div><dt>Highest point</dt><dd>{road.elevation.highFt.toLocaleString()}<small>ft</small></dd></div>
+              <div><dt>Steepest grade</dt><dd>{road.elevation.maxGradient}%</dd></div>
+            </dl>
+            <p className="fine">
+              Sampled every 100&nbsp;m from USGS 10&nbsp;m elevation data, a public-domain federal dataset. Total climb
+              counts vertical change in both directions, so it does not depend on which way you drive.{" "}
+              <Link href="/method#elevation">How elevation is measured</Link>.
+            </p>
+          </section>
+        )}
 
         <section aria-labelledby="speed">
           <h2 id="speed">Speed limits</h2>

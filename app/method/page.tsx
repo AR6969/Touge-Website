@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
 import { roads } from "../lib/roads";
+import scoreConfig from "../data/score-config.json";
 import { reviewedOn } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -75,6 +76,92 @@ export default function MethodPage() {
           <p className="warning">
             These are measurements of a mapped centreline. They are not a difficulty score, not a safety assessment, and
             not an indication of how fast any road should be driven.
+          </p>
+        </section>
+
+        <section aria-labelledby="score">
+          <h2 id="score">The Touge Score</h2>
+          <p>
+            One number, 0 to 100, for how engaging a road is to drive <em>per mile</em>. It is published in full
+            below, deliberately: a score nobody can check is a score nobody has reason to believe, and the reasoning
+            is the part worth arguing with.
+          </p>
+          <div className="table-scroll">
+            <table className="rank-table">
+              <thead><tr><th>Part</th><th>Weight</th><th>Measured as</th><th>Full marks at</th></tr></thead>
+              <tbody>
+                <tr><td>Corners</td><td className="figure">{scoreConfig.weights.corners}</td><td className="dim">Bends per mile</td><td>{scoreConfig.cornerAnchor} per mile</td></tr>
+                <tr><td>Climb</td><td className="figure">{scoreConfig.weights.climb}</td><td className="dim">Vertical change per mile</td><td>{scoreConfig.climbAnchor} ft per mile</td></tr>
+                <tr><td>Technical</td><td className="figure">{scoreConfig.weights.technical}</td><td className="dim">Our difficulty rating</td><td>Difficulty 3/3</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Each part is scored against its anchor, capped at full marks, then weighted and added.</p>
+
+          <h3>Why these three</h3>
+          <p>
+            They are close to independent of one another, which is the only reason combining them adds information.
+            We checked: corner density and total turning per mile rank the collection at <strong>ρ&nbsp;=&nbsp;0.99</strong> —
+            they are the same measurement twice, so only one is used. Elevation is the dimension corner geometry
+            cannot see; it is what separates a mountain climb from a flat squiggle of identical curvature. The
+            editorial rating correlates with the measured ones at only <strong>ρ&nbsp;=&nbsp;0.44</strong>, so it
+            carries real information about width and sightlines that no measurement here captures.
+          </p>
+          <p>
+            Two candidate measures were tested and dropped. <em>Rhythm</em>, how often corners alternate direction,
+            ranges from 0.65 to 0.90 across all {roads.length} roads — it does not distinguish them. <em>Corner
+            variety</em> turned out to be highest on roads with only three or four bends: a small-sample artifact
+            that rewarded the dullest roads in the set.
+          </p>
+
+          <h3>The anchors are fixed, not relative</h3>
+          <p>
+            Each part is scored against a fixed reference value rather than against the rest of the collection. If the
+            anchors were percentiles, every road&apos;s score would shift whenever a road was added, and any number
+            published or quoted elsewhere would silently go stale. Adding Los Angeles roads will leave every existing
+            score exactly where it is.
+          </p>
+
+          <h3>What it deliberately ignores</h3>
+          <p>
+            <strong>Length.</strong> The score is per mile, so a short intense climb can outrank a long one. That is a
+            choice, not an oversight: mixing &ldquo;how good is this road&rdquo; with &ldquo;how much of it is there&rdquo;
+            would make the number mean two things at once. Length is shown next to every score so you can weigh it
+            yourself, and <Link href="/roads">the roads table</Link> ranks by length too.
+          </p>
+          <p>
+            <strong>Everything we cannot measure honestly:</strong> surface quality, traffic, scenery, cyclists,
+            enforcement, and how a road feels on the day. The score is not a substitute for any of that.
+          </p>
+          <p className="warning">
+            The Touge Score describes road shape and terrain. It is not a safety rating, not a difficulty warning, and
+            not a suggestion about speed. A high score often means a road that demands <em>more</em> care, not less.
+          </p>
+        </section>
+
+        <section aria-labelledby="elevation">
+          <h2 id="elevation">Elevation</h2>
+          <p>
+            Each road is sampled every 100&nbsp;m along its centreline and looked up in USGS 10&nbsp;m elevation data,
+            a public-domain federal dataset, via OpenTopoData. Samples are smoothed over 300&nbsp;m before anything is
+            measured, because a digital terrain model carries noise that would otherwise be counted as climb.
+          </p>
+          <p>
+            <strong>Total climb counts vertical change in both directions.</strong> Summing only the ascents would
+            depend on which way round the road&apos;s geometry happens to be stored — the first version of this
+            measurement reported Page Mill Road as climbing 124&nbsp;ft, because its trace runs downhill. A road is
+            driven both ways regardless.
+          </p>
+          <p>
+            A terrain model describes the ground, not the roadway. Where a road tunnels, bridges or runs on a cliff
+            shelf, the model reports the hillside instead: Devil&apos;s Slide on Highway&nbsp;1 initially measured as a
+            35% grade. Steps implying a grade above 20% are therefore treated as terrain rather than road, and the
+            steepest-grade figure is the 95th percentile of half-kilometre stretches, not the maximum, so a handful of
+            cliff samples cannot set the figure for a whole road.
+          </p>
+          <p className="fine">
+            Elevation profiles are drawn along the longest continuous section of each road, and say so where that is
+            less than the whole. Splicing disconnected pieces together would draw a climb nobody can drive.
           </p>
         </section>
 

@@ -38,31 +38,46 @@ a share card drawn from the road's real geometry (`opengraph-image.tsx`).
 
 ## Rebuilding the road data
 
-Two stages. The first needs Overpass snapshots; the second does not.
+Three stages. Only the first needs Overpass snapshots.
 
 ```bash
 # 1. Fetch: run scripts/roads.overpass and scripts/roads-extra.overpass at
 #    https://overpass-api.de/api/interpreter, saving each result as JSON.
 python3 scripts/build-road-data.py main-snapshot.json extra-snapshot.json
 
-# 2. Derive what the site actually serves.
+# 2. Ground elevation, once per road, cached. Only fetches what is missing.
+python3 scripts/fetch-elevation.py
+
+# 3. Derive what the site actually serves.
 python3 scripts/build-derived-data.py
 ```
 
 | Path | Stage | Notes |
 | --- | --- | --- |
 | `data/roads.full.geojson` | 1 | Full-precision archive. Outside `public/`, so it is never served. |
-| `app/data/roads.json` | 1, 2 | Catalog. Stage 2 adds the `shape` statistics. |
-| `public/data/roads.geojson` | 2 | Simplified overview geometry (~20% of the original point count). |
-| `public/data/roads/<id>.geojson` | 2 | One road each, so a road page loads a few KB instead of the whole set. |
 | `public/data/road-labels.geojson` | 1 | Label points for the overview map. |
+| `data/elevation.json` | 2 | Cached elevation samples. ~160 API calls; delete an entry to refetch it. |
+| `app/data/roads.json` | 3 | Catalog, plus `shape`, `elevation`, `profile` and `score`. |
+| `app/data/score-config.json` | 3 | Score weights and anchors, so `/method` quotes the real values. |
+| `public/data/roads.geojson` | 3 | Simplified overview geometry (~20% of the original point count). |
+| `public/data/roads/<id>.geojson` | 3 | One road each, so a road page loads a few KB instead of the whole set. |
 
-Stage 2 always measures the full-precision archive, so re-running it is safe and
+Stage 3 always measures the full-precision archive, so re-running it is safe and
 idempotent. See `docs/road-research.md` for sourcing and `/method` for the published
 version of the same rules.
+
+## The Touge Score
+
+A 0-100 score for how engaging a road is to drive, per mile: corner density (45),
+climb per mile (35) and our editorial difficulty rating (20). The weights and
+anchors live in `scripts/score.py`, are exported to `app/data/score-config.json`
+at build time, and are published in full at `/method`. Anchors are absolute
+rather than percentile, so adding roads never shifts an existing score.
 
 ## Attribution
 
 Road geometry and `maxspeed` tags © OpenStreetMap contributors, under the
 [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/).
+Elevation from USGS 10 m data (public domain) via
+[OpenTopoData](https://www.opentopodata.org/).
 Descriptions, difficulty ratings and corner counts are editorial. Posted signs always govern.

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { curviest, roads, toSummary } from "./lib/roads";
+import { byScore, roads, toSummary } from "./lib/roads";
 import { siteName, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
@@ -22,8 +22,8 @@ export default function Home() {
       {
         "@type": "ItemList",
         name: "Best driving roads in the Bay Area and Northern California",
-        numberOfItems: curviest.length,
-        itemListElement: curviest.map((road, index) => ({
+        numberOfItems: byScore.length,
+        itemListElement: byScore.map((road, index) => ({
           "@type": "ListItem",
           position: index + 1,
           url: `${siteUrl}/roads/${road.id}`,
@@ -48,13 +48,13 @@ export default function Home() {
         <p>
           {roads.length} roads, {totalMiles} miles and {totalBends.toLocaleString()} counted bends — across the
           Peninsula, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey. Every road has its own page
-          with corners counted from its mapped centreline, a difficulty rating, and the source behind any speed
-          figure shown.
+          with corners counted from its mapped centreline, elevation from USGS data, and a Touge Score built from a
+          formula we publish in full rather than a number you have to take on trust.
         </p>
         <nav className="home-links" aria-label="Sections">
           <Link href="/roads"><strong>All {roads.length} roads</strong><span>Ranked and compared in one table</span></Link>
           <Link href="/regions"><strong>Browse by region</strong><span>From the Peninsula to Monterey</span></Link>
-          <Link href={`/roads/${curviest[0].id}`}><strong>Curviest road</strong><span>{curviest[0].name}, {curviest[0].shape.curvature}°/mile</span></Link>
+          <Link href={`/roads/${byScore[0].id}`}><strong>Top rated road</strong><span>{byScore[0].name}, Touge Score {byScore[0].score.score}</span></Link>
           <Link href="/method"><strong>How this is built</strong><span>Ratings, measurements and sources</span></Link>
         </nav>
       </main>

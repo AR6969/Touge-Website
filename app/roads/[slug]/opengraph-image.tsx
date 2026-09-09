@@ -18,10 +18,10 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const shape = await roadShapeUri(road.id, 500, 500, color);
 
   const stats: [string, string][] = [
+    ["TOUGE SCORE", `${road.score.score}`],
     ["LENGTH", `${road.shape.lengthMi} mi`],
     ["BENDS", `${road.shape.bends}`],
-    ["SWITCHBACKS", `${road.shape.switchbacks}`],
-    ["TURNING / MILE", `${road.shape.curvature}°`],
+    ["CLIMB / MILE", road.elevation ? `${road.elevation.climbPerMile} ft` : "—"],
   ];
 
   return new ImageResponse(

@@ -94,6 +94,7 @@ summary { cursor: pointer; }
 .prose { max-width: 1080px; width: 100%; margin: 0 auto; padding: 44px 30px 64px; font-size: 15px; line-height: 1.75; color: #c2cfc6; }
 .prose h1 { margin: 0 0 18px; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; letter-spacing: -1.2px; font-weight: 600; color: var(--foreground); }
 .prose h2 { margin: 0 0 14px; font-size: 24px; font-weight: 500; letter-spacing: -.4px; color: #dbe6dd; }
+.prose h3 { margin: 32px 0 10px; font-size: 16px; font-weight: 600; letter-spacing: -.1px; color: #cbd9ce; }
 .prose h2 a { color: inherit; text-decoration: none; }
 .prose h2 a:hover { color: var(--accent); }
 .prose section { margin-top: 52px; }
@@ -123,6 +124,8 @@ summary { cursor: pointer; }
 .rank-table a:hover { color: var(--accent); text-decoration: underline; }
 .rank-table .rank { color: #7d9186; font-variant-numeric: tabular-nums; }
 .rank-table .figure { font-variant-numeric: tabular-nums; color: var(--accent); }
+.rank-table .score-cell { font-size: 15px; font-weight: 600; }
+.mini-stats .mini-score { color: var(--accent); }
 
 .card-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; padding: 0; margin: 0; list-style: none; }
 .card-list a { display: flex; flex-direction: column; height: 100%; gap: 7px; padding: 16px 17px; border: 1px solid #2f3b34; border-radius: 8px; background: #19211d; color: var(--foreground); text-decoration: none; }
@@ -136,6 +139,27 @@ summary { cursor: pointer; }
 .stat-grid dt { color: #93a699; font-size: 10px; text-transform: uppercase; letter-spacing: 1.1px; }
 .stat-grid dd { margin: 8px 0 0; font-size: 30px; font-weight: 600; letter-spacing: -1px; color: var(--foreground); font-variant-numeric: tabular-nums; }
 .stat-grid dd small { margin-left: 5px; font-size: 13px; font-weight: 400; color: #93a699; letter-spacing: 0; }
+
+/* Touge Score: the number, and the three parts it is made of, side by side. */
+.score-block { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 22px 24px; margin-bottom: 16px; border: 1px solid #2f3b34; border-radius: 8px; background: #19211d; }
+.score-value { display: flex; flex-direction: column; align-items: center; min-width: 128px; }
+.score-value strong { font-size: 62px; line-height: 1; font-weight: 600; letter-spacing: -3px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.score-value span { margin-top: 6px; color: #93a699; font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; }
+.score-value em { margin-top: 9px; padding: 3px 9px; border: 1px solid #44574a; border-radius: 3px; font-style: normal; font-size: 11px; color: #cfdcd3; }
+.score-parts { flex: 1; min-width: 260px; margin: 0; padding: 0; list-style: none; }
+.score-parts li { display: grid; grid-template-columns: 130px 1fr 54px; align-items: center; gap: 14px; padding: 7px 0; }
+.part-label { font-size: 13px; color: #dbe6dd; }
+.part-label em { display: block; font-style: normal; font-size: 11px; color: #8ba394; margin-top: 2px; }
+.part-bar { height: 7px; border-radius: 4px; background: #26312b; overflow: hidden; }
+.part-bar i { display: block; height: 100%; width: 0; border-radius: 4px; background: var(--accent); }
+.part-score { text-align: right; font-size: 15px; color: var(--foreground); font-variant-numeric: tabular-nums; }
+.part-score small { color: #7f9388; font-size: 11px; }
+
+/* Elevation profile: fixed data, drawn on the server, no charting library. */
+.profile { margin: 0 0 16px; padding: 0; border: 1px solid #2f3b34; border-radius: 8px; background: #19211d; overflow: hidden; }
+.profile svg { display: block; width: 100%; height: 150px; }
+.profile-axis { display: flex; justify-content: space-between; gap: 12px; padding: 9px 14px; border-top: 1px solid #2a352f; color: #8ba394; font-size: 11px; }
+.profile-axis span:nth-child(2) { text-align: center; }
 
 .speed-block { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; }
 .speed-value { margin: 0 !important; font-size: 38px; font-weight: 600; letter-spacing: -1px; color: var(--foreground); }

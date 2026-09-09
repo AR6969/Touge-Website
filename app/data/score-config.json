@@ -1,0 +1,9 @@
+{
+  "cornerAnchor": 14.0,
+  "climbAnchor": 500.0,
+  "weights": {
+    "corners": 45,
+    "climb": 35,
+    "technical": 20
+  }
+}

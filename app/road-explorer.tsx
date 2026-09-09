@@ -170,9 +170,10 @@ export default function RoadExplorer({ roads }: { roads: RoadSummary[] }) {
         <div className="road-badges"><span><i style={{ background: colors[active.difficulty - 1] }} /> Difficulty {active.difficulty}/3</span><span>{active.character}</span></div>
         <p>{active.description}</p>
         <dl className="mini-stats">
+          <div><dt>Touge Score</dt><dd className="mini-score">{active.score}</dd></div>
           <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>
           <div><dt>Bends</dt><dd>{active.bends}</dd></div>
-          <div><dt>Speed guide</dt><dd>{active.speed}</dd></div>
+          <div><dt>Speed</dt><dd>{active.speed}</dd></div>
         </dl>
         <Link className="detail-cta" href={`/roads/${active.id}`}>Full road guide, sources &amp; speed evidence →</Link>
       </article>}

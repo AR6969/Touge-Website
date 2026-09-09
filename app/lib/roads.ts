@@ -16,6 +16,15 @@ export type Road = {
   osmWayIds: number[];
   reviewed: string;
   shape: { lengthMi: number; bends: number; switchbacks: number; curvature: number; bendsPerMile: number };
+  /** Null only if elevation has not been fetched for this road yet. */
+  elevation: {
+    climbFt: number; highFt: number; lowFt: number;
+    reliefFt: number; maxGradient: number; climbPerMile: number;
+  } | null;
+  /** Elevation in feet along the longest continuous segment, for the profile chart. */
+  profile: { points: number[]; miles: number; coverage: number } | null;
+  /** The Touge Score and the three weighted parts it is made of. See /method. */
+  score: { score: number; corners: number; climb: number; technical: number };
 };
 
 /** What the map component needs. Everything else stays on the server. */
@@ -24,12 +33,21 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
   lengthMi: number;
   bends: number;
   speed: string;
+  score: number;
 };
 
 export const roads = catalog as Road[];
 
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 const curvatureRanks = new Map(byCurvature.map((road, index) => [road.id, index + 1]));
+
+/** Ranked by Touge Score, the site's headline ordering. */
+export const byScore = [...roads].sort((a, b) => b.score.score - a.score.score || a.name.localeCompare(b.name));
+const scoreRanks = new Map(byScore.map((road, index) => [road.id, index + 1]));
+
+export function scoreRank(road: Road) {
+  return scoreRanks.get(road.id) ?? roads.length;
+}
 
 export const difficultyColors = ["#78caba", "#eac47c", "#e99488"];
 export const difficultyLabels = ["Relaxed", "Winding", "Technical"];
@@ -87,6 +105,7 @@ export function toSummary(road: Road): RoadSummary {
     lengthMi: road.shape.lengthMi,
     bends: road.shape.bends,
     speed: speedGuide(road).value,
+    score: road.score.score,
   };
 }
 
