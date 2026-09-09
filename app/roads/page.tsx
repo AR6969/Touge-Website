@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { curviest, difficultyColors, roads } from "../lib/roads";
+import { curviest, difficultyColors, longest, roads } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
@@ -38,6 +38,25 @@ export default function RoadsIndex() {
           Every road in the collection, ranked by degrees of direction change per mile. {totalMiles} miles in total,
           measured from OpenStreetMap centrelines. Difficulty is our editorial rating of width, bends and sightlines.
         </p>
+        <section aria-labelledby="longest">
+          <h2 id="longest">The longest drives</h2>
+          <ul className="card-list">
+            {longest.slice(0, 6).map(road => (
+              <li key={road.id}>
+                <Link href={`/roads/${road.id}`}>
+                  <strong>{road.name}</strong>
+                  <span className="card-meta">
+                    <i style={{ background: difficultyColors[road.difficulty - 1] }} />
+                    {road.shape.lengthMi} mi · {road.shape.bends} bends · {road.area}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section aria-labelledby="ranked">
+        <h2 id="ranked">Every road, ranked by turning per mile</h2>
         <div className="table-scroll">
           <table className="rank-table">
             <thead>
@@ -63,6 +82,7 @@ export default function RoadsIndex() {
             </tbody>
           </table>
         </div>
+        </section>
         <p><Link className="more-link" href="/">Back to the map →</Link></p>
       </main>
       <SiteFooter />

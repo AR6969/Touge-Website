@@ -13,9 +13,9 @@ button, a, summary { -webkit-tap-highlight-color: transparent; touch-action: man
 button { font: inherit; cursor: pointer; }
 button:disabled { cursor: default; }
 button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-/* The map is the hook, but it no longer owns the whole viewport: the written
-   content below it is what search engines and first-time readers actually read. */
-.explorer { height: min(76dvh, 780px); min-height: 420px; display: flex; flex-direction: column; }
+/* The first screen is the map and nothing else. The header is 74px, so the map
+   fills exactly the rest of the viewport and the intro strip starts below the fold. */
+.explorer { height: calc(100dvh - 74px); min-height: 420px; display: flex; flex-direction: column; }
 .header { height: 74px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 30px; gap: 24px; border-bottom: 1px solid #333e39; background: #141a17; }
 .brand { display: flex; align-items: center; margin: 0; font-size: 21px; letter-spacing: -.6px; font-weight: 600; white-space: nowrap; color: inherit; text-decoration: none; }
 .brand-symbol { color: var(--accent); font-size: 30px; margin-right: 12px; font-weight: 400; }
@@ -79,6 +79,16 @@ summary { cursor: pointer; }
 .mini-stats dd { margin: 5px 0 0; font-size: 16px; font-weight: 500; }
 .detail-cta { display: block; padding: 11px 0 0; border-top: 1px solid #394d3f; color: var(--accent); font-size: 12px; text-decoration: none; }
 .detail-cta:hover { text-decoration: underline; }
+
+/* The compact strip under the map on the home page. */
+.home-intro { max-width: 1080px; width: 100%; margin: 0 auto; padding: 52px 30px 56px; color: #c2cfc6; }
+.home-intro h1 { margin: 0 0 16px; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; letter-spacing: -1px; font-weight: 600; color: var(--foreground); }
+.home-intro p { margin: 0 0 30px; max-width: 74ch; font-size: 16px; line-height: 1.7; }
+.home-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.home-links a { display: flex; flex-direction: column; gap: 6px; padding: 16px 17px; border: 1px solid #2f3b34; border-radius: 8px; background: #19211d; color: var(--foreground); text-decoration: none; }
+.home-links a:hover { border-color: #55705f; background: #1e2823; }
+.home-links strong { font-size: 15px; font-weight: 500; }
+.home-links span { color: #93a699; font-size: 12.5px; line-height: 1.5; }
 
 /* ---- Written pages ---- */
 .prose { max-width: 1080px; width: 100%; margin: 0 auto; padding: 44px 30px 64px; font-size: 15px; line-height: 1.75; color: #c2cfc6; }
@@ -168,7 +178,8 @@ summary { cursor: pointer; }
   .detail h2 { font-size: 21px; }
   .road-picker { left: 12px; right: 12px; bottom: 105px; width: auto; max-height: calc(100% - 230px); }
   .map-status, .empty-hint { top: 140px; left: 12px; }
-  .explorer { height: min(72dvh, 620px); }
+  .explorer { height: calc(100dvh - 100px); }
+  .home-intro { padding: 34px 18px 42px; }
   .prose { padding: 32px 18px 48px; }
   .prose section { margin-top: 40px; }
   .mini-stats { gap: 14px; }
