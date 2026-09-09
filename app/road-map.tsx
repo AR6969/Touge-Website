@@ -65,7 +65,20 @@ export default function RoadMap({ id, name, bounds, color }: {
       };
       map.on("load", begin);
       map.on("styledata", () => { if (map.isStyleLoaded()) begin(); });
+      // Events alone are not enough: if the style finishes before these
+      // listeners attach, no event ever arrives and the overlay sticks. Poll
+      // the actual readiness flag as well, so the outcome does not depend on
+      // winning a race.
+      const ready = window.setInterval(() => {
+        if (disposed || started) { window.clearInterval(ready); return; }
+        if (map.isStyleLoaded()) { window.clearInterval(ready); begin(); }
+      }, 200);
+
       map.on("error", () => { if (!loaded) updateStatus("The map could not finish loading."); });
+      // Same reason as the explorer: fail loudly rather than sitting on "Loading map…".
+      window.setTimeout(() => {
+        if (!loaded && !disposed) updateStatus("The map is taking longer than expected. Reload to try again.");
+      }, 10000);
       observer = new ResizeObserver(() => map.resize());
       observer.observe(container.current);
     } catch {

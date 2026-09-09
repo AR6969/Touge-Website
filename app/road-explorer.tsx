@@ -153,6 +153,15 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         };
         current.on("load", begin);
         current.on("styledata", () => { if (current.isStyleLoaded()) begin(); });
+        // Events alone are not enough: if the style finishes before these
+        // listeners attach, no event ever arrives and the overlay sticks. Poll
+        // the actual readiness flag as well, so the outcome does not depend on
+        // winning a race.
+        const ready = window.setInterval(() => {
+          if (disposed || started) { window.clearInterval(ready); return; }
+          if (current.isStyleLoaded()) { window.clearInterval(ready); begin(); }
+        }, 200);
+
         current.on("error", event => {
           if (loaded) return;
           const code = (event.error as Error & { status?: number }).status;
@@ -166,9 +175,11 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         updateStatus("The map could not start. Try another browser or enable graphics acceleration.");
       }
     });
+    // 25s of an unexplained "Loading map…" is indistinguishable from a broken
+    // page. Say something actionable much sooner.
     const timeout = window.setTimeout(() => {
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
-    }, 25000);
+    }, 10000);
     return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
   }, [attempt, roads, landmarks, region, regionConfig]);
 
