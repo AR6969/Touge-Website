@@ -8,12 +8,12 @@ import { siteUrl } from "../lib/site";
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 
 export const metadata: Metadata = {
-  title: `All ${roads.length} Driving Roads in Northern California`,
+  title: `All ${roads.length} Driving Roads in California`,
   description:
-    `Compare ${roads.length} driving roads across the Bay Area, Santa Cruz, Napa and Monterey — ${totalMiles} miles ` +
+    `Compare ${roads.length} driving roads across the Bay Area, Los Angeles, Malibu and Orange County — ${totalMiles} miles ` +
     "ranked by length, bend count, climb per mile and degrees of turning per mile.",
   alternates: { canonical: "/roads" },
-  openGraph: { url: "/roads", title: `All ${roads.length} driving roads in Northern California` },
+  openGraph: { url: "/roads", title: `All ${roads.length} driving roads in California` },
 };
 
 export default function RoadsIndex() {

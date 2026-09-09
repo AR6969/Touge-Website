@@ -5,10 +5,11 @@ import RoadMap from "../../road-map";
 import ElevationProfile from "../../elevation-profile";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import {
-  curvatureRank, difficultyLabels, getRoad, nearbyRoads, roads, slugifyArea, speedGuide,
+  curvatureRank, difficultyLabels, getRoad, nearbyRoads, roads, roadMapHref, slugifyArea, speedGuide,
 } from "../../lib/roads";
 import { colorFor } from "../../lib/colors";
-import { reviewedOn, siteUrl } from "../../lib/site";
+import { siteUrl } from "../../lib/site";
+import { drives } from "../../lib/drives";
 
 export const dynamicParams = false;
 
@@ -43,6 +44,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const guide = speedGuide(road);
   const rank = curvatureRank(road);
   const nearby = nearbyRoads(road);
+  const relatedDrives = drives.filter(drive => drive.steps.some(step => step.roadId === road.id));
   const color = colorFor(road.character);
   const mapsQuery = encodeURIComponent(`${road.name.replace(/ ·.*/, "")}, ${road.area}, California`);
 
@@ -88,6 +90,10 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </div>
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />
+        {road.access && <p className="warning">{road.access.note}{" "}
+          <a href={road.access.url} target="_blank" rel="noopener noreferrer">Check current access ↗</a>
+          <span className="fine"> · Reviewed {road.access.checked}</span>
+        </p>}
 
         <section aria-labelledby="shape">
           <h2 id="shape">Road shape</h2>
@@ -160,8 +166,20 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
               </span>
             </li>
           </ul>
-          <p className="fine">Reviewed {reviewedOn}. The trace shows selected road sections, not a navigation route.</p>
+          <p className="fine">Reviewed {road.reviewed}. The trace shows selected road sections, not a navigation route.</p>
         </section>
+
+        {relatedDrives.length > 0 && <section aria-labelledby="driving-guides">
+          <h2 id="driving-guides">Drives that include this road</h2>
+          <ul className="card-list">
+            {relatedDrives.map(drive => <li key={drive.slug}>
+              <Link href={`/drives/${drive.slug}`}>
+                <strong>{drive.title}</strong>
+                <span className="card-body">{drive.character} · {drive.start} → {drive.finish}</span>
+              </Link>
+            </li>)}
+          </ul>
+        </section>}
 
         <section aria-labelledby="nearby">
           <h2 id="nearby">Roads nearby</h2>
@@ -181,6 +199,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </section>
 
         <div className="detail-bottom">
+          <Link href={roadMapHref(road)}>View on the {road.mapRegion === "los-angeles" ? "Los Angeles" : "Bay Area"} map →</Link>
           <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Check road conditions ↗</a>
           <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
           <Link href="/roads">All {roads.length} roads →</Link>

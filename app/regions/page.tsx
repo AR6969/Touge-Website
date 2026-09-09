@@ -7,8 +7,8 @@ import { colorFor } from "../lib/colors";
 export const metadata: Metadata = {
   title: "Driving Roads by Region",
   description:
-    "Browse Northern California driving roads by area — the Peninsula, Santa Cruz Mountains, East Bay, Marin, " +
-    "Napa, the Diablo Range and Monterey.",
+    "Browse California driving roads by area — the Bay Area, Malibu, the Angeles and San Gabriel Mountains, " +
+    "Orange County, Santa Cruz, Napa and Monterey.",
   alternates: { canonical: "/regions" },
   openGraph: { url: "/regions", title: "Driving roads by region" },
 };
@@ -23,7 +23,7 @@ export default function RegionsIndex() {
         </nav>
         <h1>Driving roads by region</h1>
         <p className="lede">
-          {regions.length} areas across Northern California, from the Peninsula ridge roads to the Monterey coast.
+          {regions.length} areas across California, from the Bay Area to Malibu, the Angeles mountains and Orange County.
         </p>
         {regions.map(region => (
           <section key={region.slug} aria-labelledby={region.slug}>

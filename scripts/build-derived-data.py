@@ -122,6 +122,15 @@ labels = [{
 } for f in overview]
 write_json(ROOT / 'public/data/road-labels.geojson', {'type': 'FeatureCollection', 'features': labels})
 
+# Regional overview payloads keep the map from downloading the other region.
+for region in ('bay-area', 'los-angeles'):
+    ids = {road['id'] for road in catalog if road.get('mapRegion', 'bay-area') == region}
+    for name, features in (('roads', overview), ('road-labels', labels)):
+        write_json(ROOT / f'public/data/{region}/{name}.geojson', {
+            'type': 'FeatureCollection',
+            'features': [feature for feature in features if feature['properties']['id'] in ids],
+        })
+
 # Published so /method quotes the real constants rather than a copy that can drift.
 (ROOT / 'app/data/score-config.json').write_text(json.dumps({
     'cornerAnchor': scoring.CORNER_ANCHOR,

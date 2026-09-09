@@ -1,0 +1,6 @@
+[out:json][timeout:90];
+(
+  way[highway~"^(primary|secondary|tertiary|unclassified|residential|construction)$"][name~"^(Latigo Canyon Road|Piuma Road|Stunt Road|Schueren Road|Saddle Peak Road|Decker Road|Decker Canyon Road|Encinal Canyon Road|Mulholland Highway|Yerba Buena Road|Little Sycamore Canyon Road|Topanga Canyon Boulevard|Old Topanga Canyon Road|Tuna Canyon Road|Las Flores Canyon Road|Rambla Pacifico|Rambla Pacifico Street|Malibu Canyon Road|Las Virgenes Road|Kanan Dume Road|Kanan Road|Pacific Coast Highway|Angeles Crest Highway|Angeles Forest Highway|Big Tujunga Canyon Road|Upper Big Tujunga Canyon Road|Little Tujunga Canyon Road|Sand Canyon Road|Glendora Mountain Road|Glendora Ridge Road|Mount Baldy Road|Mt. Baldy Road|Mount Wilson Red Box Road|Mount Wilson Road|San Gabriel Canyon Road|Santiago Canyon Road|Live Oak Canyon Road|Trabuco Canyon Road|Ortega Highway|Carbon Canyon Road|Laguna Canyon Road|Coast Highway|North Coast Highway|South Coast Highway|East Coast Highway|West Coast Highway|Silverado Canyon Road)$"](33.42,-119.10,34.52,-117.25);
+  way[highway~"^(primary|secondary|tertiary|construction)$"][ref~"(^|;)(CA 1|CA 2|CA 23|CA 27|CA 39|CA 74|CA 133|CA 142)(;|$)"](33.42,-119.10,34.52,-117.25);
+);
+out geom;

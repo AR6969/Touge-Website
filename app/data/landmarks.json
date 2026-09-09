@@ -3,7 +3,7 @@
     "id": "alices",
     "name": "Alice's",
     "kind": "Junction",
-    "note": "Skyline Blvd (CA 35) × La Honda Road (CA 84) — the Four Corners intersection.",
+    "note": "Popular motorcycle meetup spot at Skyline Blvd (CA 35) and La Honda Road (CA 84), with a gas station and deli at the junction.",
     "coordinates": [
       -122.265403,
       37.386668
@@ -21,9 +21,11 @@
   },
   {
     "id": "saratoga-gas",
-    "name": "Saratoga Gas",
-    "kind": "Fuel",
-    "note": "The gas station in downtown Saratoga, at the bottom of the front side of Highway 9.",
+    "name": "Chevron",
+    "kind": "Fuel & meetup",
+    "note": "Popular meetup spot in downtown Saratoga before heading up Highway 9. Sells race fuel.",
+    "sourceUrl": "https://www.240turbo.com/Unleaded_Racing_Fuel_in_SoCal.html",
+    "sourceLabel": "Fuel listing",
     "coordinates": [
       -122.03243,
       37.259518
@@ -43,10 +45,34 @@
     "id": "skyline-vista",
     "name": "Skyline Vista Point",
     "kind": "Viewpoint",
-    "note": "Vista pullout on Skyline Blvd (CA 35), above the Peninsula.",
+    "note": "Panoramic views of the Bay Area from Skyline Blvd (CA 35), looking directly out over Stanford.",
     "coordinates": [
       -122.204264,
       37.324514
+    ]
+  },
+  {
+    "id": "downtown-pescadero",
+    "name": "Downtown Pescadero",
+    "kind": "Coffee & town stop",
+    "note": "A small downtown with cute coffee shops and lots of character. A lovely place to stretch your legs and grab a coffee before heading back to the coast.",
+    "sourceUrl": "https://www.visithalfmoonbay.org/places/downtown-local/",
+    "sourceLabel": "Coffee in town",
+    "coordinates": [
+      -122.383447,
+      37.252235
+    ]
+  },
+  {
+    "id": "ritz-carlton-half-moon-bay",
+    "name": "Ritz-Carlton",
+    "kind": "Coastal stop",
+    "note": "The Ritz-Carlton, Half Moon Bay: great ocean views and a place to grab a drink, just off Highway 1 on Miramontes Point Road. Don’t drink and drive.",
+    "sourceUrl": "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/",
+    "sourceLabel": "Hotel details",
+    "coordinates": [
+      -122.44156,
+      37.43378
     ]
   }
 ]

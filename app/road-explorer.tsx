@@ -6,6 +6,7 @@ import mapboxgl, { type ExpressionSpecification, type FilterSpecification } from
 import "mapbox-gl/dist/mapbox-gl.css";
 import type { Landmark, RoadSummary } from "./lib/roads";
 import { characterColors, characters, colorFor, landmarkColor, type Character } from "./lib/colors";
+import { mapRegions, type MapRegion } from "./lib/map-regions";
 
 // Colour is character, so the filter buttons and the roads they filter agree.
 const roadColor: ExpressionSpecification = [
@@ -20,9 +21,9 @@ const layers = ["road-casing", "road-lines", "road-hit", "road-names", "road-dot
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
 const tokenMessage = "Add a public Mapbox token to NEXT_PUBLIC_MAPBOX_TOKEN in .env.local, then restart the server.";
-const initialCenter: [number, number] = [-122.10, 37.57];
 
-export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[]; landmarks: Landmark[] }) {
+export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: { roads: RoadSummary[]; landmarks: Landmark[]; region?: MapRegion }) {
+  const regionConfig = mapRegions[region];
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
@@ -30,9 +31,11 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
   const [attempt, setAttempt] = useState(0);
   const [ready, setReady] = useState(false);
   const [showRoads, setShowRoads] = useState(false);
+  const [roadQuery, setRoadQuery] = useState("");
   const [landmark, setLandmark] = useState<string | null>(null);
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
+  const matchingRoads = visible.filter(road => road.name.toLowerCase().includes(roadQuery.trim().toLowerCase()));
   const active = visible.find(road => road.id === selected);
   const activeLandmark = landmarks.find(mark => mark.name === landmark);
 
@@ -56,8 +59,9 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
         }
         const current = new mapboxgl.Map({
           container: container.current!, accessToken: token, attributionControl: false,
-          style: "mapbox://styles/mapbox/dark-v11", center: initialCenter,
+          style: "mapbox://styles/mapbox/dark-v11", center: regionConfig.center,
           zoom: container.current!.clientWidth < 640 ? 7.3 : 8,
+          ...(region === "los-angeles" ? { bounds: regionConfig.bounds, fitBoundsOptions: { padding: { top: 135, right: 40, bottom: 65, left: 40 } } } : {}),
         });
         instance = current;
         map.current = current;
@@ -67,7 +71,7 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
         current.on("load", async () => {
           try {
             const [lines, labels] = await Promise.all(["roads", "road-labels"].map(async name => {
-              const response = await fetch(`/data/${name}.geojson`, { signal: abort.signal });
+              const response = await fetch(`/data/${region}/${name}.geojson`, { signal: abort.signal });
               if (!response.ok) throw new Error("Road data unavailable");
               return response.json();
             }));
@@ -134,7 +138,9 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
             updateStatus("");
             setReady(true);
             const roadId = new URLSearchParams(window.location.search).get("road");
-            if (roads.some(road => road.id === roadId)) setSelected(roadId);
+            if (roads.some(road => road.id === roadId)) {
+              setSelected(roadId); setLandmark(null); setShowRoads(false);
+            }
           } catch {
             if (!disposed) updateStatus("Roads could not load. Check your connection and try again.");
           }
@@ -156,7 +162,7 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
     }, 25000);
     return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
-  }, [attempt, roads, landmarks]);
+  }, [attempt, roads, landmarks, region, regionConfig]);
 
   useEffect(() => {
     if (!ready || !map.current?.getLayer("road-lines")) return;
@@ -181,12 +187,12 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
     if (active && next.length && !next.includes(active.character as Character)) setSelected(null);
   }
   function resetMap() {
-    setSelected(null); setEnabled([]); setShowRoads(false);
-    map.current?.fitBounds([[-123.13, 36.42], [-121.35, 38.80]], { padding: { top: 125, right: 45, bottom: 65, left: 45 }, duration: 1000 });
+    setSelected(null); setLandmark(null); setEnabled([]); setShowRoads(false); setRoadQuery("");
+    map.current?.fitBounds(regionConfig.bounds, { padding: { top: 135, right: 45, bottom: 65, left: 45 }, duration: 1000 });
   }
 
   return (
-    <section className="map-panel" aria-label="Northern California driving roads map">
+    <section className="map-panel" aria-label={`${regionConfig.name} driving roads map`}>
       <div ref={container} className="map" />
       <fieldset className="character-filter">
         <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
@@ -202,17 +208,15 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
       </fieldset>
       <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
       <div className="map-bottom">
-        <div className="difficulty-legend" aria-label="Difficulty scale">
-          <span>Difficulty</span>
-          <span>1 Relaxed</span><span>2 Winding</span><span>3 Demanding</span>
-          <span className="legend-note">Colour shows road character</span>
-        </div>
-        <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
+        <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
       </div>
       {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
-        <div className="picker-title">Bay Area & nearby drives<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button></div>
-        {visible.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setShowRoads(false); }}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
-        {visible.length === 0 && <p>Select a road character above to show roads.</p>}
+        <div className="picker-title">
+          {regionConfig.pickerTitle}<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button>
+          <input className="road-search" type="search" aria-label="Find a road" placeholder="Find a road…" value={roadQuery} onChange={event => setRoadQuery(event.target.value)} autoComplete="off" spellCheck={false} />
+        </div>
+        {matchingRoads.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setLandmark(null); setShowRoads(false); }}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
+        {matchingRoads.length === 0 && <p role="status">No matching roads.{enabled.length > 0 && " Try clearing the road character filters."}</p>}
       </div>}
       {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
       {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
@@ -221,6 +225,7 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
         <p className="eyebrow">{activeLandmark.kind}</p>
         <h2>{activeLandmark.name}</h2>
         <p>{activeLandmark.note}</p>
+        {activeLandmark.sourceUrl && <a className="detail-cta" href={activeLandmark.sourceUrl} target="_blank" rel="noopener noreferrer">{activeLandmark.sourceLabel ?? "More information"} ↗</a>}
       </article>}
       {active && <article className="detail" aria-label={`${active.name} details`}>
         <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
@@ -228,6 +233,7 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
         <h2>{active.name}</h2>
         <div className="road-badges"><span><i style={{ background: colorFor(active.character) }} /> {active.character}</span><span>Difficulty {active.difficulty}/3</span></div>
         <p>{active.description}</p>
+        {active.access && <p className="fine">{active.access.note}{" "}<a href={active.access.url} target="_blank" rel="noopener noreferrer">Check access ↗</a></p>}
         <dl className="mini-stats">
           <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>
           <div><dt>Bends</dt><dd>{active.bends}</dd></div>

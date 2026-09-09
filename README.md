@@ -93,12 +93,23 @@ To get coordinates: right-click the spot in Google Maps and click the lat/long i
 shows to copy it. That gives `37.25852, -122.12197` — **reverse the order** when
 pasting in.
 
-Sanity-check a new point by measuring it against the road geometry before trusting
-it; every current landmark sits within 50 m of the road it belongs to, so a
-longitude/latitude transposition shows up immediately as a point miles offshore.
+Sanity-check a new point against its actual location before trusting it. Junctions
+should sit on their roads; destinations such as the Ritz-Carlton sit at the property,
+off the main road. The Ritz-Carlton coordinate is the building location from
+[OpenStreetMap via Mapcarta](https://mapcarta.com/W391400186), with the address and
+access checked against the hotel's website. Optional `sourceUrl` and `sourceLabel`
+fields add a reference link to the detail card.
 
 Pending: **Lower Skid** (the pullout on the back side of Highway 9) is not placed —
 its location has not been verified. A pin in the wrong pullout is worse than none.
+
+## Driving guides
+
+`app/lib/drives.ts` holds hand-maintained itineraries, stops, return routes and
+references. `/drives` lists them and `/drives/[slug]` renders each guide. Road IDs
+in each itinerary link to the existing road pages; those pages link back to the
+guides. New guides are included in the sitemap automatically. Keep directions
+explicit and distinguish the main drive from any optional return or extension.
 
 ## Attribution
 

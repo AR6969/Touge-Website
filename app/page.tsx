@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { curviest, landmarks, roads, toSummary } from "./lib/roads";
+import { bayAreaRoads as roads, landmarks, toSummary } from "./lib/roads";
 import { siteName, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
@@ -13,6 +13,7 @@ const tagline =
   `${roads.length} driving roads across the Bay Area, Santa Cruz, Napa and Monterey, with corners counted from OpenStreetMap geometry.`;
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
+const curviest = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 
 export default function Home() {
   const structured = {
@@ -37,7 +38,7 @@ export default function Home() {
     <>
       <SiteHeader current="map" />
       <div className="explorer">
-        <RoadExplorer roads={roads.map(toSummary)} landmarks={landmarks} />
+        <RoadExplorer key="bay-area" roads={roads.map(toSummary)} landmarks={landmarks} region="bay-area" />
       </div>
 
       {/* Below the fold: the first screen stays pure map. This strip exists so the
@@ -52,9 +53,9 @@ export default function Home() {
           any speed figure shown.
         </p>
         <nav className="home-links" aria-label="Sections">
-          <Link href="/roads"><strong>All {roads.length} roads</strong><span>Ranked and compared in one table</span></Link>
+          <Link href="/roads"><strong>All California roads</strong><span>Ranked and compared in one table</span></Link>
           <Link href="/regions"><strong>Browse by region</strong><span>From the Peninsula to Monterey</span></Link>
-          <Link href={`/roads/${curviest[0].id}`}><strong>Curviest road</strong><span>{curviest[0].name}, {curviest[0].shape.curvature}°/mile</span></Link>
+          <Link href="/drives"><strong>Bay Area driving guides</strong><span>Mountain roads, coastal drives &amp; loops</span></Link>
           <Link href="/method"><strong>How this is built</strong><span>Ratings, measurements and sources</span></Link>
         </nav>
       </main>

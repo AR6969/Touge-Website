@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-09-09",
+  "status": "research-only; not imported by the application",
+  "report": "los-angeles-road-research.md",
+  "scope": "Paved public road candidates in greater LA, Malibu/Santa Monica Mountains and Orange County, with explicitly labeled county-boundary extensions.",
+  "ratingMethod": "Existing editorial difficulty 1 Relaxed / 2 Winding / 3 Demanding. Character has no recommended mph target. All proposed ratings require selected-geometry review.",
+  "counts": {
+    "total": 32,
+    "first": 21,
+    "secondary": 10,
+    "hold": 1
+  },
+  "roads": [
+    {
+      "id": "latigo-canyon",
+      "name": "Latigo Canyon Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to Kanan Dume Road",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Tight canyon candidate with a useful coast-to-ridge connection; separate city and county speed evidence.",
+      "sourceRefs": [
+        "5",
+        "6",
+        "10",
+        "11"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "30 mph",
+            "scope": "PCH to Malibu northern city limit",
+            "sourceRef": "10"
+          },
+          {
+            "value": "30 mph",
+            "scope": "Kanan Dume to the Malibu boundary specified in the adopted April 30, 2019 county order",
+            "sourceRef": "11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "piuma-road",
+      "name": "Piuma Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Malibu Canyon Road to Rambla Pacifico Road",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Elevated winding-road candidate; connect Stunt through the actual Schueren junctions, and verify the selected eastern endpoint.",
+      "sourceRefs": [
+        "5",
+        "8",
+        "12"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "stunt-road",
+      "name": "Stunt Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Mulholland Highway to Schueren Road",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Short mountain link suited to a Piuma guide; do not draw a direct Stunt–Piuma intersection.",
+      "sourceRefs": [
+        "6",
+        "8"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "schueren-saddle-peak",
+      "name": "Schueren / Saddle Peak connector",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Schueren from Stunt through the Piuma connection; optional Saddle Peak branch toward Tuna",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Connects otherwise misleading route descriptions; distinguish the two named roads and confirm each legal junction before tracing.",
+      "sourceRefs": [
+        "8",
+        "9"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "decker-canyon",
+      "name": "Decker Road · SR 23",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to Mulholland Highway",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Western canyon candidate; do not merge the entire inland SR 23 corridor into the coastal climb.",
+      "sourceRefs": [
+        "5",
+        "13"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "encinal-canyon",
+      "name": "Encinal Canyon Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to Mulholland Highway",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Complementary western canyon connection; the city code covers only the lower municipal section.",
+      "sourceRefs": [
+        "6",
+        "10"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "40 mph",
+            "scope": "PCH to Malibu northern city limit only",
+            "sourceRef": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mulholland-highway-malibu",
+      "name": "Mulholland Highway · Malibu mountains",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Select paved sections between Decker Road and Stunt Road; identify The Snake separately",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Backbone connecting several canyon choices; isolate The Snake for its own access and character review.",
+      "sourceRefs": [
+        "6",
+        "11",
+        "14"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "40 mph",
+            "scope": "Westlake Boulevard to Encinal; historical April 30, 2019 order",
+            "sourceRef": "11"
+          },
+          {
+            "value": "45 mph",
+            "scope": "Encinal to Stunt; historical April 30, 2019 order, check subsequent changes",
+            "sourceRef": "11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "yerba-buena-little-sycamore",
+      "name": "Yerba Buena / Little Sycamore",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to Mulholland Highway via the named-road transition",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Western extension crossing the LA/Ventura area; preserve the name change instead of silently routing onto a park trail.",
+      "sourceRefs": [
+        "1",
+        "15"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "topanga-canyon",
+      "name": "Topanga Canyon Boulevard · SR 27",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to the Mulholland Highway junction",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Useful canyon and village corridor, with active repair constraints; keep a construction note attached to affected sections.",
+      "sourceRefs": [
+        "16",
+        "17"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "construction",
+        "note": "May 12 overnight reopening supersedes earlier hours. Localized 15 mph repair zone and separate paving work require current checks.",
+        "sourceRefs": [
+          "16",
+          "17"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "old-topanga-canyon",
+      "name": "Old Topanga Canyon Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Topanga Canyon Boulevard to Mulholland Highway",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Smaller-road alternative within the eastern network; verify residential access and current county restrictions.",
+      "sourceRefs": [
+        "6",
+        "9"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "tuna-canyon",
+      "name": "Tuna Canyon Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Saddle Peak Road to PCH, subject to verified direction boundaries",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Distinctive coastward option; lower road is one-way southbound, while the northern portion includes two-way access.",
+      "sourceRefs": [
+        "9",
+        "18"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "direction-verification-required",
+        "note": "Lower city portion is one-way southbound; northern portion includes two-way travel. Resolve the exact transition and current restrictions before routing.",
+        "sourceRefs": [
+          "18"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "las-flores-canyon",
+      "name": "Las Flores Canyon Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH toward Rambla Pacifico / Schueren, with exact public connection to be verified",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Potential eastern climb; do not let routing choose an unverified gated Rambla Pacifico alternative.",
+      "sourceRefs": [
+        "9",
+        "10"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "25 mph",
+            "scope": "Malibu city portion only",
+            "sourceRef": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "malibu-canyon-las-virgenes",
+      "name": "Malibu Canyon / Las Virgenes",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to US 101 along the named-road transition",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Practical canyon connector with a clear coast-to-inland role; keep the Malibu city speed section distinct.",
+      "sourceRefs": [
+        "5",
+        "6",
+        "10"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "40 mph",
+            "scope": "PCH to Malibu northern city limit only; not the Las Virgenes continuation",
+            "sourceRef": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kanan-dume",
+      "name": "Kanan Dume Road",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "PCH to Mulholland Highway",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Useful link between western canyons; separate this segment from the longer Kanan Road corridor inland.",
+      "sourceRefs": [
+        "6",
+        "10"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "45 mph",
+            "scope": "Malibu city section only",
+            "sourceRef": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pch-malibu",
+      "name": "Pacific Coast Highway · Malibu",
+      "region": "Los Angeles",
+      "area": "Malibu / Santa Monica Mountains",
+      "proposedSegment": "Topanga Canyon Boulevard to the Yerba Buena Road area",
+      "difficulty": 1,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Scenic coastal backbone; its access points, traffic and changing sections justify a different character from the Bay Area coastal entry.",
+      "sourceRefs": [
+        "5",
+        "17",
+        "19"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "angeles-crest-west",
+      "name": "Angeles Crest Highway · western SR 2",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "La Cañada Flintridge to Upper Big Tujunga Canyon Road junction",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Flagship mountain approach; this deliberately bounded candidate avoids claiming a through-route to Wrightwood.",
+      "sourceRefs": [
+        "1",
+        "21",
+        "24"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "bounded-candidate",
+        "note": "Proposed western segment stops at Upper Big Tujunga. SR 2 has middle-mountain closures; do not publish a through-route to Wrightwood.",
+        "sourceRefs": [
+          "24"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "angeles-forest",
+      "name": "Angeles Forest Highway · N3",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Clear Creek / SR 2 to Upper Big Tujunga Canyon Road junction initially",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Core connection for a compact mountain circuit; a northern extension toward Vincent can follow later.",
+      "sourceRefs": [
+        "21",
+        "22"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "big-tujunga",
+      "name": "Big Tujunga Canyon Road",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Los Angeles city boundary to Angeles Forest Highway",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Alternative mountain approach with a specifically documented county speed section.",
+      "sourceRefs": [
+        "1",
+        "23"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "45 mph",
+            "scope": "Los Angeles city boundary to Angeles Forest Highway; adopted August 12, 2025",
+            "sourceRef": "23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "upper-big-tujunga",
+      "name": "Upper Big Tujunga Canyon Road",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Angeles Forest Highway to Angeles Crest Highway",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Important paved connector; verify routing stays on this road throughout.",
+      "sourceRefs": [
+        "1",
+        "21",
+        "22"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "little-tujunga",
+      "name": "Little Tujunga Canyon Road",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Southern approach through Bear Divide toward Sand Canyon Road",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "hold",
+      "editorialNote": "Worth retaining as a candidate, but recent reports of northern access problems prevent a confident through-route recommendation.",
+      "sourceRefs": [
+        "1",
+        "25"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "access-unresolved",
+        "note": "Historical 2026 community reports describe northern approach restrictions. Do not publish a through-route without current authoritative verification.",
+        "sourceRefs": [
+          "1",
+          "25",
+          "29"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "glendora-mountain",
+      "name": "Glendora Mountain Road · GMR",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Glendora approach to East Fork Road, via the Glendora Ridge junction",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Main technical-road candidate in the eastern cluster; verify both endpoint gates and any intermediate restriction.",
+      "sourceRefs": [
+        "1",
+        "26"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "gate-check-required",
+        "note": "Recent holiday closure discussion does not prove gates subsequently reopened.",
+        "sourceRefs": [
+          "26",
+          "29"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "glendora-ridge",
+      "name": "Glendora Ridge Road · GRR",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Glendora Mountain Road to Mount Baldy Road",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Ridge connection with a separate identity from GMR; current vehicle access needs a county check.",
+      "sourceRefs": [
+        "1",
+        "26"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "gate-check-required",
+        "note": "Verify vehicle access independently from bicycle access and scheduled reopening dates.",
+        "sourceRefs": [
+          "26",
+          "29"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "mount-baldy-road",
+      "name": "Mount Baldy Road",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Claremont boundary to Glendora Ridge Road; upper continuation kept separate",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Useful approach and return for the Glendora cluster; documented lower-road speed sections do not cover the ski-area ascent.",
+      "sourceRefs": [
+        "23"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "documented-sections-awaiting-trace-and-currentness-check",
+        "evidence": [
+          {
+            "value": "35 mph",
+            "scope": "Glendora Ridge Road to Mountain Avenue; August 12, 2025 order",
+            "sourceRef": "23"
+          },
+          {
+            "value": "45 mph",
+            "scope": "Mountain Avenue to defined Claremont boundary; August 12, 2025 order",
+            "sourceRef": "23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mount-wilson-red-box",
+      "name": "Mount Wilson Red Box Road",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Red Box / SR 2 to Mount Wilson Observatory access",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Destination spur for a shorter mountain itinerary; verify gate access and visitor parking requirements.",
+      "sourceRefs": [
+        "1",
+        "27"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "san-gabriel-canyon",
+      "name": "San Gabriel Canyon Road · SR 39",
+      "region": "Los Angeles",
+      "area": "Angeles / San Gabriel Mountains",
+      "proposedSegment": "Azusa to the Crystal Lake Road junction area",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Canyon out-and-back candidate; never represent the closed northern connection to SR 2 as a usable loop.",
+      "sourceRefs": [
+        "28"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "bounded-candidate",
+        "note": "Northern SR 39 is closed from 2 miles north of Crystal Lake Road to SR 2; proposed out-and-back ends below that closure.",
+        "sourceRefs": [
+          "28"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "santiago-canyon",
+      "name": "Santiago Canyon Road",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "Jamboree / Chapman transition to Live Oak Canyon Road",
+      "difficulty": 2,
+      "character": "High speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Main inland OC candidate with relatively open-road character; keep the southern junction’s speed evidence separate.",
+      "sourceRefs": [
+        "2",
+        "3",
+        "32"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "source-conflict-needs-verification",
+        "evidence": [
+          {
+            "value": "55 mph",
+            "scope": "Surveyed corridor sections in March 22, 2024 study; not field-verified current signage",
+            "sourceRef": "32"
+          },
+          {
+            "value": "50 mph",
+            "scope": "Live Oak junction described on report p. 89; report p. 92 instead assumes 55 mph, unresolved",
+            "sourceRef": "32"
+          }
+        ]
+      }
+    },
+    {
+      "id": "live-oak-trabuco",
+      "name": "Live Oak / Trabuco Canyon",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "Santiago Canyon Road via Live Oak and paved Trabuco Canyon Road toward Plano Trabuco Road",
+      "difficulty": 2,
+      "character": "Low speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Shaded, smaller-scale contrast to Santiago; preserve the paved county-road corridor rather than a similarly named forest branch.",
+      "sourceRefs": [
+        "2",
+        "3",
+        "33"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "segment-verification-required",
+        "note": "Trace the paved county corridor. Do not confuse it with Forest Road 6S13 in the current Airport Fire order.",
+        "sourceRefs": [
+          "33",
+          "35"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "ortega-highway",
+      "name": "Ortega Highway · SR 74",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "San Juan Capistrano to Grand Avenue / Lake Elsinore",
+      "difficulty": 3,
+      "character": "Technical",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Main longer OC mountain candidate; identify the Riverside County portion and construction constraints.",
+      "sourceRefs": [
+        "2",
+        "3",
+        "34"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "construction",
+        "note": "Sept 9 report lists overnight one-way control in a Riverside-side segment through Sept 12, 2026. Refresh before publication.",
+        "sourceRefs": [
+          "34"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "carbon-canyon",
+      "name": "Carbon Canyon Road · SR 142",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "Brea’s Valencia Avenue area to Chino Hills Parkway",
+      "difficulty": 2,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Short northern OC option; distinguish it from Carbon Canyon Road in Malibu.",
+      "sourceRefs": [
+        "30",
+        "31"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "laguna-canyon",
+      "name": "Laguna Canyon Road · SR 133",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "I-405 approach to PCH in Laguna Beach",
+      "difficulty": 1,
+      "character": "Medium speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Scenic access corridor candidate, with lower launch priority than the inland canyon pair; validate its exact scenic subsection.",
+      "sourceRefs": [
+        "31"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "pch-orange-county",
+      "name": "Pacific Coast Highway · Orange County",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "Newport Beach to Dana Point via Laguna Beach",
+      "difficulty": 1,
+      "character": "Low speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "first",
+      "editorialNote": "Coastal sightseeing counterpart; urban sections and stops make it a different experience from a mountain loop.",
+      "sourceRefs": [
+        "2",
+        "3"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "needs-current-check",
+        "note": "No current opening claim established for the complete proposed segment."
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    },
+    {
+      "id": "silverado-canyon",
+      "name": "Silverado Canyon Road",
+      "region": "Los Angeles",
+      "area": "Orange County",
+      "proposedSegment": "Santiago Canyon Road through Silverado to the verified end of the public paved town approach",
+      "difficulty": 2,
+      "character": "Low speed",
+      "ratingStatus": "provisional editorial judgment; validate selected geometry",
+      "priority": "secondary",
+      "editorialNote": "Village and canyon spur; do not automatically extend onto Maple Springs or assume a paved through-connection.",
+      "sourceRefs": [
+        "31",
+        "35"
+      ],
+      "geometryStatus": "not acquired",
+      "published": false,
+      "access": {
+        "status": "segment-verification-required",
+        "note": "Verify the public paved town approach endpoint. Do not infer Maple Springs access or suitability from its absence in one closure list.",
+        "sourceRefs": [
+          "35"
+        ]
+      },
+      "speed": {
+        "displaySummary": null,
+        "status": "unverified",
+        "evidence": []
+      }
+    }
+  ],
+  "sources": {
+    "1": {
+      "citation": "Reddit, r/Touge. [“Attention all who live in and around Los Angeles”](https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/), February 27, 2026 and subsequent comments. Community discovery and conflicting firsthand reports; not a source of legal limits or verified present access.",
+      "urls": [
+        "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      ]
+    },
+    "2": {
+      "citation": "Reddit, r/orangecounty. [“Best Saturday drives”](https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/), August 15, 2026. Local recommendations for Santiago, Live Oak, Ortega and coastal outings.",
+      "urls": [
+        "https://www.reddit.com/r/orangecounty/comments/1vpbasa/best_saturday_drives/"
+      ]
+    },
+    "3": {
+      "citation": "Reddit, r/orangecounty. [Driving-road discussion](https://www.reddit.com/r/orangecounty/comments/1e14d51/), July 12, 2024. Named connections in the Santiago–Live Oak–Trabuco corridor and Ortega recommendations.",
+      "urls": [
+        "https://www.reddit.com/r/orangecounty/comments/1e14d51/"
+      ]
+    },
+    "4": {
+      "citation": "Reddit, r/orangecounty. [Local driving-road discussion](https://www.reddit.com/r/orangecounty/comments/1987ha9/), January 2024. Counterevidence concerning commuter traffic and road expectations.",
+      "urls": [
+        "https://www.reddit.com/r/orangecounty/comments/1987ha9/"
+      ]
+    },
+    "5": {
+      "citation": "Rennlist. [“Question for CA members”](https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html), date not independently established. Indexed excerpts identify canyon preferences; full-page retrieval returned 403. Used only for discovery and attributed owner opinion.",
+      "urls": [
+        "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      ]
+    },
+    "6": {
+      "citation": "Helen’s Cycles. [“Our favorite rides and routes”](https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm), undated. Indexed route descriptions identify Latigo, Kanan, Encinal, Mulholland, Topanga, Stunt and Piuma connections. Direct retrieval unavailable; cycling connections require separate motor-vehicle validation.",
+      "urls": [
+        "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      ]
+    },
+    "7": {
+      "citation": "Rennlist. [“7 best roads in California to drive your Porsche”](https://rennlist.com/how-tos/slideshows/7-best-roads-in-california-to-drive-your-porsche-436786), historical editorial guide; publication date not independently established. Discovery only; its inconsistent Glendora naming is not adopted.",
+      "urls": [
+        "https://rennlist.com/how-tos/slideshows/7-best-roads-in-california-to-drive-your-porsche-436786"
+      ]
+    },
+    "8": {
+      "citation": "G35Driver. [“Official 9/11/04 Malibu cruise”](https://g35driver.com/forums/southern-california/32689-official-9-11-04-malibu-cruise.html), 2004. Historical route discussion explaining the Schueren connection between Stunt and Piuma; not current access evidence.",
+      "urls": [
+        "https://g35driver.com/forums/southern-california/32689-official-9-11-04-malibu-cruise.html"
+      ]
+    },
+    "9": {
+      "citation": "Epic Road Rides. [“Eastern Santa Monica Mountains / Mulholland Highway East”](https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/), undated in the reviewed material. Named-road network and cycling itinerary; not permission to drive every depicted connection.",
+      "urls": [
+        "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      ]
+    },
+    "10": {
+      "citation": "City of Malibu. [Municipal Code, Chapter 10.08, Speed Limits](https://ecode360.com/44334514), currently published online code, §10.08.030. Specific city-road limits; not a field survey or authority for county continuations.",
+      "urls": [
+        "https://ecode360.com/44334514"
+      ]
+    },
+    "11": {
+      "citation": "Los Angeles County Board of Supervisors / Public Works. [Traffic regulations, adopted April 30, 2019](https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf). Latigo and bounded Mulholland speed sections; subsequent changes require checking.",
+      "urls": [
+        "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+      ]
+    },
+    "12": {
+      "citation": "Greg Drevenstedt, Rider Magazine. [“Cortech Piuma Jacket”](https://ridermagazine.com/2011/09/14/cortech-piuma-jacket/), September 14, 2011. Historical direct description of the namesake road and its endpoints, not present pavement conditions.",
+      "urls": [
+        "https://ridermagazine.com/2011/09/14/cortech-piuma-jacket/"
+      ]
+    },
+    "13": {
+      "citation": "Caltrans. [SR 23 highway conditions](https://roads.dot.ca.gov/?roadnumber=23), displayed report September 7, 2026, 4:50 p.m. Dynamic state-highway restrictions only.",
+      "urls": [
+        "https://roads.dot.ca.gov/?roadnumber=23"
+      ]
+    },
+    "14": {
+      "citation": "Los Angeles County Board of Supervisors. [Meeting transcript, March 3, 2026](https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf), discussion around p. 211. Acknowledges The Snake’s reopening; not a same-day gate report.",
+      "urls": [
+        "https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf"
+      ]
+    },
+    "15": {
+      "citation": "San Diego Reader. [“Visit the Grotto and its spooky rock formations…”](https://www.sandiegoreader.com/news/2005/apr/14/visit-grotto-and-its-spooky-rock-formations-circle/), April 14, 2005. Historical access directions identifying the Little Sycamore / Yerba Buena transition.",
+      "urls": [
+        "https://www.sandiegoreader.com/news/2005/apr/14/visit-grotto-and-its-spooky-rock-formations-circle/"
+      ]
+    },
+    "16": {
+      "citation": "Caltrans District 7. [SR 27 Topanga Canyon Palisades repairs](https://dot.ca.gov/caltrans-near-me/district-7/district-7-projects/sr27-topanga-canyon-palisades-repairs), project information updated June 2026. May 12 overnight reopening and localized work-zone constraints; supersedes earlier repair-stage hours.",
+      "urls": [
+        "https://dot.ca.gov/caltrans-near-me/district-7/district-7-projects/sr27-topanga-canyon-palisades-repairs"
+      ]
+    },
+    "17": {
+      "citation": "Caltrans District 7. [“SR-27 pavement rehabilitation in Topanga Canyon restarts June 15, 2026”](https://dot.ca.gov/caltrans-near-me/district-7/district-7-news/sr-27-pavement-rehabilitation-topanga-canyon-restarts-june-15-2026), June 1, 2026. Paving scope and anticipated schedule; not a live incident feed.",
+      "urls": [
+        "https://dot.ca.gov/caltrans-near-me/district-7/district-7-news/sr-27-pavement-rehabilitation-topanga-canyon-restarts-june-15-2026"
+      ]
+    },
+    "18": {
+      "citation": "City of Malibu. [Malibu Evacuation Plan](https://www.malibucity.org/DocumentCenter/View/34818), 2020. Tuna Canyon’s southbound one-way city portion and northern two-way context. Older speed statements are not substituted for the current municipal code.",
+      "urls": [
+        "https://www.malibucity.org/DocumentCenter/View/34818"
+      ]
+    },
+    "19": {
+      "citation": "City of Malibu. [PCH safety](https://www.malibucity.org/pchsafety), current city information including an August 2026 update. Context for the coastal corridor; planned future program dates do not imply current enforcement status.",
+      "urls": [
+        "https://www.malibucity.org/pchsafety"
+      ]
+    },
+    "20": {
+      "citation": "National Park Service. [San Vicente Mountain](https://home.nps.gov/samo/planyourvisit/sanvicente.htm), undated visitor information. Identifies the unpaved Mulholland access context; supports excluding a presumed continuous paved cross-mountain drive.",
+      "urls": [
+        "https://home.nps.gov/samo/planyourvisit/sanvicente.htm"
+      ]
+    },
+    "21": {
+      "citation": "Angeles Crest Christian Camp. [Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga](https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf), archived November 2023. Evidence of named-road connections, not current closure status.",
+      "urls": [
+        "https://angelescrest.com/wp-content/uploads/2023/11/Map-directions-to-ACCC-8-Angeles-Crest-to-Angeles-Forest-to-Upper-Big-Tujunga.pdf"
+      ]
+    },
+    "22": {
+      "citation": "Gribblenation. [“Angeles Forest Highway (Los Angeles County Route N3)”](https://www.gribblenation.org/2023/09/angeles-forest-highway-los-angeles.html), September 2023. Independent road account identifying the broader corridor and junctions.",
+      "urls": [
+        "https://www.gribblenation.org/2023/09/angeles-forest-highway-los-angeles.html"
+      ]
+    },
+    "23": {
+      "citation": "Los Angeles County Board of Supervisors / Public Works. [Traffic regulations, adopted August 12, 2025](https://file.lacounty.gov/SDSInter/bos/supdocs/205649.pdf). Big Tujunga and Mount Baldy speed-section orders.",
+      "urls": [
+        "https://file.lacounty.gov/SDSInter/bos/supdocs/205649.pdf"
+      ]
+    },
+    "24": {
+      "citation": "Caltrans. [SR 2 highway conditions](https://roads.dot.ca.gov/?roadnumber=2), displayed report September 9, 2026, 10:48 a.m. Explicit middle-mountain closure boundaries; dynamic information.",
+      "urls": [
+        "https://roads.dot.ca.gov/?roadnumber=2"
+      ]
+    },
+    "25": {
+      "citation": "Reddit, r/socalbirding. [“Bear Divide is popping off”](https://www.reddit.com/r/socalbirding/comments/1sg9ii2/bear_divide_is_popping_off/), April 8, 2026. Reports about Sand Canyon and southern access; historical community evidence, not a current authority.",
+      "urls": [
+        "https://www.reddit.com/r/socalbirding/comments/1sg9ii2/bear_divide_is_popping_off/"
+      ]
+    },
+    "26": {
+      "citation": "Reddit, r/BikeLA. [“GMR closed to cars Labor Day”](https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/), September 1, 2026. Recent holiday closure discussion linking county information; bicycle access and scheduled reopening do not establish present vehicle access.",
+      "urls": [
+        "https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/"
+      ]
+    },
+    "27": {
+      "citation": "Mount Wilson Observatory. [Visiting](https://www.mtwilson.edu/visiting/), current visitor page, undated. Access and parking information; differing hour statements on the page require confirmation before publication.",
+      "urls": [
+        "https://www.mtwilson.edu/visiting/"
+      ]
+    },
+    "28": {
+      "citation": "Caltrans. [SR 39 highway conditions](https://roads.dot.ca.gov/?roadnumber=39), displayed report September 8, 2026, 6:16 p.m. Northern closure between the Crystal Lake area and SR 2; dynamic information.",
+      "urls": [
+        "https://roads.dot.ca.gov/?roadnumber=39"
+      ]
+    },
+    "29": {
+      "citation": "Los Angeles County Public Works. [Road closures](https://pw.lacounty.gov/roadclosures/), dynamic authority page. Direct retrieval blocked; linked as the required check, not cited as proof of any road being open. The [Angeles National Forest alert index](https://www.fs.usda.gov/r05/angeles/alerts) was also inaccessible; individual accessible documents are cited separately.",
+      "urls": [
+        "https://pw.lacounty.gov/roadclosures/",
+        "https://www.fs.usda.gov/r05/angeles/alerts"
+      ]
+    },
+    "30": {
+      "citation": "Orange County Outdoors. [Carbon Canyon scenic drive](https://www.orangecountyoutdoors.com/get-out-there/scenic-drives/carbon-canyon), undated. Indexed discovery and general endpoints only; direct retrieval failed. No park-boundary or scenic-designation claim is adopted.",
+      "urls": [
+        "https://www.orangecountyoutdoors.com/get-out-there/scenic-drives/carbon-canyon"
+      ]
+    },
+    "31": {
+      "citation": "Reddit, r/orangecounty. [Scenic-driving discussion](https://www.reddit.com/r/orangecounty/comments/14c1tx1/), June 2023. Secondary candidates and local discovery; not current access or speed evidence.",
+      "urls": [
+        "https://www.reddit.com/r/orangecounty/comments/14c1tx1/"
+      ]
+    },
+    "32": {
+      "citation": "Iteris for Orange County Public Works. [Master Plan of Arterial Highways Reclassification Study, Final Report](https://ocds.ocpublicworks.com/sites/ocpwocds/files/2025-02/Attachment%203%20-%20MPAH_Final%20Transportation%20Assessment%20Report%2024.03.22%20compressed.pdf), March 22, 2024. Speed descriptions at printed pp. 89, 92 and 96–104; the differing junction assumptions are preserved as an unresolved issue.",
+      "urls": [
+        "https://ocds.ocpublicworks.com/sites/ocpwocds/files/2025-02/Attachment%203%20-%20MPAH_Final%20Transportation%20Assessment%20Report%2024.03.22%20compressed.pdf"
+      ]
+    },
+    "33": {
+      "citation": "Orange County Public Works. [Live Oak Canyon / Trabuco Canyon lane-striping notice](https://ocpublicworks.com/sites/ocpw/files/2023-07/Notification.Lane%20Striping.Live%20Oak%20Cyn%20Rd-Trabuco%20Cyn%20Rd%20%287-24-2023%29.pdf), July 24, 2023. Evidence of the paved county-road corridor; not present construction status.",
+      "urls": [
+        "https://ocpublicworks.com/sites/ocpw/files/2023-07/Notification.Lane%20Striping.Live%20Oak%20Cyn%20Rd-Trabuco%20Cyn%20Rd%20%287-24-2023%29.pdf"
+      ]
+    },
+    "34": {
+      "citation": "Caltrans. [SR 74 highway conditions](https://roads.dot.ca.gov/?roadnumber=74), displayed report September 9, 2026, 10:27 a.m. Riverside-side overnight control relevant to the Ortega candidate; unrelated SR 74 sections should not be attached to it.",
+      "urls": [
+        "https://roads.dot.ca.gov/?roadnumber=74"
+      ]
+    },
+    "35": {
+      "citation": "USDA Forest Service, Cleveland National Forest. [Order 02-26-09, Airport Fire closure](https://www.fs.usda.gov/sites/nfs/files/r05/cleveland/publication/alerts/02-26-09_AIRPORT%20FIRE%20CLOSURE%20ORDER_0526%20FINAL%20%28003%29.pdf), signed May 26, 2026, effective May 27, 2026–May 26, 2027. Current order and Exhibit B; earlier superseded orders are not used as current closure lists.",
+      "urls": [
+        "https://www.fs.usda.gov/sites/nfs/files/r05/cleveland/publication/alerts/02-26-09_AIRPORT%20FIRE%20CLOSURE%20ORDER_0526%20FINAL%20%28003%29.pdf"
+      ]
+    }
+  }
+}

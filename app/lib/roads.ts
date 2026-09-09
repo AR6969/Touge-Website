@@ -1,10 +1,13 @@
 import catalog from "../data/roads.json";
 import landmarkData from "../data/landmarks.json";
+import { mapRegions, type MapRegion } from "./map-regions";
 
 export type Road = {
   id: string;
   name: string;
   area: string;
+  mapRegion?: MapRegion;
+  access?: { note: string; url: string; checked: string };
   difficulty: number;
   character: string;
   description: string;
@@ -33,7 +36,7 @@ export type Road = {
 };
 
 /** What the map component needs. Everything else stays on the server. */
-export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "character" | "description"> & {
+export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "character" | "description" | "access"> & {
   bounds: Road["bounds"];
   lengthMi: number;
   bends: number;
@@ -41,10 +44,18 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
 };
 
 export const roads = catalog as Road[];
+export const bayAreaRoads = roads.filter(road => road.mapRegion !== "los-angeles");
+export const losAngelesRoads = roads.filter(road => road.mapRegion === "los-angeles");
+
+export function roadMapHref(road: Road) {
+  return `${mapRegions[road.mapRegion ?? "bay-area"].href}?road=${encodeURIComponent(road.id)}`;
+}
 
 /** Named junctions worth marking on the map. Editorial, hand-maintained. */
 export type Landmark = {
   id: string; name: string; kind: string; note: string;
+  sourceUrl?: string;
+  sourceLabel?: string;
   coordinates: [number, number];
 };
 export const landmarks = landmarkData as Landmark[];
@@ -117,6 +128,7 @@ export function toSummary(road: Road): RoadSummary {
     difficulty: road.difficulty,
     character: road.character,
     description: road.description,
+    access: road.access,
     bounds: road.bounds,
     lengthMi: road.shape.lengthMi,
     bends: road.shape.bends,
@@ -126,6 +138,9 @@ export function toSummary(road: Road): RoadSummary {
 
 /** Summarise the source values as a range. Never invent a limit by averaging. */
 export function speedGuide(road: Road) {
+  if (road.mapRegion === "los-angeles") {
+    return { value: road.speed.kind === "Published limits" ? road.speed.value : "Varies", note: road.speed.note };
+  }
   if (road.id === "highway-1-coast") {
     return { value: "55 mph", note: "Open stretches; lower limits through towns and some coastal sections." };
   }

@@ -168,6 +168,15 @@ for entry in R:
     catalog.append(entry)
     print(entry['id'],len(lines),'segments',round(total_length/1609.344,1),'mi',speed['kind'],speed['value'])
 
+# Rebuild the LA region from its checked-in editorial source and OSM snapshot
+# as well, so a Bay Area rebuild cannot silently remove the LA map.
+la_snapshot = ROOT / 'data/la-overpass.json'
+if la_snapshot.exists():
+    from la_roads import build_la
+    la_catalog, la_features = build_la(la_snapshot)
+    catalog.extend(la_catalog)
+    features.extend(la_features)
+
 # Full precision is archived outside public/ so it is never shipped to a browser.
 # build-derived-data.py turns it into the simplified files the site actually
 # serves, including the label points.
