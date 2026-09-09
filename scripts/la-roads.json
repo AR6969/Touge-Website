@@ -1036,7 +1036,7 @@
     "area": "Malibu / Santa Monica Mountains",
     "difficulty": 3,
     "character": "Technical",
-    "description": "The tight, well-known stretch of Mulholland Highway past the Rock Store, between Troutdale Drive and Cornell Road.",
+    "description": "The tightest stretch of Mulholland Highway, between Cornell Road and Las Virgenes Road — a run of switchbacks a couple of miles east of the Rock Store.",
     "sources": [
       {
         "title": "Helen’s Cycles · Our favorite rides and routes",
@@ -1067,20 +1067,20 @@
     "anchors": [
       {
         "near": [
-          -118.779677,
-          34.1143043
-        ],
-        "junction": [
-          "Troutdale Drive"
-        ]
-      },
-      {
-        "near": [
           -118.751163,
           34.1130892
         ],
         "junction": [
           "Cornell Road"
+        ]
+      },
+      {
+        "near": [
+          -118.71139,
+          34.1039095
+        ],
+        "junction": [
+          "Las Virgenes Road"
         ]
       }
     ]

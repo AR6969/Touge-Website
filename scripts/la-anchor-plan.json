@@ -367,20 +367,20 @@
       "Mulholland Highway"
     ],
     "box": [
-      -118.8,
-      34.09,
-      -118.74,
+      -118.78,
+      34.08,
+      -118.7,
       34.13
     ],
     "anchors": [
       {
         "junction": [
-          "Troutdale Drive"
+          "Cornell Road"
         ]
       },
       {
         "junction": [
-          "Cornell Road"
+          "Las Virgenes Road"
         ]
       }
     ]
