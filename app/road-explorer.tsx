@@ -198,10 +198,12 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
         <div className="filter-options">
           {characters.map(character => (
-            <button key={character} className="character" aria-pressed={enabled.includes(character)}
+            <button key={character} className="character" aria-pressed={enabled.includes(character)} aria-label={character}
                     style={{ "--swatch": characterColors[character] } as React.CSSProperties}
                     onClick={() => toggleCharacter(character)}>
-              <i /> {character}
+              {/* "speed" is dropped on narrow screens so all four fit one row;
+                  aria-label keeps the full name for assistive tech. */}
+              <i /> {character.replace(" speed", "")}<span className="chip-suffix">{character.includes(" speed") ? " speed" : ""}</span>
             </button>
           ))}
         </div>

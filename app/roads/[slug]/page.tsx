@@ -86,7 +86,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         <div className="road-badges">
           <span><i style={{ background: color }} /> {road.character}</span>
           <span>Difficulty {road.difficulty}/3 · {difficultyLabels[road.difficulty - 1]}</span>
-          <span>{road.area}</span>
+          <span className="badge-area">{road.area}</span>
         </div>
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />

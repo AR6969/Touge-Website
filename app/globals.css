@@ -8,6 +8,11 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 * { box-sizing: border-box; }
+/* body is a flex column, so its children are flex items and default to
+   min-width:auto — they refuse to shrink below their content. One wide table was
+   therefore stretching every page past the width of a phone. */
+body > * { min-width: 0; }
+.table-scroll, .prose, .intro { min-width: 0; max-width: 100%; }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
 button, a, summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 button { font: inherit; cursor: pointer; }
@@ -239,20 +244,33 @@ summary { cursor: pointer; }
 @media (max-width: 640px) {
   .header { height: 100px; padding: 12px 17px 0; flex-direction: column; align-items: flex-start; gap: 8px; }
   .brand { font-size: 19px; }
-  .brand-symbol { font-size: 24px; margin-right: 9px; }
+  .brand-symbol { font-size: 22px; margin-right: 8px; }
   .brand-tagline { font-size: 9px; }
   .header nav { gap: 25px; flex: 1; }
   .region { font-size: 12px; }
-  .character-filter { top: 12px; left: 12px; padding: 9px; max-width: calc(100% - 64px); }
-  .character { padding: 0 7px; font-size: 10px; min-height: 29px; }
-  .filter-options { gap: 5px; flex-wrap: wrap; }
+  /* One scrollable row of chips instead of two stacked rows: on a phone the map
+     is the product and the filter was taking a fifth of it. */
+  .character-filter { top: 10px; left: 10px; right: 62px; padding: 8px 9px 9px; max-width: none; }
+  .character-filter legend { font-size: 8.5px; margin-bottom: 7px; letter-spacing: 1.1px; }
+  .filter-options { flex-wrap: nowrap; overflow-x: auto; gap: 5px; scrollbar-width: none; }
+  .filter-options::-webkit-scrollbar { display: none; }
+  .character { flex: 0 0 auto; padding: 0 8px; font-size: 9.5px; min-height: 28px; gap: 5px; }
+  .character i { width: 7px; height: 7px; }
+  .chip-suffix { display: none; }
+  .character-filter { right: 62px; }
   .character-filter legend { font-size: 9px; margin-bottom: 8px; }
-  .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; }
+  .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; justify-content: flex-end; }
   .browse-roads { padding: 11px 10px; font-size: 10px; }
   .browse-roads span { margin-left: 8px; }
   .detail { left: 12px; width: calc(100% - 24px); bottom: 105px; padding: 18px; max-height: min(340px, calc(100% - 245px)); }
   .detail h2 { font-size: 21px; }
   .road-picker { left: 12px; right: 12px; bottom: 105px; width: auto; max-height: calc(100% - 230px); }
+  /* The area is already in the breadcrumb directly above; two long badges made
+     the row wrap into uneven boxes. */
+  .road-badges .badge-area { display: none; }
+  .road-badges { gap: 6px; }
+  .road-badges span { font-size: 9.5px; padding: 5px 8px; }
+  .legend-note { display: none; }
   .map-status, .empty-hint { top: 140px; left: 12px; }
   .explorer { height: calc(100dvh - 100px); }
   .intro { grid-template-columns: 1fr; gap: 32px; padding: 34px 18px 44px; }
