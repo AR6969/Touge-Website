@@ -8,7 +8,7 @@ export function SiteHeader({ current, mapRegion = "bay-area" }: { current?: "map
       <Link href="/" className="brand">
         <span className="brand-symbol" aria-hidden="true">峠</span>
         <span className="brand-words">
-          California Touge<span className="brand-dot">.</span>
+          <span className="brand-name">California Touge<span className="brand-dot">.</span></span>
           {/* "Touge" is niche vocabulary; this says what the site is to everyone else. */}
           <small className="brand-tagline">Best driving roads in California</small>
         </span>

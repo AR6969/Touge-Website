@@ -208,12 +208,9 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
       </fieldset>
       <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
       <div className="map-bottom">
-        {/* Without this, nothing on the map says what the colours mean. */}
-        <div className="difficulty-legend" aria-label="Difficulty scale">
-          <span>Difficulty</span>
-          <span>1 Relaxed</span><span>2 Winding</span><span>3 Demanding</span>
-          <span className="legend-note">Colour shows road character</span>
-        </div>
+        {/* Just the colour key. The difficulty scale used to sit here too, but
+            nothing on the map is coloured by difficulty, so it explained nothing. */}
+        <p className="legend-note">Colour shows road character</p>
         <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
       </div>
       {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
