@@ -3,9 +3,9 @@ import { siteUrl } from "./lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    // `?road=` is a map deep-link into the same page as `/`; the canonical tag
-    // already points there, and this keeps the duplicates out of the crawl.
-    rules: { userAgent: "*", allow: "/", disallow: "/?road=" },
+    // `/?road=` now 308s to /bay-area, so let crawlers follow it and consolidate
+    // rather than blocking the redirect they need to see.
+    rules: { userAgent: "*", allow: "/" },
     sitemap: `${siteUrl}/sitemap.xml`,
     host: siteUrl,
   };

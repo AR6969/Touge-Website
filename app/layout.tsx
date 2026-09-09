@@ -3,12 +3,12 @@ import "./globals.css";
 import { siteName, siteUrl } from "./lib/site";
 
 const description =
-  "Driving roads across the Bay Area, Santa Cruz, Napa and Monterey — mapped from OpenStreetMap with corner counts, difficulty ratings and sourced speed-limit evidence for each road.";
+  "Driving roads across California, from the Bay Area to Orange County — mapped from OpenStreetMap with corner counts, difficulty ratings and sourced speed-limit evidence for each road.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Best Driving Roads in the Bay Area & Northern California",
+    default: "Best Driving Roads in California",
     // Road and region pages set only their own name; this appends the brand.
     template: `%s | ${siteName}`,
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName,
     locale: "en_US",
     url: "/",
-    title: "Best Driving Roads in the Bay Area & Northern California",
+    title: "Best Driving Roads in California",
     description,
   },
   // Only the card type. Setting a title/description here would pin the site

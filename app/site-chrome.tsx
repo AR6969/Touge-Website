@@ -2,7 +2,7 @@ import Link from "next/link";
 import { reviewedOn } from "./lib/site";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 
-export function SiteHeader({ current, mapRegion = "bay-area" }: { current?: "map" | "roads" | "regions"; mapRegion?: MapRegion }) {
+export function SiteHeader({ current, mapRegion }: { current?: "map" | "roads" | "regions"; mapRegion?: MapRegion }) {
   return (
     <header className="header">
       <Link href="/" className="brand">
