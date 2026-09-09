@@ -1,0 +1,6 @@
+[out:json][timeout:120];
+(
+way[highway~"^(primary|secondary|tertiary|unclassified|residential|trunk)$"][name~"^(Page Mill Road|Alpine Road|Pescadero Creek Road|Skyline Boulevard|La Honda Road|Woodside Road|Kings Mountain Road|Tunitas Creek Road|Old La Honda Road|Stage Road|Calaveras Road|Palomares Road|Mines Road|Del Puerto Canyon Road|Mount Hamilton Road|San Antonio Valley Road|Patterson Pass Road|Redwood Road|Grizzly Peak Boulevard|Bear Creek Road|Empire Grade|Bonny Doon Road|Jamison Creek Road|Big Basin Way|Big Basin Highway|Old Santa Cruz Highway|Soquel San Jose Road|Soquel-San Jose Road|Hicks Road|Mount Umunhum Road|Uvas Road|McKean Road|Panoramic Highway|West Ridgecrest Boulevard|East Ridgecrest Boulevard|Lucas Valley Road|Marshall Petaluma Road|17 Mile Drive|17-Mile Drive|Seventeen Mile Drive|Carmel Valley Road)$"](36.5,-123.2,38.9,-121.2);
+way[highway~"^(primary|secondary|trunk)$"][ref~"^CA (1|9|35|84|236|29|128|121)$"](36.5,-123.2,38.9,-121.2);
+);
+out geom;

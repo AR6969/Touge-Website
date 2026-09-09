@@ -1,0 +1,3060 @@
+[
+  {
+    "id": "page-mill",
+    "name": "Page Mill Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep foothill climb to Skyline, with tight bends, limited sightlines and frequent bicycle traffic.",
+    "sources": [
+      {
+        "title": "r/SanJose · Local backroads",
+        "url": "https://www.reddit.com/r/SanJose/comments/16hecck/"
+      },
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.174416,
+      37.351894
+    ],
+    "bounds": [
+      [
+        -122.189312,
+        37.314894
+      ],
+      [
+        -122.161968,
+        37.389483
+      ]
+    ],
+    "speed": {
+      "value": "25 / 30 / 35 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 84% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8963325"
+    },
+    "mappedSpeed": "25 / 30 / 35 mph",
+    "taggedPercent": 84,
+    "osmWayIds": [
+      8963325,
+      8963332,
+      8963348,
+      8963350,
+      30453361,
+      118836034,
+      317385881,
+      317385895,
+      317385899,
+      393469135,
+      393469136,
+      395235015,
+      421135512,
+      421135513,
+      421135514,
+      429756250,
+      517642512,
+      672359163,
+      672359164,
+      771088457,
+      771088458,
+      771088459,
+      921086017
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "west-alpine",
+    "name": "West Alpine Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The narrow western descent from Skyline toward Pescadero Creek, with forest switchbacks and changing visibility.",
+    "sources": [
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.218574,
+      37.288167
+    ],
+    "bounds": [
+      [
+        -122.265473,
+        37.287193
+      ],
+      [
+        -122.187271,
+        37.321464
+      ]
+    ],
+    "speed": {
+      "value": "15 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 7% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8928727"
+    },
+    "mappedSpeed": "15 mph",
+    "taggedPercent": 7,
+    "osmWayIds": [
+      8928673,
+      8928686,
+      8928702,
+      8928727,
+      8928732,
+      8928734,
+      8929831,
+      39161331,
+      914276166,
+      914276167,
+      1030332495,
+      1453831631,
+      1453831632,
+      1527999508,
+      1527999509
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "pescadero",
+    "name": "Pescadero Creek Road",
+    "area": "Peninsula",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A winding connection through Loma Mar and redwoods to the farms and coast around Pescadero.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.320063,
+      37.268127
+    ],
+    "bounds": [
+      [
+        -122.413192,
+        37.24962
+      ],
+      [
+        -122.264545,
+        37.302685
+      ]
+    ],
+    "speed": {
+      "value": "35 mph",
+      "kind": "Published limits",
+      "note": "Cloverdale Road to Butano Cut-Off only; other sections vary. County ordinance adopted December 2021.",
+      "source": "https://sanmateocounty.legistar.com/LegislationDetail.aspx?GUID=78180F1B-90FE-44B0-957B-2B5C546D1EFB&ID=5349023"
+    },
+    "mappedSpeed": "25 / 35 / 55 mph",
+    "taggedPercent": 28,
+    "osmWayIds": [
+      8925671,
+      8925699,
+      8925702,
+      8925710,
+      8929820,
+      8929823,
+      8929828,
+      237165601,
+      292622859,
+      292622861,
+      292622863,
+      292622865,
+      292622866,
+      292622869,
+      292622874,
+      292622876,
+      535152408,
+      535152610,
+      619289231,
+      681725063,
+      702127992,
+      1453831610,
+      1453831611,
+      1453831629,
+      1453831630
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "skyline",
+    "name": "Skyline Boulevard · Hwy 35",
+    "area": "Peninsula",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The mountain section of Highway 35 links the Peninsula’s ridge roads between Highway 92 and Highway 9.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.276577,
+      37.388827
+    ],
+    "bounds": [
+      [
+        -122.368922,
+        37.233551
+      ],
+      [
+        -122.100295,
+        37.495557
+      ]
+    ],
+    "speed": {
+      "value": "40 / 45 / 50 / 55 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 92% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8925215"
+    },
+    "mappedSpeed": "40 / 45 / 50 / 55 mph",
+    "taggedPercent": 92,
+    "osmWayIds": [
+      6240699,
+      8925215,
+      8925234,
+      8948748,
+      8948759,
+      32506344,
+      35927527,
+      157468558,
+      239028846,
+      258851765,
+      258851767,
+      258851768,
+      305925413,
+      305925414,
+      305925415,
+      680428917,
+      680428918,
+      680428919,
+      680428920,
+      805898067,
+      970243202,
+      970243203,
+      970247666,
+      970247667,
+      1085987309,
+      1154082694
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "la-honda",
+    "name": "La Honda Road · Hwy 84",
+    "area": "Peninsula",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "Woodside and Sky Londa lead into redwood bends, La Honda and the open valley toward San Gregorio.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.271262,
+      37.333143
+    ],
+    "bounds": [
+      [
+        -122.399894,
+        37.310238
+      ],
+      [
+        -122.25504,
+        37.429392
+      ]
+    ],
+    "speed": {
+      "value": "25 / 35 / 40 / 45 / 50 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/28842467"
+    },
+    "mappedSpeed": "25 / 35 / 40 / 45 / 50 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      28842467,
+      32506261,
+      42785343,
+      235211302,
+      235211303,
+      258852353,
+      258852354,
+      258852355,
+      258852356,
+      258852357,
+      292622844,
+      292622857,
+      305492066,
+      305492067,
+      305492068,
+      305492069,
+      305492070,
+      305492071,
+      305492072,
+      305492073,
+      449686326,
+      581631832,
+      619289233,
+      1102526007,
+      1102526008,
+      1154082695,
+      1221659500,
+      1243335532,
+      1243335533,
+      1243335534,
+      1243335535,
+      1243335536,
+      1243335538,
+      1339135570,
+      1339135571,
+      1339135577,
+      1346313786
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "kings",
+    "name": "Kings Mountain Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A short, steep forest climb between Woodside and Skyline, with close bends and shaded corners.",
+    "sources": [
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.293911,
+      37.430684
+    ],
+    "bounds": [
+      [
+        -122.313899,
+        37.424949
+      ],
+      [
+        -122.266211,
+        37.43785
+      ]
+    ],
+    "speed": {
+      "value": "30 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8925730"
+    },
+    "mappedSpeed": "30 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      8925730,
+      1206775104,
+      1206775105
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "tunitas",
+    "name": "Tunitas Creek Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow creekside road rising from the coast into redwoods and the Skyline ridgeline.",
+    "sources": [
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.352821,
+      37.416749
+    ],
+    "bounds": [
+      [
+        -122.397644,
+        37.358808
+      ],
+      [
+        -122.320082,
+        37.424374
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      37813910,
+      1499651344
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "old-la-honda",
+    "name": "Old La Honda Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow local road climbing to Skyline. Short sightlines and cyclists make this a patient, low-pace drive.",
+    "sources": [
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.25735,
+      37.36713
+    ],
+    "bounds": [
+      [
+        -122.266131,
+        37.357163
+      ],
+      [
+        -122.244354,
+        37.389957
+      ]
+    ],
+    "speed": {
+      "value": "25 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8940683"
+    },
+    "mappedSpeed": "25 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      8940683,
+      8940690
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "stage",
+    "name": "Stage Road",
+    "area": "Peninsula",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "Rolling coastal backroad between Pescadero and San Gregorio, passing farms and small settlements.",
+    "sources": [
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.38495,
+      37.306225
+    ],
+    "bounds": [
+      [
+        -122.394175,
+        37.249293
+      ],
+      [
+        -122.37557,
+        37.338427
+      ]
+    ],
+    "speed": {
+      "value": "25 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 3% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/145314250"
+    },
+    "mappedSpeed": "25 mph",
+    "taggedPercent": 3,
+    "osmWayIds": [
+      8926931,
+      8926983,
+      37811418,
+      73613538,
+      145314250,
+      145314251,
+      667034699,
+      702127990,
+      702127991,
+      1455022720
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "highway-1-coast",
+    "name": "Highway 1 · Coastside",
+    "area": "Coastside / Santa Cruz",
+    "difficulty": 1,
+    "character": "High speed",
+    "description": "The coastal highway from Pacifica toward Santa Cruz, via Half Moon Bay, Pescadero and Davenport. Town sections are slower.",
+    "sources": [
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.293569,
+      37.108376
+    ],
+    "bounds": [
+      [
+        -122.517913,
+        36.960372
+      ],
+      [
+        -122.029689,
+        37.609915
+      ]
+    ],
+    "speed": {
+      "value": "25 / 40 / 45 / 50 / 55 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 99% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8927462"
+    },
+    "mappedSpeed": "25 / 40 / 45 / 50 / 55 mph",
+    "taggedPercent": 99,
+    "osmWayIds": [
+      8927462,
+      8928621,
+      8928773,
+      8930477,
+      8931411,
+      8941310,
+      10551898,
+      25339035,
+      28942473,
+      28942601,
+      31067282,
+      31067343,
+      31067347,
+      34894208,
+      35423118,
+      35423120,
+      37079896,
+      37079897,
+      37354566,
+      38297295,
+      40600610,
+      42449283,
+      42449289,
+      42449291,
+      60762727,
+      60762981,
+      117808986,
+      117809121,
+      117809235,
+      117809307,
+      122314136,
+      133546720,
+      148717590,
+      148717593,
+      148724576,
+      148726477,
+      148726478,
+      176910004,
+      176910005,
+      176910008,
+      176910012,
+      197061368,
+      197429333,
+      219056123,
+      219061967,
+      219061968,
+      219061969,
+      222585207,
+      222585208,
+      222596388,
+      222600290,
+      222600291,
+      236139029,
+      236139035,
+      237163399,
+      237163402,
+      237163403,
+      237163404,
+      256665018,
+      259681820,
+      259681821,
+      259687054,
+      262946950,
+      265591652,
+      265591653,
+      265591654,
+      265591655,
+      265591656,
+      265591657,
+      265591658,
+      288124888,
+      291546382,
+      291546383,
+      291546387,
+      291549861,
+      291549863,
+      291549864,
+      291702280,
+      292627740,
+      292627742,
+      292627743,
+      292627744,
+      332072817,
+      332072818,
+      350825944,
+      350826831,
+      350826839,
+      392024830,
+      449622240,
+      449848147,
+      449848148,
+      449850655,
+      449850656,
+      449850657,
+      449850658,
+      505682474,
+      533263135,
+      571968966,
+      571978224,
+      573441909,
+      573442483,
+      573469621,
+      573469625,
+      619248893,
+      619289232,
+      619289234,
+      619289244,
+      619289245,
+      619289247,
+      619289249,
+      619289264,
+      619289265,
+      619289268,
+      619289271,
+      619289272,
+      638019630,
+      661340303,
+      661356458,
+      669167812,
+      669167813,
+      669167814,
+      669458234,
+      669458241,
+      669458256,
+      669458261,
+      669458267,
+      669458273,
+      669458275,
+      669458281,
+      669458283,
+      669458287,
+      669458288,
+      669458289,
+      669458291,
+      669458292,
+      672729914,
+      674135598,
+      693104412,
+      693104413,
+      702123988,
+      702123990,
+      702123993,
+      702124002,
+      702124003,
+      702127982,
+      702128786,
+      702128787,
+      702128788,
+      702128789,
+      702173543,
+      702173544,
+      702173545,
+      704632876,
+      730881189,
+      732454016,
+      732454019,
+      732454020,
+      732454021,
+      732483415,
+      732497756,
+      733313700,
+      733313701,
+      733363219,
+      753027163,
+      753027164,
+      753027165,
+      753027166,
+      753027167,
+      760422932,
+      760422933,
+      761725526,
+      761725527,
+      761725528,
+      761726505,
+      791928372,
+      804204256,
+      823981630,
+      823981631,
+      837471746,
+      839542716,
+      839542717,
+      849750001,
+      850747803,
+      850747804,
+      872727188,
+      872727190,
+      872727193,
+      877432594,
+      877432596,
+      877432597,
+      877432598,
+      877432599,
+      877432600,
+      877432601,
+      877432602,
+      877432606,
+      877432607,
+      877432608,
+      877432613,
+      877432621,
+      877432622,
+      877432623,
+      877432624,
+      877432625,
+      877432639,
+      877432640,
+      877432641,
+      881481396,
+      887076747,
+      887076748,
+      887076749,
+      948859429,
+      1052635636,
+      1052635637,
+      1052635640,
+      1052635641,
+      1057099075,
+      1058487445,
+      1058487446,
+      1081686561,
+      1106820895,
+      1107051948,
+      1107051951,
+      1107051952,
+      1107051953,
+      1216791732,
+      1225353737,
+      1225353738,
+      1225353739,
+      1225353740,
+      1225353741,
+      1225353742,
+      1225353743,
+      1225353744,
+      1225353745,
+      1225353746,
+      1225353750,
+      1225355046,
+      1225355047,
+      1225355048,
+      1225355049,
+      1225355050,
+      1225356339,
+      1225356340,
+      1225356341,
+      1225356342,
+      1225356343,
+      1225356344,
+      1225356345,
+      1225356346,
+      1225356347,
+      1225356348,
+      1225356349,
+      1225356350,
+      1225356351,
+      1225356352,
+      1225356354,
+      1225356355,
+      1225356356,
+      1225356357,
+      1225356358,
+      1225356359,
+      1225356360,
+      1225356361,
+      1225356362,
+      1225356363,
+      1225356364,
+      1225356365,
+      1225358992,
+      1225358993,
+      1225358994,
+      1225358995,
+      1225358996,
+      1225358997,
+      1225358998,
+      1225805790,
+      1225812809,
+      1225812810,
+      1225812811,
+      1225812812,
+      1225812813,
+      1225812814,
+      1225812815,
+      1271655626,
+      1271655627,
+      1341508637,
+      1341508638,
+      1355314964,
+      1366470897,
+      1366470898,
+      1366470899,
+      1371043576,
+      1371047481,
+      1371398349,
+      1371583732,
+      1371583733,
+      1375565097,
+      1375792510,
+      1455022690,
+      1455022691,
+      1455022692,
+      1455022693,
+      1463532545,
+      1463532547,
+      1473755562,
+      1473755563,
+      1474326421,
+      1474326424,
+      1474326425,
+      1477339253,
+      1477340487,
+      1477340488,
+      1477343298,
+      1477345916,
+      1477349791,
+      1477353437,
+      1477353439,
+      1477354825,
+      1477354827,
+      1479988745,
+      1479988746,
+      1503257454,
+      1528735193
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "highway-9",
+    "name": "Highway 9",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A mountain crossing from Saratoga through the redwoods and San Lorenzo Valley, with slower village sections.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.136508,
+      37.170345
+    ],
+    "bounds": [
+      [
+        -122.15668,
+        36.984297
+      ],
+      [
+        -122.020098,
+        37.26207
+      ]
+    ],
+    "speed": {
+      "value": "25 / 30 / 35 / 40 / 45 / 55 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 85% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8931556"
+    },
+    "mappedSpeed": "25 / 30 / 35 / 40 / 45 / 55 mph",
+    "taggedPercent": 85,
+    "osmWayIds": [
+      8931556,
+      8931558,
+      8931560,
+      8931563,
+      10551960,
+      10551966,
+      10555336,
+      10555338,
+      10555339,
+      10555341,
+      10555342,
+      26478785,
+      35357607,
+      35357608,
+      42394809,
+      42394810,
+      42394813,
+      42394814,
+      42394816,
+      42394817,
+      42394818,
+      42394819,
+      42394820,
+      60762725,
+      64833657,
+      125343965,
+      156778033,
+      184499329,
+      184504111,
+      207216974,
+      207216975,
+      207216976,
+      207216978,
+      218549146,
+      256863880,
+      256863881,
+      257034551,
+      257034552,
+      258851763,
+      258851764,
+      262961631,
+      262961633,
+      262961634,
+      262961635,
+      263286692,
+      264164751,
+      264164752,
+      264164753,
+      264164754,
+      264164755,
+      264538577,
+      264538578,
+      264538579,
+      264538580,
+      264538581,
+      299174222,
+      367854651,
+      367854657,
+      367854662,
+      367854667,
+      370755194,
+      413290259,
+      413391045,
+      416919582,
+      416919598,
+      416919651,
+      416919674,
+      416919707,
+      416919742,
+      416919769,
+      416919834,
+      416919863,
+      416919889,
+      416919924,
+      416920033,
+      416920088,
+      449622239,
+      449622246,
+      473696791,
+      519481220,
+      519481221,
+      519481222,
+      555878243,
+      669167807,
+      669167808,
+      669167811,
+      723297532,
+      723297533,
+      730881177,
+      730881178,
+      730881181,
+      730881183,
+      731205094,
+      731205095,
+      731205096,
+      731205097,
+      732752382,
+      732771608,
+      733046018,
+      733046019,
+      742780324,
+      742780325,
+      742780326,
+      742780329,
+      762216071,
+      824666996,
+      824666997,
+      824666998,
+      824666999,
+      824667000,
+      824667001,
+      825215675,
+      825215676,
+      955197690,
+      961834086,
+      962206222,
+      962206223,
+      962206224,
+      962206225,
+      962206226,
+      1215898531,
+      1215898532,
+      1296809607,
+      1308031627,
+      1332139121,
+      1332557997,
+      1334643801,
+      1334643804,
+      1334655254,
+      1335313009,
+      1548654359,
+      1548654360
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "bear-creek",
+    "name": "Bear Creek Road",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A winding mountain connector above Boulder Creek, with close corners and residential entrances.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.029104,
+      37.166343
+    ],
+    "bounds": [
+      [
+        -122.123024,
+        37.128379
+      ],
+      [
+        -121.993418,
+        37.190482
+      ]
+    ],
+    "speed": {
+      "value": "30 / 35 mph",
+      "kind": "Published limits",
+      "note": "County code: 30 mph from Hwy 9 to Keller Drive; 35 mph from Pilger Road to Hwy 35. Other sections not verified.",
+      "source": "https://ecode360.com/47529696"
+    },
+    "mappedSpeed": "25 / 35 mph",
+    "taggedPercent": 42,
+    "osmWayIds": [
+      8946968,
+      8946969,
+      10550887,
+      30062008,
+      260222950,
+      260222951,
+      264538575,
+      285855358,
+      511567285,
+      511567291,
+      730881180,
+      1064631235,
+      1064631236,
+      1064631237,
+      1064631240,
+      1431382560,
+      1431382561,
+      1431382565,
+      1431382566
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "empire",
+    "name": "Empire Grade",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A ridge road above Santa Cruz, linking forest, open hills and the Bonny Doon area.",
+    "sources": [
+      {
+        "title": "Best Biking Roads · Santa Cruz loop",
+        "url": "https://www.bestbikingroads.com/motorcycle-roads/united-states/california/ride/jamison-creek-empire-grade-pine-flat-bonny-doon-to-hwy1"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.124462,
+      37.059354
+    ],
+    "bounds": [
+      [
+        -122.202061,
+        36.978961
+      ],
+      [
+        -122.058127,
+        37.14306
+      ]
+    ],
+    "speed": {
+      "value": "40 mph",
+      "kind": "Published limits",
+      "note": "Santa Cruz County code specifies 40 mph from the city limits to the end. City sections may differ.",
+      "source": "https://ecode360.com/47529696"
+    },
+    "mappedSpeed": "25 / 40 / 45 mph",
+    "taggedPercent": 17,
+    "osmWayIds": [
+      10551497,
+      10551498,
+      10554978,
+      10554981,
+      30013477,
+      34811402,
+      43048310,
+      46492955,
+      46492956,
+      287957943,
+      287958733,
+      305495922,
+      669531115,
+      669531116,
+      669531117,
+      675737423,
+      675890052,
+      977932400
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "bonny-doon",
+    "name": "Bonny Doon Road",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A coastal climb from Highway 1 toward Bonny Doon, connecting open slopes and wooded sections.",
+    "sources": [
+      {
+        "title": "Best Biking Roads · Santa Cruz loop",
+        "url": "https://www.bestbikingroads.com/motorcycle-roads/united-states/california/ride/jamison-creek-empire-grade-pine-flat-bonny-doon-to-hwy1"
+      }
+    ],
+    "center": [
+      -122.152566,
+      37.034935
+    ],
+    "bounds": [
+      [
+        -122.180448,
+        37.001012
+      ],
+      [
+        -122.145297,
+        37.06584
+      ]
+    ],
+    "speed": {
+      "value": "35 mph section",
+      "kind": "Published limits",
+      "note": "County code specifies a section starting 0.9 miles north of Pine Flat Road and continuing 1.7 miles. Other sections not verified.",
+      "source": "https://ecode360.com/47529696"
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      10550573,
+      10550576,
+      42608500,
+      42608502,
+      148745702,
+      148745703,
+      148745704,
+      148745705,
+      148745706,
+      148745707,
+      243992849,
+      265320461,
+      265320462,
+      265320465,
+      305495921,
+      730881174,
+      1078115118,
+      1078115119
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "jamison",
+    "name": "Jamison Creek Road",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep, compact climb between Big Basin Way and Empire Grade, with a succession of tight turns.",
+    "sources": [
+      {
+        "title": "Best Biking Roads · Santa Cruz loop",
+        "url": "https://www.bestbikingroads.com/motorcycle-roads/united-states/california/ride/jamison-creek-empire-grade-pine-flat-bonny-doon-to-hwy1"
+      }
+    ],
+    "center": [
+      -122.176184,
+      37.14797
+    ],
+    "bounds": [
+      [
+        -122.187121,
+        37.141892
+      ],
+      [
+        -122.15785,
+        37.151254
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      10554817
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "big-basin",
+    "name": "Big Basin Highway · Hwy 236",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow forest loop through Big Basin country. Check Caltrans and park access updates before planning a through-drive.",
+    "sources": [
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.194752,
+      37.197149
+    ],
+    "bounds": [
+      [
+        -122.222409,
+        37.124884
+      ],
+      [
+        -122.1223,
+        37.211569
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      10555789,
+      10555797,
+      125828269,
+      264538576,
+      675730928,
+      730881185,
+      730881186,
+      733103272,
+      733103273,
+      841064066,
+      878404846,
+      878404849,
+      1061633835,
+      1334655262,
+      1334655263,
+      1417660327,
+      1417660328
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "old-santa-cruz",
+    "name": "Old Santa Cruz Highway",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "A wooded local-road alternative near Highway 17, with bends and driveways along the mountain communities.",
+    "sources": [
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -121.981176,
+      37.151463
+    ],
+    "bounds": [
+      [
+        -121.993558,
+        37.127796
+      ],
+      [
+        -121.967172,
+        37.191036
+      ]
+    ],
+    "speed": {
+      "value": "35 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 21% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8946236"
+    },
+    "mappedSpeed": "35 mph",
+    "taggedPercent": 21,
+    "osmWayIds": [
+      8946236,
+      8946242,
+      8946247,
+      8946252,
+      48839010,
+      48839014,
+      683805366,
+      683805367,
+      975312805,
+      1233232070
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "soquel",
+    "name": "Soquel–San Jose Road",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A mountain-to-coast connection from Summit Road toward Soquel, with forest curves and residential stretches.",
+    "sources": [
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -121.940833,
+      37.063262
+    ],
+    "bounds": [
+      [
+        -121.957296,
+        36.990729
+      ],
+      [
+        -121.925383,
+        37.118691
+      ]
+    ],
+    "speed": {
+      "value": "35 / 40 mph",
+      "kind": "Published limits",
+      "note": "County code: 35 mph from Paper Mill Road to 1.4 miles north of Soquel Drive; 40 mph from there to Summit Road.",
+      "source": "https://ecode360.com/47529696"
+    },
+    "mappedSpeed": "40 mph",
+    "taggedPercent": 30,
+    "osmWayIds": [
+      10549962,
+      102629938,
+      475701084,
+      1274797468,
+      1274797469
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "calaveras",
+    "name": "Calaveras Road",
+    "area": "East Bay / South Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A reservoir-side road between Milpitas and Sunol. The narrow, blind sections demand more care than the map suggests.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/SanJose · Local backroads",
+        "url": "https://www.reddit.com/r/SanJose/comments/16hecck/"
+      }
+    ],
+    "center": [
+      -121.830946,
+      37.478974
+    ],
+    "bounds": [
+      [
+        -121.869359,
+        37.440434
+      ],
+      [
+        -121.828839,
+        37.587811
+      ]
+    ],
+    "speed": {
+      "value": "35 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 13% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8947658"
+    },
+    "mappedSpeed": "35 mph",
+    "taggedPercent": 13,
+    "osmWayIds": [
+      8947658,
+      59258486,
+      66829209,
+      79430576,
+      79430606,
+      372004886,
+      552146537,
+      823618297,
+      878088661
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "palomares",
+    "name": "Palomares Road",
+    "area": "East Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A rural canyon connection from Castro Valley toward Niles Canyon, with narrow bends and driveways.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      }
+    ],
+    "center": [
+      -121.968807,
+      37.643119
+    ],
+    "bounds": [
+      [
+        -122.024117,
+        37.597835
+      ],
+      [
+        -121.940912,
+        37.695513
+      ]
+    ],
+    "speed": {
+      "value": "25 / 40 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 94% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/79430605"
+    },
+    "mappedSpeed": "25 / 40 mph",
+    "taggedPercent": 94,
+    "osmWayIds": [
+      6368499,
+      6368528,
+      79430605,
+      116299515,
+      116299847,
+      1190239384
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "mines",
+    "name": "Mines Road",
+    "area": "East Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A long, remote backroad south of Livermore, mixing open valleys with narrow, winding sections.",
+    "sources": [
+      {
+        "title": "r/bayarea · Marin driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/oudkbt/"
+      },
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -121.567745,
+      37.544606
+    ],
+    "bounds": [
+      [
+        -121.732916,
+        37.391754
+      ],
+      [
+        -121.486762,
+        37.665132
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      6344657,
+      6344683,
+      6344687,
+      6344725,
+      6344737,
+      6344744,
+      8925918,
+      8941273,
+      8941281,
+      61352192,
+      61352195,
+      61352196,
+      61352198,
+      61352199,
+      61352200,
+      319801281,
+      369791506,
+      559713166,
+      559713167,
+      676146241,
+      676146242,
+      776224285,
+      993808076,
+      993808077,
+      1130000561,
+      1392436190,
+      1392436191,
+      1392436192,
+      1392436193,
+      1392436198,
+      1392436199,
+      1392436200,
+      1392436201,
+      1392436202,
+      1392436203,
+      1392436204,
+      1392436205,
+      1392436206,
+      1392436207,
+      1392436208,
+      1392436209,
+      1392436213,
+      1392436215,
+      1392436216,
+      1392436217,
+      1392436218,
+      1392436219,
+      1392436220,
+      1392436228,
+      1392436230,
+      1392436235,
+      1392436236
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "san-antonio",
+    "name": "San Antonio Valley Road",
+    "area": "Diablo Range",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A remote link between Mount Hamilton and the Mines Road junction, with exposed bends and ranchland.",
+    "sources": [
+      {
+        "title": "r/bayarea · Marin driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/oudkbt/"
+      }
+    ],
+    "center": [
+      -121.558368,
+      37.354345
+    ],
+    "bounds": [
+      [
+        -121.614975,
+        37.326718
+      ],
+      [
+        -121.474715,
+        37.391754
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      8947794,
+      8947797,
+      8947800,
+      53757806,
+      319801697,
+      556570836,
+      556570837,
+      675599916,
+      675599917,
+      1039469488,
+      1039469489,
+      1393934506,
+      1393934507,
+      1394221434,
+      1394221446
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "hamilton",
+    "name": "Mount Hamilton Road",
+    "area": "South Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A long ascent from San Jose toward Lick Observatory, with repeated switchbacks and changing sightlines.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/SanJose · Local backroads",
+        "url": "https://www.reddit.com/r/SanJose/comments/16hecck/"
+      }
+    ],
+    "center": [
+      -121.691539,
+      37.328917
+    ],
+    "bounds": [
+      [
+        -121.816062,
+        37.323425
+      ],
+      [
+        -121.614853,
+        37.38403
+      ]
+    ],
+    "speed": {
+      "value": "40 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8923900"
+    },
+    "mappedSpeed": "40 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      8923900,
+      8964790,
+      8964791,
+      8964796,
+      8964806,
+      37396250,
+      37396273,
+      97181483,
+      125827159,
+      207231124,
+      959173411,
+      1508693100,
+      1508693101,
+      1508693102
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "patterson",
+    "name": "Patterson Pass Road",
+    "area": "East Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A pass east of Livermore through wind-farm hills, including narrow sections and blind crests.",
+    "sources": [
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -121.654246,
+      37.686211
+    ],
+    "bounds": [
+      [
+        -121.740633,
+        37.685304
+      ],
+      [
+        -121.558857,
+        37.71494
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      6378358,
+      6378523,
+      24335843,
+      66829087,
+      66829100,
+      66829128,
+      66829139,
+      66829141,
+      66829162,
+      286841635,
+      574387272,
+      574387276,
+      574393271,
+      574393272,
+      574397011,
+      574397014,
+      574399007,
+      574399008,
+      574399439,
+      574399443,
+      574407216,
+      574407218,
+      574409074,
+      574409077,
+      574447369,
+      574447370,
+      591530912,
+      655691443,
+      655691444,
+      655691445,
+      886059066,
+      886059067,
+      947881513,
+      947881514,
+      947881515,
+      947881517,
+      947881518,
+      947881519,
+      947881520,
+      947881521,
+      947881522,
+      947881523,
+      947881524,
+      947881525,
+      947881526,
+      947881527,
+      947881528,
+      947881529,
+      947881530,
+      947881531,
+      947881532,
+      947881533,
+      947881534,
+      947881537,
+      947881538,
+      947881540,
+      947881543,
+      948268597,
+      948268601,
+      948268605,
+      948268610,
+      948268612,
+      948268615,
+      948268616,
+      948268617,
+      948268618,
+      948268619,
+      1103049622,
+      1103049623,
+      1103049624,
+      1179968919,
+      1179968922,
+      1382889447,
+      1382889448,
+      1382889449,
+      1382889450,
+      1428199545
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "redwood",
+    "name": "Redwood Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A wooded East Bay corridor between Castro Valley and the Oakland hills, with flowing bends and park entrances.",
+    "sources": [
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -122.119289,
+      37.771551
+    ],
+    "bounds": [
+      [
+        -122.189981,
+        37.690053
+      ],
+      [
+        -122.073582,
+        37.806555
+      ]
+    ],
+    "speed": {
+      "value": "25 / 30 / 35 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 31% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/19863037"
+    },
+    "mappedSpeed": "25 / 30 / 35 mph",
+    "taggedPercent": 31,
+    "osmWayIds": [
+      19862692,
+      19863037,
+      19863246,
+      28931788,
+      28931790,
+      28931791,
+      47233904,
+      47233905,
+      47233906,
+      47233907,
+      133243359,
+      192565529,
+      192565530,
+      238140827,
+      238140828,
+      265136347,
+      393848603,
+      393848608,
+      393848613,
+      393848629,
+      393848636,
+      393848645,
+      393848652,
+      393848661,
+      393848668,
+      393848676,
+      393848683,
+      393848691,
+      393848698,
+      393848706,
+      393848722,
+      393848729,
+      393848745,
+      393848750,
+      393848752,
+      393848757,
+      393848762,
+      393848771,
+      393848784,
+      393848787,
+      393848788,
+      393848798,
+      393848816,
+      393848820,
+      394176327,
+      394184628,
+      394184629,
+      394184630,
+      394184631,
+      394184632,
+      406593689,
+      406710748,
+      407960372,
+      407960373,
+      407966452,
+      416115416,
+      416154072,
+      416154073,
+      416154074,
+      416154077,
+      416154078,
+      416154079,
+      416154080,
+      416154081,
+      416154082,
+      416154083,
+      416154084,
+      416154085,
+      416154086,
+      416154087,
+      416154088,
+      416154089,
+      516535423,
+      516535424,
+      594471957,
+      630131209,
+      630131210,
+      675212301,
+      675212302,
+      676629963,
+      678700033,
+      680379677,
+      684986591,
+      719513632,
+      723561939,
+      723579845,
+      723579846,
+      723579848,
+      723585132,
+      723585134,
+      723585135,
+      723585136,
+      723585137,
+      723585139,
+      723585140,
+      723595291,
+      723598941,
+      723598942,
+      723598943,
+      723599048,
+      723599131,
+      723599765,
+      741352318,
+      741352319,
+      741352320,
+      741352321,
+      745969563,
+      745969564,
+      745969565,
+      745969566,
+      745969567,
+      896441661,
+      896441666,
+      911684019,
+      961587506,
+      961587508,
+      961834803,
+      961834804,
+      961834806,
+      961872479,
+      1074463919,
+      1074672100,
+      1105701155,
+      1105701160,
+      1155271715,
+      1365294155,
+      1365294158,
+      1417064201,
+      1417064202,
+      1417064203,
+      1417064206,
+      1417064207,
+      1417064208,
+      1417064209,
+      1417064211,
+      1419884911,
+      1550069078
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "grizzly",
+    "name": "Grizzly Peak Boulevard",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "An Oakland–Berkeley hills road with bay overlooks, local traffic and short, winding sections.",
+    "sources": [
+      {
+        "title": "CivicX · East Bay driving roads",
+        "url": "https://www.civicx.com/forum/threads/east-bay-driving-roads.32309/"
+      }
+    ],
+    "center": [
+      -122.23599,
+      37.882127
+    ],
+    "bounds": [
+      [
+        -122.271142,
+        37.847595
+      ],
+      [
+        -122.200636,
+        37.909048
+      ]
+    ],
+    "speed": {
+      "value": "25 / 30 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 95% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/5149900"
+    },
+    "mappedSpeed": "25 / 30 mph",
+    "taggedPercent": 95,
+    "osmWayIds": [
+      5149900,
+      5149901,
+      5149902,
+      6330498,
+      6330503,
+      23874711,
+      23874712,
+      23874713,
+      24548222,
+      190255051,
+      190579774,
+      190579779,
+      190579786,
+      190579795,
+      190579799,
+      190579803,
+      190579807,
+      190579811,
+      190579817,
+      190579820,
+      190579823,
+      193256680,
+      194872389,
+      196602725,
+      196602726,
+      616457859,
+      659093156,
+      745180002,
+      1132392064,
+      1132392065,
+      1132392066,
+      1132392067,
+      1132392068,
+      1132392069,
+      1132392070
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "diablo",
+    "name": "Mount Diablo roads",
+    "area": "East Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The north and south approaches converge on the summit road. Park access and hours apply.",
+    "sources": [
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -121.939943,
+      37.871379
+    ],
+    "bounds": [
+      [
+        -121.989967,
+        37.831942
+      ],
+      [
+        -121.914102,
+        37.899248
+      ]
+    ],
+    "speed": {
+      "value": "15 / 20 / 25 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 87% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/7860811"
+    },
+    "mappedSpeed": "15 / 20 / 25 mph",
+    "taggedPercent": 87,
+    "osmWayIds": [
+      7860811,
+      7860813,
+      7866012,
+      31807865,
+      31813373,
+      126023641,
+      161693740,
+      173000064,
+      173000065,
+      173000066,
+      173000067,
+      268648841,
+      274330491,
+      274330510,
+      274330511,
+      274330525,
+      401678167,
+      659042629,
+      659042631,
+      659042632,
+      822903063,
+      822903064,
+      1067102754,
+      1067102755
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "hicks",
+    "name": "Hicks Road",
+    "area": "South Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A steep and winding foothill road near Almaden and the approach to Mount Umunhum.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      }
+    ],
+    "center": [
+      -121.875624,
+      37.195238
+    ],
+    "bounds": [
+      [
+        -121.913517,
+        37.160889
+      ],
+      [
+        -121.842774,
+        37.226561
+      ]
+    ],
+    "speed": {
+      "value": "35 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 86% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8963358"
+    },
+    "mappedSpeed": "35 mph",
+    "taggedPercent": 86,
+    "osmWayIds": [
+      8945084,
+      8963355,
+      8963358,
+      416897404,
+      416897406,
+      416897408,
+      416897409,
+      416897410,
+      416897411
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "umunhum",
+    "name": "Mount Umunhum Road",
+    "area": "South Bay",
+    "difficulty": 3,
+    "character": "Low speed",
+    "description": "A summit-access road with tight turns and broad valley views. Preserve opening hours apply.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      }
+    ],
+    "center": [
+      -121.888694,
+      37.155597
+    ],
+    "bounds": [
+      [
+        -121.904021,
+        37.146212
+      ],
+      [
+        -121.863602,
+        37.175385
+      ]
+    ],
+    "speed": {
+      "value": "25 mph",
+      "kind": "Published limits",
+      "note": "Midpen’s 2016 road rehabilitation sign plan specifies 25 mph signs. Current signs take precedence.",
+      "source": "https://www.openspace.org/sites/default/files/20160525_MtUmRoad_BidPlanSet-Approval_R-16-62.pdf"
+    },
+    "mappedSpeed": "25 mph",
+    "taggedPercent": 84,
+    "osmWayIds": [
+      28867506,
+      38903799,
+      38904212,
+      84269563,
+      333733816,
+      514933667,
+      1429097197
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "uvas",
+    "name": "Uvas Road",
+    "area": "South Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A rolling reservoir-side road south of San Jose, linking with McKean Road and rural Santa Clara Valley.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "r/SanJose · Local backroads",
+        "url": "https://www.reddit.com/r/SanJose/comments/16hecck/"
+      }
+    ],
+    "center": [
+      -121.723094,
+      37.101086
+    ],
+    "bounds": [
+      [
+        -121.747998,
+        37.060903
+      ],
+      [
+        -121.680587,
+        37.151163
+      ]
+    ],
+    "speed": {
+      "value": "45 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8940693"
+    },
+    "mappedSpeed": "45 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      8940693,
+      293499960,
+      293499963,
+      293499964,
+      293499969
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "mckean",
+    "name": "McKean Road",
+    "area": "South Bay",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "Open foothill and reservoir country between Almaden and Uvas, with intersections and local access.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      }
+    ],
+    "center": [
+      -121.80419,
+      37.193407
+    ],
+    "bounds": [
+      [
+        -121.833179,
+        37.185857
+      ],
+      [
+        -121.770152,
+        37.201633
+      ]
+    ],
+    "speed": {
+      "value": "35 / 40 / 45 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/8967702"
+    },
+    "mappedSpeed": "35 / 40 / 45 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      8967702,
+      8967711,
+      24039295,
+      24039296,
+      293499955,
+      293499956,
+      313174142,
+      711193478,
+      711193479,
+      711193480,
+      711193481,
+      711193483,
+      711511886,
+      767945357,
+      767945358,
+      767945359,
+      824705093,
+      824705094,
+      824705095,
+      824705096,
+      825027788,
+      1018617520,
+      1018617521,
+      1018617522,
+      1018617523,
+      1018617524,
+      1018617525,
+      1113091034,
+      1113091035,
+      1113091036,
+      1113091037,
+      1113091038,
+      1113091039,
+      1113091040
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "panoramic",
+    "name": "Panoramic Highway",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A forested climb above Muir Woods connecting the Mount Tamalpais area with the Stinson Beach side.",
+    "sources": [
+      {
+        "title": "Bay Area Riders Forum · Scenic roads",
+        "url": "https://www.bayarearidersforum.com/forums/threads/scenic-road-suggestions-requested.453694/"
+      },
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      }
+    ],
+    "center": [
+      -122.59731,
+      37.910841
+    ],
+    "bounds": [
+      [
+        -122.636712,
+        37.88326
+      ],
+      [
+        -122.553728,
+        37.915971
+      ]
+    ],
+    "speed": {
+      "value": "30 / 35 / 45 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/12188378"
+    },
+    "mappedSpeed": "30 / 35 / 45 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      12188378,
+      88159938,
+      88159974,
+      88159983,
+      125871918,
+      125871933,
+      970228257
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "ridgecrest",
+    "name": "Pantoll & East Ridgecrest",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The upper Mount Tamalpais approach combines exposed ridge views with tight mountain turns and park access.",
+    "sources": [
+      {
+        "title": "Bay Area Riders Forum · Scenic roads",
+        "url": "https://www.bayarearidersforum.com/forums/threads/scenic-road-suggestions-requested.453694/"
+      }
+    ],
+    "center": [
+      -122.60689,
+      37.918305
+    ],
+    "bounds": [
+      [
+        -122.614863,
+        37.903794
+      ],
+      [
+        -122.580841,
+        37.928907
+      ]
+    ],
+    "speed": {
+      "value": "25 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/12170878"
+    },
+    "mappedSpeed": "25 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      12170878,
+      12188784
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "lucas",
+    "name": "Lucas Valley Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A Marin cross-country road linking open valley stretches with shaded turns toward Nicasio.",
+    "sources": [
+      {
+        "title": "r/bayarea · Marin driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/oudkbt/"
+      },
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -122.620708,
+      38.045518
+    ],
+    "bounds": [
+      [
+        -122.693489,
+        38.021637
+      ],
+      [
+        -122.540076,
+        38.056542
+      ]
+    ],
+    "speed": {
+      "value": "35 / 40 / 45 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 100% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/90293409"
+    },
+    "mappedSpeed": "35 / 40 / 45 mph",
+    "taggedPercent": 100,
+    "osmWayIds": [
+      90293409,
+      129176144,
+      129554622,
+      256182661,
+      256182673,
+      256184465,
+      256184466,
+      256187015,
+      284602492,
+      284602509,
+      284602515,
+      336076358,
+      336076359,
+      336076360,
+      336076361,
+      336076362,
+      337889584,
+      337889585,
+      337889586,
+      393493875,
+      396098596,
+      396098598,
+      396098599,
+      396098600,
+      396098602,
+      396098603,
+      396098605,
+      398271673,
+      398271674,
+      523536190,
+      523536192,
+      523536193,
+      523536194,
+      523536195,
+      523536196,
+      523536199,
+      523536200,
+      523536201,
+      523536228,
+      620216027,
+      753629272,
+      1182816734,
+      1187016521,
+      1187016522,
+      1187016523,
+      1301002894,
+      1301002895,
+      1384786742,
+      1386603420,
+      1409548711
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "marshall",
+    "name": "Marshall–Petaluma Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "Rolling ranch country between the Tomales Bay side and inland Marin, with crests and changing visibility.",
+    "sources": [
+      {
+        "title": "Bay Area Riders Forum · Scenic roads",
+        "url": "https://www.bayarearidersforum.com/forums/threads/scenic-road-suggestions-requested.453694/"
+      },
+      {
+        "title": "Rennlist · Bay Area road discussion",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "center": [
+      -122.809477,
+      38.16567
+    ],
+    "bounds": [
+      [
+        -122.892649,
+        38.148324
+      ],
+      [
+        -122.731442,
+        38.169323
+      ]
+    ],
+    "speed": {
+      "value": "40 mph section",
+      "kind": "Published limits",
+      "note": "Marin’s 2024 bridge-project RFP describes a posted 40 mph road at the project area. This does not verify every section.",
+      "source": "https://www.marincounty.gov/sites/g/files/fdkgoe241/files/2024-08/final-rfp-marshall-petaluma-rd-bridge-replacement-2024-08-19-002.pdf"
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      12190245,
+      867442323,
+      867442325,
+      867442326,
+      867442327,
+      867442328,
+      867442330,
+      1227059630,
+      1227059631,
+      1230963919,
+      1230963920
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "highway-1-marin",
+    "name": "Highway 1 · Marin coast",
+    "area": "Marin / Sonoma",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A coastal road via Stinson Beach, Point Reyes, Tomales Bay and Bodega Bay. Tight bends alternate with open stretches.",
+    "sources": [
+      {
+        "title": "Bay Area Riders Forum · Scenic roads",
+        "url": "https://www.bayarearidersforum.com/forums/threads/scenic-road-suggestions-requested.453694/"
+      },
+      {
+        "title": "r/bayarea · Favorite driving roads",
+        "url": "https://www.reddit.com/r/bayarea/comments/1o99iqz/"
+      }
+    ],
+    "center": [
+      -122.876067,
+      38.142465
+    ],
+    "bounds": [
+      [
+        -123.129913,
+        37.870048
+      ],
+      [
+        -122.514452,
+        38.453178
+      ]
+    ],
+    "speed": {
+      "value": "25 / 30 / 35 / 40 / 45 / 55 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 78% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/7708945"
+    },
+    "mappedSpeed": "25 / 30 / 35 / 40 / 45 / 55 mph",
+    "taggedPercent": 78,
+    "osmWayIds": [
+      7708945,
+      7711126,
+      7719588,
+      7719964,
+      12177276,
+      12177302,
+      12177318,
+      12177319,
+      12179547,
+      12179568,
+      12179582,
+      12179642,
+      12183843,
+      26805031,
+      27502204,
+      28971052,
+      28971602,
+      35345024,
+      37516331,
+      37516332,
+      37516333,
+      37516334,
+      37516335,
+      37516336,
+      37516337,
+      38846964,
+      84268201,
+      88467688,
+      93092271,
+      112927414,
+      112927421,
+      112927423,
+      119259916,
+      157338248,
+      157338250,
+      157803082,
+      185382199,
+      186406411,
+      239213058,
+      256337830,
+      256337834,
+      277071449,
+      284068424,
+      284068428,
+      284068435,
+      284441149,
+      284441152,
+      284441155,
+      284555048,
+      284555049,
+      284555050,
+      284555051,
+      284555052,
+      284555053,
+      284555054,
+      284555057,
+      284555058,
+      284555060,
+      284555061,
+      284555062,
+      284555063,
+      311574369,
+      324281325,
+      337911605,
+      337911609,
+      337911611,
+      337911613,
+      349602324,
+      349602351,
+      349604680,
+      349604681,
+      352161056,
+      394465520,
+      421512922,
+      462197250,
+      462197253,
+      477538321,
+      514398801,
+      514410368,
+      514410369,
+      514410370,
+      545407811,
+      620169764,
+      620535159,
+      620535162,
+      620535163,
+      620535175,
+      620535178,
+      637266043,
+      637266045,
+      659317064,
+      659317092,
+      675037040,
+      687879564,
+      687879567,
+      687879578,
+      687879585,
+      803502923,
+      808096386,
+      836580737,
+      836580742,
+      993365011,
+      1072203026,
+      1072216253,
+      1085855543,
+      1107378167,
+      1107378168,
+      1107378169,
+      1121922573,
+      1184712051,
+      1184712052,
+      1218999244,
+      1228345941,
+      1228345942,
+      1288831880,
+      1299391271,
+      1299391272,
+      1309514375,
+      1348648586,
+      1353800490,
+      1359137450,
+      1359137451,
+      1371399605,
+      1371399606,
+      1371607290,
+      1371607291,
+      1384919750,
+      1384919751,
+      1414806907,
+      1414806910,
+      1414806911,
+      1437041956,
+      1443133915,
+      1455943034,
+      1455943035,
+      1457863966,
+      1457863968,
+      1467479141,
+      1467479142,
+      1481025145,
+      1481025146,
+      1481025147,
+      1481025148,
+      1481025149,
+      1481025151,
+      1495945496,
+      1520279490
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "highway-128",
+    "name": "Highway 128 · Lake Berryessa",
+    "area": "Napa / Solano",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A winding inland route across Napa-area hills toward Lake Berryessa and the Putah Creek corridor.",
+    "sources": [
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -122.222671,
+      38.463152
+    ],
+    "bounds": [
+      [
+        -122.422801,
+        38.430054
+      ],
+      [
+        -122.001075,
+        38.517734
+      ]
+    ],
+    "speed": {
+      "value": "55 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 0% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/179214551"
+    },
+    "mappedSpeed": "55 mph",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      7699839,
+      7699929,
+      8713932,
+      10746407,
+      10746467,
+      25749628,
+      25907264,
+      25907265,
+      27503683,
+      27649257,
+      29473600,
+      29473616,
+      29473658,
+      29473704,
+      179214550,
+      179214551,
+      185025705,
+      185218261,
+      755231022,
+      786167769,
+      866531140,
+      866531141,
+      1211832701,
+      1236743759,
+      1236743760,
+      1426807158,
+      1431205943,
+      1431205944
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "highway-29",
+    "name": "Highway 29 · Mount St. Helena",
+    "area": "Napa / Lake",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The mountain section north of Calistoga climbs through repeated bends toward the Lake County side.",
+    "sources": [
+      {
+        "title": "r/Touge · Bay Area drives",
+        "url": "https://www.reddit.com/r/Touge/comments/1ne9y4c/collection_bay_area_drives/"
+      },
+      {
+        "title": "Driver’s Guide · Regional road directory",
+        "url": "https://weisskrispies.github.io/drivers-guide/"
+      }
+    ],
+    "center": [
+      -122.592062,
+      38.649256
+    ],
+    "bounds": [
+      [
+        -122.626364,
+        38.585191
+      ],
+      [
+        -122.565304,
+        38.798336
+      ]
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this road. Check signs along the route.",
+      "source": null
+    },
+    "mappedSpeed": "Not mapped",
+    "taggedPercent": 0,
+    "osmWayIds": [
+      7701340,
+      10266316,
+      10272762,
+      10272830,
+      164658048,
+      164658063,
+      184573310,
+      288605155,
+      288605158,
+      457581330,
+      457581345,
+      801690195,
+      801690196,
+      826990964,
+      1154029501,
+      1154029505,
+      1154029506,
+      1211970067,
+      1211970068,
+      1212682523,
+      1212682524,
+      1219948683,
+      1282939992,
+      1282941358,
+      1282941359,
+      1282947077,
+      1376072841,
+      1426915190,
+      1426915191,
+      1462611363,
+      1462611364,
+      1492919378,
+      1497913766
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "17-mile",
+    "name": "17-Mile Drive",
+    "area": "Monterey Peninsula",
+    "difficulty": 1,
+    "character": "Low speed",
+    "description": "A scenic coastal drive through Pebble Beach and Del Monte Forest. This is a private visitor road with an entry fee.",
+    "sources": [
+      {
+        "title": "Pebble Beach · Official 17-Mile Drive guide",
+        "url": "https://www.pebblebeach.com/17-mile-drive/"
+      }
+    ],
+    "center": [
+      -121.953622,
+      36.562014
+    ],
+    "bounds": [
+      [
+        -121.973823,
+        36.5606
+      ],
+      [
+        -121.912834,
+        36.629861
+      ]
+    ],
+    "speed": {
+      "value": "25 mph zones",
+      "kind": "Published limits",
+      "note": "Pebble Beach CSD identifies posted 25 mph residential and school zones. This is not a verified limit for the entire drive.",
+      "source": "https://www.pbcsd.org/supplemental-law-enforcement"
+    },
+    "mappedSpeed": "25 / 30 mph",
+    "taggedPercent": 10,
+    "osmWayIds": [
+      10463429,
+      10468411,
+      10468422,
+      10468426,
+      10468471,
+      120127852,
+      152295710,
+      152295711,
+      152295712,
+      182270523,
+      275889269,
+      275889271,
+      275889272,
+      275889273,
+      346749879,
+      623341702,
+      625150734,
+      625150736,
+      625150737,
+      626830220,
+      678916530,
+      698891374,
+      698891378,
+      698891379,
+      698891389
+    ],
+    "reviewed": "2026-09-08"
+  },
+  {
+    "id": "carmel-valley",
+    "name": "Carmel Valley Road",
+    "area": "Monterey County",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A Monterey-area extension inland through Carmel Valley, with village stretches and increasingly rural bends.",
+    "sources": [
+      {
+        "title": "Pebble Beach · Regional road trip",
+        "url": "https://www.pebblebeach.com/insidepebblebeach/road-trip-california-dreamin/"
+      }
+    ],
+    "center": [
+      -121.856259,
+      36.534443
+    ],
+    "bounds": [
+      [
+        -121.9084,
+        36.522285
+      ],
+      [
+        -121.793597,
+        36.544122
+      ]
+    ],
+    "speed": {
+      "value": "25 / 45 mph",
+      "kind": "Mapped limits",
+      "note": "OpenStreetMap tags cover approximately 48% of this trace. These values have not been checked against current signs.",
+      "source": "https://www.openstreetmap.org/way/697274725"
+    },
+    "mappedSpeed": "25 / 45 mph",
+    "taggedPercent": 48,
+    "osmWayIds": [
+      10467492,
+      264553399,
+      264553400,
+      264554380,
+      264554381,
+      264554382,
+      264554383,
+      264554384,
+      697274725,
+      1089786802,
+      1089786803,
+      1089786804,
+      1140715144,
+      1140715145,
+      1140715146,
+      1141858648,
+      1141858649,
+      1141858650,
+      1141858694,
+      1144262714,
+      1144262715
+    ],
+    "reviewed": "2026-09-08"
+  }
+]
