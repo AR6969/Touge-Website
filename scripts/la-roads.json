@@ -33,7 +33,26 @@
     "names": [
       "Latigo Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.7547076,
+          34.0300582
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.8154382,
+          34.0895803
+        ],
+        "junction": [
+          "Kanan Dume Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -69,7 +88,27 @@
     "names": [
       "Piuma Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.7045548,
+          34.0821287
+        ],
+        "junction": [
+          "Malibu Canyon Road"
+        ]
+      },
+      {
+        "near": [
+          -118.6534277,
+          34.0700142
+        ],
+        "junction": [
+          "Rambla Pacifico",
+          "Rambla Pacifico Street"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -101,7 +140,26 @@
     "names": [
       "Stunt Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.6600018,
+          34.101932
+        ],
+        "junction": [
+          "Mulholland Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.6457422,
+          34.0811119
+        ],
+        "junction": [
+          "Schueren Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -131,9 +189,28 @@
       "source": null
     },
     "names": [
-      "Schueren / Saddle Peak connector"
+      "Schueren Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.6457422,
+          34.0811119
+        ],
+        "junction": [
+          "Stunt Road"
+        ]
+      },
+      {
+        "near": [
+          -118.6534277,
+          34.0700142
+        ],
+        "junction": [
+          "Piuma Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -163,9 +240,29 @@
       "source": null
     },
     "names": [
-      "Decker Road · SR 23"
+      "Decker Road",
+      "Decker Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.8944116,
+          34.0414683
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.8734139,
+          34.0885729
+        ],
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -197,7 +294,26 @@
     "names": [
       "Encinal Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.885246,
+          34.04036
+        ],
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.8284399,
+          34.0942644
+        ],
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -209,7 +325,7 @@
     "area": "Malibu / Santa Monica Mountains",
     "difficulty": 2,
     "character": "Medium speed",
-    "description": "The paved mountain spine of the western Santa Monica Mountains, linking the canyon roads between Decker Road and Stunt Road.",
+    "description": "The western Mulholland Highway, linking the canyon roads between Decker Road and Kanan Dume Road across the ridge behind the Malibu coast.",
     "sources": [
       {
         "title": "Helen’s Cycles · Our favorite rides and routes",
@@ -231,45 +347,29 @@
       "source": null
     },
     "names": [
-      "Mulholland Highway · Malibu mountains"
+      "Mulholland Highway"
     ],
-    "anchors": [],
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    }
-  },
-  {
-    "id": "malibu-canyon-las-virgenes",
-    "name": "Malibu Canyon / Las Virgenes",
-    "area": "Malibu / Santa Monica Mountains",
-    "difficulty": 2,
-    "character": "Medium speed",
-    "description": "The main coast-to-inland crossing: Malibu Canyon Road from the Pacific Coast Highway, continuing as Las Virgenes Road toward US 101.",
-    "sources": [
+    "anchors": [
       {
-        "title": "Rennlist · Question for CA members",
-        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+        "near": [
+          -118.8734139,
+          34.0885729
+        ],
+        "junction": [
+          "Decker Road",
+          "Decker Canyon Road"
+        ]
       },
       {
-        "title": "Helen’s Cycles · Our favorite rides and routes",
-        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
-      },
-      {
-        "title": "City of Malibu · Municipal Code, Chapter 10.08, Speed Limits",
-        "url": "https://ecode360.com/44334514"
+        "near": [
+          -118.8126557,
+          34.0964764
+        ],
+        "junction": [
+          "Kanan Dume Road"
+        ]
       }
     ],
-    "speed": {
-      "value": "Varies",
-      "kind": "Documented sections",
-      "note": "Documented only where scoped: 40 mph (PCH to Malibu northern city limit only; not the Las Virgenes continuation). These sections do not cover the whole selected trace and have not been checked against current signs.",
-      "source": null
-    },
-    "names": [
-      "Malibu Canyon / Las Virgenes"
-    ],
-    "anchors": [],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -303,9 +403,28 @@
       "source": null
     },
     "names": [
-      "Pacific Coast Highway · Malibu"
+      "Pacific Coast Highway"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.5793027,
+          34.0401088
+        ],
+        "junction": [
+          "Topanga Canyon Boulevard"
+        ]
+      },
+      {
+        "near": [
+          -118.9631342,
+          34.0531322
+        ],
+        "junction": [
+          "Yerba Buena Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -339,9 +458,25 @@
       "source": null
     },
     "names": [
-      "Angeles Crest Highway · western SR 2"
+      "Angeles Crest Highway"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.2000708,
+          34.2129901
+        ]
+      },
+      {
+        "near": [
+          -118.0433912,
+          34.2729488
+        ],
+        "junction": [
+          "Upper Big Tujunga Canyon Road"
+        ]
+      }
+    ],
     "access": {
       "note": "Proposed western segment stops at Upper Big Tujunga. SR 2 has middle-mountain closures; do not publish a through-route to Wrightwood.",
       "status": "bounded-candidate"
@@ -353,7 +488,7 @@
     "area": "Angeles / San Gabriel Mountains",
     "difficulty": 2,
     "character": "Medium speed",
-    "description": "The N3 mountain highway between Clear Creek and the Upper Big Tujunga junction, crossing open ridges inside the Angeles National Forest.",
+    "description": "The southern Angeles Forest Highway, from the Angeles Crest junction at Clear Creek down to Big Tujunga Canyon Road.",
     "sources": [
       {
         "title": "Angeles Crest Christian Camp · Directions via Angeles Crest, Angeles Forest and Upper Big Tujunga",
@@ -371,9 +506,28 @@
       "source": null
     },
     "names": [
-      "Angeles Forest Highway · N3"
+      "Angeles Forest Highway"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.153462,
+          34.2702296
+        ],
+        "junction": [
+          "Angeles Crest Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.1612627,
+          34.2969146
+        ],
+        "junction": [
+          "Big Tujunga Canyon Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -405,7 +559,23 @@
     "names": [
       "Big Tujunga Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.3157515,
+          34.27215
+        ]
+      },
+      {
+        "near": [
+          -118.1612627,
+          34.2969146
+        ],
+        "junction": [
+          "Angeles Forest Highway"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -441,7 +611,26 @@
     "names": [
       "Upper Big Tujunga Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -118.1197957,
+          34.3292886
+        ],
+        "junction": [
+          "Angeles Forest Highway"
+        ]
+      },
+      {
+        "near": [
+          -118.0433912,
+          34.2729488
+        ],
+        "junction": [
+          "Angeles Crest Highway"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -471,9 +660,25 @@
       "source": null
     },
     "names": [
-      "Glendora Mountain Road · GMR"
+      "Glendora Mountain Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.8433308,
+          34.1591826
+        ]
+      },
+      {
+        "near": [
+          -117.808757,
+          34.2040389
+        ],
+        "junction": [
+          "Glendora Ridge Road"
+        ]
+      }
+    ],
     "access": {
       "note": "Recent holiday closure discussion does not prove gates subsequently reopened.",
       "status": "gate-check-required"
@@ -503,9 +708,29 @@
       "source": null
     },
     "names": [
-      "Glendora Ridge Road · GRR"
+      "Glendora Ridge Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.808757,
+          34.2040389
+        ],
+        "junction": [
+          "Glendora Mountain Road"
+        ]
+      },
+      {
+        "near": [
+          -117.6599605,
+          34.2360688
+        ],
+        "junction": [
+          "Mount Baldy Road",
+          "Mt. Baldy Road"
+        ]
+      }
+    ],
     "access": {
       "note": "Verify vehicle access independently from bicycle access and scheduled reopening dates.",
       "status": "gate-check-required"
@@ -531,9 +756,26 @@
       "source": null
     },
     "names": [
-      "Mount Baldy Road"
+      "Mount Baldy Road",
+      "Mt. Baldy Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.707322,
+          34.138376
+        ]
+      },
+      {
+        "near": [
+          -117.6599605,
+          34.2360688
+        ],
+        "junction": [
+          "Glendora Ridge Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -569,7 +811,23 @@
     "names": [
       "Santiago Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.761222,
+          33.7923555
+        ]
+      },
+      {
+        "near": [
+          -117.6206319,
+          33.6833378
+        ],
+        "junction": [
+          "Live Oak Canyon Road"
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -603,9 +861,26 @@
       "source": null
     },
     "names": [
-      "Live Oak / Trabuco Canyon"
+      "Live Oak Canyon Road",
+      "Trabuco Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.6206319,
+          33.6833378
+        ],
+        "junction": [
+          "Santiago Canyon Road"
+        ]
+      },
+      {
+        "near": [
+          -117.5901021,
+          33.6596521
+        ]
+      }
+    ],
     "access": {
       "note": "Trace the paved county corridor. Do not confuse it with Forest Road 6S13 in the current Airport Fire order.",
       "status": "segment-verification-required"
@@ -639,9 +914,22 @@
       "source": null
     },
     "names": [
-      "Ortega Highway · SR 74"
+      "Ortega Highway"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.6599684,
+          33.5016697
+        ]
+      },
+      {
+        "near": [
+          -117.3690646,
+          33.6461754
+        ]
+      }
+    ],
     "access": {
       "note": "Sept 9 report lists overnight one-way control in a Riverside-side segment through Sept 12, 2026. Refresh before publication.",
       "status": "construction"
@@ -671,9 +959,22 @@
       "source": null
     },
     "names": [
-      "Carbon Canyon Road · SR 142"
+      "Carbon Canyon Road"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.8476575,
+          33.9241448
+        ]
+      },
+      {
+        "near": [
+          -117.7410682,
+          33.9811195
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
@@ -703,9 +1004,27 @@
       "source": null
     },
     "names": [
-      "Pacific Coast Highway · Orange County"
+      "Pacific Coast Highway",
+      "Coast Highway",
+      "North Coast Highway",
+      "South Coast Highway",
+      "East Coast Highway",
+      "West Coast Highway"
     ],
-    "anchors": [],
+    "anchors": [
+      {
+        "near": [
+          -117.9231343,
+          33.6197472
+        ]
+      },
+      {
+        "near": [
+          -117.6895065,
+          33.4656022
+        ]
+      }
+    ],
     "access": {
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"

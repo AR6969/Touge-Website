@@ -1,46 +1,365 @@
 {
-  "latigo-canyon": {"names": ["Latigo Canyon Road"], "anchors": [
-    {"junction": ["Pacific Coast Highway"]}, {"junction": ["Kanan Dume Road"]}]},
-  "piuma-road": {"names": ["Piuma Road"], "anchors": [
-    {"junction": ["Malibu Canyon Road"]}, {"junction": ["Rambla Pacifico", "Rambla Pacifico Street"]}]},
-  "stunt-road": {"names": ["Stunt Road"], "anchors": [
-    {"junction": ["Mulholland Highway"]}, {"junction": ["Schueren Road"]}]},
-  "schueren-saddle-peak": {"names": ["Schueren Road"], "anchors": [
-    {"junction": ["Stunt Road"]}, {"junction": ["Piuma Road"]}]},
-  "decker-canyon": {"names": ["Decker Road", "Decker Canyon Road"], "anchors": [
-    {"junction": ["Pacific Coast Highway"]}, {"junction": ["Mulholland Highway"]}]},
-  "encinal-canyon": {"names": ["Encinal Canyon Road"], "anchors": [
-    {"junction": ["Pacific Coast Highway"]}, {"junction": ["Mulholland Highway"]}]},
-  "mulholland-highway-malibu": {"names": ["Mulholland Highway"], "anchors": [
-    {"junction": ["Decker Road", "Decker Canyon Road"]}, {"junction": ["Stunt Road"]}]},
-  "malibu-canyon-las-virgenes": {"names": ["Malibu Canyon Road", "Las Virgenes Road"], "anchors": [
-    {"junction": ["Pacific Coast Highway"]}, {"near": [-118.7080, 34.1470]}]},
-  "pch-malibu": {"names": ["Pacific Coast Highway"], "anchors": [
-    {"junction": ["Topanga Canyon Boulevard"]}, {"junction": ["Yerba Buena Road"]}]},
-
-  "angeles-crest-west": {"names": ["Angeles Crest Highway"], "anchors": [
-    {"near": [-118.1970, 34.2130]}, {"junction": ["Upper Big Tujunga Canyon Road"]}]},
-  "angeles-forest": {"names": ["Angeles Forest Highway"], "anchors": [
-    {"junction": ["Angeles Crest Highway"]}, {"junction": ["Upper Big Tujunga Canyon Road"]}]},
-  "big-tujunga": {"names": ["Big Tujunga Canyon Road"], "anchors": [
-    {"near": [-118.2870, 34.2540]}, {"junction": ["Angeles Forest Highway"]}]},
-  "upper-big-tujunga": {"names": ["Upper Big Tujunga Canyon Road"], "anchors": [
-    {"junction": ["Angeles Forest Highway"]}, {"junction": ["Angeles Crest Highway"]}]},
-  "glendora-mountain": {"names": ["Glendora Mountain Road"], "anchors": [
-    {"near": [-117.8455, 34.1585]}, {"junction": ["Glendora Ridge Road"]}]},
-  "glendora-ridge": {"names": ["Glendora Ridge Road"], "anchors": [
-    {"junction": ["Glendora Mountain Road"]}, {"junction": ["Mount Baldy Road", "Mt. Baldy Road"]}]},
-  "mount-baldy-road": {"names": ["Mount Baldy Road", "Mt. Baldy Road"], "anchors": [
-    {"near": [-117.6470, 34.1640]}, {"junction": ["Glendora Ridge Road"]}]},
-
-  "santiago-canyon": {"names": ["Santiago Canyon Road"], "anchors": [
-    {"near": [-117.7620, 33.7930]}, {"junction": ["Live Oak Canyon Road"]}]},
-  "live-oak-trabuco": {"names": ["Live Oak Canyon Road", "Trabuco Canyon Road"], "anchors": [
-    {"junction": ["Santiago Canyon Road"]}, {"near": [-117.5900, 33.6620]}]},
-  "ortega-highway": {"names": ["Ortega Highway"], "anchors": [
-    {"near": [-117.6620, 33.5020]}, {"near": [-117.3620, 33.6640]}]},
-  "carbon-canyon": {"names": ["Carbon Canyon Road"], "anchors": [
-    {"near": [-117.8400, 33.9280]}, {"near": [-117.7320, 33.9600]}]},
-  "pch-orange-county": {"names": ["Pacific Coast Highway", "Coast Highway", "North Coast Highway", "South Coast Highway", "East Coast Highway", "West Coast Highway"], "anchors": [
-    {"near": [-117.9290, 33.6110]}, {"near": [-117.6890, 33.4670]}]}
+  "latigo-canyon": {
+    "names": [
+      "Latigo Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Kanan Dume Road"
+        ]
+      }
+    ],
+    "box": [
+      -118.9,
+      34.0,
+      -118.7,
+      34.15
+    ]
+  },
+  "piuma-road": {
+    "names": [
+      "Piuma Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Malibu Canyon Road"
+        ]
+      },
+      {
+        "junction": [
+          "Rambla Pacifico",
+          "Rambla Pacifico Street"
+        ]
+      }
+    ]
+  },
+  "stunt-road": {
+    "names": [
+      "Stunt Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Mulholland Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Schueren Road"
+        ]
+      }
+    ]
+  },
+  "schueren-saddle-peak": {
+    "names": [
+      "Schueren Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Stunt Road"
+        ]
+      },
+      {
+        "junction": [
+          "Piuma Road"
+        ]
+      }
+    ]
+  },
+  "decker-canyon": {
+    "names": [
+      "Decker Road",
+      "Decker Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ]
+  },
+  "encinal-canyon": {
+    "names": [
+      "Encinal Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Pacific Coast Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Mulholland Highway"
+        ]
+      }
+    ]
+  },
+  "mulholland-highway-malibu": {
+    "names": [
+      "Mulholland Highway"
+    ],
+    "box": [
+      -118.95,
+      34.02,
+      -118.79,
+      34.12
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Decker Road",
+          "Decker Canyon Road"
+        ]
+      },
+      {
+        "junction": [
+          "Kanan Dume Road"
+        ]
+      }
+    ]
+  },
+  "pch-malibu": {
+    "names": [
+      "Pacific Coast Highway"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Topanga Canyon Boulevard"
+        ]
+      },
+      {
+        "junction": [
+          "Yerba Buena Road"
+        ]
+      }
+    ]
+  },
+  "angeles-crest-west": {
+    "names": [
+      "Angeles Crest Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.197,
+          34.213
+        ]
+      },
+      {
+        "junction": [
+          "Upper Big Tujunga Canyon Road"
+        ]
+      }
+    ]
+  },
+  "angeles-forest": {
+    "names": [
+      "Angeles Forest Highway"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Angeles Crest Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Big Tujunga Canyon Road"
+        ]
+      }
+    ]
+  },
+  "big-tujunga": {
+    "names": [
+      "Big Tujunga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "junction": [
+          "Angeles Forest Highway"
+        ]
+      }
+    ]
+  },
+  "upper-big-tujunga": {
+    "names": [
+      "Upper Big Tujunga Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Angeles Forest Highway"
+        ]
+      },
+      {
+        "junction": [
+          "Angeles Crest Highway"
+        ]
+      }
+    ]
+  },
+  "glendora-mountain": {
+    "names": [
+      "Glendora Mountain Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.8455,
+          34.1585
+        ]
+      },
+      {
+        "junction": [
+          "Glendora Ridge Road"
+        ]
+      }
+    ]
+  },
+  "glendora-ridge": {
+    "names": [
+      "Glendora Ridge Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Glendora Mountain Road"
+        ]
+      },
+      {
+        "junction": [
+          "Mount Baldy Road",
+          "Mt. Baldy Road"
+        ]
+      }
+    ]
+  },
+  "mount-baldy-road": {
+    "names": [
+      "Mount Baldy Road",
+      "Mt. Baldy Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "junction": [
+          "Glendora Ridge Road"
+        ]
+      }
+    ]
+  },
+  "santiago-canyon": {
+    "names": [
+      "Santiago Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.762,
+          33.793
+        ]
+      },
+      {
+        "junction": [
+          "Live Oak Canyon Road"
+        ]
+      }
+    ]
+  },
+  "live-oak-trabuco": {
+    "names": [
+      "Live Oak Canyon Road",
+      "Trabuco Canyon Road"
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Santiago Canyon Road"
+        ]
+      },
+      {
+        "near": [
+          -117.59,
+          33.662
+        ]
+      }
+    ]
+  },
+  "ortega-highway": {
+    "names": [
+      "Ortega Highway"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "carbon-canyon": {
+    "names": [
+      "Carbon Canyon Road"
+    ],
+    "box": [
+      -117.9,
+      33.88,
+      -117.68,
+      34.0
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "pch-orange-county": {
+    "names": [
+      "Pacific Coast Highway",
+      "Coast Highway",
+      "North Coast Highway",
+      "South Coast Highway",
+      "East Coast Highway",
+      "West Coast Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.929,
+          33.611
+        ]
+      },
+      {
+        "near": [
+          -117.689,
+          33.467
+        ]
+      }
+    ]
+  }
 }
