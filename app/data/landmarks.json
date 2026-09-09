@@ -2,13 +2,21 @@
   {
     "id": "four-corners",
     "name": "Four Corners",
-    "note": "Skyline Blvd (CA 35) × La Honda Road (CA 84), the Alice's intersection",
-    "coordinates": [-122.2643, 37.38637]
+    "kind": "Junction",
+    "note": "Skyline Blvd (CA 35) × La Honda Road (CA 84) — the Alice's intersection.",
+    "coordinates": [
+      -122.2643,
+      37.38637
+    ]
   },
   {
     "id": "saratoga-gap",
     "name": "Saratoga Gap",
-    "note": "Skyline Blvd (CA 35) × Highway 9, where the front side becomes the back side",
-    "coordinates": [-122.12197, 37.25852]
+    "kind": "Junction",
+    "note": "Skyline Blvd (CA 35) × Highway 9, where the front side becomes the back side.",
+    "coordinates": [
+      -122.12197,
+      37.25852
+    ]
   }
 ]

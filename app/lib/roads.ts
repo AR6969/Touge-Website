@@ -10,6 +10,8 @@ export type Road = {
   description: string;
   sources: { title: string; url: string }[];
   center: [number, number];
+  /** Overrides `center` as the map label anchor. */
+  labelPoint?: [number, number];
   bounds: [[number, number], [number, number]];
   speed: { value: string; kind: string; note: string; source: string | null };
   mappedSpeed: string;
@@ -41,7 +43,10 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
 export const roads = catalog as Road[];
 
 /** Named junctions worth marking on the map. Editorial, hand-maintained. */
-export type Landmark = { id: string; name: string; note: string; coordinates: [number, number] };
+export type Landmark = {
+  id: string; name: string; kind: string; note: string;
+  coordinates: [number, number];
+};
 export const landmarks = landmarkData as Landmark[];
 
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);

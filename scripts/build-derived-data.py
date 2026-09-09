@@ -111,6 +111,17 @@ for feature in source['features']:
 
 write_json(ROOT / 'public/data/roads.geojson', {'type': 'FeatureCollection', 'features': overview})
 
+# Label anchors. Defaults to the road's centre; `labelPoint` overrides it where
+# the centre lands somewhere unhelpful.
+labels = [{
+    'type': 'Feature',
+    'properties': {k: by_id[f['properties']['id']][k] for k in ('id', 'name', 'difficulty', 'character')},
+    'geometry': {'type': 'Point',
+                 'coordinates': by_id[f['properties']['id']].get('labelPoint')
+                                or by_id[f['properties']['id']]['center']},
+} for f in overview]
+write_json(ROOT / 'public/data/road-labels.geojson', {'type': 'FeatureCollection', 'features': labels})
+
 # Published so /method quotes the real constants rather than a copy that can drift.
 (ROOT / 'app/data/score-config.json').write_text(json.dumps({
     'cornerAnchor': scoring.CORNER_ANCHOR,

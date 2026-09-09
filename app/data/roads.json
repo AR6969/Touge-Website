@@ -2409,7 +2409,11 @@
       "climb": 10,
       "technical": 10
     },
-    "splitFrom": "highway-9"
+    "splitFrom": "highway-9",
+    "labelPoint": [
+      -122.14164,
+      37.24483
+    ]
   },
   {
     "id": "bear-creek",

@@ -19,11 +19,13 @@ export type Character = (typeof characters)[number];
 export const characterColors: Record<string, string> = {
   Technical: "#ff7d6b",       // coral
   "Low speed": "#c79af0",     // violet
-  "Medium speed": "#ffc46b",  // amber
+  "Medium speed": "#5fd68a",  // green
   "High speed": "#79cdf2",    // sky
 };
 
-export const landmarkColor = "#f4f1e8";
+// Amber is free now that Medium speed is green, and it reads as "point of
+// interest" without competing with any road colour.
+export const landmarkColor = "#ffc861";
 
 export function colorFor(character: string) {
   return characterColors[character] ?? "#9fb0a4";

@@ -218,7 +218,7 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
       {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
       {activeLandmark && <article className="detail landmark-card" aria-label={`${activeLandmark.name} details`}>
         <button className="close" aria-label="Close junction details" onClick={() => setLandmark(null)}>×</button>
-        <p className="eyebrow">Junction</p>
+        <p className="eyebrow">{activeLandmark.kind}</p>
         <h2>{activeLandmark.name}</h2>
         <p>{activeLandmark.note}</p>
       </article>}

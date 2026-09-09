@@ -169,8 +169,8 @@ for entry in R:
     print(entry['id'],len(lines),'segments',round(total_length/1609.344,1),'mi',speed['kind'],speed['value'])
 
 # Full precision is archived outside public/ so it is never shipped to a browser.
-# build-derived-data.py turns it into the simplified files the site actually serves.
+# build-derived-data.py turns it into the simplified files the site actually
+# serves, including the label points.
 (ROOT/'data/roads.full.geojson').write_text(json.dumps(dict(type='FeatureCollection',features=features),separators=(',',':'))+'\n')
-(ROOT/'public/data/road-labels.geojson').write_text(json.dumps(dict(type='FeatureCollection',features=labels),separators=(',',':'))+'\n')
 (ROOT/'app/data/roads.json').write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+'\n')
 print('Built',len(catalog),'roads. Now run: python3 scripts/build-derived-data.py')
