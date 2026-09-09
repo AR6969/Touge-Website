@@ -101,14 +101,27 @@ summary { cursor: pointer; }
 .detail-cta:hover { text-decoration: underline; }
 
 /* The compact strip under the map on the home page. */
-.home-intro { max-width: 1080px; width: 100%; margin: 0 auto; padding: 52px 30px 56px; color: #c2cfc6; }
-.home-intro h1 { margin: 0 0 16px; font-size: clamp(26px, 3.6vw, 38px); line-height: 1.15; letter-spacing: -1px; font-weight: 600; color: var(--foreground); }
-.home-intro p { margin: 0 0 30px; max-width: 74ch; font-size: 16px; line-height: 1.7; }
-.home-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
-.home-links a { display: flex; flex-direction: column; gap: 6px; padding: 16px 17px; border: 1px solid #2f3b34; border-radius: 8px; background: #19211d; color: var(--foreground); text-decoration: none; }
-.home-links a:hover { border-color: #55705f; background: #1e2823; }
-.home-links strong { font-size: 15px; font-weight: 500; }
-.home-links span { color: #93a699; font-size: 12.5px; line-height: 1.5; }
+/* ---- The strip under the map ---- */
+.intro { max-width: 1120px; width: 100%; margin: 0 auto; padding: 56px 30px 60px; color: #c2cfc6;
+         display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 56px; align-items: start; }
+.intro-lead { max-width: 62ch; }
+.intro h1 { margin: 0 0 18px; font-size: clamp(25px, 3vw, 34px); line-height: 1.18; letter-spacing: -.9px;
+            font-weight: 600; color: var(--foreground); text-wrap: balance; }
+.intro-lead p { margin: 0 0 26px; font-size: 15.5px; line-height: 1.75; }
+
+/* Text links, not a card grid: they are navigation, not four equal features. */
+.intro-links { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; }
+.intro-links a { position: relative; color: var(--accent); text-decoration: none; padding-bottom: 2px;
+                 border-bottom: 1px solid #33463c; }
+.intro-links a:hover { border-bottom-color: var(--accent); }
+
+/* The counts, given the weight they deserve. */
+.intro-stats { display: grid; grid-template-columns: repeat(2, auto); gap: 22px 40px; margin: 4px 0 0;
+               padding-left: 40px; border-left: 1px solid #2b3630; }
+.intro-stats div { display: flex; flex-direction: column; }
+.intro-stats dd { margin: 0; font-size: 30px; font-weight: 600; letter-spacing: -1.2px; line-height: 1;
+                  color: var(--foreground); font-variant-numeric: tabular-nums; }
+.intro-stats dt { margin-top: 7px; font-size: 10.5px; text-transform: uppercase; letter-spacing: 1.2px; color: #8fa396; }
 
 /* ---- Written pages ---- */
 .prose { max-width: 1080px; width: 100%; margin: 0 auto; padding: 44px 30px 64px; font-size: 15px; line-height: 1.75; color: #c2cfc6; }
@@ -242,7 +255,9 @@ summary { cursor: pointer; }
   .road-picker { left: 12px; right: 12px; bottom: 105px; width: auto; max-height: calc(100% - 230px); }
   .map-status, .empty-hint { top: 140px; left: 12px; }
   .explorer { height: calc(100dvh - 100px); }
-  .home-intro { padding: 34px 18px 42px; }
+  .intro { grid-template-columns: 1fr; gap: 32px; padding: 34px 18px 44px; }
+  .intro-stats { padding-left: 0; border-left: 0; border-top: 1px solid #2b3630; padding-top: 24px; gap: 20px 32px; }
+  .intro-stats dd { font-size: 26px; }
   .prose { padding: 32px 18px 48px; }
   .prose section { margin-top: 40px; }
   .mini-stats { gap: 14px; }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import RoadExplorer from "../road-explorer";
+import MapIntro from "../map-intro";
 import { SiteFooter, SiteHeader } from "../site-chrome";
 import { landmarksFor, losAngelesRoads as roads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 const areas = [...new Set(roads.map(road => road.area))];
+const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
+const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 
 export default function LosAngeles() {
   const structured = {
@@ -34,21 +36,25 @@ export default function LosAngeles() {
       <div className="explorer">
         <RoadExplorer key="los-angeles" roads={roads.map(toSummary)} landmarks={landmarksFor("los-angeles")} region="los-angeles" />
       </div>
-      <main className="home-intro">
-        <h1>Best driving roads in Los Angeles, Malibu &amp; Orange County</h1>
-        <p>
-          {roads.length} driving roads, from Latigo, Piuma and Stunt to the Angeles mountains,
-          Santiago Canyon and Ortega Highway. Explore all three areas on the map, or choose a road
-          for its difficulty, measured bends and speed evidence. Traces show selected sections;
-          access notes appear when you select an affected road.
-        </p>
-        <nav className="home-links" aria-label="Los Angeles driving areas">
-          {areas.map(area => <Link key={area} href={`/regions/${slugifyArea(area)}`}>
-            <strong>{area}</strong><span>{roads.filter(road => road.area === area).length} driving roads</span>
-          </Link>)}
-          <Link href="/roads"><strong>All California roads</strong><span>Browse the full collection</span></Link>
-        </nav>
-      </main>
+      <MapIntro
+        title={<>Best driving roads in Los Angeles, Malibu &amp; Orange County</>}
+        stats={[
+          { value: String(roads.length), label: "Roads" },
+          { value: totalMiles.toLocaleString(), label: "Miles" },
+          { value: totalBends.toLocaleString(), label: "Counted bends" },
+          { value: String(areas.length), label: "Areas" },
+        ]}
+        linksLabel="Los Angeles driving areas"
+        links={[
+          ...areas.map(area => ({ href: `/regions/${slugifyArea(area)}`, label: area })),
+          { href: "/roads", label: "All California roads" },
+        ]}
+      >
+        Three ranges with little in common beyond the city behind them: the Malibu canyons, the San Gabriels,
+        and the Santa Ana hills. Traces cover selected sections rather than whole highways, and roads carrying
+        a closure or one-way caveat say so on their own page.
+      </MapIntro>
+
       <SiteFooter />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
     </>

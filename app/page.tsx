@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import RoadExplorer from "./road-explorer";
+import MapIntro from "./map-intro";
 import { SiteFooter, SiteHeader } from "./site-chrome";
 import { bayAreaRoads as roads, landmarksFor, toSummary } from "./lib/roads";
 import { siteName, siteUrl } from "./lib/site";
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 const tagline =
   `${roads.length} driving roads across the Bay Area, Santa Cruz, Napa and Monterey, with corners counted from OpenStreetMap geometry.`;
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
+const bayAreaRegions = new Set(roads.map(road => road.area)).size;
 const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 const curviest = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 
@@ -44,21 +45,27 @@ export default function Home() {
       {/* Below the fold: the first screen stays pure map. This strip exists so the
           page still states what it is, and so crawlers reach the road pages from
           here rather than from the sitemap alone. */}
-      <main className="home-intro">
-        <h1>Best driving roads in the Bay Area &amp; Northern California</h1>
-        <p>
-          {roads.length} roads, {totalMiles} miles and {totalBends.toLocaleString()} counted bends — across the
-          Peninsula, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey. Every road has its own page
-          with corners counted from its mapped centreline, elevation measured from USGS data, and the source behind
-          any speed figure shown.
-        </p>
-        <nav className="home-links" aria-label="Sections">
-          <Link href="/roads"><strong>All California roads</strong><span>Ranked and compared in one table</span></Link>
-          <Link href="/regions"><strong>Browse by region</strong><span>From the Peninsula to Monterey</span></Link>
-          <Link href="/drives"><strong>Bay Area driving guides</strong><span>Mountain roads, coastal drives &amp; loops</span></Link>
-          <Link href="/method"><strong>How this is built</strong><span>Ratings, measurements and sources</span></Link>
-        </nav>
-      </main>
+      <MapIntro
+        title={<>Best driving roads in the Bay Area &amp; Northern California</>}
+        stats={[
+          { value: String(roads.length), label: "Roads" },
+          { value: totalMiles.toLocaleString(), label: "Miles" },
+          { value: totalBends.toLocaleString(), label: "Counted bends" },
+          { value: String(bayAreaRegions), label: "Areas" },
+        ]}
+        linksLabel="Sections"
+        links={[
+          { href: "/roads", label: "All California roads" },
+          { href: "/regions", label: "Browse by region" },
+          { href: "/drives", label: "Driving guides" },
+          { href: "/method", label: "How this is built" },
+        ]}
+      >
+        Every road here is measured, not just recommended. Corners are counted off the mapped centreline,
+        elevation comes from USGS survey data, and any speed figure links to the document behind it — or says
+        plainly that no such document was found. The Peninsula, the Santa Cruz Mountains, the East Bay, Marin,
+        Napa and Monterey.
+      </MapIntro>
 
       <SiteFooter />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
