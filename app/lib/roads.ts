@@ -1,4 +1,5 @@
 import catalog from "../data/roads.json";
+import landmarkData from "../data/landmarks.json";
 
 export type Road = {
   id: string;
@@ -15,6 +16,8 @@ export type Road = {
   taggedPercent: number;
   osmWayIds: number[];
   reviewed: string;
+  /** Set when this road is one half of a road that was split in two. */
+  splitFrom?: string;
   shape: { lengthMi: number; bends: number; switchbacks: number; curvature: number; bendsPerMile: number };
   /** Null only if elevation has not been fetched for this road yet. */
   elevation: {
@@ -36,6 +39,10 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
 };
 
 export const roads = catalog as Road[];
+
+/** Named junctions worth marking on the map. Editorial, hand-maintained. */
+export type Landmark = { id: string; name: string; note: string; coordinates: [number, number] };
+export const landmarks = landmarkData as Landmark[];
 
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 const curvatureRanks = new Map(byCurvature.map((road, index) => [road.id, index + 1]));

@@ -152,7 +152,12 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
               <a href={`https://www.openstreetmap.org/way/${road.osmWayIds[0]}`} target="_blank" rel="noopener noreferrer">
                 OpenStreetMap road data ↗
               </a>{" "}
-              <span className="dim">({road.osmWayIds.length} ways in this trace)</span>
+              <span className="dim">
+                {road.splitFrom
+                  /* Ways could not be split with the geometry, so this is the list for the whole road. */
+                  ? "(ways for the full route, of which this is one half)"
+                  : `(${road.osmWayIds.length} ways in this trace)`}
+              </span>
             </li>
           </ul>
           <p className="fine">Reviewed {reviewedOn}. The trace shows selected road sections, not a navigation route.</p>

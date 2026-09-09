@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import mapboxgl, { type ExpressionSpecification, type FilterSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import type { RoadSummary } from "./lib/roads";
+import type { Landmark, RoadSummary } from "./lib/roads";
 
 const characters = ["Technical", "Low speed", "Medium speed", "High speed"] as const;
 type Character = (typeof characters)[number];
@@ -16,7 +16,7 @@ const validToken = token?.startsWith("pk.");
 const tokenMessage = "Add a public Mapbox token to NEXT_PUBLIC_MAPBOX_TOKEN in .env.local, then restart the server.";
 const initialCenter: [number, number] = [-122.10, 37.57];
 
-export default function RoadExplorer({ roads }: { roads: RoadSummary[] }) {
+export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[]; landmarks: Landmark[] }) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
@@ -76,6 +76,34 @@ export default function RoadExplorer({ roads }: { roads: RoadSummary[] }) {
               layout: { "text-field": ["get", "name"], "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 6, 10, 10, 12], "text-anchor": "left", "text-offset": [0.7, 0], "text-max-width": 14, "text-padding": 6, "text-optional": true },
               paint: { "text-color": "#f1f0e9", "text-halo-color": "#1b2220", "text-halo-width": 2 },
             });
+            current.addSource("landmarks", {
+              type: "geojson",
+              data: {
+                type: "FeatureCollection",
+                features: landmarks.map(mark => ({
+                  type: "Feature" as const,
+                  properties: { name: mark.name },
+                  geometry: { type: "Point" as const, coordinates: mark.coordinates },
+                })),
+              },
+            });
+            // Named junctions, drawn above the roads and never hidden by the filter.
+            current.addLayer({
+              id: "landmark-dots", type: "circle", source: "landmarks",
+              paint: {
+                "circle-color": "#141918", "circle-radius": 5,
+                "circle-stroke-width": 2.5, "circle-stroke-color": "#f1f0e9",
+              },
+            });
+            current.addLayer({
+              id: "landmark-names", type: "symbol", source: "landmarks",
+              layout: {
+                "text-field": ["get", "name"],
+                "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+                "text-size": 12, "text-anchor": "top", "text-offset": [0, 0.8], "text-padding": 8,
+              },
+              paint: { "text-color": "#ffffff", "text-halo-color": "#141918", "text-halo-width": 2.5 },
+            });
             current.on("click", event => {
               const hits = current.queryRenderedFeatures([[event.point.x - 5, event.point.y - 5], [event.point.x + 5, event.point.y + 5]], { layers: ["road-names", "road-hit", "road-dots"] });
               const id = hits[0]?.properties?.id;
@@ -110,7 +138,7 @@ export default function RoadExplorer({ roads }: { roads: RoadSummary[] }) {
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
     }, 25000);
     return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
-  }, [attempt, roads]);
+  }, [attempt, roads, landmarks]);
 
   useEffect(() => {
     if (!ready || !map.current?.getLayer("road-lines")) return;
