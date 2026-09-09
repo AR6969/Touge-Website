@@ -5,8 +5,9 @@ import RoadMap from "../../road-map";
 import ElevationProfile from "../../elevation-profile";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import {
-  curvatureRank, difficultyColors, difficultyLabels, getRoad, nearbyRoads, roads, slugifyArea, speedGuide,
+  curvatureRank, difficultyLabels, getRoad, nearbyRoads, roads, slugifyArea, speedGuide,
 } from "../../lib/roads";
+import { colorFor } from "../../lib/colors";
 import { reviewedOn, siteUrl } from "../../lib/site";
 
 export const dynamicParams = false;
@@ -42,7 +43,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const guide = speedGuide(road);
   const rank = curvatureRank(road);
   const nearby = nearbyRoads(road);
-  const color = difficultyColors[road.difficulty - 1];
+  const color = colorFor(road.character);
   const mapsQuery = encodeURIComponent(`${road.name.replace(/ ·.*/, "")}, ${road.area}, California`);
 
   const structured = {
@@ -81,9 +82,8 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         <h1>{road.name}</h1>
         <p className="lede">{road.description}</p>
         <div className="road-badges">
-          <span><i style={{ background: color }} /> Difficulty {road.difficulty}/3 · {difficultyLabels[road.difficulty - 1]}</span>
-          {/* Difficulty and character are separate axes that can share a word. */}
-          <span>Character: {road.character}</span>
+          <span><i style={{ background: color }} /> {road.character}</span>
+          <span>Difficulty {road.difficulty}/3 · {difficultyLabels[road.difficulty - 1]}</span>
           <span>{road.area}</span>
         </div>
 
@@ -171,7 +171,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
                 <Link href={`/roads/${other.id}`}>
                   <strong>{other.name}</strong>
                   <span className="card-meta">
-                    <i style={{ background: difficultyColors[other.difficulty - 1] }} />
+                    <i style={{ background: colorFor(other.character) }} />
                     {Math.round(miles)} mi away · {other.shape.lengthMi} mi · {other.shape.bends} bends
                   </span>
                 </Link>

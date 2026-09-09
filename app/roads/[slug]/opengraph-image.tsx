@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
-import { difficultyColors, difficultyLabels, getRoad, roads } from "../../lib/roads";
+import { difficultyLabels, getRoad, roads } from "../../lib/roads";
+import { colorFor } from "../../lib/colors";
 import { roadShapeUri } from "../../lib/road-shape";
 
 export const size = { width: 1200, height: 630 };
@@ -14,7 +15,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const road = getRoad((await params).slug);
   if (!road) return new Response("Not found", { status: 404 });
 
-  const color = difficultyColors[road.difficulty - 1];
+  const color = colorFor(road.character);
   const shape = await roadShapeUri(road.id, 500, 500, color);
 
   const stats: [string, string][] = [

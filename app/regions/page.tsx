@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { difficultyColors, regions } from "../lib/roads";
+import { regions } from "../lib/roads";
+import { colorFor } from "../lib/colors";
 
 export const metadata: Metadata = {
   title: "Driving Roads by Region",
@@ -35,7 +36,7 @@ export default function RegionsIndex() {
                   <Link href={`/roads/${road.id}`}>
                     <strong>{road.name}</strong>
                     <span className="card-meta">
-                      <i style={{ background: difficultyColors[road.difficulty - 1] }} />
+                      <i style={{ background: colorFor(road.character) }} />
                       {road.shape.lengthMi} mi · {road.shape.bends} bends · Difficulty {road.difficulty}/3
                     </span>
                   </Link>

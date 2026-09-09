@@ -47,12 +47,15 @@ export default function MethodPage() {
           <ul className="plain-list">
             <li><strong>1 — Relaxed.</strong> Relatively open or gentle.</li>
             <li><strong>2 — Winding.</strong> Sustained curves at a steady pace.</li>
-            <li><strong>3 — Technical.</strong> Narrow sections, hairpins, blind crests or complex mountain geometry.</li>
+            <li><strong>3 — Demanding.</strong> Narrow sections, hairpins, blind crests or complex mountain geometry.</li>
           </ul>
           <p>
             Road <em>character</em> is a separate axis and deliberately carries no mph target.
             <strong> Technical</strong> means tight or complex; <strong>Low</strong>, <strong>Medium</strong> and{" "}
             <strong>High speed</strong> describe relative road character, still subject to every local limit.
+            Character is what the map colours, because it is what the map filters by; difficulty is shown as a
+            number so the two axes never compete for the same visual channel. Difficulty 3 is called
+            &ldquo;Demanding&rdquo; rather than &ldquo;Technical&rdquo; so the two scales do not share a word.
           </p>
         </section>
 

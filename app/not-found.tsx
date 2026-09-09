@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { curviest, difficultyColors, regions, roads } from "./lib/roads";
+import { curviest, regions, roads } from "./lib/roads";
+import { colorFor } from "./lib/colors";
 
 export const metadata: Metadata = {
   title: "Page not found",
@@ -33,7 +34,7 @@ export default function NotFound() {
                 <Link href={`/roads/${road.id}`}>
                   <strong>{road.name}</strong>
                   <span className="card-meta">
-                    <i style={{ background: difficultyColors[road.difficulty - 1] }} />
+                    <i style={{ background: colorFor(road.character) }} />
                     {road.shape.lengthMi} mi · {road.shape.bends} bends · {road.area}
                   </span>
                 </Link>

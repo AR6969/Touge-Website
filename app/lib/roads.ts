@@ -59,8 +59,9 @@ export function scoreRank(road: Road) {
   return scoreRanks.get(road.id) ?? roads.length;
 }
 
-export const difficultyColors = ["#78caba", "#eac47c", "#e99488"];
-export const difficultyLabels = ["Relaxed", "Winding", "Technical"];
+// "Demanding", not "Technical": difficulty 3 and the "Technical" character are
+// separate axes, and sharing a word made the map legend unreadable.
+export const difficultyLabels = ["Relaxed", "Winding", "Demanding"];
 
 export function getRoad(id: string) {
   return roads.find(road => road.id === id);

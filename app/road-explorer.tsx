@@ -5,11 +5,17 @@ import Link from "next/link";
 import mapboxgl, { type ExpressionSpecification, type FilterSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import type { Landmark, RoadSummary } from "./lib/roads";
+import { characterColors, characters, colorFor, landmarkColor, type Character } from "./lib/colors";
 
-const characters = ["Technical", "Low speed", "Medium speed", "High speed"] as const;
-type Character = (typeof characters)[number];
-const colors = ["#78caba", "#eac47c", "#e99488"];
-const roadColor: ExpressionSpecification = ["match", ["get", "difficulty"], 1, colors[0], 2, colors[1], colors[2]];
+// Colour is character, so the filter buttons and the roads they filter agree.
+const roadColor: ExpressionSpecification = [
+  "match", ["get", "character"],
+  "Technical", characterColors.Technical,
+  "Low speed", characterColors["Low speed"],
+  "Medium speed", characterColors["Medium speed"],
+  "High speed", characterColors["High speed"],
+  "#9fb0a4",
+];
 const layers = ["road-casing", "road-lines", "road-hit", "road-names", "road-dots"];
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
@@ -24,9 +30,11 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
   const [attempt, setAttempt] = useState(0);
   const [ready, setReady] = useState(false);
   const [showRoads, setShowRoads] = useState(false);
+  const [landmark, setLandmark] = useState<string | null>(null);
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
   const active = visible.find(road => road.id === selected);
+  const activeLandmark = landmarks.find(mark => mark.name === landmark);
 
   useEffect(() => {
     if (!container.current || !validToken) return;
@@ -91,8 +99,8 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
             current.addLayer({
               id: "landmark-dots", type: "circle", source: "landmarks",
               paint: {
-                "circle-color": "#141918", "circle-radius": 5,
-                "circle-stroke-width": 2.5, "circle-stroke-color": "#f1f0e9",
+                "circle-color": landmarkColor, "circle-radius": 6,
+                "circle-stroke-width": 2.5, "circle-stroke-color": "#141918",
               },
             });
             current.addLayer({
@@ -102,15 +110,25 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
                 "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
                 "text-size": 12, "text-anchor": "top", "text-offset": [0, 0.8], "text-padding": 8,
               },
-              paint: { "text-color": "#ffffff", "text-halo-color": "#141918", "text-halo-width": 2.5 },
+              paint: { "text-color": landmarkColor, "text-halo-color": "#141918", "text-halo-width": 2.5 },
             });
             current.on("click", event => {
-              const hits = current.queryRenderedFeatures([[event.point.x - 5, event.point.y - 5], [event.point.x + 5, event.point.y + 5]], { layers: ["road-names", "road-hit", "road-dots"] });
+              const box: [mapboxgl.PointLike, mapboxgl.PointLike] =
+                [[event.point.x - 8, event.point.y - 8], [event.point.x + 8, event.point.y + 8]];
+              const marks = current.queryRenderedFeatures(box, { layers: ["landmark-dots", "landmark-names"] });
+              const markName = marks[0]?.properties?.name;
+              if (typeof markName === "string") {
+                setLandmark(markName);
+                setSelected(null);
+                setShowRoads(false);
+                return;
+              }
+              const hits = current.queryRenderedFeatures(box, { layers: ["road-names", "road-hit", "road-dots"] });
               const id = hits[0]?.properties?.id;
-              if (typeof id === "string") { setSelected(id); setShowRoads(false); }
+              if (typeof id === "string") { setSelected(id); setLandmark(null); setShowRoads(false); }
             });
             current.on("mousemove", event => {
-              current.getCanvas().style.cursor = current.queryRenderedFeatures(event.point, { layers: ["road-names", "road-hit"] }).length ? "pointer" : "";
+              current.getCanvas().style.cursor = current.queryRenderedFeatures(event.point, { layers: ["landmark-dots", "landmark-names", "road-names", "road-hit"] }).length ? "pointer" : "";
             });
             loaded = true;
             updateStatus("");
@@ -173,29 +191,42 @@ export default function RoadExplorer({ roads, landmarks }: { roads: RoadSummary[
       <fieldset className="character-filter">
         <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
         <div className="filter-options">
-          {characters.map(character => <button key={character} className="character" aria-pressed={enabled.includes(character)} onClick={() => toggleCharacter(character)}>{character}</button>)}
+          {characters.map(character => (
+            <button key={character} className="character" aria-pressed={enabled.includes(character)}
+                    style={{ "--swatch": characterColors[character] } as React.CSSProperties}
+                    onClick={() => toggleCharacter(character)}>
+              <i /> {character}
+            </button>
+          ))}
         </div>
       </fieldset>
       <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
       <div className="map-bottom">
-        <div className="difficulty-legend" aria-label="Difficulty color legend">
+        <div className="difficulty-legend" aria-label="Difficulty scale">
           <span>Difficulty</span>
-          {["1 · Relaxed", "2 · Winding", "3 · Technical"].map((label, i) => <span key={label}><i style={{ background: colors[i] }} />{label}</span>)}
+          <span>1 Relaxed</span><span>2 Winding</span><span>3 Demanding</span>
+          <span className="legend-note">Colour shows road character</span>
         </div>
         <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
       </div>
       {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
         <div className="picker-title">Bay Area & nearby drives<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button></div>
-        {visible.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setShowRoads(false); }}><i style={{ background: colors[road.difficulty - 1] }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
+        {visible.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setShowRoads(false); }}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
         {visible.length === 0 && <p>Select a road character above to show roads.</p>}
       </div>}
       {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
       {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
+      {activeLandmark && <article className="detail landmark-card" aria-label={`${activeLandmark.name} details`}>
+        <button className="close" aria-label="Close junction details" onClick={() => setLandmark(null)}>×</button>
+        <p className="eyebrow">Junction</p>
+        <h2>{activeLandmark.name}</h2>
+        <p>{activeLandmark.note}</p>
+      </article>}
       {active && <article className="detail" aria-label={`${active.name} details`}>
         <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
         <p className="eyebrow">{active.area}</p>
         <h2>{active.name}</h2>
-        <div className="road-badges"><span><i style={{ background: colors[active.difficulty - 1] }} /> Difficulty {active.difficulty}/3</span><span>{active.character}</span></div>
+        <div className="road-badges"><span><i style={{ background: colorFor(active.character) }} /> {active.character}</span><span>Difficulty {active.difficulty}/3</span></div>
         <p>{active.description}</p>
         <dl className="mini-stats">
           <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>

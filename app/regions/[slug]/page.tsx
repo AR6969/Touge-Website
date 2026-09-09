@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
-import { difficultyColors, getRegion, regions } from "../../lib/roads";
+import { getRegion, regions } from "../../lib/roads";
+import { colorFor } from "../../lib/colors";
 import { siteUrl } from "../../lib/site";
 
 export const dynamicParams = false;
@@ -64,7 +65,7 @@ export default async function RegionPage({ params }: PageProps<"/regions/[slug]"
               <Link href={`/roads/${road.id}`}>
                 <strong>{road.name}</strong>
                 <span className="card-meta">
-                  <i style={{ background: difficultyColors[road.difficulty - 1] }} />
+                  <i style={{ background: colorFor(road.character) }} />
                   {road.shape.lengthMi} mi · {road.shape.bends} bends · {road.shape.curvature}°/mi · {road.character}
                 </span>
                 <span className="card-body">{road.description}</span>

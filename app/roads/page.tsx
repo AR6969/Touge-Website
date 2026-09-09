@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { curviest, difficultyColors, longest, roads } from "../lib/roads";
+import { curviest, longest, roads } from "../lib/roads";
+import { colorFor } from "../lib/colors";
 import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
@@ -46,7 +47,7 @@ export default function RoadsIndex() {
                 <Link href={`/roads/${road.id}`}>
                   <strong>{road.name}</strong>
                   <span className="card-meta">
-                    <i style={{ background: difficultyColors[road.difficulty - 1] }} />
+                    <i style={{ background: colorFor(road.character) }} />
                     {road.shape.lengthMi} mi · {road.shape.bends} bends · {road.area}
                   </span>
                 </Link>
@@ -71,8 +72,8 @@ export default function RoadsIndex() {
                   <td className="rank">{index + 1}</td>
                   <td><Link href={`/roads/${road.id}`}>{road.name}</Link></td>
                   <td className="dim">{road.area}</td>
-                  <td><i style={{ background: difficultyColors[road.difficulty - 1] }} /> {road.difficulty}/3</td>
-                  <td className="dim">{road.character}</td>
+                  <td>{road.difficulty}/3</td>
+                  <td><i style={{ background: colorFor(road.character) }} /> <span className="dim">{road.character}</span></td>
                   <td>{road.shape.lengthMi} mi</td>
                   <td>{road.shape.bends}</td>
                   <td>{road.elevation ? `${road.elevation.climbPerMile} ft` : "—"}</td>
