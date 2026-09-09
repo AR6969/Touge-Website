@@ -33,7 +33,10 @@ export const metadata: Metadata = {
     title: "Best Driving Roads in the Bay Area & Northern California",
     description,
   },
-  twitter: { card: "summary_large_image", title: siteName, description },
+  // Only the card type. Setting a title/description here would pin the site
+  // defaults onto every page's Twitter card; left out, each page's own title
+  // and description are used instead.
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
 };
 

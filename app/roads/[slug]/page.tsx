@@ -98,10 +98,8 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
             <div><dt>Curviest rank</dt><dd>{rank}<small>of {roads.length}</small></dd></div>
           </dl>
           <p className="fine">
-            Measured from the OpenStreetMap centreline, resampled at a fixed 20&nbsp;m step. A <em>bend</em> is a
-            sustained direction change of 40° or more; a <em>switchback</em> reverses through 130° or more.
-            These describe the shape of the mapped road. They are not a difficulty score, a safety assessment, or any
-            indication of how fast the road should be driven.
+            Measured from the OpenStreetMap centreline at a 20&nbsp;m sampling step — road shape only, not a safety
+            or speed judgement. <Link href="/method#geometry">How bends are counted</Link>.
           </p>
         </section>
 
@@ -116,25 +114,16 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           {road.speed.source && (
             <p><a href={road.speed.source} target="_blank" rel="noopener noreferrer">Speed-limit source ↗</a></p>
           )}
-          <p className="warning">
-            Posted signs always govern. A published document is not proof of a current sign, and limits change by
-            section along every road here.
-          </p>
-        </section>
-
-        <section aria-labelledby="rating">
-          <h2 id="rating">How this road is rated</h2>
-          <p>
-            <strong>Difficulty {road.difficulty}/3 ({difficultyLabels[road.difficulty - 1]})</strong> is our editorial
-            assessment of width, bends and sightlines — not a community vote, an official assessment, or driving
-            instruction. <strong>{road.character}</strong> describes the road&apos;s character, deliberately without any
-            recommended speed. Read the <Link href="/method">full method</Link>.
-          </p>
+          <p className="warning">Posted signs always govern. <Link href="/method#speed">How speed evidence is handled</Link>.</p>
         </section>
 
         <section aria-labelledby="sources">
           <h2 id="sources">Sources</h2>
-          <p>This road was identified from the following discussions and guides, used for discovery only:</p>
+          <p className="fine">
+            Difficulty {road.difficulty}/3 ({difficultyLabels[road.difficulty - 1]}) is our editorial rating of width,
+            bends and sightlines; &ldquo;{road.character}&rdquo; describes character, not a target speed.{" "}
+            <Link href="/method">Full method</Link>. Identified from:
+          </p>
           <ul className="source-list">
             {road.sources.map(source => (
               <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>
@@ -146,7 +135,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
               <span className="dim">({road.osmWayIds.length} ways in this trace)</span>
             </li>
           </ul>
-          <p className="fine">Reviewed {reviewedOn}. The trace shows selected road sections — not a navigation route, and not live closures.</p>
+          <p className="fine">Reviewed {reviewedOn}. The trace shows selected road sections, not a navigation route.</p>
         </section>
 
         <section aria-labelledby="nearby">

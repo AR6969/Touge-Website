@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { reviewedOn } from "./lib/site";
 
-export function SiteHeader({ current }: { current?: "roads" | "regions" }) {
+export function SiteHeader({ current }: { current?: "map" | "roads" | "regions" }) {
   return (
     <header className="header">
       <Link href="/" className="brand">
         <span className="brand-symbol" aria-hidden="true">峠</span> California Touge<span className="brand-dot">.</span>
       </Link>
       <nav aria-label="Main">
+        <Link href="/" className="region" aria-current={current === "map" ? "page" : undefined}>Map</Link>
         <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
         <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
       </nav>

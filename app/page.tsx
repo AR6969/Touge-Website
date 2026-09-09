@@ -3,32 +3,39 @@ import Link from "next/link";
 import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
 import { curviest, roads, toSummary } from "./lib/roads";
-import { siteUrl } from "./lib/site";
+import { siteName, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
+const tagline =
+  `${roads.length} driving roads across the Bay Area, Santa Cruz, Napa and Monterey, with corners counted from OpenStreetMap geometry.`;
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 
 export default function Home() {
-  const itemList = {
+  const structured = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Best driving roads in the Bay Area and Northern California",
-    numberOfItems: curviest.length,
-    itemListElement: curviest.map((road, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: `${siteUrl}/roads/${road.id}`,
-      name: road.name,
-    })),
+    "@graph": [
+      { "@type": "WebSite", name: siteName, url: siteUrl, description: tagline, inLanguage: "en-US" },
+      {
+        "@type": "ItemList",
+        name: "Best driving roads in the Bay Area and Northern California",
+        numberOfItems: curviest.length,
+        itemListElement: curviest.map((road, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: `${siteUrl}/roads/${road.id}`,
+          name: road.name,
+        })),
+      },
+    ],
   };
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader current="map" />
       <div className="explorer">
         <RoadExplorer roads={roads.map(toSummary)} />
       </div>
@@ -53,7 +60,7 @@ export default function Home() {
       </main>
 
       <SiteFooter />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
     </>
   );
 }
