@@ -4,7 +4,7 @@ import { collectionShapeUri } from "./lib/road-shape";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Driving roads across the Bay Area and Northern California";
+export const alt = "Driving roads across California, from the Bay Area to Orange County";
 
 export default async function Image() {
   const shape = await collectionShapeUri(560, 560, "#a8d8c6");
@@ -19,7 +19,7 @@ export default async function Image() {
             {/* Satori has no CJK font loaded, so the 峠 mark is left to the site itself. */}
             <div style={{ fontSize: 22, color: "#a8d8c6", letterSpacing: 2, display: "flex" }}>CALIFORNIA TOUGE</div>
             <div style={{ fontSize: 62, fontWeight: 700, lineHeight: 1.08, marginTop: 28, letterSpacing: -2 }}>
-              The best driving roads in Northern California
+              The best driving roads in California
             </div>
           </div>
           <div style={{ display: "flex", gap: 52 }}>
