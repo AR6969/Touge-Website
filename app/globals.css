@@ -18,6 +18,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .explorer { height: calc(100dvh - 74px); min-height: 420px; display: flex; flex-direction: column; }
 .header { height: 74px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 30px; gap: 24px; border-bottom: 1px solid #333e39; background: #141a17; }
 .brand { display: flex; align-items: center; margin: 0; font-size: 21px; letter-spacing: -.6px; font-weight: 600; white-space: nowrap; color: inherit; text-decoration: none; }
+.brand-words { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-tagline { font-size: 10px; font-weight: 400; letter-spacing: .3px; color: #8fa396; margin-top: 3px; }
 .brand-symbol { color: var(--accent); font-size: 30px; margin-right: 12px; font-weight: 400; }
 .brand-dot { color: var(--accent); }
 .header nav { display: flex; align-self: stretch; gap: 28px; }
@@ -216,6 +218,7 @@ summary { cursor: pointer; }
   .header { height: 100px; padding: 12px 17px 0; flex-direction: column; align-items: flex-start; gap: 8px; }
   .brand { font-size: 19px; }
   .brand-symbol { font-size: 24px; margin-right: 9px; }
+  .brand-tagline { font-size: 9px; }
   .header nav { gap: 25px; flex: 1; }
   .region { font-size: 12px; }
   .character-filter { top: 12px; left: 12px; padding: 9px; max-width: calc(100% - 64px); }

@@ -361,5 +361,47 @@
         ]
       }
     ]
+  },
+  "the-snake": {
+    "names": [
+      "Mulholland Highway"
+    ],
+    "box": [
+      -118.8,
+      34.09,
+      -118.74,
+      34.13
+    ],
+    "anchors": [
+      {
+        "junction": [
+          "Troutdale Drive"
+        ]
+      },
+      {
+        "junction": [
+          "Cornell Road"
+        ]
+      }
+    ]
+  },
+  "mulholland-drive": {
+    "names": [
+      "Mulholland Drive"
+    ],
+    "box": [
+      -118.48,
+      34.1,
+      -118.33,
+      34.17
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
   }
 }

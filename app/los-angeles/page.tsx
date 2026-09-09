@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RoadExplorer from "../road-explorer";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { losAngelesRoads as roads, slugifyArea, toSummary } from "../lib/roads";
+import { landmarksFor, losAngelesRoads as roads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
 const title = "Best Driving Roads in Los Angeles, Malibu & Orange County";
@@ -32,7 +32,7 @@ export default function LosAngeles() {
     <>
       <SiteHeader current="map" mapRegion="los-angeles" />
       <div className="explorer">
-        <RoadExplorer key="los-angeles" roads={roads.map(toSummary)} landmarks={[]} region="los-angeles" />
+        <RoadExplorer key="los-angeles" roads={roads.map(toSummary)} landmarks={landmarksFor("los-angeles")} region="los-angeles" />
       </div>
       <main className="home-intro">
         <h1>Best driving roads in Los Angeles, Malibu &amp; Orange County</h1>

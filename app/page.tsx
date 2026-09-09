@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { bayAreaRoads as roads, landmarks, toSummary } from "./lib/roads";
+import { bayAreaRoads as roads, landmarksFor, toSummary } from "./lib/roads";
 import { siteName, siteUrl } from "./lib/site";
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function Home() {
     <>
       <SiteHeader current="map" />
       <div className="explorer">
-        <RoadExplorer key="bay-area" roads={roads.map(toSummary)} landmarks={landmarks} region="bay-area" />
+        <RoadExplorer key="bay-area" roads={roads.map(toSummary)} landmarks={landmarksFor("bay-area")} region="bay-area" />
       </div>
 
       {/* Below the fold: the first screen stays pure map. This strip exists so the

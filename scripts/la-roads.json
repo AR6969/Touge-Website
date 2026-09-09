@@ -1029,5 +1029,101 @@
       "note": "No current opening claim established for the complete proposed segment.",
       "status": "needs-current-check"
     }
+  },
+  {
+    "id": "the-snake",
+    "name": "Mulholland Highway · The Snake",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The tight, well-known stretch of Mulholland Highway past the Rock Store, between Troutdale Drive and Cornell Road.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted April 30, 2019",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors · Meeting transcript, March 3, 2026",
+        "url": "https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "A March 2026 county meeting acknowledged this stretch reopening. That is a historical record, not evidence of access today — check current county and Caltrans notices before relying on it.",
+      "status": "needs-current-check"
+    },
+    "names": [
+      "Mulholland Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.779677,
+          34.1143043
+        ],
+        "junction": [
+          "Troutdale Drive"
+        ]
+      },
+      {
+        "near": [
+          -118.751163,
+          34.1130892
+        ],
+        "junction": [
+          "Cornell Road"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mulholland-drive",
+    "name": "Mulholland Drive",
+    "area": "Hollywood Hills",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The ridge road along the top of the Hollywood Hills, running west from Cahuenga Pass above Hollywood and Beverly Hills, with overlooks on both sides.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "The paved Hollywood Hills section only. Mulholland Drive is broken further west by an unpaved stretch, and is not a continuous paved route through to the Malibu canyon network.",
+      "status": "scoped"
+    },
+    "names": [
+      "Mulholland Drive"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -118.34146,
+          34.1236341
+        ]
+      },
+      {
+        "near": [
+          -118.4799235,
+          34.129571
+        ]
+      }
+    ]
   }
 ]

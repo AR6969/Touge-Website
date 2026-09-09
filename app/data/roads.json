@@ -11514,5 +11514,403 @@
       "climb": 7,
       "technical": 0
     }
+  },
+  {
+    "id": "the-snake",
+    "name": "Mulholland Highway · The Snake",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The tight, well-known stretch of Mulholland Highway past the Rock Store, between Troutdale Drive and Cornell Road.",
+    "sources": [
+      {
+        "title": "Helen’s Cycles · Our favorite rides and routes",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted April 30, 2019",
+        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+      },
+      {
+        "title": "Los Angeles County Board of Supervisors · Meeting transcript, March 3, 2026",
+        "url": "https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "A March 2026 county meeting acknowledged this stretch reopening. That is a historical record, not evidence of access today — check current county and Caltrans notices before relying on it.",
+      "status": "needs-current-check"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.7658804,
+      34.1085581
+    ],
+    "bounds": [
+      [
+        -118.779677,
+        34.1082317
+      ],
+      [
+        -118.751163,
+        34.1144451
+      ]
+    ],
+    "osmWayIds": [
+      862874567,
+      862874569,
+      930893695,
+      930893696,
+      1101836699,
+      1101836700
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.779677,
+        34.1143043
+      ],
+      "end": [
+        -118.751163,
+        34.1130892
+      ],
+      "wayNames": [
+        "Mulholland Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 1.9,
+      "bends": 5,
+      "switchbacks": 0,
+      "curvature": 269,
+      "bendsPerMile": 2.6
+    },
+    "elevation": {
+      "climbFt": 309,
+      "highFt": 864,
+      "lowFt": 756,
+      "reliefFt": 108,
+      "maxGradient": 5.2,
+      "climbPerMile": 163
+    },
+    "profile": {
+      "points": [
+        768,
+        771,
+        773,
+        774,
+        774,
+        773,
+        772,
+        770,
+        766,
+        762,
+        763,
+        763,
+        764,
+        766,
+        766,
+        766,
+        766,
+        767,
+        767,
+        765,
+        763,
+        762,
+        761,
+        761,
+        761,
+        762,
+        763,
+        767,
+        775,
+        784,
+        796,
+        808,
+        818,
+        827,
+        834,
+        840,
+        847,
+        853,
+        860,
+        865,
+        869,
+        867,
+        864,
+        860,
+        855,
+        851,
+        848,
+        844,
+        841,
+        837,
+        834,
+        830,
+        824,
+        818,
+        807,
+        794,
+        774,
+        746,
+        732,
+        748,
+        764,
+        771,
+        778,
+        788,
+        799,
+        807,
+        814,
+        822,
+        830,
+        837,
+        837,
+        838
+      ],
+      "miles": 2.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 40,
+      "corners": 8,
+      "climb": 11,
+      "technical": 20
+    }
+  },
+  {
+    "id": "mulholland-drive",
+    "name": "Mulholland Drive",
+    "area": "Hollywood Hills",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The ridge road along the top of the Hollywood Hills, running west from Cahuenga Pass above Hollywood and Beverly Hills, with overlooks on both sides.",
+    "sources": [
+      {
+        "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "The paved Hollywood Hills section only. Mulholland Drive is broken further west by an unpaved stretch, and is not a continuous paved route through to the Malibu canyon network.",
+      "status": "scoped"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.3985154,
+      34.1217171
+    ],
+    "bounds": [
+      [
+        -118.4799235,
+        34.116428
+      ],
+      [
+        -118.34146,
+        34.1330654
+      ]
+    ],
+    "osmWayIds": [
+      26332329,
+      32528404,
+      32528405,
+      158594357,
+      159523182,
+      159524496,
+      172906078,
+      181980795,
+      185965137,
+      203688324,
+      243116726,
+      399256845,
+      399262435,
+      399262436,
+      399262437,
+      405340408,
+      405340409,
+      405340410,
+      405359700,
+      405360906,
+      405360907,
+      405360909,
+      405360912,
+      405362178,
+      405362179,
+      405362180,
+      405362181,
+      405362182,
+      405362183,
+      405362184,
+      405362185,
+      405362186,
+      405362491,
+      405362494,
+      405362496,
+      406315083,
+      406315087,
+      406315094,
+      406315099,
+      406315102,
+      406398708,
+      406398709,
+      406398710,
+      406398711,
+      406398712,
+      456954090,
+      456954184,
+      456954357,
+      456954469,
+      456955745,
+      456956197,
+      508519362,
+      518410358,
+      518410359,
+      518410360,
+      518410361,
+      518410362,
+      518410363,
+      762857495,
+      762858021,
+      787842195,
+      787842196,
+      790211774,
+      838834284,
+      1073565655,
+      1533792498,
+      1540017380,
+      1540017381
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -118.34146,
+        34.1236341
+      ],
+      "end": [
+        -118.4799235,
+        34.129571
+      ],
+      "wayNames": [
+        "Mulholland Drive"
+      ]
+    },
+    "shape": {
+      "lengthMi": 11.9,
+      "bends": 91,
+      "switchbacks": 14,
+      "curvature": 782,
+      "bendsPerMile": 7.6
+    },
+    "elevation": {
+      "climbFt": 2141,
+      "highFt": 1338,
+      "lowFt": 742,
+      "reliefFt": 596,
+      "maxGradient": 6.5,
+      "climbPerMile": 180
+    },
+    "profile": {
+      "points": [
+        743,
+        779,
+        836,
+        896,
+        962,
+        1000,
+        1050,
+        1102,
+        1155,
+        1204,
+        1190,
+        1170,
+        1140,
+        1115,
+        1143,
+        1142,
+        1125,
+        1159,
+        1166,
+        1185,
+        1201,
+        1176,
+        1149,
+        1126,
+        1084,
+        1107,
+        1132,
+        1162,
+        1160,
+        1145,
+        1187,
+        1198,
+        1232,
+        1258,
+        1287,
+        1295,
+        1272,
+        1225,
+        1189,
+        1154,
+        1103,
+        1115,
+        1133,
+        1186,
+        1196,
+        1226,
+        1257,
+        1310,
+        1292,
+        1269,
+        1287,
+        1310,
+        1289,
+        1259,
+        1262,
+        1262,
+        1284,
+        1308,
+        1327,
+        1326,
+        1285,
+        1231,
+        1238,
+        1290,
+        1341,
+        1332,
+        1308,
+        1245,
+        1189,
+        1197,
+        1252,
+        1305
+      ],
+      "miles": 11.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 47,
+      "corners": 24,
+      "climb": 13,
+      "technical": 10
+    }
   }
 ]

@@ -54,11 +54,17 @@ export function roadMapHref(road: Road) {
 /** Named junctions worth marking on the map. Editorial, hand-maintained. */
 export type Landmark = {
   id: string; name: string; kind: string; note: string;
+  /** Which map this point belongs to. */
+  mapRegion: MapRegion;
   sourceUrl?: string;
   sourceLabel?: string;
   coordinates: [number, number];
 };
 export const landmarks = landmarkData as Landmark[];
+
+export function landmarksFor(region: MapRegion) {
+  return landmarks.filter(mark => mark.mapRegion === region);
+}
 
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 const curvatureRanks = new Map(byCurvature.map((road, index) => [road.id, index + 1]));

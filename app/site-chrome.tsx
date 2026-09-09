@@ -6,7 +6,12 @@ export function SiteHeader({ current, mapRegion = "bay-area" }: { current?: "map
   return (
     <header className="header">
       <Link href="/" className="brand">
-        <span className="brand-symbol" aria-hidden="true">峠</span> California Touge<span className="brand-dot">.</span>
+        <span className="brand-symbol" aria-hidden="true">峠</span>
+        <span className="brand-words">
+          California Touge<span className="brand-dot">.</span>
+          {/* "Touge" is niche vocabulary; this says what the site is to everyone else. */}
+          <small className="brand-tagline">Best driving roads in California</small>
+        </span>
       </Link>
       {current === "map" ? (
         <nav aria-label="Map regions">

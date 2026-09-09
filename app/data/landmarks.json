@@ -7,7 +7,8 @@
     "coordinates": [
       -122.265403,
       37.386668
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "saratoga-gap",
@@ -17,7 +18,8 @@
     "coordinates": [
       -122.12197,
       37.25852
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "saratoga-gas",
@@ -29,7 +31,8 @@
     "coordinates": [
       -122.03243,
       37.259518
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "hwy9-viewpoint",
@@ -39,7 +42,8 @@
     "coordinates": [
       -122.145062,
       37.24501
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "skyline-vista",
@@ -49,7 +53,8 @@
     "coordinates": [
       -122.204264,
       37.324514
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "downtown-pescadero",
@@ -61,7 +66,8 @@
     "coordinates": [
       -122.383447,
       37.252235
-    ]
+    ],
+    "mapRegion": "bay-area"
   },
   {
     "id": "ritz-carlton-half-moon-bay",
@@ -73,6 +79,29 @@
     "coordinates": [
       -122.44156,
       37.43378
+    ],
+    "mapRegion": "bay-area"
+  },
+  {
+    "id": "newcombs-ranch",
+    "name": "Newcomb's Ranch",
+    "kind": "Stop",
+    "mapRegion": "los-angeles",
+    "note": "The roadhouse on Angeles Crest Highway, and the landmark the SR 2 closures are measured from.",
+    "coordinates": [
+      -118.00196,
+      34.32965
+    ]
+  },
+  {
+    "id": "rock-store",
+    "name": "Rock Store",
+    "kind": "Stop",
+    "mapRegion": "los-angeles",
+    "note": "The long-standing stop on Mulholland Highway, at the western end of The Snake.",
+    "coordinates": [
+      -118.77016,
+      34.11168
     ]
   }
 ]
