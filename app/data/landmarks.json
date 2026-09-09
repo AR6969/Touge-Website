@@ -1,12 +1,12 @@
 [
   {
-    "id": "four-corners",
-    "name": "Four Corners",
+    "id": "alices",
+    "name": "Alice's",
     "kind": "Junction",
-    "note": "Skyline Blvd (CA 35) × La Honda Road (CA 84) — the Alice's intersection.",
+    "note": "Skyline Blvd (CA 35) × La Honda Road (CA 84) — the Four Corners intersection.",
     "coordinates": [
-      -122.2643,
-      37.38637
+      -122.265403,
+      37.386668
     ]
   },
   {
@@ -17,6 +17,36 @@
     "coordinates": [
       -122.12197,
       37.25852
+    ]
+  },
+  {
+    "id": "saratoga-gas",
+    "name": "Saratoga Gas",
+    "kind": "Fuel",
+    "note": "The gas station in downtown Saratoga, at the bottom of the front side of Highway 9.",
+    "coordinates": [
+      -122.03243,
+      37.259518
+    ]
+  },
+  {
+    "id": "hwy9-viewpoint",
+    "name": "Hwy 9 Viewpoint",
+    "kind": "Viewpoint",
+    "note": "Parking pullout on the back side of Highway 9, with an overlook and bathrooms.",
+    "coordinates": [
+      -122.145062,
+      37.24501
+    ]
+  },
+  {
+    "id": "skyline-vista",
+    "name": "Skyline Vista Point",
+    "kind": "Viewpoint",
+    "note": "Vista pullout on Skyline Blvd (CA 35), above the Peninsula.",
+    "coordinates": [
+      -122.204264,
+      37.324514
     ]
   }
 ]

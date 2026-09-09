@@ -93,6 +93,13 @@ To get coordinates: right-click the spot in Google Maps and click the lat/long i
 shows to copy it. That gives `37.25852, -122.12197` — **reverse the order** when
 pasting in.
 
+Sanity-check a new point by measuring it against the road geometry before trusting
+it; every current landmark sits within 50 m of the road it belongs to, so a
+longitude/latitude transposition shows up immediately as a point miles offshore.
+
+Pending: **Lower Skid** (the pullout on the back side of Highway 9) is not placed —
+its location has not been verified. A pin in the wrong pullout is worse than none.
+
 ## Attribution
 
 Road geometry and `maxspeed` tags © OpenStreetMap contributors, under the
