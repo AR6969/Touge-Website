@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import mapboxgl, { type ExpressionSpecification, type FilterSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import roads from "./data/roads.json";
-import { getSpeedGuide } from "./data/speed-guide";
+import type { RoadSummary } from "./lib/roads";
 
 const characters = ["Technical", "Low speed", "Medium speed", "High speed"] as const;
 type Character = (typeof characters)[number];
@@ -16,7 +16,7 @@ const validToken = token?.startsWith("pk.");
 const tokenMessage = "Add a public Mapbox token to NEXT_PUBLIC_MAPBOX_TOKEN in .env.local, then restart the server.";
 const initialCenter: [number, number] = [-122.10, 37.57];
 
-export default function RoadExplorer() {
+export default function RoadExplorer({ roads }: { roads: RoadSummary[] }) {
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
@@ -27,7 +27,6 @@ export default function RoadExplorer() {
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
   const active = visible.find(road => road.id === selected);
-  const speedGuide = active ? getSpeedGuide(active) : null;
 
   useEffect(() => {
     if (!container.current || !validToken) return;
@@ -111,7 +110,7 @@ export default function RoadExplorer() {
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
     }, 25000);
     return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
-  }, [attempt]);
+  }, [attempt, roads]);
 
   useEffect(() => {
     if (!ready || !map.current?.getLayer("road-lines")) return;
@@ -128,7 +127,7 @@ export default function RoadExplorer() {
       padding: mobile ? { top: 115, right: 35, bottom: 300, left: 35 } : { top: 130, right: 80, bottom: 100, left: 440 },
       maxZoom: 12, duration: 1000,
     });
-  }, [selected, ready]);
+  }, [selected, ready, roads]);
 
   function toggleCharacter(character: Character) {
     const next = enabled.includes(character) ? enabled.filter(item => item !== character) : [...enabled, character];
@@ -141,55 +140,42 @@ export default function RoadExplorer() {
   }
 
   return (
-    <div className="explorer">
-      <header className="header">
-        <h1 className="brand"><span className="brand-symbol" aria-hidden="true">峠</span> California Touge<span className="brand-dot">.</span></h1>
-        <nav aria-label="Regions">
-          <button className="region active" aria-current="page" onClick={resetMap}>Bay Area</button>
-          <button className="region future" disabled>Los Angeles <small>Soon</small></button>
-        </nav>
-      </header>
-      <section className="map-panel" aria-label="Bay Area driving roads map">
-        <div ref={container} className="map" />
-        <fieldset className="character-filter">
-          <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
-          <div className="filter-options">
-            {characters.map(character => <button key={character} className="character" aria-pressed={enabled.includes(character)} onClick={() => toggleCharacter(character)}>{character}</button>)}
-          </div>
-        </fieldset>
-        <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
-        <div className="map-bottom">
-          <div className="difficulty-legend" aria-label="Difficulty color legend">
-            <span>Difficulty</span>
-            {["1 · Relaxed", "2 · Winding", "3 · Technical"].map((label, i) => <span key={label}><i style={{ background: colors[i] }} />{label}</span>)}
-          </div>
-          <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
+    <section className="map-panel" aria-label="Northern California driving roads map">
+      <div ref={container} className="map" />
+      <fieldset className="character-filter">
+        <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
+        <div className="filter-options">
+          {characters.map(character => <button key={character} className="character" aria-pressed={enabled.includes(character)} onClick={() => toggleCharacter(character)}>{character}</button>)}
         </div>
-        {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
-          <div className="picker-title">Bay Area & nearby drives<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button></div>
-          {visible.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setShowRoads(false); }}><i style={{ background: colors[road.difficulty - 1] }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
-          {visible.length === 0 && <p>Select a road character above to show roads.</p>}
-        </div>}
-        {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
-        {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
-        {active && <article className="detail" aria-label={`${active.name} details`}>
-          <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
-          <p className="eyebrow">{active.area}</p>
-          <h2>{active.name}</h2>
-          <div className="road-badges"><span><i style={{ background: colors[active.difficulty - 1] }} /> Difficulty {active.difficulty}/3</span><span>{active.character}</span></div>
-          <p>{active.description}</p>
-          <div className="speed-info"><span>Speed guide</span><strong>{speedGuide?.value}</strong><p>{speedGuide?.note}</p></div>
-          <details className="road-sources"><summary>Sources & rating notes</summary>
-            <p>Difficulty is our editorial assessment of bends, width and sightlines. Character labels describe the road, not a target speed. Follow current signs. Traces show selected road sections, not navigation or live closures.</p>
-            {active.id === "highway-1-coast" && <a href="https://www.smcgov.org/media/101911/download?attachment=" target="_blank" rel="noopener noreferrer">Coastside highway study ↗</a>}
-            {active.speed.source && <a href={active.speed.source} target="_blank" rel="noopener noreferrer">Speed-limit source ↗</a>}
-            {active.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}
-            <a href={`https://www.openstreetmap.org/way/${active.osmWayIds[0]}`} target="_blank" rel="noopener noreferrer">OpenStreetMap road data ↗</a>
-            <small>Sources reviewed September 8, 2026 · No live status</small>
-          </details>
-          <div className="detail-bottom"><a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Check road conditions ↗</a><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(active.name.replace(/ ·.*/, "") + ", " + active.area + ", California")}`} target="_blank" rel="noopener noreferrer">Open in Maps ↗</a></div>
-        </article>}
-      </section>
-    </div>
+      </fieldset>
+      <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
+      <div className="map-bottom">
+        <div className="difficulty-legend" aria-label="Difficulty color legend">
+          <span>Difficulty</span>
+          {["1 · Relaxed", "2 · Winding", "3 · Technical"].map((label, i) => <span key={label}><i style={{ background: colors[i] }} />{label}</span>)}
+        </div>
+        <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
+      </div>
+      {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
+        <div className="picker-title">Bay Area & nearby drives<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button></div>
+        {visible.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setShowRoads(false); }}><i style={{ background: colors[road.difficulty - 1] }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
+        {visible.length === 0 && <p>Select a road character above to show roads.</p>}
+      </div>}
+      {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
+      {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
+      {active && <article className="detail" aria-label={`${active.name} details`}>
+        <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
+        <p className="eyebrow">{active.area}</p>
+        <h2>{active.name}</h2>
+        <div className="road-badges"><span><i style={{ background: colors[active.difficulty - 1] }} /> Difficulty {active.difficulty}/3</span><span>{active.character}</span></div>
+        <p>{active.description}</p>
+        <dl className="mini-stats">
+          <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>
+          <div><dt>Bends</dt><dd>{active.bends}</dd></div>
+          <div><dt>Speed guide</dt><dd>{active.speed}</dd></div>
+        </dl>
+        <Link className="detail-cta" href={`/roads/${active.id}`}>Full road guide, sources &amp; speed evidence →</Link>
+      </article>}
+    </section>
   );
 }

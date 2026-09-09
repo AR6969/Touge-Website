@@ -21,6 +21,21 @@ Research found a 2012 Panoramic Highway draft ordinance and a 2008 Mines Road pr
 OpenStreetMap ways fetched using the checked-in Overpass queries. The build script clips at existing vertices, joins exact matching endpoints and preserves disconnected pieces. The result is a collection of road traces, not complete driving itineraries. In particular, 17-Mile Drive’s named-road trace is not the full signed scenic loop. ODbL attribution is provided in the UI and public/data/README.txt.
 
 Rebuild: python3 scripts/build-road-data.py /path/to/main-snapshot.json /path/to/extra-snapshot.json
+Then: python3 scripts/build-derived-data.py
+
+## Shape statistics
+
+Corner counts are measured from the full-precision geometry in data/roads.full.geojson,
+never from the simplified files the site serves. Because OSM vertex spacing is uneven,
+each trace is resampled at a fixed 20 m step before anything is counted. A bend is a run
+of same-direction turning reaching 40 degrees; direction wobble under 3 degrees is
+treated as digitising noise so a single sweeping curve is not split into several. A
+switchback is a bend reaching 130 degrees. Turning per mile is total absolute direction
+change divided by length, and is the ranking used on the site.
+
+These describe the shape of a mapped centreline. They are not a difficulty score, a
+safety assessment, a survey, or any indication of an appropriate speed. Difficulty
+remains the separate editorial rating described above.
 
 ## Road/source matrix
 

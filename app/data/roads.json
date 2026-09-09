@@ -63,7 +63,14 @@
       771088459,
       921086017
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 8.8,
+      "bends": 82,
+      "switchbacks": 15,
+      "curvature": 988,
+      "bendsPerMile": 9.3
+    }
   },
   {
     "id": "west-alpine",
@@ -117,7 +124,14 @@
       1527999508,
       1527999509
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 7.6,
+      "bends": 84,
+      "switchbacks": 10,
+      "curvature": 1119,
+      "bendsPerMile": 11.1
+    }
   },
   {
     "id": "pescadero",
@@ -185,7 +199,14 @@
       1453831629,
       1453831630
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 13.6,
+      "bends": 55,
+      "switchbacks": 8,
+      "curvature": 448,
+      "bendsPerMile": 4.0
+    }
   },
   {
     "id": "skyline",
@@ -254,7 +275,14 @@
       1085987309,
       1154082694
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 28.3,
+      "bends": 67,
+      "switchbacks": 10,
+      "curvature": 267,
+      "bendsPerMile": 2.4
+    }
   },
   {
     "id": "la-honda",
@@ -334,7 +362,14 @@
       1339135577,
       1346313786
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 20.6,
+      "bends": 95,
+      "switchbacks": 19,
+      "curvature": 484,
+      "bendsPerMile": 4.6
+    }
   },
   {
     "id": "kings",
@@ -376,7 +411,14 @@
       1206775104,
       1206775105
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 5.0,
+      "bends": 37,
+      "switchbacks": 7,
+      "curvature": 895,
+      "bendsPerMile": 7.4
+    }
   },
   {
     "id": "tunitas",
@@ -417,7 +459,14 @@
       37813910,
       1499651344
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 9.1,
+      "bends": 83,
+      "switchbacks": 12,
+      "curvature": 917,
+      "bendsPerMile": 9.2
+    }
   },
   {
     "id": "old-la-honda",
@@ -458,7 +507,14 @@
       8940683,
       8940690
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 4.9,
+      "bends": 59,
+      "switchbacks": 10,
+      "curvature": 1250,
+      "bendsPerMile": 12.0
+    }
   },
   {
     "id": "stage",
@@ -507,7 +563,14 @@
       702127991,
       1455022720
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 8.6,
+      "bends": 50,
+      "switchbacks": 17,
+      "curvature": 699,
+      "bendsPerMile": 5.8
+    }
   },
   {
     "id": "highway-1-coast",
@@ -869,7 +932,14 @@
       1503257454,
       1528735193
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 66.0,
+      "bends": 37,
+      "switchbacks": 5,
+      "curvature": 71,
+      "bendsPerMile": 0.6
+    }
   },
   {
     "id": "highway-9",
@@ -1044,7 +1114,14 @@
       1548654359,
       1548654360
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 35.2,
+      "bends": 159,
+      "switchbacks": 23,
+      "curvature": 472,
+      "bendsPerMile": 4.5
+    }
   },
   {
     "id": "bear-creek",
@@ -1106,7 +1183,14 @@
       1431382565,
       1431382566
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 12.9,
+      "bends": 93,
+      "switchbacks": 14,
+      "curvature": 782,
+      "bendsPerMile": 7.2
+    }
   },
   {
     "id": "empire",
@@ -1167,7 +1251,14 @@
       675890052,
       977932400
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 16.7,
+      "bends": 50,
+      "switchbacks": 5,
+      "curvature": 308,
+      "bendsPerMile": 3.0
+    }
   },
   {
     "id": "bonny-doon",
@@ -1224,7 +1315,14 @@
       1078115118,
       1078115119
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 6.7,
+      "bends": 21,
+      "switchbacks": 1,
+      "curvature": 305,
+      "bendsPerMile": 3.1
+    }
   },
   {
     "id": "jamison",
@@ -1264,7 +1362,14 @@
     "osmWayIds": [
       10554817
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 3.0,
+      "bends": 26,
+      "switchbacks": 7,
+      "curvature": 1052,
+      "bendsPerMile": 8.6
+    }
   },
   {
     "id": "big-basin",
@@ -1320,7 +1425,14 @@
       1417660327,
       1417660328
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 17.5,
+      "bends": 134,
+      "switchbacks": 19,
+      "curvature": 791,
+      "bendsPerMile": 7.7
+    }
   },
   {
     "id": "old-santa-cruz",
@@ -1369,7 +1481,14 @@
       975312805,
       1233232070
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 7.8,
+      "bends": 74,
+      "switchbacks": 8,
+      "curvature": 833,
+      "bendsPerMile": 9.5
+    }
   },
   {
     "id": "soquel",
@@ -1413,7 +1532,14 @@
       1274797468,
       1274797469
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 11.0,
+      "bends": 35,
+      "switchbacks": 1,
+      "curvature": 318,
+      "bendsPerMile": 3.2
+    }
   },
   {
     "id": "calaveras",
@@ -1465,7 +1591,14 @@
       823618297,
       878088661
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 16.0,
+      "bends": 108,
+      "switchbacks": 22,
+      "curvature": 702,
+      "bendsPerMile": 6.7
+    }
   },
   {
     "id": "palomares",
@@ -1510,7 +1643,14 @@
       116299847,
       1190239384
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 10.3,
+      "bends": 43,
+      "switchbacks": 3,
+      "curvature": 427,
+      "bendsPerMile": 4.2
+    }
   },
   {
     "id": "mines",
@@ -1605,7 +1745,14 @@
       1392436235,
       1392436236
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 27.9,
+      "bends": 168,
+      "switchbacks": 9,
+      "curvature": 570,
+      "bendsPerMile": 6.0
+    }
   },
   {
     "id": "san-antonio",
@@ -1659,7 +1806,14 @@
       1394221434,
       1394221446
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 16.1,
+      "bends": 97,
+      "switchbacks": 18,
+      "curvature": 647,
+      "bendsPerMile": 6.0
+    }
   },
   {
     "id": "hamilton",
@@ -1716,7 +1870,14 @@
       1508693101,
       1508693102
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 20.4,
+      "bends": 224,
+      "switchbacks": 48,
+      "curvature": 1201,
+      "bendsPerMile": 11.0
+    }
   },
   {
     "id": "patterson",
@@ -1832,7 +1993,14 @@
       1382889450,
       1428199545
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 14.2,
+      "bends": 27,
+      "switchbacks": 1,
+      "curvature": 205,
+      "bendsPerMile": 1.9
+    }
   },
   {
     "id": "redwood",
@@ -2008,7 +2176,14 @@
       1419884911,
       1550069078
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 16.4,
+      "bends": 79,
+      "switchbacks": 9,
+      "curvature": 474,
+      "bendsPerMile": 4.8
+    }
   },
   {
     "id": "grizzly",
@@ -2082,7 +2257,14 @@
       1132392069,
       1132392070
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 8.2,
+      "bends": 63,
+      "switchbacks": 11,
+      "curvature": 791,
+      "bendsPerMile": 7.7
+    }
   },
   {
     "id": "diablo",
@@ -2145,7 +2327,14 @@
       1067102754,
       1067102755
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 17.8,
+      "bends": 173,
+      "switchbacks": 43,
+      "curvature": 1107,
+      "bendsPerMile": 9.7
+    }
   },
   {
     "id": "hicks",
@@ -2193,7 +2382,14 @@
       416897410,
       416897411
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 7.9,
+      "bends": 57,
+      "switchbacks": 3,
+      "curvature": 700,
+      "bendsPerMile": 7.2
+    }
   },
   {
     "id": "umunhum",
@@ -2239,7 +2435,14 @@
       514933667,
       1429097197
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 5.4,
+      "bends": 56,
+      "switchbacks": 10,
+      "curvature": 1131,
+      "bendsPerMile": 10.3
+    }
   },
   {
     "id": "uvas",
@@ -2287,7 +2490,14 @@
       293499964,
       293499969
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 8.5,
+      "bends": 16,
+      "switchbacks": 0,
+      "curvature": 183,
+      "bendsPerMile": 1.9
+    }
   },
   {
     "id": "mckean",
@@ -2360,7 +2570,14 @@
       1113091039,
       1113091040
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 4.0,
+      "bends": 4,
+      "switchbacks": 1,
+      "curvature": 150,
+      "bendsPerMile": 1.0
+    }
   },
   {
     "id": "panoramic",
@@ -2410,7 +2627,14 @@
       125871933,
       970228257
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 9.0,
+      "bends": 84,
+      "switchbacks": 16,
+      "curvature": 979,
+      "bendsPerMile": 9.4
+    }
   },
   {
     "id": "ridgecrest",
@@ -2451,7 +2675,14 @@
       12170878,
       12188784
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 4.3,
+      "bends": 48,
+      "switchbacks": 5,
+      "curvature": 1137,
+      "bendsPerMile": 11.1
+    }
   },
   {
     "id": "lucas",
@@ -2544,7 +2775,14 @@
       1386603420,
       1409548711
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 10.2,
+      "bends": 37,
+      "switchbacks": 0,
+      "curvature": 372,
+      "bendsPerMile": 3.6
+    }
   },
   {
     "id": "marshall",
@@ -2598,7 +2836,14 @@
       1230963919,
       1230963920
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 10.9,
+      "bends": 43,
+      "switchbacks": 0,
+      "curvature": 373,
+      "bendsPerMile": 3.9
+    }
   },
   {
     "id": "highway-1-marin",
@@ -2788,7 +3033,14 @@
       1495945496,
       1520279490
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 69.3,
+      "bends": 254,
+      "switchbacks": 23,
+      "curvature": 377,
+      "bendsPerMile": 3.7
+    }
   },
   {
     "id": "highway-128",
@@ -2855,7 +3107,14 @@
       1431205943,
       1431205944
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 37.0,
+      "bends": 108,
+      "switchbacks": 8,
+      "curvature": 285,
+      "bendsPerMile": 2.9
+    }
   },
   {
     "id": "highway-29",
@@ -2931,7 +3190,14 @@
       1492919378,
       1497913766
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 21.5,
+      "bends": 73,
+      "switchbacks": 24,
+      "curvature": 428,
+      "bendsPerMile": 3.4
+    }
   },
   {
     "id": "17-mile",
@@ -2995,7 +3261,14 @@
       698891379,
       698891389
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 11.8,
+      "bends": 52,
+      "switchbacks": 8,
+      "curvature": 468,
+      "bendsPerMile": 4.4
+    }
   },
   {
     "id": "carmel-valley",
@@ -3055,6 +3328,13 @@
       1144262714,
       1144262715
     ],
-    "reviewed": "2026-09-08"
+    "reviewed": "2026-09-08",
+    "shape": {
+      "lengthMi": 8.7,
+      "bends": 8,
+      "switchbacks": 0,
+      "curvature": 99,
+      "bendsPerMile": 0.9
+    }
   }
 ]

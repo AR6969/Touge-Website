@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# California Touge
 
-## Getting Started
+A map and reference for driving roads across the Bay Area, Santa Cruz, Napa and Monterey.
+Every road has its own page with a map, corner statistics measured from OpenStreetMap
+geometry, difficulty and character ratings, and the source behind any speed figure shown.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Set these in `.env.local` (not committed):
 
-## Learn More
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_MAPBOX_TOKEN` | yes | Public Mapbox token (`pk.…`) for the basemap. Without it the site still renders — only the map area shows a message. |
+| `NEXT_PUBLIC_SITE_URL` | for deploys | Absolute origin, e.g. `https://example.com`. Canonical tags, `sitemap.xml`, `robots.txt` and social-card URLs are built from it. On Vercel it falls back to the project's production URL; otherwise it falls back to `http://localhost:3000`. |
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route | What it is |
+| --- | --- |
+| `/` | Map explorer, plus rankings and links to every road |
+| `/roads` | All roads in one comparison table |
+| `/roads/[slug]` | One road: map, shape statistics, speed evidence, sources, nearby roads |
+| `/regions` and `/regions/[slug]` | Roads grouped by area |
+| `/method` | How roads are selected, rated and measured |
+| `/sitemap.xml`, `/robots.txt` | Generated from the catalog |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Road and region pages are statically generated with `generateStaticParams`, and each has
+a share card drawn from the road's real geometry (`opengraph-image.tsx`).
 
-## Deploy on Vercel
+## Rebuilding the road data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Two stages. The first needs Overpass snapshots; the second does not.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# 1. Fetch: run scripts/roads.overpass and scripts/roads-extra.overpass at
+#    https://overpass-api.de/api/interpreter, saving each result as JSON.
+python3 scripts/build-road-data.py main-snapshot.json extra-snapshot.json
+
+# 2. Derive what the site actually serves.
+python3 scripts/build-derived-data.py
+```
+
+| Path | Stage | Notes |
+| --- | --- | --- |
+| `data/roads.full.geojson` | 1 | Full-precision archive. Outside `public/`, so it is never served. |
+| `app/data/roads.json` | 1, 2 | Catalog. Stage 2 adds the `shape` statistics. |
+| `public/data/roads.geojson` | 2 | Simplified overview geometry (~20% of the original point count). |
+| `public/data/roads/<id>.geojson` | 2 | One road each, so a road page loads a few KB instead of the whole set. |
+| `public/data/road-labels.geojson` | 1 | Label points for the overview map. |
+
+Stage 2 always measures the full-precision archive, so re-running it is safe and
+idempotent. See `docs/road-research.md` for sourcing and `/method` for the published
+version of the same rules.
+
+## Attribution
+
+Road geometry and `maxspeed` tags © OpenStreetMap contributors, under the
+[Open Database License](https://opendatacommons.org/licenses/odbl/1-0/).
+Descriptions, difficulty ratings and corner counts are editorial. Posted signs always govern.

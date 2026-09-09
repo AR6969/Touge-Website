@@ -167,7 +167,9 @@ for entry in R:
     catalog.append(entry)
     print(entry['id'],len(lines),'segments',round(total_length/1609.344,1),'mi',speed['kind'],speed['value'])
 
-for filename, data in [('roads.geojson',dict(type='FeatureCollection',features=features)),('road-labels.geojson',dict(type='FeatureCollection',features=labels))]:
-    (ROOT/'public/data'/filename).write_text(json.dumps(data,separators=(',',':'))+'\n')
+# Full precision is archived outside public/ so it is never shipped to a browser.
+# build-derived-data.py turns it into the simplified files the site actually serves.
+(ROOT/'data/roads.full.geojson').write_text(json.dumps(dict(type='FeatureCollection',features=features),separators=(',',':'))+'\n')
+(ROOT/'public/data/road-labels.geojson').write_text(json.dumps(dict(type='FeatureCollection',features=labels),separators=(',',':'))+'\n')
 (ROOT/'app/data/roads.json').write_text(json.dumps(catalog,indent=2,ensure_ascii=False)+'\n')
-print('Built',len(catalog),'roads.')
+print('Built',len(catalog),'roads. Now run: python3 scripts/build-derived-data.py')
