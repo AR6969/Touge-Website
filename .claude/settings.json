@@ -6,7 +6,12 @@
       "Bash(git commit *)",
       "Bash(curl -s localhost:3111/roads/page-mill)",
       "Bash(curl -s localhost:3111/roads/nope)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(command -v chromium-cli)",
+      "Bash(command -v playwright)",
+      "Bash(command -v npx)",
+      "Bash(npx playwright *)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --hide-scrollbars --window-size=1440,900 --enable-unsafe-swiftshader --use-gl=angle --use-angle=swiftshader --virtual-time-budget=90000 --screenshot=/private/tmp/claude-501/-Users-alirafie-Desktop-touge-website/318fb675-2467-42a6-bba5-79a2eb38f5b8/scratchpad/home2.png http://localhost:3111/)"
     ]
   }
 }

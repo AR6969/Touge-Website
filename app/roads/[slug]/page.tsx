@@ -94,7 +94,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
             <div><dt>Bends</dt><dd>{road.shape.bends}</dd></div>
             <div><dt>Switchbacks</dt><dd>{road.shape.switchbacks}</dd></div>
             <div><dt>Bends per mile</dt><dd>{road.shape.bendsPerMile}</dd></div>
-            <div><dt>Turning per mile</dt><dd>{road.shape.curvature}<small>°</small></dd></div>
+            <div><dt>Turning per mile</dt><dd>{road.shape.curvature}°</dd></div>
             <div><dt>Curviest rank</dt><dd>{rank}<small>of {roads.length}</small></dd></div>
           </dl>
           <p className="fine">
