@@ -43,7 +43,12 @@ export default function RoadMap({ id, name, bounds, color }: {
       map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
       map.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="/data/README.txt" target="_blank">Road trace: © OpenStreetMap contributors</a>' }), "bottom-right");
 
-      map.on("load", async () => {
+      // Same reason as the explorer: "load" waits on a first frame that can fail
+      // to arrive, so accept whichever ready signal comes first.
+      let started = false;
+      const begin = async () => {
+        if (started || disposed) return;
+        started = true;
         try {
           const response = await fetch(`/data/roads/${id}.geojson`, { signal: abort.signal });
           if (!response.ok) throw new Error("Road data unavailable");
@@ -57,7 +62,9 @@ export default function RoadMap({ id, name, bounds, color }: {
         } catch {
           updateStatus("The road trace could not load. Check your connection and try again.");
         }
-      });
+      };
+      map.on("load", begin);
+      map.on("styledata", () => { if (map.isStyleLoaded()) begin(); });
       map.on("error", () => { if (!loaded) updateStatus("The map could not finish loading."); });
       observer = new ResizeObserver(() => map.resize());
       observer.observe(container.current);

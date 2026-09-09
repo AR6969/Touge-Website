@@ -68,7 +68,13 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         current.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
         current.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="/data/README.txt" target="_blank">Road traces: © OpenStreetMap contributors</a>' }), "bottom-right");
 
-        current.on("load", async () => {
+        // "load" means style-ready AND first frame painted, and the frame can fail
+        // to arrive — leaving the map usable but the UI stuck on "Loading map…".
+        // Start from whichever signal says the style is ready first, once only.
+        let started = false;
+        const begin = async () => {
+          if (started || disposed) return;
+          started = true;
           try {
             const [lines, labels] = await Promise.all(["roads", "road-labels"].map(async name => {
               const response = await fetch(`/data/${region}/${name}.geojson`, { signal: abort.signal });
@@ -144,7 +150,9 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
           } catch {
             if (!disposed) updateStatus("Roads could not load. Check your connection and try again.");
           }
-        });
+        };
+        current.on("load", begin);
+        current.on("styledata", () => { if (current.isStyleLoaded()) begin(); });
         current.on("error", event => {
           if (loaded) return;
           const code = (event.error as Error & { status?: number }).status;
@@ -203,7 +211,13 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
                     onClick={() => toggleCharacter(character)}>
               {/* "speed" is dropped on narrow screens so all four fit one row;
                   aria-label keeps the full name for assistive tech. */}
-              <i /> {character.replace(" speed", "")}<span className="chip-suffix">{character.includes(" speed") ? " speed" : ""}</span>
+              <i />
+              {/* One element, so the flex gap does not open a second space
+                  between "Low" and "speed". */}
+              <span className="chip-label">
+                {character.replace(" speed", "")}
+                {character.endsWith(" speed") && <span className="chip-suffix"> speed</span>}
+              </span>
             </button>
           ))}
         </div>
