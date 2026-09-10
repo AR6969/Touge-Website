@@ -9,7 +9,7 @@ export const mapRegions: Record<MapRegion, {
 }> = {
   "bay-area": {
     name: "Bay Area",
-    href: "/bay-area",
+    href: "/",
     pickerTitle: "Bay Area & nearby drives",
     center: [-122.10, 37.57],
     bounds: [[-123.13, 36.42], [-121.35, 38.80]],

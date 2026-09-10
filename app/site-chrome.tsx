@@ -15,15 +15,13 @@ export function SiteHeader({ current, mapRegion }: { current?: "map" | "roads" |
       </Link>
       {current === "map" ? (
         <nav aria-label="Map regions">
-          <Link href="/" className="region" aria-current={mapRegion ? undefined : "page"}>California</Link>
           {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][]).map(([id, region]) => (
             <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
           ))}
         </nav>
       ) : (
         <nav aria-label="Main">
-          <Link href="/bay-area" className="region">Map</Link>
-          <Link href="/" className="region">California</Link>
+          <Link href="/" className="region">Map</Link>
           <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
           <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
         </nav>

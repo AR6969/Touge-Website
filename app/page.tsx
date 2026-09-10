@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { bayAreaRoads, curviest, losAngelesRoads, roads } from "./lib/roads";
+import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, toSummary } from "./lib/roads";
 import { mapRegions } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
 import { siteName, siteUrl } from "./lib/site";
@@ -44,7 +45,12 @@ export default function Home() {
 
   return (
     <>
-      <SiteHeader current="map" />
+      <SiteHeader current="map" mapRegion="bay-area" />
+      {/* The map is the product, so it is the first thing on the homepage. The
+          California framing sits underneath it rather than in front of it. */}
+      <div className="explorer">
+        <RoadExplorer key="bay-area" roads={bayAreaRoads.map(toSummary)} landmarks={landmarksFor("bay-area")} region="bay-area" />
+      </div>
       <main className="prose landing">
         <h1>Best driving roads in California</h1>
         <p className="lede">
