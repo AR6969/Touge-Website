@@ -33,11 +33,14 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
   const [showRoads, setShowRoads] = useState(false);
   const [roadQuery, setRoadQuery] = useState("");
   const [landmark, setLandmark] = useState<string | null>(null);
+  const dataRef = useRef({ roads, landmarks });
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
   const matchingRoads = visible.filter(road => road.name.toLowerCase().includes(roadQuery.trim().toLowerCase()));
   const active = visible.find(road => road.id === selected);
   const activeLandmark = landmarks.find(mark => mark.name === landmark);
+
+  useEffect(() => { dataRef.current = { roads, landmarks }; }, [roads, landmarks]);
 
   useEffect(() => {
     if (!container.current || !validToken) return;
@@ -98,7 +101,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
               type: "geojson",
               data: {
                 type: "FeatureCollection",
-                features: landmarks.map(mark => ({
+                features: dataRef.current.landmarks.map(mark => ({
                   type: "Feature" as const,
                   properties: { name: mark.name },
                   geometry: { type: "Point" as const, coordinates: mark.coordinates },
@@ -181,7 +184,11 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
     }, 10000);
     return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
-  }, [attempt, roads, landmarks, region, regionConfig]);
+    // `roads` and `landmarks` are deliberately not dependencies: they are new
+    // arrays on every render, and listing them lets any re-render destroy a
+    // half-loaded map and reset the overlay. Read through dataRef instead.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [attempt, region, regionConfig]);
 
   useEffect(() => {
     if (!ready || !map.current?.getLayer("road-lines")) return;
