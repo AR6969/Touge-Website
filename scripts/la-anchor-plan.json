@@ -761,5 +761,409 @@
         "end": "north"
       }
     ]
+  },
+  "nicasio-valley": {
+    "names": [
+      "Nicasio Valley Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "point-reyes-petaluma": {
+    "names": [
+      "Point Reyes-Petaluma Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "chileno-valley": {
+    "names": [
+      "Chileno Valley Road"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "skaggs-springs": {
+    "names": [
+      "Skaggs Springs Road",
+      "Stewarts Point-Skaggs Springs Road"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "sir-francis-drake": {
+    "names": [
+      "Sir Francis Drake Boulevard"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ],
+    "box": [
+      -123.1,
+      37.95,
+      -122.78,
+      38.2
+    ]
+  },
+  "limantour": {
+    "names": [
+      "Limantour Road"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "suisun-valley": {
+    "names": [
+      "Suisun Valley Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "niles-canyon": {
+    "names": [
+      "Niles Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "pinehurst": {
+    "names": [
+      "Pinehurst Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "bear-creek-orinda": {
+    "names": [
+      "Bear Creek Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ],
+    "box": [
+      -122.3,
+      37.87,
+      -122.1,
+      37.97
+    ]
+  },
+  "san-pablo-dam": {
+    "names": [
+      "San Pablo Dam Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "alhambra-valley": {
+    "names": [
+      "Alhambra Valley Road"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "altamont-pass": {
+    "names": [
+      "Altamont Pass Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "tesla-corral-hollow": {
+    "names": [
+      "Tesla Road",
+      "Corral Hollow Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "marsh-creek": {
+    "names": [
+      "Marsh Creek Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "skyline-oakland": {
+    "names": [
+      "Skyline Boulevard"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ],
+    "box": [
+      -122.25,
+      37.74,
+      -122.1,
+      37.86
+    ]
+  },
+  "del-puerto-canyon": {
+    "names": [
+      "Del Puerto Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "metcalf-san-felipe": {
+    "names": [
+      "Metcalf Road",
+      "San Felipe Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "south"
+      }
+    ],
+    "box": [
+      -121.85,
+      37.15,
+      -121.55,
+      37.45
+    ]
+  },
+  "almaden-alamitos": {
+    "names": [
+      "Almaden Road",
+      "Alamitos Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ],
+    "box": [
+      -121.94,
+      37.11,
+      -121.79,
+      37.24
+    ]
+  },
+  "watsonville-road": {
+    "names": [
+      "Watsonville Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "hecker-pass": {
+    "names": [
+      "Hecker Pass Highway"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "bailey-avenue": {
+    "names": [
+      "Bailey Avenue"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ],
+    "box": [
+      -121.83,
+      37.14,
+      -121.72,
+      37.24
+    ]
+  },
+  "felton-empire": {
+    "names": [
+      "Felton Empire Road"
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "lobitos-creek": {
+    "names": [
+      "Lobitos Creek Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "star-hill": {
+    "names": [
+      "Star Hill Road",
+      "Swett Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "canada-road": {
+    "names": [
+      "Cañada Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ],
+    "box": [
+      -122.36,
+      37.42,
+      -122.25,
+      37.55
+    ]
+  },
+  "cloverdale-road": {
+    "names": [
+      "Cloverdale Road"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ],
+    "box": [
+      -122.45,
+      37.15,
+      -122.3,
+      37.3
+    ]
   }
 }

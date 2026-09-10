@@ -2414,5 +2414,1044 @@
       "url": "https://www.fs.usda.gov/r05/cleveland/alerts",
       "checked": "2026-09-09"
     }
+  },
+  {
+    "id": "nicasio-valley",
+    "name": "Nicasio Valley Road",
+    "area": "Marin",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The reservoir road through the middle of Marin, linking Lucas Valley Road to the Point Reyes–Petaluma corridor.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Nicasio Valley Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.6637994,
+          38.0133022
+        ]
+      },
+      {
+        "near": [
+          -122.7334812,
+          38.0972976
+        ]
+      }
+    ]
+  },
+  {
+    "id": "point-reyes-petaluma",
+    "name": "Point Reyes–Petaluma Road",
+    "area": "Marin",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The cross-county run from Nicasio out over the hills toward Petaluma, through open ranch country.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Point Reyes-Petaluma Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.8014363,
+          38.0733288
+        ]
+      },
+      {
+        "near": [
+          -122.702603,
+          38.1490504
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chileno-valley",
+    "name": "Chileno Valley Road",
+    "area": "Marin",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A quiet ranch road between the Petaluma side and Tomales, rolling rather than tight.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Chileno Valley Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.665064,
+          38.213226
+        ]
+      },
+      {
+        "near": [
+          -122.8195043,
+          38.2218201
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skaggs-springs",
+    "name": "Skaggs Springs Road",
+    "area": "Marin / Sonoma",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The long crossing from Lake Sonoma west over the coast range to Stewarts Point on Highway 1.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Skaggs Springs Road",
+      "Stewarts Point-Skaggs Springs Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.9943393,
+          38.7133239
+        ]
+      },
+      {
+        "near": [
+          -123.399475,
+          38.6519315
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sir-francis-drake",
+    "name": "Sir Francis Drake Boulevard",
+    "area": "Marin",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road out through Inverness and the Point Reyes peninsula toward the lighthouse.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Sir Francis Drake Boulevard"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.8051495,
+          38.0642518
+        ]
+      },
+      {
+        "near": [
+          -122.9982905,
+          38.0050912
+        ]
+      }
+    ]
+  },
+  {
+    "id": "limantour",
+    "name": "Limantour Road",
+    "area": "Marin",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The descent from the Point Reyes ridge down to Limantour Beach through Bishop pine forest.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Limantour Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.8041755,
+          38.0477367
+        ]
+      },
+      {
+        "near": [
+          -122.8821608,
+          38.0289059
+        ]
+      }
+    ]
+  },
+  {
+    "id": "suisun-valley",
+    "name": "Suisun Valley Road",
+    "area": "Napa / Solano",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The valley road north out of Fairfield toward the Napa side, through vineyards and low hills.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Suisun Valley Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.1278264,
+          38.221793
+        ]
+      },
+      {
+        "near": [
+          -122.1339142,
+          38.3158432
+        ]
+      }
+    ]
+  },
+  {
+    "id": "niles-canyon",
+    "name": "Niles Canyon Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The canyon between Fremont and Sunol, following Alameda Creek and the old railway.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Niles Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.9716935,
+          37.5764755
+        ]
+      },
+      {
+        "near": [
+          -121.8822367,
+          37.5928917
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pinehurst",
+    "name": "Pinehurst Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Low speed",
+    "description": "A narrow, shaded climb through Canyon between Moraga and the Oakland hills, tight enough that pace stays low.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Pinehurst Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.1847371,
+          37.8407544
+        ]
+      },
+      {
+        "near": [
+          -122.1313546,
+          37.7952936
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bear-creek-orinda",
+    "name": "Bear Creek Road · Orinda",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road along Briones Reservoir between San Pablo Dam Road and Happy Valley, north of Orinda.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Bear Creek Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.2113098,
+          37.9071327
+        ]
+      },
+      {
+        "near": [
+          -122.1626909,
+          37.9253139
+        ]
+      }
+    ]
+  },
+  {
+    "id": "san-pablo-dam",
+    "name": "San Pablo Dam Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The reservoir road between El Sobrante and Orinda, open and flowing past San Pablo Dam.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "San Pablo Dam Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.303653,
+          37.9670018
+        ]
+      },
+      {
+        "near": [
+          -122.2104951,
+          37.8995181
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alhambra-valley",
+    "name": "Alhambra Valley Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "A narrow country road west out of Martinez, connecting toward Bear Creek Road and the Briones hills.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Alhambra Valley Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.1247843,
+          37.9808672
+        ]
+      },
+      {
+        "near": [
+          -122.2561308,
+          37.9772173
+        ]
+      }
+    ]
+  },
+  {
+    "id": "altamont-pass",
+    "name": "Altamont Pass Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The old road over Altamont Pass east of Livermore, through the wind farms.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Altamont Pass Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.7105717,
+          37.7151467
+        ]
+      },
+      {
+        "near": [
+          -121.5840141,
+          37.7460287
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tesla-corral-hollow",
+    "name": "Tesla Road & Corral Hollow Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "East out of Livermore past the vineyards, then south through Corral Hollow toward the Central Valley.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Tesla Road",
+      "Corral Hollow Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.7420861,
+          37.6652227
+        ]
+      },
+      {
+        "near": [
+          -121.5275041,
+          37.6287967
+        ]
+      }
+    ],
+    "access": {
+      "note": "Speed humps were reported east of Greenville Road. Check as you go.",
+      "status": "reported"
+    }
+  },
+  {
+    "id": "marsh-creek",
+    "name": "Marsh Creek Road",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road along Marsh Creek east of Mount Diablo, between Clayton and Brentwood.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Marsh Creek Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.9342937,
+          37.9422378
+        ]
+      },
+      {
+        "near": [
+          -121.6230131,
+          37.8964047
+        ]
+      }
+    ]
+  },
+  {
+    "id": "skyline-oakland",
+    "name": "Skyline Boulevard · Oakland",
+    "area": "East Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The ridge road above Oakland between Golf Links Road and Redwood Road, with bay views and many driveways.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Skyline Boulevard"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.1185453,
+          37.7540075
+        ]
+      },
+      {
+        "near": [
+          -122.2141852,
+          37.8561293
+        ]
+      }
+    ]
+  },
+  {
+    "id": "del-puerto-canyon",
+    "name": "Del Puerto Canyon Road",
+    "area": "Diablo Range",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The remote canyon east off Mines Road, dropping through the Diablo Range toward Patterson and I-5.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Del Puerto Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.4903872,
+          37.3917539
+        ]
+      },
+      {
+        "near": [
+          -121.1835739,
+          37.462656
+        ]
+      }
+    ],
+    "access": {
+      "note": "Surface was reported deteriorated in the section nearest Mines Road, with slide damage and broken pavement.",
+      "status": "reported"
+    }
+  },
+  {
+    "id": "metcalf-san-felipe",
+    "name": "Metcalf Road & San Felipe Road",
+    "area": "South Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The climb past the motorcycle park above San Jose, opening out onto San Felipe Road and the ranch country beyond.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Metcalf Road",
+      "San Felipe Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.7916312,
+          37.313879
+        ]
+      },
+      {
+        "near": [
+          -121.7512464,
+          37.22641
+        ]
+      }
+    ]
+  },
+  {
+    "id": "almaden-alamitos",
+    "name": "Almaden Road & Alamitos Road",
+    "area": "South Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The approach through New Almaden toward the Quicksilver park and the foot of Hicks Road.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Almaden Road",
+      "Alamitos Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.8401816,
+          37.2044257
+        ]
+      },
+      {
+        "near": [
+          -121.8245398,
+          37.1743634
+        ]
+      }
+    ]
+  },
+  {
+    "id": "watsonville-road",
+    "name": "Watsonville Road",
+    "area": "South Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The link south out of Morgan Hill toward Hecker Pass and the Watsonville side.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Watsonville Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.6354648,
+          37.1077506
+        ]
+      },
+      {
+        "near": [
+          -121.6503369,
+          37.0134608
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hecker-pass",
+    "name": "Hecker Pass Highway · Hwy 152",
+    "area": "Santa Cruz Mountains",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The crossing over Mount Madonna between Gilroy and Watsonville, short and consistently curved.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Hecker Pass Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.5996924,
+          37.0132326
+        ]
+      },
+      {
+        "near": [
+          -121.7178523,
+          36.9956457
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bailey-avenue",
+    "name": "Bailey Avenue",
+    "area": "South Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The open connector between Santa Teresa and McKean Road, past the IBM research site.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Bailey Avenue"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.7200708,
+          37.2106298
+        ]
+      },
+      {
+        "near": [
+          -121.7616937,
+          37.1822508
+        ]
+      }
+    ]
+  },
+  {
+    "id": "felton-empire",
+    "name": "Felton Empire Road",
+    "area": "Santa Cruz Mountains",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The short, steep climb out of Felton up to Empire Grade.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Felton Empire Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.073282,
+          37.05308
+        ]
+      },
+      {
+        "near": [
+          -122.1231186,
+          37.057941
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lobitos-creek",
+    "name": "Lobitos Creek Road",
+    "area": "Peninsula",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow creek road inland from the coast near Lobitos, connecting toward Tunitas Creek.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Lobitos Creek Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.4014224,
+          37.3839932
+        ]
+      },
+      {
+        "near": [
+          -122.3630002,
+          37.3995405
+        ]
+      }
+    ]
+  },
+  {
+    "id": "star-hill",
+    "name": "Star Hill Road & Swett Road",
+    "area": "Peninsula",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The steep back way up from Tunitas Creek toward Skyline, single lane in places.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Star Hill Road",
+      "Swett Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.3278303,
+          37.4221165
+        ]
+      },
+      {
+        "near": [
+          -122.3322472,
+          37.3869018
+        ]
+      }
+    ]
+  },
+  {
+    "id": "canada-road",
+    "name": "Cañada Road",
+    "area": "Peninsula",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The open road along Crystal Springs Reservoir between Woodside and Highway 92.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Cañada Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.2539696,
+          37.4296021
+        ]
+      },
+      {
+        "near": [
+          -122.3413725,
+          37.5071122
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cloverdale-road",
+    "name": "Cloverdale Road",
+    "area": "Peninsula",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road south from Pescadero past Butano State Park through the redwoods.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Cloverdale Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -122.3734382,
+          37.2541237
+        ]
+      },
+      {
+        "near": [
+          -122.3400988,
+          37.1863927
+        ]
+      }
+    ]
   }
 ]

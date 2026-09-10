@@ -17290,5 +17290,4679 @@
       "climb": 11,
       "technical": 10
     }
+  },
+  {
+    "id": "nicasio-valley",
+    "name": "Nicasio Valley Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The reservoir road through the middle of Marin, linking Lucas Valley Road to the Point Reyes–Petaluma corridor.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.6933616,
+      38.0547189
+    ],
+    "bounds": [
+      [
+        -122.7334812,
+        38.0133022
+      ],
+      [
+        -122.6601783,
+        38.0972976
+      ]
+    ],
+    "osmWayIds": [
+      12182090,
+      12182097,
+      162812924,
+      475137024,
+      475146365,
+      1225712158,
+      1225712159,
+      1225835834,
+      1225835835
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.6637994,
+        38.0133022
+      ],
+      "end": [
+        -122.7334812,
+        38.0972976
+      ],
+      "wayNames": [
+        "Nicasio Valley Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.7,
+      "bends": 11,
+      "switchbacks": 1,
+      "curvature": 156,
+      "bendsPerMile": 1.4
+    },
+    "elevation": {
+      "climbFt": 886,
+      "highFt": 560,
+      "lowFt": 178,
+      "reliefFt": 382,
+      "maxGradient": 6.1,
+      "climbPerMile": 115
+    },
+    "profile": {
+      "points": [
+        303,
+        330,
+        373,
+        381,
+        388,
+        414,
+        453,
+        496,
+        537,
+        572,
+        532,
+        486,
+        445,
+        419,
+        406,
+        396,
+        383,
+        381,
+        408,
+        445,
+        432,
+        391,
+        366,
+        347,
+        335,
+        327,
+        317,
+        297,
+        284,
+        274,
+        261,
+        250,
+        237,
+        227,
+        224,
+        220,
+        222,
+        219,
+        211,
+        201,
+        198,
+        191,
+        187,
+        182,
+        178,
+        182,
+        180,
+        178,
+        178,
+        180,
+        180,
+        179,
+        188,
+        205,
+        222,
+        230,
+        223,
+        206,
+        195,
+        192,
+        188,
+        180,
+        179,
+        182,
+        185,
+        186,
+        185,
+        191,
+        187,
+        182,
+        178,
+        181
+      ],
+      "miles": 7.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 23,
+      "corners": 4,
+      "climb": 8,
+      "technical": 10
+    }
+  },
+  {
+    "id": "point-reyes-petaluma",
+    "name": "Point Reyes–Petaluma Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The cross-county run from Nicasio out over the hills toward Petaluma, through open ranch country.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.7466773,
+      38.0923946
+    ],
+    "bounds": [
+      [
+        -122.8014363,
+        38.0690585
+      ],
+      [
+        -122.702603,
+        38.1490504
+      ]
+    ],
+    "osmWayIds": [
+      12187634,
+      12187650,
+      263233882,
+      263233883,
+      263233885,
+      263233887,
+      370106052,
+      866123216,
+      866123217,
+      866123218,
+      866123219,
+      867442324,
+      867442331
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.8014363,
+        38.0733288
+      ],
+      "end": [
+        -122.702603,
+        38.1490504
+      ],
+      "wayNames": [
+        "Point Reyes-Petaluma Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 10.4,
+      "bends": 22,
+      "switchbacks": 1,
+      "curvature": 208,
+      "bendsPerMile": 2.1
+    },
+    "elevation": {
+      "climbFt": 1006,
+      "highFt": 545,
+      "lowFt": 32,
+      "reliefFt": 513,
+      "maxGradient": 5.9,
+      "climbPerMile": 97
+    },
+    "profile": {
+      "points": [
+        108,
+        55,
+        35,
+        32,
+        34,
+        43,
+        88,
+        95,
+        62,
+        44,
+        40,
+        45,
+        42,
+        46,
+        55,
+        64,
+        63,
+        61,
+        56,
+        56,
+        66,
+        58,
+        61,
+        85,
+        97,
+        130,
+        175,
+        193,
+        191,
+        187,
+        184,
+        181,
+        184,
+        183,
+        182,
+        183,
+        179,
+        184,
+        189,
+        188,
+        184,
+        181,
+        181,
+        197,
+        217,
+        232,
+        251,
+        274,
+        322,
+        394,
+        455,
+        510,
+        552,
+        519,
+        496,
+        469,
+        457,
+        461,
+        450,
+        436,
+        428,
+        416,
+        409,
+        410,
+        389,
+        392,
+        389,
+        382,
+        391,
+        412,
+        403,
+        416
+      ],
+      "miles": 10.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 24,
+      "corners": 7,
+      "climb": 7,
+      "technical": 10
+    }
+  },
+  {
+    "id": "chileno-valley",
+    "name": "Chileno Valley Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A quiet ranch road between the Petaluma side and Tomales, rolling rather than tight.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.7412314,
+      38.203651
+    ],
+    "bounds": [
+      [
+        -122.8195043,
+        38.1954191
+      ],
+      [
+        -122.665064,
+        38.2218201
+      ]
+    ],
+    "osmWayIds": [
+      7719699,
+      12190403,
+      12190411,
+      12190420,
+      1232062175,
+      1388559606
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.665064,
+        38.213226
+      ],
+      "end": [
+        -122.8195043,
+        38.2218201
+      ],
+      "wayNames": [
+        "Chileno Valley Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 10.1,
+      "bends": 12,
+      "switchbacks": 0,
+      "curvature": 126,
+      "bendsPerMile": 1.2
+    },
+    "elevation": {
+      "climbFt": 732,
+      "highFt": 298,
+      "lowFt": 162,
+      "reliefFt": 136,
+      "maxGradient": 2.8,
+      "climbPerMile": 72
+    },
+    "profile": {
+      "points": [
+        299,
+        255,
+        229,
+        216,
+        208,
+        210,
+        196,
+        208,
+        215,
+        228,
+        216,
+        209,
+        224,
+        268,
+        295,
+        296,
+        272,
+        250,
+        237,
+        207,
+        198,
+        208,
+        226,
+        230,
+        240,
+        241,
+        238,
+        240,
+        251,
+        262,
+        251,
+        245,
+        263,
+        249,
+        245,
+        251,
+        259,
+        253,
+        246,
+        231,
+        229,
+        229,
+        224,
+        223,
+        224,
+        224,
+        221,
+        223,
+        220,
+        217,
+        220,
+        230,
+        201,
+        204,
+        210,
+        206,
+        211,
+        199,
+        206,
+        195,
+        200,
+        196,
+        182,
+        202,
+        183,
+        164,
+        162,
+        172,
+        186,
+        197,
+        182,
+        177
+      ],
+      "miles": 10.1,
+      "coverage": 100
+    },
+    "score": {
+      "score": 19,
+      "corners": 4,
+      "climb": 5,
+      "technical": 10
+    }
+  },
+  {
+    "id": "skaggs-springs",
+    "name": "Skaggs Springs Road",
+    "area": "Marin / Sonoma",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The long crossing from Lake Sonoma west over the coast range to Stewarts Point on Highway 1.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -123.1799921,
+      38.6723556
+    ],
+    "bounds": [
+      [
+        -123.399475,
+        38.646916
+      ],
+      [
+        -122.9943393,
+        38.7133239
+      ]
+    ],
+    "osmWayIds": [
+      7716741,
+      7716747,
+      7718124,
+      7718170,
+      7718214,
+      7718216,
+      30832341,
+      30832368,
+      30832374,
+      30832379,
+      30832383,
+      172472447,
+      172472448,
+      277455066,
+      277455068,
+      433030943,
+      433030944,
+      745204186,
+      1029216498,
+      1029216499,
+      1308007516,
+      1308007517,
+      1435854245,
+      1435854246,
+      1436116380
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.9943393,
+        38.7133239
+      ],
+      "end": [
+        -123.399475,
+        38.6519315
+      ],
+      "wayNames": [
+        "Skaggs Springs Road",
+        "Stewarts Point-Skaggs Springs Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 35.7,
+      "bends": 212,
+      "switchbacks": 33,
+      "curvature": 630,
+      "bendsPerMile": 5.9
+    },
+    "elevation": {
+      "climbFt": 10330,
+      "highFt": 2089,
+      "lowFt": 115,
+      "reliefFt": 1974,
+      "maxGradient": 11.6,
+      "climbPerMile": 289
+    },
+    "profile": {
+      "points": [
+        335,
+        521,
+        595,
+        759,
+        914,
+        1032,
+        970,
+        966,
+        995,
+        895,
+        1108,
+        1356,
+        1584,
+        1734,
+        2000,
+        2060,
+        1844,
+        1878,
+        1665,
+        1353,
+        1573,
+        1399,
+        1157,
+        907,
+        1060,
+        1158,
+        1342,
+        1565,
+        1768,
+        1944,
+        1905,
+        1878,
+        1702,
+        1535,
+        1298,
+        1153,
+        1002,
+        833,
+        664,
+        491,
+        428,
+        426,
+        402,
+        385,
+        352,
+        347,
+        337,
+        326,
+        294,
+        335,
+        300,
+        292,
+        273,
+        299,
+        238,
+        218,
+        197,
+        190,
+        179,
+        168,
+        303,
+        635,
+        1009,
+        1023,
+        738,
+        444,
+        170,
+        306,
+        473,
+        371,
+        184,
+        109
+      ],
+      "miles": 35.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 59,
+      "corners": 19,
+      "climb": 20,
+      "technical": 20
+    }
+  },
+  {
+    "id": "sir-francis-drake",
+    "name": "Sir Francis Drake Boulevard",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road out through Inverness and the Point Reyes peninsula toward the lighthouse.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.9235249,
+      38.0915117
+    ],
+    "bounds": [
+      [
+        -122.9982905,
+        38.0050912
+      ],
+      [
+        -122.8051495,
+        38.1105692
+      ]
+    ],
+    "osmWayIds": [
+      41232981,
+      266891297,
+      266891298,
+      284555064,
+      284555065,
+      284558338,
+      284558339,
+      284558340,
+      284558341,
+      284558342,
+      284558343,
+      620535157,
+      687879583,
+      1228116934,
+      1228116935
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.8051495,
+        38.0642518
+      ],
+      "end": [
+        -122.9982905,
+        38.0050912
+      ],
+      "wayNames": [
+        "Sir Francis Drake Boulevard"
+      ]
+    },
+    "shape": {
+      "lengthMi": 17.8,
+      "bends": 47,
+      "switchbacks": 3,
+      "curvature": 280,
+      "bendsPerMile": 2.6
+    },
+    "elevation": {
+      "climbFt": 2247,
+      "highFt": 375,
+      "lowFt": 9,
+      "reliefFt": 365,
+      "maxGradient": 7.3,
+      "climbPerMile": 126
+    },
+    "profile": {
+      "points": [
+        20,
+        14,
+        11,
+        18,
+        18,
+        13,
+        19,
+        18,
+        15,
+        20,
+        13,
+        17,
+        13,
+        23,
+        23,
+        25,
+        29,
+        13,
+        23,
+        13,
+        18,
+        29,
+        146,
+        271,
+        383,
+        340,
+        300,
+        247,
+        198,
+        147,
+        118,
+        94,
+        72,
+        48,
+        28,
+        13,
+        14,
+        12,
+        17,
+        60,
+        102,
+        114,
+        113,
+        85,
+        65,
+        63,
+        58,
+        101,
+        117,
+        202,
+        225,
+        177,
+        220,
+        226,
+        247,
+        278,
+        323,
+        278,
+        168,
+        131,
+        166,
+        185,
+        227,
+        218,
+        264,
+        154,
+        149,
+        104,
+        127,
+        210,
+        314,
+        336
+      ],
+      "miles": 17.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 27,
+      "corners": 8,
+      "climb": 9,
+      "technical": 10
+    }
+  },
+  {
+    "id": "limantour",
+    "name": "Limantour Road",
+    "area": "Marin",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The descent from the Point Reyes ridge down to Limantour Beach through Bishop pine forest.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.8465822,
+      38.0600347
+    ],
+    "bounds": [
+      [
+        -122.8821608,
+        38.0289059
+      ],
+      [
+        -122.8041755,
+        38.0601064
+      ]
+    ],
+    "osmWayIds": [
+      28918659,
+      83533509,
+      681241930,
+      1361222669
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.8041755,
+        38.0477367
+      ],
+      "end": [
+        -122.8821608,
+        38.0289059
+      ],
+      "wayNames": [
+        "Limantour Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 6.6,
+      "bends": 32,
+      "switchbacks": 7,
+      "curvature": 500,
+      "bendsPerMile": 4.8
+    },
+    "elevation": {
+      "climbFt": 1994,
+      "highFt": 834,
+      "lowFt": 37,
+      "reliefFt": 797,
+      "maxGradient": 9.4,
+      "climbPerMile": 302
+    },
+    "profile": {
+      "points": [
+        52,
+        79,
+        106,
+        137,
+        172,
+        206,
+        240,
+        275,
+        310,
+        343,
+        378,
+        413,
+        447,
+        480,
+        514,
+        548,
+        582,
+        605,
+        635,
+        661,
+        657,
+        628,
+        598,
+        599,
+        624,
+        647,
+        669,
+        681,
+        696,
+        746,
+        798,
+        820,
+        818,
+        802,
+        810,
+        831,
+        837,
+        819,
+        784,
+        751,
+        732,
+        698,
+        658,
+        606,
+        549,
+        508,
+        504,
+        460,
+        418,
+        415,
+        407,
+        354,
+        276,
+        203,
+        188,
+        234,
+        254,
+        291,
+        308,
+        319,
+        312,
+        328,
+        330,
+        311,
+        286,
+        264,
+        212,
+        176,
+        149,
+        106,
+        54,
+        31
+      ],
+      "miles": 6.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 47,
+      "corners": 15,
+      "climb": 21,
+      "technical": 10
+    }
+  },
+  {
+    "id": "suisun-valley",
+    "name": "Suisun Valley Road",
+    "area": "Napa / Solano",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The valley road north out of Fairfield toward the Napa side, through vineyards and low hills.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.1118866,
+      38.2714791
+    ],
+    "bounds": [
+      [
+        -122.1339142,
+        38.221793
+      ],
+      [
+        -122.1116208,
+        38.3158432
+      ]
+    ],
+    "osmWayIds": [
+      8719256,
+      8724756,
+      159940347,
+      159940349,
+      159940350,
+      174266642,
+      179253313,
+      278385793,
+      278385797,
+      357947414,
+      442983235,
+      442983237,
+      442983240,
+      442983241,
+      442983243,
+      442983244,
+      442983246,
+      442983248,
+      442983249,
+      442983250,
+      442983251,
+      442983252,
+      442983260,
+      442983261,
+      442983268,
+      442983269,
+      442983270,
+      442983272,
+      705945037,
+      756811661,
+      928073888,
+      1209462492,
+      1209462493,
+      1209637473,
+      1209637475,
+      1427351189
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.1278264,
+        38.221793
+      ],
+      "end": [
+        -122.1339142,
+        38.3158432
+      ],
+      "wayNames": [
+        "Suisun Valley Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.3,
+      "bends": 7,
+      "switchbacks": 0,
+      "curvature": 150,
+      "bendsPerMile": 1.0
+    },
+    "elevation": {
+      "climbFt": 262,
+      "highFt": 228,
+      "lowFt": 21,
+      "reliefFt": 207,
+      "maxGradient": 1.7,
+      "climbPerMile": 36
+    },
+    "profile": {
+      "points": [
+        20,
+        22,
+        26,
+        29,
+        32,
+        35,
+        38,
+        40,
+        43,
+        46,
+        50,
+        49,
+        51,
+        53,
+        56,
+        58,
+        62,
+        65,
+        67,
+        68,
+        70,
+        72,
+        72,
+        72,
+        72,
+        70,
+        70,
+        69,
+        68,
+        75,
+        76,
+        84,
+        87,
+        85,
+        91,
+        95,
+        91,
+        84,
+        84,
+        94,
+        96,
+        98,
+        101,
+        103,
+        107,
+        108,
+        109,
+        111,
+        114,
+        122,
+        135,
+        139,
+        131,
+        139,
+        138,
+        140,
+        144,
+        139,
+        160,
+        177,
+        179,
+        181,
+        191,
+        199,
+        201,
+        200,
+        201,
+        197,
+        192,
+        211,
+        228,
+        222
+      ],
+      "miles": 7.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 16,
+      "corners": 3,
+      "climb": 3,
+      "technical": 10
+    }
+  },
+  {
+    "id": "niles-canyon",
+    "name": "Niles Canyon Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The canyon between Fremont and Sunol, following Alameda Creek and the old railway.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.9346327,
+      37.5910437
+    ],
+    "bounds": [
+      [
+        -121.9716935,
+        37.5764755
+      ],
+      [
+        -121.8822367,
+        37.5990388
+      ]
+    ],
+    "osmWayIds": [
+      23998430,
+      23998501,
+      23998502,
+      125343970,
+      302916783,
+      307381003,
+      345773950,
+      345773957,
+      345773963,
+      345773971,
+      345773976,
+      345773979,
+      345773980,
+      345773981,
+      417712034,
+      417713914,
+      417713932,
+      660802363,
+      660802364,
+      660802947,
+      666497617,
+      825001489,
+      825001490,
+      825001491,
+      825001493,
+      1056670598,
+      1056670601,
+      1060831131,
+      1060831132,
+      1060831134,
+      1380054784
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.9716935,
+        37.5764755
+      ],
+      "end": [
+        -121.8822367,
+        37.5928917
+      ],
+      "wayNames": [
+        "Niles Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 6.7,
+      "bends": 11,
+      "switchbacks": 2,
+      "curvature": 178,
+      "bendsPerMile": 1.6
+    },
+    "elevation": {
+      "climbFt": 259,
+      "highFt": 249,
+      "lowFt": 80,
+      "reliefFt": 169,
+      "maxGradient": 1.2,
+      "climbPerMile": 39
+    },
+    "profile": {
+      "points": [
+        79,
+        81,
+        86,
+        89,
+        87,
+        86,
+        89,
+        91,
+        100,
+        102,
+        102,
+        106,
+        108,
+        107,
+        109,
+        118,
+        121,
+        124,
+        124,
+        125,
+        130,
+        134,
+        138,
+        143,
+        144,
+        151,
+        149,
+        160,
+        154,
+        161,
+        166,
+        170,
+        170,
+        180,
+        190,
+        195,
+        195,
+        203,
+        201,
+        196,
+        171,
+        190,
+        193,
+        195,
+        198,
+        198,
+        207,
+        203,
+        200,
+        202,
+        210,
+        207,
+        201,
+        206,
+        208,
+        211,
+        213,
+        215,
+        222,
+        230,
+        238,
+        241,
+        243,
+        246,
+        248,
+        250,
+        244,
+        245,
+        250,
+        245,
+        238,
+        248
+      ],
+      "miles": 6.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 18,
+      "corners": 5,
+      "climb": 3,
+      "technical": 10
+    }
+  },
+  {
+    "id": "pinehurst",
+    "name": "Pinehurst Road",
+    "area": "East Bay",
+    "difficulty": 3,
+    "character": "Low speed",
+    "description": "A narrow, shaded climb through Canyon between Moraga and the Oakland hills, tight enough that pace stays low.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.151406,
+      37.820482
+    ],
+    "bounds": [
+      [
+        -122.1847371,
+        37.7952936
+      ],
+      [
+        -122.1311685,
+        37.8407544
+      ]
+    ],
+    "osmWayIds": [
+      6338521,
+      265136336,
+      274687781,
+      304557862,
+      304557866,
+      670827409,
+      909813812,
+      909813813,
+      1035482275,
+      1415715573,
+      1415715574
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.1847371,
+        37.8407544
+      ],
+      "end": [
+        -122.1313546,
+        37.7952936
+      ],
+      "wayNames": [
+        "Pinehurst Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 4.7,
+      "bends": 31,
+      "switchbacks": 0,
+      "curvature": 664,
+      "bendsPerMile": 6.6
+    },
+    "elevation": {
+      "climbFt": 736,
+      "highFt": 821,
+      "lowFt": 507,
+      "reliefFt": 314,
+      "maxGradient": 5.1,
+      "climbPerMile": 157
+    },
+    "profile": {
+      "points": [
+        808,
+        789,
+        778,
+        767,
+        746,
+        738,
+        728,
+        721,
+        717,
+        706,
+        705,
+        692,
+        683,
+        675,
+        661,
+        659,
+        659,
+        655,
+        640,
+        628,
+        631,
+        623,
+        610,
+        602,
+        596,
+        591,
+        584,
+        573,
+        581,
+        574,
+        562,
+        556,
+        550,
+        542,
+        534,
+        533,
+        532,
+        516,
+        519,
+        520,
+        505,
+        501,
+        521,
+        512,
+        525,
+        549,
+        571,
+        594,
+        610,
+        623,
+        640,
+        656,
+        676,
+        689,
+        704,
+        722,
+        740,
+        758,
+        772,
+        786,
+        804,
+        821,
+        825,
+        809,
+        788,
+        765,
+        743,
+        730,
+        721,
+        707,
+        694,
+        689
+      ],
+      "miles": 4.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 52,
+      "corners": 21,
+      "climb": 11,
+      "technical": 20
+    }
+  },
+  {
+    "id": "bear-creek-orinda",
+    "name": "Bear Creek Road · Orinda",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road along Briones Reservoir between San Pablo Dam Road and Happy Valley, north of Orinda.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.1896971,
+      37.9204267
+    ],
+    "bounds": [
+      [
+        -122.2113098,
+        37.9071327
+      ],
+      [
+        -122.1626909,
+        37.9253139
+      ]
+    ],
+    "osmWayIds": [
+      259804886,
+      259804887,
+      893772495
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.2113098,
+        37.9071327
+      ],
+      "end": [
+        -122.1626909,
+        37.9253139
+      ],
+      "wayNames": [
+        "Bear Creek Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 3.7,
+      "bends": 6,
+      "switchbacks": 0,
+      "curvature": 169,
+      "bendsPerMile": 1.6
+    },
+    "elevation": {
+      "climbFt": 1452,
+      "highFt": 958,
+      "lowFt": 349,
+      "reliefFt": 609,
+      "maxGradient": 13.6,
+      "climbPerMile": 392
+    },
+    "profile": {
+      "points": [
+        347,
+        351,
+        378,
+        405,
+        437,
+        477,
+        506,
+        505,
+        506,
+        568,
+        597,
+        628,
+        740,
+        809,
+        853,
+        820,
+        751,
+        676,
+        638,
+        692,
+        784,
+        777,
+        805,
+        844,
+        852,
+        826,
+        824,
+        892,
+        942,
+        959,
+        957,
+        953,
+        938,
+        910,
+        893,
+        906,
+        904,
+        876,
+        847,
+        823,
+        876,
+        913,
+        927,
+        932,
+        943,
+        965,
+        941,
+        921,
+        913,
+        906,
+        902,
+        904,
+        794,
+        749,
+        746,
+        743,
+        724,
+        697,
+        679,
+        699,
+        685,
+        664,
+        647,
+        636,
+        624,
+        586,
+        630,
+        648,
+        648,
+        653,
+        671,
+        671
+      ],
+      "miles": 3.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 43,
+      "corners": 5,
+      "climb": 27,
+      "technical": 10
+    }
+  },
+  {
+    "id": "san-pablo-dam",
+    "name": "San Pablo Dam Road",
+    "area": "East Bay",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The reservoir road between El Sobrante and Orinda, open and flowing past San Pablo Dam.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.2572739,
+      37.9326062
+    ],
+    "bounds": [
+      [
+        -122.303653,
+        37.8995181
+      ],
+      [
+        -122.2104951,
+        37.9670018
+      ]
+    ],
+    "osmWayIds": [
+      259382394,
+      276059936,
+      415777287,
+      415777288,
+      415777289,
+      518206398,
+      518207377,
+      535145785,
+      575437171,
+      575459698,
+      576298451,
+      618433921,
+      745151848,
+      745151850,
+      745151852,
+      745151857,
+      926085553,
+      1050191709,
+      1062043918,
+      1343678257,
+      1344380002,
+      1354596486,
+      1354596487,
+      1354596488,
+      1354826050,
+      1385696605,
+      1385696606,
+      1385716581,
+      1385716582,
+      1385716583,
+      1394496452,
+      1516532368
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.303653,
+        37.9670018
+      ],
+      "end": [
+        -122.2104951,
+        37.8995181
+      ],
+      "wayNames": [
+        "San Pablo Dam Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.4,
+      "bends": 11,
+      "switchbacks": 0,
+      "curvature": 153,
+      "bendsPerMile": 1.5
+    },
+    "elevation": {
+      "climbFt": 598,
+      "highFt": 454,
+      "lowFt": 107,
+      "reliefFt": 347,
+      "maxGradient": 5.1,
+      "climbPerMile": 81
+    },
+    "profile": {
+      "points": [
+        106,
+        119,
+        125,
+        127,
+        130,
+        134,
+        147,
+        153,
+        148,
+        155,
+        155,
+        154,
+        162,
+        170,
+        161,
+        156,
+        162,
+        165,
+        167,
+        176,
+        175,
+        177,
+        186,
+        185,
+        199,
+        233,
+        255,
+        287,
+        319,
+        354,
+        383,
+        398,
+        439,
+        454,
+        451,
+        456,
+        450,
+        452,
+        432,
+        438,
+        429,
+        433,
+        437,
+        425,
+        426,
+        429,
+        431,
+        437,
+        438,
+        431,
+        431,
+        434,
+        441,
+        441,
+        421,
+        414,
+        396,
+        389,
+        389,
+        397,
+        390,
+        398,
+        407,
+        414,
+        416,
+        410,
+        393,
+        391,
+        394,
+        399,
+        416,
+        432
+      ],
+      "miles": 7.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 10,
+      "corners": 5,
+      "climb": 6,
+      "technical": 0
+    }
+  },
+  {
+    "id": "alhambra-valley",
+    "name": "Alhambra Valley Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "A narrow country road west out of Martinez, connecting toward Bear Creek Road and the Briones hills.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.182878,
+      37.962339
+    ],
+    "bounds": [
+      [
+        -122.2561308,
+        37.96201
+      ],
+      [
+        -122.1247843,
+        37.9808672
+      ]
+    ],
+    "osmWayIds": [
+      7858299,
+      7858302,
+      272509096,
+      474272158,
+      661211239,
+      696272176,
+      696272177,
+      878784794,
+      958738248,
+      958738251,
+      958738254,
+      958738255,
+      958738256
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.1247843,
+        37.9808672
+      ],
+      "end": [
+        -122.2561308,
+        37.9772173
+      ],
+      "wayNames": [
+        "Alhambra Valley Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 9.5,
+      "bends": 27,
+      "switchbacks": 1,
+      "curvature": 302,
+      "bendsPerMile": 2.8
+    },
+    "elevation": {
+      "climbFt": 1354,
+      "highFt": 816,
+      "lowFt": 173,
+      "reliefFt": 643,
+      "maxGradient": 7.6,
+      "climbPerMile": 143
+    },
+    "profile": {
+      "points": [
+        181,
+        203,
+        212,
+        216,
+        212,
+        216,
+        229,
+        247,
+        263,
+        262,
+        267,
+        279,
+        291,
+        304,
+        326,
+        331,
+        347,
+        374,
+        394,
+        416,
+        464,
+        477,
+        479,
+        508,
+        515,
+        541,
+        552,
+        589,
+        613,
+        628,
+        658,
+        713,
+        768,
+        825,
+        783,
+        703,
+        643,
+        595,
+        560,
+        526,
+        484,
+        457,
+        423,
+        389,
+        367,
+        371,
+        366,
+        350,
+        339,
+        318,
+        308,
+        302,
+        292,
+        285,
+        286,
+        273,
+        272,
+        272,
+        261,
+        257,
+        258,
+        249,
+        236,
+        229,
+        205,
+        207,
+        212,
+        198,
+        200,
+        210,
+        170,
+        178
+      ],
+      "miles": 9.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 29,
+      "corners": 9,
+      "climb": 10,
+      "technical": 10
+    }
+  },
+  {
+    "id": "altamont-pass",
+    "name": "Altamont Pass Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The old road over Altamont Pass east of Livermore, through the wind farms.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.656918,
+      37.7466631
+    ],
+    "bounds": [
+      [
+        -121.7105717,
+        37.7151467
+      ],
+      [
+        -121.5840141,
+        37.746683
+      ]
+    ],
+    "osmWayIds": [
+      183248208,
+      263693084,
+      272501243,
+      272501245,
+      393886287,
+      393886288,
+      535211185,
+      823592324,
+      823592325,
+      823592326,
+      823984426,
+      823984427,
+      878016380,
+      878016381,
+      945198435,
+      945198436,
+      1430321207,
+      1534106014,
+      1534106015,
+      1534106017,
+      1534106018
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.7105717,
+        37.7151467
+      ],
+      "end": [
+        -121.5840141,
+        37.7460287
+      ],
+      "wayNames": [
+        "Altamont Pass Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 8.5,
+      "bends": 13,
+      "switchbacks": 0,
+      "curvature": 154,
+      "bendsPerMile": 1.5
+    },
+    "elevation": {
+      "climbFt": 782,
+      "highFt": 755,
+      "lowFt": 275,
+      "reliefFt": 480,
+      "maxGradient": 4.2,
+      "climbPerMile": 92
+    },
+    "profile": {
+      "points": [
+        556,
+        561,
+        565,
+        568,
+        572,
+        579,
+        584,
+        592,
+        610,
+        622,
+        633,
+        637,
+        641,
+        647,
+        652,
+        663,
+        685,
+        696,
+        704,
+        728,
+        720,
+        731,
+        740,
+        735,
+        729,
+        728,
+        725,
+        728,
+        736,
+        747,
+        757,
+        750,
+        750,
+        750,
+        734,
+        721,
+        713,
+        683,
+        650,
+        625,
+        603,
+        589,
+        574,
+        557,
+        555,
+        581,
+        568,
+        533,
+        523,
+        508,
+        493,
+        481,
+        477,
+        476,
+        473,
+        466,
+        463,
+        451,
+        452,
+        456,
+        457,
+        441,
+        424,
+        392,
+        363,
+        340,
+        325,
+        312,
+        302,
+        295,
+        281,
+        275
+      ],
+      "miles": 8.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 21,
+      "corners": 5,
+      "climb": 6,
+      "technical": 10
+    }
+  },
+  {
+    "id": "tesla-corral-hollow",
+    "name": "Tesla Road & Corral Hollow Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "East out of Livermore past the vineyards, then south through Corral Hollow toward the Central Valley.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Speed humps were reported east of Greenville Road. Check as you go.",
+      "status": "reported"
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.6301954,
+      37.6449506
+    ],
+    "bounds": [
+      [
+        -121.7420861,
+        37.6287967
+      ],
+      [
+        -121.5275041,
+        37.665287
+      ]
+    ],
+    "osmWayIds": [
+      6355467,
+      6355696,
+      66829197,
+      183248230,
+      574422721,
+      749357346,
+      1428199543,
+      1430439445,
+      1430439446
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.7420861,
+        37.6652227
+      ],
+      "end": [
+        -121.5275041,
+        37.6287967
+      ],
+      "wayNames": [
+        "Corral Hollow Road",
+        "Tesla Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 13.9,
+      "bends": 23,
+      "switchbacks": 5,
+      "curvature": 209,
+      "bendsPerMile": 1.7
+    },
+    "elevation": {
+      "climbFt": 2017,
+      "highFt": 1588,
+      "lowFt": 584,
+      "reliefFt": 1004,
+      "maxGradient": 7.9,
+      "climbPerMile": 145
+    },
+    "profile": {
+      "points": [
+        583,
+        591,
+        600,
+        607,
+        617,
+        618,
+        630,
+        687,
+        703,
+        688,
+        688,
+        697,
+        707,
+        718,
+        726,
+        740,
+        754,
+        767,
+        782,
+        791,
+        812,
+        844,
+        857,
+        880,
+        898,
+        921,
+        952,
+        957,
+        979,
+        1001,
+        1049,
+        1095,
+        1125,
+        1151,
+        1200,
+        1237,
+        1276,
+        1313,
+        1368,
+        1414,
+        1462,
+        1513,
+        1588,
+        1541,
+        1451,
+        1378,
+        1275,
+        1168,
+        1094,
+        1028,
+        948,
+        866,
+        826,
+        814,
+        799,
+        788,
+        775,
+        763,
+        753,
+        745,
+        730,
+        718,
+        700,
+        700,
+        682,
+        672,
+        658,
+        657,
+        639,
+        626,
+        620,
+        616
+      ],
+      "miles": 13.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 26,
+      "corners": 5,
+      "climb": 10,
+      "technical": 10
+    }
+  },
+  {
+    "id": "marsh-creek",
+    "name": "Marsh Creek Road",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road along Marsh Creek east of Mount Diablo, between Clayton and Brentwood.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.7846911,
+      37.8865574
+    ],
+    "bounds": [
+      [
+        -121.9342937,
+        37.8694225
+      ],
+      [
+        -121.6230131,
+        37.9422378
+      ]
+    ],
+    "osmWayIds": [
+      7878548,
+      7878549,
+      31280982,
+      35491579,
+      35491581,
+      35496745,
+      66829138,
+      66829219,
+      124059771,
+      124059793,
+      172605107,
+      184361719,
+      243999870,
+      243999875,
+      307479341,
+      307479342,
+      307479343,
+      307479344,
+      307479345,
+      307479346,
+      445432089,
+      445432091,
+      445432092,
+      445432094,
+      574289097,
+      631778648,
+      658946922,
+      658946925,
+      658946929,
+      678695925,
+      678695926,
+      725071357,
+      744228452,
+      751581877,
+      752042944,
+      826099532,
+      848246551,
+      1076661456,
+      1196311009,
+      1361916728,
+      1361916729,
+      1361916731,
+      1383823958,
+      1383823959,
+      1491045502,
+      1491045503
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.9342937,
+        37.9422378
+      ],
+      "end": [
+        -121.6230131,
+        37.8964047
+      ],
+      "wayNames": [
+        "Marsh Creek Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 21.3,
+      "bends": 37,
+      "switchbacks": 0,
+      "curvature": 172,
+      "bendsPerMile": 1.7
+    },
+    "elevation": {
+      "climbFt": 1864,
+      "highFt": 946,
+      "lowFt": 12,
+      "reliefFt": 935,
+      "maxGradient": 5.1,
+      "climbPerMile": 88
+    },
+    "profile": {
+      "points": [
+        384,
+        430,
+        440,
+        481,
+        510,
+        562,
+        595,
+        630,
+        634,
+        663,
+        712,
+        785,
+        908,
+        898,
+        802,
+        745,
+        726,
+        638,
+        612,
+        653,
+        593,
+        572,
+        575,
+        539,
+        519,
+        500,
+        482,
+        490,
+        479,
+        429,
+        396,
+        403,
+        379,
+        377,
+        383,
+        381,
+        361,
+        346,
+        343,
+        300,
+        283,
+        305,
+        279,
+        264,
+        260,
+        256,
+        238,
+        218,
+        186,
+        191,
+        191,
+        182,
+        208,
+        148,
+        133,
+        126,
+        119,
+        110,
+        99,
+        91,
+        80,
+        71,
+        65,
+        57,
+        49,
+        42,
+        35,
+        31,
+        24,
+        19,
+        15,
+        12
+      ],
+      "miles": 21.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 22,
+      "corners": 5,
+      "climb": 6,
+      "technical": 10
+    }
+  },
+  {
+    "id": "skyline-oakland",
+    "name": "Skyline Boulevard · Oakland",
+    "area": "East Bay",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The ridge road above Oakland between Golf Links Road and Redwood Road, with bay views and many driveways.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.1748899,
+      37.8094741
+    ],
+    "bounds": [
+      [
+        -122.2146169,
+        37.7540075
+      ],
+      [
+        -122.1184836,
+        37.8561293
+      ]
+    ],
+    "osmWayIds": [
+      6354635,
+      6354645,
+      6354674,
+      6354684,
+      24238503,
+      24501521,
+      229185630,
+      416115419,
+      416115420,
+      416115421,
+      416115426,
+      416115439,
+      416115440,
+      416115448,
+      416115452,
+      517242836,
+      517242841,
+      518500980,
+      518500981,
+      518500982,
+      518500983,
+      518501495,
+      518501496,
+      518503883,
+      518503884,
+      618326546,
+      655715413,
+      684642070,
+      689731585,
+      877705924,
+      877705925,
+      1128139015,
+      1128139016,
+      1128139017,
+      1128139018,
+      1128139021,
+      1128139022,
+      1350835943,
+      1486801367,
+      1486801368
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.1185453,
+        37.7540075
+      ],
+      "end": [
+        -122.2141852,
+        37.8561293
+      ],
+      "wayNames": [
+        "Skyline Boulevard"
+      ]
+    },
+    "shape": {
+      "lengthMi": 11.8,
+      "bends": 79,
+      "switchbacks": 14,
+      "curvature": 682,
+      "bendsPerMile": 6.7
+    },
+    "elevation": {
+      "climbFt": 2272,
+      "highFt": 1454,
+      "lowFt": 624,
+      "reliefFt": 830,
+      "maxGradient": 6.5,
+      "climbPerMile": 193
+    },
+    "profile": {
+      "points": [
+        610,
+        698,
+        745,
+        767,
+        840,
+        860,
+        910,
+        853,
+        846,
+        884,
+        965,
+        951,
+        943,
+        956,
+        1005,
+        1067,
+        1113,
+        1108,
+        1110,
+        1135,
+        1152,
+        1182,
+        1161,
+        1123,
+        1103,
+        1098,
+        1094,
+        1020,
+        995,
+        1049,
+        1096,
+        1114,
+        1180,
+        1237,
+        1278,
+        1339,
+        1400,
+        1449,
+        1430,
+        1442,
+        1442,
+        1452,
+        1448,
+        1427,
+        1395,
+        1383,
+        1413,
+        1393,
+        1352,
+        1308,
+        1271,
+        1249,
+        1235,
+        1238,
+        1245,
+        1249,
+        1254,
+        1254,
+        1261,
+        1269,
+        1312,
+        1369,
+        1415,
+        1418,
+        1390,
+        1335,
+        1291,
+        1241,
+        1191,
+        1140,
+        1082,
+        1044
+      ],
+      "miles": 11.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 45,
+      "corners": 22,
+      "climb": 13,
+      "technical": 10
+    }
+  },
+  {
+    "id": "del-puerto-canyon",
+    "name": "Del Puerto Canyon Road",
+    "area": "Diablo Range",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The remote canyon east off Mines Road, dropping through the Diablo Range toward Patterson and I-5.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Surface was reported deteriorated in the section nearest Mines Road, with slide damage and broken pavement.",
+      "status": "reported"
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.3291255,
+      37.4368934
+    ],
+    "bounds": [
+      [
+        -121.4903872,
+        37.3837732
+      ],
+      [
+        -121.1835739,
+        37.4801156
+      ]
+    ],
+    "osmWayIds": [
+      8942361,
+      61350318,
+      178094311,
+      942783888,
+      942783889,
+      942784052,
+      1420972522,
+      1420972523
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.4903872,
+        37.3917539
+      ],
+      "end": [
+        -121.1835739,
+        37.462656
+      ],
+      "wayNames": [
+        "Del Puerto Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 24.4,
+      "bends": 111,
+      "switchbacks": 4,
+      "curvature": 463,
+      "bendsPerMile": 4.5
+    },
+    "elevation": {
+      "climbFt": 3032,
+      "highFt": 2371,
+      "lowFt": 249,
+      "reliefFt": 2121,
+      "maxGradient": 8.2,
+      "climbPerMile": 124
+    },
+    "profile": {
+      "points": [
+        2176,
+        2136,
+        2103,
+        2126,
+        2124,
+        2157,
+        2174,
+        2227,
+        2340,
+        2286,
+        2132,
+        1950,
+        1766,
+        1625,
+        1522,
+        1446,
+        1374,
+        1339,
+        1305,
+        1278,
+        1227,
+        1205,
+        1170,
+        1147,
+        1107,
+        1093,
+        1068,
+        1062,
+        1052,
+        1039,
+        1007,
+        991,
+        981,
+        1017,
+        981,
+        946,
+        901,
+        857,
+        818,
+        776,
+        743,
+        719,
+        696,
+        676,
+        673,
+        640,
+        632,
+        621,
+        590,
+        569,
+        558,
+        549,
+        526,
+        509,
+        496,
+        467,
+        454,
+        429,
+        411,
+        369,
+        350,
+        306,
+        352,
+        289,
+        276,
+        288,
+        333,
+        358,
+        342,
+        318,
+        293,
+        254
+      ],
+      "miles": 24.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 43,
+      "corners": 14,
+      "climb": 9,
+      "technical": 20
+    }
+  },
+  {
+    "id": "metcalf-san-felipe",
+    "name": "Metcalf Road & San Felipe Road",
+    "area": "South Bay",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The climb past the motorcycle park above San Jose, opening out onto San Felipe Road and the ranch country beyond.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.6974696,
+      37.2572825
+    ],
+    "bounds": [
+      [
+        -121.7916312,
+        37.22641
+      ],
+      [
+        -121.6832148,
+        37.313879
+      ]
+    ],
+    "osmWayIds": [
+      8934724,
+      8934726,
+      8953861,
+      8953871,
+      23804667,
+      93405667,
+      93405673,
+      93405675,
+      93405693,
+      93405698,
+      93405701,
+      93536907,
+      93536911,
+      93544148,
+      215633274,
+      261041756,
+      415846544,
+      415846546,
+      415846551,
+      415846553,
+      415846554,
+      415846555,
+      415846556,
+      415846557,
+      415846559,
+      415861337,
+      415861339,
+      415861341,
+      415861343,
+      415861345,
+      415861352,
+      415861354,
+      415861357,
+      416128583,
+      517931610,
+      685474209,
+      685474211,
+      685474212,
+      711143102,
+      711193461,
+      711193462,
+      711193463,
+      711193464,
+      711193466,
+      711193467,
+      1008633760,
+      1047459289,
+      1051429383,
+      1051433296,
+      1051433297,
+      1051433298,
+      1051433299,
+      1051433300,
+      1188197255,
+      1188209639,
+      1188209640,
+      1424411864
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.7916312,
+        37.313879
+      ],
+      "end": [
+        -121.7512464,
+        37.22641
+      ],
+      "wayNames": [
+        "Metcalf Road",
+        "San Felipe Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 13.7,
+      "bends": 41,
+      "switchbacks": 2,
+      "curvature": 346,
+      "bendsPerMile": 3.0
+    },
+    "elevation": {
+      "climbFt": 2902,
+      "highFt": 1249,
+      "lowFt": 211,
+      "reliefFt": 1037,
+      "maxGradient": 11.7,
+      "climbPerMile": 212
+    },
+    "profile": {
+      "points": [
+        210,
+        224,
+        238,
+        253,
+        266,
+        283,
+        301,
+        317,
+        337,
+        358,
+        389,
+        422,
+        425,
+        443,
+        467,
+        486,
+        506,
+        528,
+        552,
+        569,
+        594,
+        628,
+        649,
+        670,
+        699,
+        761,
+        822,
+        871,
+        915,
+        965,
+        1017,
+        1092,
+        1130,
+        1169,
+        1203,
+        1233,
+        1246,
+        1143,
+        1086,
+        1039,
+        1017,
+        1005,
+        993,
+        969,
+        904,
+        872,
+        850,
+        842,
+        897,
+        929,
+        908,
+        904,
+        933,
+        954,
+        975,
+        994,
+        1036,
+        1133,
+        1218,
+        1249,
+        1207,
+        1125,
+        1036,
+        919,
+        797,
+        674,
+        553,
+        431,
+        310,
+        269,
+        250,
+        247
+      ],
+      "miles": 13.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 44,
+      "corners": 10,
+      "climb": 15,
+      "technical": 20
+    }
+  },
+  {
+    "id": "almaden-alamitos",
+    "name": "Almaden Road & Alamitos Road",
+    "area": "South Bay",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The approach through New Almaden toward the Quicksilver park and the foot of Hicks Road.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.8209369,
+      37.1902353
+    ],
+    "bounds": [
+      [
+        -121.8404747,
+        37.1743634
+      ],
+      [
+        -121.8160231,
+        37.2044257
+      ]
+    ],
+    "osmWayIds": [
+      8934334,
+      8934352,
+      423896886,
+      505095517,
+      505095518,
+      719944987,
+      719944988,
+      719944989,
+      719944991,
+      719944993,
+      719944995,
+      743253946,
+      809285514
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.8401816,
+        37.2044257
+      ],
+      "end": [
+        -121.8245398,
+        37.1743634
+      ],
+      "wayNames": [
+        "Almaden Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 2.9,
+      "bends": 4,
+      "switchbacks": 0,
+      "curvature": 171,
+      "bendsPerMile": 1.4
+    },
+    "elevation": {
+      "climbFt": 160,
+      "highFt": 476,
+      "lowFt": 337,
+      "reliefFt": 139,
+      "maxGradient": 2.2,
+      "climbPerMile": 55
+    },
+    "profile": {
+      "points": [
+        332,
+        338,
+        345,
+        352,
+        356,
+        361,
+        366,
+        370,
+        374,
+        377,
+        380,
+        382,
+        383,
+        384,
+        384,
+        381,
+        381,
+        379,
+        373,
+        373,
+        375,
+        377,
+        377,
+        376,
+        375,
+        378,
+        381,
+        382,
+        387,
+        390,
+        390,
+        395,
+        399,
+        398,
+        396,
+        395,
+        398,
+        399,
+        398,
+        397,
+        398,
+        400,
+        405,
+        409,
+        413,
+        415,
+        420,
+        424,
+        428,
+        428,
+        427,
+        425,
+        424,
+        424,
+        428,
+        435,
+        442,
+        451,
+        458,
+        464,
+        464,
+        466,
+        468,
+        469,
+        468,
+        468,
+        468,
+        469,
+        470,
+        473,
+        475,
+        477
+      ],
+      "miles": 2.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 18,
+      "corners": 4,
+      "climb": 4,
+      "technical": 10
+    }
+  },
+  {
+    "id": "watsonville-road",
+    "name": "Watsonville Road",
+    "area": "South Bay",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The link south out of Morgan Hill toward Hecker Pass and the Watsonville side.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.662862,
+      37.0603375
+    ],
+    "bounds": [
+      [
+        -121.6629252,
+        37.0134608
+      ],
+      [
+        -121.6354648,
+        37.1077506
+      ]
+    ],
+    "osmWayIds": [
+      8934790,
+      51129038,
+      293499970,
+      293499971,
+      293499972,
+      424980529,
+      613229957,
+      755544138,
+      759214369,
+      765581586,
+      766313159,
+      766313160,
+      813906055,
+      823947709,
+      823947710,
+      823947711,
+      823947712,
+      823947716,
+      823947717,
+      823947718,
+      824663792,
+      878535590,
+      975114575,
+      975114576,
+      1508000590,
+      1508000597,
+      1508000598,
+      1508000599,
+      1508000600
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.6354648,
+        37.1077506
+      ],
+      "end": [
+        -121.6503369,
+        37.0134608
+      ],
+      "wayNames": [
+        "Watsonville Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.3,
+      "bends": 8,
+      "switchbacks": 0,
+      "curvature": 104,
+      "bendsPerMile": 1.1
+    },
+    "elevation": {
+      "climbFt": 391,
+      "highFt": 434,
+      "lowFt": 295,
+      "reliefFt": 139,
+      "maxGradient": 2.1,
+      "climbPerMile": 54
+    },
+    "profile": {
+      "points": [
+        322,
+        320,
+        323,
+        326,
+        330,
+        331,
+        332,
+        334,
+        336,
+        338,
+        339,
+        341,
+        344,
+        350,
+        352,
+        356,
+        364,
+        366,
+        368,
+        370,
+        378,
+        388,
+        400,
+        400,
+        403,
+        402,
+        402,
+        406,
+        419,
+        428,
+        429,
+        435,
+        432,
+        424,
+        417,
+        410,
+        405,
+        397,
+        388,
+        378,
+        362,
+        349,
+        345,
+        341,
+        344,
+        342,
+        336,
+        334,
+        329,
+        323,
+        323,
+        333,
+        339,
+        334,
+        328,
+        317,
+        324,
+        329,
+        308,
+        295,
+        297,
+        302,
+        307,
+        307,
+        315,
+        332,
+        340,
+        357,
+        339,
+        327,
+        324,
+        329
+      ],
+      "miles": 7.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 17,
+      "corners": 4,
+      "climb": 4,
+      "technical": 10
+    }
+  },
+  {
+    "id": "hecker-pass",
+    "name": "Hecker Pass Highway · Hwy 152",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The crossing over Mount Madonna between Gilroy and Watsonville, short and consistently curved.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.6679464,
+      37.0065362
+    ],
+    "bounds": [
+      [
+        -121.7178523,
+        36.9895509
+      ],
+      [
+        -121.5996924,
+        37.0135351
+      ]
+    ],
+    "osmWayIds": [
+      8933687,
+      227726729,
+      227726730,
+      293501631,
+      293501637,
+      375208605,
+      375208606,
+      791163326,
+      823947707,
+      823947708,
+      839464677,
+      878037011,
+      878037012,
+      878037013,
+      878037014,
+      878046561,
+      878458738,
+      1124427779,
+      1124427781,
+      1205143031,
+      1205143032,
+      1281986137,
+      1465008613
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.5996924,
+        37.0132326
+      ],
+      "end": [
+        -121.7178523,
+        36.9956457
+      ],
+      "wayNames": [
+        "Hecker Pass Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.9,
+      "bends": 18,
+      "switchbacks": 2,
+      "curvature": 235,
+      "bendsPerMile": 2.3
+    },
+    "elevation": {
+      "climbFt": 1163,
+      "highFt": 1335,
+      "lowFt": 241,
+      "reliefFt": 1094,
+      "maxGradient": 6.2,
+      "climbPerMile": 147
+    },
+    "profile": {
+      "points": [
+        240,
+        249,
+        249,
+        250,
+        251,
+        251,
+        255,
+        263,
+        250,
+        246,
+        245,
+        251,
+        260,
+        264,
+        251,
+        261,
+        254,
+        265,
+        275,
+        290,
+        295,
+        303,
+        307,
+        309,
+        317,
+        326,
+        330,
+        335,
+        342,
+        350,
+        357,
+        358,
+        360,
+        371,
+        375,
+        398,
+        409,
+        435,
+        462,
+        470,
+        494,
+        498,
+        491,
+        492,
+        515,
+        546,
+        597,
+        610,
+        639,
+        674,
+        709,
+        710,
+        729,
+        770,
+        811,
+        847,
+        861,
+        888,
+        916,
+        946,
+        977,
+        1013,
+        1048,
+        1091,
+        1125,
+        1157,
+        1199,
+        1236,
+        1267,
+        1299,
+        1335,
+        1335
+      ],
+      "miles": 8.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 28,
+      "corners": 7,
+      "climb": 10,
+      "technical": 10
+    }
+  },
+  {
+    "id": "bailey-avenue",
+    "name": "Bailey Avenue",
+    "area": "South Bay",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The open connector between Santa Teresa and McKean Road, past the IBM research site.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -121.7469121,
+      37.1939223
+    ],
+    "bounds": [
+      [
+        -121.7616937,
+        37.1822508
+      ],
+      [
+        -121.7200708,
+        37.2106298
+      ]
+    ],
+    "osmWayIds": [
+      8937928,
+      23805282,
+      23805284,
+      23805287,
+      23805315,
+      23805316,
+      25467301,
+      25467302,
+      28434453,
+      56162144,
+      93544122,
+      93544131,
+      93544134,
+      186398825,
+      186398826,
+      186398827,
+      313174119,
+      392629021,
+      392629022,
+      617284136,
+      617284151,
+      878434112,
+      967119748,
+      967119749,
+      1208307150,
+      1208307151,
+      1208307152,
+      1208307153,
+      1208307154,
+      1208307155
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -121.7200708,
+        37.2106298
+      ],
+      "end": [
+        -121.7616937,
+        37.1822508
+      ],
+      "wayNames": [
+        "Bailey Avenue"
+      ]
+    },
+    "shape": {
+      "lengthMi": 3.5,
+      "bends": 6,
+      "switchbacks": 2,
+      "curvature": 236,
+      "bendsPerMile": 1.7
+    },
+    "elevation": {
+      "climbFt": 428,
+      "highFt": 537,
+      "lowFt": 254,
+      "reliefFt": 282,
+      "maxGradient": 7.5,
+      "climbPerMile": 122
+    },
+    "profile": {
+      "points": [
+        350,
+        330,
+        321,
+        304,
+        282,
+        296,
+        292,
+        274,
+        268,
+        287,
+        285,
+        290,
+        293,
+        292,
+        288,
+        273,
+        264,
+        259,
+        257,
+        258,
+        259,
+        258,
+        257,
+        255,
+        255,
+        254,
+        254,
+        255,
+        256,
+        259,
+        256,
+        255,
+        255,
+        257,
+        257,
+        257,
+        257,
+        257,
+        258,
+        258,
+        259,
+        260,
+        260,
+        261,
+        261,
+        263,
+        265,
+        267,
+        270,
+        275,
+        282,
+        291,
+        303,
+        320,
+        342,
+        363,
+        382,
+        402,
+        425,
+        443,
+        461,
+        481,
+        495,
+        509,
+        523,
+        537,
+        547,
+        532,
+        514,
+        504,
+        504,
+        508
+      ],
+      "miles": 3.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 14,
+      "corners": 5,
+      "climb": 9,
+      "technical": 0
+    }
+  },
+  {
+    "id": "felton-empire",
+    "name": "Felton Empire Road",
+    "area": "Santa Cruz Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The short, steep climb out of Felton up to Empire Grade.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.0971289,
+      37.0553668
+    ],
+    "bounds": [
+      [
+        -122.1231186,
+        37.0485964
+      ],
+      [
+        -122.073282,
+        37.0611652
+      ]
+    ],
+    "osmWayIds": [
+      230952565
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.073282,
+        37.05308
+      ],
+      "end": [
+        -122.1231186,
+        37.057941
+      ],
+      "wayNames": [
+        "Felton Empire Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 3.7,
+      "bends": 25,
+      "switchbacks": 3,
+      "curvature": 715,
+      "bendsPerMile": 6.7
+    },
+    "elevation": {
+      "climbFt": 1505,
+      "highFt": 1811,
+      "lowFt": 305,
+      "reliefFt": 1505,
+      "maxGradient": 10.6,
+      "climbPerMile": 407
+    },
+    "profile": {
+      "points": [
+        289,
+        317,
+        346,
+        374,
+        392,
+        403,
+        423,
+        431,
+        444,
+        465,
+        490,
+        507,
+        513,
+        554,
+        570,
+        602,
+        628,
+        650,
+        665,
+        660,
+        700,
+        733,
+        762,
+        781,
+        796,
+        822,
+        857,
+        870,
+        892,
+        904,
+        920,
+        950,
+        976,
+        999,
+        1043,
+        1078,
+        1111,
+        1136,
+        1140,
+        1139,
+        1177,
+        1182,
+        1200,
+        1233,
+        1264,
+        1290,
+        1336,
+        1359,
+        1381,
+        1405,
+        1426,
+        1438,
+        1462,
+        1499,
+        1531,
+        1558,
+        1586,
+        1613,
+        1614,
+        1611,
+        1640,
+        1674,
+        1706,
+        1735,
+        1760,
+        1788,
+        1793,
+        1790,
+        1790,
+        1796,
+        1806,
+        1817
+      ],
+      "miles": 3.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 70,
+      "corners": 22,
+      "climb": 28,
+      "technical": 20
+    }
+  },
+  {
+    "id": "lobitos-creek",
+    "name": "Lobitos Creek Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow creek road inland from the coast near Lobitos, connecting toward Tunitas Creek.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.3842114,
+      37.3912643
+    ],
+    "bounds": [
+      [
+        -122.4014224,
+        37.3839783
+      ],
+      [
+        -122.3630002,
+        37.4023407
+      ]
+    ],
+    "osmWayIds": [
+      8934009
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.4014224,
+        37.3839932
+      ],
+      "end": [
+        -122.3630002,
+        37.3995405
+      ],
+      "wayNames": [
+        "Lobitos Creek Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 4.1,
+      "bends": 30,
+      "switchbacks": 7,
+      "curvature": 917,
+      "bendsPerMile": 7.4
+    },
+    "elevation": {
+      "climbFt": 1036,
+      "highFt": 745,
+      "lowFt": 196,
+      "reliefFt": 549,
+      "maxGradient": 9.4,
+      "climbPerMile": 253
+    },
+    "profile": {
+      "points": [
+        177,
+        212,
+        218,
+        220,
+        221,
+        247,
+        261,
+        262,
+        274,
+        291,
+        295,
+        297,
+        299,
+        295,
+        298,
+        298,
+        293,
+        282,
+        268,
+        247,
+        254,
+        284,
+        308,
+        328,
+        361,
+        386,
+        391,
+        408,
+        442,
+        491,
+        498,
+        538,
+        582,
+        595,
+        618,
+        650,
+        672,
+        677,
+        667,
+        653,
+        658,
+        669,
+        692,
+        700,
+        692,
+        668,
+        663,
+        659,
+        654,
+        641,
+        636,
+        635,
+        636,
+        662,
+        690,
+        709,
+        725,
+        737,
+        743,
+        751,
+        726,
+        704,
+        688,
+        674,
+        650,
+        619,
+        591,
+        562,
+        528,
+        500,
+        497,
+        491
+      ],
+      "miles": 4.1,
+      "coverage": 100
+    },
+    "score": {
+      "score": 61,
+      "corners": 24,
+      "climb": 18,
+      "technical": 20
+    }
+  },
+  {
+    "id": "star-hill",
+    "name": "Star Hill Road & Swett Road",
+    "area": "Peninsula",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The steep back way up from Tunitas Creek toward Skyline, single lane in places.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.3362973,
+      37.4018685
+    ],
+    "bounds": [
+      [
+        -122.336417,
+        37.3869018
+      ],
+      [
+        -122.3274314,
+        37.4221165
+      ]
+    ],
+    "osmWayIds": [
+      8934828,
+      8935947,
+      8935953
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.3278303,
+        37.4221165
+      ],
+      "end": [
+        -122.3322472,
+        37.3869018
+      ],
+      "wayNames": [
+        "Star Hill Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 3.6,
+      "bends": 46,
+      "switchbacks": 5,
+      "curvature": 1139,
+      "bendsPerMile": 12.9
+    },
+    "elevation": {
+      "climbFt": 900,
+      "highFt": 2068,
+      "lowFt": 1325,
+      "reliefFt": 743,
+      "maxGradient": 9.2,
+      "climbPerMile": 250
+    },
+    "profile": {
+      "points": [
+        1906,
+        1935,
+        1969,
+        1985,
+        1990,
+        2010,
+        2053,
+        2067,
+        2072,
+        2069,
+        2061,
+        2070,
+        2028,
+        2018,
+        2024,
+        2028,
+        2013,
+        1993,
+        1989,
+        1988,
+        1976,
+        1955,
+        1951,
+        1950,
+        1947,
+        1941,
+        1933,
+        1932,
+        1951,
+        1938,
+        1933,
+        1925,
+        1903,
+        1900,
+        1866,
+        1854,
+        1861,
+        1865,
+        1835,
+        1801,
+        1786,
+        1771,
+        1758,
+        1751,
+        1744,
+        1735,
+        1713,
+        1715,
+        1733,
+        1711,
+        1707,
+        1686,
+        1686,
+        1687,
+        1667,
+        1673,
+        1638,
+        1609,
+        1590,
+        1577,
+        1561,
+        1544,
+        1505,
+        1467,
+        1438,
+        1415,
+        1417,
+        1381,
+        1370,
+        1354,
+        1324,
+        1325
+      ],
+      "miles": 3.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 79,
+      "corners": 41,
+      "climb": 18,
+      "technical": 20
+    }
+  },
+  {
+    "id": "canada-road",
+    "name": "Cañada Road",
+    "area": "Peninsula",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The open road along Crystal Springs Reservoir between Woodside and Highway 92.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.301003,
+      37.4672151
+    ],
+    "bounds": [
+      [
+        -122.3413725,
+        37.4296021
+      ],
+      [
+        -122.2539696,
+        37.5071122
+      ]
+    ],
+    "osmWayIds": [
+      157466880,
+      276909112,
+      417324111,
+      417324117,
+      417324123,
+      417324129,
+      417324134,
+      417324138,
+      417324926,
+      417324930,
+      417324935,
+      417932435,
+      417932436,
+      417932437,
+      417951673,
+      805899721,
+      1153984554
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.2539696,
+        37.4296021
+      ],
+      "end": [
+        -122.3413725,
+        37.5071122
+      ],
+      "wayNames": [
+        "Cañada Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 7.4,
+      "bends": 6,
+      "switchbacks": 0,
+      "curvature": 81,
+      "bendsPerMile": 0.8
+    },
+    "elevation": {
+      "climbFt": 584,
+      "highFt": 563,
+      "lowFt": 323,
+      "reliefFt": 240,
+      "maxGradient": 2.9,
+      "climbPerMile": 79
+    },
+    "profile": {
+      "points": [
+        375,
+        397,
+        389,
+        393,
+        398,
+        405,
+        414,
+        427,
+        434,
+        442,
+        453,
+        472,
+        480,
+        483,
+        494,
+        502,
+        511,
+        532,
+        553,
+        563,
+        562,
+        561,
+        555,
+        540,
+        526,
+        514,
+        506,
+        503,
+        499,
+        485,
+        466,
+        457,
+        450,
+        437,
+        411,
+        401,
+        400,
+        397,
+        395,
+        394,
+        383,
+        360,
+        343,
+        339,
+        335,
+        332,
+        337,
+        337,
+        333,
+        321,
+        324,
+        338,
+        352,
+        367,
+        372,
+        363,
+        355,
+        346,
+        339,
+        330,
+        323,
+        324,
+        332,
+        347,
+        364,
+        367,
+        365,
+        363,
+        361,
+        361,
+        364,
+        363
+      ],
+      "miles": 7.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 8,
+      "corners": 3,
+      "climb": 6,
+      "technical": 0
+    }
+  },
+  {
+    "id": "cloverdale-road",
+    "name": "Cloverdale Road",
+    "area": "Peninsula",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The road south from Pescadero past Butano State Park through the redwoods.",
+    "sources": [
+      {
+        "title": "Rennlist · SF Bay Area best driving roads for a Sunday morning blast",
+        "url": "https://rennlist.com/forums/west-us-rennlist-region/998154-sf-bay-area-best-driving-roads-for-a-sunday-morning-blast.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "bay-area",
+    "center": [
+      -122.3534908,
+      37.2202109
+    ],
+    "bounds": [
+      [
+        -122.3734382,
+        37.1863927
+      ],
+      [
+        -122.3395468,
+        37.2541237
+      ]
+    ],
+    "osmWayIds": [
+      8936318,
+      8936343,
+      8936352,
+      41745530,
+      69967030,
+      292625953,
+      292625954,
+      535152409,
+      589686915
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -122.3734382,
+        37.2541237
+      ],
+      "end": [
+        -122.3400988,
+        37.1863927
+      ],
+      "wayNames": [
+        "Cloverdale Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 5.5,
+      "bends": 12,
+      "switchbacks": 0,
+      "curvature": 195,
+      "bendsPerMile": 2.2
+    },
+    "elevation": {
+      "climbFt": 611,
+      "highFt": 266,
+      "lowFt": 52,
+      "reliefFt": 214,
+      "maxGradient": 3.4,
+      "climbPerMile": 111
+    },
+    "profile": {
+      "points": [
+        60,
+        73,
+        52,
+        52,
+        68,
+        69,
+        75,
+        78,
+        79,
+        78,
+        79,
+        77,
+        71,
+        75,
+        66,
+        66,
+        66,
+        73,
+        71,
+        64,
+        69,
+        74,
+        100,
+        120,
+        121,
+        116,
+        119,
+        153,
+        121,
+        126,
+        144,
+        145,
+        118,
+        117,
+        117,
+        134,
+        145,
+        148,
+        143,
+        141,
+        123,
+        131,
+        150,
+        160,
+        162,
+        155,
+        153,
+        147,
+        144,
+        170,
+        192,
+        200,
+        190,
+        203,
+        220,
+        221,
+        214,
+        258,
+        277,
+        243,
+        220,
+        228,
+        253,
+        264,
+        249,
+        233,
+        242,
+        230,
+        197,
+        164,
+        140,
+        114
+      ],
+      "miles": 5.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 25,
+      "corners": 7,
+      "climb": 8,
+      "technical": 10
+    }
   }
 ]
