@@ -63,6 +63,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         const current = new mapboxgl.Map({
           container: container.current!, accessToken: token, attributionControl: false,
           style: "mapbox://styles/mapbox/dark-v11", center: regionConfig.center,
+          scrollZoom: false,
           zoom: container.current!.clientWidth < 640 ? 7.3 : 8,
           ...(region === "los-angeles" ? { bounds: regionConfig.bounds, fitBoundsOptions: { padding: { top: 135, right: 40, bottom: 65, left: 40 } } } : {}),
         });
@@ -245,6 +246,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         {/* Just the colour key. The difficulty scale used to sit here too, but
             nothing on the map is coloured by difficulty, so it explained nothing. */}
         <p className="legend-note">Colour shows road character</p>
+        <a className="map-scroll-hint" href="#about">About this map ↓</a>
         <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
       </div>
       {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
