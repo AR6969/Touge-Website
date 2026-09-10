@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { enablePinchZoom } from "./lib/pinch-zoom";
 
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
@@ -29,6 +30,7 @@ export default function DriveMap({ legs, bounds, title }: {
     let loaded = false;
     let instance: mapboxgl.Map | undefined;
     let observer: ResizeObserver | undefined;
+    let detachPinch: (() => void) | undefined;
     const abort = new AbortController();
     const update = (message: string) => { if (!disposed) setStatus(message); };
 
@@ -42,6 +44,7 @@ export default function DriveMap({ legs, bounds, title }: {
         style: "mapbox://styles/mapbox/dark-v11", bounds, fitBoundsOptions: { padding: 46 },
       });
       instance = map;
+      detachPinch = enablePinchZoom(map, container.current);
       map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
       map.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="/data/README.txt" target="_blank">Road traces: © OpenStreetMap contributors</a>' }), "bottom-right");
 
@@ -100,7 +103,7 @@ export default function DriveMap({ legs, bounds, title }: {
     } catch {
       queueMicrotask(() => update("The map could not start. Try another browser or enable graphics acceleration."));
     }
-    return () => { disposed = true; abort.abort(); observer?.disconnect(); instance?.remove(); };
+    return () => { disposed = true; abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove(); };
   }, [legs, bounds]);
 
   return (

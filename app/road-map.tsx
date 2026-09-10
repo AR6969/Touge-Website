@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { enablePinchZoom } from "./lib/pinch-zoom";
 
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
@@ -26,6 +27,7 @@ export default function RoadMap({ id, name, bounds, color }: {
     let loaded = false;
     let instance: mapboxgl.Map | undefined;
     let observer: ResizeObserver | undefined;
+    let detachPinch: (() => void) | undefined;
     const abort = new AbortController();
     // Deferred so the status updates below never run synchronously inside the effect.
     const updateStatus = (message: string) => { if (!disposed) setStatus(message); };
@@ -40,6 +42,7 @@ export default function RoadMap({ id, name, bounds, color }: {
         style: "mapbox://styles/mapbox/dark-v11", bounds, fitBoundsOptions: { padding: 40 },
       });
       instance = map;
+      detachPinch = enablePinchZoom(map, container.current);
       map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
       map.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="/data/README.txt" target="_blank">Road trace: © OpenStreetMap contributors</a>' }), "bottom-right");
 
@@ -84,7 +87,7 @@ export default function RoadMap({ id, name, bounds, color }: {
     } catch {
       queueMicrotask(() => updateStatus("The map could not start. Try another browser or enable graphics acceleration."));
     }
-    return () => { disposed = true; abort.abort(); observer?.disconnect(); instance?.remove(); };
+    return () => { disposed = true; abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove(); };
   }, [id, color, bounds]);
 
   return (

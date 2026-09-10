@@ -2612,7 +2612,7 @@
     "area": "Marin",
     "mapRegionOverride": "bay-area",
     "difficulty": 2,
-    "character": "Medium speed",
+    "character": "Low speed",
     "description": "The descent from the Point Reyes ridge down to Limantour Beach through Bishop pine forest.",
     "sources": [
       {

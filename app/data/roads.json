@@ -5715,8 +5715,8 @@
     "id": "panoramic",
     "name": "Panoramic Highway",
     "area": "Marin",
-    "difficulty": 2,
-    "character": "Medium speed",
+    "difficulty": 3,
+    "character": "Technical",
     "description": "A forested climb above Muir Woods connecting the Mount Tamalpais area with the Stinson Beach side.",
     "sources": [
       {
@@ -5854,10 +5854,10 @@
       "coverage": 100
     },
     "score": {
-      "score": 59,
+      "score": 69,
       "corners": 30,
       "climb": 19,
-      "technical": 10
+      "technical": 20
     }
   },
   {
@@ -18135,7 +18135,7 @@
     "name": "Limantour Road",
     "area": "Marin",
     "difficulty": 2,
-    "character": "Medium speed",
+    "character": "Low speed",
     "description": "The descent from the Point Reyes ridge down to Limantour Beach through Bishop pine forest.",
     "sources": [
       {

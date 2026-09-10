@@ -7,6 +7,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import type { Landmark, RoadSummary } from "./lib/roads";
 import { characterColors, characters, colorFor, landmarkColor, type Character } from "./lib/colors";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
+import { enablePinchZoom } from "./lib/pinch-zoom";
 
 // Colour is character, so the filter buttons and the roads they filter agree.
 const roadColor: ExpressionSpecification = [
@@ -55,6 +56,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
     let loaded = false;
     let instance: mapboxgl.Map | undefined;
     let observer: ResizeObserver | undefined;
+    let detachPinch: (() => void) | undefined;
     const abort = new AbortController();
     const updateStatus = (message: string) => { if (!disposed) setStatus(message); };
 
@@ -76,6 +78,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         });
         instance = current;
         map.current = current;
+        detachPinch = enablePinchZoom(current, container.current!);
         current.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
         current.addControl(new mapboxgl.AttributionControl({ compact: true, customAttribution: '<a href="/data/README.txt" target="_blank">Road traces: © OpenStreetMap contributors</a>' }), "bottom-right");
 
@@ -178,7 +181,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
     const timeout = window.setTimeout(() => {
       if (!loaded && !disposed) setStatus(previous => previous === "Loading map…" ? "The map is taking longer than expected. Check your connection and try again." : previous);
     }, 10000);
-    return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); observer?.disconnect(); instance?.remove(); map.current = null; };
+    return () => { disposed = true; abort.abort(); window.clearTimeout(timeout); detachPinch?.(); observer?.disconnect(); instance?.remove(); map.current = null; };
     // `roads` and `landmarks` are deliberately not dependencies: they are new
     // arrays on every render, and listing them lets any re-render destroy a
     // half-loaded map and reset the overlay. Read through dataRef instead.

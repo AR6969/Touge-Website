@@ -5,6 +5,12 @@ export const mapRegions: Record<MapRegion, {
   href: string;
   pickerTitle: string;
   center: [number, number];
+  /**
+   * The frame the map opens to — not the region's full data extent. Fitting the
+   * outermost roads (Carmel Valley to Mount St. Helena, say) opens so far out
+   * that the core is unreadable, so these frame the dense middle and leave the
+   * outliers to be found by panning.
+   */
   bounds: [[number, number], [number, number]];
 }> = {
   california: {
@@ -19,16 +25,18 @@ export const mapRegions: Record<MapRegion, {
     href: "/?region=bay-area",
     pickerTitle: "Bay Area & nearby drives",
     center: [-122.10, 37.57],
-    bounds: [[-123.13, 36.42], [-121.35, 38.80]],
+    // Santa Cruz up to Point Reyes, Pacific across to Mount Hamilton.
+    bounds: [[-122.95, 36.94], [-121.55, 38.12]],
   },
   "los-angeles": {
     name: "Los Angeles",
     href: "/los-angeles",
     pickerTitle: "LA, Malibu & Orange County",
     center: [-118.22, 34.02],
-    // Widened east and west of the city: the roads people drive from LA include
-    // the San Bernardino and San Jacinto mountains and the Ojai back country.
-    bounds: [[-119.45, 33.40], [-116.55, 34.65]],
+    // Wide east and west of the city, because the roads people drive from LA
+    // reach the San Bernardino and San Jacinto mountains and the Ojai back
+    // country — but drawn in enough that the city itself is still legible.
+    bounds: [[-119.30, 33.46], [-116.70, 34.60]],
   },
   "san-diego": {
     name: "San Diego",
