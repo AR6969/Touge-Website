@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import RoadExplorer from "./road-explorer";
-import { SiteFooter, SiteHeader } from "./site-chrome";
+import HomeMap from "./home-map";
+import { SiteFooter } from "./site-chrome";
 import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, sanDiegoRoads, toSummary } from "./lib/roads";
 import { mapRegions } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
@@ -28,7 +28,11 @@ const regions = [
   { id: "san-diego" as const, roads: sanDiegoRoads, blurb: "Palomar Mountain, the Laguna and Cuyamaca ranges, and the North County back roads." },
 ];
 
-export default function Home() {
+export default async function Home({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
+  const { region } = await searchParams;
+  const showingBayArea = region === "bay-area";
+  const mapRegion = showingBayArea ? "bay-area" : "california";
+
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
@@ -46,12 +50,16 @@ export default function Home() {
 
   return (
     <>
-      <SiteHeader current="map" mapRegion="bay-area" />
-      {/* The map is the product, so it is the first thing on the homepage. The
-          California framing sits underneath it rather than in front of it. */}
-      <div className="explorer">
-        <RoadExplorer key="bay-area" roads={bayAreaRoads.map(toSummary)} landmarks={landmarksFor("bay-area")} region="bay-area" />
-      </div>
+      <HomeMap
+        initialRegion={mapRegion}
+        autoLocate={!region}
+        data={{
+          california: { roads: roads.map(toSummary), landmarks: landmarksFor("california") },
+          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
+          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles") },
+          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego") },
+        }}
+      />
       <main className="prose landing">
         <h1>Best driving roads in California</h1>
         <p className="lede">

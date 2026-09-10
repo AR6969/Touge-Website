@@ -66,6 +66,7 @@ export type Landmark = {
 export const landmarks = landmarkData as Landmark[];
 
 export function landmarksFor(region: MapRegion) {
+  if (region === "california") return landmarks;
   return landmarks.filter(mark => mark.mapRegion === region);
 }
 

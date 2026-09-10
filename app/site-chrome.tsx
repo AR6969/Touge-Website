@@ -5,7 +5,7 @@ import { mapRegions, type MapRegion } from "./lib/map-regions";
 export function SiteHeader({ current, mapRegion }: { current?: "map" | "roads" | "regions"; mapRegion?: MapRegion }) {
   return (
     <header className="header">
-      <Link href={mapRegions[mapRegion ?? "bay-area"].href} className="brand">
+      <Link href="/" className="brand">
         <span className="brand-symbol" aria-hidden="true">峠</span>
         <span className="brand-words">
           <span className="brand-name">California Touge<span className="brand-dot">.</span></span>
@@ -43,6 +43,7 @@ export function SiteFooter() {
         <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Caltrans QuickMap</a> for
         closures and conditions. Posted signs always govern.
       </p>
+      <p className="footer-contact"><Link href="/contact">Contact</Link></p>
     </footer>
   );
 }

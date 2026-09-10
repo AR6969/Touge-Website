@@ -1,4 +1,4 @@
-export type MapRegion = "bay-area" | "los-angeles" | "san-diego";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego";
 
 export const mapRegions: Record<MapRegion, {
   name: string;
@@ -7,9 +7,16 @@ export const mapRegions: Record<MapRegion, {
   center: [number, number];
   bounds: [[number, number], [number, number]];
 }> = {
+  california: {
+    name: "California",
+    href: "/",
+    pickerTitle: "All California roads",
+    center: [-119.5, 36.7],
+    bounds: [[-123.45, 32.55], [-116.05, 39.05]],
+  },
   "bay-area": {
     name: "Bay Area",
-    href: "/",
+    href: "/?region=bay-area",
     pickerTitle: "Bay Area & nearby drives",
     center: [-122.10, 37.57],
     bounds: [[-123.13, 36.42], [-121.35, 38.80]],

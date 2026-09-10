@@ -62,10 +62,10 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         }
         const current = new mapboxgl.Map({
           container: container.current!, accessToken: token, attributionControl: false,
-          style: "mapbox://styles/mapbox/dark-v11", center: regionConfig.center,
-          scrollZoom: false,
+            style: "mapbox://styles/mapbox/dark-v11", center: regionConfig.center,
+          scrollZoom: region === "california",
           zoom: container.current!.clientWidth < 640 ? 7.3 : 8,
-          ...(region === "los-angeles" ? { bounds: regionConfig.bounds, fitBoundsOptions: { padding: { top: 135, right: 40, bottom: 65, left: 40 } } } : {}),
+          ...(region === "los-angeles" || region === "california" ? { bounds: regionConfig.bounds, fitBoundsOptions: { padding: { top: 110, right: 40, bottom: 65, left: 40 } } } : {}),
         });
         instance = current;
         map.current = current;
@@ -81,7 +81,8 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
           started = true;
           try {
             const [lines, labels] = await Promise.all(["roads", "road-labels"].map(async name => {
-              const response = await fetch(`/data/${region}/${name}.geojson`, { signal: abort.signal });
+              const path = region === "california" ? `/data/${name}.geojson` : `/data/${region}/${name}.geojson`;
+              const response = await fetch(path, { signal: abort.signal });
               if (!response.ok) throw new Error("Road data unavailable");
               return response.json();
             }));
@@ -243,9 +244,6 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
       </fieldset>
       <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
       <div className="map-bottom">
-        {/* Just the colour key. The difficulty scale used to sit here too, but
-            nothing on the map is coloured by difficulty, so it explained nothing. */}
-        <p className="legend-note">Colour shows road character</p>
         <a className="map-scroll-hint" href="#about">About this map ↓</a>
         <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
       </div>
