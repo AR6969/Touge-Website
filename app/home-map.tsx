@@ -4,29 +4,23 @@ import { useCallback, useEffect, useState } from "react";
 import RoadExplorer from "./road-explorer";
 import { SiteHeader } from "./site-chrome";
 import type { Landmark, RoadSummary } from "./lib/roads";
-import type { MapRegion } from "./lib/map-regions";
+import { mapRegions, type MapRegion } from "./lib/map-regions";
 
 type RegionData = {
   roads: RoadSummary[];
   landmarks: Landmark[];
 };
 
-function regionForLocation(latitude: number, longitude: number): Exclude<MapRegion, "california"> | null {
-  const areas: [Exclude<MapRegion, "california">, number, number, number, number][] = [
-    ["bay-area", 36.4, 38.85, -123.2, -121.2],
-    ["los-angeles", 33.7, 34.8, -119.6, -116.45],
-    ["san-diego", 32.5, 33.7, -117.65, -115.8],
-  ];
-  const match = areas.find(([, minLat, maxLat, minLon, maxLon]) =>
-    latitude >= minLat && latitude <= maxLat && longitude >= minLon && longitude <= maxLon,
-  );
-  return match?.[0] ?? null;
-}
+const STORAGE_KEY = "touge:region";
 
-export default function HomeMap({ initialRegion, data, autoLocate }: {
+export default function HomeMap({ initialRegion, data, remember = false }: {
   initialRegion: MapRegion;
   data: Record<MapRegion, RegionData>;
-  autoLocate: boolean;
+  /**
+   * Only the bare landing page recalls a previous choice. A visitor who asked
+   * for /los-angeles or /?region=bay-area named a region, so honour it.
+   */
+  remember?: boolean;
 }) {
   const [region, setRegion] = useState<MapRegion>(initialRegion);
 
@@ -36,17 +30,26 @@ export default function HomeMap({ initialRegion, data, autoLocate }: {
     setRegion(next);
     const url = next === "california" ? "/" : `/?region=${next}`;
     window.history.replaceState(null, "", url);
+    // Storage can throw outright in private windows, so a failure to remember
+    // must never take the switch down with it.
+    try { window.localStorage.setItem(STORAGE_KEY, next); } catch { /* not remembered */ }
   }, []);
 
+  // We used to ask for the visitor's location here, on load, before they had
+  // seen anything. The permission prompt cost more visitors than the guess was
+  // worth. A returning visitor's own last choice needs no permission at all.
   useEffect(() => {
-    if (!autoLocate || !navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition(({ coords }) => {
-      const nearbyRegion = regionForLocation(coords.latitude, coords.longitude);
-      if (!nearbyRegion) return;
-      setRegion(nearbyRegion);
-      window.history.replaceState(null, "", `/?region=${nearbyRegion}`);
-    }, () => undefined, { enableHighAccuracy: false, maximumAge: 86400000, timeout: 5000 });
-  }, [autoLocate]);
+    if (!remember) return;
+    let stored: string | null = null;
+    try { stored = window.localStorage.getItem(STORAGE_KEY); } catch { return; }
+    if (!stored || stored === "california" || !Object.hasOwn(mapRegions, stored)) return;
+    // Deferred for the same reason as the map status updates: this must not run
+    // synchronously inside the effect.
+    queueMicrotask(() => {
+      setRegion(stored as MapRegion);
+      window.history.replaceState(null, "", `/?region=${stored}`);
+    });
+  }, [remember]);
 
   const selected = data[region];
   return (

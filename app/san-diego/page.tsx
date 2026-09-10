@@ -36,7 +36,6 @@ export default function SanDiego() {
     <>
       <HomeMap
         initialRegion="san-diego"
-        autoLocate={false}
         data={{
           california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california") },
           "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },

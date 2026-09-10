@@ -51,7 +51,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
     <>
       <HomeMap
         initialRegion={mapRegion}
-        autoLocate={!region}
+        remember={!region}
         data={{
           california: { roads: roads.map(toSummary), landmarks: landmarksFor("california") },
           "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
