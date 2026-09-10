@@ -21,6 +21,10 @@ const layers = ["road-casing", "road-lines", "road-hit", "road-names", "road-dot
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
 const tokenMessage = "Add a public Mapbox token to NEXT_PUBLIC_MAPBOX_TOKEN in .env.local, then restart the server.";
+const EMPTY = { type: "FeatureCollection" as const, features: [] };
+// Regions that should open framed to their whole extent rather than at a fixed zoom.
+const FIT_ON_OPEN = new Set<MapRegion>(["california", "los-angeles", "san-diego"]);
+const OPEN_PADDING = { top: 110, right: 40, bottom: 65, left: 40 };
 
 export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: { roads: RoadSummary[]; landmarks: Landmark[]; region?: MapRegion }) {
   const regionConfig = mapRegions[region];
@@ -34,6 +38,9 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
   const [roadQuery, setRoadQuery] = useState("");
   const [landmark, setLandmark] = useState<string | null>(null);
   const dataRef = useRef({ roads, landmarks });
+  const regionRef = useRef(region);
+  // Region payloads are cached so switching back is instant.
+  const cacheRef = useRef<Record<string, [unknown, unknown]>>({});
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
   const matchingRoads = visible.filter(road => road.name.toLowerCase().includes(roadQuery.trim().toLowerCase()));
@@ -62,10 +69,10 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
         }
         const current = new mapboxgl.Map({
           container: container.current!, accessToken: token, attributionControl: false,
-            style: "mapbox://styles/mapbox/dark-v11", center: regionConfig.center,
-          scrollZoom: region === "california",
+            style: "mapbox://styles/mapbox/dark-v11", center: mapRegions[regionRef.current].center,
+          scrollZoom: regionRef.current === "california",
           zoom: container.current!.clientWidth < 640 ? 7.3 : 8,
-          ...(region === "los-angeles" || region === "california" ? { bounds: regionConfig.bounds, fitBoundsOptions: { padding: { top: 110, right: 40, bottom: 65, left: 40 } } } : {}),
+          ...(FIT_ON_OPEN.has(regionRef.current) ? { bounds: mapRegions[regionRef.current].bounds, fitBoundsOptions: { padding: OPEN_PADDING } } : {}),
         });
         instance = current;
         map.current = current;
@@ -80,15 +87,12 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
           if (started || disposed) return;
           started = true;
           try {
-            const [lines, labels] = await Promise.all(["roads", "road-labels"].map(async name => {
-              const path = region === "california" ? `/data/${name}.geojson` : `/data/${region}/${name}.geojson`;
-              const response = await fetch(path, { signal: abort.signal });
-              if (!response.ok) throw new Error("Road data unavailable");
-              return response.json();
-            }));
             if (disposed) return;
-            current.addSource("roads", { type: "geojson", data: lines });
-            current.addSource("road-labels", { type: "geojson", data: labels });
+            // Empty to begin with. Switching region swaps the data on these same
+            // sources rather than building a whole new map, which is what made
+            // every click on the region tabs cost a fresh style download.
+            current.addSource("roads", { type: "geojson", data: EMPTY });
+            current.addSource("road-labels", { type: "geojson", data: EMPTY });
             current.addLayer({ id: "road-casing", type: "line", source: "roads", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": "#111817", "line-width": ["interpolate", ["linear"], ["zoom"], 6, 3, 12, 8] } });
             current.addLayer({ id: "road-lines", type: "line", source: "roads", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": roadColor, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 1.7, 10, 3, 14, 5], "line-opacity": 0.85 } });
             current.addLayer({ id: "road-selected", type: "line", source: "roads", filter: ["==", ["get", "id"], ""], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": "#ffffff", "line-width": 5 } });
@@ -99,17 +103,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
               layout: { "text-field": ["get", "name"], "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 6, 10, 10, 12], "text-anchor": "left", "text-offset": [0.7, 0], "text-max-width": 14, "text-padding": 6, "text-optional": true },
               paint: { "text-color": "#f1f0e9", "text-halo-color": "#1b2220", "text-halo-width": 2 },
             });
-            current.addSource("landmarks", {
-              type: "geojson",
-              data: {
-                type: "FeatureCollection",
-                features: dataRef.current.landmarks.map(mark => ({
-                  type: "Feature" as const,
-                  properties: { name: mark.name },
-                  geometry: { type: "Point" as const, coordinates: mark.coordinates },
-                })),
-              },
-            });
+            current.addSource("landmarks", { type: "geojson", data: EMPTY });
             // Named junctions, drawn above the roads and never hidden by the filter.
             current.addLayer({
               id: "landmark-dots", type: "circle", source: "landmarks",
@@ -146,7 +140,6 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
               current.getCanvas().style.cursor = current.queryRenderedFeatures(event.point, { layers: ["landmark-dots", "landmark-names", "road-names", "road-hit"] }).length ? "pointer" : "";
             });
             loaded = true;
-            updateStatus("");
             setReady(true);
             const roadId = new URLSearchParams(window.location.search).get("road");
             if (roads.some(road => road.id === roadId)) {
@@ -190,7 +183,53 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
     // arrays on every render, and listing them lets any re-render destroy a
     // half-loaded map and reset the overlay. Read through dataRef instead.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [attempt, region, regionConfig]);
+  }, [attempt]);
+
+  // Swapping region means new data on the same sources and a camera move — not
+  // a new map. This is what makes the region tabs feel instant.
+  useEffect(() => {
+    const current = map.current;
+    if (!ready || !current) return;
+    regionRef.current = region;
+    setSelected(null);
+    setLandmark(null);
+    let cancelled = false;
+    const abort = new AbortController();
+
+    (async () => {
+      try {
+        const cached = cacheRef.current[region];
+        const payload = cached ?? await Promise.all(["roads", "road-labels"].map(async name => {
+          const path = region === "california" ? `/data/${name}.geojson` : `/data/${region}/${name}.geojson`;
+          const response = await fetch(path, { signal: abort.signal });
+          if (!response.ok) throw new Error("Road data unavailable");
+          return response.json();
+        })) as [unknown, unknown];
+        if (cancelled) return;
+        cacheRef.current[region] = payload;
+
+        const [lines, labels] = payload;
+        (current.getSource("roads") as mapboxgl.GeoJSONSource)?.setData(lines as never);
+        (current.getSource("road-labels") as mapboxgl.GeoJSONSource)?.setData(labels as never);
+        (current.getSource("landmarks") as mapboxgl.GeoJSONSource)?.setData({
+          type: "FeatureCollection",
+          features: dataRef.current.landmarks.map(mark => ({
+            type: "Feature" as const,
+            properties: { name: mark.name },
+            geometry: { type: "Point" as const, coordinates: mark.coordinates },
+          })),
+        } as never);
+
+        current.fitBounds(regionConfig.bounds, { padding: OPEN_PADDING, duration: cached ? 700 : 0 });
+        if (region === "california") current.scrollZoom.enable(); else current.scrollZoom.disable();
+        setStatus("");
+      } catch {
+        if (!cancelled) setStatus("Roads could not load. Check your connection and try again.");
+      }
+    })();
+
+    return () => { cancelled = true; abort.abort(); };
+  }, [region, regionConfig, ready]);
 
   useEffect(() => {
     if (!ready || !map.current?.getLayer("road-lines")) return;

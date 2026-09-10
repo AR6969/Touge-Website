@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import RoadExplorer from "./road-explorer";
 import { SiteHeader } from "./site-chrome";
 import type { Landmark, RoadSummary } from "./lib/roads";
@@ -30,6 +30,14 @@ export default function HomeMap({ initialRegion, data, autoLocate }: {
 }) {
   const [region, setRegion] = useState<MapRegion>(initialRegion);
 
+  // Switching region is client-side state, not navigation: the map stays put and
+  // only its data and camera change. The URL is kept honest for sharing.
+  const switchRegion = useCallback((next: MapRegion) => {
+    setRegion(next);
+    const url = next === "california" ? "/" : `/?region=${next}`;
+    window.history.replaceState(null, "", url);
+  }, []);
+
   useEffect(() => {
     if (!autoLocate || !navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(({ coords }) => {
@@ -43,9 +51,10 @@ export default function HomeMap({ initialRegion, data, autoLocate }: {
   const selected = data[region];
   return (
     <>
-      <SiteHeader current="map" mapRegion={region} />
+      <SiteHeader current="map" mapRegion={region} onRegionChange={switchRegion} />
       <div className="explorer">
-        <RoadExplorer key={region} roads={selected.roads} landmarks={selected.landmarks} region={region} />
+        {/* No key: remounting would rebuild the whole Mapbox map on every switch. */}
+        <RoadExplorer roads={selected.roads} landmarks={selected.landmarks} region={region} />
       </div>
     </>
   );

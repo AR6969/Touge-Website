@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import RoadExplorer from "../road-explorer";
+import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
-import { SiteFooter, SiteHeader } from "../site-chrome";
-import { landmarksFor, sanDiegoRoads as roads, slugifyArea, toSummary } from "../lib/roads";
+import { SiteFooter } from "../site-chrome";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, roads as allRoads, sanDiegoRoads, slugifyArea, toSummary } from "../lib/roads";
+
+const roads = sanDiegoRoads;
 import { siteUrl } from "../lib/site";
 
 const title = "Best Driving Roads in San Diego County";
@@ -32,10 +34,16 @@ export default function SanDiego() {
 
   return (
     <>
-      <SiteHeader current="map" mapRegion="san-diego" />
-      <div className="explorer">
-        <RoadExplorer key="san-diego" roads={roads.map(toSummary)} landmarks={landmarksFor("san-diego")} region="san-diego" />
-      </div>
+      <HomeMap
+        initialRegion="san-diego"
+        autoLocate={false}
+        data={{
+          california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california") },
+          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
+          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles") },
+          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego") },
+        }}
+      />
       <MapIntro
         title={<>Best driving roads in San Diego County</>}
         stats={[

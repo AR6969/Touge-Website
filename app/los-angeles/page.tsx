@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import RoadExplorer from "../road-explorer";
+import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
-import { SiteFooter, SiteHeader } from "../site-chrome";
-import { landmarksFor, losAngelesRoads as roads, slugifyArea, toSummary } from "../lib/roads";
+import { SiteFooter } from "../site-chrome";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, roads as allRoads, sanDiegoRoads, slugifyArea, toSummary } from "../lib/roads";
+
+const roads = losAngelesRoads;
 import { siteUrl } from "../lib/site";
 
 const title = "Best Driving Roads in Los Angeles, Malibu & Orange County";
@@ -32,10 +34,16 @@ export default function LosAngeles() {
 
   return (
     <>
-      <SiteHeader current="map" mapRegion="los-angeles" />
-      <div className="explorer">
-        <RoadExplorer key="los-angeles" roads={roads.map(toSummary)} landmarks={landmarksFor("los-angeles")} region="los-angeles" />
-      </div>
+      <HomeMap
+        initialRegion="los-angeles"
+        autoLocate={false}
+        data={{
+          california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california") },
+          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
+          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles") },
+          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego") },
+        }}
+      />
       <MapIntro
         title={<>Best driving roads in Los Angeles, Malibu &amp; Orange County</>}
         stats={[

@@ -2,7 +2,12 @@ import Link from "next/link";
 import { reviewedOn } from "./lib/site";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 
-export function SiteHeader({ current, mapRegion }: { current?: "map" | "roads" | "regions"; mapRegion?: MapRegion }) {
+export function SiteHeader({ current, mapRegion, onRegionChange }: {
+  current?: "map" | "roads" | "regions";
+  mapRegion?: MapRegion;
+  /** Supplied by map pages so a region switch changes state instead of navigating. */
+  onRegionChange?: (region: MapRegion) => void;
+}) {
   return (
     <header className="header">
       <Link href="/" className="brand">
@@ -16,7 +21,10 @@ export function SiteHeader({ current, mapRegion }: { current?: "map" | "roads" |
       {current === "map" ? (
         <nav aria-label="Map regions">
           {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][]).map(([id, region]) => (
-            <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
+            onRegionChange
+              ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
+                        onClick={() => onRegionChange(id)}>{region.name}</button>
+              : <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
           ))}
         </nav>
       ) : (
