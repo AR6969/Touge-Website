@@ -44,7 +44,9 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
 };
 
 export const roads = catalog as Road[];
-export const bayAreaRoads = roads.filter(road => road.mapRegion !== "los-angeles");
+// Match the region explicitly. "not Los Angeles" silently swept San Diego
+// into the Bay Area map the moment a third region existed.
+export const bayAreaRoads = roads.filter(road => (road.mapRegion ?? "bay-area") === "bay-area");
 export const losAngelesRoads = roads.filter(road => road.mapRegion === "los-angeles");
 export const sanDiegoRoads = roads.filter(road => road.mapRegion === "san-diego");
 
