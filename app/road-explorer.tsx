@@ -191,13 +191,13 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
     const current = map.current;
     if (!ready || !current) return;
     regionRef.current = region;
-    setSelected(null);
-    setLandmark(null);
     let cancelled = false;
     const abort = new AbortController();
 
     (async () => {
       try {
+        setSelected(null);
+        setLandmark(null);
         const cached = cacheRef.current[region];
         const payload = cached ?? await Promise.all(["roads", "road-labels"].map(async name => {
           const path = region === "california" ? `/data/${name}.geojson` : `/data/${region}/${name}.geojson`;
@@ -222,6 +222,12 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
 
         current.fitBounds(regionConfig.bounds, { padding: OPEN_PADDING, duration: cached ? 700 : 0 });
         if (region === "california") current.scrollZoom.enable(); else current.scrollZoom.disable();
+        const roadId = new URLSearchParams(window.location.search).get("road");
+        if (roadId && dataRef.current.roads.some(road => road.id === roadId)) {
+          setEnabled([]);
+          setSelected(roadId);
+          setShowRoads(false);
+        }
         setStatus("");
       } catch {
         if (!cancelled) setStatus("Roads could not load. Check your connection and try again.");

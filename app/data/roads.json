@@ -7328,10 +7328,6 @@
       "note": "Documented only where scoped: 30 mph (PCH to Malibu northern city limit); 30 mph (Kanan Dume to the Malibu boundary specified in the adopted April 30, 2019 county order). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.7831357,
@@ -7356,7 +7352,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.7547076,
         34.0300582
@@ -7496,10 +7492,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.6950505,
@@ -7527,7 +7519,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.7045548,
         34.0821287
@@ -7663,10 +7655,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.6583379,
@@ -7693,7 +7681,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.6600018,
         34.101932
@@ -7829,10 +7817,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.6448213,
@@ -7858,7 +7842,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.6457422,
         34.0811119
@@ -7994,10 +7978,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.8950575,
@@ -8029,7 +8009,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.8944116,
         34.0414683
@@ -8165,10 +8145,6 @@
       "note": "Documented only where scoped: 40 mph (PCH to Malibu northern city limit only). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.8751995,
@@ -8196,7 +8172,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.885246,
         34.04036
@@ -8336,10 +8312,6 @@
       "note": "Documented only where scoped: 40 mph (Westlake Boulevard to Encinal; historical April 30, 2019 order); 45 mph (Encinal to Stunt; historical April 30, 2019 order, check subsequent changes). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.846754,
@@ -8366,7 +8338,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.8734139,
         34.0885729
@@ -8505,10 +8477,6 @@
       "kind": "Unverified",
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
-    },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -8686,7 +8654,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.5793027,
         34.0401088
@@ -8827,8 +8795,9 @@
       "source": null
     },
     "access": {
-      "note": "Proposed western segment stops at Upper Big Tujunga. SR 2 has middle-mountain closures; do not publish a through-route to Wrightwood.",
-      "status": "bounded-candidate"
+      "note": "Western section only. Closures farther east prevent a through-drive to Wrightwood.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=2",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -8900,7 +8869,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.2000708,
         34.2129901
@@ -9036,10 +9005,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.179459,
@@ -9068,7 +9033,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.153462,
         34.2702296
@@ -9204,10 +9169,6 @@
       "note": "Documented only where scoped: 45 mph (Los Angeles city boundary to Angeles Forest Highway; adopted August 12, 2025). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.234385,
@@ -9241,7 +9202,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.3157515,
         34.27215
@@ -9381,10 +9342,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -118.0688548,
@@ -9410,7 +9367,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.1197957,
         34.3292886
@@ -9547,8 +9504,9 @@
       "source": null
     },
     "access": {
-      "note": "Recent holiday closure discussion does not prove gates subsequently reopened.",
-      "status": "gate-check-required"
+      "note": "Gates may close for weather, fire restrictions or holidays. Check current vehicle access.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -9573,7 +9531,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.8433308,
         34.1591826
@@ -9710,8 +9668,9 @@
       "source": null
     },
     "access": {
-      "note": "Verify vehicle access independently from bicycle access and scheduled reopening dates.",
-      "status": "gate-check-required"
+      "note": "Gates may close for weather, fire restrictions or holidays. Check current vehicle access.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -9736,7 +9695,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.808757,
         34.2040389
@@ -9868,10 +9827,6 @@
       "note": "Documented only where scoped: 35 mph (Glendora Ridge Road to Mountain Avenue; August 12, 2025 order); 45 mph (Mountain Avenue to defined Claremont boundary; August 12, 2025 order). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -117.6767634,
@@ -9912,7 +9867,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.707322,
         34.138376
@@ -10052,10 +10007,6 @@
       "note": "Documented only where scoped: 55 mph (Surveyed corridor sections in March 22, 2024 study; not field-verified current signage); 50 mph (Live Oak junction described on report p. 89; report p. 92 instead assumes 55 mph, unresolved). These sections do not cover the whole selected trace and have not been checked against current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -117.6777568,
@@ -10150,7 +10101,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.761222,
         33.7923555
@@ -10292,7 +10243,9 @@
     },
     "access": {
       "note": "Trace the paved county corridor. Do not confuse it with Forest Road 6S13 in the current Airport Fire order.",
-      "status": "segment-verification-required"
+      "status": "segment-verification-required",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -10318,7 +10271,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.6206319,
         33.6833378
@@ -10460,8 +10413,9 @@
       "source": null
     },
     "access": {
-      "note": "Sept 9 report lists overnight one-way control in a Riverside-side segment through Sept 12, 2026. Refresh before publication.",
-      "status": "construction"
+      "note": "Roadworks can bring overnight traffic controls on the Lake Elsinore side.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=74",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -10587,7 +10541,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.6599684,
         33.5016697
@@ -10723,10 +10677,6 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
-    },
     "mapRegion": "los-angeles",
     "center": [
       -117.7863648,
@@ -10810,7 +10760,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.8476575,
         33.9241448
@@ -10945,10 +10895,6 @@
       "kind": "Unverified",
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
-    },
-    "access": {
-      "note": "No current opening claim established for the complete proposed segment.",
-      "status": "needs-current-check"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -11402,7 +11348,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.9231343,
         33.6197472
@@ -11543,8 +11489,9 @@
       "source": null
     },
     "access": {
-      "note": "A March 2026 county meeting acknowledged this stretch reopening. That is a historical record, not evidence of access today — check current county and Caltrans notices before relying on it.",
-      "status": "needs-current-check"
+      "note": "Check current access before visiting this short Mulholland section.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -11571,7 +11518,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.751163,
         34.1130892
@@ -11705,7 +11652,9 @@
     },
     "access": {
       "note": "The paved Hollywood Hills section only. Mulholland Drive is broken further west by an unpaved stretch, and is not a continuous paved route through to the Malibu canyon network.",
-      "status": "scoped"
+      "status": "scoped",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -11797,7 +11746,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.34146,
         34.1236341
@@ -11938,8 +11887,9 @@
       "source": null
     },
     "access": {
-      "note": "Traced to Newcomb's Ranch and no further. The Caltrans SR 2 report read on September 9, 2026 placed the first closure 3.3 miles east of Newcomb's, running to Islip Saddle, and a second from Islip Saddle to Vincent Gulch. Check current conditions before relying on any of it; there is no through-route to Wrightwood.",
-      "status": "bounded-candidate"
+      "note": "Selected section toward Newcomb’s only; the highway has closures farther east.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=2",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -11965,7 +11915,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.0433912,
         34.2729488
@@ -12135,7 +12085,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.771983,
         34.2290588
@@ -12295,7 +12245,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.455145,
         34.5001915
@@ -12464,7 +12414,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.6238422,
         34.4958717
@@ -12598,7 +12548,9 @@
     },
     "access": {
       "note": "A dead-end ridge road, not a through-route. It ends at the Corral Canyon park area.",
-      "status": "scoped"
+      "status": "scoped",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -12626,7 +12578,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.743272,
         34.0331295
@@ -12785,7 +12737,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.985518,
         34.0621816
@@ -12944,7 +12896,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.6409525,
         33.7076533
@@ -13113,7 +13065,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.6043806,
         34.0896367
@@ -13250,8 +13202,9 @@
       "source": null
     },
     "access": {
-      "note": "The lower part of Tuna Canyon Road is one-way southbound. Check signage at each end before planning to drive it in either direction.",
-      "status": "directional"
+      "note": "The lower section is one-way toward PCH. Follow the signed direction; do not start uphill from the coast.",
+      "url": "https://www.malibucity.org/DocumentCenter/View/34818",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -13280,7 +13233,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.6111049,
         34.0681393
@@ -13417,8 +13370,9 @@
       "source": null
     },
     "access": {
-      "note": "Held back from the first release over unresolved reports of access problems at the northern end. Check current county and forest notices before relying on a through-route.",
-      "status": "needs-current-check"
+      "note": "Southern section only. Check access before continuing beyond Bear Divide toward Sand Canyon.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-09"
     },
     "mapRegion": "los-angeles",
     "center": [
@@ -13452,7 +13406,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -118.3713154,
         34.2822783
@@ -13615,7 +13569,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.890251,
         33.29348
@@ -13776,7 +13730,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.786743,
         33.28038
@@ -13955,7 +13909,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.5112534,
         32.8101371
@@ -14129,7 +14083,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.6130125,
         32.8411707
@@ -14299,7 +14253,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.5986541,
         33.0764293
@@ -14473,7 +14427,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.604767,
         33.219776
@@ -14635,7 +14589,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.679314,
         33.13644
@@ -14802,7 +14756,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.067201,
         33.0528736
@@ -14963,7 +14917,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.085303,
         33.2984358
@@ -15155,7 +15109,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -117.0784738,
         34.213975
@@ -15324,7 +15278,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -116.8766677,
         33.9119807
@@ -15537,7 +15491,7 @@
     "taggedPercent": 0,
     "geometryEvidence": {
       "snapshot": "data/la-overpass.json",
-      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
       "start": [
         -119.2609009,
         34.441413
@@ -15648,6 +15602,1693 @@
       "corners": 11,
       "climb": 13,
       "technical": 20
+    }
+  },
+  {
+    "id": "yerba-buena-little-sycamore",
+    "name": "Yerba Buena / Little Sycamore",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A winding western extension from the coast through Yerba Buena and Little Sycamore, crossing the Ventura County boundary.",
+    "sources": [
+      {
+        "title": "“Attention all who live in and around Los Angeles”",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "“Visit the Grotto and its spooky rock formations…”",
+        "url": "https://www.sandiegoreader.com/news/2005/apr/14/visit-grotto-and-its-spooky-rock-formations-circle/"
+      }
+    ],
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.9356917,
+      34.1100859
+    ],
+    "bounds": [
+      [
+        -118.9652363,
+        34.0531322
+      ],
+      [
+        -118.8805137,
+        34.1144435
+      ]
+    ],
+    "osmWayIds": [
+      10735307,
+      10743499,
+      13349659,
+      46753072,
+      1071803652,
+      1071803653
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.9631342,
+        34.0531322
+      ],
+      "end": [
+        -118.8805176,
+        34.0888038
+      ],
+      "wayNames": [
+        "Little Sycamore Canyon Road",
+        "Yerba Buena Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 10.9,
+      "bends": 127,
+      "switchbacks": 10,
+      "curvature": 1075,
+      "bendsPerMile": 11.7
+    },
+    "elevation": {
+      "climbFt": 3134,
+      "highFt": 2294,
+      "lowFt": 47,
+      "reliefFt": 2247,
+      "maxGradient": 7.9,
+      "climbPerMile": 288
+    },
+    "profile": {
+      "points": [
+        34,
+        76,
+        122,
+        175,
+        227,
+        266,
+        303,
+        353,
+        398,
+        441,
+        492,
+        545,
+        588,
+        637,
+        686,
+        729,
+        793,
+        855,
+        919,
+        991,
+        1044,
+        1099,
+        1155,
+        1205,
+        1245,
+        1303,
+        1365,
+        1428,
+        1490,
+        1546,
+        1597,
+        1656,
+        1724,
+        1748,
+        1708,
+        1715,
+        1746,
+        1793,
+        1849,
+        1908,
+        1974,
+        2042,
+        2093,
+        2124,
+        2112,
+        2103,
+        2079,
+        2112,
+        2142,
+        2172,
+        2200,
+        2240,
+        2300,
+        2295,
+        2264,
+        2218,
+        2172,
+        2122,
+        2084,
+        2082,
+        2041,
+        2016,
+        1976,
+        1936,
+        1891,
+        1842,
+        1777,
+        1738,
+        1690,
+        1631,
+        1587,
+        1547
+      ],
+      "miles": 10.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 78,
+      "corners": 38,
+      "climb": 20,
+      "technical": 20
+    }
+  },
+  {
+    "id": "topanga-canyon",
+    "name": "Topanga Canyon Boulevard · SR 27",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The canyon corridor from PCH through Topanga village to Mulholland Drive. Village traffic and roadworks interrupt the mountain sections.",
+    "sources": [
+      {
+        "title": "SR 27 Topanga Canyon Palisades repairs",
+        "url": "https://dot.ca.gov/caltrans-near-me/district-7/district-7-projects/sr27-topanga-canyon-palisades-repairs"
+      },
+      {
+        "title": "“SR-27 pavement rehabilitation in Topanga Canyon restarts June 15, 2026”",
+        "url": "https://dot.ca.gov/caltrans-near-me/district-7/district-7-news/sr-27-pavement-rehabilitation-topanga-canyon-restarts-june-15-2026"
+      }
+    ],
+    "access": {
+      "note": "Repair and paving work can affect travel through Topanga. Check the work-zone restrictions before setting out.",
+      "url": "https://dot.ca.gov/caltrans-near-me/district-7/district-7-projects/sr27-topanga-canyon-palisades-repairs",
+      "checked": "2026-09-09"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.593949,
+      34.1012565
+    ],
+    "bounds": [
+      [
+        -118.6081703,
+        34.0401088
+      ],
+      [
+        -118.5770246,
+        34.1511841
+      ]
+    ],
+    "osmWayIds": [
+      4074681,
+      13404086,
+      13409451,
+      38311860,
+      38311861,
+      74335619,
+      74344113,
+      74344126,
+      74344132,
+      74344144,
+      204589609,
+      204589613,
+      398142769,
+      402534624,
+      402534625,
+      402534627,
+      402534628,
+      402534629,
+      402534630,
+      402534633,
+      402534634,
+      402534635,
+      402534636,
+      402534637,
+      402534638,
+      456361801,
+      508258066,
+      655853171,
+      667514937,
+      667514947,
+      667514952,
+      680559370,
+      736379155,
+      736379156,
+      832312534,
+      846352509,
+      1165966476,
+      1165966477,
+      1216972055
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.5793027,
+        34.0401088
+      ],
+      "end": [
+        -118.604764,
+        34.1511841
+      ],
+      "wayNames": [
+        "North Topanga Canyon Boulevard",
+        "South Topanga Canyon Boulevard",
+        "Topanga Canyon Boulevard"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 11.0,
+      "bends": 56,
+      "switchbacks": 14,
+      "curvature": 553,
+      "bendsPerMile": 5.1
+    },
+    "elevation": {
+      "climbFt": 1930,
+      "highFt": 1497,
+      "lowFt": 49,
+      "reliefFt": 1448,
+      "maxGradient": 7.3,
+      "climbPerMile": 175
+    },
+    "profile": {
+      "points": [
+        44,
+        60,
+        71,
+        76,
+        84,
+        96,
+        112,
+        140,
+        172,
+        207,
+        223,
+        243,
+        263,
+        291,
+        311,
+        359,
+        438,
+        514,
+        584,
+        637,
+        690,
+        722,
+        740,
+        738,
+        738,
+        737,
+        744,
+        746,
+        761,
+        771,
+        780,
+        789,
+        805,
+        818,
+        827,
+        840,
+        860,
+        882,
+        888,
+        896,
+        903,
+        918,
+        939,
+        969,
+        999,
+        1028,
+        1058,
+        1082,
+        1122,
+        1172,
+        1221,
+        1273,
+        1281,
+        1299,
+        1322,
+        1338,
+        1360,
+        1397,
+        1443,
+        1490,
+        1490,
+        1454,
+        1412,
+        1371,
+        1330,
+        1285,
+        1236,
+        1188,
+        1141,
+        1098,
+        1051,
+        1015
+      ],
+      "miles": 11.1,
+      "coverage": 100
+    },
+    "score": {
+      "score": 39,
+      "corners": 16,
+      "climb": 12,
+      "technical": 10
+    }
+  },
+  {
+    "id": "las-flores-canyon",
+    "name": "Las Flores Canyon Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow canyon climb inland from PCH. This trace follows Las Flores itself, without a gated Rambla Pacifico shortcut.",
+    "sources": [
+      {
+        "title": "“Eastern Santa Monica Mountains / Mulholland Highway East”",
+        "url": "https://epicroadrides.com/cycling-usa/santa-monica-mountains-national-park/eastern-santa-monica-mountains-mulholland-hway-east/"
+      },
+      {
+        "title": "Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      }
+    ],
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.6385348,
+      34.0571931
+    ],
+    "bounds": [
+      [
+        -118.6489114,
+        34.0369157
+      ],
+      [
+        -118.636031,
+        34.0674646
+      ]
+    ],
+    "osmWayIds": [
+      13416782,
+      13416812,
+      73156357,
+      73172482,
+      1052166858,
+      1052166859
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.636031,
+        34.0369157
+      ],
+      "end": [
+        -118.6489114,
+        34.062422
+      ],
+      "wayNames": [
+        "Las Flores Canyon Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 3.4,
+      "bends": 34,
+      "switchbacks": 3,
+      "curvature": 1004,
+      "bendsPerMile": 10.0
+    },
+    "elevation": {
+      "climbFt": 1536,
+      "highFt": 1559,
+      "lowFt": 24,
+      "reliefFt": 1536,
+      "maxGradient": 13.2,
+      "climbPerMile": 452
+    },
+    "profile": {
+      "points": [
+        18,
+        27,
+        32,
+        39,
+        49,
+        61,
+        68,
+        73,
+        80,
+        92,
+        101,
+        108,
+        117,
+        133,
+        140,
+        152,
+        166,
+        179,
+        184,
+        199,
+        213,
+        227,
+        244,
+        261,
+        284,
+        313,
+        346,
+        375,
+        412,
+        449,
+        486,
+        520,
+        549,
+        581,
+        613,
+        644,
+        674,
+        705,
+        736,
+        768,
+        799,
+        834,
+        868,
+        902,
+        936,
+        965,
+        996,
+        1030,
+        1065,
+        1097,
+        1125,
+        1153,
+        1180,
+        1202,
+        1228,
+        1245,
+        1264,
+        1288,
+        1314,
+        1336,
+        1351,
+        1367,
+        1390,
+        1410,
+        1437,
+        1462,
+        1485,
+        1506,
+        1527,
+        1545,
+        1558,
+        1562
+      ],
+      "miles": 3.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 84,
+      "corners": 32,
+      "climb": 32,
+      "technical": 20
+    }
+  },
+  {
+    "id": "malibu-canyon-las-virgenes",
+    "name": "Malibu Canyon / Las Virgenes",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A winding coast-to-inland corridor through Malibu Canyon, continuing as Las Virgenes Road toward US 101.",
+    "sources": [
+      {
+        "title": "“Question for CA members”",
+        "url": "https://rennlist.com/forums/997-forum/1210294-question-for-ca-members.html"
+      },
+      {
+        "title": "“Our favorite rides and routes”",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      }
+    ],
+    "speed": {
+      "value": "40 mph",
+      "kind": "Published limits",
+      "note": "40 mph in the Malibu city section. The Las Virgenes continuation has separate limits.",
+      "source": "https://ecode360.com/44334514"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.704251,
+      34.085631
+    ],
+    "bounds": [
+      [
+        -118.7118478,
+        34.0347801
+      ],
+      [
+        -118.6919613,
+        34.1510757
+      ]
+    ],
+    "osmWayIds": [
+      13306456,
+      13418040,
+      42775099,
+      42775111,
+      43178450,
+      43178451,
+      74501010,
+      74501041,
+      74501045,
+      74501053,
+      177769909,
+      177769910,
+      204589615,
+      239471713,
+      471879484,
+      471879485,
+      471879487,
+      471879488,
+      471879489,
+      471879490,
+      517434307,
+      606514880,
+      607103544,
+      644866265,
+      644866270,
+      644866275,
+      644866293,
+      684257158,
+      709387204,
+      709387205,
+      709387206,
+      709387207,
+      709690839,
+      709690840,
+      757275829,
+      945037232,
+      1073042605,
+      1073042606,
+      1074126254,
+      1074144614,
+      1074144616,
+      1080352711,
+      1080358596,
+      1177405760,
+      1177405761,
+      1182060880,
+      1219409721,
+      1219409722,
+      1236346652,
+      1365640780
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.7033848,
+        34.0347801
+      ],
+      "end": [
+        -118.6975343,
+        34.1510757
+      ],
+      "wayNames": [
+        "Las Virgenes Road",
+        "Malibu Canyon Road",
+        "North Malibu Canyon Road",
+        "South Malibu Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 9.7,
+      "bends": 17,
+      "switchbacks": 0,
+      "curvature": 192,
+      "bendsPerMile": 1.7
+    },
+    "elevation": {
+      "climbFt": 1506,
+      "highFt": 793,
+      "lowFt": 208,
+      "reliefFt": 585,
+      "maxGradient": 5.9,
+      "climbPerMile": 155
+    },
+    "profile": {
+      "points": [
+        203,
+        226,
+        214,
+        210,
+        245,
+        288,
+        331,
+        340,
+        301,
+        257,
+        244,
+        254,
+        280,
+        313,
+        354,
+        397,
+        442,
+        484,
+        519,
+        533,
+        504,
+        483,
+        436,
+        396,
+        377,
+        423,
+        461,
+        533,
+        445,
+        465,
+        470,
+        500,
+        499,
+        476,
+        489,
+        509,
+        527,
+        566,
+        610,
+        654,
+        675,
+        638,
+        598,
+        583,
+        585,
+        591,
+        599,
+        611,
+        614,
+        624,
+        628,
+        633,
+        648,
+        657,
+        674,
+        680,
+        691,
+        703,
+        707,
+        715,
+        735,
+        738,
+        733,
+        746,
+        748,
+        752,
+        767,
+        779,
+        772,
+        792,
+        791,
+        789
+      ],
+      "miles": 9.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 26,
+      "corners": 5,
+      "climb": 11,
+      "technical": 10
+    }
+  },
+  {
+    "id": "kanan-dume",
+    "name": "Kanan Dume Road",
+    "area": "Malibu / Santa Monica Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A main connection from PCH into the western canyon network, with broad hillside sections and tighter bends.",
+    "sources": [
+      {
+        "title": "“Our favorite rides and routes”",
+        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+      },
+      {
+        "title": "Municipal Code, Chapter 10.08, Speed Limits",
+        "url": "https://ecode360.com/44334514"
+      }
+    ],
+    "speed": {
+      "value": "45 mph",
+      "kind": "Published limits",
+      "note": "45 mph in the Malibu city section; limits elsewhere vary.",
+      "source": "https://ecode360.com/44334514"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.8027554,
+      34.0609781
+    ],
+    "bounds": [
+      [
+        -118.8194432,
+        34.0215058
+      ],
+      [
+        -118.7971033,
+        34.0965178
+      ]
+    ],
+    "osmWayIds": [
+      31611028,
+      70653581,
+      70653583,
+      70653584,
+      74865584,
+      74865586,
+      684776685,
+      711990075,
+      711990076,
+      751915483,
+      1005815583,
+      1080266930
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.8026017,
+        34.0215058
+      ],
+      "end": [
+        -118.813385,
+        34.0965178
+      ],
+      "wayNames": [
+        "Kanan Dume Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 6.2,
+      "bends": 14,
+      "switchbacks": 0,
+      "curvature": 224,
+      "bendsPerMile": 2.3
+    },
+    "elevation": {
+      "climbFt": 1908,
+      "highFt": 1772,
+      "lowFt": 166,
+      "reliefFt": 1606,
+      "maxGradient": 8.0,
+      "climbPerMile": 308
+    },
+    "profile": {
+      "points": [
+        167,
+        170,
+        196,
+        234,
+        274,
+        314,
+        353,
+        386,
+        402,
+        413,
+        438,
+        470,
+        498,
+        534,
+        572,
+        609,
+        645,
+        681,
+        718,
+        755,
+        792,
+        828,
+        865,
+        902,
+        939,
+        975,
+        1004,
+        1033,
+        1060,
+        1091,
+        1128,
+        1164,
+        1201,
+        1238,
+        1274,
+        1294,
+        1314,
+        1331,
+        1357,
+        1382,
+        1396,
+        1407,
+        1432,
+        1469,
+        1501,
+        1526,
+        1547,
+        1584,
+        1627,
+        1560,
+        1541,
+        1521,
+        1527,
+        1555,
+        1587,
+        1620,
+        1652,
+        1678,
+        1701,
+        1726,
+        1750,
+        1773,
+        1773,
+        1748,
+        1721,
+        1709,
+        1709,
+        1727,
+        1745,
+        1738,
+        1718,
+        1713
+      ],
+      "miles": 6.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 39,
+      "corners": 7,
+      "climb": 22,
+      "technical": 10
+    }
+  },
+  {
+    "id": "mount-wilson-red-box",
+    "name": "Mount Wilson Red Box Road",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A winding spur from Red Box toward Mount Wilson Observatory, with a mountain destination at the end.",
+    "sources": [
+      {
+        "title": "“Attention all who live in and around Los Angeles”",
+        "url": "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/"
+      },
+      {
+        "title": "Visiting",
+        "url": "https://www.mtwilson.edu/visiting/"
+      }
+    ],
+    "access": {
+      "note": "Check observatory access and visitor parking information before the drive.",
+      "url": "https://www.mtwilson.edu/visiting/",
+      "checked": "2026-09-09"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -118.0926813,
+      34.2422062
+    ],
+    "bounds": [
+      [
+        -118.1052277,
+        34.227692
+      ],
+      [
+        -118.0677389,
+        34.2584725
+      ]
+    ],
+    "osmWayIds": [
+      31427306,
+      31559205
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -118.1052277,
+        34.2584725
+      ],
+      "end": [
+        -118.0677389,
+        34.227692
+      ],
+      "wayNames": [
+        "Mount Wilson Red Box Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 4.3,
+      "bends": 49,
+      "switchbacks": 3,
+      "curvature": 1051,
+      "bendsPerMile": 11.5
+    },
+    "elevation": {
+      "climbFt": 1084,
+      "highFt": 5637,
+      "lowFt": 4639,
+      "reliefFt": 997,
+      "maxGradient": 6.5,
+      "climbPerMile": 252
+    },
+    "profile": {
+      "points": [
+        4632,
+        4646,
+        4666,
+        4689,
+        4703,
+        4724,
+        4734,
+        4750,
+        4773,
+        4797,
+        4808,
+        4826,
+        4840,
+        4849,
+        4839,
+        4839,
+        4863,
+        4886,
+        4901,
+        4917,
+        4936,
+        4955,
+        4975,
+        4998,
+        5022,
+        5040,
+        5059,
+        5080,
+        5096,
+        5111,
+        5121,
+        5129,
+        5143,
+        5161,
+        5173,
+        5160,
+        5146,
+        5134,
+        5120,
+        5114,
+        5131,
+        5149,
+        5170,
+        5189,
+        5210,
+        5230,
+        5253,
+        5265,
+        5292,
+        5295,
+        5300,
+        5317,
+        5334,
+        5352,
+        5375,
+        5398,
+        5420,
+        5440,
+        5456,
+        5473,
+        5494,
+        5513,
+        5527,
+        5543,
+        5555,
+        5562,
+        5568,
+        5583,
+        5603,
+        5621,
+        5635,
+        5639
+      ],
+      "miles": 4.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 75,
+      "corners": 37,
+      "climb": 18,
+      "technical": 20
+    }
+  },
+  {
+    "id": "san-gabriel-canyon",
+    "name": "San Gabriel Canyon Road · SR 39",
+    "area": "Angeles / San Gabriel Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A canyon drive north from Azusa toward the Crystal Lake turnoff. Treat it as an out-and-back, not a connection through to Angeles Crest.",
+    "sources": [
+      {
+        "title": "SR 39 highway conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=39"
+      }
+    ],
+    "access": {
+      "note": "Out-and-back: the northern connection to Angeles Crest is closed.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=39",
+      "checked": "2026-09-09"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.8550862,
+      34.22071
+    ],
+    "bounds": [
+      [
+        -117.9114693,
+        34.151045
+      ],
+      [
+        -117.837869,
+        34.2848926
+      ]
+    ],
+    "osmWayIds": [
+      24739727,
+      24739733,
+      24739741,
+      31247389,
+      31247411,
+      31247413,
+      31248118,
+      31281361,
+      31281374,
+      31281383,
+      31281384,
+      43041015,
+      52286915,
+      52286923,
+      293486371,
+      293486372,
+      402221883,
+      402221884,
+      406295532,
+      406295535,
+      583216586,
+      758835004,
+      1393434409,
+      1393434410
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -117.9100882,
+        34.151045
+      ],
+      "end": [
+        -117.8457171,
+        34.2848926
+      ],
+      "wayNames": [
+        "San Gabriel Canyon Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 15.7,
+      "bends": 56,
+      "switchbacks": 8,
+      "curvature": 381,
+      "bendsPerMile": 3.6
+    },
+    "elevation": {
+      "climbFt": 3289,
+      "highFt": 3191,
+      "lowFt": 707,
+      "reliefFt": 2484,
+      "maxGradient": 8.0,
+      "climbPerMile": 209
+    },
+    "profile": {
+      "points": [
+        704,
+        720,
+        740,
+        754,
+        772,
+        793,
+        816,
+        835,
+        868,
+        934,
+        997,
+        1064,
+        1134,
+        1195,
+        1256,
+        1278,
+        1263,
+        1308,
+        1326,
+        1278,
+        1271,
+        1243,
+        1212,
+        1269,
+        1328,
+        1392,
+        1446,
+        1504,
+        1559,
+        1619,
+        1650,
+        1647,
+        1654,
+        1665,
+        1681,
+        1644,
+        1584,
+        1562,
+        1542,
+        1543,
+        1547,
+        1548,
+        1507,
+        1487,
+        1483,
+        1477,
+        1496,
+        1562,
+        1621,
+        1559,
+        1599,
+        1658,
+        1740,
+        1829,
+        1882,
+        1967,
+        2033,
+        2084,
+        2182,
+        2259,
+        2302,
+        2330,
+        2411,
+        2506,
+        2599,
+        2694,
+        2789,
+        2885,
+        2982,
+        3048,
+        3128,
+        3193
+      ],
+      "miles": 15.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 36,
+      "corners": 12,
+      "climb": 15,
+      "technical": 10
+    }
+  },
+  {
+    "id": "laguna-canyon",
+    "name": "Laguna Canyon Road · SR 133",
+    "area": "Orange County",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "A canyon approach into Laguna Beach, continuing along Broadway Street to PCH. Expect urban junctions and busier sections near the coast.",
+    "sources": [
+      {
+        "title": "Scenic-driving discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/14c1tx1/"
+      }
+    ],
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.7600139,
+      33.5895231
+    ],
+    "bounds": [
+      [
+        -117.785324,
+        33.5427494
+      ],
+      [
+        -117.7563606,
+        33.6430353
+      ]
+    ],
+    "osmWayIds": [
+      13354435,
+      13370387,
+      30045718,
+      30045731,
+      30045732,
+      30045750,
+      30045753,
+      34389078,
+      58771932,
+      58777886,
+      58777893,
+      58777895,
+      100106207,
+      101225889,
+      118836061,
+      173720403,
+      173720462,
+      185026222,
+      185887340,
+      185887345,
+      274167856,
+      277492093,
+      277644860,
+      277644863,
+      277644865,
+      277665542,
+      277665545,
+      277665555,
+      277665560,
+      277665566,
+      400312569,
+      400312570,
+      400312571,
+      400312573,
+      400312574,
+      400312575,
+      400312576,
+      400324785,
+      400324789,
+      400324791,
+      400324793,
+      401289123,
+      401289124,
+      401289126,
+      401289127,
+      401289128,
+      401289129,
+      402242248,
+      402242260,
+      402242278,
+      402242287,
+      402242329,
+      404894510,
+      405159744,
+      489675403,
+      489675409,
+      489675410,
+      508838719,
+      508838724,
+      508838725,
+      508838728,
+      609838547,
+      699545839,
+      699545840,
+      699545846,
+      699546625,
+      711424800,
+      727878671,
+      760097764,
+      760097765,
+      760447183,
+      760473862,
+      773024164,
+      773024165,
+      773024168,
+      773024172,
+      773024175,
+      928282340,
+      989380792,
+      1055897051,
+      1290369815,
+      1290369816,
+      1290369817,
+      1444426613
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -117.7617381,
+        33.6430353
+      ],
+      "end": [
+        -117.785324,
+        33.5427494
+      ],
+      "wayNames": [
+        "Broadway Street",
+        "Laguna Canyon Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 7.8,
+      "bends": 8,
+      "switchbacks": 0,
+      "curvature": 124,
+      "bendsPerMile": 1.0
+    },
+    "elevation": {
+      "climbFt": 571,
+      "highFt": 414,
+      "lowFt": 13,
+      "reliefFt": 402,
+      "maxGradient": 2.8,
+      "climbPerMile": 73
+    },
+    "profile": {
+      "points": [
+        255,
+        270,
+        285,
+        291,
+        288,
+        290,
+        306,
+        323,
+        340,
+        359,
+        377,
+        394,
+        402,
+        402,
+        398,
+        395,
+        404,
+        414,
+        414,
+        411,
+        409,
+        407,
+        404,
+        399,
+        387,
+        374,
+        362,
+        350,
+        343,
+        336,
+        329,
+        320,
+        309,
+        303,
+        299,
+        288,
+        262,
+        253,
+        247,
+        242,
+        232,
+        224,
+        219,
+        213,
+        206,
+        195,
+        188,
+        179,
+        170,
+        160,
+        154,
+        149,
+        144,
+        141,
+        135,
+        136,
+        126,
+        115,
+        108,
+        108,
+        100,
+        88,
+        83,
+        74,
+        65,
+        57,
+        50,
+        44,
+        35,
+        24,
+        16,
+        12
+      ],
+      "miles": 7.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 8,
+      "corners": 3,
+      "climb": 5,
+      "technical": 0
+    }
+  },
+  {
+    "id": "silverado-canyon",
+    "name": "Silverado Canyon Road",
+    "area": "Orange County",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "A quiet village-and-canyon spur inland from Santiago Canyon. The selected public-road trace stops before the forest-road continuation.",
+    "sources": [
+      {
+        "title": "Scenic-driving discussion",
+        "url": "https://www.reddit.com/r/orangecounty/comments/14c1tx1/"
+      },
+      {
+        "title": "Order 02-26-09, Airport Fire closure",
+        "url": "https://www.fs.usda.gov/sites/nfs/files/r05/cleveland/publication/alerts/02-26-09_AIRPORT%20FIRE%20CLOSURE%20ORDER_0526%20FINAL%20%28003%29.pdf"
+      }
+    ],
+    "access": {
+      "note": "The trace ends on the paved town approach. Forest roads beyond it have separate access rules.",
+      "url": "https://www.fs.usda.gov/r05/cleveland/alerts",
+      "checked": "2026-09-09"
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.629899,
+      33.7465049
+    ],
+    "bounds": [
+      [
+        -117.6731052,
+        33.743659
+      ],
+      [
+        -117.5848668,
+        33.7494074
+      ]
+    ],
+    "osmWayIds": [
+      13365190,
+      40838199,
+      40838490,
+      60274154,
+      60274179,
+      60274183,
+      60274185,
+      755701034,
+      755701035,
+      755701036,
+      755701037,
+      755701038,
+      755701039,
+      1214917855,
+      1214917856,
+      1315194479,
+      1315194480,
+      1500291440,
+      1500291441
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-10T02:36:06Z",
+      "start": [
+        -117.6730787,
+        33.7482404
+      ],
+      "end": [
+        -117.5848668,
+        33.7459761
+      ],
+      "wayNames": [
+        "Silverado Canyon Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 5.5,
+      "bends": 21,
+      "switchbacks": 1,
+      "curvature": 367,
+      "bendsPerMile": 3.8
+    },
+    "elevation": {
+      "climbFt": 847,
+      "highFt": 1813,
+      "lowFt": 990,
+      "reliefFt": 823,
+      "maxGradient": 4.3,
+      "climbPerMile": 154
+    },
+    "profile": {
+      "points": [
+        986,
+        997,
+        1009,
+        1023,
+        1028,
+        1041,
+        1058,
+        1066,
+        1070,
+        1079,
+        1082,
+        1086,
+        1092,
+        1099,
+        1088,
+        1083,
+        1091,
+        1099,
+        1107,
+        1118,
+        1120,
+        1126,
+        1132,
+        1142,
+        1153,
+        1162,
+        1169,
+        1177,
+        1188,
+        1195,
+        1205,
+        1224,
+        1248,
+        1253,
+        1250,
+        1261,
+        1276,
+        1286,
+        1299,
+        1306,
+        1320,
+        1343,
+        1361,
+        1360,
+        1368,
+        1381,
+        1394,
+        1417,
+        1436,
+        1443,
+        1462,
+        1486,
+        1503,
+        1514,
+        1528,
+        1545,
+        1570,
+        1577,
+        1594,
+        1618,
+        1631,
+        1639,
+        1658,
+        1670,
+        1685,
+        1699,
+        1714,
+        1727,
+        1754,
+        1787,
+        1810,
+        1810
+      ],
+      "miles": 5.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 33,
+      "corners": 12,
+      "climb": 11,
+      "technical": 10
     }
   }
 ]

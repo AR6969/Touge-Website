@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewedOn": "2026-09-09",
-  "status": "research-only; not imported by the application",
+  "status": "research handoff; candidates represented by selected traces in the live LA catalog",
   "report": "los-angeles-road-research.md",
   "scope": "Paved public road candidates in greater LA, Malibu/Santa Monica Mountains and Orange County, with explicitly labeled county-boundary extensions.",
   "ratingMethod": "Existing editorial difficulty 1 Relaxed / 2 Winding / 3 Demanding. Character has no recommended mph target. All proposed ratings require selected-geometry review.",
@@ -29,8 +29,8 @@
         "10",
         "11"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -50,7 +50,10 @@
             "sourceRef": "11"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/latigo-canyon",
+      "publishedMapPath": "/los-angeles?road=latigo-canyon",
+      "publishedDescription": "A tight canyon climb from the Pacific Coast Highway up to the Kanan Dume ridge, turning almost continuously through the coastal side of the Santa Monica Mountains."
     },
     {
       "id": "piuma-road",
@@ -68,8 +71,8 @@
         "8",
         "12"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -78,7 +81,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/piuma-road",
+      "publishedMapPath": "/los-angeles?road=piuma-road",
+      "publishedDescription": "A ridge road above Malibu Canyon, climbing east toward Rambla Pacifico with the canyon falling away on one side."
     },
     {
       "id": "stunt-road",
@@ -95,8 +101,8 @@
         "6",
         "8"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -105,7 +111,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/stunt-road",
+      "publishedMapPath": "/los-angeles?road=stunt-road",
+      "publishedDescription": "A short mountain link from Mulholland Highway up to Schueren Road, climbing the ridge above Calabasas in close bends."
     },
     {
       "id": "schueren-saddle-peak",
@@ -122,8 +131,8 @@
         "8",
         "9"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -132,7 +141,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/schueren-saddle-peak",
+      "publishedMapPath": "/los-angeles?road=schueren-saddle-peak",
+      "publishedDescription": "The connector that actually joins Stunt Road to the Piuma ridge, with a Saddle Peak branch running out toward Tuna Canyon."
     },
     {
       "id": "decker-canyon",
@@ -149,8 +161,8 @@
         "5",
         "13"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -159,7 +171,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/decker-canyon",
+      "publishedMapPath": "/los-angeles?road=decker-canyon",
+      "publishedDescription": "The coastal climb of SR 23 from the Pacific Coast Highway to Mulholland Highway, narrow and steep through the western Santa Monica Mountains."
     },
     {
       "id": "encinal-canyon",
@@ -176,8 +191,8 @@
         "6",
         "10"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -192,7 +207,10 @@
             "sourceRef": "10"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/encinal-canyon",
+      "publishedMapPath": "/los-angeles?road=encinal-canyon",
+      "publishedDescription": "A western canyon connection inland from the Pacific Coast Highway to Mulholland Highway, more open than the canyons either side of it."
     },
     {
       "id": "mulholland-highway-malibu",
@@ -210,8 +228,8 @@
         "11",
         "14"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -231,7 +249,10 @@
             "sourceRef": "11"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/mulholland-highway-malibu",
+      "publishedMapPath": "/los-angeles?road=mulholland-highway-malibu",
+      "publishedDescription": "The western Mulholland Highway, linking the canyon roads between Decker Road and Kanan Dume Road across the ridge behind the Malibu coast."
     },
     {
       "id": "yerba-buena-little-sycamore",
@@ -248,8 +269,8 @@
         "1",
         "15"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -258,7 +279,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/yerba-buena-little-sycamore",
+      "publishedMapPath": "/los-angeles?road=yerba-buena-little-sycamore",
+      "publishedDescription": "A winding western extension from the coast through Yerba Buena and Little Sycamore, crossing the Ventura County boundary."
     },
     {
       "id": "topanga-canyon",
@@ -275,8 +299,8 @@
         "16",
         "17"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "construction",
         "note": "May 12 overnight reopening supersedes earlier hours. Localized 15 mph repair zone and separate paving work require current checks.",
@@ -289,7 +313,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/topanga-canyon",
+      "publishedMapPath": "/los-angeles?road=topanga-canyon",
+      "publishedDescription": "The canyon corridor from PCH through Topanga village to Mulholland Drive. Village traffic and roadworks interrupt the mountain sections."
     },
     {
       "id": "old-topanga-canyon",
@@ -306,8 +333,8 @@
         "6",
         "9"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -316,7 +343,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/old-topanga-canyon",
+      "publishedMapPath": "/los-angeles?road=old-topanga-canyon",
+      "publishedDescription": "The narrow older road through the eastern Santa Monica Mountains, running from Topanga Canyon Boulevard up to Mulholland Highway."
     },
     {
       "id": "tuna-canyon",
@@ -333,8 +363,8 @@
         "9",
         "18"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "direction-verification-required",
         "note": "Lower city portion is one-way southbound; northern portion includes two-way travel. Resolve the exact transition and current restrictions before routing.",
@@ -346,7 +376,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/tuna-canyon",
+      "publishedMapPath": "/los-angeles?road=tuna-canyon",
+      "publishedDescription": "A steep, tight descent off the Saddle Peak ridge toward the coast. The lower part is one-way southbound."
     },
     {
       "id": "las-flores-canyon",
@@ -363,8 +396,8 @@
         "9",
         "10"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -379,7 +412,10 @@
             "sourceRef": "10"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/las-flores-canyon",
+      "publishedMapPath": "/los-angeles?road=las-flores-canyon",
+      "publishedDescription": "A narrow canyon climb inland from PCH. This trace follows Las Flores itself, without a gated Rambla Pacifico shortcut."
     },
     {
       "id": "malibu-canyon-las-virgenes",
@@ -397,8 +433,8 @@
         "6",
         "10"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -413,7 +449,10 @@
             "sourceRef": "10"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/malibu-canyon-las-virgenes",
+      "publishedMapPath": "/los-angeles?road=malibu-canyon-las-virgenes",
+      "publishedDescription": "A winding coast-to-inland corridor through Malibu Canyon, continuing as Las Virgenes Road toward US 101."
     },
     {
       "id": "kanan-dume",
@@ -430,8 +469,8 @@
         "6",
         "10"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -446,7 +485,10 @@
             "sourceRef": "10"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/kanan-dume",
+      "publishedMapPath": "/los-angeles?road=kanan-dume",
+      "publishedDescription": "A main connection from PCH into the western canyon network, with broad hillside sections and tighter bends."
     },
     {
       "id": "pch-malibu",
@@ -464,8 +506,8 @@
         "17",
         "19"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -474,7 +516,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/pch-malibu",
+      "publishedMapPath": "/los-angeles?road=pch-malibu",
+      "publishedDescription": "The Malibu coast run of Highway 1, from Topanga Canyon Boulevard west toward Yerba Buena Road, through beach towns and open coastal stretches."
     },
     {
       "id": "angeles-crest-west",
@@ -492,8 +537,8 @@
         "21",
         "24"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "bounded-candidate",
         "note": "Proposed western segment stops at Upper Big Tujunga. SR 2 has middle-mountain closures; do not publish a through-route to Wrightwood.",
@@ -505,7 +550,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/angeles-crest-west",
+      "publishedMapPath": "/los-angeles?road=angeles-crest-west",
+      "publishedDescription": "The western approach of SR 2, climbing from La Cañada Flintridge into the San Gabriel Mountains as far as the Upper Big Tujunga junction."
     },
     {
       "id": "angeles-forest",
@@ -522,8 +570,8 @@
         "21",
         "22"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -532,7 +580,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/angeles-forest",
+      "publishedMapPath": "/los-angeles?road=angeles-forest",
+      "publishedDescription": "The southern Angeles Forest Highway, from the Angeles Crest junction at Clear Creek down to Big Tujunga Canyon Road."
     },
     {
       "id": "big-tujunga",
@@ -549,8 +600,8 @@
         "1",
         "23"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -565,7 +616,10 @@
             "sourceRef": "23"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/big-tujunga",
+      "publishedMapPath": "/los-angeles?road=big-tujunga",
+      "publishedDescription": "A canyon approach following Big Tujunga Creek from the Los Angeles city boundary up to the Angeles Forest Highway."
     },
     {
       "id": "upper-big-tujunga",
@@ -583,8 +637,8 @@
         "21",
         "22"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -593,7 +647,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/upper-big-tujunga",
+      "publishedMapPath": "/los-angeles?road=upper-big-tujunga",
+      "publishedDescription": "The paved connector high in the San Gabriel Mountains, running between the Angeles Forest Highway and Angeles Crest Highway."
     },
     {
       "id": "little-tujunga",
@@ -610,8 +667,8 @@
         "1",
         "25"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "access-unresolved",
         "note": "Historical 2026 community reports describe northern approach restrictions. Do not publish a through-route without current authoritative verification.",
@@ -625,7 +682,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/little-tujunga",
+      "publishedMapPath": "/los-angeles?road=little-tujunga",
+      "publishedDescription": "The canyon climb north from the San Fernando Valley over Bear Divide toward Sand Canyon."
     },
     {
       "id": "glendora-mountain",
@@ -642,8 +702,8 @@
         "1",
         "26"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "gate-check-required",
         "note": "Recent holiday closure discussion does not prove gates subsequently reopened.",
@@ -656,7 +716,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/glendora-mountain",
+      "publishedMapPath": "/los-angeles?road=glendora-mountain",
+      "publishedDescription": "The climb from the Glendora foothills to East Fork Road, passing the Glendora Ridge junction on the way."
     },
     {
       "id": "glendora-ridge",
@@ -673,8 +736,8 @@
         "1",
         "26"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "gate-check-required",
         "note": "Verify vehicle access independently from bicycle access and scheduled reopening dates.",
@@ -687,7 +750,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/glendora-ridge",
+      "publishedMapPath": "/los-angeles?road=glendora-ridge",
+      "publishedDescription": "The ridge road between Glendora Mountain Road and Mount Baldy Road, following the crest with the range falling away on both sides."
     },
     {
       "id": "mount-baldy-road",
@@ -703,8 +769,8 @@
       "sourceRefs": [
         "23"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -724,7 +790,10 @@
             "sourceRef": "23"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/mount-baldy-road",
+      "publishedMapPath": "/los-angeles?road=mount-baldy-road",
+      "publishedDescription": "The approach up San Antonio Canyon from the Claremont boundary to the Glendora Ridge junction, below the ski-area ascent."
     },
     {
       "id": "mount-wilson-red-box",
@@ -741,8 +810,8 @@
         "1",
         "27"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -751,7 +820,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/mount-wilson-red-box",
+      "publishedMapPath": "/los-angeles?road=mount-wilson-red-box",
+      "publishedDescription": "A winding spur from Red Box toward Mount Wilson Observatory, with a mountain destination at the end."
     },
     {
       "id": "san-gabriel-canyon",
@@ -767,8 +839,8 @@
       "sourceRefs": [
         "28"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "bounded-candidate",
         "note": "Northern SR 39 is closed from 2 miles north of Crystal Lake Road to SR 2; proposed out-and-back ends below that closure.",
@@ -780,7 +852,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/san-gabriel-canyon",
+      "publishedMapPath": "/los-angeles?road=san-gabriel-canyon",
+      "publishedDescription": "A canyon drive north from Azusa toward the Crystal Lake turnoff. Treat it as an out-and-back, not a connection through to Angeles Crest."
     },
     {
       "id": "santiago-canyon",
@@ -798,8 +873,8 @@
         "3",
         "32"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -819,7 +894,10 @@
             "sourceRef": "32"
           }
         ]
-      }
+      },
+      "publishedRoadPath": "/roads/santiago-canyon",
+      "publishedMapPath": "/los-angeles?road=santiago-canyon",
+      "publishedDescription": "A comparatively open inland run through the Santa Ana foothills, from the Jamboree and Chapman transition south to Live Oak Canyon Road."
     },
     {
       "id": "live-oak-trabuco",
@@ -837,8 +915,8 @@
         "3",
         "33"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "segment-verification-required",
         "note": "Trace the paved county corridor. Do not confuse it with Forest Road 6S13 in the current Airport Fire order.",
@@ -851,7 +929,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/live-oak-trabuco",
+      "publishedMapPath": "/los-angeles?road=live-oak-trabuco",
+      "publishedDescription": "The shaded county-road corridor from Santiago Canyon Road through Live Oak and the paved part of Trabuco Canyon Road toward Plano Trabuco."
     },
     {
       "id": "ortega-highway",
@@ -869,8 +950,8 @@
         "3",
         "34"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "construction",
         "note": "Sept 9 report lists overnight one-way control in a Riverside-side segment through Sept 12, 2026. Refresh before publication.",
@@ -882,7 +963,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/ortega-highway",
+      "publishedMapPath": "/los-angeles?road=ortega-highway",
+      "publishedDescription": "The SR 74 crossing of the Santa Ana Mountains, from San Juan Capistrano over the range toward Lake Elsinore."
     },
     {
       "id": "carbon-canyon",
@@ -899,8 +983,8 @@
         "30",
         "31"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -909,7 +993,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/carbon-canyon",
+      "publishedMapPath": "/los-angeles?road=carbon-canyon",
+      "publishedDescription": "A short crossing of the Chino Hills on SR 142, between Brea and Chino Hills Parkway in northern Orange County."
     },
     {
       "id": "laguna-canyon",
@@ -925,8 +1012,8 @@
       "sourceRefs": [
         "31"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -935,7 +1022,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/laguna-canyon",
+      "publishedMapPath": "/los-angeles?road=laguna-canyon",
+      "publishedDescription": "A canyon approach into Laguna Beach, continuing along Broadway Street to PCH. Expect urban junctions and busier sections near the coast."
     },
     {
       "id": "pch-orange-county",
@@ -952,8 +1042,8 @@
         "2",
         "3"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "needs-current-check",
         "note": "No current opening claim established for the complete proposed segment."
@@ -962,7 +1052,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/pch-orange-county",
+      "publishedMapPath": "/los-angeles?road=pch-orange-county",
+      "publishedDescription": "The Orange County coast run from Newport Beach through Laguna Beach to Dana Point — scenic and urban rather than technical."
     },
     {
       "id": "silverado-canyon",
@@ -979,8 +1072,8 @@
         "31",
         "35"
       ],
-      "geometryStatus": "not acquired",
-      "published": false,
+      "geometryStatus": "selected trace built from connected OSM road edges",
+      "published": true,
       "access": {
         "status": "segment-verification-required",
         "note": "Verify the public paved town approach endpoint. Do not infer Maple Springs access or suitability from its absence in one closure list.",
@@ -992,7 +1085,10 @@
         "displaySummary": null,
         "status": "unverified",
         "evidence": []
-      }
+      },
+      "publishedRoadPath": "/roads/silverado-canyon",
+      "publishedMapPath": "/los-angeles?road=silverado-canyon",
+      "publishedDescription": "A quiet village-and-canyon spur inland from Santiago Canyon. The selected public-road trace stops before the forest-road continuation."
     }
   ],
   "sources": {
@@ -1207,5 +1303,6 @@
         "https://www.fs.usda.gov/sites/nfs/files/r05/cleveland/publication/alerts/02-26-09_AIRPORT%20FIRE%20CLOSURE%20ORDER_0526%20FINAL%20%28003%29.pdf"
       ]
     }
-  }
+  },
+  "implementationSource": "../scripts/la-roads.json"
 }

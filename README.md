@@ -1,6 +1,7 @@
 # California Touge
 
-A map and reference for driving roads across the Bay Area, Santa Cruz, Napa and Monterey.
+A map and reference for California driving roads, including the Bay Area, Los Angeles,
+Malibu, the Angeles/San Gabriel Mountains, Orange County and San Diego.
 Every road has its own page with a map, corner statistics measured from OpenStreetMap
 geometry, difficulty and character ratings, and the source behind any speed figure shown.
 
@@ -27,6 +28,9 @@ Set these in `.env.local` (not committed):
 | Route | What it is |
 | --- | --- |
 | `/` | Map explorer, plus rankings and links to every road |
+| `/?region=bay-area` | Bay Area map |
+| `/los-angeles` | LA map, including Malibu, the Angeles/San Gabriel Mountains and Orange County |
+| `/san-diego` | San Diego map |
 | `/roads` | All roads in one comparison table |
 | `/roads/[slug]` | One road: map, shape statistics, speed evidence, sources, nearby roads |
 | `/regions` and `/regions/[slug]` | Roads grouped by area |
@@ -52,6 +56,23 @@ python3 scripts/fetch-elevation.py
 python3 scripts/build-derived-data.py
 ```
 
+Southern California editorial fields and selected trace endpoints live in
+`scripts/la-roads.json`. Its raw OSM snapshot is checked in at `data/la-overpass.json`.
+To refresh it, POST the query in `scripts/roads-la.overpass` to Overpass and save
+the successful JSON response. Then run:
+
+```bash
+python3 scripts/build-la-road-data.py
+python3 scripts/build-derived-data.py
+```
+
+The LA builder replaces the Southern California records it manages and preserves
+the Bay Area archive. The Bay Area stage-1 builder also includes this saved snapshot
+when present. Selected Southern California traces follow connected OSM nodes on the
+specified roads; a missing connection fails the build instead of drawing a shortcut.
+These traces are not navigation itineraries. See `docs/los-angeles-road-research.md`
+for the research and the editorial source file for the published section boundaries.
+
 | Path | Stage | Notes |
 | --- | --- | --- |
 | `data/roads.full.geojson` | 1 | Full-precision archive. Outside `public/`, so it is never served. |
@@ -61,6 +82,7 @@ python3 scripts/build-derived-data.py
 | `public/data/roads.geojson` | 3 | Simplified overview geometry (~20% of the original point count). |
 | `public/data/roads/<id>.geojson` | 3 | One road each, so a road page loads a few KB instead of the whole set. |
 | `public/data/road-labels.geojson` | 3 | Map label anchors. A road's `labelPoint` overrides its centre. |
+| `public/data/<region>/roads.geojson` and `road-labels.geojson` | 3 | Separate region payloads; each regional map downloads its own road traces. |
 
 Stage 3 always measures the full-precision archive, so re-running it is safe and
 idempotent. See `docs/road-research.md` for sourcing and `/method` for the published

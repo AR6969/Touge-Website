@@ -3,7 +3,7 @@ import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
 import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, sanDiegoRoads, toSummary } from "./lib/roads";
-import { mapRegions } from "./lib/map-regions";
+import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
 import { siteName, siteUrl } from "./lib/site";
 
@@ -30,8 +30,7 @@ const regions = [
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
   const { region } = await searchParams;
-  const showingBayArea = region === "bay-area";
-  const mapRegion = showingBayArea ? "bay-area" : "california";
+  const mapRegion: MapRegion = region && Object.hasOwn(mapRegions, region) ? region as MapRegion : "california";
 
   const structured = {
     "@context": "https://schema.org",

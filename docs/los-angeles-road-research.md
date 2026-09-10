@@ -1,5 +1,12 @@
 # Los Angeles, Malibu, and Orange County driving roads
 
+Implementation update, September 9, 2026: all 32 candidates below are now represented
+by selected road traces in the LA map. The live collection also includes additional
+LA-area roads. The tables below preserve the research-stage proposals; published
+endpoints, descriptions and access notes are maintained in `scripts/la-roads.json`.
+In particular, Topanga continues to Mulholland Drive, and Laguna Canyon reaches PCH
+via Broadway Street. Some other traces cover shorter sections than initially proposed.
+
 California Touge should begin its Southern California collection with three distinct groups: Malibu and the Santa Monica Mountains, the Angeles and San Gabriel Mountains, and Orange County. The strongest editorial starting points are Latigo, Piuma and Stunt in Malibu; the western Angeles Crest network and Glendora roads in the mountains; and Santiago, Live Oak and Ortega in Orange County. These combinations offer different scenery and road shapes, rather than filling the map with interchangeable canyon names. Recent local discussions support this selection, although forum popularity is not a representative vote or a measure of safety.[^1][^2][^3]
 
 The shortlist contains **32 candidates**, of which **21 are proposed for the first release**, ten are secondary, and one is held for access verification. “First release” expresses editorial priority, not present readiness: geometry, directionality and access still need checks before publication. Proposed difficulty and character are editorial judgments, not measured scores. None of these draft entries is a live map feature yet.

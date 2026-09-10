@@ -63,8 +63,10 @@ export default function MethodPage() {
           <h2 id="geometry">How bends are counted</h2>
           <p>
             Road geometry comes from OpenStreetMap ways, fetched with the Overpass queries checked into the repository.
-            The build clips traces at existing vertices, joins exactly matching endpoints, and preserves disconnected
-            pieces — it never draws a straight bridge across a gap.
+            Bay Area traces are clipped at existing vertices and joined at matching endpoints. Southern California
+            traces follow connected road edges between selected existing vertices and junctions, excluding ways tagged
+            private, inaccessible to cars or unpaved. Neither build draws a straight bridge across a gap. These are
+            selected road sections, not turn-by-turn navigation routes or a guarantee of current access.
           </p>
           <p>
             Because OpenStreetMap vertex spacing is uneven, each trace is resampled at a fixed 20&nbsp;m step before any

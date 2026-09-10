@@ -51,7 +51,8 @@ export const losAngelesRoads = roads.filter(road => road.mapRegion === "los-ange
 export const sanDiegoRoads = roads.filter(road => road.mapRegion === "san-diego");
 
 export function roadMapHref(road: Road) {
-  return `${mapRegions[road.mapRegion ?? "bay-area"].href}?road=${encodeURIComponent(road.id)}`;
+  const href = mapRegions[road.mapRegion ?? "bay-area"].href;
+  return `${href}${href.includes("?") ? "&" : "?"}road=${encodeURIComponent(road.id)}`;
 }
 
 /** Named junctions worth marking on the map. Editorial, hand-maintained. */
