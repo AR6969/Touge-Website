@@ -225,6 +225,11 @@ summary { cursor: pointer; }
 .source-list li, .plain-list li { margin-bottom: 9px; }
 .plain-list { max-width: 82ch; }
 
+/* Route map on a driving-guide page. Taller than a single-road map because
+   a whole drive covers more ground. */
+.drive-map { position: relative; height: 460px; margin: 4px 0 26px; padding: 0; border: 1px solid #2f3b34;
+             border-radius: 8px; overflow: hidden; background: #1d251f; }
+.drive-map > .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 .road-map { position: relative; height: 420px; margin: 8px 0 12px; border: 1px solid #2f3b34; border-radius: 8px; overflow: hidden; background: #1d251f; }
 .road-map > .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 /* Sized to its text rather than stretched across the map. */
@@ -311,6 +316,7 @@ summary { cursor: pointer; }
   .mini-stats { gap: 14px; }
   .stat-grid dd { font-size: 25px; }
   .road-map { height: 300px; }
+  .drive-map { height: 340px; }
   .site-footer { padding: 22px 18px 34px; }
   .guide-roads { grid-template-columns: 1fr; }
 }

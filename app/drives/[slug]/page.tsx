@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import { drives, getDrive } from "../../lib/drives";
+import { getRoad } from "../../lib/roads";
+import DriveMap, { type DriveLeg } from "../../drive-map";
 import { siteName, siteUrl } from "../../lib/site";
 
 type DrivePageProps = { params: Promise<{ slug: string }> };
@@ -30,6 +32,18 @@ export default async function DrivePage({ params }: DrivePageProps) {
   const updated = new Date(drive.updated).toLocaleDateString("en-US", {
     month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
   });
+
+  // One entry per step, in driving order, plus a box that holds the whole route.
+  const legs: DriveLeg[] = drive.steps
+    .map((step, index) => ({ road: getRoad(step.roadId), step: index + 1 }))
+    .filter((leg): leg is { road: NonNullable<ReturnType<typeof getRoad>>; step: number } => Boolean(leg.road))
+    .map(({ road, step }) => ({ id: road.id, name: road.name, step }));
+
+  const boxes = legs.map(leg => getRoad(leg.id)!.bounds);
+  const routeBounds: [[number, number], [number, number]] | null = boxes.length ? [
+    [Math.min(...boxes.map(b => b[0][0])), Math.min(...boxes.map(b => b[0][1]))],
+    [Math.max(...boxes.map(b => b[1][0])), Math.max(...boxes.map(b => b[1][1]))],
+  ] : null;
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
@@ -61,6 +75,9 @@ export default async function DrivePage({ params }: DrivePageProps) {
         <p className="eyebrow">Bay Area driving guide · {drive.character}</p>
         <h1>{drive.title}</h1>
         <p className="lede">{drive.intro}</p>
+        {routeBounds && legs.length > 0 && (
+          <DriveMap legs={legs} bounds={routeBounds} title={drive.title} />
+        )}
         <ol className="drive-route" aria-label="Route in order">
           {drive.route.map(leg => <li key={leg}>{leg}</li>)}
         </ol>
