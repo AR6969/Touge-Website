@@ -46,6 +46,7 @@ export type RoadSummary = Pick<Road, "id" | "name" | "area" | "difficulty" | "ch
 export const roads = catalog as Road[];
 export const bayAreaRoads = roads.filter(road => road.mapRegion !== "los-angeles");
 export const losAngelesRoads = roads.filter(road => road.mapRegion === "los-angeles");
+export const sanDiegoRoads = roads.filter(road => road.mapRegion === "san-diego");
 
 export function roadMapHref(road: Road) {
   return `${mapRegions[road.mapRegion ?? "bay-area"].href}?road=${encodeURIComponent(road.id)}`;

@@ -13564,5 +13564,2090 @@
       "climb": 19,
       "technical": 20
     }
+  },
+  {
+    "id": "palomar-south-grade",
+    "name": "Palomar South Grade · S6",
+    "area": "Palomar & North County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The switchback climb up the face of Palomar Mountain from Highway 76, the road the whole mountain is known for.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · The Palomar Mountain Loop",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/the-palomar-mountain-loop"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.885521,
+      33.305397
+    ],
+    "bounds": [
+      [
+        -116.891533,
+        33.29348
+      ],
+      [
+        -116.8690432,
+        33.314362
+      ]
+    ],
+    "osmWayIds": [
+      5990526
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.890251,
+        33.29348
+      ],
+      "end": [
+        -116.870453,
+        33.314362
+      ],
+      "wayNames": [
+        "South Grade Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 5.8,
+      "bends": 45,
+      "switchbacks": 19,
+      "curvature": 1092,
+      "bendsPerMile": 7.8
+    },
+    "elevation": {
+      "climbFt": 2196,
+      "highFt": 5117,
+      "lowFt": 2921,
+      "reliefFt": 2196,
+      "maxGradient": 8.0,
+      "climbPerMile": 379
+    },
+    "profile": {
+      "points": [
+        2911,
+        2938,
+        2968,
+        2998,
+        3029,
+        3056,
+        3082,
+        3107,
+        3142,
+        3172,
+        3200,
+        3228,
+        3264,
+        3292,
+        3321,
+        3355,
+        3391,
+        3424,
+        3456,
+        3485,
+        3515,
+        3545,
+        3571,
+        3597,
+        3625,
+        3657,
+        3690,
+        3722,
+        3753,
+        3777,
+        3811,
+        3840,
+        3871,
+        3904,
+        3930,
+        3961,
+        3998,
+        4030,
+        4065,
+        4105,
+        4129,
+        4162,
+        4196,
+        4232,
+        4258,
+        4288,
+        4321,
+        4354,
+        4390,
+        4424,
+        4458,
+        4493,
+        4527,
+        4559,
+        4586,
+        4617,
+        4646,
+        4674,
+        4706,
+        4741,
+        4776,
+        4811,
+        4843,
+        4878,
+        4909,
+        4942,
+        4977,
+        5011,
+        5045,
+        5074,
+        5103,
+        5123
+      ],
+      "miles": 5.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 72,
+      "corners": 25,
+      "climb": 27,
+      "technical": 20
+    }
+  },
+  {
+    "id": "palomar-east-grade",
+    "name": "Palomar East Grade · S7",
+    "area": "Palomar & North County",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The longer, more open descent off Palomar Mountain toward Lake Henshaw, usually driven as the other half of the loop.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · The Palomar Mountain Loop",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/the-palomar-mountain-loop"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.828102,
+      33.292282
+    ],
+    "bounds": [
+      [
+        -116.8651353,
+        33.28038
+      ],
+      [
+        -116.786743,
+        33.3129983
+      ]
+    ],
+    "osmWayIds": [
+      5959579,
+      6048217,
+      1503246961
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.786743,
+        33.28038
+      ],
+      "end": [
+        -116.8651353,
+        33.3129983
+      ],
+      "wayNames": [
+        "East Grade Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 6.2,
+      "bends": 39,
+      "switchbacks": 2,
+      "curvature": 533,
+      "bendsPerMile": 6.3
+    },
+    "elevation": {
+      "climbFt": 1474,
+      "highFt": 5335,
+      "lowFt": 3931,
+      "reliefFt": 1403,
+      "maxGradient": 7.3,
+      "climbPerMile": 238
+    },
+    "profile": {
+      "points": [
+        3922,
+        3947,
+        3962,
+        3970,
+        3990,
+        4022,
+        4055,
+        4086,
+        4116,
+        4147,
+        4177,
+        4207,
+        4238,
+        4269,
+        4300,
+        4323,
+        4350,
+        4379,
+        4407,
+        4434,
+        4448,
+        4458,
+        4471,
+        4478,
+        4486,
+        4504,
+        4520,
+        4529,
+        4535,
+        4550,
+        4568,
+        4595,
+        4624,
+        4654,
+        4673,
+        4688,
+        4710,
+        4739,
+        4768,
+        4796,
+        4825,
+        4846,
+        4864,
+        4877,
+        4869,
+        4897,
+        4927,
+        4959,
+        4992,
+        5029,
+        5061,
+        5091,
+        5133,
+        5169,
+        5187,
+        5218,
+        5241,
+        5256,
+        5266,
+        5267,
+        5273,
+        5286,
+        5301,
+        5307,
+        5311,
+        5310,
+        5324,
+        5338,
+        5329,
+        5304,
+        5277,
+        5260
+      ],
+      "miles": 6.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 47,
+      "corners": 20,
+      "climb": 17,
+      "technical": 10
+    }
+  },
+  {
+    "id": "sunrise-highway",
+    "name": "Sunrise Highway · S1",
+    "area": "Laguna & Cuyamaca Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The climb from Interstate 8 up through the pines of Mount Laguna to Highway 79, along the edge of the Cleveland National Forest.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · Sunrise Highway Loop (S-1)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/sunrise-highway-loop-san-diego-ca-s-1"
+      },
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.438698,
+      32.888859
+    ],
+    "bounds": [
+      [
+        -116.5612101,
+        32.8101371
+      ],
+      [
+        -116.4156727,
+        33.0109155
+      ]
+    ],
+    "osmWayIds": [
+      5983343,
+      38414009,
+      181751144,
+      181751148,
+      274898058,
+      577643474,
+      577643478,
+      577643482,
+      577643505,
+      577643509,
+      577643524,
+      577643564,
+      577643576,
+      577643720,
+      577643729,
+      577643733,
+      1342819967,
+      1342819968,
+      1342819969,
+      1342819970,
+      1342819971
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.5112534,
+        32.8101371
+      ],
+      "end": [
+        -116.5612101,
+        33.0109155
+      ],
+      "wayNames": [
+        "Sunrise Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 24.0,
+      "bends": 44,
+      "switchbacks": 1,
+      "curvature": 176,
+      "bendsPerMile": 1.8
+    },
+    "elevation": {
+      "climbFt": 4493,
+      "highFt": 6017,
+      "lowFt": 4070,
+      "reliefFt": 1947,
+      "maxGradient": 6.5,
+      "climbPerMile": 187
+    },
+    "profile": {
+      "points": [
+        4081,
+        4125,
+        4210,
+        4256,
+        4323,
+        4401,
+        4476,
+        4569,
+        4658,
+        4752,
+        4840,
+        4929,
+        5009,
+        5105,
+        5206,
+        5323,
+        5435,
+        5476,
+        5593,
+        5715,
+        5803,
+        5843,
+        5936,
+        5941,
+        6019,
+        6008,
+        5986,
+        5958,
+        5893,
+        5897,
+        5951,
+        5894,
+        5817,
+        5752,
+        5728,
+        5669,
+        5635,
+        5546,
+        5460,
+        5436,
+        5464,
+        5428,
+        5387,
+        5347,
+        5313,
+        5347,
+        5280,
+        5345,
+        5462,
+        5453,
+        5499,
+        5491,
+        5501,
+        5397,
+        5300,
+        5209,
+        5168,
+        5121,
+        5055,
+        4993,
+        5025,
+        5005,
+        4972,
+        4876,
+        4805,
+        4748,
+        4699,
+        4664,
+        4642,
+        4673,
+        4656,
+        4649
+      ],
+      "miles": 24.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 29,
+      "corners": 6,
+      "climb": 13,
+      "technical": 10
+    }
+  },
+  {
+    "id": "cuyamaca-79",
+    "name": "Highway 79 · Cuyamaca",
+    "area": "Laguna & Cuyamaca Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The run north through Cuyamaca Rancho State Park past the lake to Julian.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · Sunrise Highway Loop (S-1)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/sunrise-highway-loop-san-diego-ca-s-1"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.5792711,
+      32.9614466
+    ],
+    "bounds": [
+      [
+        -116.6130125,
+        32.8411707
+      ],
+      [
+        -116.5611092,
+        33.0764293
+      ]
+    ],
+    "osmWayIds": [
+      6055600,
+      133591341,
+      133591342,
+      206480165,
+      617107466,
+      642893667,
+      753863029,
+      1217446274,
+      1342819962,
+      1342819963,
+      1342819964,
+      1342819965,
+      1342819966,
+      1504268972,
+      1504290985,
+      1504290986
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.6130125,
+        32.8411707
+      ],
+      "end": [
+        -116.5986541,
+        33.0764293
+      ],
+      "wayNames": [
+        "Firefighter Steven Rucker Memorial Highway",
+        "Route 79"
+      ]
+    },
+    "shape": {
+      "lengthMi": 21.7,
+      "bends": 69,
+      "switchbacks": 7,
+      "curvature": 328,
+      "bendsPerMile": 3.2
+    },
+    "elevation": {
+      "climbFt": 3118,
+      "highFt": 4878,
+      "lowFt": 3374,
+      "reliefFt": 1504,
+      "maxGradient": 6.2,
+      "climbPerMile": 144
+    },
+    "profile": {
+      "points": [
+        3371,
+        3430,
+        3478,
+        3548,
+        3553,
+        3535,
+        3528,
+        3539,
+        3572,
+        3600,
+        3627,
+        3708,
+        3793,
+        3817,
+        3863,
+        3904,
+        3966,
+        3997,
+        3926,
+        3976,
+        3973,
+        3976,
+        4049,
+        4084,
+        4101,
+        4143,
+        4170,
+        4201,
+        4242,
+        4294,
+        4360,
+        4456,
+        4567,
+        4678,
+        4786,
+        4874,
+        4825,
+        4760,
+        4710,
+        4657,
+        4643,
+        4654,
+        4662,
+        4654,
+        4644,
+        4672,
+        4663,
+        4663,
+        4652,
+        4641,
+        4645,
+        4645,
+        4651,
+        4710,
+        4660,
+        4608,
+        4562,
+        4594,
+        4595,
+        4626,
+        4681,
+        4692,
+        4668,
+        4613,
+        4555,
+        4486,
+        4434,
+        4391,
+        4333,
+        4266,
+        4220,
+        4226
+      ],
+      "miles": 21.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 30,
+      "corners": 10,
+      "climb": 10,
+      "technical": 10
+    }
+  },
+  {
+    "id": "banner-grade",
+    "name": "Banner Grade · SR 78",
+    "area": "Laguna & Cuyamaca Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The drop east out of Julian down to Scissors Crossing and the desert floor.",
+    "sources": [
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.554153,
+      33.071571
+    ],
+    "bounds": [
+      [
+        -116.5986541,
+        33.0663083
+      ],
+      [
+        -116.4753375,
+        33.09766
+      ]
+    ],
+    "osmWayIds": [
+      6047173,
+      6047175,
+      6047177,
+      105083733,
+      205304486,
+      222838865,
+      679933275,
+      679933276,
+      679933277,
+      1222604763,
+      1222604766
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.5986541,
+        33.0764293
+      ],
+      "end": [
+        -116.4753375,
+        33.0967733
+      ],
+      "wayNames": [
+        "Banner Grade",
+        "Banner Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 11.3,
+      "bends": 54,
+      "switchbacks": 4,
+      "curvature": 441,
+      "bendsPerMile": 4.8
+    },
+    "elevation": {
+      "climbFt": 2155,
+      "highFt": 4225,
+      "lowFt": 2284,
+      "reliefFt": 1940,
+      "maxGradient": 6.9,
+      "climbPerMile": 191
+    },
+    "profile": {
+      "points": [
+        4226,
+        4218,
+        4211,
+        4186,
+        4148,
+        4116,
+        4087,
+        4070,
+        4057,
+        4041,
+        4026,
+        4005,
+        3971,
+        3942,
+        3908,
+        3861,
+        3809,
+        3760,
+        3711,
+        3670,
+        3601,
+        3550,
+        3492,
+        3439,
+        3383,
+        3329,
+        3277,
+        3232,
+        3178,
+        3130,
+        3082,
+        3031,
+        2982,
+        2940,
+        2900,
+        2863,
+        2828,
+        2798,
+        2779,
+        2766,
+        2774,
+        2768,
+        2730,
+        2703,
+        2674,
+        2646,
+        2618,
+        2599,
+        2576,
+        2570,
+        2564,
+        2550,
+        2536,
+        2537,
+        2536,
+        2540,
+        2536,
+        2540,
+        2548,
+        2555,
+        2571,
+        2615,
+        2633,
+        2586,
+        2524,
+        2462,
+        2399,
+        2365,
+        2357,
+        2332,
+        2304,
+        2282
+      ],
+      "miles": 11.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 49,
+      "corners": 15,
+      "climb": 13,
+      "technical": 20
+    }
+  },
+  {
+    "id": "montezuma-grade",
+    "name": "Montezuma Valley Road · S22",
+    "area": "Anza-Borrego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The descent off Ranchita into Borrego Springs, switchbacking down the western wall of Anza-Borrego.",
+    "sources": [
+      {
+        "title": "AARoads · County Road S-22, California",
+        "url": "https://www.aaroads.com/guides/cr-s22-ca"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.45575,
+      33.220448
+    ],
+    "bounds": [
+      [
+        -116.604767,
+        33.209724
+      ],
+      [
+        -116.3756544,
+        33.2568143
+      ]
+    ],
+    "osmWayIds": [
+      5987413,
+      5993823,
+      5993833,
+      105102462,
+      127700686,
+      206315526,
+      577643403,
+      1122834771,
+      1122834772,
+      1122834773,
+      1122834774,
+      1268556610,
+      1268556615,
+      1268556618,
+      1272853923
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.604767,
+        33.219776
+      ],
+      "end": [
+        -116.3756544,
+        33.2568143
+      ],
+      "wayNames": [
+        "Montezuma Valley Road",
+        "Montezuma-Borrego Highway",
+        "Palm Canyon Drive"
+      ]
+    },
+    "shape": {
+      "lengthMi": 18.8,
+      "bends": 45,
+      "switchbacks": 13,
+      "curvature": 282,
+      "bendsPerMile": 2.4
+    },
+    "elevation": {
+      "climbFt": 4530,
+      "highFt": 4225,
+      "lowFt": 597,
+      "reliefFt": 3628,
+      "maxGradient": 7.6,
+      "climbPerMile": 241
+    },
+    "profile": {
+      "points": [
+        3352,
+        3344,
+        3372,
+        3415,
+        3460,
+        3484,
+        3525,
+        3562,
+        3598,
+        3637,
+        3673,
+        3728,
+        3767,
+        3832,
+        3885,
+        3909,
+        3911,
+        3961,
+        3991,
+        4028,
+        4060,
+        4097,
+        4125,
+        4184,
+        4220,
+        4193,
+        4086,
+        4000,
+        3924,
+        3836,
+        3759,
+        3659,
+        3574,
+        3467,
+        3391,
+        3305,
+        3221,
+        3130,
+        3068,
+        2978,
+        2893,
+        2820,
+        2756,
+        2695,
+        2616,
+        2502,
+        2393,
+        2283,
+        2188,
+        2086,
+        1981,
+        1905,
+        1813,
+        1715,
+        1627,
+        1515,
+        1420,
+        1324,
+        1252,
+        1177,
+        1117,
+        1019,
+        957,
+        877,
+        835,
+        785,
+        755,
+        718,
+        689,
+        656,
+        621,
+        597
+      ],
+      "miles": 18.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 45,
+      "corners": 8,
+      "climb": 17,
+      "technical": 20
+    }
+  },
+  {
+    "id": "mesa-grande",
+    "name": "Mesa Grande Road",
+    "area": "Palomar & North County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow ranch-country link between Santa Ysabel and Lake Henshaw, tight in places and open in others.",
+    "sources": [
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.762657,
+      33.173595
+    ],
+    "bounds": [
+      [
+        -116.7800324,
+        33.13644
+      ],
+      [
+        -116.679314,
+        33.213788
+      ]
+    ],
+    "osmWayIds": [
+      6045936,
+      6045939
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.679314,
+        33.13644
+      ],
+      "end": [
+        -116.7394258,
+        33.213788
+      ],
+      "wayNames": [
+        "Mesa Grande Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 12.1,
+      "bends": 48,
+      "switchbacks": 6,
+      "curvature": 430,
+      "bendsPerMile": 4.0
+    },
+    "elevation": {
+      "climbFt": 2252,
+      "highFt": 3489,
+      "lowFt": 2748,
+      "reliefFt": 742,
+      "maxGradient": 8.8,
+      "climbPerMile": 186
+    },
+    "profile": {
+      "points": [
+        2990,
+        2972,
+        2981,
+        2993,
+        3011,
+        3024,
+        3043,
+        3064,
+        3088,
+        3130,
+        3190,
+        3256,
+        3315,
+        3375,
+        3432,
+        3461,
+        3476,
+        3487,
+        3453,
+        3414,
+        3386,
+        3350,
+        3336,
+        3356,
+        3373,
+        3424,
+        3402,
+        3381,
+        3376,
+        3361,
+        3394,
+        3392,
+        3369,
+        3351,
+        3349,
+        3281,
+        3242,
+        3218,
+        3215,
+        3232,
+        3239,
+        3268,
+        3254,
+        3226,
+        3200,
+        3192,
+        3219,
+        3210,
+        3230,
+        3248,
+        3264,
+        3297,
+        3332,
+        3362,
+        3376,
+        3387,
+        3408,
+        3432,
+        3478,
+        3461,
+        3495,
+        3439,
+        3349,
+        3269,
+        3192,
+        3110,
+        3039,
+        2983,
+        2897,
+        2817,
+        2748,
+        2746
+      ],
+      "miles": 12.1,
+      "coverage": 100
+    },
+    "score": {
+      "score": 46,
+      "corners": 13,
+      "climb": 13,
+      "technical": 20
+    }
+  },
+  {
+    "id": "highland-valley",
+    "name": "Highland Valley Road",
+    "area": "Palomar & North County",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The rolling connector between Escondido and Ramona, through avocado groves and low hills.",
+    "sources": [
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -116.970947,
+      33.056358
+    ],
+    "bounds": [
+      [
+        -117.067201,
+        33.0131654
+      ],
+      [
+        -116.9085659,
+        33.068241
+      ]
+    ],
+    "osmWayIds": [
+      5969638,
+      5969644,
+      5969647,
+      114349977,
+      436407848,
+      436407849,
+      815986067,
+      1086319080,
+      1110630963
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -117.067201,
+        33.0528736
+      ],
+      "end": [
+        -116.9085659,
+        33.0131654
+      ],
+      "wayNames": [
+        "Highland Valley Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 13.5,
+      "bends": 47,
+      "switchbacks": 2,
+      "curvature": 377,
+      "bendsPerMile": 3.5
+    },
+    "elevation": {
+      "climbFt": 2033,
+      "highFt": 1627,
+      "lowFt": 325,
+      "reliefFt": 1302,
+      "maxGradient": 9.1,
+      "climbPerMile": 151
+    },
+    "profile": {
+      "points": [
+        395,
+        358,
+        330,
+        328,
+        326,
+        330,
+        333,
+        326,
+        327,
+        329,
+        333,
+        329,
+        332,
+        331,
+        350,
+        420,
+        475,
+        596,
+        701,
+        710,
+        712,
+        750,
+        802,
+        838,
+        886,
+        914,
+        986,
+        1106,
+        1156,
+        1176,
+        1185,
+        1185,
+        1172,
+        1151,
+        1198,
+        1228,
+        1250,
+        1292,
+        1334,
+        1415,
+        1508,
+        1607,
+        1615,
+        1612,
+        1581,
+        1590,
+        1612,
+        1591,
+        1568,
+        1544,
+        1533,
+        1486,
+        1440,
+        1395,
+        1386,
+        1367,
+        1378,
+        1374,
+        1349,
+        1349,
+        1368,
+        1372,
+        1378,
+        1376,
+        1383,
+        1397,
+        1414,
+        1419,
+        1406,
+        1408,
+        1415,
+        1424
+      ],
+      "miles": 13.5,
+      "coverage": 100
+    },
+    "score": {
+      "score": 32,
+      "corners": 11,
+      "climb": 11,
+      "technical": 10
+    }
+  },
+  {
+    "id": "couser-canyon",
+    "name": "Couser Canyon Road",
+    "area": "Palomar & North County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A tight back road through the avocado country between Valley Center and the Highway 76 corridor.",
+    "sources": [
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "san-diego",
+    "center": [
+      -117.107849,
+      33.3260682
+    ],
+    "bounds": [
+      [
+        -117.1313239,
+        33.2984358
+      ],
+      [
+        -117.085303,
+        33.3436214
+      ]
+    ],
+    "osmWayIds": [
+      6020139,
+      115404222,
+      127699444
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -117.085303,
+        33.2984358
+      ],
+      "end": [
+        -117.1313116,
+        33.3436214
+      ],
+      "wayNames": [
+        "Couser Canyon Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 4.9,
+      "bends": 43,
+      "switchbacks": 2,
+      "curvature": 789,
+      "bendsPerMile": 8.7
+    },
+    "elevation": {
+      "climbFt": 1200,
+      "highFt": 1156,
+      "lowFt": 289,
+      "reliefFt": 867,
+      "maxGradient": 8.8,
+      "climbPerMile": 245
+    },
+    "profile": {
+      "points": [
+        822,
+        848,
+        878,
+        909,
+        929,
+        950,
+        976,
+        1010,
+        1035,
+        1069,
+        1105,
+        1144,
+        1162,
+        1150,
+        1118,
+        1088,
+        1050,
+        1025,
+        999,
+        972,
+        944,
+        907,
+        870,
+        839,
+        810,
+        779,
+        756,
+        743,
+        732,
+        724,
+        710,
+        701,
+        680,
+        666,
+        649,
+        639,
+        624,
+        609,
+        603,
+        605,
+        592,
+        562,
+        530,
+        499,
+        477,
+        456,
+        435,
+        422,
+        406,
+        393,
+        376,
+        356,
+        342,
+        338,
+        334,
+        331,
+        343,
+        327,
+        308,
+        297,
+        295,
+        293,
+        289,
+        290,
+        289,
+        290,
+        290,
+        288,
+        290,
+        291,
+        292,
+        292
+      ],
+      "miles": 5.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 65,
+      "corners": 28,
+      "climb": 17,
+      "technical": 20
+    }
+  },
+  {
+    "id": "rim-of-the-world",
+    "name": "Rim of the World Highway · SR 18",
+    "area": "San Bernardino Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The highway along the crest above San Bernardino, running east toward Big Bear with the valley far below.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -117.0275225,
+      34.2356072
+    ],
+    "bounds": [
+      [
+        -117.0784738,
+        34.213975
+      ],
+      [
+        -116.9780907,
+        34.2510772
+      ]
+    ],
+    "osmWayIds": [
+      7494043,
+      119271169,
+      165710614,
+      291099176,
+      291099177,
+      291099178,
+      291099179,
+      291099180,
+      291099181,
+      324382358,
+      325838194,
+      325838195,
+      325838196,
+      325838197,
+      325838198,
+      325838199,
+      325838200,
+      325838201,
+      325838202,
+      325838203,
+      325838204,
+      325838205,
+      325838206,
+      325838207,
+      325838208,
+      325838209,
+      325838210,
+      325838211,
+      325839442,
+      325839443,
+      325839445,
+      572887225,
+      572887228,
+      572887229,
+      572887233,
+      572887234,
+      572887235,
+      1004593902
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -117.0784738,
+        34.213975
+      ],
+      "end": [
+        -116.9780907,
+        34.2419716
+      ],
+      "wayNames": [
+        "Rim of the World Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 10.2,
+      "bends": 61,
+      "switchbacks": 9,
+      "curvature": 599,
+      "bendsPerMile": 6.0
+    },
+    "elevation": {
+      "climbFt": 1753,
+      "highFt": 7176,
+      "lowFt": 6151,
+      "reliefFt": 1025,
+      "maxGradient": 5.6,
+      "climbPerMile": 172
+    },
+    "profile": {
+      "points": [
+        6136,
+        6180,
+        6181,
+        6218,
+        6218,
+        6251,
+        6270,
+        6331,
+        6369,
+        6390,
+        6443,
+        6505,
+        6534,
+        6575,
+        6620,
+        6635,
+        6659,
+        6652,
+        6674,
+        6679,
+        6701,
+        6705,
+        6722,
+        6737,
+        6736,
+        6759,
+        6774,
+        6813,
+        6855,
+        6893,
+        6932,
+        6986,
+        7021,
+        7061,
+        7105,
+        7126,
+        7150,
+        7165,
+        7158,
+        7151,
+        7155,
+        7145,
+        7141,
+        7136,
+        7117,
+        7098,
+        7076,
+        7054,
+        7046,
+        7065,
+        7093,
+        7086,
+        7078,
+        7106,
+        7142,
+        7157,
+        7149,
+        7171,
+        7169,
+        7133,
+        7107,
+        7072,
+        7032,
+        7001,
+        6977,
+        6959,
+        6919,
+        6881,
+        6839,
+        6793,
+        6765,
+        6738
+      ],
+      "miles": 10.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 41,
+      "corners": 19,
+      "climb": 12,
+      "technical": 10
+    }
+  },
+  {
+    "id": "san-jacinto-243",
+    "name": "Banning–Idyllwild Panoramic Highway · SR 243",
+    "area": "San Jacinto Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The climb from Banning up the San Jacinto range to Idyllwild, through switchbacks and pine forest.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -116.8020883,
+      33.8348976
+    ],
+    "bounds": [
+      [
+        -116.8766677,
+        33.7490407
+      ],
+      [
+        -116.7348476,
+        33.9119807
+      ]
+    ],
+    "osmWayIds": [
+      102549171,
+      102549190,
+      103627771,
+      103627772,
+      104248055,
+      104248243,
+      233809183,
+      233809184,
+      383564391,
+      383564393,
+      414068049,
+      414068050,
+      678449848,
+      714963106,
+      1341215342
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -116.8766677,
+        33.9119807
+      ],
+      "end": [
+        -116.7370911,
+        33.7490407
+      ],
+      "wayNames": [
+        "Banning-Idyllwild Panoramic Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 21.7,
+      "bends": 95,
+      "switchbacks": 11,
+      "curvature": 452,
+      "bendsPerMile": 4.4
+    },
+    "elevation": {
+      "climbFt": 5287,
+      "highFt": 6208,
+      "lowFt": 2215,
+      "reliefFt": 3993,
+      "maxGradient": 6.4,
+      "climbPerMile": 244
+    },
+    "profile": {
+      "points": [
+        2231,
+        2269,
+        2343,
+        2428,
+        2517,
+        2612,
+        2691,
+        2797,
+        2900,
+        2981,
+        3058,
+        3151,
+        3227,
+        3342,
+        3393,
+        3478,
+        3564,
+        3660,
+        3751,
+        3846,
+        3941,
+        4001,
+        3957,
+        4001,
+        4038,
+        4162,
+        4239,
+        4302,
+        4345,
+        4459,
+        4535,
+        4633,
+        4724,
+        4825,
+        4920,
+        5006,
+        5097,
+        5124,
+        5134,
+        5104,
+        5173,
+        5255,
+        5177,
+        5204,
+        5276,
+        5333,
+        5366,
+        5448,
+        5463,
+        5390,
+        5365,
+        5364,
+        5289,
+        5194,
+        5285,
+        5399,
+        5451,
+        5538,
+        5639,
+        5733,
+        5812,
+        5775,
+        5862,
+        5964,
+        6019,
+        6105,
+        6170,
+        6178,
+        6169,
+        6087,
+        5993,
+        5910
+      ],
+      "miles": 21.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 51,
+      "corners": 14,
+      "climb": 17,
+      "technical": 20
+    }
+  },
+  {
+    "id": "ojai-33",
+    "name": "Highway 33 · Ojai",
+    "area": "Ventura Backcountry",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The Maricopa Highway north out of Ojai into the Los Padres backcountry, climbing hard through tight rock cuts.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "mapRegion": "los-angeles",
+    "center": [
+      -119.258544,
+      34.579084
+    ],
+    "bounds": [
+      [
+        -119.385522,
+        34.441413
+      ],
+      [
+        -119.234224,
+        34.719568
+      ]
+    ],
+    "osmWayIds": [
+      10735009,
+      10735010,
+      11655239,
+      11655261,
+      11655270,
+      11655277,
+      11655282,
+      11655585,
+      11655590,
+      37128502,
+      105575647,
+      105575648,
+      105575650,
+      105575651,
+      105575652,
+      105575653,
+      105575654,
+      105575655,
+      105575656,
+      105575657,
+      105575658,
+      105575659,
+      105575660,
+      105575661,
+      105575662,
+      105575663,
+      105575665,
+      105575666,
+      105575667,
+      105575668,
+      105575669,
+      105575670,
+      105575671,
+      105575684,
+      105575685,
+      105575687,
+      105575695,
+      105575696,
+      389163801,
+      389163802,
+      546935402,
+      546935403,
+      663383547,
+      663383548,
+      849663868,
+      887379992,
+      1008294095,
+      1008294096,
+      1008294097,
+      1008294098,
+      1008294099,
+      1008294100,
+      1008294101,
+      1008294102,
+      1198498739,
+      1198498740,
+      1198498741,
+      1451318590,
+      1451318591
+    ],
+    "reviewed": "2026-09-09",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/la-overpass.json",
+      "osmTimestamp": "2026-09-09T19:32:36Z",
+      "start": [
+        -119.2609009,
+        34.441413
+      ],
+      "end": [
+        -119.384018,
+        34.719568
+      ],
+      "wayNames": [
+        "Maricopa Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 40.2,
+      "bends": 138,
+      "switchbacks": 16,
+      "curvature": 358,
+      "bendsPerMile": 3.4
+    },
+    "elevation": {
+      "climbFt": 7529,
+      "highFt": 5095,
+      "lowFt": 736,
+      "reliefFt": 4358,
+      "maxGradient": 5.9,
+      "climbPerMile": 187
+    },
+    "profile": {
+      "points": [
+        764,
+        735,
+        774,
+        811,
+        859,
+        893,
+        891,
+        908,
+        1088,
+        1215,
+        1299,
+        1448,
+        1549,
+        1683,
+        1797,
+        1936,
+        2110,
+        2262,
+        2395,
+        2513,
+        2649,
+        2792,
+        2943,
+        3089,
+        3251,
+        3406,
+        3539,
+        3638,
+        3663,
+        3506,
+        3456,
+        3421,
+        3410,
+        3403,
+        3449,
+        3499,
+        3577,
+        3666,
+        3746,
+        3810,
+        3901,
+        3915,
+        3955,
+        4030,
+        4070,
+        4075,
+        4093,
+        4138,
+        4190,
+        4191,
+        4271,
+        4362,
+        4523,
+        4683,
+        4826,
+        4988,
+        5054,
+        4880,
+        4705,
+        4540,
+        4367,
+        4197,
+        4029,
+        3854,
+        3688,
+        3613,
+        3546,
+        3505,
+        3489,
+        3441,
+        3430,
+        3387
+      ],
+      "miles": 40.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 44,
+      "corners": 11,
+      "climb": 13,
+      "technical": 20
+    }
   }
 ]

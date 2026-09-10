@@ -116,9 +116,10 @@ def build_la(snapshot_path=None):
             if cumulative >= total / 2:
                 center = b
                 break
-        road = {key: value for key, value in spec.items() if key not in ('names', 'anchors')}
+        road = {key: value for key, value in spec.items()
+                if key not in ('names', 'anchors', 'mapRegionOverride')}
         road.update(
-            mapRegion='los-angeles', center=center, bounds=bounds,
+            mapRegion=spec.get('mapRegionOverride', 'los-angeles'), center=center, bounds=bounds,
             osmWayIds=ids, reviewed='2026-09-09',
             # Raw tags remain inspectable in the snapshot, but unverified tags
             # do not become numeric speed summaries on these new roads.

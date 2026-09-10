@@ -1,4 +1,4 @@
-export type MapRegion = "bay-area" | "los-angeles";
+export type MapRegion = "bay-area" | "los-angeles" | "san-diego";
 
 export const mapRegions: Record<MapRegion, {
   name: string;
@@ -19,6 +19,15 @@ export const mapRegions: Record<MapRegion, {
     href: "/los-angeles",
     pickerTitle: "LA, Malibu & Orange County",
     center: [-118.22, 34.02],
-    bounds: [[-119.02, 33.44], [-117.34, 34.36]],
+    // Widened east and west of the city: the roads people drive from LA include
+    // the San Bernardino and San Jacinto mountains and the Ojai back country.
+    bounds: [[-119.45, 33.40], [-116.55, 34.65]],
+  },
+  "san-diego": {
+    name: "San Diego",
+    href: "/san-diego",
+    pickerTitle: "San Diego & the backcountry",
+    center: [-116.90, 33.15],
+    bounds: [[-117.45, 32.75], [-116.25, 33.55]],
   },
 };

@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: siteUrl, lastModified, changeFrequency: "monthly", priority: 1 },
+    { url: `${siteUrl}/san-diego`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/los-angeles`, lastModified: new Date("2026-09-09"), changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/roads`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/regions`, lastModified, changeFrequency: "monthly", priority: 0.7 },

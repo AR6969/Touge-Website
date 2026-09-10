@@ -564,5 +564,202 @@
         "end": "north"
       }
     ]
+  },
+  "palomar-south-grade": {
+    "names": [
+      "South Grade Road"
+    ],
+    "box": [
+      -117.0,
+      33.28,
+      -116.8,
+      33.4
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "palomar-east-grade": {
+    "names": [
+      "East Grade Road"
+    ],
+    "box": [
+      -117.0,
+      33.28,
+      -116.75,
+      33.4
+    ],
+    "anchors": [
+      {
+        "end": "east"
+      },
+      {
+        "end": "west"
+      }
+    ]
+  },
+  "sunrise-highway": {
+    "names": [
+      "Sunrise Highway"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "cuyamaca-79": {
+    "names": [
+      "Route 79",
+      "Firefighter Steven Rucker Memorial Highway",
+      "Julian Highway"
+    ],
+    "box": [
+      -116.72,
+      32.84,
+      -116.52,
+      33.09
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "banner-grade": {
+    "names": [
+      "Banner Grade",
+      "Banner Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "montezuma-grade": {
+    "names": [
+      "Montezuma Valley Road",
+      "Montezuma-Borrego Highway",
+      "Palm Canyon Drive"
+    ],
+    "box": [
+      -116.65,
+      33.15,
+      -116.33,
+      33.3
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "mesa-grande": {
+    "names": [
+      "Mesa Grande Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "highland-valley": {
+    "names": [
+      "Highland Valley Road"
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "couser-canyon": {
+    "names": [
+      "Couser Canyon Road"
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
+  },
+  "rim-of-the-world": {
+    "names": [
+      "Rim of the World Highway"
+    ],
+    "box": [
+      -117.35,
+      34.15,
+      -116.85,
+      34.3
+    ],
+    "anchors": [
+      {
+        "end": "west"
+      },
+      {
+        "end": "east"
+      }
+    ]
+  },
+  "san-jacinto-243": {
+    "names": [
+      "Banning-Idyllwild Panoramic Highway"
+    ],
+    "anchors": [
+      {
+        "end": "north"
+      },
+      {
+        "end": "south"
+      }
+    ]
+  },
+  "ojai-33": {
+    "names": [
+      "Maricopa Highway"
+    ],
+    "box": [
+      -119.4,
+      34.44,
+      -119.2,
+      34.72
+    ],
+    "anchors": [
+      {
+        "end": "south"
+      },
+      {
+        "end": "north"
+      }
+    ]
   }
 }

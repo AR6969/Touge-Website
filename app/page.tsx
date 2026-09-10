@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import RoadExplorer from "./road-explorer";
 import { SiteFooter, SiteHeader } from "./site-chrome";
-import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, toSummary } from "./lib/roads";
+import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, sanDiegoRoads, toSummary } from "./lib/roads";
 import { mapRegions } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
 import { siteName, siteUrl } from "./lib/site";
@@ -25,6 +25,7 @@ const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 const regions = [
   { id: "bay-area" as const, roads: bayAreaRoads, blurb: "The Peninsula ridge roads, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey." },
   { id: "los-angeles" as const, roads: losAngelesRoads, blurb: "The Malibu canyons, the Angeles and San Gabriel mountains, and the Orange County hills." },
+  { id: "san-diego" as const, roads: sanDiegoRoads, blurb: "Palomar Mountain, the Laguna and Cuyamaca ranges, and the North County back roads." },
 ];
 
 export default function Home() {

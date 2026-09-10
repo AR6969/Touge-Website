@@ -123,7 +123,7 @@ labels = [{
 write_json(ROOT / 'public/data/road-labels.geojson', {'type': 'FeatureCollection', 'features': labels})
 
 # Regional overview payloads keep the map from downloading the other region.
-for region in ('bay-area', 'los-angeles'):
+for region in sorted({road.get('mapRegion', 'bay-area') for road in catalog}):
     ids = {road['id'] for road in catalog if road.get('mapRegion', 'bay-area') == region}
     for name, features in (('roads', overview), ('road-labels', labels)):
         write_json(ROOT / f'public/data/{region}/{name}.geojson', {

@@ -1571,5 +1571,506 @@
       "note": "Held back from the first release over unresolved reports of access problems at the northern end. Check current county and forest notices before relying on a through-route.",
       "status": "needs-current-check"
     }
+  },
+  {
+    "id": "palomar-south-grade",
+    "name": "Palomar South Grade · S6",
+    "area": "Palomar & North County",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The switchback climb up the face of Palomar Mountain from Highway 76, the road the whole mountain is known for.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · The Palomar Mountain Loop",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/the-palomar-mountain-loop"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "South Grade Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.890251,
+          33.29348
+        ]
+      },
+      {
+        "near": [
+          -116.870453,
+          33.314362
+        ]
+      }
+    ]
+  },
+  {
+    "id": "palomar-east-grade",
+    "name": "Palomar East Grade · S7",
+    "area": "Palomar & North County",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The longer, more open descent off Palomar Mountain toward Lake Henshaw, usually driven as the other half of the loop.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · The Palomar Mountain Loop",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/the-palomar-mountain-loop"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "East Grade Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.786743,
+          33.28038
+        ]
+      },
+      {
+        "near": [
+          -116.8651353,
+          33.3129983
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sunrise-highway",
+    "name": "Sunrise Highway · S1",
+    "area": "Laguna & Cuyamaca Mountains",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The climb from Interstate 8 up through the pines of Mount Laguna to Highway 79, along the edge of the Cleveland National Forest.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · Sunrise Highway Loop (S-1)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/sunrise-highway-loop-san-diego-ca-s-1"
+      },
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Sunrise Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.5112534,
+          32.8101371
+        ]
+      },
+      {
+        "near": [
+          -116.5612101,
+          33.0109155
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cuyamaca-79",
+    "name": "Highway 79 · Cuyamaca",
+    "area": "Laguna & Cuyamaca Mountains",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The run north through Cuyamaca Rancho State Park past the lake to Julian.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads · Sunrise Highway Loop (S-1)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/california/sunrise-highway-loop-san-diego-ca-s-1"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Route 79",
+      "Firefighter Steven Rucker Memorial Highway",
+      "Julian Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.6130125,
+          32.8411707
+        ]
+      },
+      {
+        "near": [
+          -116.5986541,
+          33.0764293
+        ]
+      }
+    ]
+  },
+  {
+    "id": "banner-grade",
+    "name": "Banner Grade · SR 78",
+    "area": "Laguna & Cuyamaca Mountains",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The drop east out of Julian down to Scissors Crossing and the desert floor.",
+    "sources": [
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Banner Grade",
+      "Banner Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.5986541,
+          33.0764293
+        ]
+      },
+      {
+        "near": [
+          -116.4753375,
+          33.0967733
+        ]
+      }
+    ]
+  },
+  {
+    "id": "montezuma-grade",
+    "name": "Montezuma Valley Road · S22",
+    "area": "Anza-Borrego",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The descent off Ranchita into Borrego Springs, switchbacking down the western wall of Anza-Borrego.",
+    "sources": [
+      {
+        "title": "AARoads · County Road S-22, California",
+        "url": "https://www.aaroads.com/guides/cr-s22-ca"
+      },
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Montezuma Valley Road",
+      "Montezuma-Borrego Highway",
+      "Palm Canyon Drive"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.604767,
+          33.219776
+        ]
+      },
+      {
+        "near": [
+          -116.3756544,
+          33.2568143
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mesa-grande",
+    "name": "Mesa Grande Road",
+    "area": "Palomar & North County",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A narrow ranch-country link between Santa Ysabel and Lake Henshaw, tight in places and open in others.",
+    "sources": [
+      {
+        "title": "Rennlist · Fun roads in San Diego",
+        "url": "https://rennlist.com/forums/993-forum/681255-fun-roads-in-san-diego.html"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Mesa Grande Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.679314,
+          33.13644
+        ]
+      },
+      {
+        "near": [
+          -116.7394258,
+          33.213788
+        ]
+      }
+    ]
+  },
+  {
+    "id": "highland-valley",
+    "name": "Highland Valley Road",
+    "area": "Palomar & North County",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The rolling connector between Escondido and Ramona, through avocado groves and low hills.",
+    "sources": [
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      },
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Highland Valley Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.067201,
+          33.0528736
+        ]
+      },
+      {
+        "near": [
+          -116.9085659,
+          33.0131654
+        ]
+      }
+    ]
+  },
+  {
+    "id": "couser-canyon",
+    "name": "Couser Canyon Road",
+    "area": "Palomar & North County",
+    "mapRegionOverride": "san-diego",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A tight back road through the avocado country between Valley Center and the Highway 76 corridor.",
+    "sources": [
+      {
+        "title": "Drives and Detours · Best drives in San Diego",
+        "url": "https://www.drivesanddetours.com/recommended-drives-and-destinations/best-drives-san-diego"
+      },
+      {
+        "title": "LotusTalk · Best roads in San Diego",
+        "url": "https://www.lotustalk.com/threads/best-roads-in-san-diego.3788/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Couser Canyon Road"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.085303,
+          33.2984358
+        ]
+      },
+      {
+        "near": [
+          -117.1313116,
+          33.3436214
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rim-of-the-world",
+    "name": "Rim of the World Highway · SR 18",
+    "area": "San Bernardino Mountains",
+    "mapRegionOverride": "los-angeles",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The highway along the crest above San Bernardino, running east toward Big Bear with the valley far below.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Rim of the World Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -117.0784738,
+          34.213975
+        ]
+      },
+      {
+        "near": [
+          -116.9780907,
+          34.2419716
+        ]
+      }
+    ]
+  },
+  {
+    "id": "san-jacinto-243",
+    "name": "Banning–Idyllwild Panoramic Highway · SR 243",
+    "area": "San Jacinto Mountains",
+    "mapRegionOverride": "los-angeles",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The climb from Banning up the San Jacinto range to Idyllwild, through switchbacks and pine forest.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Banning-Idyllwild Panoramic Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -116.8766677,
+          33.9119807
+        ]
+      },
+      {
+        "near": [
+          -116.7370911,
+          33.7490407
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ojai-33",
+    "name": "Highway 33 · Ojai",
+    "area": "Ventura Backcountry",
+    "mapRegionOverride": "los-angeles",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The Maricopa Highway north out of Ojai into the Los Padres backcountry, climbing hard through tight rock cuts.",
+    "sources": [
+      {
+        "title": "SoCal Region · Southern California motorcycling",
+        "url": "https://www.socalregion.com/recreation/socal-motorcycling/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No posted limit has been verified for this selected section. Follow current signs.",
+      "source": null
+    },
+    "names": [
+      "Maricopa Highway"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -119.2609009,
+          34.441413
+        ]
+      },
+      {
+        "near": [
+          -119.384018,
+          34.719568
+        ]
+      }
+    ]
   }
 ]
