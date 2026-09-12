@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: siteUrl, lastModified, changeFrequency: "monthly", priority: 1 },
     { url: `${siteUrl}/san-diego`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/los-angeles`, lastModified: new Date("2026-09-09"), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${siteUrl}/sierra`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/roads`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/regions`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/method`, lastModified, changeFrequency: "yearly", priority: 0.4 },

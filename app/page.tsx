@@ -9,9 +9,9 @@ import { siteName, siteUrl } from "./lib/site";
 
 const title = "Best Driving Roads in California";
 const description =
-  "Every good driving road in California across four maps — the Bay Area, Los Angeles, San Diego and the " +
-  "Sierra Nevada. Corner counts measured from OpenStreetMap geometry, elevation from USGS data, and a source " +
-  "behind every speed figure.";
+  "Every good driving road in California across three regional maps — the Bay Area, Los Angeles and San Diego " +
+  "— plus one statewide view. Corner counts measured from OpenStreetMap geometry, elevation from USGS data, " +
+  "and a source behind every speed figure.";
 
 export const metadata: Metadata = {
   title,
@@ -27,8 +27,10 @@ const regions = [
   { id: "bay-area" as const, roads: bayAreaRoads, blurb: "The Peninsula ridge roads, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey." },
   { id: "los-angeles" as const, roads: losAngelesRoads, blurb: "The Malibu canyons, the Angeles and San Gabriel mountains, and the Orange County hills." },
   { id: "san-diego" as const, roads: sanDiegoRoads, blurb: "Palomar Mountain, the Laguna and Cuyamaca ranges, and the North County back roads." },
-  { id: "sierra" as const, roads: sierraRoads, blurb: "Tioga and Sonora Pass, Rock Creek Road and the other high Sierra climbs along Highway 395." },
 ];
+// Sierra Nevada roads (sierraRoads) are still in the "california" tab's full
+// catalog and reachable by panning the statewide map — deliberately not a peer
+// card here alongside the three regional maps.
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
   const { region } = await searchParams;

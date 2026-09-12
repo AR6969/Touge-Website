@@ -20,7 +20,11 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
       </Link>
       {current === "map" ? (
         <nav aria-label="Map regions">
-          {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][]).map(([id, region]) => (
+          {/* Sierra Nevada roads live inside the California tab rather than getting
+              their own peer tab — reachable by panning the statewide map, not by nav. */}
+          {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
+            .filter(([id]) => id !== "sierra")
+            .map(([id, region]) => (
             onRegionChange
               ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
                         onClick={() => onRegionChange(id)}>{region.name}</button>

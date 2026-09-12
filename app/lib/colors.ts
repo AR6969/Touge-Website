@@ -23,8 +23,7 @@ export const characterColors: Record<string, string> = {
   "High speed": "#79cdf2",    // sky
 };
 
-// Amber is free now that Medium speed is green, and it reads as "point of
-// interest" without competing with any road colour.
+// Amber reads as "point of interest" without competing with any road colour.
 export const landmarkColor = "#ffc861";
 
 export function colorFor(character: string) {

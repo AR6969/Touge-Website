@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import RoadMap from "../../road-map";
 import ElevationProfile from "../../elevation-profile";
+import { mapRegions } from "../../lib/map-regions";
 import { SiteFooter, SiteHeader } from "../../site-chrome";
 import {
   curvatureRank, difficultyLabels, getRoad, nearbyRoads, roads, roadMapHref, slugifyArea, speedGuide,
@@ -199,7 +200,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </section>
 
         <div className="detail-bottom">
-          <Link href={roadMapHref(road)}>View on the {road.mapRegion === "los-angeles" ? "Los Angeles" : "Bay Area"} map →</Link>
+          <Link href={roadMapHref(road)}>View on the {road.mapRegion === "sierra" ? "California" : mapRegions[road.mapRegion ?? "bay-area"].name} map →</Link>
           <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Check road conditions ↗</a>
           <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
           <Link href="/roads">All {roads.length} roads →</Link>

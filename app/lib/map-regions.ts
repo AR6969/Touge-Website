@@ -47,7 +47,11 @@ export const mapRegions: Record<MapRegion, {
   },
   sierra: {
     name: "Sierra Nevada",
-    href: "/sierra",
+    // No dedicated page or nav tab by design — these roads are reached by
+    // panning the statewide map, not a peer region. This href only matters
+    // for roadMapHref(), so a Sierra road's own "view on map" link lands on
+    // the view that actually contains it.
+    href: "/?region=california",
     pickerTitle: "High Sierra passes & canyons",
     center: [-118.70, 37.20],
     // Sonora Pass in the north to Horseshoe Meadow in the south, the 395

@@ -48,7 +48,10 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .map-panel { flex: 1; position: relative; min-height: 0; background: #1d251f; }
 /* Higher specificity than Mapbox's position:relative rule prevents a collapsed map. */
 .map-panel > .map { position: absolute; inset: 0; width: 100%; height: 100%; }
-.character-filter { position: absolute; top: 20px; left: 22px; border: 1px solid #435249; border-radius: 7px; margin: 0; padding: 10px 11px 11px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
+/* Absolutely positioned as a group; the intro banner and the filter are plain
+   flow children so one stacks below the other instead of sitting on top of it. */
+.map-overlay-top { position: absolute; z-index: 2; top: 20px; left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: min(280px, calc(100% - 90px)); }
+.character-filter { border: 1px solid #435249; border-radius: 7px; margin: 0; padding: 10px 11px 11px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
 .character-filter legend { float: left; width: 100%; margin-bottom: 8px; padding: 0; color: #a4b4aa; font-size: 9px; text-transform: uppercase; letter-spacing: 1.4px; }
 .filter-options { display: flex; gap: 5px; clear: both; }
 /* Each filter carries its own colour, so the control doubles as the map key. */
@@ -63,7 +66,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 /* First-time onboarding: gone for good the moment a road or landmark is picked
    any way at all, so it never competes with the detail panel it is meant to
    lead into. */
-.map-intro { position: absolute; z-index: 2; top: 20px; left: 22px; max-width: min(260px, calc(100% - 90px)); padding: 12px 30px 12px 14px; border: 1px solid #435249; border-radius: 7px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
+.map-intro { position: relative; padding: 12px 30px 12px 14px; border: 1px solid #435249; border-radius: 7px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
 .map-intro .close { position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
 .map-intro-count { margin: 0; color: #f1f0e9; font-size: 13px; font-weight: 600; }
 .map-intro-hint { margin: 4px 0 0; color: #a4b4aa; font-size: 11.5px; }
@@ -115,8 +118,10 @@ summary { cursor: pointer; }
 .mini-stats { display: flex; gap: 20px; margin: 0 0 16px; padding-top: 13px; border-top: 1px solid #394d3f; }
 .mini-stats dt { color: #9eb1a4; font-size: 10px; text-transform: uppercase; letter-spacing: .8px; }
 .mini-stats dd { margin: 5px 0 0; font-size: 16px; font-weight: 500; }
-.detail-cta { display: block; padding: 11px 0 0; border-top: 1px solid #394d3f; color: var(--accent); font-size: 12px; text-decoration: none; }
-.detail-cta:hover { text-decoration: underline; }
+/* The one link every road tap leads to, so it reads as a button rather than
+   the plain text links around it — a clearer invitation to go one page deeper. */
+.detail-cta { display: block; margin-top: 15px; padding: 12px 14px; border: 0; border-radius: 6px; background: var(--accent); color: #16241c; font-size: 12.5px; font-weight: 600; text-align: center; text-decoration: none; }
+.detail-cta:hover { background: #bfe5d5; }
 
 /* The compact strip under the map on the home page. */
 /* ---- The strip under the map ---- */
@@ -295,8 +300,9 @@ summary { cursor: pointer; }
   .region { font-size: 12px; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
-  .character-filter { top: 10px; left: 10px; right: 62px; padding: 8px 9px 9px; max-width: none; }
-  .map-intro { top: 10px; left: 10px; right: 62px; max-width: none; padding: 10px 28px 10px 12px; }
+  .map-overlay-top { top: 10px; left: 10px; right: 62px; max-width: none; gap: 8px; }
+  .character-filter { padding: 8px 9px 9px; }
+  .map-intro { padding: 10px 28px 10px 12px; }
   .popular-roads { left: 12px; right: 12px; bottom: 90px; }
   .popular-roads button { padding: 7px 11px; font-size: 11px; }
   .character-filter legend { font-size: 8.5px; margin-bottom: 7px; letter-spacing: 1.1px; }
@@ -305,7 +311,6 @@ summary { cursor: pointer; }
   .character { flex: 0 0 auto; padding: 0 8px; font-size: 9.5px; min-height: 28px; gap: 5px; }
   .character i { width: 7px; height: 7px; }
   .chip-suffix { display: none; }
-  .character-filter { right: 62px; }
   .character-filter legend { font-size: 9px; margin-bottom: 8px; }
   .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; justify-content: flex-end; }
   .browse-roads { padding: 11px 10px; font-size: 10px; }

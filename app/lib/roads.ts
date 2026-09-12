@@ -79,7 +79,7 @@ export function landmarksFor(region: MapRegion) {
  * onboarding copy, not a ranking.
  */
 const popularIds: Record<MapRegion, string[]> = {
-  california: ["highway-9-front", "latigo-canyon", "palomar-south-grade", "tioga-pass"],
+  california: ["highway-9-front", "latigo-canyon", "palomar-south-grade", "17-mile"],
   "bay-area": ["highway-9-front", "page-mill", "skyline", "mines"],
   "los-angeles": ["latigo-canyon", "mulholland-highway-malibu", "angeles-crest-west", "ortega-highway"],
   "san-diego": ["palomar-south-grade", "sunrise-highway", "montezuma-grade", "palomar-east-grade"],

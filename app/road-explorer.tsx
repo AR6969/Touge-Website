@@ -126,7 +126,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
             current.addLayer({
               id: "landmark-dots", type: "circle", source: "landmarks",
               paint: {
-                "circle-color": landmarkColor, "circle-radius": 6,
+                "circle-color": landmarkColor, "circle-radius": 5,
                 "circle-stroke-width": 2.5, "circle-stroke-color": "#141918",
               },
             });
@@ -280,13 +280,37 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
   return (
     <section className="map-panel" aria-label={`${regionConfig.name} driving roads map`}>
       <div ref={container} className="map" />
-      {showIntro && (
-        <div className="map-intro" role="status">
-          <button className="close" aria-label="Dismiss" onClick={() => setIntroDismissed(true)}>×</button>
-          <p className="map-intro-count">{roads.length} {regionConfig.name} roads</p>
-          <p className="map-intro-hint">Tap a highlighted road to explore</p>
-        </div>
-      )}
+      {/* Stacked in normal flow rather than each independently positioned, so the
+          intro banner pushes the filter down instead of sitting on top of it. */}
+      <div className="map-overlay-top">
+        {showIntro && (
+          <div className="map-intro" role="status">
+            <button className="close" aria-label="Dismiss" onClick={() => setIntroDismissed(true)}>×</button>
+            <p className="map-intro-count">{roads.length} {regionConfig.name} roads</p>
+            <p className="map-intro-hint">Tap a highlighted road to explore</p>
+          </div>
+        )}
+        <fieldset className="character-filter">
+          <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
+          <div className="filter-options">
+            {characters.map(character => (
+              <button key={character} className="character" aria-pressed={enabled.includes(character)} aria-label={character}
+                      style={{ "--swatch": characterColors[character] } as React.CSSProperties}
+                      onClick={() => toggleCharacter(character)}>
+                {/* "speed" is dropped on narrow screens so all four fit one row;
+                    aria-label keeps the full name for assistive tech. */}
+                <i />
+                {/* One element, so the flex gap does not open a second space
+                    between "Low" and "speed". */}
+                <span className="chip-label">
+                  {character.replace(" speed", "")}
+                  {character.endsWith(" speed") && <span className="chip-suffix"> speed</span>}
+                </span>
+              </button>
+            ))}
+          </div>
+        </fieldset>
+      </div>
       {showIntro && popular.length > 0 && (
         <div className="popular-roads" aria-label="Popular roads">
           <span className="popular-roads-label">Popular nearby</span>
@@ -295,26 +319,6 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
           ))}
         </div>
       )}
-      <fieldset className="character-filter">
-        <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
-        <div className="filter-options">
-          {characters.map(character => (
-            <button key={character} className="character" aria-pressed={enabled.includes(character)} aria-label={character}
-                    style={{ "--swatch": characterColors[character] } as React.CSSProperties}
-                    onClick={() => toggleCharacter(character)}>
-              {/* "speed" is dropped on narrow screens so all four fit one row;
-                  aria-label keeps the full name for assistive tech. */}
-              <i />
-              {/* One element, so the flex gap does not open a second space
-                  between "Low" and "speed". */}
-              <span className="chip-label">
-                {character.replace(" speed", "")}
-                {character.endsWith(" speed") && <span className="chip-suffix"> speed</span>}
-              </span>
-            </button>
-          ))}
-        </div>
-      </fieldset>
       <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
       <div className="map-bottom">
         <a className="map-scroll-hint" href="#about">About this map ↓</a>
