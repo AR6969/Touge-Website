@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, roads, sanDiegoRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
 import { siteName, siteUrl } from "./lib/site";
@@ -30,7 +30,13 @@ const regions = [
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
   const { region } = await searchParams;
-  const mapRegion: MapRegion = region && Object.hasOwn(mapRegions, region) ? region as MapRegion : "california";
+  // Experiment, started 2026-09-12: first-time visitors used to land on the
+  // statewide view. At phone width a 9-mile road renders as ~3px there — too
+  // small to read as a road at all, and 76% of traffic is mobile. Bay Area
+  // opens roughly a zoom level closer. Revert to "california" if click-through
+  // from / into a road page (currently ~7%) doesn't improve within a couple
+  // of weeks of shipping this.
+  const mapRegion: MapRegion = region && Object.hasOwn(mapRegions, region) ? region as MapRegion : "bay-area";
 
   const structured = {
     "@context": "https://schema.org",
@@ -53,10 +59,10 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
         initialRegion={mapRegion}
         remember={!region}
         data={{
-          california: { roads: roads.map(toSummary), landmarks: landmarksFor("california") },
-          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
-          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles") },
-          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego") },
+          california: { roads: roads.map(toSummary), landmarks: landmarksFor("california"), popular: popularRoadsFor("california") },
+          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area"), popular: popularRoadsFor("bay-area") },
+          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles"), popular: popularRoadsFor("los-angeles") },
+          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
         }}
       />
       <main className="prose landing">

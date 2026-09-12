@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, roads as allRoads, sanDiegoRoads, slugifyArea, toSummary } from "../lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, slugifyArea, toSummary } from "../lib/roads";
 
 const roads = sanDiegoRoads;
 import { siteUrl } from "../lib/site";
@@ -37,10 +37,10 @@ export default function SanDiego() {
       <HomeMap
         initialRegion="san-diego"
         data={{
-          california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california") },
-          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area") },
-          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles") },
-          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego") },
+          california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california"), popular: popularRoadsFor("california") },
+          "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area"), popular: popularRoadsFor("bay-area") },
+          "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles"), popular: popularRoadsFor("los-angeles") },
+          "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
         }}
       />
       <MapIntro

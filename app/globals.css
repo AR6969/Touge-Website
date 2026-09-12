@@ -60,6 +60,18 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .character:hover { border-color: var(--swatch); }
 .clear-filters { float: right; padding: 0; border: 0; background: transparent; color: var(--accent); font-size: 9px; letter-spacing: 0; text-transform: none; }
 .reset { position: absolute; top: 88px; right: 10px; width: 31px; height: 32px; padding: 0; border: 0; border-radius: 4px; background: #fff; color: #222; font-size: 23px; box-shadow: 0 0 0 2px #0002; }
+/* First-time onboarding: gone for good the moment a road or landmark is picked
+   any way at all, so it never competes with the detail panel it is meant to
+   lead into. */
+.map-intro { position: absolute; z-index: 2; top: 20px; left: 22px; max-width: min(260px, calc(100% - 90px)); padding: 12px 30px 12px 14px; border: 1px solid #435249; border-radius: 7px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
+.map-intro .close { position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
+.map-intro-count { margin: 0; color: #f1f0e9; font-size: 13px; font-weight: 600; }
+.map-intro-hint { margin: 4px 0 0; color: #a4b4aa; font-size: 11.5px; }
+.popular-roads { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 84px; display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; pointer-events: none; }
+.popular-roads::-webkit-scrollbar { display: none; }
+.popular-roads-label { flex-shrink: 0; color: #9eb1a4; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.popular-roads button { flex-shrink: 0; padding: 8px 13px; border: 1px solid #435249; border-radius: 20px; background: #19221df5; color: #dfe8e0; font-size: 11.5px; white-space: nowrap; pointer-events: auto; box-shadow: 0 2px 10px #0003; }
+.popular-roads button:hover { border-color: var(--accent); color: #f3f7f2; }
 .map-bottom { position: absolute; z-index: 2; bottom: 35px; left: 24px; right: 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px; pointer-events: none; }
 i { display: inline-block; flex-shrink: 0; height: 7px; width: 7px; border-radius: 50%; }
 .legend-note { margin: 0; padding: 8px 12px; border: 1px solid #3d4b43; border-radius: 6px; background: #17201bf2; color: #93a69a; font-size: 10px; letter-spacing: .3px; }
@@ -284,6 +296,9 @@ summary { cursor: pointer; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
   .character-filter { top: 10px; left: 10px; right: 62px; padding: 8px 9px 9px; max-width: none; }
+  .map-intro { top: 10px; left: 10px; right: 62px; max-width: none; padding: 10px 28px 10px 12px; }
+  .popular-roads { left: 12px; right: 12px; bottom: 90px; }
+  .popular-roads button { padding: 7px 11px; font-size: 11px; }
   .character-filter legend { font-size: 8.5px; margin-bottom: 7px; letter-spacing: 1.1px; }
   .filter-options { flex-wrap: nowrap; overflow-x: auto; gap: 5px; scrollbar-width: none; }
   .filter-options::-webkit-scrollbar { display: none; }

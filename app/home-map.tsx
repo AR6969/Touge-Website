@@ -3,15 +3,32 @@
 import { useCallback, useEffect, useState } from "react";
 import RoadExplorer from "./road-explorer";
 import { SiteHeader } from "./site-chrome";
+import { track } from "./lib/analytics";
 import type { Landmark, RoadSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 
 type RegionData = {
   roads: RoadSummary[];
   landmarks: Landmark[];
+  popular: { id: string; name: string }[];
 };
 
 const STORAGE_KEY = "touge:region";
+
+/**
+ * Builds the shareable URL for a region, preserving whatever else is already
+ * on the query string — utm_* tags from a shared link above all — and
+ * dropping only `road`, since a region switch is the visitor choosing to
+ * browse rather than following a specific road's permalink.
+ */
+function urlForRegion(region: MapRegion): string {
+  if (typeof window === "undefined") return region === "california" ? "/" : `/?region=${region}`;
+  const params = new URLSearchParams(window.location.search);
+  params.delete("road");
+  if (region === "california") params.delete("region"); else params.set("region", region);
+  const query = params.toString();
+  return query ? `/?${query}` : "/";
+}
 
 export default function HomeMap({ initialRegion, data, remember = false }: {
   initialRegion: MapRegion;
@@ -28,8 +45,8 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
   // only its data and camera change. The URL is kept honest for sharing.
   const switchRegion = useCallback((next: MapRegion) => {
     setRegion(next);
-    const url = next === "california" ? "/" : `/?region=${next}`;
-    window.history.replaceState(null, "", url);
+    window.history.replaceState(null, "", urlForRegion(next));
+    track("switch_region", { region: next });
     // Storage can throw outright in private windows, so a failure to remember
     // must never take the switch down with it.
     try { window.localStorage.setItem(STORAGE_KEY, next); } catch { /* not remembered */ }
@@ -42,14 +59,14 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
     if (!remember) return;
     let stored: string | null = null;
     try { stored = window.localStorage.getItem(STORAGE_KEY); } catch { return; }
-    if (!stored || stored === "california" || !Object.hasOwn(mapRegions, stored)) return;
+    if (!stored || !Object.hasOwn(mapRegions, stored) || stored === initialRegion) return;
     // Deferred for the same reason as the map status updates: this must not run
     // synchronously inside the effect.
     queueMicrotask(() => {
       setRegion(stored as MapRegion);
-      window.history.replaceState(null, "", `/?region=${stored}`);
+      window.history.replaceState(null, "", urlForRegion(stored as MapRegion));
     });
-  }, [remember]);
+  }, [remember, initialRegion]);
 
   const selected = data[region];
   return (
@@ -57,7 +74,7 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
       <SiteHeader current="map" mapRegion={region} onRegionChange={switchRegion} />
       <div className="explorer">
         {/* No key: remounting would rebuild the whole Mapbox map on every switch. */}
-        <RoadExplorer roads={selected.roads} landmarks={selected.landmarks} region={region} />
+        <RoadExplorer roads={selected.roads} landmarks={selected.landmarks} popular={selected.popular} region={region} />
       </div>
     </>
   );

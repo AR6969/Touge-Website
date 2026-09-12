@@ -5,6 +5,7 @@ import Link from "next/link";
 import mapboxgl, { type ExpressionSpecification, type FilterSpecification } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import type { Landmark, RoadSummary } from "./lib/roads";
+import { track } from "./lib/analytics";
 import { characterColors, characters, colorFor, landmarkColor, type Character } from "./lib/colors";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { enablePinchZoom } from "./lib/pinch-zoom";
@@ -27,7 +28,7 @@ const EMPTY = { type: "FeatureCollection" as const, features: [] };
 const FIT_ON_OPEN = new Set<MapRegion>(["california", "los-angeles", "san-diego"]);
 const OPEN_PADDING = { top: 110, right: 40, bottom: 65, left: 40 };
 
-export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: { roads: RoadSummary[]; landmarks: Landmark[]; region?: MapRegion }) {
+export default function RoadExplorer({ roads, landmarks, popular = [], region = "bay-area" }: { roads: RoadSummary[]; landmarks: Landmark[]; popular?: { id: string; name: string }[]; region?: MapRegion }) {
   const regionConfig = mapRegions[region];
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
@@ -38,6 +39,10 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
   const [showRoads, setShowRoads] = useState(false);
   const [roadQuery, setRoadQuery] = useState("");
   const [landmark, setLandmark] = useState<string | null>(null);
+  // Shown once, to a visitor who has done nothing yet. Dismissed for good the
+  // moment they pick a road or landmark any way at all — clicking the map,
+  // opening the list, or tapping a "Popular" chip.
+  const [introDismissed, setIntroDismissed] = useState(false);
   const dataRef = useRef({ roads, landmarks });
   const regionRef = useRef(region);
   // Region payloads are cached so switching back is instant.
@@ -47,6 +52,16 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
   const matchingRoads = visible.filter(road => road.name.toLowerCase().includes(roadQuery.trim().toLowerCase()));
   const active = visible.find(road => road.id === selected);
   const activeLandmark = landmarks.find(mark => mark.name === landmark);
+  const showIntro = !introDismissed && !selected && !activeLandmark && !showRoads && status === "";
+
+  function chooseRoad(id: string, source: "map" | "picker" | "popular") {
+    setSelected(id); setLandmark(null); setShowRoads(false); setIntroDismissed(true);
+    track("select_road", { road_id: id, region, source });
+  }
+  function chooseLandmark(name: string) {
+    setLandmark(name); setSelected(null); setShowRoads(false); setIntroDismissed(true);
+    track("select_landmark", { landmark: name, region });
+  }
 
   useEffect(() => { dataRef.current = { roads, landmarks }; }, [roads, landmarks]);
 
@@ -129,15 +144,10 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
                 [[event.point.x - 8, event.point.y - 8], [event.point.x + 8, event.point.y + 8]];
               const marks = current.queryRenderedFeatures(box, { layers: ["landmark-dots", "landmark-names"] });
               const markName = marks[0]?.properties?.name;
-              if (typeof markName === "string") {
-                setLandmark(markName);
-                setSelected(null);
-                setShowRoads(false);
-                return;
-              }
+              if (typeof markName === "string") { chooseLandmark(markName); return; }
               const hits = current.queryRenderedFeatures(box, { layers: ["road-names", "road-hit", "road-dots"] });
               const id = hits[0]?.properties?.id;
-              if (typeof id === "string") { setSelected(id); setLandmark(null); setShowRoads(false); }
+              if (typeof id === "string") chooseRoad(id, "map");
             });
             current.on("mousemove", event => {
               current.getCanvas().style.cursor = current.queryRenderedFeatures(event.point, { layers: ["landmark-dots", "landmark-names", "road-names", "road-hit"] }).length ? "pointer" : "";
@@ -270,6 +280,21 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
   return (
     <section className="map-panel" aria-label={`${regionConfig.name} driving roads map`}>
       <div ref={container} className="map" />
+      {showIntro && (
+        <div className="map-intro" role="status">
+          <button className="close" aria-label="Dismiss" onClick={() => setIntroDismissed(true)}>×</button>
+          <p className="map-intro-count">{roads.length} {regionConfig.name} roads</p>
+          <p className="map-intro-hint">Tap a highlighted road to explore</p>
+        </div>
+      )}
+      {showIntro && popular.length > 0 && (
+        <div className="popular-roads" aria-label="Popular roads">
+          <span className="popular-roads-label">Popular nearby</span>
+          {popular.map(road => (
+            <button key={road.id} onClick={() => chooseRoad(road.id, "popular")}>{road.name}</button>
+          ))}
+        </div>
+      )}
       <fieldset className="character-filter">
         <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
         <div className="filter-options">
@@ -300,7 +325,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
           {regionConfig.pickerTitle}<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button>
           <input className="road-search" type="search" aria-label="Find a road" placeholder="Find a road…" value={roadQuery} onChange={event => setRoadQuery(event.target.value)} autoComplete="off" spellCheck={false} />
         </div>
-        {matchingRoads.map(road => <button key={road.id} onClick={() => { setSelected(road.id); setLandmark(null); setShowRoads(false); }}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
+        {matchingRoads.map(road => <button key={road.id} onClick={() => chooseRoad(road.id, "picker")}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
         {matchingRoads.length === 0 && <p role="status">No matching roads.{enabled.length > 0 && " Try clearing the road character filters."}</p>}
       </div>}
       {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
@@ -324,7 +349,7 @@ export default function RoadExplorer({ roads, landmarks, region = "bay-area" }: 
           <div><dt>Bends</dt><dd>{active.bends}</dd></div>
           <div><dt>Speed guide</dt><dd>{active.speed}</dd></div>
         </dl>
-        <Link className="detail-cta" href={`/roads/${active.id}`}>Full road guide, sources &amp; speed evidence →</Link>
+        <Link className="detail-cta" href={`/roads/${active.id}`} onClick={() => track("view_road_guide", { road_id: active.id, region })}>Full road guide, sources &amp; speed evidence →</Link>
       </article>}
     </section>
   );

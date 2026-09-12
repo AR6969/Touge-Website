@@ -71,6 +71,27 @@ export function landmarksFor(region: MapRegion) {
   return landmarks.filter(mark => mark.mapRegion === region);
 }
 
+/**
+ * A handful of recognizable names to put in front of a first-time visitor,
+ * so the map reads as "tap one of these" rather than a blank canvas of
+ * coloured lines. Hand-picked for name recognition, not measured — this is
+ * onboarding copy, not a ranking.
+ */
+const popularIds: Record<MapRegion, string[]> = {
+  california: ["highway-9-front", "latigo-canyon", "palomar-south-grade", "mines"],
+  "bay-area": ["highway-9-front", "page-mill", "skyline", "mines"],
+  "los-angeles": ["latigo-canyon", "mulholland-highway-malibu", "angeles-crest-west", "ortega-highway"],
+  "san-diego": ["palomar-south-grade", "sunrise-highway", "montezuma-grade", "palomar-east-grade"],
+};
+
+export function popularRoadsFor(region: MapRegion): { id: string; name: string }[] {
+  const byId = new Map(roads.map(road => [road.id, road]));
+  return popularIds[region]
+    .map(id => byId.get(id))
+    .filter((road): road is Road => Boolean(road))
+    .map(road => ({ id: road.id, name: road.name }));
+}
+
 const byCurvature = [...roads].sort((a, b) => b.shape.curvature - a.shape.curvature);
 const curvatureRanks = new Map(byCurvature.map((road, index) => [road.id, index + 1]));
 
