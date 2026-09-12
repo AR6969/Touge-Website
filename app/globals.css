@@ -318,8 +318,17 @@ summary { cursor: pointer; }
   .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; justify-content: flex-end; }
   .browse-roads { padding: 11px 10px; font-size: 10px; }
   .browse-roads span { margin-left: 8px; }
-  .detail { left: 12px; width: calc(100% - 24px); bottom: 105px; padding: 18px; max-height: min(340px, calc(100% - 245px)); }
-  .detail h2 { font-size: 21px; }
+  /* Shorter than the desktop card: a road picked on a phone was covering most
+     of the map it's meant to show, not just a corner of it. Clamping the
+     description to two lines — rather than shrinking the card until its own
+     "full guide" button scrolled out of view — keeps the button, the actual
+     point of this card, on screen without a scroll. */
+  .detail { left: 12px; width: calc(100% - 24px); bottom: 105px; padding: 16px; max-height: min(300px, calc(100% - 280px)); }
+  .detail h2 { margin-bottom: 8px; font-size: 21px; }
+  .detail .road-badges { margin-bottom: 8px; }
+  .detail p:not(.eyebrow) { margin-bottom: 8px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .detail .mini-stats { margin-bottom: 8px; padding-top: 8px; }
+  .detail .detail-cta { margin-top: 8px; }
   .road-picker { left: 12px; right: 12px; bottom: 105px; width: auto; max-height: calc(100% - 230px); }
   /* The area is already in the breadcrumb directly above; two long badges made
      the row wrap into uneven boxes. */
