@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   // and description are used instead.
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
+  // iOS was reading text like "68 Bay Area roads" as a street address and
+  // making it tappable into Maps. Numbers next to place names show up all
+  // over this site (road counts, mile figures), so this is turned off globally
+  // rather than patched around one heading.
+  formatDetection: { telephone: false, address: false, email: false },
   // Set once a property exists in Google Search Console: Settings → Ownership
   // verification → HTML tag → the content="..." value, not the whole tag.
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION

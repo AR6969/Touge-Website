@@ -296,7 +296,10 @@ summary { cursor: pointer; }
   .brand { font-size: 19px; }
   .brand-symbol { font-size: 22px; margin-right: 8px; }
   .brand-tagline { font-size: 9px; }
-  .header nav { gap: 25px; flex: 1; }
+  /* The nav's own box already stretches full width (align-self:stretch, set
+     for the desktop row layout); without this its flex-start default left
+     the tabs bunched at the left edge with the rest of the row empty. */
+  .header nav { gap: 25px; flex: 1; justify-content: flex-end; }
   .region { font-size: 12px; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
