@@ -1,0 +1,6 @@
+[out:json][timeout:180];
+(
+way[highway~"^(primary|secondary|tertiary|unclassified|residential)$"][name~"^(Rock Creek Road|Horseshoe Meadows Road|Nine Mile Canyon Road|Bishop Creek Canyon Road|South Lake Road|Kaiser Pass Road|Tollhouse Road|Huntington Lake Road)$"](35.3,-120.5,38.9,-117.5);
+way[highway~"^(primary|secondary|trunk)$"][ref~"^CA (108|120|168)$"](35.3,-120.5,38.9,-117.5);
+);
+out geom;

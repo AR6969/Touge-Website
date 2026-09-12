@@ -39,6 +39,11 @@ export default function MethodPage() {
             Each road links to the discussions it came from, so you can judge the sourcing yourself rather than taking
             our word for it.
           </p>
+          <p>
+            The Sierra Nevada collection was requested directly rather than found in a forum thread, so its sourcing
+            leans on official agency pages (NPS, USFS) and enthusiast route write-ups instead, linked from each
+            road&apos;s own page.
+          </p>
         </section>
 
         <section aria-labelledby="difficulty">

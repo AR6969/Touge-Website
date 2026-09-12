@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { colorFor } from "./lib/colors";
 import { siteName, siteUrl } from "./lib/site";
 
 const title = "Best Driving Roads in California";
 const description =
-  "Every good driving road in California on two maps — the Bay Area and Los Angeles. Corner counts measured " +
-  "from OpenStreetMap geometry, elevation from USGS data, and a source behind every speed figure.";
+  "Every good driving road in California across four maps — the Bay Area, Los Angeles, San Diego and the " +
+  "Sierra Nevada. Corner counts measured from OpenStreetMap geometry, elevation from USGS data, and a source " +
+  "behind every speed figure.";
 
 export const metadata: Metadata = {
   title,
@@ -26,6 +27,7 @@ const regions = [
   { id: "bay-area" as const, roads: bayAreaRoads, blurb: "The Peninsula ridge roads, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey." },
   { id: "los-angeles" as const, roads: losAngelesRoads, blurb: "The Malibu canyons, the Angeles and San Gabriel mountains, and the Orange County hills." },
   { id: "san-diego" as const, roads: sanDiegoRoads, blurb: "Palomar Mountain, the Laguna and Cuyamaca ranges, and the North County back roads." },
+  { id: "sierra" as const, roads: sierraRoads, blurb: "Tioga and Sonora Pass, Rock Creek Road and the other high Sierra climbs along Highway 395." },
 ];
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ region?: string }> }) {
@@ -63,6 +65,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area"), popular: popularRoadsFor("bay-area") },
           "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles"), popular: popularRoadsFor("los-angeles") },
           "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
+          sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
         }}
       />
       <main className="prose landing">

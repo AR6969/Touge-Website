@@ -1,7 +1,7 @@
 # California Touge
 
 A map and reference for California driving roads, including the Bay Area, Los Angeles,
-Malibu, the Angeles/San Gabriel Mountains, Orange County and San Diego.
+Malibu, the Angeles/San Gabriel Mountains, Orange County, San Diego and the Sierra Nevada.
 Every road has its own page with a map, corner statistics measured from OpenStreetMap
 geometry, difficulty and character ratings, and the source behind any speed figure shown.
 
@@ -31,6 +31,7 @@ Set these in `.env.local` (not committed):
 | `/?region=bay-area` | Bay Area map |
 | `/los-angeles` | LA map, including Malibu, the Angeles/San Gabriel Mountains and Orange County |
 | `/san-diego` | San Diego map |
+| `/sierra` | Sierra Nevada map: Tioga Pass, Sonora Pass and the other high passes and canyons |
 | `/roads` | All roads in one comparison table |
 | `/roads/[slug]` | One road: map, shape statistics, speed evidence, sources, nearby roads |
 | `/regions` and `/regions/[slug]` | Roads grouped by area |
@@ -72,6 +73,23 @@ when present. Selected Southern California traces follow connected OSM nodes on 
 specified roads; a missing connection fails the build instead of drawing a shortcut.
 These traces are not navigation itineraries. See `docs/los-angeles-road-research.md`
 for the research and the editorial source file for the published section boundaries.
+
+The Sierra Nevada region follows the same bbox-clip approach as the Bay Area builder
+rather than the LA anchor-graph tracer: each road there is a single named highway or
+mountain road with unambiguous endpoints, not an urban grid needing disambiguation.
+Its Overpass snapshot is fetched per-road (a compound name+ref query in one bbox
+reliably timed out) and checked in at `data/sierra-overpass.json`:
+
+```bash
+python3 scripts/fetch-sierra-overpass.py   # resumable; only fetches what's missing
+python3 scripts/build-sierra-road-data.py
+python3 scripts/fetch-elevation.py
+python3 scripts/build-derived-data.py
+```
+
+Like the LA builder, this replaces only the region it manages (`mapRegion: 'sierra'`)
+and preserves every other region's archive entries. See `docs/sierra-road-research.md`
+for sourcing, including why US 395 itself isn't catalogued as a road.
 
 | Path | Stage | Notes |
 | --- | --- | --- |

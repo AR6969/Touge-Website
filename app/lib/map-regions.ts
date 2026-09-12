@@ -1,4 +1,4 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra";
 
 export const mapRegions: Record<MapRegion, {
   name: string;
@@ -44,5 +44,14 @@ export const mapRegions: Record<MapRegion, {
     pickerTitle: "San Diego & the backcountry",
     center: [-116.90, 33.15],
     bounds: [[-117.45, 32.75], [-116.25, 33.55]],
+  },
+  sierra: {
+    name: "Sierra Nevada",
+    href: "/sierra",
+    pickerTitle: "High Sierra passes & canyons",
+    center: [-118.70, 37.20],
+    // Sonora Pass in the north to Horseshoe Meadow in the south, the 395
+    // corridor roughly down the middle, plus the western-slope Hwy 168 climb.
+    bounds: [[-119.55, 36.30], [-117.85, 38.55]],
   },
 };
