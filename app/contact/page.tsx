@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
+import { contactEmail } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact California Touge.",
+  description: "Contact California Touge with a road suggestion, correction or question about TougeMap.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    url: "/contact",
+    title: "Contact California Touge",
+    description: "Send a road suggestion, correction or question about TougeMap.",
+  },
 };
 
 const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT?.trim();
@@ -35,7 +42,15 @@ export default function ContactPage() {
             <button type="submit">Send message</button>
           </form>
         ) : (
-          <p className="contact-unavailable">The contact form is being set up. Please check back shortly.</p>
+          // No form backend configured (NEXT_PUBLIC_FORMSPREE_ENDPOINT unset).
+          // A mailto link needs no third-party account, so this is never a
+          // dead end while that's being set up.
+          <div className="contact-fallback">
+            <p>Send a road suggestion, correction or question straight to our inbox:</p>
+            <a className="contact-email-cta" href={`mailto:${contactEmail}?subject=${encodeURIComponent("California Touge contact")}`}>
+              Email {contactEmail} →
+            </a>
+          </div>
         )}
       </main>
       <SiteFooter />

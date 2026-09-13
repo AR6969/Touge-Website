@@ -70,7 +70,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .map-intro .close { position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
 .map-intro-count { margin: 0; color: #f1f0e9; font-size: 13px; font-weight: 600; }
 .map-intro-hint { margin: 4px 0 0; color: #a4b4aa; font-size: 11.5px; }
-.popular-roads { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 84px; display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; pointer-events: none; }
+.popular-roads { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 90px; display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; }
 .popular-roads::-webkit-scrollbar { display: none; }
 .popular-roads-label { flex-shrink: 0; color: #9eb1a4; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
 .popular-roads button { flex-shrink: 0; padding: 8px 13px; border: 1px solid #435249; border-radius: 20px; background: #19221df5; color: #dfe8e0; font-size: 11.5px; white-space: nowrap; pointer-events: auto; box-shadow: 0 2px 10px #0003; }
@@ -122,6 +122,24 @@ summary { cursor: pointer; }
    the plain text links around it — a clearer invitation to go one page deeper. */
 .detail-cta { display: block; margin-top: 15px; padding: 12px 14px; border: 0; border-radius: 6px; background: var(--accent); color: #16241c; font-size: 12.5px; font-weight: 600; text-align: center; text-decoration: none; }
 .detail-cta:hover { background: #bfe5d5; }
+.road-preview .detail-cta { margin: 0 0 12px; }
+.detail h2 { padding-right: 20px; }
+.browse-drives { pointer-events: auto; display: inline-flex; align-items: center; min-height: 44px; padding: 10px 13px; border: 1px solid #435249; border-radius: 5px; background: #19221df5; color: var(--accent); text-decoration: none; font-size: 13px; }
+.browse-roads { min-height: 44px; font-size: 13px; }
+.picker-road { display: flex; align-items: stretch; border-bottom: 1px solid #2d3b33; }
+.picker-road > a { display: flex; flex: 1; min-width: 0; gap: 10px; align-items: center; padding: 14px 12px; color: var(--foreground); font-size: 14px; text-decoration: none; }
+.picker-road > a > span:first-of-type { flex: 1; }
+.picker-road small { font-size: 12px; line-height: 1.5; }
+.picker-road > button { align-self: center; min-width: 44px; min-height: 44px; margin-right: 8px; padding: 8px; border: 1px solid #435249; border-radius: 5px; background: transparent; color: var(--accent); font-size: 12px; }
+.picker-road > a:hover, .picker-road > button:hover { background: #293930; }
+.road-picker { z-index: 3; overscroll-behavior: contain; }
+.detail { overscroll-behavior: contain; }
+.map-panel .close, .map-intro .close { width: 44px; height: 44px; }
+.map-intro { padding-right: 46px; }
+.popular-roads button { min-height: 44px; }
+.map-panel .mapboxgl-ctrl-group button { width: 44px; height: 44px; }
+.reset { top: 108px; width: 44px; height: 44px; }
+.map-status button { min-height: 44px; }
 
 /* The compact strip under the map on the home page. */
 /* ---- The strip under the map ---- */
@@ -289,7 +307,9 @@ summary { cursor: pointer; }
 .contact-form input, .contact-form textarea { width: 100%; border: 1px solid #435249; border-radius: 5px; padding: 11px 12px; background: #1b241f; color: var(--foreground); font: inherit; font-size: 16px; }
 .contact-form textarea { resize: vertical; }
 .contact-form button { justify-self: start; border: 0; border-radius: 5px; padding: 12px 17px; background: #dce8da; color: #233129; font-size: 12px; }
-.contact-unavailable { color: #b8c8bd; }
+.contact-fallback p { color: #b8c8bd; font-size: 14px; margin-bottom: 16px; }
+.contact-email-cta { display: inline-block; border-radius: 5px; padding: 12px 17px; background: #dce8da; color: #233129; font-size: 13px; font-weight: 600; text-decoration: none; }
+.contact-email-cta:hover { background: #c8dcc4; }
 
 @media (max-width: 640px) {
   .header { height: 100px; padding: 12px 17px 0; flex-direction: column; align-items: flex-start; gap: 8px; }
@@ -299,37 +319,38 @@ summary { cursor: pointer; }
   /* The nav's own box already stretches full width (align-self:stretch, set
      for the desktop row layout); without this its flex-start default left
      the tabs bunched at the left edge with the rest of the row empty. */
-  .header nav { gap: 25px; flex: 1; justify-content: flex-end; }
+  .header nav { gap: 18px; flex: 1; justify-content: flex-end; }
   .region { font-size: 12px; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
   .map-overlay-top { top: 10px; left: 10px; right: 62px; max-width: none; gap: 8px; }
   .character-filter { padding: 8px 9px 9px; }
-  .map-intro { padding: 10px 28px 10px 12px; }
+  .map-intro { padding: 10px 44px 10px 12px; }
   .popular-roads { left: 12px; right: 12px; bottom: 90px; }
   .popular-roads button { padding: 7px 11px; font-size: 11px; }
   .character-filter legend { font-size: 8.5px; margin-bottom: 7px; letter-spacing: 1.1px; }
   .filter-options { flex-wrap: nowrap; overflow-x: auto; gap: 5px; scrollbar-width: none; }
   .filter-options::-webkit-scrollbar { display: none; }
-  .character { flex: 0 0 auto; padding: 0 8px; font-size: 9.5px; min-height: 28px; gap: 5px; }
+  .character { flex: 1 0 auto; padding: 0 6px; font-size: 10px; min-height: 44px; gap: 4px; }
   .character i { width: 7px; height: 7px; }
   .chip-suffix { display: none; }
   .character-filter legend { font-size: 9px; margin-bottom: 8px; }
-  .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; justify-content: flex-end; }
-  .browse-roads { padding: 11px 10px; font-size: 10px; }
+  .map-bottom { left: 12px; right: 12px; bottom: 35px; align-items: flex-end; gap: 7px; justify-content: space-between; }
+  .browse-roads, .browse-drives { padding: 10px; font-size: 12px; }
   .browse-roads span { margin-left: 8px; }
   /* Shorter than the desktop card: a road picked on a phone was covering most
      of the map it's meant to show, not just a corner of it. Clamping the
      description to two lines — rather than shrinking the card until its own
      "full guide" button scrolled out of view — keeps the button, the actual
      point of this card, on screen without a scroll. */
-  .detail { left: 12px; width: calc(100% - 24px); bottom: 105px; padding: 16px; max-height: min(300px, calc(100% - 280px)); }
+  .detail { left: 12px; width: calc(100% - 24px); bottom: 90px; padding: 16px; max-height: min(300px, calc(100% - 210px)); }
   .detail h2 { margin-bottom: 8px; font-size: 21px; }
   .detail .road-badges { margin-bottom: 8px; }
-  .detail p:not(.eyebrow) { margin-bottom: 8px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .detail p:not(.eyebrow) { margin-bottom: 8px; }
+  .detail .road-preview-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
   .detail .mini-stats { margin-bottom: 8px; padding-top: 8px; }
   .detail .detail-cta { margin-top: 8px; }
-  .road-picker { left: 12px; right: 12px; bottom: 105px; width: auto; max-height: calc(100% - 230px); }
+  .road-picker { left: 12px; right: 12px; bottom: 90px; width: auto; max-height: calc(100% - 205px); }
   /* The area is already in the breadcrumb directly above; two long badges made
      the row wrap into uneven boxes. */
   .road-badges .badge-area { display: none; }
@@ -351,4 +372,6 @@ summary { cursor: pointer; }
   .drive-map { height: 340px; }
   .site-footer { padding: 22px 18px 34px; }
   .guide-roads { grid-template-columns: 1fr; }
+  .landing .card-list, .region-choice { grid-template-columns: minmax(0, 1fr); }
+  .landing .card-body { font-size: 14px; }
 }
