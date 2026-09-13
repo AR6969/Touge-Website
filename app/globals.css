@@ -122,6 +122,8 @@ summary { cursor: pointer; }
    the plain text links around it — a clearer invitation to go one page deeper. */
 .detail-cta { display: block; margin-top: 15px; padding: 12px 14px; border: 0; border-radius: 6px; background: var(--accent); color: #16241c; font-size: 12.5px; font-weight: 600; text-align: center; text-decoration: none; }
 .detail-cta:hover { background: #bfe5d5; }
+.detail-cta { min-height: 44px; }
+.empty-hint button { min-height: 44px; border: 0; background: transparent; color: var(--accent); text-decoration: underline; }
 .road-preview .detail-cta { margin: 0 0 12px; }
 .detail h2 { padding-right: 20px; }
 .browse-drives { pointer-events: auto; display: inline-flex; align-items: center; min-height: 44px; padding: 10px 13px; border: 1px solid #435249; border-radius: 5px; background: #19221df5; color: var(--accent); text-decoration: none; font-size: 13px; }
@@ -224,6 +226,13 @@ summary { cursor: pointer; }
 .card-list strong { font-size: 15px; font-weight: 500; letter-spacing: -.2px; }
 .card-meta { display: flex; align-items: center; gap: 7px; color: #93a699; font-size: 12px; }
 .card-body { color: #93a699; font-size: 12.5px; line-height: 1.6; }
+.road-directory { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+.road-directory a { display: flex; flex-direction: column; gap: 4px; min-height: 64px; padding: 13px 0; border-bottom: 1px solid #2f3b34; text-decoration: none; }
+.road-directory strong { color: var(--foreground); font-size: 15px; font-weight: 500; }
+.road-directory span { color: #a4b4aa; font-size: 12px; }
+.road-directory a:hover strong { color: var(--accent); }
+.road-comparison summary { min-height: 44px; padding-block: 10px; color: var(--accent); }
+.prose h2[id] { scroll-margin-top: 24px; }
 
 .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1px; margin: 0 0 18px; padding: 0; background: #2f3b34; border: 1px solid #2f3b34; border-radius: 8px; overflow: hidden; }
 .stat-grid > div { padding: 16px 18px; background: #19211d; }
@@ -299,17 +308,22 @@ summary { cursor: pointer; }
 .site-footer p { max-width: 90ch; margin: 0 auto 8px; }
 .site-footer a { color: #a9c6b5; }
 .footer-contact { margin-top: 18px !important; }
-.contact-page { max-width: 680px; padding-top: 70px; padding-bottom: 90px; }
-.back-link { display: inline-block; margin-bottom: 46px; color: var(--accent); font-size: 13px; text-decoration: none; }
-.contact-page h1 { margin-bottom: 28px; }
-.contact-form { display: grid; gap: 18px; max-width: 520px; }
+/* Same breadcrumb + h1 + lede rhythm as /method and every other content page,
+   rather than the one-off back-link and self-referential "California Touge"
+   eyebrow this used to open with. */
+.contact-page { max-width: 680px; }
+.contact-card { margin-top: 32px; padding: 28px; border: 1px solid #435249; border-radius: 8px; background: #18211df5; }
+.contact-form { display: grid; gap: 18px; max-width: 460px; }
 .contact-form label { display: grid; gap: 7px; color: #a9b9ad; font-size: 11px; letter-spacing: .7px; text-transform: uppercase; }
 .contact-form input, .contact-form textarea { width: 100%; border: 1px solid #435249; border-radius: 5px; padding: 11px 12px; background: #1b241f; color: var(--foreground); font: inherit; font-size: 16px; }
 .contact-form textarea { resize: vertical; }
-.contact-form button { justify-self: start; border: 0; border-radius: 5px; padding: 12px 17px; background: #dce8da; color: #233129; font-size: 12px; }
-.contact-fallback p { color: #b8c8bd; font-size: 14px; margin-bottom: 16px; }
-.contact-email-cta { display: inline-block; border-radius: 5px; padding: 12px 17px; background: #dce8da; color: #233129; font-size: 13px; font-weight: 600; text-decoration: none; }
-.contact-email-cta:hover { background: #c8dcc4; }
+.contact-form button { justify-self: start; border: 0; border-radius: 6px; padding: 12px 18px; background: var(--accent); color: #16241c; font-size: 12.5px; font-weight: 600; }
+.contact-form button:hover { background: #bfe5d5; }
+.contact-fallback p { color: #b8c8bd; font-size: 14px; margin: 0 0 18px; }
+/* .prose a (specificity 0,1,1) would otherwise beat a single class here and
+   repaint the button text the same mint as its own background. */
+.contact-card a.contact-email-cta { display: inline-block; border-radius: 6px; padding: 12px 18px; background: var(--accent); color: #16241c; font-size: 13px; font-weight: 600; text-decoration: none; }
+.contact-card a.contact-email-cta:hover { background: #bfe5d5; }
 
 @media (max-width: 640px) {
   .header { height: 100px; padding: 12px 17px 0; flex-direction: column; align-items: flex-start; gap: 8px; }
@@ -319,7 +333,8 @@ summary { cursor: pointer; }
   /* The nav's own box already stretches full width (align-self:stretch, set
      for the desktop row layout); without this its flex-start default left
      the tabs bunched at the left edge with the rest of the row empty. */
-  .header nav { gap: 18px; flex: 1; justify-content: flex-end; }
+  .header nav { gap: clamp(8px, 3vw, 18px); flex: 1; justify-content: flex-end; }
+  .header .region { white-space: nowrap; }
   .region { font-size: 12px; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
@@ -374,4 +389,15 @@ summary { cursor: pointer; }
   .guide-roads { grid-template-columns: 1fr; }
   .landing .card-list, .region-choice { grid-template-columns: minmax(0, 1fr); }
   .landing .card-body { font-size: 14px; }
+  .road-directory { grid-template-columns: minmax(0, 1fr); }
+  .card-meta { flex-wrap: wrap; }
+  .detail-cta { min-height: 44px; }
+}
+
+@media (min-width: 641px) and (max-height: 500px) {
+  .explorer { height: calc(100dvh - 74px); min-height: 300px; }
+  .map-panel .detail, .road-picker { left: auto; right: 70px; top: 12px; bottom: 88px; width: min(340px, 45%); max-height: none; }
+  .map-panel .detail { padding: 16px; }
+  .map-panel .detail h2 { font-size: 21px; }
+  .map-overlay-top { top: 12px; left: 12px; max-width: 280px; }
 }
