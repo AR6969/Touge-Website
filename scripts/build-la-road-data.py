@@ -16,7 +16,7 @@ archive = json.loads(archive_path.read_text())
 # This script owns every southern-California spec, not just the LA-region ones,
 # so it must replace all of them. Matching only mapRegion == 'los-angeles' left
 # San Diego roads behind and duplicated them on the next run.
-managed = {road['id'] for road in existing if road.get('mapRegion', 'bay-area') != 'bay-area'}
+managed = {road['id'] for road in existing if road.get('mapRegion') in {'los-angeles', 'san-diego'}}
 old_ids = managed | {road['id'] for road in catalog}
 catalog = [road for road in existing if road['id'] not in old_ids] + catalog
 features = [feature for feature in archive['features']

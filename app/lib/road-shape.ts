@@ -1,5 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
+import { selectDriveSection, type RoadTrace } from "./drive-geometry";
+import type { Drive } from "./drives";
 
 type Line = [number, number][];
 
@@ -63,4 +65,13 @@ export async function roadShapeUri(id: string, width: number, height: number, st
 /** Every road at once, for the site-wide share card. */
 export async function collectionShapeUri(width: number, height: number, stroke: string) {
   return toDataUri(await loadLines("roads.geojson"), width, height, stroke, 2.5);
+}
+
+/** The same selected road sections as a driving guide's map. */
+export async function driveShapeUri(drive: Drive, width: number, height: number, stroke: string) {
+  const lines = await Promise.all(drive.steps.filter(step => step.roadId).map(async step => {
+    const feature = JSON.parse(await readFile(join(process.cwd(), "public/data/roads", `${step.roadId}.geojson`), "utf8")) as RoadTrace;
+    return readLines(selectDriveSection(feature, step.mapSection) as unknown as Parameters<typeof readLines>[0]);
+  }));
+  return toDataUri(lines.flat(), width, height, stroke, 7);
 }

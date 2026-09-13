@@ -28,6 +28,8 @@ export default function RoadMap({ id, name, bounds, color }: {
     let instance: mapboxgl.Map | undefined;
     let observer: ResizeObserver | undefined;
     let detachPinch: (() => void) | undefined;
+    let ready: number | undefined;
+    let slow: number | undefined;
     const abort = new AbortController();
     // Deferred so the status updates below never run synchronously inside the effect.
     const updateStatus = (message: string) => { if (!disposed) setStatus(message); };
@@ -40,6 +42,7 @@ export default function RoadMap({ id, name, bounds, color }: {
       const map = new mapboxgl.Map({
         container: container.current, accessToken: token, attributionControl: false,
         style: "mapbox://styles/mapbox/dark-v11", bounds, fitBoundsOptions: { padding: 40 },
+        cooperativeGestures: true,
       });
       instance = map;
       detachPinch = enablePinchZoom(map, container.current);
@@ -72,14 +75,14 @@ export default function RoadMap({ id, name, bounds, color }: {
       // listeners attach, no event ever arrives and the overlay sticks. Poll
       // the actual readiness flag as well, so the outcome does not depend on
       // winning a race.
-      const ready = window.setInterval(() => {
+      ready = window.setInterval(() => {
         if (disposed || started) { window.clearInterval(ready); return; }
         if (map.isStyleLoaded()) { window.clearInterval(ready); begin(); }
       }, 200);
 
       map.on("error", () => { if (!loaded) updateStatus("The map could not finish loading."); });
       // Same reason as the explorer: fail loudly rather than sitting on "Loading map…".
-      window.setTimeout(() => {
+      slow = window.setTimeout(() => {
         if (!loaded && !disposed) updateStatus("The map is taking longer than expected. Reload to try again.");
       }, 10000);
       observer = new ResizeObserver(() => map.resize());
@@ -87,11 +90,16 @@ export default function RoadMap({ id, name, bounds, color }: {
     } catch {
       queueMicrotask(() => updateStatus("The map could not start. Try another browser or enable graphics acceleration."));
     }
-    return () => { disposed = true; abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove(); };
+    return () => {
+      disposed = true;
+      window.clearInterval(ready);
+      window.clearTimeout(slow);
+      abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove();
+    };
   }, [id, color, bounds]);
 
   return (
-    <div className="road-map" role="img" aria-label={`Map of ${name}`}>
+    <div className="road-map" role="region" aria-label={`Interactive map of ${name}`}>
       <div ref={container} className="map" />
       {status && <p className="road-map-status" role="status">{status}</p>}
     </div>

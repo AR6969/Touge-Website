@@ -9486,7 +9486,7 @@
     "area": "Angeles / San Gabriel Mountains",
     "difficulty": 3,
     "character": "Technical",
-    "description": "The climb from the Glendora foothills to East Fork Road, passing the Glendora Ridge junction on the way.",
+    "description": "The technical climb from Big Dalton Canyon Road in Glendora, over the ridge junction and down to East Fork Road. Mountain views and repeated tight bends lead into the more open canyon roads below.",
     "sources": [
       {
         "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
@@ -9495,6 +9495,10 @@
       {
         "title": "Reddit, r/BikeLA · GMR closed to cars Labor Day",
         "url": "https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/"
+      },
+      {
+        "title": "LA County · current mountain road closures",
+        "url": "https://pw.lacounty.gov/roadclosures/"
       }
     ],
     "speed": {
@@ -9508,10 +9512,11 @@
       "url": "https://pw.lacounty.gov/roadclosures/",
       "checked": "2026-09-09"
     },
+    "reviewed": "2026-09-13",
     "mapRegion": "los-angeles",
     "center": [
-      -117.841682,
-      34.1880342
+      -117.8247558,
+      34.2016612
     ],
     "bounds": [
       [
@@ -9519,14 +9524,13 @@
         34.1591826
       ],
       [
-        -117.808757,
-        34.2069396
+        -117.7719535,
+        34.2298357
       ]
     ],
     "osmWayIds": [
       31525773
     ],
-    "reviewed": "2026-09-09",
     "mappedSpeed": "Not verified",
     "taggedPercent": 0,
     "geometryEvidence": {
@@ -9537,110 +9541,110 @@
         34.1591826
       ],
       "end": [
-        -117.808757,
-        34.2040389
+        -117.771983,
+        34.2290588
       ],
       "wayNames": [
         "Glendora Mountain Road"
       ]
     },
     "shape": {
-      "lengthMi": 7.5,
-      "bends": 71,
-      "switchbacks": 14,
-      "curvature": 1070,
+      "lengthMi": 12.4,
+      "bends": 118,
+      "switchbacks": 28,
+      "curvature": 1108,
       "bendsPerMile": 9.5
     },
     "elevation": {
-      "climbFt": 2059,
+      "climbFt": 3500,
       "highFt": 3440,
       "lowFt": 1600,
       "reliefFt": 1840,
-      "maxGradient": 6.0,
-      "climbPerMile": 275
+      "maxGradient": 6.5,
+      "climbPerMile": 282
     },
     "profile": {
       "points": [
         1592,
-        1621,
-        1657,
-        1689,
-        1722,
-        1750,
-        1782,
-        1815,
-        1846,
-        1881,
-        1913,
-        1946,
-        1977,
-        2011,
-        2048,
-        2077,
-        2105,
-        2139,
-        2175,
-        2201,
-        2235,
-        2266,
-        2302,
-        2334,
-        2365,
-        2393,
-        2424,
-        2442,
-        2466,
-        2496,
-        2531,
-        2560,
-        2592,
-        2622,
-        2651,
-        2686,
-        2717,
-        2745,
-        2776,
-        2811,
-        2841,
-        2868,
-        2903,
-        2931,
-        2964,
-        2995,
-        3027,
-        3053,
-        3084,
-        3110,
-        3143,
+        1645,
+        1698,
+        1748,
+        1799,
+        1853,
+        1909,
+        1963,
+        2017,
+        2072,
+        2119,
+        2179,
+        2225,
+        2280,
+        2335,
+        2384,
+        2432,
+        2465,
+        2516,
+        2568,
+        2618,
+        2672,
+        2722,
+        2771,
+        2825,
+        2872,
+        2924,
+        2978,
+        3029,
+        3073,
+        3121,
         3168,
-        3192,
-        3198,
-        3176,
-        3153,
-        3151,
-        3178,
-        3201,
-        3240,
-        3272,
-        3303,
-        3326,
-        3349,
-        3378,
-        3406,
-        3431,
-        3442,
-        3418,
-        3375,
-        3332,
-        3312
+        3200,
+        3170,
+        3148,
+        3188,
+        3246,
+        3299,
+        3337,
+        3383,
+        3425,
+        3439,
+        3372,
+        3305,
+        3245,
+        3196,
+        3149,
+        3097,
+        3052,
+        2999,
+        2957,
+        2893,
+        2862,
+        2804,
+        2759,
+        2707,
+        2645,
+        2612,
+        2555,
+        2502,
+        2452,
+        2401,
+        2350,
+        2302,
+        2250,
+        2185,
+        2147,
+        2107,
+        2046,
+        1983,
+        1924,
+        1864
       ],
-      "miles": 7.5,
+      "miles": 12.4,
       "coverage": 100
     },
     "score": {
       "score": 70,
       "corners": 31,
-      "climb": 19,
+      "climb": 20,
       "technical": 20
     }
   },
@@ -12051,6 +12055,12 @@
       "note": "No posted limit has been verified for this selected section. Follow current signs.",
       "source": null
     },
+    "access": {
+      "note": "Check vehicle access on East Fork and Glendora Mountain Road before planning a loop; gates and fire restrictions can change.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
     "mapRegion": "los-angeles",
     "center": [
       -117.8123556,
@@ -12080,7 +12090,6 @@
       53090259,
       699825172
     ],
-    "reviewed": "2026-09-09",
     "mappedSpeed": "Not verified",
     "taggedPercent": 0,
     "geometryEvidence": {
@@ -23138,6 +23147,1263 @@
       "corners": 11,
       "climb": 24,
       "technical": 20
+    }
+  },
+  {
+    "id": "hopland-grade",
+    "name": "Hopland Grade · Hwy 175",
+    "area": "Mendocino / Lake County",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "Highway 175 from US 101 in Hopland to Highway 29 south of Lakeport, including the tight, winding Hopland Grade crossing. The mountain bends give way to more settled roads near either end.",
+    "sources": [
+      {
+        "title": "Caltrans · Hopland Grade is on Route 175",
+        "url": "https://dot.ca.gov/programs/traffic-operations/legal-truck-access/restrict-route-175"
+      },
+      {
+        "title": "Caltrans · Highway 175 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=175"
+      }
+    ],
+    "access": {
+      "note": "Caltrans reported construction traffic control west of the Mendocino/Lake county line when reviewed September 13, 2026. Check the current report for delays before crossing.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=175",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "bay-area",
+    "center": [
+      -122.998454,
+      38.983494
+    ],
+    "bounds": [
+      [
+        -123.1166204,
+        38.968231
+      ],
+      [
+        -122.9125206,
+        39.0168948
+      ]
+    ],
+    "osmWayIds": [
+      10265838,
+      10306715,
+      10309875,
+      10314555,
+      185218266,
+      406529240,
+      424428993,
+      612801250,
+      612801251,
+      612801253,
+      784984164,
+      1444596587,
+      1444596588,
+      1450423280,
+      1450423281
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -123.1166204,
+        38.9712424
+      ],
+      "end": [
+        -122.9129028,
+        39.0168948
+      ],
+      "wayNames": [
+        "CA 175",
+        "Hopland Grade",
+        "Hopland Road",
+        "Lakeport-Hopland Road",
+        "Main Street",
+        "River Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 17.6,
+      "bends": 99,
+      "switchbacks": 13,
+      "curvature": 591,
+      "bendsPerMile": 5.6
+    },
+    "elevation": {
+      "climbFt": 3489,
+      "highFt": 2481,
+      "lowFt": 487,
+      "reliefFt": 1994,
+      "maxGradient": 7.3,
+      "climbPerMile": 198
+    },
+    "profile": {
+      "points": [
+        493,
+        487,
+        486,
+        494,
+        502,
+        507,
+        520,
+        524,
+        542,
+        555,
+        566,
+        576,
+        603,
+        616,
+        676,
+        749,
+        778,
+        805,
+        833,
+        868,
+        863,
+        879,
+        917,
+        942,
+        1023,
+        1104,
+        1186,
+        1280,
+        1375,
+        1467,
+        1562,
+        1653,
+        1745,
+        1836,
+        1936,
+        2027,
+        2121,
+        2210,
+        2307,
+        2414,
+        2484,
+        2398,
+        2326,
+        2246,
+        2177,
+        2102,
+        2034,
+        1967,
+        1902,
+        1821,
+        1743,
+        1677,
+        1663,
+        1726,
+        1804,
+        1744,
+        1637,
+        1562,
+        1484,
+        1447,
+        1441,
+        1418,
+        1415,
+        1404,
+        1395,
+        1390,
+        1402,
+        1382,
+        1376,
+        1400,
+        1408,
+        1354
+      ],
+      "miles": 17.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 52,
+      "corners": 18,
+      "climb": 14,
+      "technical": 20
+    }
+  },
+  {
+    "id": "highway-193-cool-georgetown",
+    "name": "Highway 193 · Cool–Georgetown–Placerville",
+    "area": "Auburn / Sierra Foothills",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "The eastern section of Highway 193: from Highway 49 in Cool through Georgetown, then down the winding canyon road to Highway 49 north of Placerville. This is the foothill drive near Auburn, separate from the Lincoln-to-Newcastle section of 193.",
+    "sources": [
+      {
+        "title": "Caltrans · Highway 193 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=193"
+      },
+      {
+        "title": "OpenStreetMap · Georgetown Road / CA 193",
+        "url": "https://www.openstreetmap.org/way/10324657"
+      }
+    ],
+    "access": {
+      "note": "Check Caltrans before leaving; conditions on the canyon section can change after storms. Follow posted signs through the towns.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=193",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "sierra",
+    "center": [
+      -120.8300633,
+      38.8907426
+    ],
+    "bounds": [
+      [
+        -121.0159256,
+        38.7376177
+      ],
+      [
+        -120.8111614,
+        38.912012
+      ]
+    ],
+    "osmWayIds": [
+      10324657,
+      277765685,
+      277765686,
+      1553731214,
+      1553731215,
+      1553731216,
+      1553731217,
+      1553731218,
+      1553731219,
+      1553731220,
+      1553731221,
+      1553731222,
+      1553731223,
+      1553731224,
+      1553731226,
+      1553731227,
+      1553731228,
+      1553731229,
+      1553731230,
+      1553731231,
+      1553731232,
+      1553731233,
+      1553731234,
+      1553731235,
+      1553731236,
+      1553731237,
+      1553731238,
+      1553731239,
+      1553731240,
+      1553731241,
+      1553731242,
+      1553731243,
+      1553731244,
+      1553731245,
+      1553732112,
+      1553732113
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -121.0159256,
+        38.88698
+      ],
+      "end": [
+        -120.8113054,
+        38.7376177
+      ],
+      "wayNames": [
+        "Georgetown Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 26.7,
+      "bends": 80,
+      "switchbacks": 7,
+      "curvature": 322,
+      "bendsPerMile": 3.0
+    },
+    "elevation": {
+      "climbFt": 5492,
+      "highFt": 2727,
+      "lowFt": 958,
+      "reliefFt": 1768,
+      "maxGradient": 9.0,
+      "climbPerMile": 206
+    },
+    "profile": {
+      "points": [
+        1520,
+        1499,
+        1510,
+        1520,
+        1559,
+        1603,
+        1666,
+        1628,
+        1622,
+        1733,
+        1714,
+        1637,
+        1630,
+        1635,
+        1639,
+        1742,
+        1738,
+        1668,
+        1634,
+        1636,
+        1687,
+        1759,
+        1788,
+        1859,
+        1904,
+        2018,
+        2212,
+        2355,
+        2481,
+        2551,
+        2483,
+        2537,
+        2618,
+        2682,
+        2673,
+        2574,
+        2506,
+        2463,
+        2434,
+        2371,
+        2324,
+        2297,
+        2265,
+        2228,
+        2248,
+        2303,
+        2320,
+        2358,
+        2269,
+        2145,
+        1998,
+        1955,
+        1938,
+        1984,
+        1927,
+        1960,
+        1998,
+        1944,
+        1836,
+        1740,
+        1612,
+        1471,
+        1343,
+        1207,
+        1064,
+        958,
+        1036,
+        1226,
+        1416,
+        1574,
+        1781,
+        1953
+      ],
+      "miles": 26.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 44,
+      "corners": 10,
+      "climb": 14,
+      "technical": 20
+    }
+  },
+  {
+    "id": "highway-49-auburn-cool",
+    "name": "Highway 49 · Auburn to Cool",
+    "area": "Auburn / Sierra Foothills",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The Highway 49 canyon between Auburn and Cool: descend from the Auburn side to the American River crossing, then climb toward the Highway 193 junction. Expect everyday traffic and people accessing Auburn State Recreation Area around the river.",
+    "sources": [
+      {
+        "title": "California State Parks · Auburn State Recreation Area trails and Highway 49 access",
+        "url": "https://www.parks.ca.gov/?page_id=1345"
+      },
+      {
+        "title": "Caltrans · Highway 49 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=49"
+      }
+    ],
+    "access": {
+      "note": "Use designated parking around the confluence and watch for people entering the road. Check Caltrans for current restrictions.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=49",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "sierra",
+    "center": [
+      -121.0325533,
+      38.9103315
+    ],
+    "bounds": [
+      [
+        -121.0655256,
+        38.88698
+      ],
+      [
+        -121.0134702,
+        38.9158771
+      ]
+    ],
+    "osmWayIds": [
+      10322645,
+      10487416,
+      26189870,
+      307667154,
+      307667169,
+      307667170,
+      658573033,
+      824619996,
+      824619997,
+      824619998,
+      1462689738,
+      1462689744
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -121.0655256,
+        38.9038559
+      ],
+      "end": [
+        -121.0159256,
+        38.88698
+      ],
+      "wayNames": [
+        "CA 49",
+        "El Dorado Street"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 5.9,
+      "bends": 37,
+      "switchbacks": 8,
+      "curvature": 687,
+      "bendsPerMile": 6.3
+    },
+    "elevation": {
+      "climbFt": 1888,
+      "highFt": 1533,
+      "lowFt": 574,
+      "reliefFt": 959,
+      "maxGradient": 8.5,
+      "climbPerMile": 320
+    },
+    "profile": {
+      "points": [
+        1344,
+        1307,
+        1275,
+        1255,
+        1230,
+        1198,
+        1175,
+        1148,
+        1132,
+        1119,
+        1101,
+        1072,
+        1040,
+        1008,
+        982,
+        960,
+        938,
+        909,
+        877,
+        846,
+        816,
+        781,
+        748,
+        716,
+        684,
+        651,
+        617,
+        584,
+        564,
+        611,
+        639,
+        680,
+        710,
+        753,
+        788,
+        827,
+        866,
+        902,
+        930,
+        968,
+        1009,
+        1044,
+        1073,
+        1116,
+        1149,
+        1190,
+        1221,
+        1256,
+        1299,
+        1334,
+        1368,
+        1384,
+        1358,
+        1335,
+        1327,
+        1297,
+        1296,
+        1303,
+        1315,
+        1329,
+        1332,
+        1343,
+        1367,
+        1400,
+        1442,
+        1489,
+        1527,
+        1536,
+        1524,
+        1522,
+        1525,
+        1520
+      ],
+      "miles": 5.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 53,
+      "corners": 20,
+      "climb": 22,
+      "technical": 10
+    }
+  },
+  {
+    "id": "mosquito-ridge",
+    "name": "Mosquito Ridge Road",
+    "area": "Auburn / Sierra Foothills",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "A long mountain road east from Foresthill, winding through the American River country to the French Meadows Road junction near the reservoir. Tight bends and remote stretches make this a drive to plan ahead for; get fuel and supplies in town.",
+    "sources": [
+      {
+        "title": "Visit Placer · French Meadows access via Mosquito Ridge Road",
+        "url": "https://www.visitplacer.com/lewis-campground/"
+      },
+      {
+        "title": "Tahoe National Forest · alerts and forest orders",
+        "url": "https://www.fs.usda.gov/r05/tahoe/alerts"
+      }
+    ],
+    "access": {
+      "note": "Check Tahoe National Forest alerts and the American River Ranger District for vehicle access before leaving Foresthill. Fire recovery work, seasonal snow and temporary closures can affect this remote road; this is not a live open-road report.",
+      "url": "https://www.fs.usda.gov/r05/tahoe/alerts",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "sierra",
+    "center": [
+      -120.658944,
+      39.046336
+    ],
+    "bounds": [
+      [
+        -120.8260297,
+        39.0105043
+      ],
+      [
+        -120.4696733,
+        39.1237163
+      ]
+    ],
+    "osmWayIds": [
+      10494827,
+      192768137,
+      192768147,
+      299164699,
+      299164700,
+      299164701,
+      299164702,
+      299164703,
+      299164705,
+      373198978,
+      373198980,
+      373198998,
+      373199005,
+      373199013,
+      373199018,
+      633720115,
+      633760081,
+      633763241,
+      633821043,
+      633821044,
+      643300659,
+      643300660,
+      643300661,
+      643300662,
+      658488852,
+      658488856
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -120.8260266,
+        39.0192966
+      ],
+      "end": [
+        -120.4696733,
+        39.1077219
+      ],
+      "wayNames": [
+        "Mosquito Ridge Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 34.9,
+      "bends": 199,
+      "switchbacks": 30,
+      "curvature": 584,
+      "bendsPerMile": 5.7
+    },
+    "elevation": {
+      "climbFt": 9001,
+      "highFt": 5986,
+      "lowFt": 1355,
+      "reliefFt": 4631,
+      "maxGradient": 7.6,
+      "climbPerMile": 258
+    },
+    "profile": {
+      "points": [
+        3186,
+        3132,
+        3042,
+        2941,
+        2836,
+        2743,
+        2622,
+        2481,
+        2525,
+        2595,
+        2505,
+        2372,
+        2226,
+        2099,
+        1984,
+        1911,
+        1783,
+        1666,
+        1530,
+        1395,
+        1503,
+        1660,
+        1830,
+        1976,
+        2115,
+        2260,
+        2400,
+        2466,
+        2614,
+        2774,
+        2932,
+        3074,
+        3236,
+        3388,
+        3557,
+        3721,
+        3848,
+        4039,
+        4191,
+        4268,
+        4473,
+        4584,
+        4659,
+        4730,
+        4819,
+        4995,
+        5158,
+        5268,
+        5375,
+        5491,
+        5527,
+        5602,
+        5680,
+        5800,
+        5858,
+        5928,
+        5986,
+        5897,
+        5788,
+        5700,
+        5585,
+        5434,
+        5306,
+        5135,
+        4997,
+        5175,
+        5355,
+        5523,
+        5559,
+        5367,
+        5227,
+        5296
+      ],
+      "miles": 34.9,
+      "coverage": 100
+    },
+    "score": {
+      "score": 56,
+      "corners": 18,
+      "climb": 18,
+      "technical": 20
+    }
+  },
+  {
+    "id": "eastside-sonoma",
+    "name": "Eastside Road · Sonoma County",
+    "area": "Sonoma / North Bay",
+    "difficulty": 1,
+    "character": "Low speed",
+    "description": "A relaxed Russian River Valley road from Old Redwood Highway south of Healdsburg to Wohler Road, with vineyard country and gentler bends. Popular with bicyclists: leave plenty of room and wait for a clear, safe place to pass.",
+    "sources": [
+      {
+        "title": "Santa Rosa Cycling Club · Eastside and Westside road profiles",
+        "url": "https://www.srcc.com/Elevation-Profile"
+      },
+      {
+        "title": "Hafner Vineyard · cycling Eastside and Westside Roads",
+        "url": "https://www.hafnervineyard.com/blog/2016/may/31/biking-in-healdsburg/"
+      }
+    ],
+    "access": {
+      "note": "Check Sonoma County road closures before linking to Westside via Wohler Road. Road and bridge works can interrupt the connection. Bicyclists are common on both roads.",
+      "url": "https://roadclosures-sonomacounty.hub.arcgis.com/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "bay-area",
+    "center": [
+      -122.8478808,
+      38.5288869
+    ],
+    "bounds": [
+      [
+        -122.8777833,
+        38.4961645
+      ],
+      [
+        -122.8405266,
+        38.5732018
+      ]
+    ],
+    "osmWayIds": [
+      7707730,
+      1464447468
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -122.8405266,
+        38.5732018
+      ],
+      "end": [
+        -122.8777833,
+        38.4969272
+      ],
+      "wayNames": [
+        "Eastside Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 6.3,
+      "bends": 8,
+      "switchbacks": 0,
+      "curvature": 122,
+      "bendsPerMile": 1.3
+    },
+    "elevation": {
+      "climbFt": 366,
+      "highFt": 157,
+      "lowFt": 63,
+      "reliefFt": 94,
+      "maxGradient": 2.8,
+      "climbPerMile": 58
+    },
+    "profile": {
+      "points": [
+        100,
+        102,
+        98,
+        95,
+        95,
+        99,
+        99,
+        102,
+        119,
+        115,
+        111,
+        108,
+        94,
+        85,
+        84,
+        85,
+        90,
+        87,
+        81,
+        83,
+        81,
+        81,
+        81,
+        81,
+        87,
+        80,
+        78,
+        81,
+        79,
+        79,
+        79,
+        81,
+        83,
+        79,
+        78,
+        76,
+        81,
+        85,
+        79,
+        75,
+        77,
+        79,
+        79,
+        78,
+        73,
+        69,
+        71,
+        94,
+        105,
+        77,
+        72,
+        75,
+        82,
+        90,
+        101,
+        108,
+        122,
+        152,
+        160,
+        146,
+        129,
+        110,
+        105,
+        95,
+        68,
+        64,
+        62,
+        64,
+        70,
+        73,
+        70,
+        67
+      ],
+      "miles": 6.3,
+      "coverage": 100
+    },
+    "score": {
+      "score": 8,
+      "corners": 4,
+      "climb": 4,
+      "technical": 0
+    }
+  },
+  {
+    "id": "westside-sonoma",
+    "name": "Westside Road · Sonoma County",
+    "area": "Sonoma / North Bay",
+    "difficulty": 2,
+    "character": "Low speed",
+    "description": "The winding Russian River Valley road from Mill Street in Healdsburg to River Road near Forestville, passing vineyards and wooded sections. A scenic companion to Eastside Road. Expect bicyclists and give them space, especially around bends and narrow shoulders.",
+    "sources": [
+      {
+        "title": "Santa Rosa Cycling Club · Eastside and Westside road profiles",
+        "url": "https://www.srcc.com/Elevation-Profile"
+      },
+      {
+        "title": "Sonoma County · Westside slide repairs and Wohler Bridge works",
+        "url": "https://sonoma-county.legistar.com/LegislationDetail.aspx?GUID=9B4C6FB0-C181-4957-BB44-9BF52C524403&ID=7780323&Options=&Search="
+      }
+    ],
+    "access": {
+      "note": "Westside and nearby Wohler Road have had slide repairs and bridge works. Check the county closure map before planning a through-drive or an Eastside loop.",
+      "url": "https://roadclosures-sonomacounty.hub.arcgis.com/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "bay-area",
+    "center": [
+      -122.8681238,
+      38.5309202
+    ],
+    "bounds": [
+      [
+        -122.9289705,
+        38.5017083
+      ],
+      [
+        -122.8660934,
+        38.6074665
+      ]
+    ],
+    "osmWayIds": [
+      7711424,
+      7711426,
+      7711428,
+      532120418,
+      532120419,
+      782448614,
+      782448615,
+      1451894501,
+      1451894502,
+      1456420273,
+      1456420274,
+      1457353972,
+      1463756266,
+      1463756267,
+      1469113235,
+      1469113236
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -122.8725196,
+        38.6074665
+      ],
+      "end": [
+        -122.9288337,
+        38.5083293
+      ],
+      "wayNames": [
+        "Westside Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 12.3,
+      "bends": 31,
+      "switchbacks": 0,
+      "curvature": 282,
+      "bendsPerMile": 2.5
+    },
+    "elevation": {
+      "climbFt": 990,
+      "highFt": 163,
+      "lowFt": 70,
+      "reliefFt": 93,
+      "maxGradient": 3.3,
+      "climbPerMile": 80
+    },
+    "profile": {
+      "points": [
+        98,
+        99,
+        101,
+        94,
+        105,
+        109,
+        103,
+        100,
+        104,
+        108,
+        113,
+        103,
+        109,
+        115,
+        137,
+        164,
+        146,
+        104,
+        121,
+        144,
+        147,
+        142,
+        126,
+        97,
+        88,
+        114,
+        132,
+        143,
+        137,
+        140,
+        141,
+        100,
+        121,
+        125,
+        107,
+        98,
+        79,
+        99,
+        88,
+        92,
+        99,
+        105,
+        87,
+        88,
+        82,
+        81,
+        80,
+        83,
+        76,
+        71,
+        108,
+        161,
+        135,
+        101,
+        80,
+        77,
+        87,
+        97,
+        122,
+        113,
+        95,
+        99,
+        76,
+        78,
+        87,
+        76,
+        76,
+        80,
+        79,
+        117,
+        131,
+        78
+      ],
+      "miles": 12.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 24,
+      "corners": 8,
+      "climb": 6,
+      "technical": 10
+    }
+  },
+  {
+    "id": "latrobe-road",
+    "name": "Latrobe Road · Golden Foothill to White Rock",
+    "area": "El Dorado Hills",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "A short paved stretch of Latrobe Road through El Dorado Hills, between the Golden Foothill Parkway and White Rock Road junctions. Latrobe Road continues south toward Sloughhouse and Jackson Road, but OSM's mapping of that continuation is fragmented and includes a confirmed unpaved section, so this entry is scoped to the verified connected paved segment only.",
+    "sources": [
+      {
+        "title": "El Dorado County Department of Transportation · traffic count near Golden Foothill Parkway",
+        "url": "https://edcroads.edcgov.us/Traffic/HourlyTrafficCountsPdf/1614"
+      },
+      {
+        "title": "OpenStreetMap · Latrobe Road",
+        "url": "https://www.openstreetmap.org/way/240322424"
+      }
+    ],
+    "access": {
+      "note": "This is the short paved section only, not a through-route to Jackson Road: Latrobe Road south of here is fragmented in OSM and includes a confirmed unpaved stretch.",
+      "url": "https://www.openstreetmap.org/way/10516696",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13",
+    "mapRegion": "sierra",
+    "center": [
+      -121.0676083,
+      38.6439249
+    ],
+    "bounds": [
+      [
+        -121.0683131,
+        38.6414088
+      ],
+      [
+        -121.0656719,
+        38.6466375
+      ]
+    ],
+    "osmWayIds": [
+      10328257,
+      1079697384,
+      1079697385
+    ],
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/north-overpass.json",
+      "osmTimestamp": "2026-09-13T08:48:51Z",
+      "start": [
+        -121.0656719,
+        38.6414088
+      ],
+      "end": [
+        -121.0683131,
+        38.6466375
+      ],
+      "wayNames": [
+        "Latrobe Road"
+      ]
+    },
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "Limits vary by section. Follow posted signs.",
+      "source": null
+    },
+    "shape": {
+      "lengthMi": 0.4,
+      "bends": 0,
+      "switchbacks": 0,
+      "curvature": 79,
+      "bendsPerMile": 0.0
+    },
+    "elevation": {
+      "climbFt": 35,
+      "highFt": 606,
+      "lowFt": 572,
+      "reliefFt": 33,
+      "maxGradient": 2.0,
+      "climbPerMile": 88
+    },
+    "profile": {
+      "points": [
+        577,
+        576,
+        576,
+        575,
+        575,
+        574,
+        574,
+        573,
+        573,
+        573,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        572,
+        573,
+        573,
+        573,
+        573,
+        573,
+        573,
+        573,
+        574,
+        574,
+        575,
+        576,
+        576,
+        577,
+        578,
+        579,
+        579,
+        580,
+        581,
+        583,
+        585,
+        586,
+        588,
+        590,
+        592,
+        593,
+        595,
+        597,
+        598,
+        599,
+        600,
+        601,
+        601,
+        602,
+        603,
+        603,
+        604,
+        605,
+        605,
+        606,
+        606,
+        606,
+        606,
+        606,
+        606,
+        606,
+        606,
+        606,
+        606
+      ],
+      "miles": 0.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 6,
+      "corners": 0,
+      "climb": 6,
+      "technical": 0
     }
   }
 ]

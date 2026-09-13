@@ -4,17 +4,18 @@ import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { enablePinchZoom } from "./lib/pinch-zoom";
+import { selectDriveSection, traceBounds, type RoadTrace } from "./lib/drive-geometry";
+import type { DriveSection } from "./lib/drives";
 
 const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN?.trim();
 const validToken = token?.startsWith("pk.");
 const ROUTE = "#a8d8c6";
 
-export type DriveLeg = { id: string; name: string; step: number };
+export type DriveLeg = { id: string; name: string; step: number; section?: DriveSection };
 
 /**
- * The whole drive on one map: every leg drawn as one continuous route, numbered
- * in the order you drive them. Each leg is a small per-road file, so this costs
- * a handful of KB rather than the full regional payload.
+ * The roads in a drive, numbered to match the written steps. Optional sections
+ * clip existing traces to the itinerary. No routing service or full map payload.
  */
 export default function DriveMap({ legs, bounds, title }: {
   legs: DriveLeg[];
@@ -31,6 +32,8 @@ export default function DriveMap({ legs, bounds, title }: {
     let instance: mapboxgl.Map | undefined;
     let observer: ResizeObserver | undefined;
     let detachPinch: (() => void) | undefined;
+    let ready: number | undefined;
+    let slow: number | undefined;
     const abort = new AbortController();
     const update = (message: string) => { if (!disposed) setStatus(message); };
 
@@ -42,6 +45,7 @@ export default function DriveMap({ legs, bounds, title }: {
       const map = new mapboxgl.Map({
         container: container.current, accessToken: token, attributionControl: false,
         style: "mapbox://styles/mapbox/dark-v11", bounds, fitBoundsOptions: { padding: 46 },
+        cooperativeGestures: true,
       });
       instance = map;
       detachPinch = enablePinchZoom(map, container.current);
@@ -56,10 +60,12 @@ export default function DriveMap({ legs, bounds, title }: {
           const parts = await Promise.all(legs.map(async leg => {
             const response = await fetch(`/data/roads/${leg.id}.geojson`, { signal: abort.signal });
             if (!response.ok) throw new Error("Road data unavailable");
-            const feature = await response.json();
+            const feature = selectDriveSection(await response.json() as RoadTrace, leg.section);
             return { ...feature, properties: { ...feature.properties, step: leg.step, name: leg.name } };
           }));
           if (disposed) return;
+          const visibleBounds = traceBounds(parts);
+          if (visibleBounds) map.fitBounds(visibleBounds, { padding: 46, duration: 0 });
           map.addSource("route", { type: "geojson", data: { type: "FeatureCollection", features: parts } });
           map.addLayer({
             id: "route-casing", type: "line", source: "route",
@@ -91,11 +97,11 @@ export default function DriveMap({ legs, bounds, title }: {
       map.on("load", begin);
       map.on("styledata", () => { if (map.isStyleLoaded()) begin(); });
       // Events can be missed if the style finishes before these listeners attach.
-      const ready = window.setInterval(() => {
+      ready = window.setInterval(() => {
         if (disposed || started) { window.clearInterval(ready); return; }
         if (map.isStyleLoaded()) { window.clearInterval(ready); begin(); }
       }, 200);
-      window.setTimeout(() => {
+      slow = window.setTimeout(() => {
         if (!loaded && !disposed) update("The map is taking longer than expected. Reload to try again.");
       }, 10000);
       observer = new ResizeObserver(() => map.resize());
@@ -103,11 +109,16 @@ export default function DriveMap({ legs, bounds, title }: {
     } catch {
       queueMicrotask(() => update("The map could not start. Try another browser or enable graphics acceleration."));
     }
-    return () => { disposed = true; abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove(); };
+    return () => {
+      disposed = true;
+      window.clearInterval(ready);
+      window.clearTimeout(slow);
+      abort.abort(); detachPinch?.(); observer?.disconnect(); instance?.remove();
+    };
   }, [legs, bounds]);
 
   return (
-    <figure className="drive-map" role="img" aria-label={`Map of the ${title} route`}>
+    <figure className="drive-map" aria-label={`Interactive road overview for ${title}`}>
       <div ref={container} className="map" />
       {status && <p className="road-map-status" role="status">{status}</p>}
     </figure>

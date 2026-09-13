@@ -1,0 +1,356 @@
+[
+  {
+    "id": "hopland-grade",
+    "name": "Hopland Grade · Hwy 175",
+    "area": "Mendocino / Lake County",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 3,
+    "character": "Technical",
+    "names": [],
+    "refs": [
+      "CA 175"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -123.1166204,
+          38.9712424
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Redwood Highway"
+        ]
+      },
+      {
+        "near": [
+          -122.9129028,
+          39.0168948
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Soda Bay Road"
+        ]
+      }
+    ],
+    "description": "Highway 175 from US 101 in Hopland to Highway 29 south of Lakeport, including the tight, winding Hopland Grade crossing. The mountain bends give way to more settled roads near either end.",
+    "sources": [
+      {
+        "title": "Caltrans · Hopland Grade is on Route 175",
+        "url": "https://dot.ca.gov/programs/traffic-operations/legal-truck-access/restrict-route-175"
+      },
+      {
+        "title": "Caltrans · Highway 175 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=175"
+      }
+    ],
+    "access": {
+      "note": "Caltrans reported construction traffic control west of the Mendocino/Lake county line when reviewed September 13, 2026. Check the current report for delays before crossing.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=175",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "highway-193-cool-georgetown",
+    "name": "Highway 193 · Cool–Georgetown–Placerville",
+    "area": "Auburn / Sierra Foothills",
+    "mapRegionOverride": "sierra",
+    "difficulty": 3,
+    "character": "Technical",
+    "names": [
+      "Georgetown Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -121.0159256,
+          38.88698
+        ],
+        "maxSnapM": 30
+      },
+      {
+        "near": [
+          -120.8113054,
+          38.7376177
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Coloma Road"
+        ]
+      }
+    ],
+    "description": "The eastern section of Highway 193: from Highway 49 in Cool through Georgetown, then down the winding canyon road to Highway 49 north of Placerville. This is the foothill drive near Auburn, separate from the Lincoln-to-Newcastle section of 193.",
+    "sources": [
+      {
+        "title": "Caltrans · Highway 193 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=193"
+      },
+      {
+        "title": "OpenStreetMap · Georgetown Road / CA 193",
+        "url": "https://www.openstreetmap.org/way/10324657"
+      }
+    ],
+    "access": {
+      "note": "Check Caltrans before leaving; conditions on the canyon section can change after storms. Follow posted signs through the towns.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=193",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "highway-49-auburn-cool",
+    "name": "Highway 49 · Auburn to Cool",
+    "area": "Auburn / Sierra Foothills",
+    "mapRegionOverride": "sierra",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "names": [],
+    "refs": [
+      "CA 49"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -121.0655256,
+          38.9038559
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Borland Avenue"
+        ]
+      },
+      {
+        "near": [
+          -121.0159256,
+          38.88698
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Georgetown Road"
+        ]
+      }
+    ],
+    "description": "The Highway 49 canyon between Auburn and Cool: descend from the Auburn side to the American River crossing, then climb toward the Highway 193 junction. Expect everyday traffic and people accessing Auburn State Recreation Area around the river.",
+    "sources": [
+      {
+        "title": "California State Parks · Auburn State Recreation Area trails and Highway 49 access",
+        "url": "https://www.parks.ca.gov/?page_id=1345"
+      },
+      {
+        "title": "Caltrans · Highway 49 conditions",
+        "url": "https://roads.dot.ca.gov/?roadnumber=49"
+      }
+    ],
+    "access": {
+      "note": "Use designated parking around the confluence and watch for people entering the road. Check Caltrans for current restrictions.",
+      "url": "https://roads.dot.ca.gov/?roadnumber=49",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "mosquito-ridge",
+    "name": "Mosquito Ridge Road",
+    "area": "Auburn / Sierra Foothills",
+    "mapRegionOverride": "sierra",
+    "difficulty": 3,
+    "character": "Technical",
+    "names": [
+      "Mosquito Ridge Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -120.8260266,
+          39.0192966
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Foresthill Road"
+        ]
+      },
+      {
+        "near": [
+          -120.4696733,
+          39.1077219
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "French Meadows Road"
+        ]
+      }
+    ],
+    "description": "A long mountain road east from Foresthill, winding through the American River country to the French Meadows Road junction near the reservoir. Tight bends and remote stretches make this a drive to plan ahead for; get fuel and supplies in town.",
+    "sources": [
+      {
+        "title": "Visit Placer · French Meadows access via Mosquito Ridge Road",
+        "url": "https://www.visitplacer.com/lewis-campground/"
+      },
+      {
+        "title": "Tahoe National Forest · alerts and forest orders",
+        "url": "https://www.fs.usda.gov/r05/tahoe/alerts"
+      }
+    ],
+    "access": {
+      "note": "Check Tahoe National Forest alerts and the American River Ranger District for vehicle access before leaving Foresthill. Fire recovery work, seasonal snow and temporary closures can affect this remote road; this is not a live open-road report.",
+      "url": "https://www.fs.usda.gov/r05/tahoe/alerts",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "eastside-sonoma",
+    "name": "Eastside Road · Sonoma County",
+    "area": "Sonoma / North Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 1,
+    "character": "Low speed",
+    "names": [
+      "Eastside Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -122.8405266,
+          38.5732018
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Old Redwood Highway"
+        ]
+      },
+      {
+        "near": [
+          -122.8777833,
+          38.4969272
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Wohler Road"
+        ]
+      }
+    ],
+    "description": "A relaxed Russian River Valley road from Old Redwood Highway south of Healdsburg to Wohler Road, with vineyard country and gentler bends. Popular with bicyclists: leave plenty of room and wait for a clear, safe place to pass.",
+    "sources": [
+      {
+        "title": "Santa Rosa Cycling Club · Eastside and Westside road profiles",
+        "url": "https://www.srcc.com/Elevation-Profile"
+      },
+      {
+        "title": "Hafner Vineyard · cycling Eastside and Westside Roads",
+        "url": "https://www.hafnervineyard.com/blog/2016/may/31/biking-in-healdsburg/"
+      }
+    ],
+    "access": {
+      "note": "Check Sonoma County road closures before linking to Westside via Wohler Road. Road and bridge works can interrupt the connection. Bicyclists are common on both roads.",
+      "url": "https://roadclosures-sonomacounty.hub.arcgis.com/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "westside-sonoma",
+    "name": "Westside Road · Sonoma County",
+    "area": "Sonoma / North Bay",
+    "mapRegionOverride": "bay-area",
+    "difficulty": 2,
+    "character": "Low speed",
+    "names": [
+      "Westside Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -122.8725196,
+          38.6074665
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Mill Street"
+        ]
+      },
+      {
+        "near": [
+          -122.9288337,
+          38.5083293
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "River Road"
+        ]
+      }
+    ],
+    "description": "The winding Russian River Valley road from Mill Street in Healdsburg to River Road near Forestville, passing vineyards and wooded sections. A scenic companion to Eastside Road. Expect bicyclists and give them space, especially around bends and narrow shoulders.",
+    "sources": [
+      {
+        "title": "Santa Rosa Cycling Club · Eastside and Westside road profiles",
+        "url": "https://www.srcc.com/Elevation-Profile"
+      },
+      {
+        "title": "Sonoma County · Westside slide repairs and Wohler Bridge works",
+        "url": "https://sonoma-county.legistar.com/LegislationDetail.aspx?GUID=9B4C6FB0-C181-4957-BB44-9BF52C524403&ID=7780323&Options=&Search="
+      }
+    ],
+    "access": {
+      "note": "Westside and nearby Wohler Road have had slide repairs and bridge works. Check the county closure map before planning a through-drive or an Eastside loop.",
+      "url": "https://roadclosures-sonomacounty.hub.arcgis.com/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  },
+  {
+    "id": "latrobe-road",
+    "name": "Latrobe Road · Golden Foothill to White Rock",
+    "area": "El Dorado Hills",
+    "mapRegionOverride": "sierra",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "names": [
+      "Latrobe Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -121.0656719,
+          38.6414088
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "Golden Foothill Parkway"
+        ]
+      },
+      {
+        "near": [
+          -121.0682,
+          38.6467
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "White Rock Road"
+        ]
+      }
+    ],
+    "description": "A short paved stretch of Latrobe Road through El Dorado Hills, between the Golden Foothill Parkway and White Rock Road junctions. Latrobe Road continues south toward Sloughhouse and Jackson Road, but OSM's mapping of that continuation is fragmented and includes a confirmed unpaved section, so this entry is scoped to the verified connected paved segment only.",
+    "sources": [
+      {
+        "title": "El Dorado County Department of Transportation · traffic count near Golden Foothill Parkway",
+        "url": "https://edcroads.edcgov.us/Traffic/HourlyTrafficCountsPdf/1614"
+      },
+      {
+        "title": "OpenStreetMap · Latrobe Road",
+        "url": "https://www.openstreetmap.org/way/240322424"
+      }
+    ],
+    "access": {
+      "note": "This is the short paved section only, not a through-route to Jackson Road: Latrobe Road south of here is fragmented in OSM and includes a confirmed unpaved stretch.",
+      "url": "https://www.openstreetmap.org/way/10516696",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
+  }
+]

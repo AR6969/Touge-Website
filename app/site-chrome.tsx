@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { reviewedOn } from "./lib/site";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 
 export function SiteHeader({ current, mapRegion, onRegionChange }: {
-  current?: "map" | "roads" | "regions";
+  current?: "map" | "roads" | "regions" | "drives";
   mapRegion?: MapRegion;
   /** Supplied by map pages so a region switch changes state instead of navigating. */
   onRegionChange?: (region: MapRegion) => void;
@@ -35,6 +34,7 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
         <nav aria-label="Main">
           <Link href="/" className="region">Map</Link>
           <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
+          <Link href="/drives" className="region" aria-current={current === "drives" ? "page" : undefined}>Drives</Link>
           <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
         </nav>
       )}
@@ -51,7 +51,7 @@ export function SiteFooter() {
         see <Link href="/method">how this is built</Link> and <a href="/data/README.txt">data attribution</a>.
       </p>
       <p>
-        Sources reviewed {reviewedOn}. No live road status: check{" "}
+        Review dates appear on each road page. No live road status: check{" "}
         <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Caltrans QuickMap</a> for
         closures and conditions. Posted signs always govern.
       </p>

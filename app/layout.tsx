@@ -6,7 +6,7 @@ import { siteName, siteUrl } from "./lib/site";
 import { gaMeasurementId } from "./lib/analytics";
 
 const description =
-  "Driving roads across California, from the Bay Area to Orange County — mapped from OpenStreetMap with corner counts, difficulty ratings and sourced speed-limit evidence for each road.";
+  "Explore California driving roads, from the Bay Area and Sierra Nevada to Los Angeles and San Diego. Road maps, driving guides, terrain and sourced access information.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description,
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName,

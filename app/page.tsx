@@ -2,16 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, curviest, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
-import { colorFor } from "./lib/colors";
+import { drives } from "./lib/drives";
 import { siteName, siteUrl } from "./lib/site";
 
 const title = "Best Driving Roads in California";
 const description =
-  "Every good driving road in California across three regional maps — the Bay Area, Los Angeles and San Diego " +
-  "— plus one statewide view. Corner counts measured from OpenStreetMap geometry, elevation from USGS data, " +
-  "and a source behind every speed figure.";
+  "Explore California driving roads in the Bay Area, Los Angeles, Malibu, Orange County and San Diego. Find a road on the map or plan a drive with routes, stops and access notes.";
 
 export const metadata: Metadata = {
   title,
@@ -20,8 +18,10 @@ export const metadata: Metadata = {
   openGraph: { url: "/", title, description },
 };
 
-const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
-const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
+const featuredRoads = ["highway-9-front", "page-mill", "skyline", "latigo-canyon", "palomar-south-grade", "mines"]
+  .flatMap(id => roads.find(road => road.id === id) ?? []);
+const featuredDrives = ["highway-9-skyline-pescadero-coastal-drive", "page-mill-skyline-alices-driving-route", "glendora-mountain-road-highway-39-drive"]
+  .flatMap(slug => drives.find(drive => drive.slug === slug) ?? []);
 
 const regions = [
   { id: "bay-area" as const, roads: bayAreaRoads, blurb: "The Peninsula ridge roads, the Santa Cruz Mountains, the East Bay, Marin, Napa and Monterey." },
@@ -48,9 +48,9 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
       { "@type": "WebSite", name: siteName, url: siteUrl, description, inLanguage: "en-US" },
       {
         "@type": "ItemList",
-        name: "Best driving roads in California",
-        numberOfItems: curviest.length,
-        itemListElement: curviest.map((road, index) => ({
+        name: "Roads to explore in California",
+        numberOfItems: featuredRoads.length,
+        itemListElement: featuredRoads.map((road, index) => ({
           "@type": "ListItem", position: index + 1, url: `${siteUrl}/roads/${road.id}`, name: road.name,
         })),
       },
@@ -70,19 +70,40 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
         }}
       />
-      <main className="prose landing">
+      <main className="prose landing" id="about">
         <h1>Best driving roads in California</h1>
         <p className="lede">
-          Every road here is measured, not just recommended. Corners are counted off the mapped centreline,
-          elevation comes from USGS survey data, and any speed figure links to the document behind it — or says
-          plainly that no such document was found.
+          Find your next mountain road, coastal detour or weekend loop. Tap a colored road on the map,
+          or start with a guide for the route, worthwhile stops and access notes.
         </p>
-
-        <dl className="landing-stats">
-          <div><dd>{roads.length}</dd><dt>Roads</dt></div>
-          <div><dd>{totalMiles.toLocaleString()}</dd><dt>Miles</dt></div>
-          <div><dd>{totalBends.toLocaleString()}</dd><dt>Counted bends</dt></div>
-        </dl>
+        <nav className="intro-links" aria-label="Explore California">
+          <Link href="/roads">Browse all {roads.length} roads →</Link>
+          <Link href="/drives">Find a driving route →</Link>
+        </nav>
+        <section aria-labelledby="featured-drives">
+          <h2 id="featured-drives">Make a drive of it</h2>
+          <ul className="card-list">
+            {featuredDrives.map(drive => <li key={drive.slug}>
+              <Link href={`/drives/${drive.slug}`}>
+                <strong>{drive.title}</strong>
+                <span className="card-body">{drive.intro}</span>
+                <span className="card-meta">Route &amp; stops →</span>
+              </Link>
+            </li>)}
+          </ul>
+        </section>
+        <section aria-labelledby="featured-roads">
+          <h2 id="featured-roads">A few roads to start with</h2>
+          <ul className="card-list">
+            {featuredRoads.map(road => <li key={road.id}>
+              <Link href={`/roads/${road.id}`}>
+                <strong>{road.name}</strong>
+                <span className="card-meta">{road.area} · {road.shape.lengthMi} mi</span>
+                <span className="card-body">{road.description}</span>
+              </Link>
+            </li>)}
+          </ul>
+        </section>
 
         <section aria-labelledby="maps">
           <h2 id="maps">Pick a map</h2>
@@ -100,40 +121,6 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
               );
             })}
           </ul>
-        </section>
-
-        <section aria-labelledby="curviest">
-          <h2 id="curviest">The ten curviest roads in California</h2>
-          <p>
-            Ranked by degrees of direction change per mile, measured on the OpenStreetMap centreline at a fixed
-            20&nbsp;m sampling step. It describes road shape — not difficulty, and not how fast anything should
-            be driven.
-          </p>
-          <div className="table-scroll">
-            <table className="rank-table">
-              <thead>
-                <tr><th>#</th><th>Road</th><th>Area</th><th>Length</th><th>Bends</th><th>°/mile</th></tr>
-              </thead>
-              <tbody>
-                {curviest.slice(0, 10).map((road, index) => (
-                  <tr key={road.id}>
-                    <td className="rank">{index + 1}</td>
-                    <td>
-                      <i style={{ background: colorFor(road.character) }} />{" "}
-                      <Link href={`/roads/${road.id}`}>{road.name}</Link>
-                    </td>
-                    <td className="dim">{road.area}</td>
-                    <td>{road.shape.lengthMi} mi</td>
-                    <td>{road.shape.bends}</td>
-                    <td className="figure">{road.shape.curvature}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p>
-            <Link className="more-link" href="/roads">Compare all {roads.length} roads →</Link>
-          </p>
         </section>
 
         <nav className="intro-links" aria-label="Sections">

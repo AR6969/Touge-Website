@@ -81,6 +81,20 @@ if not elevations:
 overview = []
 before = after = 0
 
+# Keep shared route endpoints even on an otherwise straight stretch. Removing
+# an East Fork endpoint from Highway 39 made guide clipping stop ~45m short of
+# the junction. Split simplification at existing vertices; never add a bridge.
+endpoints = {tuple(point) for feature in source['features']
+             for line in feature['geometry']['coordinates'] for point in (line[0], line[-1])}
+
+def simplify_with_junctions(line):
+    anchors = sorted({0, len(line) - 1} | {i for i, point in enumerate(line) if tuple(point) in endpoints})
+    result = []
+    for start, end in zip(anchors, anchors[1:]):
+        part = simplify(line[start:end + 1], TOLERANCE_M)
+        result.extend(part if not result else part[1:])
+    return result or line
+
 for feature in source['features']:
     road_id = feature['properties']['id']
     lines = feature['geometry']['coordinates']
@@ -101,7 +115,7 @@ for feature in source['features']:
         score=touge_score(shape, elevation, road['difficulty']),
     )
 
-    trimmed = [round_line(simplify(line, TOLERANCE_M)) for line in lines]
+    trimmed = [round_line(simplify_with_junctions(line)) for line in lines]
     after += sum(len(line) for line in trimmed)
     geometry = {'type': 'MultiLineString', 'coordinates': trimmed}
 

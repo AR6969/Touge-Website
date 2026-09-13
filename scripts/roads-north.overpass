@@ -1,0 +1,20 @@
+[out:json][timeout:180];
+(
+  way[ref~"(^|;)CA 175(;|$)"](38.94,-123.13,39.04,-122.90);
+  way[name="Redwood Highway"](38.96,-123.13,38.98,-123.10);
+  way[name="Soda Bay Road"](39.00,-122.93,39.03,-122.90);
+  way[ref~"(^|;)CA (49|193)(;|$)"](38.72,-121.09,38.94,-120.70);
+  way[name="Borland Avenue"](38.90,-121.07,38.91,-121.06);
+  way[name="Mosquito Ridge Road"](38.95,-120.85,39.20,-120.38);
+  way[name="Foresthill Road"](39.01,-120.84,39.03,-120.81);
+  way[name="French Meadows Road"](39.10,-120.49,39.12,-120.45);
+  way[name~"^(Eastside Road|Westside Road)$"](38.48,-122.95,38.63,-122.82);
+  way[name="Latrobe Road"](38.60,-121.10,38.68,-121.02);
+  way[name="Golden Foothill Parkway"](38.62,-121.08,38.66,-121.04);
+  way[name="White Rock Road"](38.60,-121.10,38.68,-121.02);
+  way[name="Mill Street"](38.60,-122.89,38.62,-122.85);
+  way[name="Old Redwood Highway"](38.56,-122.85,38.58,-122.83);
+  way[name="Wohler Road"](38.48,-122.90,38.51,-122.86);
+  way[name="River Road"](38.49,-122.94,38.52,-122.92);
+);
+out body geom;

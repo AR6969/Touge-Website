@@ -170,8 +170,9 @@ archive_path = ROOT / 'data/roads.full.geojson'
 existing = json.loads(catalog_path.read_text())
 archive = json.loads(archive_path.read_text())
 new_ids = {road['id'] for road in new_catalog}
-old_sierra_ids = {road['id'] for road in existing if road.get('mapRegion') == 'sierra'}
-drop_ids = new_ids | old_sierra_ids
+# The northern-additions builder also publishes Sierra foothill roads. Own
+# these explicit specs, not every road that happens to share a map region.
+drop_ids = new_ids
 catalog = [road for road in existing if road['id'] not in drop_ids] + new_catalog
 features = [f for f in archive['features'] if f['properties']['id'] not in drop_ids] + new_features
 assert len({road['id'] for road in catalog}) == len(catalog), 'Duplicate road ID'

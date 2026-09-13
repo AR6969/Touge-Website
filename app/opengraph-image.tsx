@@ -4,7 +4,7 @@ import { collectionShapeUri } from "./lib/road-shape";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Driving roads across California, from the Bay Area to Orange County";
+export const alt = "California driving roads: Bay Area, Los Angeles, San Diego and the Sierra Nevada";
 
 export default async function Image() {
   const shape = await collectionShapeUri(560, 560, "#a8d8c6");

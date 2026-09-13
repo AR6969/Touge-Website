@@ -28,10 +28,11 @@ def public_road(way):
     )
 
 
-def road_graph(ways, names):
+def road_graph(ways, names, refs=()):
     graph, points, edges = {}, {}, {}
     for way in ways:
-        if way.get('tags', {}).get('name') not in names or not public_road(way):
+        tags = way.get('tags', {})
+        if not (tags.get('name') in names or set(tags.get('ref', '').split(';')) & set(refs)) or not public_road(way):
             continue
         nodes = way['nodes']
         coords = [(p['lon'], p['lat']) for p in way['geometry']]
@@ -83,15 +84,21 @@ def select_anchor(anchor, points, ways):
 
 def build_la(snapshot_path=None):
     snapshot_path = Path(snapshot_path) if snapshot_path else ROOT / 'data/la-overpass.json'
+    return build_specs(snapshot_path, ROOT / 'scripts/la-roads.json', 'los-angeles', '2026-09-09')
+
+
+def build_specs(snapshot_path, specs_path, default_region, reviewed):
+    """Trace a catalog from saved OSM nodes and explicit editorial endpoints."""
+    snapshot_path = Path(snapshot_path)
     snapshot = json.loads(snapshot_path.read_text())
     if snapshot.get('remark'):
         raise ValueError(snapshot['remark'])
     ways = [way for way in snapshot['elements'] if way['type'] == 'way']
     by_way = {way['id']: way for way in ways}
-    specs = json.loads((ROOT / 'scripts/la-roads.json').read_text())
+    specs = json.loads(Path(specs_path).read_text())
     features, catalog = [], []
     for spec in specs:
-        graph, points, edges = road_graph(ways, spec['names'])
+        graph, points, edges = road_graph(ways, spec['names'], spec.get('refs', []))
         try:
             anchors = [select_anchor(anchor, points, ways) for anchor in spec['anchors']]
             path = []
@@ -117,18 +124,18 @@ def build_la(snapshot_path=None):
                 center = b
                 break
         road = {key: value for key, value in spec.items()
-                if key not in ('names', 'anchors', 'mapRegionOverride')}
+                if key not in ('names', 'refs', 'anchors', 'mapRegionOverride')}
         road.update(
-            mapRegion=spec.get('mapRegionOverride', 'los-angeles'), center=center, bounds=bounds,
-            osmWayIds=ids, reviewed='2026-09-09',
+            mapRegion=spec.get('mapRegionOverride', default_region), center=center, bounds=bounds,
+            osmWayIds=ids, reviewed=spec.get('reviewed', reviewed),
             # Raw tags remain inspectable in the snapshot, but unverified tags
             # do not become numeric speed summaries on these new roads.
             mappedSpeed='Not verified', taggedPercent=0,
             geometryEvidence={
-                'snapshot': 'data/la-overpass.json',
+                'snapshot': str(snapshot_path.relative_to(ROOT)) if snapshot_path.is_relative_to(ROOT) else snapshot_path.name,
                 'osmTimestamp': snapshot.get('osm3s', {}).get('timestamp_osm_base'),
                 'start': coords[0], 'end': coords[-1],
-                'wayNames': sorted({by_way[key]['tags']['name'] for key in ids}),
+                'wayNames': sorted({by_way[key]['tags'].get('name') or by_way[key]['tags'].get('ref', 'Unnamed road') for key in ids}),
             },
         )
         road.setdefault('speed', {

@@ -1,0 +1,27 @@
+/* Embedded maps and written pages need room to scroll and comfortable links. */
+.detail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.detail-actions a { display: inline-flex; align-items: center; min-height: 44px; padding: 9px 14px; border: 1px solid #3c5144; border-radius: 7px; color: var(--accent); text-decoration: none; font-size: 14px; line-height: 1.4; }
+.detail-actions a:hover { background: #25362b; border-color: #8aad98; }
+.detail-actions a:focus-visible, .road-page a:focus-visible, .drive-page a:focus-visible, .drives-index a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.detail-access { margin-block: 20px !important; }
+.drive-map-note { margin-top: -12px !important; }
+.detail-region-link { margin-top: 20px !important; }
+.road-page .detail-bottom a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
+.road-page .breadcrumb a, .drive-page .breadcrumb a, .drives-index .breadcrumb a { display: inline-block; padding-block: 10px; }
+.road-page .card-meta, .drive-page .card-meta { flex-wrap: wrap; }
+.drive-page .drive-steps a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; }
+.road-page h2[id], .drive-page h2[id], .drives-index h2[id] { scroll-margin-top: 100px; }
+.road-page .mapboxgl-ctrl-group button, .drive-page .mapboxgl-ctrl-group button { width: 44px; height: 44px; }
+.road-page .road-map, .drive-page .drive-map { touch-action: pan-y; }
+@media (max-width: 600px) {
+  .road-page, .drive-page, .drives-index { font-size: 16px; }
+  .road-page .card-list, .drive-page .card-list { grid-template-columns: minmax(0, 1fr); }
+  .road-page .card-body, .drive-page .card-body, .drives-index .card-body { font-size: 14px; }
+  .road-page .fine, .drive-page .fine, .road-page .warning, .drive-page .warning { font-size: 14px; }
+  .drives-index .drive-cards a { padding: 18px; gap: 10px; }
+  .drives-index .drive-cards strong { font-size: 20px; }
+  .drive-page .drive-stops p { font-size: 16px; }
+  .drive-page .drive-route { font-size: 14px; }
+  .road-page .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .road-page .stat-grid > div { padding: 14px; }
+}

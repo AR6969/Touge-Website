@@ -3,18 +3,30 @@ import { regions, roads } from "./lib/roads";
 import { siteUrl } from "./lib/site";
 import { drives } from "./lib/drives";
 
+function latestDate(dates: string[]) {
+  const timestamps = dates.map(date => Date.parse(date)).filter(Number.isFinite);
+  return timestamps.length ? new Date(Math.max(...timestamps)) : undefined;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  // The catalog records the date its sources were last reviewed.
-  const lastModified = new Date(roads[0].reviewed);
+  // Collection pages change when any included road/guide changes, not just the
+  // first entry in an editorially ordered array. Do not stamp every URL at build.
+  const lastModified = latestDate(roads.map(road => road.reviewed));
+  const indexUpdated = "2026-09-13";
 
   return [
     { url: siteUrl, lastModified, changeFrequency: "monthly", priority: 1 },
-    { url: `${siteUrl}/san-diego`, lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${siteUrl}/los-angeles`, lastModified: new Date("2026-09-09"), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${siteUrl}/roads`, lastModified, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${siteUrl}/regions`, lastModified, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${siteUrl}/method`, lastModified, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${siteUrl}/drives`, lastModified: new Date(drives[0].updated), changeFrequency: "monthly", priority: 0.8 },
+    ...(["san-diego", "los-angeles"] as const).map(region => ({
+      url: `${siteUrl}/${region}`,
+      lastModified: latestDate(roads.filter(road => road.mapRegion === region).map(road => road.reviewed)),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    })),
+    { url: `${siteUrl}/roads`, lastModified: latestDate([indexUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/regions`, lastModified: latestDate([indexUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteUrl}/method`, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${siteUrl}/contact`, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${siteUrl}/drives`, lastModified: latestDate(drives.map(drive => drive.updated)), changeFrequency: "monthly", priority: 0.8 },
     ...drives.map(drive => ({
       url: `${siteUrl}/drives/${drive.slug}`,
       lastModified: new Date(drive.updated),
@@ -23,7 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...regions.map(region => ({
       url: `${siteUrl}/regions/${region.slug}`,
-      lastModified,
+      lastModified: latestDate([
+        indexUpdated,
+        ...region.roads.map(road => road.reviewed),
+        ...drives.filter(drive => drive.steps.some(step => region.roads.some(road => road.id === step.roadId))).map(drive => drive.updated),
+      ]),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

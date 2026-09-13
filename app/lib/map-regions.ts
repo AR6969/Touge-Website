@@ -15,7 +15,7 @@ export const mapRegions: Record<MapRegion, {
 }> = {
   california: {
     name: "California",
-    href: "/",
+    href: "/?region=california",
     pickerTitle: "All California roads",
     center: [-119.5, 36.7],
     bounds: [[-123.45, 32.55], [-116.05, 39.05]],

@@ -31,8 +31,12 @@ const OPEN_PADDING = { top: 110, right: 40, bottom: 65, left: 40 };
 export default function RoadExplorer({ roads, landmarks, popular = [], region = "bay-area" }: { roads: RoadSummary[]; landmarks: Landmark[]; popular?: { id: string; name: string }[]; region?: MapRegion }) {
   const regionConfig = mapRegions[region];
   const container = useRef<HTMLDivElement>(null);
+  const detail = useRef<HTMLElement>(null);
+  const picker = useRef<HTMLDivElement>(null);
+  const browseButton = useRef<HTMLButtonElement>(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
+  const selectionRef = useRef<string | null>(null);
   const [enabled, setEnabled] = useState<Character[]>([]);
   const [attempt, setAttempt] = useState(0);
   const [ready, setReady] = useState(false);
@@ -49,21 +53,44 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
   const cacheRef = useRef<Record<string, [unknown, unknown]>>({});
   const [status, setStatus] = useState(validToken ? "Loading map…" : tokenMessage);
   const visible = roads.filter(road => enabled.length === 0 || enabled.includes(road.character as Character));
-  const matchingRoads = visible.filter(road => road.name.toLowerCase().includes(roadQuery.trim().toLowerCase()));
+  const searchWords = roadQuery.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(/\s+/);
+  const matchingRoads = visible.filter(road => {
+    const text = `${road.name} ${road.area} ${road.id}`.toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    return searchWords.every(word => text.includes(word));
+  });
   const active = visible.find(road => road.id === selected);
   const activeLandmark = landmarks.find(mark => mark.name === landmark);
   const showIntro = !introDismissed && !selected && !activeLandmark && !showRoads && status === "";
 
   function chooseRoad(id: string, source: "map" | "picker" | "popular") {
+    selectionRef.current = id;
     setSelected(id); setLandmark(null); setShowRoads(false); setIntroDismissed(true);
-    track("select_road", { road_id: id, region, source });
+    track("select_road", { road_id: id, region: regionRef.current, source });
   }
   function chooseLandmark(name: string) {
+    selectionRef.current = null;
     setLandmark(name); setSelected(null); setShowRoads(false); setIntroDismissed(true);
-    track("select_landmark", { landmark: name, region });
+    track("select_landmark", { landmark: name, region: regionRef.current });
   }
 
-  useEffect(() => { dataRef.current = { roads, landmarks }; }, [roads, landmarks]);
+  useEffect(() => { dataRef.current = { roads, landmarks }; regionRef.current = region; }, [roads, landmarks, region]);
+  useEffect(() => { selectionRef.current = selected; }, [selected]);
+  useEffect(() => {
+    selectionRef.current = null;
+    queueMicrotask(() => { setSelected(null); setLandmark(null); });
+  }, [region]);
+
+  useEffect(() => {
+    if (showRoads) picker.current?.focus({ preventScroll: true });
+    if (!showRoads && !selected && !landmark) return;
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setShowRoads(false); setSelected(null); setLandmark(null);
+      browseButton.current?.focus({ preventScroll: true });
+    };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, [showRoads, selected, landmark]);
 
   useEffect(() => {
     if (!container.current || !validToken) return;
@@ -155,7 +182,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
             loaded = true;
             setReady(true);
             const roadId = new URLSearchParams(window.location.search).get("road");
-            if (roads.some(road => road.id === roadId)) {
+            if (!selectionRef.current && dataRef.current.roads.some(road => road.id === roadId)) {
               setSelected(roadId); setLandmark(null); setShowRoads(false);
             }
           } catch {
@@ -195,7 +222,6 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
     // `roads` and `landmarks` are deliberately not dependencies: they are new
     // arrays on every render, and listing them lets any re-render destroy a
     // half-loaded map and reset the overlay. Read through dataRef instead.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [attempt]);
 
   // Swapping region means new data on the same sources and a camera move — not
@@ -209,8 +235,6 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
 
     (async () => {
       try {
-        setSelected(null);
-        setLandmark(null);
         const cached = cacheRef.current[region];
         const payload = cached ?? await Promise.all(["roads", "road-labels"].map(async name => {
           const path = region === "california" ? `/data/${name}.geojson` : `/data/${region}/${name}.geojson`;
@@ -233,10 +257,12 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
           })),
         } as never);
 
-        current.fitBounds(regionConfig.bounds, { padding: OPEN_PADDING, duration: cached ? 700 : 0 });
+        // A reader can choose a road before the basemap finishes. Preserve
+        // that selection and its camera instead of resetting it on load.
+        if (!selectionRef.current) current.fitBounds(regionConfig.bounds, { padding: OPEN_PADDING, duration: cached ? 700 : 0 });
         if (region === "california") current.scrollZoom.enable(); else current.scrollZoom.disable();
         const roadId = new URLSearchParams(window.location.search).get("road");
-        if (roadId && dataRef.current.roads.some(road => road.id === roadId)) {
+        if (!selectionRef.current && roadId && dataRef.current.roads.some(road => road.id === roadId)) {
           setEnabled([]);
           setSelected(roadId);
           setShowRoads(false);
@@ -262,7 +288,11 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
     if (!road || !ready || !map.current) return;
     const mobile = (container.current?.clientWidth ?? 1440) < 640;
     map.current.fitBounds(road.bounds as [[number, number], [number, number]], {
-      padding: mobile ? { top: 115, right: 35, bottom: 300, left: 35 } : { top: 130, right: 80, bottom: 100, left: 440 },
+      // Reserve the actual card space; a fixed 300px bottom padding could
+      // exceed the map height on a short phone or in landscape.
+      padding: mobile
+        ? { top: 110, right: 24, bottom: Math.min((detail.current?.offsetHeight ?? 180) + 100, (container.current?.clientHeight ?? 600) - 160), left: 24 }
+        : { top: 130, right: 45, bottom: 90, left: Math.min(440, (container.current?.clientWidth ?? 1000) / 2) },
       maxZoom: 12, duration: 1000,
     });
   }, [selected, ready, roads]);
@@ -270,6 +300,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
   function toggleCharacter(character: Character) {
     const next = enabled.includes(character) ? enabled.filter(item => item !== character) : [...enabled, character];
     setEnabled(next);
+    track("filter_roads", { region, characters: next.join(",") || "all" });
     if (active && next.length && !next.includes(active.character as Character)) setSelected(null);
   }
   function resetMap() {
@@ -312,28 +343,31 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         </fieldset>
       </div>
       {showIntro && popular.length > 0 && (
-        <div className="popular-roads" aria-label="Popular roads">
-          <span className="popular-roads-label">Popular nearby</span>
-          {popular.map(road => (
+        <div className="popular-roads" aria-label="Roads to try">
+          <span className="popular-roads-label">Try a road</span>
+          {popular.filter(road => visible.some(item => item.id === road.id)).map(road => (
             <button key={road.id} onClick={() => chooseRoad(road.id, "popular")}>{road.name}</button>
           ))}
         </div>
       )}
-      <button className="reset" onClick={resetMap} aria-label="Show all roads" title="Show all roads">⌖</button>
+      <button className="reset" onClick={resetMap} aria-label="Reset map view" title="Reset map view">⌖</button>
       <div className="map-bottom">
-        <a className="map-scroll-hint" href="#about">About this map ↓</a>
-        <button className="browse-roads" aria-label={`${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>{visible.length} roads <span>{showRoads ? "−" : "+"}</span></button>
+        <Link className="browse-drives" href="/drives" onClick={() => track("browse_drives", { region, source: "map" })}>Driving guides ↗</Link>
+        <button ref={browseButton} className="browse-roads" aria-label={`Browse ${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { if (!showRoads) track("browse_roads", { region }); setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>Browse roads <span>{visible.length} {showRoads ? "−" : "+"}</span></button>
       </div>
-      {showRoads && <div id="road-picker" className="road-picker" aria-label="Choose a road">
+      {showRoads && <div ref={picker} id="road-picker" className="road-picker" role="region" tabIndex={-1} aria-label="Choose a road">
         <div className="picker-title">
-          {regionConfig.pickerTitle}<button className="close" aria-label="Close road list" onClick={() => setShowRoads(false)}>×</button>
+          {regionConfig.pickerTitle}<button className="close" aria-label="Close road list" onClick={() => { setShowRoads(false); browseButton.current?.focus({ preventScroll: true }); }}>×</button>
           <input className="road-search" type="search" aria-label="Find a road" placeholder="Find a road…" value={roadQuery} onChange={event => setRoadQuery(event.target.value)} autoComplete="off" spellCheck={false} />
         </div>
-        {matchingRoads.map(road => <button key={road.id} onClick={() => chooseRoad(road.id, "picker")}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area}</small></span><span className="picker-rating">{road.difficulty}/3</span></button>)}
+        {matchingRoads.map(road => <div className="picker-road" key={road.id}>
+          <Link href={`/roads/${road.id}`} prefetch={false} onClick={() => track("view_road_guide", { road_id: road.id, region, source: "picker" })}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area} · {road.character}</small></span><span aria-hidden="true">↗</span></Link>
+          <button onClick={() => chooseRoad(road.id, "picker")} aria-label={`Show ${road.name} on map`}>Map</button>
+        </div>)}
         {matchingRoads.length === 0 && <p role="status">No matching roads.{enabled.length > 0 && " Try clearing the road character filters."}</p>}
       </div>}
       {status && <div className="map-status" role="status"><span>{status}</span>{status !== "Loading map…" && validToken && <button onClick={() => setAttempt(value => value + 1)}>Try again</button>}</div>}
-      {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">Select a road character to show roads.</p>}
+      {visible.length === 0 && !status && !showRoads && <p className="empty-hint" role="status">No roads match these filters. <button onClick={() => setEnabled([])}>Show all characters</button></p>}
       {activeLandmark && <article className="detail landmark-card" aria-label={`${activeLandmark.name} details`}>
         <button className="close" aria-label="Close junction details" onClick={() => setLandmark(null)}>×</button>
         <p className="eyebrow">{activeLandmark.kind}</p>
@@ -341,19 +375,19 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         <p>{activeLandmark.note}</p>
         {activeLandmark.sourceUrl && <a className="detail-cta" href={activeLandmark.sourceUrl} target="_blank" rel="noopener noreferrer">{activeLandmark.sourceLabel ?? "More information"} ↗</a>}
       </article>}
-      {active && <article className="detail" aria-label={`${active.name} details`}>
+      {active && <article ref={detail} className="detail road-preview" aria-label={`${active.name} details`}>
         <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
         <p className="eyebrow">{active.area}</p>
         <h2>{active.name}</h2>
+        <Link className="detail-cta" href={`/roads/${active.id}`} onClick={() => track("view_road_guide", { road_id: active.id, region, source: "preview" })}>Explore this road →</Link>
         <div className="road-badges"><span><i style={{ background: colorFor(active.character) }} /> {active.character}</span><span>Difficulty {active.difficulty}/3</span></div>
-        <p>{active.description}</p>
-        {active.access && <p className="fine">{active.access.note}{" "}<a href={active.access.url} target="_blank" rel="noopener noreferrer">Check access ↗</a></p>}
+        <p className="road-preview-description">{active.description}</p>
+        {active.access && <p className="fine access-note">{active.access.note}{" "}<a href={active.access.url} target="_blank" rel="noopener noreferrer">Check access ↗</a></p>}
         <dl className="mini-stats">
           <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>
           <div><dt>Bends</dt><dd>{active.bends}</dd></div>
           <div><dt>Speed guide</dt><dd>{active.speed}</dd></div>
         </dl>
-        <Link className="detail-cta" href={`/roads/${active.id}`} onClick={() => track("view_road_guide", { road_id: active.id, region })}>Full road guide, sources &amp; speed evidence →</Link>
       </article>}
     </section>
   );

@@ -177,6 +177,22 @@ if la_snapshot.exists():
     catalog.extend(la_catalog)
     features.extend(la_features)
 
+# Northern additions have their own endpoint specs. Reuse the same connected
+# tracer and preserve Sierra records owned by its separate builder.
+north_snapshot = ROOT / 'data/north-overpass.json'
+if north_snapshot.exists():
+    from la_roads import build_specs
+    north_catalog, north_features = build_specs(north_snapshot, ROOT / 'scripts/north-roads.json', 'bay-area', '2026-09-13')
+    catalog.extend(north_catalog)
+    features.extend(north_features)
+existing_catalog = json.loads((ROOT / 'app/data/roads.json').read_text())
+existing_archive = json.loads((ROOT / 'data/roads.full.geojson').read_text())
+built_ids = {road['id'] for road in catalog}
+preserved = {road['id'] for road in existing_catalog if road.get('mapRegion') == 'sierra' and road['id'] not in built_ids}
+catalog.extend(road for road in existing_catalog if road['id'] in preserved)
+features.extend(feature for feature in existing_archive['features'] if feature['properties']['id'] in preserved)
+assert len({road['id'] for road in catalog}) == len(catalog), 'Duplicate road ID'
+
 # Full precision is archived outside public/ so it is never shipped to a browser.
 # build-derived-data.py turns it into the simplified files the site actually
 # serves, including the label points.

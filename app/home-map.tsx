@@ -22,10 +22,10 @@ const STORAGE_KEY = "touge:region";
  * browse rather than following a specific road's permalink.
  */
 function urlForRegion(region: MapRegion): string {
-  if (typeof window === "undefined") return region === "california" ? "/" : `/?region=${region}`;
+  if (typeof window === "undefined") return `/?region=${region}`;
   const params = new URLSearchParams(window.location.search);
   params.delete("road");
-  if (region === "california") params.delete("region"); else params.set("region", region);
+  params.set("region", region);
   const query = params.toString();
   return query ? `/?${query}` : "/";
 }
@@ -45,7 +45,7 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
   // only its data and camera change. The URL is kept honest for sharing.
   const switchRegion = useCallback((next: MapRegion) => {
     setRegion(next);
-    window.history.replaceState(null, "", urlForRegion(next));
+    window.history.replaceState(window.history.state, "", urlForRegion(next));
     track("switch_region", { region: next });
     // Storage can throw outright in private windows, so a failure to remember
     // must never take the switch down with it.
@@ -56,7 +56,7 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
   // seen anything. The permission prompt cost more visitors than the guess was
   // worth. A returning visitor's own last choice needs no permission at all.
   useEffect(() => {
-    if (!remember) return;
+    if (!remember || new URLSearchParams(window.location.search).has("road")) return;
     let stored: string | null = null;
     try { stored = window.localStorage.getItem(STORAGE_KEY); } catch { return; }
     if (!stored || !Object.hasOwn(mapRegions, stored) || stored === initialRegion) return;
@@ -64,7 +64,7 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
     // synchronously inside the effect.
     queueMicrotask(() => {
       setRegion(stored as MapRegion);
-      window.history.replaceState(null, "", urlForRegion(stored as MapRegion));
+      window.history.replaceState(window.history.state, "", urlForRegion(stored as MapRegion));
     });
   }, [remember, initialRegion]);
 

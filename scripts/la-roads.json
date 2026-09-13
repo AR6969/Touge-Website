@@ -599,7 +599,7 @@
     "area": "Angeles / San Gabriel Mountains",
     "difficulty": 3,
     "character": "Technical",
-    "description": "The climb from the Glendora foothills to East Fork Road, passing the Glendora Ridge junction on the way.",
+    "description": "The technical climb from Big Dalton Canyon Road in Glendora, over the ridge junction and down to East Fork Road. Mountain views and repeated tight bends lead into the more open canyon roads below.",
     "sources": [
       {
         "title": "Reddit, r/Touge · Attention all who live in and around Los Angeles",
@@ -608,6 +608,10 @@
       {
         "title": "Reddit, r/BikeLA · GMR closed to cars Labor Day",
         "url": "https://www.reddit.com/r/BikeLA/comments/1w43b2m/gmr_closed_to_cars_labor_day/"
+      },
+      {
+        "title": "LA County · current mountain road closures",
+        "url": "https://pw.lacounty.gov/roadclosures/"
       }
     ],
     "speed": {
@@ -634,13 +638,24 @@
         "junction": [
           "Glendora Ridge Road"
         ]
+      },
+      {
+        "near": [
+          -117.771983,
+          34.2290588
+        ],
+        "maxSnapM": 30,
+        "junction": [
+          "East Fork Road"
+        ]
       }
     ],
     "access": {
       "note": "Gates may close for weather, fire restrictions or holidays. Check current vehicle access.",
       "url": "https://pw.lacounty.gov/roadclosures/",
       "checked": "2026-09-09"
-    }
+    },
+    "reviewed": "2026-09-13"
   },
   {
     "id": "glendora-ridge",
@@ -1173,7 +1188,13 @@
           "San Gabriel Canyon Road"
         ]
       }
-    ]
+    ],
+    "access": {
+      "note": "Check vehicle access on East Fork and Glendora Mountain Road before planning a loop; gates and fire restrictions can change.",
+      "url": "https://pw.lacounty.gov/roadclosures/",
+      "checked": "2026-09-13"
+    },
+    "reviewed": "2026-09-13"
   },
   {
     "id": "bouquet-canyon",

@@ -11,6 +11,7 @@ import {
 import { colorFor } from "../../lib/colors";
 import { siteUrl } from "../../lib/site";
 import { drives } from "../../lib/drives";
+import "../../detail-pages.css";
 
 export const dynamicParams = false;
 
@@ -89,6 +90,11 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <span>Difficulty {road.difficulty}/3 · {difficultyLabels[road.difficulty - 1]}</span>
           <span className="badge-area">{road.area}</span>
         </div>
+        <nav className="detail-actions" aria-label="Road shortcuts">
+          <Link href={roadMapHref(road)}>Explore on the map →</Link>
+          {relatedDrives.length > 0 && <a href="#driving-guides">Drives with this road ↓</a>}
+          <a href="#nearby">Nearby roads ↓</a>
+        </nav>
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />
         {road.access && <p className="warning">{road.access.note}{" "}
@@ -184,6 +190,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
 
         <section aria-labelledby="nearby">
           <h2 id="nearby">Roads nearby</h2>
+          <p className="fine">Distances are approximate straight lines between road centers, not driving distances or direct connections.</p>
           <ul className="card-list">
             {nearby.map(({ road: other, miles }) => (
               <li key={other.id}>
@@ -191,12 +198,13 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
                   <strong>{other.name}</strong>
                   <span className="card-meta">
                     <i style={{ background: colorFor(other.character) }} />
-                    {Math.round(miles)} mi away · {other.shape.lengthMi} mi · {other.shape.bends} bends
+                    About {Math.round(miles)} mi away · {other.character}
                   </span>
                 </Link>
               </li>
             ))}
           </ul>
+          <p className="detail-region-link"><Link href={`/regions/${slugifyArea(road.area)}`}>Explore all {road.area} roads →</Link></p>
         </section>
 
         <div className="detail-bottom">

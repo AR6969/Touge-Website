@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../site-chrome";
-import { curviest, longest, roads } from "../lib/roads";
+import { curviest, roads } from "../lib/roads";
+import { roadGroups } from "../lib/region-guides";
 import { colorFor } from "../lib/colors";
 import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 
+const title = `All ${roads.length} Driving Roads in California`;
+const description = `Browse ${roads.length} California driving roads by region, from the Bay Area and Sierra foothills to Los Angeles and San Diego. Compare road character, mapped length and terrain.`;
 export const metadata: Metadata = {
-  title: `All ${roads.length} Driving Roads in California`,
-  description:
-    `Compare ${roads.length} driving roads across the Bay Area, Los Angeles, Malibu and Orange County — ${totalMiles} miles ` +
-    "ranked by length, bend count, climb per mile and degrees of turning per mile.",
+  title, description,
   alternates: { canonical: "/roads" },
-  openGraph: { url: "/roads", title: `All ${roads.length} driving roads in California` },
+  openGraph: { url: "/roads", title, description },
 };
 
 export default function RoadsIndex() {
@@ -36,28 +36,29 @@ export default function RoadsIndex() {
         </nav>
         <h1>All {roads.length} driving roads</h1>
         <p className="lede">
-          Every road in the collection, ranked by degrees of direction change per mile. {totalMiles} miles in total,
-          measured from OpenStreetMap centrelines. Difficulty is our editorial rating of width, bends and sightlines.
+          Find a road by name or start with a region. The collection covers {totalMiles.toLocaleString()} mapped miles;
+          each road has its own map, character and access notes.
         </p>
-        <section aria-labelledby="longest">
-          <h2 id="longest">The longest drives</h2>
-          <ul className="card-list">
-            {longest.slice(0, 6).map(road => (
-              <li key={road.id}>
-                <Link href={`/roads/${road.id}`}>
-                  <strong>{road.name}</strong>
-                  <span className="card-meta">
-                    <i style={{ background: colorFor(road.character) }} />
-                    {road.shape.lengthMi} mi · {road.shape.bends} bends · {road.area}
-                  </span>
-                </Link>
-              </li>
-            ))}
+        <nav className="intro-links" aria-label="Road regions">
+          {roadGroups.map(group => <a key={group.id} href={`#roads-${group.id}`}>{group.name}</a>)}
+          <Link href="/drives">Connected driving routes →</Link>
+        </nav>
+        {roadGroups.map(group => <section key={group.id} aria-labelledby={`roads-${group.id}`}>
+          <h2 id={`roads-${group.id}`}>{group.name}</h2>
+          <ul className="road-directory">
+            {[...group.roads].sort((a, b) => a.name.localeCompare(b.name)).map(road => <li key={road.id}>
+              <Link href={`/roads/${road.id}`} prefetch={false}>
+                <strong><i style={{ background: colorFor(road.character) }} /> {road.name}</strong>
+                <span>{road.area} · {road.character} · {road.shape.lengthMi} mi</span>
+              </Link>
+            </li>)}
           </ul>
-        </section>
+        </section>)}
 
         <section aria-labelledby="ranked">
-        <h2 id="ranked">Every road, ranked by turning per mile</h2>
+        <h2 id="ranked">Compare the numbers</h2>
+        <details className="road-comparison"><summary>Open the full comparison table</summary>
+        <p className="fine">Sorted by direction change per mile. These measurements describe the road, not a safe driving speed.</p>
         <div className="table-scroll">
           <table className="rank-table">
             <thead>
@@ -83,6 +84,7 @@ export default function RoadsIndex() {
             </tbody>
           </table>
         </div>
+        </details>
         </section>
         <p><Link className="more-link" href="/">Back to the map →</Link></p>
       </main>

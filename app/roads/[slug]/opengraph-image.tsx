@@ -34,10 +34,10 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             <div style={{ display: "flex", alignItems: "center", fontSize: 22, color: "#a8d8c6", letterSpacing: 2 }}>
               CALIFORNIA TOUGE
             </div>
-            <div style={{ fontSize: 66, fontWeight: 700, lineHeight: 1.05, marginTop: 28, letterSpacing: -2 }}>
+            <div style={{ fontSize: road.name.length > 40 ? 44 : road.name.length > 28 ? 52 : 66, fontWeight: 700, lineHeight: 1.05, marginTop: 28, letterSpacing: -2 }}>
               {road.name}
             </div>
-            <div style={{ fontSize: 27, color: "#9fb0a4", marginTop: 16 }}>
+            <div style={{ fontSize: 23, color: "#9fb0a4", marginTop: 16 }}>
               {`${road.area} · Difficulty ${road.difficulty}/3 · ${difficultyLabels[road.difficulty - 1]}`}
             </div>
           </div>

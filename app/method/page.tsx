@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "The method behind the collection: how roads were selected, how difficulty is rated, how bends are counted from " +
     "OpenStreetMap geometry, and why a published speed figure is never treated as a verified posted sign.",
   alternates: { canonical: "/method" },
-  openGraph: { url: "/method", title: "How these roads are rated & measured" },
+  openGraph: { url: "/method", title: "How these roads are rated & measured", description: "How California Touge selects roads, measures road geometry and elevation, and handles speed-limit evidence." },
 };
 
 export default function MethodPage() {
@@ -24,7 +24,7 @@ export default function MethodPage() {
         <h1>How these roads are rated &amp; measured</h1>
         <p className="lede">
           This is a curated {roads.length}-road collection, not an exhaustive inventory and not a field survey.
-          Everything below is what we do and do not claim. Sources were reviewed {reviewedOn}.
+          Everything below is what we do and do not claim. The initial source review was {reviewedOn}; each road shows its own review date.
         </p>
 
         <section aria-labelledby="selection">
@@ -40,7 +40,7 @@ export default function MethodPage() {
             our word for it.
           </p>
           <p>
-            The Sierra Nevada collection was requested directly rather than found in a forum thread, so its sourcing
+            The Sierra Nevada collection and newer northern additions were requested directly rather than found in a forum thread, so their sourcing
             leans on official agency pages (NPS, USFS) and enthusiast route write-ups instead, linked from each
             road&apos;s own page.
           </p>
@@ -69,7 +69,7 @@ export default function MethodPage() {
           <p>
             Road geometry comes from OpenStreetMap ways, fetched with the Overpass queries checked into the repository.
             Bay Area traces are clipped at existing vertices and joined at matching endpoints. Southern California
-            traces follow connected road edges between selected existing vertices and junctions, excluding ways tagged
+            traces, and the newer Hopland, Auburn and Sonoma additions, follow connected road edges between selected existing vertices and junctions, excluding ways tagged
             private, inaccessible to cars or unpaved. Neither build draws a straight bridge across a gap. These are
             selected road sections, not turn-by-turn navigation routes or a guarantee of current access.
           </p>

@@ -21,18 +21,18 @@ Set these in `.env.local` (not committed):
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_MAPBOX_TOKEN` | yes | Public Mapbox token (`pk.…`) for the basemap. Without it the site still renders — only the map area shows a message. |
-| `NEXT_PUBLIC_SITE_URL` | for deploys | Absolute origin, e.g. `https://example.com`. Canonical tags, `sitemap.xml`, `robots.txt` and social-card URLs are built from it. On Vercel it falls back to the project's production URL; otherwise it falls back to `http://localhost:3000`. |
+| `NEXT_PUBLIC_SITE_URL` | for deploys | Absolute origin, e.g. `https://example.com`. Canonical tags, `sitemap.xml`, `robots.txt` and social-card URLs are built from it. Defaults to the established production origin, `https://www.tougemap.com`, including in local/preview builds. |
 
 ## Routes
 
 | Route | What it is |
 | --- | --- |
-| `/` | Map explorer, plus rankings and links to every road |
+| `/` | Map explorer, featured roads and driving guides |
 | `/?region=bay-area` | Bay Area map |
 | `/los-angeles` | LA map, including Malibu, the Angeles/San Gabriel Mountains and Orange County |
 | `/san-diego` | San Diego map |
-| `/sierra` | Sierra Nevada map: Tioga Pass, Sonora Pass and the other high passes and canyons |
-| `/roads` | All roads in one comparison table |
+| `/?region=california` | Statewide map, including Sierra passes and Auburn foothill roads |
+| `/roads` | Roads by name and region, plus an optional comparison table |
 | `/roads/[slug]` | One road: map, shape statistics, speed evidence, sources, nearby roads |
 | `/regions` and `/regions/[slug]` | Roads grouped by area |
 | `/method` | How roads are selected, rated and measured |
@@ -68,7 +68,7 @@ python3 scripts/build-derived-data.py
 ```
 
 The LA builder replaces the Southern California records it manages and preserves
-the Bay Area archive. The Bay Area stage-1 builder also includes this saved snapshot
+all records outside its explicit specs and LA / San Diego regions. The Bay Area stage-1 builder also includes this saved snapshot
 when present. Selected Southern California traces follow connected OSM nodes on the
 specified roads; a missing connection fails the build instead of drawing a shortcut.
 These traces are not navigation itineraries. See `docs/los-angeles-road-research.md`
@@ -87,8 +87,8 @@ python3 scripts/fetch-elevation.py
 python3 scripts/build-derived-data.py
 ```
 
-Like the LA builder, this replaces only the region it manages (`mapRegion: 'sierra'`)
-and preserves every other region's archive entries. See `docs/sierra-road-research.md`
+This replaces only its explicitly listed road IDs and preserves the Auburn foothill
+additions that share the Sierra map region, as well as every other region. See `docs/sierra-road-research.md`
 for sourcing, including why US 395 itself isn't catalogued as a road.
 
 | Path | Stage | Notes |
@@ -105,6 +105,52 @@ for sourcing, including why US 395 itself isn't catalogued as a road.
 Stage 3 always measures the full-precision archive, so re-running it is safe and
 idempotent. See `docs/road-research.md` for sourcing and `/method` for the published
 version of the same rules.
+
+## Northern additions
+
+`scripts/north-roads.json` defines Hopland Grade (CA-175), eastern CA-193,
+CA-49 Auburn–Cool, Mosquito Ridge, Eastside, Westside and Latrobe Road. These use
+the existing connected-road tracer from `la_roads.py`, with exact OSM junction
+anchors. The snapshot is `data/north-overpass.json`; refresh with
+`scripts/roads-north.overpass` (split the query into smaller requests if the
+public Overpass server times out).
+
+Latrobe Road is scoped to its verified paved segment only (Golden Foothill
+Parkway to White Rock Road, in El Dorado Hills) — the requested full extent to
+Jackson Road includes a confirmed unpaved OSM way plus fragmented, poorly
+node-connected TIGER-import data beyond that, so the tracer correctly reports
+the anchors as disconnected rather than drawing through it.
+
+```bash
+python3 scripts/build-north-road-data.py
+python3 scripts/fetch-elevation.py
+python3 scripts/build-derived-data.py
+```
+
+The builder owns its six IDs, regardless of map region. All builders preserve
+unmanaged records. Stage 3 retains shared endpoints during simplification, so
+selected drive sections meet at their actual junctions. When changing a trace,
+refetch that road's cached elevation explicitly: `python3 scripts/fetch-elevation.py road-id`.
+See [northern road research](docs/northern-road-research.md).
+
+## Analytics and verification
+
+Vercel pageview analytics is installed. Map events use the existing optional GA4
+integration: set `NEXT_PUBLIC_GA_MEASUREMENT_ID` to your property's `G-…` ID in
+Vercel and redeploy. No GA script is loaded when it is unset. Events include
+`browse_roads`, `select_road`, `view_road_guide`, `browse_drives`, `filter_roads`,
+`select_landmark` and `switch_region`. Road-guide events distinguish the picker
+from the map preview; no search text or visitor location is sent.
+
+The current Vercel plan does not include custom events, so these are not sent to
+Vercel as paid custom events. Set `NEXT_PUBLIC_GSC_VERIFICATION` to the Search
+Console HTML-tag value to use the existing ownership-verification hook.
+
+```bash
+npm run lint
+node --test tests/drive-geometry.test.mjs  # Node 22.18+ / Node 24
+node node_modules/next/dist/bin/next build --webpack
+```
 
 ## The Touge Score (dormant)
 

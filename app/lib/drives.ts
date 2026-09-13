@@ -1,5 +1,10 @@
+import type { MapRegion } from "./map-regions";
+
+export type DriveSection = { from: [number, number]; to: [number, number] };
+
 export type Drive = {
   slug: string;
+  mapRegion: MapRegion;
   title: string;
   description: string;
   character: string;
@@ -8,16 +13,72 @@ export type Drive = {
   route: string[];
   intro: string;
   appeal: string;
-  steps: { title: string; text: string; roadId: string }[];
+  steps: { title: string; text: string; roadId?: string; mapSection?: DriveSection }[];
   stops: { name: string; text: string; url?: string }[];
   returnRoute: string;
+  conditions?: string;
+  access?: { note: string; url: string };
+  conditionSources?: { title: string; url: string }[];
   sources: { title: string; url: string }[];
   updated: string;
 };
 
 export const drives: Drive[] = [
   {
+    slug: "glendora-mountain-road-highway-39-drive",
+    mapRegion: "los-angeles",
+    title: "Glendora Mountain Road to Highway 39",
+    description: "A San Gabriel Mountains drive from technical GMR over the ridge, west along East Fork Road, then down Highway 39 to Azusa. Junctions, map and access checks.",
+    character: "Technical mountain & canyon",
+    start: "Glendora Mountain Road at Big Dalton Canyon Road",
+    finish: "Highway 39 at the Azusa foothills",
+    route: ["Glendora Mountain Road north", "East Fork Road west", "Highway 39 south"],
+    intro: "GMR brings the tight turns and mountain views. Stay on it over the ridge and down to East Fork Road, then follow Highway 39 back toward Azusa for a more open canyon finish.",
+    appeal: "The contrast is the draw. GMR is the involved part: repeated tight bends, changing sightlines and a climb followed by a descent. East Fork eases you into the canyon, and lower Highway 39 has a more flowing, everyday highway feel as it heads toward town. The character changes, but there are still bends, cyclists and traffic to account for throughout.",
+    steps: [
+      {
+        title: "Glendora Mountain Road: climb, then descend to East Fork",
+        text: "Begin at Big Dalton Canyon Road on the Glendora side and head uphill on GMR. At the Glendora Ridge Road junction, keep left on Glendora Mountain Road toward East Fork; the right branch goes toward Mount Baldy. Continue down the north side to East Fork Road. This climb and descent make up the technical section.",
+        roadId: "glendora-mountain",
+      },
+      {
+        title: "East Fork Road west to Highway 39",
+        text: "At the foot of GMR, follow East Fork Road west toward Highway 39 / San Gabriel Canyon Road. This is the connecting road between GMR and 39; keep on East Fork through the canyon rather than taking the Shoemaker Canyon spur.",
+        roadId: "east-fork-road",
+      },
+      {
+        title: "Highway 39 south to Azusa",
+        text: "At Highway 39, turn left toward Azusa. Follow San Gabriel Canyon Road south past the reservoirs to the foothills. The wider-feeling curves and return toward town give this section a more flowing, commuter-road character than GMR. This guide uses lower Highway 39, not the northern extension toward Crystal Lake or Angeles Crest.",
+        roadId: "san-gabriel-canyon",
+        // Junction and southern endpoint from the archived OSM trace. The map
+        // clips the existing road rather than highlighting its northern spur.
+        mapSection: { from: [-117.851308, 34.2391107], to: [-117.9100882, 34.151045] },
+      },
+    ],
+    stops: [
+      { name: "Glendora", text: "Get fuel, food and water in town before starting the mountain section." },
+      { name: "GMR viewpoints", text: "The mountain views are a reason to pause. Use an open, legal pullout with enough room to leave the road completely; keep gates and junctions clear." },
+      { name: "Azusa", text: "A convenient food stop at the end of the canyon section, before returning to Glendora or heading home." },
+    ],
+    returnRoute: "The mountain drive finishes in the Azusa foothills. Continue into Azusa and use the local street network or I-210 east to return to Glendora. That urban return is separate from the three mountain-road sections highlighted here.",
+    access: { note: "Confirm vehicle access on GMR and East Fork before starting. Mountain gates can close for weather, fire restrictions or holidays; this guide is not a live open-road report.", url: "https://pw.lacounty.gov/roadclosures/" },
+    conditions: "Check LA County’s vehicle closures and Angeles National Forest alerts for GMR and East Fork. Caltrans lists Highway 39 closed from two miles north of Crystal Lake Road to Highway 2; that northern closure is beyond this southbound itinerary. Pavement condition can change after storms, so an older report of smooth pavement is not a guarantee for today.",
+    conditionSources: [
+      { title: "LA County: GMR and East Fork vehicle closures", url: "https://pw.lacounty.gov/roadclosures/" },
+      { title: "Caltrans: current Highway 39 conditions", url: "https://roads.dot.ca.gov/?roadnumber=39" },
+      { title: "Angeles National Forest alerts", url: "https://www.fs.usda.gov/r05/angeles/alerts" },
+    ],
+    sources: [
+      { title: "Autoblog: GMR, East Fork and the return to Azusa (2009 route report)", url: "https://www.autoblog.com/features/autoblog-sunday-drive-glendora-mountain-road" },
+      { title: "Carl Pulley: GMR junctions and road character (June 2026)", url: "https://russbrown.com/glendora-mountain-ridge-roads-motorcycle-ride-by-carl-pulley/" },
+      { title: "OpenStreetMap: Glendora Mountain Road", url: "https://www.openstreetmap.org/way/31525773" },
+      { title: "Caltrans: Highway 39 conditions", url: "https://roads.dot.ca.gov/?roadnumber=39" },
+    ],
+    updated: "2026-09-13",
+  },
+  {
     slug: "skaggs-springs-lake-sonoma-to-the-coast",
+    mapRegion: "bay-area",
     title: "Skaggs Springs Road: Lake Sonoma to the coast",
     description: "Thirty-five miles west from Lake Sonoma over the coast range to Stewarts Point on Highway 1, one of the longest uninterrupted mountain roads in the North Bay.",
     character: "Remote mountain crossing",
@@ -35,7 +96,6 @@ export const drives: Drive[] = [
       {
         title: "Highway 1 at Stewarts Point",
         text: "The road ends on the coast highway. Turn north or south along the ocean, or turn around and drive it back the other way — it reads differently in each direction.",
-        roadId: "highway-1-marin",
       },
     ],
     stops: [
@@ -50,6 +110,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "mines-road-to-lick-observatory",
+    mapRegion: "bay-area",
     title: "Mines Road to Lick Observatory",
     description: "From Livermore south through the Diablo Range on Mines Road and San Antonio Valley Road, finishing with the climb up Mount Hamilton to Lick Observatory.",
     character: "Long backcountry run",
@@ -87,6 +148,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "mount-tamalpais-panoramic-and-ridgecrest",
+    mapRegion: "bay-area",
     title: "Mount Tamalpais: Panoramic Highway and Ridgecrest",
     description: "Up from Stinson Beach on Panoramic Highway, then out along Pantoll and East Ridgecrest Boulevard on the shoulder of Mount Tamalpais.",
     character: "Coastal mountain",
@@ -119,6 +181,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "lucas-valley-and-the-nicasio-loop",
+    mapRegion: "bay-area",
     title: "Lucas Valley and the Nicasio loop",
     description: "A West Marin loop: Lucas Valley Road to Nicasio, out on Point Reyes–Petaluma Road, then back through Chileno Valley and Marshall–Petaluma Road.",
     character: "Ranch country loop",
@@ -146,6 +209,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "east-bay-ridge-run",
+    mapRegion: "bay-area",
     title: "East Bay ridge run: Skyline, Redwood and Pinehurst",
     description: "The Oakland hills end to end — Skyline Boulevard along the ridge, down Redwood Road, and back through Canyon on Pinehurst Road.",
     character: "Hills above the city",
@@ -171,6 +235,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "mines-road-and-del-puerto-canyon",
+    mapRegion: "bay-area",
     title: "Mines Road and Del Puerto Canyon",
     description: "South from Livermore on Mines Road, then east through Del Puerto Canyon and down the back of the Diablo Range to Interstate 5.",
     character: "Remote crossing",
@@ -184,7 +249,7 @@ export const drives: Drive[] = [
       { title: "Del Puerto Canyon east", text: "Drop through the canyon toward Patterson. Drivers have reported broken pavement and slide damage in the section nearest Mines Road.", roadId: "del-puerto-canyon" },
     ],
     stops: [
-      { name: "The Junction", text: "Fuel and food, and the last of either before the canyon." },
+      { name: "The Junction", text: "The meeting point of Mines, San Antonio Valley and Del Puerto Canyon roads. Bring fuel and water from town; confirm any cafe opening before relying on a stop here." },
       { name: "Frank Raines Regional Park", text: "Partway down the canyon, and the only facilities on that side.", url: "https://www.stancounty.com/parks/frank-raines.shtm" },
     ],
     returnRoute: "From Patterson, Interstate 5 north and Highway 580 west return you to Livermore in about an hour — or drive the canyon back up, which is the better road in that direction.",
@@ -195,6 +260,7 @@ export const drives: Drive[] = [
   },
   {
     slug: "highway-9-skyline-pescadero-coastal-drive",
+    mapRegion: "bay-area",
     title: "Highway 9, Skyline & Pescadero coastal drive",
     description: "A Bay Area mountain-to-coast drive: Highway 9 from Saratoga, Skyline, Highway 84, Pescadero Creek Road and Highway 1, with an optional loop back.",
     character: "Mountains & coast",
@@ -243,10 +309,16 @@ export const drives: Drive[] = [
       { title: "California State Parks: Coastside map and beach access", url: "https://www.parks.ca.gov/pages/521/files/SanMateoCoastBeachesParksWeb2016.pdf" },
       { title: "The Ritz-Carlton: Highway 1 and Miramontes Point Road access", url: "https://www.ritzcarlton.com/content/dam/marriott-digital/rz/us-canada/hws/h/hafrz/en_us/document/assets/signature_drive_final.pdf" },
     ],
+    conditions: "Highway 9 and Skyline are public roads where enforcement can occur, including weekends. Expect motorcycles, cyclists and visitors around the ridge junctions; follow posted limits throughout.",
+    conditionSources: [
+      { title: "Caltrans QuickMap: state-highway conditions", url: "https://quickmap.dot.ca.gov/" },
+      { title: "San Mateo County road closures", url: "https://www.smcgov.org/publicworks/county-road-closures" },
+    ],
     updated: "2026-09-09",
   },
   {
     slug: "page-mill-skyline-alices-driving-route",
+    mapRegion: "bay-area",
     title: "Page Mill, Skyline & Alice’s driving route",
     description: "A technical Bay Area drive up Page Mill Road, north along Skyline to Alice’s, then down Highway 84 toward Woodside. Stops, route notes and an optional return.",
     character: "Technical climb",
@@ -281,6 +353,11 @@ export const drives: Drive[] = [
       { title: "Local driving guide: Page Mill and Skyline road character", url: "https://www.lahiri.me/drives/" },
       { title: "Western Wheelers: Peninsula climbs and Highway 84 connections", url: "https://www.westernwheelers.org/main/resources/BA_Climbs.html" },
       { title: "Alice’s Restaurant: location and visitor information", url: "https://alicesrestaurant.com/" },
+    ],
+    conditions: "Highway 9 and Skyline are public roads where enforcement can occur, including weekends. Expect motorcycles, cyclists and visitors around the ridge junctions; follow posted limits throughout.",
+    conditionSources: [
+      { title: "Caltrans QuickMap: state-highway conditions", url: "https://quickmap.dot.ca.gov/" },
+      { title: "San Mateo County road closures", url: "https://www.smcgov.org/publicworks/county-road-closures" },
     ],
     updated: "2026-09-09",
   },
