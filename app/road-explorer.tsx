@@ -47,6 +47,10 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
   // moment they pick a road or landmark any way at all — clicking the map,
   // opening the list, or tapping a "Popular" chip.
   const [introDismissed, setIntroDismissed] = useState(false);
+  // Collapsed by default: on a phone the intro banner plus a fully expanded
+  // filter left almost nothing but chrome above the fold. Desktop ignores
+  // this and always shows the filter — see the CSS.
+  const [filterOpen, setFilterOpen] = useState(false);
   const dataRef = useRef({ roads, landmarks });
   const regionRef = useRef(region);
   // Region payloads are cached so switching back is instant.
@@ -321,8 +325,20 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
             <p className="map-intro-hint">Tap a highlighted road to explore</p>
           </div>
         )}
-        <fieldset className="character-filter">
-          <legend>Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}</legend>
+        {/* Collapsed by default on mobile only (see the CSS): a phone had the
+            intro banner sitting directly on top of a fully expanded filter,
+            leaving almost nothing but chrome above the map. Desktop's own
+            rule shows the fieldset regardless of filterOpen. */}
+        {!filterOpen && (
+          <button type="button" className="filter-toggle" aria-expanded={false} onClick={() => setFilterOpen(true)}>
+            Road character{enabled.length > 0 ? ` (${enabled.length})` : ""} <span aria-hidden="true">⌄</span>
+          </button>
+        )}
+        <fieldset className={`character-filter${filterOpen ? " open" : ""}`}>
+          <legend>
+            Road character{enabled.length > 0 && <button className="clear-filters" onClick={() => setEnabled([])}>Clear</button>}
+            <button type="button" className="filter-collapse" aria-expanded={true} aria-label="Collapse road character filter" onClick={() => setFilterOpen(false)}>×</button>
+          </legend>
           <div className="filter-options">
             {characters.map(character => (
               <button key={character} className="character" aria-pressed={enabled.includes(character)} aria-label={character}
@@ -350,7 +366,11 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
           ))}
         </div>
       )}
-      <button className="reset" onClick={resetMap} aria-label="Reset map view" title="Reset map view">⌖</button>
+      {/* Meaningless with nothing to reset — cut it from the mobile stack until
+          a filter, search or selection actually exists to clear. */}
+      {(enabled.length > 0 || selected || landmark || roadQuery || showRoads) && (
+        <button className="reset" onClick={resetMap} aria-label="Reset map view" title="Reset map view">⌖</button>
+      )}
       <div className="map-bottom">
         <Link className="browse-drives" href="/drives" onClick={() => track("browse_drives", { region, source: "map" })}>Driving guides ↗</Link>
         <button ref={browseButton} className="browse-roads" aria-label={`Browse ${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { if (!showRoads) track("browse_roads", { region }); setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>Browse roads <span>{visible.length} {showRoads ? "−" : "+"}</span></button>

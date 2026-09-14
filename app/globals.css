@@ -53,6 +53,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .map-overlay-top { position: absolute; z-index: 2; top: 20px; left: 22px; display: flex; flex-direction: column; gap: 10px; max-width: min(280px, calc(100% - 90px)); }
 .character-filter { border: 1px solid #435249; border-radius: 7px; margin: 0; padding: 10px 11px 11px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
 .character-filter legend { float: left; width: 100%; margin-bottom: 8px; padding: 0; color: #a4b4aa; font-size: 9px; text-transform: uppercase; letter-spacing: 1.4px; }
+/* Desktop always shows the filter expanded; only the mobile media query below
+   gives .filter-toggle and .filter-collapse any visible effect. */
+.filter-toggle, .filter-collapse { display: none; }
 .filter-options { display: flex; gap: 5px; clear: both; }
 /* Each filter carries its own colour, so the control doubles as the map key. */
 .character { display: flex; align-items: center; gap: 6px; min-height: 30px; padding: 0 9px; background: #212c26; border: 1px solid #3c4841; border-radius: 5px; color: #dfe8e0; font-size: 10px; transition: background .12s, border-color .12s; }
@@ -339,7 +342,14 @@ summary { cursor: pointer; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map
      is the product and the filter was taking a fifth of it. */
   .map-overlay-top { top: 10px; left: 10px; right: 62px; max-width: none; gap: 8px; }
-  .character-filter { padding: 8px 9px 9px; }
+  /* Collapsed by default: stacked under the intro banner, a fully expanded
+     filter left almost nothing but chrome above the map on a phone. */
+  .filter-toggle { display: inline-flex; align-items: center; gap: 5px; align-self: flex-start; padding: 8px 11px; border: 1px solid #435249; border-radius: 7px; background: #19221df5; color: #dfe8e0; font-size: 10.5px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 20px #0003; }
+  .character-filter { position: relative; padding: 8px 30px 9px 9px; }
+  .character-filter:not(.open) { display: none; }
+  /* Same corner spot as .map-intro .close, so the two collapsible cards
+     behave the same way. */
+  .filter-collapse { display: block; position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
   .map-intro { padding: 10px 44px 10px 12px; }
   .popular-roads { left: 12px; right: 12px; bottom: 90px; }
   .popular-roads button { padding: 7px 11px; font-size: 11px; }
