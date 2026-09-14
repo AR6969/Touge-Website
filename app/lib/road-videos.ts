@@ -17,7 +17,7 @@ const roadVideos: RoadVideo[] = [
     poster: "/videos/glendora-mountain-v2.jpg",
     width: 1080,
     height: 1432,
-    description: "A minute on Glendora Mountain Road: winding pavement, rocky hillsides and mountain views, filmed from inside the car.",
+    description: "An F80 M3 and an F87 M2 Competition cruising through GMR: winding pavement, rocky hillsides and mountain views, filmed from inside the car.",
   },
 ];
 

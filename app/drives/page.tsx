@@ -8,6 +8,17 @@ import { mapRegions } from "../lib/map-regions";
 import { driveShapeUri } from "../lib/road-shape";
 import "./drives-index.css";
 
+// A drawn arrow rather than the Unicode ↗ this replaced: that glyph gets the
+// system emoji font on iOS at this size, not a plain arrow. Sized off the
+// surrounding font-size (1em) so the existing CSS needs no changes.
+function ExternalArrow() {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 12 12" fill="none" aria-hidden="true" style={{ flexShrink: 0 }}>
+      <path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 const title = "California Driving Guides: Bay Area & Los Angeles";
 const description = "Plan a Bay Area coastal loop or a Los Angeles mountain drive. Connected roads, clear junctions, maps, stops and current road-condition links.";
 
@@ -49,7 +60,7 @@ export default async function DrivesIndex() {
         {groups.map(group => <section className="drive-category" key={group.id} id={group.id} aria-labelledby={`${group.id}-title`}>
           <div className="drive-category-heading">
             <h2 id={`${group.id}-title`}>{group.region.name}</h2>
-            <Link href={group.region.href} aria-label={`Explore the ${group.region.name} map`}>Open map ↗</Link>
+            <Link href={group.region.href} aria-label={`Explore the ${group.region.name} map`}>Open map <ExternalArrow /></Link>
           </div>
           <ul className="drive-directory">
             {group.drives.map(drive => <li key={drive.slug}>
@@ -62,7 +73,7 @@ export default async function DrivesIndex() {
                     {i > 0 && <b aria-hidden="true">→</b>}{road}
                   </span>)}</span>
                 </div>
-                <span className="drive-row-arrow" aria-hidden="true">↗</span>
+                <span className="drive-row-arrow" aria-hidden="true"><ExternalArrow /></span>
               </Link>
             </li>)}
           </ul>

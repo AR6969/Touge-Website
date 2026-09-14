@@ -70,7 +70,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
    any way at all, so it never competes with the detail panel it is meant to
    lead into. */
 .map-intro { position: relative; padding: 12px 30px 12px 14px; border: 1px solid #435249; border-radius: 7px; background: #19221df5; box-shadow: 0 4px 20px #0003; }
-.map-intro .close { position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
+/* min-width/height for a real touch target, negative margins so the bigger
+   tap area doesn't visually shove the glyph away from the card's corner. */
+.map-intro .close { position: absolute; top: -6px; right: -6px; display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent; color: #93a197; font-size: 17px; line-height: 1; }
 .map-intro-count { margin: 0; color: #f1f0e9; font-size: 13px; font-weight: 600; }
 .map-intro-hint { margin: 4px 0 0; color: #a4b4aa; font-size: 11.5px; }
 .popular-roads { position: absolute; z-index: 2; left: 24px; right: 24px; bottom: 90px; display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; }
@@ -349,7 +351,7 @@ summary { cursor: pointer; }
   .character-filter:not(.open) { display: none; }
   /* Same corner spot as .map-intro .close, so the two collapsible cards
      behave the same way. */
-  .filter-collapse { display: block; position: absolute; top: 6px; right: 6px; padding: 4px 8px; border: 0; background: transparent; color: #93a197; font-size: 15px; line-height: 1; }
+  .filter-collapse { display: flex; align-items: center; justify-content: center; position: absolute; top: -6px; right: -6px; min-width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent; color: #93a197; font-size: 17px; line-height: 1; }
   .map-intro { padding: 10px 44px 10px 12px; }
   .popular-roads { left: 12px; right: 12px; bottom: 90px; }
   .popular-roads button { padding: 7px 11px; font-size: 11px; }

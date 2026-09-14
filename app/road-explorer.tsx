@@ -321,7 +321,10 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         {showIntro && (
           <div className="map-intro" role="status">
             <button className="close" aria-label="Dismiss" onClick={() => setIntroDismissed(true)}>×</button>
-            <p className="map-intro-count">{roads.length} {regionConfig.name} roads</p>
+            {/* The statewide count is a big, unfocused number next to the
+                regional ones (44 LA roads reads as a place; 135 California
+                roads doesn't) — skip the count here, keep the hint. */}
+            {region !== "california" && <p className="map-intro-count">{roads.length} {regionConfig.name} roads</p>}
             <p className="map-intro-hint">Tap a highlighted road to explore</p>
           </div>
         )}
