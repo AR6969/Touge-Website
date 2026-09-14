@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Resumable fetch state, not source
 data/.la-overpass-progress.json
+
+# Owner's full-resolution original; the optimized web copy is in public/videos.
+/GMR clip website.mov

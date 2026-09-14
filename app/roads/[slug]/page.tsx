@@ -11,6 +11,8 @@ import {
 import { colorFor } from "../../lib/colors";
 import { siteUrl } from "../../lib/site";
 import { drives } from "../../lib/drives";
+import RoadVideos from "../../road-videos";
+import { videosForRoads } from "../../lib/road-videos";
 import "../../detail-pages.css";
 
 export const dynamicParams = false;
@@ -47,6 +49,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const rank = curvatureRank(road);
   const nearby = nearbyRoads(road);
   const relatedDrives = drives.filter(drive => drive.steps.some(step => step.roadId === road.id));
+  const videos = videosForRoads([road.id]);
   const color = colorFor(road.character);
   const mapsQuery = encodeURIComponent(`${road.name.replace(/ ·.*/, "")}, ${road.area}, California`);
 
@@ -92,6 +95,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </div>
         <nav className="detail-actions" aria-label="Road shortcuts">
           <Link href={roadMapHref(road)}>Explore on the map →</Link>
+          {videos.length > 0 && <a href="#on-the-road">Watch the road ↓</a>}
           {relatedDrives.length > 0 && <a href="#driving-guides">Drives with this road ↓</a>}
           <a href="#nearby">Nearby roads ↓</a>
         </nav>
@@ -101,6 +105,8 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <a href={road.access.url} target="_blank" rel="noopener noreferrer">Check current access ↗</a>
           <span className="fine"> · Reviewed {road.access.checked}</span>
         </p>}
+
+        <RoadVideos videos={videos} />
 
         <section aria-labelledby="shape">
           <h2 id="shape">Road shape</h2>

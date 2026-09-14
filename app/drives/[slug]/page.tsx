@@ -7,6 +7,8 @@ import { getRoad, slugifyArea } from "../../lib/roads";
 import { mapRegions } from "../../lib/map-regions";
 import DriveMap, { type DriveLeg } from "../../drive-map";
 import { siteName, siteUrl } from "../../lib/site";
+import RoadVideos from "../../road-videos";
+import { videosForRoads } from "../../lib/road-videos";
 import "../../detail-pages.css";
 
 type DrivePageProps = { params: Promise<{ slug: string }> };
@@ -41,6 +43,7 @@ export default async function DrivePage({ params }: DrivePageProps) {
     return road ? [{ id: road.id, name: road.name, step: index + 1, section: step.mapSection }] : [];
   });
   const routeRoads = legs.map(leg => getRoad(leg.id)!);
+  const videos = videosForRoads(legs.map(leg => leg.id));
   const areas = [...new Set(routeRoads.map(road => road.area))];
   const conditionSources = drive.conditionSources ?? [...new Map([
     ...routeRoads.flatMap(road => road.access ? [{ title: `${road.name}: current access`, url: road.access.url }] : []),
@@ -90,6 +93,7 @@ export default async function DrivePage({ params }: DrivePageProps) {
         <p className="lede">{drive.intro}</p>
         <nav className="detail-actions" aria-label="Drive shortcuts">
           <a href="#route">Route &amp; roads ↓</a>
+          {videos.length > 0 && <a href="#on-the-road">Watch the road ↓</a>}
           <a href="#conditions">Road conditions ↓</a>
           <Link href={region.href}>{region.name} map →</Link>
         </nav>
@@ -113,6 +117,8 @@ export default async function DrivePage({ params }: DrivePageProps) {
           <h2 id="why-this-drive">Why this drive</h2>
           <p>{drive.appeal}</p>
         </section>
+
+        <RoadVideos videos={videos} />
 
         <section aria-labelledby="route">
           <h2 id="route">The route</h2>
