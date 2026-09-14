@@ -1,0 +1,37 @@
+/* A route directory: open rows, with each drive's real geometry as its mark. */
+.drives-index { max-width: 1080px; }
+.drives-index .drives-lead { max-width: 42ch; margin-bottom: 24px; }
+.drives-categories { display: flex; flex-wrap: wrap; gap: 12px 32px; padding: 0; border-bottom: 1px solid #34443b; }
+.drives-categories a { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 10px 0; color: #e2e9e3; text-decoration: none; font-size: 15px; border-bottom: 2px solid transparent; }
+.drives-categories a:hover, .drives-categories a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+.drives-categories span { font-size: 11px; color: #9aae9e; font-variant-numeric: tabular-nums; }
+.drives-index .drive-category { margin-top: 48px; scroll-margin-top: 24px; }
+.drive-category-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+.drives-index .drive-category-heading h2 { font-size: 30px; letter-spacing: -.8px; margin: 0; }
+.drive-category-heading > a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; white-space: nowrap; text-decoration: none; }
+.drive-directory { list-style: none; padding: 0; margin: 0; }
+.drive-directory > li { border-bottom: 1px solid #2f3b34; }
+.drive-directory a { display: grid; grid-template-columns: 100px minmax(0, 1fr) 28px; align-items: center; gap: 28px; padding: 28px 0; text-decoration: none; }
+.drive-route-mark { width: 100px; height: 80px; object-fit: contain; opacity: .8; }
+.drive-row-copy { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.drive-row-kind { color: #a3b5a8; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; }
+.drives-index .drive-row-title { margin: 0; color: var(--foreground); font-size: 23px; font-weight: 500; line-height: 1.25; letter-spacing: -.45px; text-wrap: balance; }
+.drive-row-route { color: #a8b8ad; font-size: 13px; line-height: 1.7; }
+.drive-row-route b { padding: 0 8px; font-weight: 400; color: #668772; }
+.drive-row-arrow { color: var(--accent); font-size: 24px; justify-self: end; }
+.drive-directory a:hover .drive-row-title { color: var(--accent); }
+.drive-directory a:hover .drive-route-mark { opacity: 1; }
+.drives-index .drives-outro { margin-top: 36px; font-size: 14px; }
+.drives-index .drives-outro a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+@media (max-width: 600px) {
+  .drives-index .drives-lead { font-size: 16px; }
+  .drives-index .drive-category { margin-top: 32px; }
+  .drives-index .drive-category-heading h2 { font-size: 25px; }
+  .drive-directory a { grid-template-columns: 54px minmax(0, 1fr) 14px; gap: 14px; padding: 24px 0; }
+  .drive-route-mark { width: 54px; height: 66px; }
+  .drives-index .drive-row-title { font-size: 19px; }
+  .drive-row-kind { font-size: 9px; letter-spacing: 1px; }
+  .drive-row-route { font-size: 12px; }
+  .drive-row-route b { padding: 0 4px; }
+  .drive-row-arrow { font-size: 19px; }
+}
