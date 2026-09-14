@@ -9,7 +9,11 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
 }) {
   return (
     <header className="header">
-      <Link href="/" className="brand">
+      {/* Explicit ?region=california rather than a bare "/": the home page
+          otherwise restores whatever region was last remembered, so clicking
+          the brand from, say, the LA map would not actually reach the
+          statewide overview this link is supposed to be "home" to. */}
+      <Link href="/?region=california" className="brand">
         <span className="brand-symbol" aria-hidden="true">峠</span>
         <span className="brand-words">
           <span className="brand-name">California Touge<span className="brand-dot">.</span></span>

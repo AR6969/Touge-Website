@@ -41,6 +41,15 @@ export default function HomeMap({ initialRegion, data, remember = false }: {
 }) {
   const [region, setRegion] = useState<MapRegion>(initialRegion);
 
+  // useState's initializer only runs on mount, so a client-side navigation that
+  // lands back on this same route (the brand link, a shared URL with a
+  // different ?region=) re-renders with a new initialRegion prop that state
+  // would otherwise never pick up. switchRegion never changes initialRegion
+  // itself (it only replaces the URL), so this never fights a manual switch.
+  // Deferred for the same reason as the map status updates: this must not run
+  // synchronously inside the effect.
+  useEffect(() => { queueMicrotask(() => setRegion(initialRegion)); }, [initialRegion]);
+
   // Switching region is client-side state, not navigation: the map stays put and
   // only its data and camera change. The URL is kept honest for sharing.
   const switchRegion = useCallback((next: MapRegion) => {
