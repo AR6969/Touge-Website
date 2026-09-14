@@ -13,10 +13,10 @@ const roadVideos: RoadVideo[] = [
   {
     roadId: "glendora-mountain",
     title: "Glendora Mountain Road",
-    src: "/videos/glendora-mountain-v1.mp4",
-    poster: "/videos/glendora-mountain-v1.jpg",
-    width: 720,
-    height: 954,
+    src: "/videos/glendora-mountain-v2.mp4",
+    poster: "/videos/glendora-mountain-v2.jpg",
+    width: 1080,
+    height: 1432,
     description: "A minute on Glendora Mountain Road: winding pavement, rocky hillsides and mountain views, filmed from inside the car.",
   },
 ];
