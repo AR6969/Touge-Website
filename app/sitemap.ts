@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/regions`, lastModified: latestDate([indexUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/method`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${siteUrl}/contact`, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${siteUrl}/legal`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${siteUrl}/drives`, lastModified: latestDate(drives.map(drive => drive.updated)), changeFrequency: "monthly", priority: 0.8 },
     ...drives.map(drive => ({
       url: `${siteUrl}/drives/${drive.slug}`,

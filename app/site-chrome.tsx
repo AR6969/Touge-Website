@@ -55,7 +55,7 @@ export function SiteFooter() {
         <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Caltrans QuickMap</a> for
         closures and conditions. Posted signs always govern.
       </p>
-      <p className="footer-contact"><Link href="/contact">Contact</Link></p>
+      <p className="footer-contact"><Link href="/contact">Contact</Link> · <Link href="/legal">Legal disclaimer</Link></p>
     </footer>
   );
 }
