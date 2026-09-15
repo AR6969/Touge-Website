@@ -997,19 +997,19 @@
     "area": "Malibu / Santa Monica Mountains",
     "difficulty": 3,
     "character": "Technical",
-    "description": "The tightest stretch of Mulholland Highway, between Cornell Road and Las Virgenes Road — a run of switchbacks a couple of miles east of the Rock Store.",
+    "description": "The Snake is the winding Mulholland Highway corridor between Kanan Road and Sierra Creek Road, near the Rock Store in the Santa Monica Mountains. Tight bends and residential access share this short mountain section.",
     "sources": [
       {
-        "title": "Helen’s Cycles · Our favorite rides and routes",
-        "url": "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm"
+        "title": "LA County Public Works: Mulholland Highway and the Snake corridor",
+        "url": "https://pw.lacounty.gov/tpp/mulholland-hwy/"
       },
       {
-        "title": "Los Angeles County Board of Supervisors / Public Works · Traffic regulations, adopted April 30, 2019",
-        "url": "https://file.lacounty.gov/SDSInter/bos/supdocs/134856.pdf"
+        "title": "LA County: corridor report and map, Kanan Road to Sierra Creek Road",
+        "url": "https://pw.lacounty.gov/tpp/mulholland-hwy/docs/Mulholland-Hwy-Board-Motion-Report.pdf"
       },
       {
-        "title": "Los Angeles County Board of Supervisors · Meeting transcript, March 3, 2026",
-        "url": "https://file.lacounty.gov/SDSInter/bos/sop/transcripts/1203313_030326.pdf"
+        "title": "OpenStreetMap: Sierra Creek Road junction way",
+        "url": "https://www.openstreetmap.org/way/13291006"
       }
     ],
     "speed": {
@@ -1021,31 +1021,33 @@
     "access": {
       "note": "Check current access before visiting this short Mulholland section.",
       "url": "https://pw.lacounty.gov/roadclosures/",
-      "checked": "2026-09-09"
+      "checked": "2026-09-15"
     },
     "names": [
-      "Mulholland Highway"
+      "Mulholland Highway",
+      "Mulholland Highway (The Snake)"
     ],
     "anchors": [
       {
         "near": [
-          -118.751163,
-          34.1130892
+          -118.8126557,
+          34.0964764
         ],
         "junction": [
-          "Cornell Road"
-        ]
+          "Kanan Road",
+          "Kanan Dume Road"
+        ],
+        "maxSnapM": 1
       },
       {
         "near": [
-          -118.71139,
-          34.1039095
+          -118.7853398,
+          34.1137931
         ],
-        "junction": [
-          "Las Virgenes Road"
-        ]
+        "maxSnapM": 1
       }
-    ]
+    ],
+    "reviewed": "2026-09-15"
   },
   {
     "id": "mulholland-drive",

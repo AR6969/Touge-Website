@@ -367,21 +367,29 @@
       "Mulholland Highway"
     ],
     "box": [
+      -118.82,
+      34.09,
       -118.78,
-      34.08,
-      -118.7,
       34.13
     ],
     "anchors": [
       {
+        "near": [
+          -118.8126557,
+          34.0964764
+        ],
         "junction": [
-          "Cornell Road"
-        ]
+          "Kanan Road",
+          "Kanan Dume Road"
+        ],
+        "maxSnapM": 1
       },
       {
-        "junction": [
-          "Las Virgenes Road"
-        ]
+        "near": [
+          -118.7853398,
+          34.1137931
+        ],
+        "maxSnapM": 1
       }
     ]
   },

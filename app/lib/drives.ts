@@ -298,7 +298,7 @@ export const drives: Drive[] = [
     ],
     stops: [
       { name: "Chevron in Saratoga", text: "A convenient meetup and fuel stop before the climb up Highway 9." },
-      { name: "Alice’s / Four Corners", text: "A popular motorcycle meetup at the Skyline–84 junction, with food and fuel nearby.", url: "https://alicesrestaurant.com/" },
+      { name: "Alice’s / Four Corners", text: "A car and motorcycle enthusiast haven at Skyline and Highway 84, especially on Saturday and Sunday mornings. Meet up, enjoy the cars and stay for great food—save room for dessert; it’s a TougeMap favorite. Gas and a deli are at the junction.", url: "https://alicesrestaurant.com/" },
       { name: "Downtown Pescadero", text: "A small downtown with cute coffee shops and lots of character. A lovely place to stretch your legs and grab a coffee before heading back to the coast.", url: "https://www.visithalfmoonbay.org/places/downtown-local/" },
       { name: "Pescadero State Beach", text: "A coastal stop right where Pescadero Creek Road meets Highway 1.", url: "https://www.parks.ca.gov/?page_id=522" },
       { name: "Optional extension: The Ritz-Carlton, Half Moon Bay", text: "Continue north past San Gregorio on Highway 1, then take Miramontes Point Road to the hotel. Great ocean views and a place to grab a drink. Don’t drink and drive. This extends the drive beyond its San Gregorio finish; return south to San Gregorio if you want to follow the loop below.", url: "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/" },
@@ -314,7 +314,7 @@ export const drives: Drive[] = [
       { title: "Caltrans QuickMap: state-highway conditions", url: "https://quickmap.dot.ca.gov/" },
       { title: "San Mateo County road closures", url: "https://www.smcgov.org/publicworks/county-road-closures" },
     ],
-    updated: "2026-09-09",
+    updated: "2026-09-15",
   },
   {
     slug: "page-mill-skyline-alices-driving-route",
@@ -345,7 +345,7 @@ export const drives: Drive[] = [
       },
     ],
     stops: [
-      { name: "Alice’s / Four Corners", text: "The main meetup and food stop on this drive, with a gas station and deli around the junction.", url: "https://alicesrestaurant.com/" },
+      { name: "Alice’s / Four Corners", text: "A car and motorcycle enthusiast haven at Skyline and Highway 84, especially on Saturday and Sunday mornings. Meet up, enjoy the cars and stay for great food—save room for dessert; it’s a TougeMap favorite. Gas and a deli are at the junction.", url: "https://alicesrestaurant.com/" },
       { name: "Woodside", text: "The finish after the Highway 84 descent, before joining your route home." },
     ],
     returnRoute: "For a simple loop back to the start, continue on Highway 84 through Woodside to I-280, then take I-280 south to the Page Mill Road exit. The return uses the freeway; the mountain driving ends in Woodside.",
@@ -359,7 +359,7 @@ export const drives: Drive[] = [
       { title: "Caltrans QuickMap: state-highway conditions", url: "https://quickmap.dot.ca.gov/" },
       { title: "San Mateo County road closures", url: "https://www.smcgov.org/publicworks/county-road-closures" },
     ],
-    updated: "2026-09-09",
+    updated: "2026-09-15",
   },
 ];
 

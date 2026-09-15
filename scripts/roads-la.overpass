@@ -26,6 +26,7 @@
   way["name"="Highland Valley Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Julian Highway"](32.50,-119.60,34.90,-115.80);
   way["name"="Kanan Dume Road"](32.50,-119.60,34.90,-115.80);
+  way["name"="Kanan Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Laguna Canyon Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Lake Hughes Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Las Flores Canyon Road"](32.50,-119.60,34.90,-115.80);
@@ -46,6 +47,7 @@
   way["name"="Mt. Baldy Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Mulholland Drive"](32.50,-119.60,34.90,-115.80);
   way["name"="Mulholland Highway"](32.50,-119.60,34.90,-115.80);
+  way["name"="Mulholland Highway (The Snake)"](32.50,-119.60,34.90,-115.80);
   way["name"="North Coast Highway"](32.50,-119.60,34.90,-115.80);
   way["name"="North Topanga Canyon Boulevard"](32.50,-119.60,34.90,-115.80);
   way["name"="Old Topanga Canyon Road"](32.50,-119.60,34.90,-115.80);
@@ -61,6 +63,7 @@
   way["name"="San Gabriel Canyon Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Santiago Canyon Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Schueren Road"](32.50,-119.60,34.90,-115.80);
+  way["name"="Sierra Creek Road"](32.50,-119.60,34.90,-115.80);
   way["name"="Silverado Canyon Road"](32.50,-119.60,34.90,-115.80);
   way["name"="South Coast Highway"](32.50,-119.60,34.90,-115.80);
   way["name"="South Grade Road"](32.50,-119.60,34.90,-115.80);

@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 
 ROAD_IDS = [
     'highway-9-front', 'page-mill', 'skyline', 'pescadero', 'highway-1-coast',
+    'highway-9-back', 'the-snake', 'grizzly',
     'mines', 'glendora-mountain', 'angeles-crest-west', 'latigo-canyon', 'palomar-south-grade',
 ]
 PATHS = ['/', '/roads', '/drives'] + ['/roads/' + road for road in ROAD_IDS]

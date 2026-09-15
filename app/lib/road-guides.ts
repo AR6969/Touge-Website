@@ -14,8 +14,8 @@ export const collectionUpdated = "2026-09-15";
 const updated = "2026-09-15";
 const roadGuides: Record<string, RoadGuide> = {
   "highway-9-front": {
-    heading: "Highway 9: Saratoga to Skyline",
-    title: "Highway 9: Saratoga to Skyline | TougeMap",
+    heading: "Highway 9 Front Side: Saratoga to Skyline",
+    title: "Highway 9 Front Side: Saratoga to Skyline | TougeMap",
     description: "Plan the Highway 9 climb from Saratoga to Saratoga Gap. Explore the road map, wooded bends, Skyline connections and a longer Pescadero coastal drive.",
     updated,
     notes: [
@@ -35,6 +35,7 @@ const roadGuides: Record<string, RoadGuide> = {
     notes: [
       { text: "Page Mill is the technical foothill climb in the Page Mill–Skyline–Alice’s guide. The upper road reaches the Skyline Boulevard and Alpine Road junction beside Russian Ridge Preserve. That junction separates the climb from the ridge road and the westward descent, so choose the next leg before setting off.", source: { title: "Midpen: Russian Ridge directions", url: "https://www.openspace.org/preserves/russian-ridge" } },
       { text: "The appeal is the changing rhythm of the bends and the climb toward the ridge. Short sightlines and bicycle traffic deserve attention throughout. For the Woodside outing, turn north on Skyline toward Alice’s and take Highway 84 downhill toward Woodside; the driving guide spells out that direction at the junction." },
+      { text: "Make Alice’s the food and meetup stop after the climb. Head north on Skyline to Highway 84; Saturday and Sunday mornings are a favorite for car and motorcycle enthusiasts. Our tip: leave room for dessert.", source: { title: "Alice’s Restaurant: food and visitor information", url: "https://alicesrestaurant.com/" } },
     ],
     connections: [
       { roadId: "skyline", note: "Turn north at the top for the ridge leg toward Alice’s and Highway 84." },
@@ -49,6 +50,7 @@ const roadGuides: Record<string, RoadGuide> = {
     notes: [
       { text: "The mapped Skyline section runs along the Peninsula ridge between Highway 92 and Highway 9. It is the connecting leg in several local outings: Page Mill meets it near Russian Ridge, Highway 84 crosses at Sky Londa, and Highway 9 meets it at Saratoga Gap. Alice’s Restaurant is on Skyline at the Highway 84 junction.", source: { title: "Alice’s: location and visitor information", url: "https://alicesrestaurant.com/" } },
       { text: "Pick a section to suit the rest of your outing. The Page Mill guide uses Skyline to reach the Woodside descent, while the Highway 9 coastal guide follows the ridge before heading through La Honda and Pescadero. Pull fully into a designated parking area for a stop; preserve entrances and junctions bring people on and off the road.", source: { title: "Midpen: ridge junction and parking at Russian Ridge", url: "https://www.openspace.org/preserves/russian-ridge" } },
+      { text: "Alice’s is the social stop on this ridge drive: a car and motorcycle enthusiast haven, especially on Saturday and Sunday mornings. Come for the cars, stay for great food, and save room for dessert—it’s a TougeMap favorite. There is gas and a deli at the junction.", source: { title: "Alice’s Restaurant: food and visitor information", url: "https://alicesrestaurant.com/" } },
     ],
     connections: [
       { roadId: "page-mill", note: "A technical approach to the ridge from the Peninsula foothills." },
@@ -64,6 +66,7 @@ const roadGuides: Record<string, RoadGuide> = {
     notes: [
       { text: "Pescadero Creek Road brings a change of scenery to a Peninsula drive: redwoods around Loma Mar, then the country around Pescadero and the coast. Memorial Park sits on this road and gives you a place to plan a proper stop among the redwoods. Check the park’s visitor information if you want to combine the drive with a walk.", source: { title: "San Mateo County: Memorial Park", url: "https://www.smcgov.org/parks/memorial-park" } },
       { text: "At the coast, Pescadero Creek Road meets Highway 1 beside the southern access to Pescadero State Beach. This makes the road a useful link in a mountain-to-ocean outing. Use the coastal driving guide for the full Highway 9–Skyline–Highway 84 approach and decide which direction you want to take on Highway 1 before reaching the coast.", source: { title: "State Parks: Pescadero beach access", url: "https://parks.ca.gov/?page_id=522" } },
+      { text: "Leave time for downtown Pescadero before the beach. It’s small, full of character and a lovely coffee stop between the redwoods and Highway 1." },
     ],
     connections: [
       { roadId: "la-honda", note: "Highway 84 supplies the inland approach from the La Honda side." },
@@ -153,6 +156,98 @@ const roadGuides: Record<string, RoadGuide> = {
     connections: [
       { roadId: "palomar-east-grade", note: "The longer eastern descent toward the Lake Henshaw side of Highway 76." },
     ],
+  },
+  "highway-9-back": {
+    "heading": "Highway 9 Back Side: Saratoga Gap to Santa Cruz",
+    "title": "Highway 9 Back Side: Redwoods to Santa Cruz | TougeMap",
+    "description": "Explore Highway 9’s back side from Saratoga Gap through Boulder Creek and the San Lorenzo Valley to Santa Cruz. Map, redwood scenery and connecting roads.",
+    "updated": "2026-09-15",
+    "notes": [
+      {
+        "text": "Over Saratoga Gap, Highway 9 changes from the front-side climb into a much longer drive through the redwoods. The mapped back side continues through Boulder Creek and the San Lorenzo Valley toward Santa Cruz. Choose it for a forest drive with towns along the way, rather than treating the whole road as one uninterrupted mountain section."
+      },
+      {
+        "text": "At the ridge, Skyline and the Saratoga front side provide two different ways to continue. Farther down, Highway 236 is a separate Big Basin detour and Bear Creek is another mountain connection near Boulder Creek. Check Caltrans for Highway 9 and any state-highway detours before setting off; town centers and residential entrances change the pace.",
+        "source": {
+          "title": "Caltrans: Highway 9 conditions",
+          "url": "https://roads.dot.ca.gov/?roadnumber=9"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "roadId": "highway-9-front",
+        "note": "The other side of Saratoga Gap, descending toward Saratoga."
+      },
+      {
+        "roadId": "skyline",
+        "note": "Head north from the gap toward Alice’s and the Highway 84 junction."
+      },
+      {
+        "roadId": "big-basin",
+        "note": "Highway 236 is a separate forest detour; check its access before adding it."
+      },
+      {
+        "roadId": "bear-creek",
+        "note": "A mountain-road connection near Boulder Creek."
+      }
+    ]
+  },
+  "grizzly": {
+    "heading": "Grizzly Peak Boulevard, Berkeley & Oakland",
+    "title": "Grizzly Peak Boulevard: Berkeley Hills Drive | TougeMap",
+    "description": "Explore Grizzly Peak Boulevard in the Berkeley and Oakland hills. Bay views, a road map, Tilden Park stops and connections for a relaxed East Bay drive.",
+    "updated": "2026-09-15",
+    "notes": [
+      {
+        "text": "Grizzly Peak is a good choice when you want winding hills and Bay views without committing to a remote mountain day. The road serves Berkeley and Oakland neighborhoods as well as park visitors. Enjoy the overlooks from a permitted parking spot; leave entrances and the travel lane clear."
+      },
+      {
+        "text": "Tilden is a natural way to turn the drive into a longer stop, with entrances off Grizzly Peak and Wildcat Canyon Road. Check the park’s road notices before adding an interior park route: South Park Drive has a seasonal vehicle closure. Cyclists also use these hills, so give them room through the bends.",
+        "source": {
+          "title": "East Bay Parks: Tilden access and road notices",
+          "url": "https://www.ebparks.org/parks/tilden"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "roadId": "skyline-oakland",
+        "note": "Continue into the Oakland hills on the local Skyline Boulevard—not Highway 35 on the Peninsula."
+      }
+    ]
+  },
+  "the-snake": {
+    "heading": "The Snake: Mulholland Highway",
+    "title": "The Snake on Mulholland Highway: Road Guide | TougeMap",
+    "description": "Explore the Snake on Mulholland Highway between Kanan and Sierra Creek roads. Map, tight mountain bends, Rock Store context and official access information.",
+    "updated": "2026-09-15",
+    "notes": [
+      {
+        "text": "The Snake is the compact, twisting Mulholland Highway section in the Santa Monica Mountains near the Rock Store. This page maps the Kanan Road to Sierra Creek Road corridor, including the famous bends. It is part of Mulholland Highway in the Malibu mountains, separate from Mulholland Drive in the Hollywood Hills.",
+        "source": {
+          "title": "LA County: Mulholland Highway corridor and the Snake",
+          "url": "https://pw.lacounty.gov/tpp/mulholland-hwy/"
+        }
+      },
+      {
+        "text": "Make it one leg of a canyon outing, with a proper stop instead of stopping along a bend. Kanan Dume connects the western end toward PCH, while the wider Mulholland Highway page helps put this short section in context. Check current county access notices before leaving; older videos and reopening stories do not establish today’s road conditions.",
+        "source": {
+          "title": "LA County: current road closures",
+          "url": "https://pw.lacounty.gov/roadclosures/"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "roadId": "kanan-dume",
+        "note": "The connection toward the coast at the western end of this selected corridor."
+      },
+      {
+        "roadId": "mulholland-highway-malibu",
+        "note": "The wider Mulholland Highway route through the Malibu mountains."
+      }
+    ]
   },
 };
 

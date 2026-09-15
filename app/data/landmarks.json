@@ -1,9 +1,9 @@
 [
   {
     "id": "alices",
-    "name": "Alice's",
-    "kind": "Junction",
-    "note": "Popular motorcycle meetup spot at Skyline Blvd (CA 35) and La Honda Road (CA 84), with a gas station and deli at the junction.",
+    "name": "Alice’s Restaurant",
+    "kind": "Food & meetup",
+    "note": "A car and motorcycle enthusiast haven at Skyline and Highway 84, especially on Saturday and Sunday mornings. Meet up, enjoy the cars and stay for great food—save room for dessert; it’s a TougeMap favorite. Gas and a deli are at the junction.",
     "coordinates": [
       -122.265403,
       37.386668
@@ -14,7 +14,7 @@
     "id": "saratoga-gap",
     "name": "Saratoga Gap",
     "kind": "Junction",
-    "note": "Skyline Blvd (CA 35) \u00d7 Highway 9, where the front side becomes the back side.",
+    "note": "Skyline Blvd (CA 35) × Highway 9, where the front side becomes the back side.",
     "coordinates": [
       -122.12197,
       37.25852
@@ -73,7 +73,7 @@
     "id": "ritz-carlton-half-moon-bay",
     "name": "Ritz-Carlton",
     "kind": "Coastal stop",
-    "note": "The Ritz-Carlton, Half Moon Bay: great ocean views and a place to grab a drink, just off Highway 1 on Miramontes Point Road. Don\u2019t drink and drive.",
+    "note": "The Ritz-Carlton, Half Moon Bay: great ocean views and a place to grab a drink, just off Highway 1 on Miramontes Point Road. Don’t drink and drive.",
     "sourceUrl": "https://www.ritzcarlton.com/en/hotels/hafrz-the-ritz-carlton-half-moon-bay/overview/",
     "sourceLabel": "Hotel details",
     "coordinates": [
@@ -108,7 +108,7 @@
     "id": "lick-observatory",
     "name": "Lick Observatory",
     "kind": "Summit",
-    "note": "The domes at the top of Mount Hamilton Road, at 4,265 ft. The road exists because the observatory does \u2014 it was graded in 1876 to haul the telescope up by wagon, at a gradient gentle enough for the horses, which is why it turns as much as it does. Visitor centre hours are seasonal and the road is gated in snow.",
+    "note": "The domes at the top of Mount Hamilton Road, at 4,265 ft. The road exists because the observatory does — it was graded in 1876 to haul the telescope up by wagon, at a gradient gentle enough for the horses, which is why it turns as much as it does. Visitor centre hours are seasonal and the road is gated in snow.",
     "sourceUrl": "https://www.lickobservatory.org/visitors/",
     "sourceLabel": "Lick Observatory visitor information",
     "coordinates": [
@@ -119,9 +119,9 @@
   },
   {
     "id": "umunhum-tower",
-    "name": "The Cube \u00b7 Mount Umunhum",
+    "name": "The Cube · Mount Umunhum",
     "kind": "Summit",
-    "note": "The concrete radar tower at the top of Mount Umunhum Road, at 3,486 ft \u2014 all that was kept of Almaden Air Force Station, which watched for Soviet bombers from 1957 until it closed in 1980. The summit reopened to the public in 2017 with a viewing deck. Gated outside daylight hours.",
+    "note": "The concrete radar tower at the top of Mount Umunhum Road, at 3,486 ft — all that was kept of Almaden Air Force Station, which watched for Soviet bombers from 1957 until it closed in 1980. The summit reopened to the public in 2017 with a viewing deck. Gated outside daylight hours.",
     "sourceUrl": "https://www.openspace.org/preserves/sierra-azul",
     "sourceLabel": "Midpeninsula Regional Open Space District",
     "coordinates": [
