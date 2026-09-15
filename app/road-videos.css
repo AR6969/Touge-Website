@@ -1,10 +1,14 @@
 .road-video { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: center; margin: 0; }
 .road-video + .road-video { margin-top: 28px; }
-.road-video video { display: block; width: 100%; height: auto; aspect-ratio: 720 / 954; background: #101713; border-radius: 8px; }
+.road-video video { display: block; width: 100%; height: auto; background: #101713; border-radius: 8px; }
+.road-video-screen { position: relative; }
+.road-video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); min-height: 48px; padding: 12px 20px; border: 1px solid #a8d8c6; border-radius: 999px; background: #101713e8; color: #f0f8f2; font: inherit; font-weight: 500; white-space: nowrap; cursor: pointer; }
+.road-video-sound { display: block; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: var(--accent); font: inherit; font-size: 14px; cursor: pointer; }
+.road-video button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .road-video video:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .road-video figcaption { max-width: 36ch; }
 .road-video .road-video-title { font-size: 19px; color: var(--foreground); font-weight: 500; }
 @media (max-width: 600px) {
   .road-video { grid-template-columns: minmax(0, 1fr); gap: 18px; }
-  .road-video video { max-width: 380px; margin-inline: auto; }
+  .road-video-player { width: 100%; max-width: 380px; margin-inline: auto; }
 }

@@ -1,4 +1,5 @@
 import type { RoadVideo } from "./lib/road-videos";
+import RoadVideoPlayer from "./road-video-player";
 import "./road-videos.css";
 
 export default function RoadVideos({ videos }: { videos: RoadVideo[] }) {
@@ -9,19 +10,7 @@ export default function RoadVideos({ videos }: { videos: RoadVideo[] }) {
       <h2 id="on-the-road">On the road</h2>
       {videos.map(video => (
         <figure className="road-video" key={video.src}>
-          <video
-            controls
-            playsInline
-            preload="none"
-            poster={video.poster}
-            width={video.width}
-            height={video.height}
-            aria-label={`${video.title} driving clip`}
-            aria-describedby={`video-description-${video.roadId}`}
-          >
-            <source src={video.src} type="video/mp4" />
-            <a href={video.src}>Watch the {video.title} clip</a>
-          </video>
+          <RoadVideoPlayer video={video} />
           <figcaption id={`video-description-${video.roadId}`}>
             <p className="road-video-title">{video.title}</p>
             <p>{video.description}</p>

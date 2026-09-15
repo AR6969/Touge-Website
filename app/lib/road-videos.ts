@@ -13,11 +13,11 @@ const roadVideos: RoadVideo[] = [
   {
     roadId: "glendora-mountain",
     title: "Glendora Mountain Road",
-    src: "/videos/glendora-mountain-v2.mp4",
-    poster: "/videos/glendora-mountain-v2.jpg",
+    src: "/videos/glendora-mountain-v3.mp4",
+    poster: "/videos/glendora-mountain-v3.jpg",
     width: 1080,
     height: 1432,
-    description: "An F80 M3 and an F87 M2 Competition cruising through GMR: winding pavement, rocky hillsides and mountain views, filmed from inside the car.",
+    description: "F80 M3 and F87 M2 Competition cruising on Glendora Mountain Road.",
   },
 ];
 
