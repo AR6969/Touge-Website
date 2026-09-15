@@ -13,6 +13,7 @@ import { siteUrl } from "../../lib/site";
 import { drives } from "../../lib/drives";
 import RoadVideos from "../../road-videos";
 import { videosForRoads } from "../../lib/road-videos";
+import { getRoadGuide } from "../../lib/road-guides";
 import "../../detail-pages.css";
 
 export const dynamicParams = false;
@@ -32,12 +33,14 @@ function summary(road: NonNullable<ReturnType<typeof getRoad>>) {
 export async function generateMetadata({ params }: PageProps<"/roads/[slug]">): Promise<Metadata> {
   const road = getRoad((await params).slug);
   if (!road) return {};
-  const title = `${road.name} — ${road.area} Driving Road`;
+  const editorial = getRoadGuide(road.id);
+  const title = editorial?.title ?? `${road.name} — ${road.area} Driving Road`;
+  const description = editorial?.description ?? summary(road);
   return {
-    title,
-    description: summary(road),
+    title: editorial ? { absolute: title } : title,
+    description,
     alternates: { canonical: `/roads/${road.id}` },
-    openGraph: { type: "article", url: `/roads/${road.id}`, title, description: summary(road) },
+    openGraph: { type: "article", url: `/roads/${road.id}`, title, description },
   };
 }
 
@@ -45,6 +48,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const road = getRoad((await params).slug);
   if (!road) notFound();
 
+  const editorial = getRoadGuide(road.id);
   const guide = speedGuide(road);
   const rank = curvatureRank(road);
   const nearby = nearbyRoads(road);
@@ -56,6 +60,12 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
+      ...(editorial ? [{
+        "@type": "WebPage", "@id": `${siteUrl}/roads/${road.id}#webpage`,
+        url: `${siteUrl}/roads/${road.id}`, name: editorial.heading, description: editorial.description,
+        dateModified: editorial.updated, isPartOf: { "@id": `${siteUrl}#website` },
+        about: { "@type": "Place", name: road.name, url: `${siteUrl}/roads/${road.id}` },
+      }] : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -79,14 +89,14 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   return (
     <>
       <SiteHeader current="roads" />
-      <main className="prose road-page">
+      <main className={`prose road-page${editorial ? " road-editorial" : ""}`}>
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link> <span aria-hidden="true">/</span>{" "}
           <Link href="/roads">Roads</Link> <span aria-hidden="true">/</span>{" "}
           <Link href={`/regions/${slugifyArea(road.area)}`}>{road.area}</Link>
         </nav>
 
-        <h1>{road.name}</h1>
+        <h1>{editorial?.heading ?? road.name}</h1>
         <p className="lede">{road.description}</p>
         <div className="road-badges">
           <span><i style={{ background: color }} /> {road.character}</span>
@@ -95,6 +105,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </div>
         <nav className="detail-actions" aria-label="Road shortcuts">
           <Link href={roadMapHref(road)}>Explore on the map →</Link>
+          {editorial && <a href="#drive-notes">Plan the drive ↓</a>}
           {videos.length > 0 && <a href="#on-the-road">Watch the road ↓</a>}
           {relatedDrives.length > 0 && <a href="#driving-guides">Drives with this road ↓</a>}
           <a href="#nearby">Nearby roads ↓</a>
@@ -107,6 +118,22 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         </p>}
 
         <RoadVideos videos={videos} />
+
+        {editorial && <section className="road-planning" aria-labelledby="drive-notes">
+          <h2 id="drive-notes">Planning the drive</h2>
+          {editorial.notes.map((note, index) => <p key={index}>
+            {note.text}{note.source && <> <a className="planning-source" href={note.source.url} target="_blank" rel="noopener noreferrer">{note.source.title} ↗</a></>}
+          </p>)}
+          <h3>Roads to connect</h3>
+          <ul className="road-connections">
+            {editorial.connections.map(connection => {
+              const next = getRoad(connection.roadId)!;
+              return <li key={next.id}><Link href={`/roads/${next.id}`}>{next.name}</Link><span>{connection.note}</span></li>;
+            })}
+          </ul>
+          {relatedDrives.length > 0 && <p>Full route: <Link href={`/drives/${relatedDrives[0].slug}`}>{relatedDrives[0].title} →</Link></p>}
+          <p className="fine">Driving notes updated <time dateTime={editorial.updated}>{new Date(`${editorial.updated}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>.</p>
+        </section>}
 
         <section aria-labelledby="shape">
           <h2 id="shape">Road shape</h2>

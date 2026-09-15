@@ -19,11 +19,11 @@ function ExternalArrow() {
   );
 }
 
-const title = "California Driving Guides: Bay Area & Los Angeles";
+const title = "Bay Area & Los Angeles Driving Guides | TougeMap";
 const description = "Plan a Bay Area coastal loop or a Los Angeles mountain drive. Connected roads, clear junctions, maps, stops and current road-condition links.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: "/drives" },
   openGraph: { url: "/drives", title, description },
@@ -39,12 +39,20 @@ export default async function DrivesIndex() {
   )));
   const structured = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: title,
-    numberOfItems: drives.length,
-    itemListElement: groups.flatMap(group => group.drives).map((drive, index) => ({
-      "@type": "ListItem", position: index + 1, name: drive.title, url: `${siteUrl}/drives/${drive.slug}`,
-    })),
+    "@graph": [
+      { "@type": "CollectionPage", "@id": `${siteUrl}/drives#webpage`, url: `${siteUrl}/drives`, name: "Bay Area and Los Angeles driving guides", description, mainEntity: { "@id": `${siteUrl}/drives#list` } },
+      { "@type": "BreadcrumbList", itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+        { "@type": "ListItem", position: 2, name: "Driving guides", item: `${siteUrl}/drives` },
+      ] },
+      { "@type": "ItemList", "@id": `${siteUrl}/drives#list`,
+        name: title,
+        numberOfItems: drives.length,
+        itemListElement: groups.flatMap(group => group.drives).map((drive, index) => ({
+          "@type": "ListItem", position: index + 1, name: drive.title, url: `${siteUrl}/drives/${drive.slug}`,
+        })),
+      },
+    ],
   };
 
   return (
@@ -53,7 +61,7 @@ export default async function DrivesIndex() {
       <main className="prose drives-index">
         <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link> <span aria-hidden="true">/</span> Driving guides</nav>
         <h1>Driving guides</h1>
-        <p className="lede drives-lead">A few good roads, joined into a day out. Pick a region and find your next drive.</p>
+        <p className="lede drives-lead">A few good roads, joined into a day out. Explore Bay Area and Los Angeles routes with junctions, worthwhile stops and return options.</p>
         <nav className="drives-categories" aria-label="Driving guide categories">
           {groups.map(group => <a key={group.id} href={`#${group.id}`}>{group.region.name}<span>{group.drives.length} {group.drives.length === 1 ? "drive" : "drives"}</span></a>)}
         </nav>
@@ -62,6 +70,8 @@ export default async function DrivesIndex() {
             <h2 id={`${group.id}-title`}>{group.region.name}</h2>
             <Link href={group.region.href} aria-label={`Explore the ${group.region.name} map`}>Open map <ExternalArrow /></Link>
           </div>
+          {group.id === "bay-area" && <p className="drive-category-intro">Start with <Link href="/roads/highway-9-front">Highway 9</Link> and <Link href="/roads/pescadero">Pescadero Creek Road</Link> for a mountain-to-coast outing, or choose a shorter ridge drive from <Link href="/roads/page-mill">Page Mill Road</Link>.</p>}
+          {group.id === "los-angeles" && <p className="drive-category-intro">The <Link href="/roads/glendora-mountain">Glendora Mountain Road</Link> guide joins the tight mountain section to <Link href="/roads/san-gabriel-canyon">Highway 39</Link> via East Fork Road, with gate-access sources to check before leaving.</p>}
           <ul className="drive-directory">
             {group.drives.map(drive => <li key={drive.slug}>
               <Link href={`/drives/${drive.slug}`} aria-labelledby={`title-${drive.slug}`}>

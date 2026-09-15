@@ -162,6 +162,15 @@ summary { cursor: pointer; }
 .intro-links a { position: relative; color: var(--accent); text-decoration: none; padding-bottom: 2px;
                  border-bottom: 1px solid #33463c; }
 .intro-links a:hover { border-bottom-color: var(--accent); }
+.landing .intro-links a, .roads-index .intro-links a, .directory-map-link a {
+  display: inline-flex; align-items: center; min-height: 44px;
+}
+.roads-index .breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
+.landing a:focus-visible, .roads-index a:focus-visible, .roads-index .table-scroll:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 4px;
+}
+.roads-index .directory-map-link { margin-top: -12px; font-size: 14px; }
+.roads-index h2[id] { scroll-margin-top: 24px; }
 
 /* The counts, given the weight they deserve. */
 .intro-stats { display: grid; grid-template-columns: repeat(2, auto); gap: 22px 40px; margin: 4px 0 0;

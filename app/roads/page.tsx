@@ -8,36 +8,44 @@ import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 
-const title = `All ${roads.length} Driving Roads in California`;
-const description = `Browse ${roads.length} California driving roads by region, from the Bay Area and Sierra foothills to Los Angeles and San Diego. Compare road character, mapped length and terrain.`;
+const title = "California Driving Roads by Region | TougeMap";
+const description = `Browse ${roads.length} California driving roads by region: Bay Area, Los Angeles, San Diego and Sierra Nevada. Find road maps, access notes and connected driving guides.`;
 export const metadata: Metadata = {
-  title, description,
+  title: { absolute: title }, description,
   alternates: { canonical: "/roads" },
   openGraph: { url: "/roads", title, description },
 };
 
 export default function RoadsIndex() {
+  const directoryRoads = roadGroups.flatMap(group => [...group.roads].sort((a, b) => a.name.localeCompare(b.name)));
   const structured = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: `All ${roads.length} driving roads`,
-    numberOfItems: curviest.length,
-    itemListElement: curviest.map((road, index) => ({
-      "@type": "ListItem", position: index + 1, url: `${siteUrl}/roads/${road.id}`, name: road.name,
-    })),
+    "@graph": [
+      { "@type": "CollectionPage", "@id": `${siteUrl}/roads#webpage`, url: `${siteUrl}/roads`, name: "California driving roads", description, mainEntity: { "@id": `${siteUrl}/roads#list` } },
+      { "@type": "BreadcrumbList", itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+        { "@type": "ListItem", position: 2, name: "Roads", item: `${siteUrl}/roads` },
+      ] },
+      { "@type": "ItemList", "@id": `${siteUrl}/roads#list`,
+        name: `All ${roads.length} driving roads`,
+        numberOfItems: directoryRoads.length,
+        itemListElement: directoryRoads.map((road, index) => ({
+          "@type": "ListItem", position: index + 1, url: `${siteUrl}/roads/${road.id}`, name: road.name,
+        })),
+      },
+    ],
   };
 
   return (
     <>
       <SiteHeader current="roads" />
-      <main className="prose">
+      <main className="prose roads-index">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link> <span aria-hidden="true">/</span> Roads
         </nav>
-        <h1>All {roads.length} driving roads</h1>
+        <h1>California driving roads</h1>
         <p className="lede">
-          Find a road by name or start with a region. The collection covers {totalMiles.toLocaleString()} mapped miles;
-          each road has its own map, character and access notes.
+          Browse {roads.length} roads across {totalMiles.toLocaleString()} mapped miles of California. Pick a region, then open a road for its map, character and access notes.
         </p>
         <nav className="intro-links" aria-label="Road regions">
           {roadGroups.map(group => <a key={group.id} href={`#roads-${group.id}`}>{group.name}</a>)}
@@ -45,6 +53,7 @@ export default function RoadsIndex() {
         </nav>
         {roadGroups.map(group => <section key={group.id} aria-labelledby={`roads-${group.id}`}>
           <h2 id={`roads-${group.id}`}>{group.name}</h2>
+          <p className="directory-map-link"><Link href={group.mapHref}>Explore the {group.mapName} map →</Link></p>
           <ul className="road-directory">
             {[...group.roads].sort((a, b) => a.name.localeCompare(b.name)).map(road => <li key={road.id}>
               <Link href={`/roads/${road.id}`} prefetch={false}>
@@ -59,7 +68,7 @@ export default function RoadsIndex() {
         <h2 id="ranked">Compare the numbers</h2>
         <details className="road-comparison"><summary>Open the full comparison table</summary>
         <p className="fine">Sorted by direction change per mile. These measurements describe the road, not a safe driving speed.</p>
-        <div className="table-scroll">
+        <div className="table-scroll" tabIndex={0} role="region" aria-label="Road comparison table, scroll horizontally for more columns">
           <table className="rank-table">
             <thead>
               <tr>

@@ -7,12 +7,12 @@ import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { drives } from "./lib/drives";
 import { siteName, siteUrl } from "./lib/site";
 
-const title = "Best Driving Roads in California";
+const title = "California Driving Roads & Scenic Drives | TougeMap";
 const description =
-  "Explore California driving roads in the Bay Area, Los Angeles, Malibu, Orange County and San Diego. Find a road on the map or plan a drive with routes, stops and access notes.";
+  "Find California driving roads on an interactive map. Explore Bay Area, Malibu, Los Angeles and San Diego roads, plus scenic drives with routes and stops.";
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: "/" },
   openGraph: { url: "/", title, description },
@@ -45,7 +45,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "WebSite", name: siteName, url: siteUrl, description, inLanguage: "en-US" },
+      { "@type": "WebSite", "@id": `${siteUrl}#website`, name: "TougeMap", alternateName: siteName, url: siteUrl, description, inLanguage: "en-US" },
       {
         "@type": "ItemList",
         name: "Roads to explore in California",
@@ -73,7 +73,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
       <main className="prose landing" id="about">
         <h1>Best driving roads in California</h1>
         <p className="lede">
-          Find your next mountain road, coastal detour or weekend loop. Tap a colored road on the map,
+          Find your next mountain road, coastal detour or weekend loop in the Bay Area, Los Angeles or San Diego. Tap a colored road on the map,
           or start with a guide for the route, worthwhile stops and access notes.
         </p>
         <nav className="intro-links" aria-label="Explore California">

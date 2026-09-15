@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { regions, roads } from "./lib/roads";
 import { siteUrl } from "./lib/site";
 import { drives } from "./lib/drives";
+import { collectionUpdated, getRoadGuide } from "./lib/road-guides";
 
 function latestDate(dates: string[]) {
   const timestamps = dates.map(date => Date.parse(date)).filter(Number.isFinite);
@@ -11,7 +12,7 @@ function latestDate(dates: string[]) {
 export default function sitemap(): MetadataRoute.Sitemap {
   // Collection pages change when any included road/guide changes, not just the
   // first entry in an editorially ordered array. Do not stamp every URL at build.
-  const lastModified = latestDate(roads.map(road => road.reviewed));
+  const lastModified = latestDate([collectionUpdated, ...roads.map(road => road.reviewed), ...drives.map(drive => drive.updated)]);
   const indexUpdated = "2026-09-13";
 
   return [
@@ -22,12 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     })),
-    { url: `${siteUrl}/roads`, lastModified: latestDate([indexUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/roads`, lastModified: latestDate([collectionUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/regions`, lastModified: latestDate([indexUpdated, ...roads.map(road => road.reviewed)]), changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/method`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${siteUrl}/contact`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${siteUrl}/legal`, changeFrequency: "yearly", priority: 0.2 },
-    { url: `${siteUrl}/drives`, lastModified: latestDate(drives.map(drive => drive.updated)), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${siteUrl}/drives`, lastModified: latestDate([collectionUpdated, ...drives.map(drive => drive.updated)]), changeFrequency: "monthly", priority: 0.8 },
     ...drives.map(drive => ({
       url: `${siteUrl}/drives/${drive.slug}`,
       lastModified: new Date(drive.updated),
@@ -46,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...roads.map(road => ({
       url: `${siteUrl}/roads/${road.id}`,
-      lastModified: new Date(road.reviewed),
+      lastModified: latestDate([road.reviewed, getRoadGuide(road.id)?.updated ?? road.reviewed]),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

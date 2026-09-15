@@ -1,3 +1,4 @@
+.road-editorial .breadcrumb a { min-height: 44px; }
 /* Embedded maps and written pages need room to scroll and comfortable links. */
 .detail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
 .detail-actions a { display: inline-flex; align-items: center; min-height: 44px; padding: 9px 14px; border: 1px solid #3c5144; border-radius: 7px; color: var(--accent); text-decoration: none; font-size: 14px; line-height: 1.4; }
@@ -25,3 +26,8 @@
   .road-page .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .road-page .stat-grid > div { padding: 14px; }
 }
+.road-planning .planning-source { font-size: 14px; }
+.road-connections { list-style: none; padding: 0; }
+.road-connections li { padding: 8px 0 14px; border-bottom: 1px solid #2f3b34; }
+.road-connections a { display: inline-flex; align-items: center; min-height: 44px; }
+.road-connections span { display: block; color: #a4b4aa; font-size: 14px; }
