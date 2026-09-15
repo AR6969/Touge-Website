@@ -9,7 +9,7 @@ export type RoadVideo = {
 };
 
 // Editorial media stays separate from the generated road catalog.
-const roadVideos: RoadVideo[] = [
+export const roadVideos: RoadVideo[] = [
   {
     roadId: "glendora-mountain",
     title: "Glendora Mountain Road",
