@@ -1044,10 +1044,14 @@
           -118.7853398,
           34.1137931
         ],
-        "maxSnapM": 1
+        "maxSnapM": 1,
+        "junction": [
+          "Sierra Creek Road"
+        ]
       }
     ],
-    "reviewed": "2026-09-15"
+    "reviewed": "2026-09-15",
+    "snapshot": "data/snake-osm.json"
   },
   {
     "id": "mulholland-drive",

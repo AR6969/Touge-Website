@@ -93,11 +93,17 @@ def build_specs(snapshot_path, specs_path, default_region, reviewed):
     snapshot = json.loads(snapshot_path.read_text())
     if snapshot.get('remark'):
         raise ValueError(snapshot['remark'])
-    ways = [way for way in snapshot['elements'] if way['type'] == 'way']
-    by_way = {way['id']: way for way in ways}
     specs = json.loads(Path(specs_path).read_text())
     features, catalog = [], []
     for spec in specs:
+        # A focused, independently refreshed snapshot can correct one road
+        # without replacing the complete regional OSM archive.
+        current_path = ROOT / spec['snapshot'] if spec.get('snapshot') else snapshot_path
+        current = json.loads(current_path.read_text()) if spec.get('snapshot') else snapshot
+        if current.get('remark'):
+            raise ValueError(current['remark'])
+        ways = [way for way in current['elements'] if way['type'] == 'way']
+        by_way = {way['id']: way for way in ways}
         graph, points, edges = road_graph(ways, spec['names'], spec.get('refs', []))
         try:
             anchors = [select_anchor(anchor, points, ways) for anchor in spec['anchors']]
@@ -124,7 +130,7 @@ def build_specs(snapshot_path, specs_path, default_region, reviewed):
                 center = b
                 break
         road = {key: value for key, value in spec.items()
-                if key not in ('names', 'refs', 'anchors', 'mapRegionOverride')}
+                if key not in ('names', 'refs', 'anchors', 'mapRegionOverride', 'snapshot')}
         road.update(
             mapRegion=spec.get('mapRegionOverride', default_region), center=center, bounds=bounds,
             osmWayIds=ids, reviewed=spec.get('reviewed', reviewed),
@@ -132,8 +138,9 @@ def build_specs(snapshot_path, specs_path, default_region, reviewed):
             # do not become numeric speed summaries on these new roads.
             mappedSpeed='Not verified', taggedPercent=0,
             geometryEvidence={
-                'snapshot': str(snapshot_path.relative_to(ROOT)) if snapshot_path.is_relative_to(ROOT) else snapshot_path.name,
-                'osmTimestamp': snapshot.get('osm3s', {}).get('timestamp_osm_base'),
+                'snapshot': str(current_path.relative_to(ROOT)) if current_path.is_relative_to(ROOT) else current_path.name,
+                'osmTimestamp': current.get('osm3s', {}).get('timestamp_osm_base'),
+                **({'retrieved': current['retrieved']} if current.get('retrieved') else {}),
                 'start': coords[0], 'end': coords[-1],
                 'wayNames': sorted({by_way[key]['tags'].get('name') or by_way[key]['tags'].get('ref', 'Unnamed road') for key in ids}),
             },

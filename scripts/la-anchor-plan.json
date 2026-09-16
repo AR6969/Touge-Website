@@ -364,7 +364,8 @@
   },
   "the-snake": {
     "names": [
-      "Mulholland Highway"
+      "Mulholland Highway",
+      "Mulholland Highway (The Snake)"
     ],
     "box": [
       -118.82,
@@ -389,7 +390,10 @@
           -118.7853398,
           34.1137931
         ],
-        "maxSnapM": 1
+        "maxSnapM": 1,
+        "junction": [
+          "Sierra Creek Road"
+        ]
       }
     ]
   },

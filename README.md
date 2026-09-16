@@ -67,6 +67,12 @@ python3 scripts/build-la-road-data.py
 python3 scripts/build-derived-data.py
 ```
 
+For a focused correction, use `python3 scripts/build-la-road-data.py --only the-snake`
+(or another catalog ID), then refresh that road's elevation and run stage 3.
+A road spec can set `snapshot` to a separate OSM snapshot under `data/`; the Snake
+uses `data/snake-osm.json` to include its explicitly named Snake ways and verified
+Kanan / Sierra Creek junctions. See [the correction notes](docs/road-pages-follow-up-2026-09-15.md).
+
 The LA builder replaces the Southern California records it manages and preserves
 all records outside its explicit specs and LA / San Diego regions. The Bay Area stage-1 builder also includes this saved snapshot
 when present. Selected Southern California traces follow connected OSM nodes on the
