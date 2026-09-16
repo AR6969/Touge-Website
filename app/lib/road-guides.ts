@@ -107,12 +107,14 @@ const roadGuides: Record<string, RoadGuide> = {
     description: "Explore GMR from Glendora to East Fork Road: mountain bends, original driving footage, gate-access links and the connected drive to Highway 39 and Azusa.",
     updated,
     notes: [
-      { text: "The GMR trace starts at Big Dalton Canyon Road, climbs to the ridge junction and descends to East Fork Road. Glendora Ridge Road is the separate branch toward Mount Baldy. For the Highway 39 outing, keep to Glendora Mountain Road toward East Fork; the route guide shows the junction choices." },
-      { text: "East Fork Road is the connection between GMR and Highway 39. It leads into the more open canyon leg back toward Azusa, so the drive changes character after the mountain section. Check the county’s vehicle-access notices before going: the presence of a mapped road or recorded driving footage does not establish that a gate is open today.", source: { title: "LA County: road and gate closures", url: "https://pw.lacounty.gov/roadclosures/" } },
+      { text: "GMR runs 12.4 miles from Big Dalton Canyon Road to East Fork Road with 118 counted bends, 28 of them full switchbacks — a long, sustained technical climb rather than a short burst. The grade stays gentle by canyon-road standards (6.5% at its steepest, 282 ft of climb per mile on average), so the difficulty here is corner count and blind, decreasing-radius turns rather than outright steepness. Much of the road has no centerline, which matters on the blind sections." },
+      { text: "GMR is genuinely narrow and shared: cyclists climb it in packs, often several abreast, and weekend mornings bring joggers and antique-car clubs as well as other drivers. A late-afternoon or weekday run gets you a clearer road than a weekend morning. The sustained downhill also cooks brakes on an unprepared car — check pads, fluid and tires before treating this as a spirited descent, not just a scenic one.", source: { title: "The Gentleman Racer: Drive — Glendora Mountain Road / Glendora Ridge Road", url: "https://thegentlemanracer.com/2014/05/drive-glendora-mountain-roadglendora/" } },
+      { text: "The GMR trace starts at Big Dalton Canyon Road, climbs to the ridge junction and descends to East Fork Road. Glendora Ridge Road is the separate branch toward Mount Baldy. East Fork Road then continues the drive toward Highway 39 and Azusa, changing character into a more open canyon road. Check the county's vehicle-access notices before going: the presence of a mapped road or recorded driving footage does not establish that a gate is open today.", source: { title: "LA County: road and gate closures", url: "https://pw.lacounty.gov/roadclosures/" } },
     ],
     connections: [
       { roadId: "east-fork-road", note: "Follow it west from the north end of GMR to reach Highway 39." },
       { roadId: "san-gabriel-canyon", note: "The Highway 39 leg toward Azusa after East Fork; the northern road is a separate outing." },
+      { roadId: "glendora-ridge", note: "The branch toward Mount Baldy at the Cow Canyon Saddle junction." },
     ],
   },
   "angeles-crest-west": {
@@ -248,6 +250,20 @@ const roadGuides: Record<string, RoadGuide> = {
         "note": "The wider Mulholland Highway route through the Malibu mountains."
       }
     ]
+  },
+  "tuna-canyon": {
+    heading: "Tuna Canyon Road: Saddle Peak to PCH",
+    title: "Tuna Canyon Road: Route, Map & Access | TougeMap",
+    description: "Plan the Tuna Canyon Road descent from Saddle Peak to Pacific Coast Highway: what the corners actually demand, the one-way layout, and nearby Tuna Canyon Park.",
+    updated,
+    notes: [
+      { text: "Tuna Canyon drops about 1,800 ft off the Saddle Peak ridge to PCH in just over four miles, with 61 counted bends and 7 full switchbacks — the tightest bend density of any road in this catalog. Many of those corners are off-camber or decreasing-radius, tightening after you commit rather than opening up, which punishes carrying speed in. The road rewards braking early and getting it done before the apex over trying to trail-brake through a corner that's still closing on you.", source: { title: "Eat Sleep Ride: Tuna Canyon is 70 turns in 4 miles", url: "https://eatsleepride.com/routes/tuna_canyon_is_70_turns_in_4_miles_hidden_in_the_malibu_hills-117190" } },
+      { text: "It's permanently one-way downhill toward the coast, which removes oncoming traffic from the equation entirely — a real factor on a road this tight and blind. The tradeoff is a mandatory right turn onto PCH at the bottom, with county flaggers working that junction to stop wrong-way entries. Tuna Canyon Park, an MRCA preserve of coastal-facing ridgeline, borders the upper corridor. Check current status before relying on it: the road has been closed by wildfire more than once, most recently reopening in May 2025.", source: { title: "County of Los Angeles: LA County fully reopens Tuna Canyon Road near Malibu", url: "https://lacounty.gov/2025/05/23/la-county-fully-reopens-tuna-canyon-road-near-malibu/" } },
+    ],
+    connections: [
+      { roadId: "schueren-saddle-peak", note: "The ridge connector at the top, toward Old Topanga and Stunt Road." },
+      { roadId: "pch-malibu", note: "The coastal road at the bottom; the one-way rule only allows a right turn here." },
+    ],
   },
 };
 

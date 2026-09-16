@@ -13197,7 +13197,7 @@
     "area": "Malibu / Santa Monica Mountains",
     "difficulty": 3,
     "character": "Technical",
-    "description": "A steep, tight descent off the Saddle Peak ridge toward the coast. The lower part is one-way southbound.",
+    "description": "A steep, tight descent off the Saddle Peak ridge toward the coast, stacking dozens of bends into just over four miles. The lower section is one-way toward PCH, with a mandatory right turn onto the highway.",
     "sources": [
       {
         "title": "Epic Road Rides · Eastern Santa Monica Mountains / Mulholland Highway East",
@@ -13206,6 +13206,14 @@
       {
         "title": "City of Malibu · Malibu Evacuation Plan",
         "url": "https://www.malibucity.org/DocumentCenter/View/34818"
+      },
+      {
+        "title": "County of Los Angeles · LA County fully reopens Tuna Canyon Road near Malibu",
+        "url": "https://lacounty.gov/2025/05/23/la-county-fully-reopens-tuna-canyon-road-near-malibu/"
+      },
+      {
+        "title": "MRCA · Tuna Canyon Park",
+        "url": "https://mrca.ca.gov/parks/park-listing/tuna-canyon-park"
       }
     ],
     "speed": {
@@ -13215,9 +13223,9 @@
       "source": null
     },
     "access": {
-      "note": "The lower section is one-way toward PCH. Follow the signed direction; do not start uphill from the coast.",
-      "url": "https://www.malibucity.org/DocumentCenter/View/34818",
-      "checked": "2026-09-09"
+      "note": "Permanently one-way downhill to PCH, with a mandatory right turn onto the highway; flaggers work the bottom junction to stop wrong-way entries. LA County fully reopened the road on May 23, 2025 after a wildfire closure. Do not start uphill from the coast.",
+      "url": "https://lacounty.gov/2025/05/23/la-county-fully-reopens-tuna-canyon-road-near-malibu/",
+      "checked": "2026-09-15"
     },
     "mapRegion": "los-angeles",
     "center": [
