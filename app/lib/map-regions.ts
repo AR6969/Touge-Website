@@ -1,9 +1,20 @@
 export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra";
 
+// The state a region belongs to. Not yet used to change any URL or route —
+// California's regions keep their existing flat paths — but it's what lets
+// the region switcher and homepage group by state once a second one exists,
+// without a data-model change at that point.
+export type StateId = "california";
+
+export const states: Record<StateId, { name: string }> = {
+  california: { name: "California" },
+};
+
 export const mapRegions: Record<MapRegion, {
   name: string;
   href: string;
   pickerTitle: string;
+  state: StateId;
   center: [number, number];
   /**
    * The frame the map opens to — not the region's full data extent. Fitting the
@@ -17,6 +28,7 @@ export const mapRegions: Record<MapRegion, {
     name: "California",
     href: "/?region=california",
     pickerTitle: "All California roads",
+    state: "california",
     center: [-119.5, 36.7],
     bounds: [[-123.45, 32.55], [-116.05, 39.05]],
   },
@@ -24,6 +36,7 @@ export const mapRegions: Record<MapRegion, {
     name: "Bay Area",
     href: "/?region=bay-area",
     pickerTitle: "Bay Area & nearby drives",
+    state: "california",
     center: [-122.10, 37.57],
     // Santa Cruz up to Point Reyes, Pacific across to Mount Hamilton.
     bounds: [[-122.95, 36.94], [-121.55, 38.12]],
@@ -32,6 +45,7 @@ export const mapRegions: Record<MapRegion, {
     name: "Los Angeles",
     href: "/los-angeles",
     pickerTitle: "LA, Malibu & Orange County",
+    state: "california",
     center: [-118.22, 34.02],
     // Wide east and west of the city, because the roads people drive from LA
     // reach the San Bernardino and San Jacinto mountains and the Ojai back
@@ -42,6 +56,7 @@ export const mapRegions: Record<MapRegion, {
     name: "San Diego",
     href: "/san-diego",
     pickerTitle: "San Diego & the backcountry",
+    state: "california",
     center: [-116.90, 33.15],
     bounds: [[-117.45, 32.75], [-116.25, 33.55]],
   },
@@ -53,6 +68,7 @@ export const mapRegions: Record<MapRegion, {
     // the view that actually contains it.
     href: "/?region=california",
     pickerTitle: "High Sierra passes & canyons",
+    state: "california",
     center: [-118.70, 37.20],
     // Sonora Pass in the north to Horseshoe Meadow in the south, the 395
     // corridor roughly down the middle, plus the western-slope Hwy 168 climb.
