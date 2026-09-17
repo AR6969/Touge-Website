@@ -24,7 +24,7 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
         <span className="brand-symbol" aria-hidden="true">峠</span>
         <span className="brand-words">
           <span className="brand-name">TougeMap<span className="brand-dot">.</span></span>
-          <small className="brand-tagline">Best driving roads, state by state</small>
+          <small className="brand-tagline">The best driving roads</small>
         </span>
       </Link>
       <div className="header-nav-row">
