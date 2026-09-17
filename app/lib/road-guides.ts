@@ -353,6 +353,32 @@ const roadGuides: Record<string, RoadGuide> = {
       { text: "The Dragon packs 115 counted bends and 24 switchbacks into 11.0 miles — 10.5 bends per mile, in the same range as this catalog's tightest California roads, sustained over a much longer stretch than most of them manage. What makes it unusual isn't just the count: there are no intersections, driveways or side roads anywhere on it, so every vehicle on the road is there to drive it, not to get somewhere. Much of it also has no guardrail, with the road cut into the hillside above the Little Tennessee River gorge.", source: { title: "US129DragonsTail.com: Tail of the Dragon overview", url: "https://www.us129dragonstail.com/" } },
       { text: "Go on a weekday if you want the road to yourself; April through October is the season, and weekends bring heavy motorcycle and sports-car traffic in both directions on a road with no passing lanes. The road currently also carries detour traffic from I-40 repairs near the state line, so TDOT and NCDOT enforce a strict length limit — no truck-trailer combinations or single units over 30 ft — check current conditions before relying on it being clear.", source: { title: "TDOT: Tennessee 511 traveler information", url: "https://www.tn.gov/tdot/welcome-to-tennessee-511.html" } },
     ],
+    connections: [
+      { roadId: "cherohala-skyway", note: "A completely different character at the Robbinsville end: long sweepers over a much longer climb instead of tight switchbacks." },
+    ],
+  },
+  "cherohala-skyway": {
+    heading: "Cherohala Skyway: Tellico Plains to Robbinsville",
+    title: "Cherohala Skyway: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Cherohala Skyway: 41.6 miles of long, sweeping mountain curves climbing to over 5,300 ft between Tennessee and North Carolina, and what that means next to the Dragon's tight switchbacks.",
+    updated: "2026-09-16",
+    notes: [
+      { text: "The Skyway is built for a completely different rhythm than the Dragon it connects to: 149 bends and 34 switchbacks sound similar until you spread them over 41.6 miles instead of 11 — a density of 3.6 per mile against the Dragon's 10.5. These are long, high-speed sweepers with real sightlines, not blind hairpins, climbing steadily to 5,382 ft. It rewards a smooth, sustained rhythm rather than the Dragon's braking-and-recovery demands.", source: { title: "National Scenic Byway Foundation: Cherohala Skyway", url: "https://nsbfoundation.com/nb/cherohala-skyway-nc/" } },
+      { text: "The road closes without much warning above roughly 4,000 ft when ice or snow hits, typically November through March. North Carolina plows its side; Tennessee's side doesn't get the same treatment, so a closed gate at the Robbinsville end can mean the upper sections are out even when the Tennessee approach looks clear. Check current status before a winter or early-spring run.", source: { title: "Cherohala.org: winter conditions", url: "http://www.cherohala.org/winter.html" } },
+    ],
+    connections: [
+      { roadId: "tail-of-the-dragon", note: "Meets US 129 at the Robbinsville end — a totally different, tighter road." },
+    ],
+  },
+  "back-of-the-dragon": {
+    heading: "Back of the Dragon: Marion to Tazewell",
+    title: "Back of the Dragon (VA 16): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Back of the Dragon: 32.7 miles of Virginia Route 16 over Clinch Mountain, Virginia's officially designated motorcycle route and the Dragon's sister road further north in the Appalachians.",
+    updated: "2026-09-16",
+    notes: [
+      { text: "Back of the Dragon runs 32.7 miles from Marion to Tazewell with 156 counted bends and 36 switchbacks, crossing Clinch Mountain in the process — a longer, more sustained climb than the Dragon itself, with more total elevation change (8,413 ft of cumulative climb) even though its single steepest grade (8.2%) is milder. Speed limits swing from 25 mph through the two town centers to 55 mph on the open mountain sections, so the character changes more than on a road that's rural the whole way.", source: { title: "Back of the Dragon: the official route site", url: "https://backofthedragon.com/the-road/" } },
+      { text: "This is Virginia's only officially designated motorcycle route, and it draws the same enthusiast community as the Dragon further south — the two roads are commonly driven as a pair by people touring the Appalachian touge circuit. Mountain sections ice over in winter; check current Virginia road conditions before relying on it being clear." },
+    ],
     connections: [],
   },
 };

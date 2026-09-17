@@ -24588,5 +24588,380 @@
       "climb": 15,
       "technical": 20
     }
+  },
+  {
+    "id": "cherohala-skyway",
+    "name": "Cherohala Skyway",
+    "area": "Cherokee & Nantahala National Forests",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A 43-mile National Scenic Byway between Tellico Plains, Tennessee, and Robbinsville, North Carolina, climbing to 5,390 ft. Long, sweeping mountain curves rather than tight hairpins — a different character from the Dragon it connects to at the Robbinsville end.",
+    "sources": [
+      {
+        "title": "National Scenic Byway Foundation: Cherohala Skyway",
+        "url": "https://nsbfoundation.com/nb/cherohala-skyway-nc/"
+      },
+      {
+        "title": "Wikipedia: Cherohala Skyway",
+        "url": "https://en.wikipedia.org/wiki/Cherohala_Skyway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags parts of the North Carolina side at 45 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closes unpredictably above about 4,000 ft in icy or snowy conditions, typically November through March, sometimes with little notice. North Carolina plows its side; Tennessee's side does not get plowed the same way. Check current status before a winter or early-spring trip.",
+      "url": "http://www.cherohala.org/winter.html",
+      "checked": "2026-09-16"
+    },
+    "mapRegion": "southern-appalachians",
+    "center": [
+      -84.0810633,
+      35.3562315
+    ],
+    "bounds": [
+      [
+        -84.301628,
+        35.3023317
+      ],
+      [
+        -83.8942032,
+        35.3852102
+      ]
+    ],
+    "osmWayIds": [
+      16563833,
+      19570599,
+      390386691,
+      390386692,
+      415331043,
+      415331044,
+      461169868,
+      461169871,
+      613020265,
+      613020266,
+      969586347,
+      969586348,
+      969586349,
+      969946788
+    ],
+    "reviewed": "2026-09-16",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/appalachia-overpass.json",
+      "osmTimestamp": "2026-09-17T04:43:35Z",
+      "start": [
+        -84.301628,
+        35.3668692
+      ],
+      "end": [
+        -83.8942032,
+        35.3455801
+      ],
+      "wayNames": [
+        "Cherohala Skyway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 41.6,
+      "bends": 149,
+      "switchbacks": 34,
+      "curvature": 372,
+      "bendsPerMile": 3.6
+    },
+    "elevation": {
+      "climbFt": 10149,
+      "highFt": 5382,
+      "lowFt": 862,
+      "reliefFt": 4520,
+      "maxGradient": 8.5,
+      "climbPerMile": 244
+    },
+    "profile": {
+      "points": [
+        895,
+        863,
+        875,
+        865,
+        898,
+        915,
+        939,
+        981,
+        1006,
+        1041,
+        1275,
+        1372,
+        1472,
+        1504,
+        1485,
+        1494,
+        1614,
+        1633,
+        1647,
+        1752,
+        1796,
+        1940,
+        1902,
+        1870,
+        1912,
+        2092,
+        2278,
+        2492,
+        2698,
+        2834,
+        3034,
+        3297,
+        3532,
+        3786,
+        3656,
+        3497,
+        3734,
+        3724,
+        3948,
+        4103,
+        4375,
+        4455,
+        4603,
+        4390,
+        4412,
+        4460,
+        4570,
+        4525,
+        4731,
+        4906,
+        5088,
+        5237,
+        5360,
+        5256,
+        5285,
+        5252,
+        5122,
+        4900,
+        4780,
+        4607,
+        4447,
+        4259,
+        4071,
+        3874,
+        3721,
+        3688,
+        3440,
+        3201,
+        2989,
+        2741,
+        2747,
+        2646
+      ],
+      "miles": 41.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 39,
+      "corners": 12,
+      "climb": 17,
+      "technical": 10
+    }
+  },
+  {
+    "id": "back-of-the-dragon",
+    "name": "Back of the Dragon · VA 16",
+    "area": "Clinch Mountain, Southwest Virginia",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "32 miles of Virginia Route 16 between Marion and Tazewell, Virginia, crossing Clinch Mountain with more than 400 curves — Virginia's officially designated motorcycle route, and the Dragon's sister road in the Southern Appalachians touge circuit.",
+    "sources": [
+      {
+        "title": "Back of the Dragon: the official route site",
+        "url": "https://backofthedragon.com/the-road/"
+      },
+      {
+        "title": "Wikipedia: Virginia State Route 16",
+        "url": "https://en.wikipedia.org/wiki/Virginia_State_Route_16"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 25 and 55 mph depending on the section (town centers vs. open highway), but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Virginia road conditions before a trip; mountain sections can ice over in winter.",
+      "url": "https://www.511virginia.org/",
+      "checked": "2026-09-16"
+    },
+    "mapRegion": "southern-appalachians",
+    "center": [
+      -81.529776,
+      36.988532
+    ],
+    "bounds": [
+      [
+        -81.558778,
+        36.835836
+      ],
+      [
+        -81.501907,
+        37.1155663
+      ]
+    ],
+    "osmWayIds": [
+      15484276,
+      15485074,
+      15485669,
+      20564124,
+      20566486,
+      20577220,
+      108394136,
+      108400557,
+      132808750,
+      168588408,
+      168588410,
+      168588411,
+      480712728,
+      480712729,
+      642208263,
+      642208268,
+      1087058068,
+      1087058069,
+      1090818936,
+      1090818937,
+      1091068814,
+      1091068815,
+      1091068816,
+      1091068817,
+      1414543620,
+      1521158837,
+      1521158838,
+      1521158873,
+      1521158878
+    ],
+    "reviewed": "2026-09-16",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/appalachia-overpass.json",
+      "osmTimestamp": "2026-09-17T04:43:35Z",
+      "start": [
+        -81.515847,
+        36.835836
+      ],
+      "end": [
+        -81.5220374,
+        37.1155663
+      ],
+      "wayNames": [
+        "B F Buchanan Highway",
+        "Crab Orchard Road",
+        "Main Street",
+        "North Main Street",
+        "Park Boulevard",
+        "US 19 BUS;US 460 BUS;VA 16",
+        "West Main Street"
+      ]
+    },
+    "shape": {
+      "lengthMi": 32.7,
+      "bends": 156,
+      "switchbacks": 36,
+      "curvature": 546,
+      "bendsPerMile": 4.8
+    },
+    "elevation": {
+      "climbFt": 8413,
+      "highFt": 3450,
+      "lowFt": 2042,
+      "reliefFt": 1408,
+      "maxGradient": 8.2,
+      "climbPerMile": 257
+    },
+    "profile": {
+      "points": [
+        2125,
+        2150,
+        2207,
+        2262,
+        2276,
+        2467,
+        2269,
+        2169,
+        2187,
+        2220,
+        2211,
+        2252,
+        2416,
+        2597,
+        2771,
+        2936,
+        3123,
+        3285,
+        3447,
+        3279,
+        3099,
+        2925,
+        2758,
+        2577,
+        2363,
+        2197,
+        2109,
+        2062,
+        2051,
+        2066,
+        2235,
+        2399,
+        2476,
+        2586,
+        2537,
+        2705,
+        2782,
+        2952,
+        3013,
+        2840,
+        2731,
+        2657,
+        2557,
+        2387,
+        2196,
+        2093,
+        2182,
+        2372,
+        2570,
+        2778,
+        2957,
+        3137,
+        3155,
+        2999,
+        2832,
+        2725,
+        2671,
+        2712,
+        2766,
+        2847,
+        2837,
+        2789,
+        2756,
+        2647,
+        2477,
+        2398,
+        2450,
+        2437,
+        2387,
+        2410,
+        2466,
+        2512
+      ],
+      "miles": 32.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 53,
+      "corners": 15,
+      "climb": 18,
+      "technical": 20
+    }
   }
 ]

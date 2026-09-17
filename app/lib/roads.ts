@@ -85,7 +85,7 @@ const popularIds: Record<MapRegion, string[]> = {
   "los-angeles": ["latigo-canyon", "mulholland-highway-malibu", "angeles-crest-west", "ortega-highway"],
   "san-diego": ["palomar-south-grade", "sunrise-highway", "montezuma-grade", "palomar-east-grade"],
   sierra: ["tioga-pass", "sonora-pass", "rock-creek-road", "horseshoe-meadow"],
-  "southern-appalachians": ["tail-of-the-dragon"],
+  "southern-appalachians": ["tail-of-the-dragon", "cherohala-skyway", "back-of-the-dragon"],
 };
 
 export function popularRoadsFor(region: MapRegion): { id: string; name: string }[] {

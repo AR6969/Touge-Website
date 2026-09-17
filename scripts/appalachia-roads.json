@@ -45,5 +45,88 @@
         "maxSnapM": 10
       }
     ]
+  },
+  {
+    "id": "cherohala-skyway",
+    "name": "Cherohala Skyway",
+    "area": "Cherokee & Nantahala National Forests",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A 43-mile National Scenic Byway between Tellico Plains, Tennessee, and Robbinsville, North Carolina, climbing to 5,390 ft. Long, sweeping mountain curves rather than tight hairpins — a different character from the Dragon it connects to at the Robbinsville end.",
+    "sources": [
+      {
+        "title": "National Scenic Byway Foundation: Cherohala Skyway",
+        "url": "https://nsbfoundation.com/nb/cherohala-skyway-nc/"
+      },
+      {
+        "title": "Wikipedia: Cherohala Skyway",
+        "url": "https://en.wikipedia.org/wiki/Cherohala_Skyway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags parts of the North Carolina side at 45 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closes unpredictably above about 4,000 ft in icy or snowy conditions, typically November through March, sometimes with little notice. North Carolina plows its side; Tennessee's side does not get plowed the same way. Check current status before a winter or early-spring trip.",
+      "url": "http://www.cherohala.org/winter.html",
+      "checked": "2026-09-16"
+    },
+    "names": [
+      "Cherohala Skyway"
+    ],
+    "anchors": [
+      {
+        "near": [-84.301628, 35.3668692],
+        "maxSnapM": 10
+      },
+      {
+        "near": [-83.8942032, 35.3455801],
+        "maxSnapM": 10
+      }
+    ]
+  },
+  {
+    "id": "back-of-the-dragon",
+    "name": "Back of the Dragon · VA 16",
+    "area": "Clinch Mountain, Southwest Virginia",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "32 miles of Virginia Route 16 between Marion and Tazewell, Virginia, crossing Clinch Mountain with more than 400 curves — Virginia's officially designated motorcycle route, and the Dragon's sister road in the Southern Appalachians touge circuit.",
+    "sources": [
+      {
+        "title": "Back of the Dragon: the official route site",
+        "url": "https://backofthedragon.com/the-road/"
+      },
+      {
+        "title": "Wikipedia: Virginia State Route 16",
+        "url": "https://en.wikipedia.org/wiki/Virginia_State_Route_16"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 25 and 55 mph depending on the section (town centers vs. open highway), but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Virginia road conditions before a trip; mountain sections can ice over in winter.",
+      "url": "https://www.511virginia.org/",
+      "checked": "2026-09-16"
+    },
+    "names": [],
+    "refs": ["VA 16"],
+    "anchors": [
+      {
+        "near": [-81.515847, 36.835836],
+        "maxSnapM": 10
+      },
+      {
+        "near": [-81.5220374, 37.1155663],
+        "maxSnapM": 10
+      }
+    ]
   }
 ]
