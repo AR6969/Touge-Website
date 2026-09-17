@@ -25310,5 +25310,169 @@
       "climb": 15,
       "technical": 10
     }
+  },
+  {
+    "id": "richard-russell-scenic-highway",
+    "name": "Richard B. Russell Scenic Highway · GA 348",
+    "area": "North Georgia Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "14 miles of Georgia Highway 348 through the Chattahoochee National Forest between Helen and Blairsville, on the eastern side of the Russell–Brasstown Scenic Byway. Rolling mountain curves rather than tight switchbacks.",
+    "sources": [
+      {
+        "title": "Wikipedia: Russell–Brasstown Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/Russell%E2%80%93Brasstown_Scenic_Byway"
+      },
+      {
+        "title": "Now Habersham: GA 348 winter closure notice",
+        "url": "https://nowhabersham.com/sr-180-to-temporarily-close-ahead-of-freezing-weather/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route at 30 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Georgia DOT closes this road as a precaution ahead of snow, ice or freezing rain — a routine practice here, not a rare event. Check current Georgia road conditions before a winter trip.",
+      "url": "https://www.dot.ga.gov/DriveSmart/RoadConditions",
+      "checked": "2026-09-17"
+    },
+    "mapRegion": "southern-appalachians",
+    "center": [
+      -83.8394945,
+      34.7255816
+    ],
+    "bounds": [
+      [
+        -83.8838883,
+        34.6933914
+      ],
+      [
+        -83.7705547,
+        34.7950683
+      ]
+    ],
+    "osmWayIds": [
+      9545276
+    ],
+    "reviewed": "2026-09-16",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/appalachia-overpass.json",
+      "osmTimestamp": "2026-09-17T04:43:35Z",
+      "start": [
+        -83.7705547,
+        34.6936806
+      ],
+      "end": [
+        -83.8773911,
+        34.7950683
+      ],
+      "wayNames": [
+        "Richard B. Russell Scenic Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 14.0,
+      "bends": 60,
+      "switchbacks": 14,
+      "curvature": 423,
+      "bendsPerMile": 4.3
+    },
+    "elevation": {
+      "climbFt": 4206,
+      "highFt": 3455,
+      "lowFt": 1584,
+      "reliefFt": 1871,
+      "maxGradient": 11.5,
+      "climbPerMile": 300
+    },
+    "profile": {
+      "points": [
+        1576,
+        1628,
+        1688,
+        1742,
+        1755,
+        1841,
+        1918,
+        1970,
+        2029,
+        2101,
+        2166,
+        2148,
+        2100,
+        2062,
+        2063,
+        2043,
+        2117,
+        2230,
+        2337,
+        2416,
+        2524,
+        2637,
+        2763,
+        2845,
+        2936,
+        3049,
+        3124,
+        3071,
+        3125,
+        3173,
+        3248,
+        3312,
+        3260,
+        3265,
+        3366,
+        3421,
+        3446,
+        3329,
+        3206,
+        3102,
+        2976,
+        2860,
+        2763,
+        2641,
+        2515,
+        2389,
+        2289,
+        2243,
+        2254,
+        2197,
+        2202,
+        2224,
+        2182,
+        2140,
+        2118,
+        2056,
+        2032,
+        2010,
+        2014,
+        2005,
+        2018,
+        1987,
+        1957,
+        2003,
+        2041,
+        2021,
+        1981,
+        1980,
+        1990,
+        1940,
+        1923,
+        1960
+      ],
+      "miles": 14.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 45,
+      "corners": 14,
+      "climb": 21,
+      "technical": 10
+    }
   }
 ]

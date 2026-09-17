@@ -402,6 +402,17 @@ const roadGuides: Record<string, RoadGuide> = {
     ],
     connections: [],
   },
+  "richard-russell-scenic-highway": {
+    heading: "Richard B. Russell Scenic Highway: Helen to Blairsville",
+    title: "Richard B. Russell Scenic Highway (GA 348): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Richard B. Russell Scenic Highway through the Chattahoochee National Forest: 60 bends over 14 miles, with a steeper single grade than its rolling reputation suggests.",
+    updated: "2026-09-17",
+    notes: [
+      { text: "This road's reputation is rolling, moderate curves rather than a technical climb, and the bend density backs that up — 60 bends and 14 switchbacks over 14 miles, a lower density than the Dragon or Devil's Whip. What the reputation undersells is grade: our own elevation data found an 11.5% maximum, steeper than several roads in this catalog rated Technical. Expect that steepness in short sections within an otherwise easy-cruising drive, not as the road's constant character." },
+      { text: "Georgia DOT treats winter closure here as routine rather than exceptional — the road closes as a precaution ahead of snow, ice or freezing rain, not only after conditions turn genuinely dangerous. Check current Georgia road conditions before a winter or early-spring trip.", source: { title: "Now Habersham: GA 348 winter closure notice", url: "https://nowhabersham.com/sr-180-to-temporarily-close-ahead-of-freezing-weather/" } },
+    ],
+    connections: [],
+  },
 };
 
 export function getRoadGuide(id: string): RoadGuide | undefined {

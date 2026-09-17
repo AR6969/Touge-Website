@@ -215,5 +215,47 @@
         "maxSnapM": 10
       }
     ]
+  },
+  {
+    "id": "richard-russell-scenic-highway",
+    "name": "Richard B. Russell Scenic Highway · GA 348",
+    "area": "North Georgia Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "14 miles of Georgia Highway 348 through the Chattahoochee National Forest between Helen and Blairsville, on the eastern side of the Russell–Brasstown Scenic Byway. Rolling mountain curves rather than tight switchbacks.",
+    "sources": [
+      {
+        "title": "Wikipedia: Russell–Brasstown Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/Russell%E2%80%93Brasstown_Scenic_Byway"
+      },
+      {
+        "title": "Now Habersham: GA 348 winter closure notice",
+        "url": "https://nowhabersham.com/sr-180-to-temporarily-close-ahead-of-freezing-weather/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route at 30 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Georgia DOT closes this road as a precaution ahead of snow, ice or freezing rain — a routine practice here, not a rare event. Check current Georgia road conditions before a winter trip.",
+      "url": "https://www.dot.ga.gov/DriveSmart/RoadConditions",
+      "checked": "2026-09-17"
+    },
+    "names": [
+      "Richard B. Russell Scenic Highway"
+    ],
+    "anchors": [
+      {
+        "near": [-83.7705547, 34.6936806],
+        "maxSnapM": 10
+      },
+      {
+        "near": [-83.8773911, 34.7950683],
+        "maxSnapM": 10
+      }
+    ]
   }
 ]
