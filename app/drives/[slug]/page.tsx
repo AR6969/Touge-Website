@@ -9,6 +9,7 @@ import DriveMap, { type DriveLeg } from "../../drive-map";
 import { siteName, siteUrl } from "../../lib/site";
 import RoadVideos from "../../road-videos";
 import { videosForRoads } from "../../lib/road-videos";
+import ExternalArrow from "../../external-arrow";
 import "../../detail-pages.css";
 
 type DrivePageProps = { params: Promise<{ slug: string }> };
@@ -98,7 +99,7 @@ export default async function DrivePage({ params }: DrivePageProps) {
           <Link href={region.href}>{region.name} map →</Link>
         </nav>
         {drive.access && <p className="warning detail-access">{drive.access.note}{" "}
-          <a href={drive.access.url} target="_blank" rel="noopener noreferrer">Check vehicle access ↗</a>
+          <a href={drive.access.url} target="_blank" rel="noopener noreferrer">Check vehicle access <ExternalArrow /></a>
         </p>}
         {routeBounds && legs.length > 0 && (
           <DriveMap legs={legs} bounds={routeBounds} title={drive.title} />
@@ -138,7 +139,7 @@ export default async function DrivePage({ params }: DrivePageProps) {
           <ul className="drive-stops">
             {drive.stops.map(stop => (
               <li key={stop.name}>
-                <h3>{stop.url ? <a href={stop.url} target="_blank" rel="noopener noreferrer">{stop.name} ↗</a> : stop.name}</h3>
+                <h3>{stop.url ? <a href={stop.url} target="_blank" rel="noopener noreferrer">{stop.name} <ExternalArrow /></a> : stop.name}</h3>
                 <p>{stop.text}</p>
               </li>
             ))}
@@ -155,14 +156,14 @@ export default async function DrivePage({ params }: DrivePageProps) {
           {drive.conditions && <p>{drive.conditions}</p>}
           <p>Expect drivers, motorcycles and cyclists, especially at popular junctions and stops. Give people space, follow posted limits and check current access before setting off.</p>
           <ul className="source-list">
-            {conditionSources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>)}
+            {conditionSources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} <ExternalArrow /></a></li>)}
           </ul>
         </section>
 
         <section aria-labelledby="sources">
           <h2 id="sources">Route references</h2>
           <ul className="source-list">
-            {drive.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>)}
+            {drive.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} <ExternalArrow /></a></li>)}
           </ul>
           <p className="fine">Guide updated {updated}. Route descriptions cover the named sections; check current access before travelling.</p>
         </section>

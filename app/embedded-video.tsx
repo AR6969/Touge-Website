@@ -1,4 +1,5 @@
 import type { EmbedVideo } from "./lib/embed-videos";
+import ExternalArrow from "./external-arrow";
 import "./embedded-video.css";
 
 // For footage we don't own: a standard YouTube embed, not the self-hosted
@@ -23,7 +24,7 @@ export default function EmbeddedVideo({ video }: { video: EmbedVideo }) {
         </div>
         <figcaption>
           <p className="embedded-video-title">{video.title}</p>
-          <p className="fine"><a href={video.creditUrl} target="_blank" rel="noopener noreferrer">{video.creditLabel} ↗</a></p>
+          <p className="fine"><a href={video.creditUrl} target="_blank" rel="noopener noreferrer">{video.creditLabel} <ExternalArrow /></a></p>
         </figcaption>
       </figure>
     </section>

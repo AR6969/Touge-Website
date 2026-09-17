@@ -6,18 +6,8 @@ import { drives } from "../lib/drives";
 import { siteUrl } from "../lib/site";
 import { mapRegions } from "../lib/map-regions";
 import { driveShapeUri } from "../lib/road-shape";
+import ExternalArrow from "../external-arrow";
 import "./drives-index.css";
-
-// A drawn arrow rather than the Unicode ↗ this replaced: that glyph gets the
-// system emoji font on iOS at this size, not a plain arrow. Sized off the
-// surrounding font-size (1em) so the existing CSS needs no changes.
-function ExternalArrow() {
-  return (
-    <svg width="1em" height="1em" viewBox="0 0 12 12" fill="none" aria-hidden="true" style={{ flexShrink: 0 }}>
-      <path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 const title = "Bay Area & Los Angeles Driving Guides | TougeMap";
 const description = "Plan a Bay Area coastal loop or a Los Angeles mountain drive. Connected roads, clear junctions, maps, stops and current road-condition links.";

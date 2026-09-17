@@ -16,6 +16,7 @@ import { videosForRoads } from "../../lib/road-videos";
 import EmbeddedVideo from "../../embedded-video";
 import { embedVideoForRoad } from "../../lib/embed-videos";
 import { getRoadGuide } from "../../lib/road-guides";
+import ExternalArrow from "../../external-arrow";
 import "../../detail-pages.css";
 
 export const dynamicParams = false;
@@ -124,7 +125,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
 
         <RoadMap id={road.id} name={road.name} bounds={road.bounds} color={color} />
         {road.access && <p className="warning">{road.access.note}{" "}
-          <a href={road.access.url} target="_blank" rel="noopener noreferrer">Check current access ↗</a>
+          <a href={road.access.url} target="_blank" rel="noopener noreferrer">Check current access <ExternalArrow /></a>
           <span className="fine"> · Reviewed {road.access.checked}</span>
         </p>}
 
@@ -133,7 +134,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         {editorial && <section className="road-planning" aria-labelledby="drive-notes">
           <h2 id="drive-notes">Planning the drive</h2>
           {editorial.notes.map((note, index) => <p key={index}>
-            {note.text}{note.source && <> <a className="planning-source" href={note.source.url} target="_blank" rel="noopener noreferrer">{note.source.title} ↗</a></>}
+            {note.text}{note.source && <> <a className="planning-source" href={note.source.url} target="_blank" rel="noopener noreferrer">{note.source.title} <ExternalArrow /></a></>}
           </p>)}
           <h3>Roads to connect</h3>
           <ul className="road-connections">
@@ -189,7 +190,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <p>{guide.note}</p>
           <p className="fine">{road.speed.note}</p>
           {road.speed.source && (
-            <p><a href={road.speed.source} target="_blank" rel="noopener noreferrer">Speed-limit source ↗</a></p>
+            <p><a href={road.speed.source} target="_blank" rel="noopener noreferrer">Speed-limit source <ExternalArrow /></a></p>
           )}
           <p className="warning">Posted signs always govern. <Link href="/method#speed">How speed evidence is handled</Link>.</p>
         </section>
@@ -203,11 +204,11 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           </p>
           <ul className="source-list">
             {road.sources.map(source => (
-              <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a></li>
+              <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} <ExternalArrow /></a></li>
             ))}
             <li>
               <a href={`https://www.openstreetmap.org/way/${road.osmWayIds[0]}`} target="_blank" rel="noopener noreferrer">
-                OpenStreetMap road data ↗
+                OpenStreetMap road data <ExternalArrow />
               </a>{" "}
               <span className="dim">
                 {road.splitFrom
@@ -253,8 +254,13 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
 
         <div className="detail-bottom">
           <Link href={roadMapHref(road)}>View on the {road.mapRegion === "sierra" ? "California" : mapRegions[road.mapRegion ?? "bay-area"].name} map →</Link>
-          <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Check road conditions ↗</a>
-          <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+          {/* Caltrans only makes sense for a California road — this used to show
+              on every road regardless of state, including Tennessee/Georgia/
+              Virginia ones. Each non-California road already surfaces its own
+              accurate access.url above; no generic fallback is invented here. */}
+          {mapRegions[road.mapRegion ?? "bay-area"].state === "california" &&
+            <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Check road conditions <ExternalArrow /></a>}
+          <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="noopener noreferrer">Open in Google Maps <ExternalArrow /></a>
           <Link href="/roads">All {roads.length} roads →</Link>
         </div>
       </main>

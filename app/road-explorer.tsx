@@ -9,6 +9,7 @@ import { track } from "./lib/analytics";
 import { characterColors, characters, colorFor, landmarkColor, type Character } from "./lib/colors";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { enablePinchZoom } from "./lib/pinch-zoom";
+import ExternalArrow from "./external-arrow";
 
 // Colour is character, so the filter buttons and the roads they filter agree.
 const roadColor: ExpressionSpecification = [
@@ -375,7 +376,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         <button className="reset" onClick={resetMap} aria-label="Reset map view" title="Reset map view">⌖</button>
       )}
       <div className="map-bottom">
-        <Link className="browse-drives" href="/drives" onClick={() => track("browse_drives", { region, source: "map" })}>Driving guides ↗</Link>
+        <Link className="browse-drives" href="/drives" onClick={() => track("browse_drives", { region, source: "map" })}>Driving guides <ExternalArrow /></Link>
         <button ref={browseButton} className="browse-roads" aria-label={`Browse ${visible.length} roads`} aria-expanded={showRoads} aria-controls="road-picker" onClick={() => { if (!showRoads) track("browse_roads", { region }); setShowRoads(!showRoads); setSelected(null); setLandmark(null); setRoadQuery(""); }}>Browse roads <span>{visible.length} {showRoads ? "−" : "+"}</span></button>
       </div>
       {showRoads && <div ref={picker} id="road-picker" className="road-picker" role="region" tabIndex={-1} aria-label="Choose a road">
@@ -384,7 +385,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
           <input className="road-search" type="search" aria-label="Find a road" placeholder="Find a road…" value={roadQuery} onChange={event => setRoadQuery(event.target.value)} autoComplete="off" spellCheck={false} />
         </div>
         {matchingRoads.map(road => <div className="picker-road" key={road.id}>
-          <Link href={`/roads/${road.id}`} prefetch={false} onClick={() => track("view_road_guide", { road_id: road.id, region, source: "picker" })}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area} · {road.character}</small></span><span aria-hidden="true">↗</span></Link>
+          <Link href={`/roads/${road.id}`} prefetch={false} onClick={() => track("view_road_guide", { road_id: road.id, region, source: "picker" })}><i style={{ background: colorFor(road.character) }} /><span>{road.name}<small>{road.area} · {road.character}</small></span><span aria-hidden="true"><ExternalArrow /></span></Link>
           <button onClick={() => chooseRoad(road.id, "picker")} aria-label={`Show ${road.name} on map`}>Map</button>
         </div>)}
         {matchingRoads.length === 0 && <p role="status">No matching roads.{enabled.length > 0 && " Try clearing the road character filters."}</p>}
@@ -396,7 +397,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         <p className="eyebrow">{activeLandmark.kind}</p>
         <h2>{activeLandmark.name}</h2>
         <p>{activeLandmark.note}</p>
-        {activeLandmark.sourceUrl && <a className="detail-cta" href={activeLandmark.sourceUrl} target="_blank" rel="noopener noreferrer">{activeLandmark.sourceLabel ?? "More information"} ↗</a>}
+        {activeLandmark.sourceUrl && <a className="detail-cta" href={activeLandmark.sourceUrl} target="_blank" rel="noopener noreferrer">{activeLandmark.sourceLabel ?? "More information"} <ExternalArrow /></a>}
       </article>}
       {active && <article ref={detail} className="detail road-preview" aria-label={`${active.name} details`}>
         <button className="close" aria-label="Close road details" onClick={() => setSelected(null)}>×</button>
@@ -405,7 +406,7 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
         <Link className="detail-cta" href={`/roads/${active.id}`} onClick={() => track("view_road_guide", { road_id: active.id, region, source: "preview" })}>Explore this road →</Link>
         <div className="road-badges"><span><i style={{ background: colorFor(active.character) }} /> {active.character}</span><span>Difficulty {active.difficulty}/3</span></div>
         <p className="road-preview-description">{active.description}</p>
-        {active.access && <p className="fine access-note">{active.access.note}{" "}<a href={active.access.url} target="_blank" rel="noopener noreferrer">Check access ↗</a></p>}
+        {active.access && <p className="fine access-note">{active.access.note}{" "}<a href={active.access.url} target="_blank" rel="noopener noreferrer">Check access <ExternalArrow /></a></p>}
         <dl className="mini-stats">
           <div><dt>Length</dt><dd>{active.lengthMi} mi</dd></div>
           <div><dt>Bends</dt><dd>{active.bends}</dd></div>
