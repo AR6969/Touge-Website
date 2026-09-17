@@ -1,4 +1,5 @@
 import Link from "next/link";
+import StateSwitcher from "./state-switcher";
 import { mapRegions, states, type MapRegion, type StateId } from "./lib/map-regions";
 
 export function SiteHeader({ current, mapRegion, onRegionChange }: {
@@ -11,7 +12,7 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
   // /regions cover every state at once, so none of the state links claim
   // "current" there rather than misleadingly defaulting to California.
   const activeState: StateId | undefined = mapRegion ? mapRegions[mapRegion].state : undefined;
-  const stateEntries = Object.entries(states) as [StateId, typeof states[StateId]][];
+  const showStateSwitcher = Object.keys(states).length > 1;
 
   return (
     <header className="header">
@@ -27,20 +28,6 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
         </span>
       </Link>
       <nav aria-label="Main">
-        {/* Always visible, on every page, regardless of map/non-map mode —
-            this is the fix for a region in a second state otherwise having
-            no way back to the first, and no way to be reached at all except
-            a buried in-page link. Shown even with just two states so a third
-            slots in here later without a design change. On a map page the
-            active state's own region tabs already say where you are, so only
-            the *other* states appear here — otherwise "California" would sit
-            right next to a "California" region tab, which is one pill too many
-            for a phone-width header to survive with room for anything else. */}
-        {stateEntries.length > 1 && stateEntries
-          .filter(([id]) => id !== activeState)
-          .map(([id, state]) => (
-            <Link key={id} href={mapRegions[state.defaultRegion].href} className="region other-state">{state.name}</Link>
-          ))}
         {current === "map" ? (
           // Sierra Nevada roads live inside the California tab rather than getting
           // their own peer tab — reachable by panning the statewide map, not by nav.
@@ -60,6 +47,15 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
             <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
           </>
         )}
+        {/* A dropdown, not one pill per state: a flat row of state links
+            (tried first) is bounded by the number of states times each
+            state's own region-tab count, and already overflowed the mobile
+            header at just two states. A dropdown costs exactly one pill's
+            width regardless of how many states exist — the only part of this
+            nav that needs to keep growing is the region-tab row above, for
+            whichever state is active. Placed last so it sits to the right of
+            San Diego on California's own pages, not ahead of the tabs. */}
+        {showStateSwitcher && <StateSwitcher activeState={activeState} />}
       </nav>
     </header>
   );

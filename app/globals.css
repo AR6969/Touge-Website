@@ -45,6 +45,21 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .region small { margin-left: 8px; font-size: 9px; text-transform: uppercase; letter-spacing: .6px; }
 .region.future { flex-direction: column; justify-content: center; gap: 3px; }
 .region.future small { margin-left: 0; font-size: 8px; }
+.state-switcher { display: flex; }
+.state-switcher-trigger { border: 0; cursor: pointer; font: inherit; }
+.state-switcher-trigger span { margin-left: 4px; font-size: 10px; }
+/* position:fixed, not absolute: the trigger sits inside .header nav, which on
+   mobile is a horizontally scrollable, overflow-clipped strip (see the
+   @media block below). An absolutely positioned menu there gets silently
+   clipped by that overflow in every browser tested here; fixed positioning
+   (top/right set inline from the trigger's own getBoundingClientRect) escapes
+   it and always renders relative to the viewport instead. */
+.state-switcher-menu { position: fixed; z-index: 20; display: flex; flex-direction: column; min-width: 180px;
+  max-height: min(60vh, 420px); overflow-y: auto;
+  padding: 6px; border: 1px solid #435249; border-radius: 8px; background: #19221df5; box-shadow: 0 8px 28px #0006; }
+.state-switcher-menu a { padding: 9px 12px; border-radius: 5px; color: #dfe8e0; font-size: 14px; text-decoration: none; }
+.state-switcher-menu a:hover { background: #263129; }
+.state-switcher-menu a[aria-current="page"] { color: var(--accent); }
 .map-panel { flex: 1; position: relative; min-height: 0; background: #1d251f; }
 /* Higher specificity than Mapbox's position:relative rule prevents a collapsed map. */
 .map-panel > .map { position: absolute; inset: 0; width: 100%; height: 100%; }
