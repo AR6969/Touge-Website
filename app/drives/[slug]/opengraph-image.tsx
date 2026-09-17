@@ -4,7 +4,7 @@ import { driveShapeUri } from "../../lib/road-shape";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "California Touge driving guide and mapped road sections";
+export const alt = "TougeMap driving guide and mapped road sections";
 
 export function generateStaticParams() {
   return drives.map(drive => ({ slug: drive.slug }));

@@ -5,7 +5,7 @@ const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const siteUrl = new URL(configured || "https://www.tougemap.com").origin;
 
-export const siteName = "California Touge";
+export const siteName = "TougeMap";
 export const reviewedOn = "September 8, 2026";
 
 // Where the contact page sends messages once no form backend is configured

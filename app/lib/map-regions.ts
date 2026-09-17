@@ -7,9 +7,9 @@ export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" 
 // swapping California sub-regions.
 export type StateId = "california" | "southern-appalachians";
 
-export const states: Record<StateId, { name: string }> = {
-  california: { name: "California" },
-  "southern-appalachians": { name: "Southern Appalachians" },
+export const states: Record<StateId, { name: string; defaultRegion: MapRegion }> = {
+  california: { name: "California", defaultRegion: "california" },
+  "southern-appalachians": { name: "Southern Appalachians", defaultRegion: "southern-appalachians" },
 };
 
 export const mapRegions: Record<MapRegion, {

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "The method behind the collection: how roads were selected, how difficulty is rated, how bends are counted from " +
     "OpenStreetMap geometry, and why a published speed figure is never treated as a verified posted sign.",
   alternates: { canonical: "/method" },
-  openGraph: { url: "/method", title: "How these roads are rated & measured", description: "How California Touge selects roads, measures road geometry and elevation, and handles speed-limit evidence." },
+  openGraph: { url: "/method", title: "How these roads are rated & measured", description: "How TougeMap selects roads, measures road geometry and elevation, and handles speed-limit evidence." },
 };
 
 export default function MethodPage() {

@@ -5,11 +5,11 @@ import { contactEmail } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact California Touge with a road suggestion, correction or question about TougeMap.",
+  description: "Contact TougeMap with a road suggestion, correction or question.",
   alternates: { canonical: "/contact" },
   openGraph: {
     url: "/contact",
-    title: "Contact California Touge",
+    title: "Contact TougeMap",
     description: "Send a road suggestion, correction or question about TougeMap.",
   },
 };
@@ -41,7 +41,7 @@ export default function ContactPage() {
                 Message
                 <textarea name="message" rows={7} required />
               </label>
-              <input type="hidden" name="_subject" value="California Touge contact" />
+              <input type="hidden" name="_subject" value="TougeMap contact" />
               <button type="submit">Send message</button>
             </form>
           ) : (
@@ -50,7 +50,7 @@ export default function ContactPage() {
             // dead end while that's being set up.
             <div className="contact-fallback">
               <p>Send a road suggestion, correction or question straight to our inbox:</p>
-              <a className="contact-email-cta" href={`mailto:${contactEmail}?subject=${encodeURIComponent("California Touge contact")}`}>
+              <a className="contact-email-cta" href={`mailto:${contactEmail}?subject=${encodeURIComponent("TougeMap contact")}`}>
                 Email {contactEmail} →
               </a>
             </div>

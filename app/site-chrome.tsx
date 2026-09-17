@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { mapRegions, type MapRegion } from "./lib/map-regions";
+import { mapRegions, states, type MapRegion, type StateId } from "./lib/map-regions";
 
 export function SiteHeader({ current, mapRegion, onRegionChange }: {
   current?: "map" | "roads" | "regions" | "drives";
@@ -7,6 +7,12 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
   /** Supplied by map pages so a region switch changes state instead of navigating. */
   onRegionChange?: (region: MapRegion) => void;
 }) {
+  // Only a map page has an active state to highlight; /roads, /drives and
+  // /regions cover every state at once, so none of the state links claim
+  // "current" there rather than misleadingly defaulting to California.
+  const activeState: StateId | undefined = mapRegion ? mapRegions[mapRegion].state : undefined;
+  const stateEntries = Object.entries(states) as [StateId, typeof states[StateId]][];
+
   return (
     <header className="header">
       {/* Explicit ?region=california rather than a bare "/": the home page
@@ -16,35 +22,45 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
       <Link href="/?region=california" className="brand">
         <span className="brand-symbol" aria-hidden="true">峠</span>
         <span className="brand-words">
-          <span className="brand-name">California Touge<span className="brand-dot">.</span></span>
-          {/* "Touge" is niche vocabulary; this says what the site is to everyone else. */}
-          <small className="brand-tagline">Best driving roads in California</small>
+          <span className="brand-name">TougeMap<span className="brand-dot">.</span></span>
+          <small className="brand-tagline">Best driving roads, state by state</small>
         </span>
       </Link>
-      {current === "map" ? (
-        <nav aria-label="Map regions">
-          {/* Sierra Nevada roads live inside the California tab rather than getting
-              their own peer tab — reachable by panning the statewide map, not by nav.
-              A region in a different state gets its own dedicated page (see
-              app/southern-appalachians/page.tsx) instead of joining this switcher:
-              swapping states is a bigger jump than swapping California sub-regions. */}
-          {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
-            .filter(([id, region]) => id !== "sierra" && region.state === "california")
-            .map(([id, region]) => (
-            onRegionChange
-              ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
-                        onClick={() => onRegionChange(id)}>{region.name}</button>
-              : <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
+      <nav aria-label="Main">
+        {/* Always visible, on every page, regardless of map/non-map mode —
+            this is the fix for a region in a second state otherwise having
+            no way back to the first, and no way to be reached at all except
+            a buried in-page link. Shown even with just two states so a third
+            slots in here later without a design change. On a map page the
+            active state's own region tabs already say where you are, so only
+            the *other* states appear here — otherwise "California" would sit
+            right next to a "California" region tab, which is one pill too many
+            for a phone-width header to survive with room for anything else. */}
+        {stateEntries.length > 1 && stateEntries
+          .filter(([id]) => id !== activeState)
+          .map(([id, state]) => (
+            <Link key={id} href={mapRegions[state.defaultRegion].href} className="region other-state">{state.name}</Link>
           ))}
-        </nav>
-      ) : (
-        <nav aria-label="Main">
-          <Link href="/" className="region">Map</Link>
-          <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
-          <Link href="/drives" className="region" aria-current={current === "drives" ? "page" : undefined}>Drives</Link>
-          <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
-        </nav>
-      )}
+        {current === "map" ? (
+          // Sierra Nevada roads live inside the California tab rather than getting
+          // their own peer tab — reachable by panning the statewide map, not by nav.
+          (Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
+            .filter(([id, region]) => id !== "sierra" && region.state === activeState)
+            .map(([id, region]) => (
+              onRegionChange
+                ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
+                          onClick={() => onRegionChange(id)}>{region.name}</button>
+                : <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
+            ))
+        ) : (
+          <>
+            <Link href="/" className="region">Map</Link>
+            <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
+            <Link href="/drives" className="region" aria-current={current === "drives" ? "page" : undefined}>Drives</Link>
+            <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
+          </>
+        )}
+      </nav>
     </header>
   );
 }

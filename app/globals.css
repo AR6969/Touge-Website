@@ -344,10 +344,17 @@ summary { cursor: pointer; }
   .brand { font-size: 19px; }
   .brand-symbol { font-size: 22px; margin-right: 8px; }
   .brand-tagline { font-size: 9px; }
-  /* The nav's own box already stretches full width (align-self:stretch, set
-     for the desktop row layout); without this its flex-start default left
-     the tabs bunched at the left edge with the rest of the row empty. */
-  .header nav { gap: clamp(8px, 3vw, 18px); flex: 1; justify-content: flex-end; }
+  /* justify-content:flex-end here used to just right-align a row that fit
+     with room to spare. Once a second state added enough pills to overflow
+     (state links + region tabs), flex-end became actively broken: browsers
+     don't create reachable scroll overflow on the *start* edge of a flex-end
+     row, so the earliest pills were pushed off-screen with no way to scroll
+     to them at all — not clipped-but-reachable, just gone. flex-start with
+     overflow-x:auto is the version that actually works: DOM order is what's
+     reachable, scrolling left-to-right from a real scrollLeft of 0. */
+  .header nav { gap: clamp(8px, 3vw, 18px); flex: 1; justify-content: flex-start; flex-wrap: nowrap;
+                overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .header nav::-webkit-scrollbar { display: none; }
   .header .region { white-space: nowrap; }
   .region { font-size: 12px; }
   /* One scrollable row of chips instead of two stacked rows: on a phone the map

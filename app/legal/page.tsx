@@ -4,7 +4,7 @@ import { SiteFooter, SiteHeader } from "../site-chrome";
 import { siteName } from "../lib/site";
 
 const title = "Legal Disclaimer";
-const description = "What California Touge is and is not: a reference for road shape and terrain, not navigation, not a safety authority, and not a substitute for posted signs or your own judgment.";
+const description = "What TougeMap is and is not: a reference for road shape and terrain, not navigation, not a safety authority, and not a substitute for posted signs or your own judgment.";
 
 export const metadata: Metadata = {
   title,
