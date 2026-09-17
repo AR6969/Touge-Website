@@ -37,7 +37,15 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
   transform: translateY(-1px);
 }
 .brand-dot { color: var(--accent); }
-.header nav { display: flex; align-self: stretch; gap: 28px; }
+/* header-nav-row holds <nav> (scrollable when it overflows) and the
+   state-switcher (never scrollable, see the comment in site-chrome.tsx for
+   why they're siblings rather than the switcher living inside <nav>).
+   min-width:0 on both the row and <nav> matters: flex items default to
+   min-width:auto, which stops a child from ever shrinking below its content
+   width — without overriding it here, overflow-x:auto on <nav> has nothing
+   to actually trigger on, since the item never shrinks enough to overflow. */
+.header-nav-row { display: flex; align-items: center; flex: 1; min-width: 0; gap: 12px; align-self: stretch; }
+.header nav { display: flex; align-self: stretch; gap: 28px; flex: 1; min-width: 0; }
 .region { display: flex; align-items: center; background: transparent; border: 0; border-bottom: 2px solid transparent; padding: 0 3px; color: #c3c8bd; font-size: 13px; text-decoration: none; }
 .region:hover { color: var(--accent); }
 .region.active, .region[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
@@ -45,7 +53,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .region small { margin-left: 8px; font-size: 9px; text-transform: uppercase; letter-spacing: .6px; }
 .region.future { flex-direction: column; justify-content: center; gap: 3px; }
 .region.future small { margin-left: 0; font-size: 8px; }
-.state-switcher { display: flex; }
+.state-switcher { display: flex; flex-shrink: 0; }
 .state-switcher-trigger { border: 0; cursor: pointer; font: inherit; }
 .state-switcher-trigger span { margin-left: 4px; font-size: 10px; }
 /* position:fixed, not absolute: the trigger sits inside .header nav, which on
@@ -359,6 +367,10 @@ summary { cursor: pointer; }
   .brand { font-size: 19px; }
   .brand-symbol { font-size: 22px; margin-right: 8px; }
   .brand-tagline { font-size: 9px; }
+  /* .header switches to flex-direction:column on mobile, so this row needs
+     its own explicit full width to lay nav + the state switcher out
+     side-by-side rather than each shrinking to content width. */
+  .header-nav-row { width: 100%; }
   /* justify-content:flex-end here used to just right-align a row that fit
      with room to spare. Once a second state added enough pills to overflow
      (state links + region tabs), flex-end became actively broken: browsers

@@ -27,36 +27,41 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
           <small className="brand-tagline">Best driving roads, state by state</small>
         </span>
       </Link>
-      <nav aria-label="Main">
-        {current === "map" ? (
-          // Sierra Nevada roads live inside the California tab rather than getting
-          // their own peer tab — reachable by panning the statewide map, not by nav.
-          (Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
-            .filter(([id, region]) => id !== "sierra" && region.state === activeState)
-            .map(([id, region]) => (
-              onRegionChange
-                ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
-                          onClick={() => onRegionChange(id)}>{region.name}</button>
-                : <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
-            ))
-        ) : (
-          <>
-            <Link href="/" className="region">Map</Link>
-            <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
-            <Link href="/drives" className="region" aria-current={current === "drives" ? "page" : undefined}>Drives</Link>
-            <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
-          </>
-        )}
-        {/* A dropdown, not one pill per state: a flat row of state links
-            (tried first) is bounded by the number of states times each
-            state's own region-tab count, and already overflowed the mobile
-            header at just two states. A dropdown costs exactly one pill's
-            width regardless of how many states exist — the only part of this
-            nav that needs to keep growing is the region-tab row above, for
-            whichever state is active. Placed last so it sits to the right of
-            San Diego on California's own pages, not ahead of the tabs. */}
+      <div className="header-nav-row">
+        <nav aria-label="Main">
+          {current === "map" ? (
+            // Sierra Nevada roads live inside the California tab rather than getting
+            // their own peer tab — reachable by panning the statewide map, not by nav.
+            (Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
+              .filter(([id, region]) => id !== "sierra" && region.state === activeState)
+              .map(([id, region]) => (
+                onRegionChange
+                  ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
+                            onClick={() => onRegionChange(id)}>{region.name}</button>
+                  : <Link key={id} href={region.href} className="region" aria-current={mapRegion === id ? "page" : undefined}>{region.name}</Link>
+              ))
+          ) : (
+            <>
+              <Link href="/" className="region">Map</Link>
+              <Link href="/roads" className="region" aria-current={current === "roads" ? "page" : undefined}>All roads</Link>
+              <Link href="/drives" className="region" aria-current={current === "drives" ? "page" : undefined}>Drives</Link>
+              <Link href="/regions" className="region" aria-current={current === "regions" ? "page" : undefined}>Regions</Link>
+            </>
+          )}
+        </nav>
+        {/* Deliberately outside <nav>: on mobile that nav is a horizontally
+            scrollable strip (overflow-x:auto, see globals.css), and a tap on a
+            button living at its scroll edge is exactly the gesture real touch
+            browsers most often misread as "start scrolling" instead of "click"
+            — a fine-grained timing/movement thing a synthetic test tap doesn't
+            reproduce but a real thumb does constantly. Pulling the switcher out
+            into its own non-scrolling flex sibling removes the ambiguity
+            outright rather than tuning touch-action heuristics against a
+            moving target. Still a dropdown, not one pill per state, for the
+            same reason as before: it costs exactly one slot regardless of how
+            many states exist, so this fix doesn't get revisited at state three. */}
         {showStateSwitcher && <StateSwitcher activeState={activeState} />}
-      </nav>
+      </div>
     </header>
   );
 }
