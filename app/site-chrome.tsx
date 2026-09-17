@@ -24,9 +24,12 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
       {current === "map" ? (
         <nav aria-label="Map regions">
           {/* Sierra Nevada roads live inside the California tab rather than getting
-              their own peer tab — reachable by panning the statewide map, not by nav. */}
+              their own peer tab — reachable by panning the statewide map, not by nav.
+              A region in a different state gets its own dedicated page (see
+              app/southern-appalachians/page.tsx) instead of joining this switcher:
+              swapping states is a bigger jump than swapping California sub-regions. */}
           {(Object.entries(mapRegions) as [MapRegion, typeof mapRegions[MapRegion]][])
-            .filter(([id]) => id !== "sierra")
+            .filter(([id, region]) => id !== "sierra" && region.state === "california")
             .map(([id, region]) => (
             onRegionChange
               ? <button key={id} type="button" className="region" aria-current={mapRegion === id ? "page" : undefined}
@@ -46,7 +49,10 @@ export function SiteHeader({ current, mapRegion, onRegionChange }: {
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ roadStatus = { label: "Caltrans QuickMap", url: "https://quickmap.dot.ca.gov/" } }: {
+  /** Named so a non-California page (Southern Appalachians, say) doesn't point visitors at Caltrans. */
+  roadStatus?: { label: string; url: string };
+}) {
   return (
     <footer className="site-footer">
       <p>
@@ -56,7 +62,7 @@ export function SiteFooter() {
       </p>
       <p>
         Review dates appear on each road page. No live road status: check{" "}
-        <a href="https://quickmap.dot.ca.gov/" target="_blank" rel="noopener noreferrer">Caltrans QuickMap</a> for
+        <a href={roadStatus.url} target="_blank" rel="noopener noreferrer">{roadStatus.label}</a> for
         closures and conditions. Posted signs always govern.
       </p>
       <p className="footer-contact"><Link href="/contact">Contact</Link> · <Link href="/legal">Legal disclaimer</Link></p>

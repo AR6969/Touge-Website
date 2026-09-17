@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { drives } from "./lib/drives";
 import { siteName, siteUrl } from "./lib/site";
@@ -68,6 +68,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles"), popular: popularRoadsFor("los-angeles") },
           "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
+          "southern-appalachians": { roads: southernAppalachiansRoads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
         }}
       />
       <main className="prose landing" id="about">
@@ -122,6 +123,11 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
             })}
           </ul>
         </section>
+
+        <p className="lede">
+          Also now mapping <Link href="/southern-appalachians">the Southern Appalachians</Link> — starting with
+          Tail of the Dragon on US 129, our first road outside California.
+        </p>
 
         <nav className="intro-links" aria-label="Sections">
           <Link href="/roads">All {roads.length} roads</Link>

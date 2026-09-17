@@ -50,6 +50,7 @@ export const bayAreaRoads = roads.filter(road => (road.mapRegion ?? "bay-area") 
 export const losAngelesRoads = roads.filter(road => road.mapRegion === "los-angeles");
 export const sanDiegoRoads = roads.filter(road => road.mapRegion === "san-diego");
 export const sierraRoads = roads.filter(road => road.mapRegion === "sierra");
+export const southernAppalachiansRoads = roads.filter(road => road.mapRegion === "southern-appalachians");
 
 export function roadMapHref(road: Road) {
   const href = mapRegions[road.mapRegion ?? "bay-area"].href;
@@ -84,6 +85,7 @@ const popularIds: Record<MapRegion, string[]> = {
   "los-angeles": ["latigo-canyon", "mulholland-highway-malibu", "angeles-crest-west", "ortega-highway"],
   "san-diego": ["palomar-south-grade", "sunrise-highway", "montezuma-grade", "palomar-east-grade"],
   sierra: ["tioga-pass", "sonora-pass", "rock-creek-road", "horseshoe-meadow"],
+  "southern-appalachians": ["tail-of-the-dragon"],
 };
 
 export function popularRoadsFor(region: MapRegion): { id: string; name: string }[] {

@@ -1,13 +1,15 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians";
 
-// The state a region belongs to. Not yet used to change any URL or route —
-// California's regions keep their existing flat paths — but it's what lets
-// the region switcher and homepage group by state once a second one exists,
-// without a data-model change at that point.
-export type StateId = "california";
+// The state a region belongs to. California's regions keep their existing
+// flat paths and their own in-map tab switcher (see site-chrome.tsx); a
+// region belonging to a different state gets its own dedicated page instead
+// of joining that switcher, since swapping states is a bigger jump than
+// swapping California sub-regions.
+export type StateId = "california" | "southern-appalachians";
 
 export const states: Record<StateId, { name: string }> = {
   california: { name: "California" },
+  "southern-appalachians": { name: "Southern Appalachians" },
 };
 
 export const mapRegions: Record<MapRegion, {
@@ -73,5 +75,15 @@ export const mapRegions: Record<MapRegion, {
     // Sonora Pass in the north to Horseshoe Meadow in the south, the 395
     // corridor roughly down the middle, plus the western-slope Hwy 168 climb.
     bounds: [[-119.55, 36.30], [-117.85, 38.55]],
+  },
+  "southern-appalachians": {
+    name: "Southern Appalachians",
+    href: "/southern-appalachians",
+    pickerTitle: "Tail of the Dragon & the Smokies",
+    state: "southern-appalachians",
+    center: [-83.93, 35.55],
+    // Framed around the Deals Gap / Chilhowee Lake cluster with room to grow
+    // toward the Cherohala Skyway and North Georgia without needing a resize.
+    bounds: [[-84.35, 35.15], [-83.30, 35.80]],
   },
 };

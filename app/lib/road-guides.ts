@@ -344,6 +344,17 @@ const roadGuides: Record<string, RoadGuide> = {
       { roadId: "highland-valley", note: "A nearby backcountry road in the same area." },
     ],
   },
+  "tail-of-the-dragon": {
+    heading: "Tail of the Dragon: Deals Gap to Chilhowee Lake",
+    title: "Tail of the Dragon (US 129): Route, Map & Driving Notes | TougeMap",
+    description: "Plan a run on the Tail of the Dragon: 318 curves in 11 miles, no intersections or driveways, and what that actually means for how the road drives.",
+    updated: "2026-09-16",
+    notes: [
+      { text: "The Dragon packs 115 counted bends and 24 switchbacks into 11.0 miles — 10.5 bends per mile, in the same range as this catalog's tightest California roads, sustained over a much longer stretch than most of them manage. What makes it unusual isn't just the count: there are no intersections, driveways or side roads anywhere on it, so every vehicle on the road is there to drive it, not to get somewhere. Much of it also has no guardrail, with the road cut into the hillside above the Little Tennessee River gorge.", source: { title: "US129DragonsTail.com: Tail of the Dragon overview", url: "https://www.us129dragonstail.com/" } },
+      { text: "Go on a weekday if you want the road to yourself; April through October is the season, and weekends bring heavy motorcycle and sports-car traffic in both directions on a road with no passing lanes. The road currently also carries detour traffic from I-40 repairs near the state line, so TDOT and NCDOT enforce a strict length limit — no truck-trailer combinations or single units over 30 ft — check current conditions before relying on it being clear.", source: { title: "TDOT: Tennessee 511 traveler information", url: "https://www.tn.gov/tdot/welcome-to-tennessee-511.html" } },
+    ],
+    connections: [],
+  },
 };
 
 export function getRoadGuide(id: string): RoadGuide | undefined {

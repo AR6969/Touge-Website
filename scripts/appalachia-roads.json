@@ -1,0 +1,49 @@
+[
+  {
+    "id": "tail-of-the-dragon",
+    "name": "Tail of the Dragon · US 129",
+    "area": "Great Smoky Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "318 curves in 11 miles of US 129 between Deals Gap, on the North Carolina–Tennessee line, and Chilhowee Lake in Tennessee. No intersections, driveways or side roads along the way, and no guardrail for much of it.",
+    "sources": [
+      {
+        "title": "US129DragonsTail.com: Tail of the Dragon overview",
+        "url": "https://www.us129dragonstail.com/"
+      },
+      {
+        "title": "Wikipedia: U.S. Route 129 in Tennessee",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_129_in_Tennessee"
+      },
+      {
+        "title": "Wikipedia: Deals Gap, North Carolina",
+        "url": "https://en.wikipedia.org/wiki/Deals_Gap,_North_Carolina"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags most of the Tennessee side at 30 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "US 129 is currently carrying detour traffic from I-40 repairs near the state line (Hurricane Helene damage), and TDOT/NCDOT enforce a strict length limit on this stretch as a result: no truck-trailer combinations or single units over 30 ft. Check current conditions before a trip.",
+      "url": "https://www.tn.gov/tdot/welcome-to-tennessee-511.html",
+      "checked": "2026-09-16"
+    },
+    "names": [
+      "Tapoco Road",
+      "Calderwood Highway"
+    ],
+    "anchors": [
+      {
+        "near": [-83.9414122, 35.4501826],
+        "maxSnapM": 10
+      },
+      {
+        "near": [-83.9678692, 35.5029603],
+        "maxSnapM": 10
+      }
+    ]
+  }
+]
