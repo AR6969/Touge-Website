@@ -61,14 +61,16 @@ const roadGuides: Record<string, RoadGuide> = {
   pescadero: {
     heading: "Pescadero Creek Road",
     title: "Pescadero Creek Road: Redwoods to Coast | TougeMap",
-    description: "Follow Pescadero Creek Road through Loma Mar toward Pescadero and Highway 1. Explore the map, redwood stops and a connected Santa Cruz Mountains drive.",
+    description: "Follow Pescadero Creek Road through Loma Mar toward Pescadero and Highway 1: bend density, single-lane sections, redwood stops and a connected drive.",
     updated,
     notes: [
+      { text: "Pescadero Creek Road runs longer and mellower than the ridge roads that feed it — 13.6 miles with 55 bends, a density of 4 per mile against West Alpine's 11 — but the character is different, not easier: single-lane width in places through Sam McDonald County Park's redwoods, with blind curves that call for watching for oncoming cars and cyclists rather than carrying speed. Traffic is light most of the week, heavier on weekends as a through-route between the ridge and the coast.", source: { title: "San Mateo County: Pescadero Creek Park", url: "https://www.smcgov.org/parks/pescadero-creek-park-trails" } },
       { text: "Pescadero Creek Road brings a change of scenery to a Peninsula drive: redwoods around Loma Mar, then the country around Pescadero and the coast. Memorial Park sits on this road and gives you a place to plan a proper stop among the redwoods. Check the park’s visitor information if you want to combine the drive with a walk.", source: { title: "San Mateo County: Memorial Park", url: "https://www.smcgov.org/parks/memorial-park" } },
       { text: "At the coast, Pescadero Creek Road meets Highway 1 beside the southern access to Pescadero State Beach. This makes the road a useful link in a mountain-to-ocean outing. Use the coastal driving guide for the full Highway 9–Skyline–Highway 84 approach and decide which direction you want to take on Highway 1 before reaching the coast.", source: { title: "State Parks: Pescadero beach access", url: "https://parks.ca.gov/?page_id=522" } },
       { text: "Leave time for downtown Pescadero before the beach. It’s small, full of character and a lovely coffee stop between the redwoods and Highway 1." },
     ],
     connections: [
+      { roadId: "west-alpine", note: "The steeper, tighter descent from Skyline that feeds into this road." },
       { roadId: "la-honda", note: "Highway 84 supplies the inland approach from the La Honda side." },
       { roadId: "highway-1-coast", note: "The coastal continuation at Pescadero State Beach." },
     ],
@@ -135,10 +137,10 @@ const roadGuides: Record<string, RoadGuide> = {
   "latigo-canyon": {
     heading: "Latigo Canyon Road, Malibu",
     title: "Latigo Canyon Road, Malibu: Driving Guide | TougeMap",
-    description: "Explore Latigo Canyon Road from Malibu’s PCH into the Santa Monica Mountains. Map, tight bends, canyon-road connections and practical planning notes.",
+    description: "Explore Latigo Canyon Road from Malibu’s PCH into the Santa Monica Mountains: 98 bends and 24 switchbacks over ten miles, the highest switchback count of any road in this catalog.",
     updated,
     notes: [
-      { text: "Latigo climbs away from Pacific Coast Highway into the Santa Monica Mountains, with repeated bends through the canyon. It is an involved mountain leg to pair with a coastal outing. The upper road also provides access to the Backbone Trail, so watch for people entering and leaving the trailhead area.", source: { title: "LA County Parks: Latigo Canyon trailhead access", url: "https://trails.lacounty.gov/Trail/74/backbone-trail---latigo-canyon" } },
+      { text: "Latigo packs 98 counted bends into 10.2 miles, 24 of them full switchbacks — more switchbacks than any other road mapped here, stacked almost continuously from PCH to the ridge. The grade stays moderate (7.3% at its steepest), so the demand is sustained direction-change and working through the switchback sequence cleanly, not outright steepness. The upper road also provides access to the Backbone Trail, so watch for hikers entering and leaving the trailhead area mid-corner.", source: { title: "LA County Parks: Backbone Trail — Latigo Canyon access", url: "https://trails.lacounty.gov/Trail/74/backbone-trail---latigo-canyon" } },
       { text: "Plan the coastal and ridge ends as separate parts of the drive. PCH supplies the coast approach, while Kanan Dume is another road to consult when choosing a return through the canyon network. Check current county closures before joining the roads into a loop; the route shown here describes Latigo itself.", source: { title: "LA County: current road closures", url: "https://pw.lacounty.gov/roadclosures/" } },
     ],
     connections: [
@@ -263,6 +265,83 @@ const roadGuides: Record<string, RoadGuide> = {
     connections: [
       { roadId: "schueren-saddle-peak", note: "The ridge connector at the top, toward Old Topanga and Stunt Road." },
       { roadId: "pch-malibu", note: "The coastal road at the bottom; the one-way rule only allows a right turn here." },
+    ],
+  },
+  "west-alpine": {
+    heading: "West Alpine Road: Skyline to Pescadero Creek",
+    title: "West Alpine Road: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the West Alpine Road descent from Skyline into the redwoods toward Pescadero Creek Road: bend density, forest sightlines, and the connecting roads.",
+    updated,
+    notes: [
+      { text: "West Alpine packs 84 counted bends into 7.6 miles — 11.1 bends per mile, denser than all but a couple of roads in this catalog — as it drops off Skyline through redwood forest toward Pescadero Creek Road. The grade is moderate (8.4% at its steepest) but sightlines change constantly under tree cover, closing in around blind bends and opening briefly at clearings. Alpine Creek and Heritage Grove Redwoods Preserve border the corridor, so expect cyclists and hikers as well as other drivers.", source: { title: "Midpeninsula Regional Open Space District: Alpine Road corridor", url: "https://www.openspace.org/what-we-do/projects/alpine-road-regional-trail-improvement-project" } },
+    ],
+    connections: [
+      { roadId: "skyline", note: "The ridge road at the top of the descent." },
+      { roadId: "pescadero", note: "West Alpine ends where Pescadero Creek Road continues toward the coast." },
+    ],
+  },
+  "piuma-road": {
+    heading: "Piuma Road: Malibu Canyon Ridge",
+    title: "Piuma Road: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Piuma Road climb above Malibu Canyon: 53 bends over a ridge with overlook views, plus the Stunt Road and Malibu Canyon connections.",
+    updated,
+    notes: [
+      { text: "Piuma climbs the ridge dividing the Malibu Canyon and Cold Creek watersheds, with 53 counted bends over 6.5 miles and a steady 8.3% grade at its steepest. The road has real scenic-overlook pull-outs with panoramic views down Malibu Canyon toward the coast, which makes it easy to carry too much speed past them rather than into the next corner — a hairpin sits right above the Malibu Creek Gorge picnic area, one of the tighter points on the climb.", source: { title: "MRCA: Piuma Ridge Overlook", url: "https://mrca.ca.gov/wp-content/uploads/2018/02/piumaRidgeOverlook.pdf" } },
+    ],
+    connections: [
+      { roadId: "malibu-canyon-las-virgenes", note: "The canyon floor road Piuma climbs away from." },
+      { roadId: "stunt-road", note: "The ridge continues onto Stunt Road at Piuma's eastern end." },
+    ],
+  },
+  "little-tujunga": {
+    heading: "Little Tujunga Canyon Road: Bear Divide",
+    title: "Little Tujunga Canyon Road: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Little Tujunga Canyon Road climb over Bear Divide: hairpins, drop-offs, and what the pavement and traffic are actually like.",
+    updated,
+    notes: [
+      { text: "Little Tujunga climbs from the San Fernando Valley over Bear Divide with 74 counted bends and 16 switchbacks across 10.8 miles — the road gains most of its 271 ft-per-mile average climb in short bursts rather than evenly, so the switchback sections come in concentrated stretches. Armco guardrail covers many corners but not all of them, and the drop-offs beside the road are real; sand and hillside debris collect in corners after rain. It's well used by motorcyclists on weekends, so expect company." },
+    ],
+    connections: [
+      { roadId: "big-tujunga", note: "The other Tujunga canyon road, reached via Big Tujunga Canyon Road to the east." },
+    ],
+  },
+  "hecker-pass": {
+    heading: "Hecker Pass: Gilroy to Watsonville",
+    title: "Hecker Pass Highway (SR 152): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Hecker Pass Highway drive over Mount Madonna between Gilroy and Watsonville: gentle grade, continuous curves, and the summit crossing.",
+    updated,
+    notes: [
+      { text: "Hecker Pass crosses Mount Madonna at a modest 1,339 ft, and it shows in the numbers: 18 bends over 7.9 miles is a much lower density than the Santa Cruz Mountains' tighter roads, and the grade never exceeds 6.2%, the gentlest climb in this catalog's Peninsula/Santa Cruz cluster. The character is continuous, banked curves rather than switchbacks — a sustained rhythm road through redwoods and farmland on the Watsonville side, not a technical climb.", source: { title: "Wikipedia: Hecker Pass", url: "https://en.wikipedia.org/wiki/Hecker_Pass" } },
+    ],
+    connections: [
+      { roadId: "watsonville-road", note: "Continues the Santa Cruz Mountains crossing toward Watsonville." },
+    ],
+  },
+  "kanan-dume": {
+    heading: "Kanan Dume Road: Coast to Canyon",
+    title: "Kanan Dume Road: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Kanan Dume Road drive between US 101 and PCH: three tunnels, a steep coastal descent, and what the corners are actually like section by section.",
+    updated,
+    notes: [
+      { text: "Kanan Dume covers 6.2 miles with only 14 counted bends — far fewer than the tight canyon roads around it — but an 8% grade on the descent toward the coast, the steepest sustained stretch in this cluster. The character changes by section: wide, predictable curves near US 101, tightening through the recreation area at the highest elevation, then three narrow tunnels (built between 1967 and 1982, known locally as T-1, T-2 and T-3) on the final drop to PCH. A runaway-truck ramp near the bottom is a fair indicator of how steep that last stretch runs.", source: { title: "SoCal Regional Rocks and Roads: Kanan Dume Road", url: "https://www.socalregion.com/highways/scenic_drives/kanan-dume-road/" } },
+    ],
+    connections: [
+      { roadId: "pch-malibu", note: "The coast road at Kanan Dume's southern end." },
+      { roadId: "latigo-canyon", note: "A parallel canyon road to consider for a return leg." },
+      { roadId: "mulholland-highway-malibu", note: "Crosses Kanan Dume partway up, toward the Snake and the Rock Store." },
+    ],
+  },
+  "mesa-grande": {
+    heading: "Mesa Grande Road: Santa Ysabel Backcountry",
+    title: "Mesa Grande Road: Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Mesa Grande Road drive through San Diego's backcountry: switchbacks up, a long sightline straight across the mesa, and switchbacks back down.",
+    updated,
+    notes: [
+      { text: "Mesa Grande runs 12.1 miles with 48 bends in a distinctive three-part shape: switchbacks climbing to the mesa top, a long straight across the plateau with enough sightline to see well ahead, then more tight turns on the way back down — the steepest grade in this batch at 8.8%. Pavement quality is good, kept up in part by the reservation land it crosses, though sand and gravel wash onto the road after rain. Watch the southern bridge specifically: taking that corner too fast puts you in the creek, not just off the shoulder.", source: { title: "PCA San Diego Region: Mesa Grande Road guide", url: "https://www.pcasdr.org/mesa-grande" } },
+    ],
+    connections: [
+      { roadId: "palomar-south-grade", note: "Another Palomar & North County road to pair with this one." },
+      { roadId: "highland-valley", note: "A nearby backcountry road in the same area." },
     ],
   },
 };
