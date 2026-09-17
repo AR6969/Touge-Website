@@ -129,5 +129,31 @@
       37.1586
     ],
     "mapRegion": "bay-area"
+  },
+  {
+    "id": "deals-gap-resort",
+    "name": "Deal's Gap Motorcycle Resort",
+    "kind": "Food & meetup",
+    "note": "Right at the NC/TN state line where the Dragon starts: a motel, the Dragon's Den Grill, a gift shop, and the Tree of Shame — a tree hung with parts from motorcycles that didn't survive the road, a tradition since the 1980s. Each part gets signed and dated at the store counter before it goes up.",
+    "sourceUrl": "https://www.dealsgap.com/about-us/tree-of-shame",
+    "sourceLabel": "Deal's Gap Motorcycle Resort",
+    "coordinates": [
+      -83.9414122,
+      35.4501826
+    ],
+    "mapRegion": "southern-appalachians"
+  },
+  {
+    "id": "calderwood-overlook",
+    "name": "Calderwood Overlook",
+    "kind": "Scenic overlook",
+    "note": "One of the only wide-open views on the Dragon: a pull-off around the 9-mile mark from the Deals Gap end, looking down on Calderwood Reservoir and the dam below. A natural cool-down stop after the tightest stretch of curves, and known for fall color in October and early November.",
+    "sourceUrl": "https://roadtrippers.com/magazine/tail-of-the-dragon-stops/",
+    "sourceLabel": "Roadtrippers: Tail of the Dragon stops",
+    "coordinates": [
+      -83.951482,
+      35.507007
+    ],
+    "mapRegion": "southern-appalachians"
   }
 ]

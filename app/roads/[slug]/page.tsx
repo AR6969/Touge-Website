@@ -13,6 +13,8 @@ import { siteUrl } from "../../lib/site";
 import { drives } from "../../lib/drives";
 import RoadVideos from "../../road-videos";
 import { videosForRoads } from "../../lib/road-videos";
+import EmbeddedVideo from "../../embedded-video";
+import { embedVideoForRoad } from "../../lib/embed-videos";
 import { getRoadGuide } from "../../lib/road-guides";
 import "../../detail-pages.css";
 
@@ -54,8 +56,12 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const nearby = nearbyRoads(road);
   const relatedDrives = drives.filter(drive => drive.steps.some(step => step.roadId === road.id));
   const videos = videosForRoads([road.id]);
+  const embedVideo = embedVideoForRoad(road.id);
   const color = colorFor(road.character);
-  const mapsQuery = encodeURIComponent(`${road.name.replace(/ ·.*/, "")}, ${road.area}, California`);
+  // Coordinates rather than a "name, area, California" text query: that
+  // hardcoded state name broke the link outright for every road outside
+  // California, and a lat/lng pin is more reliable than a name match anyway.
+  const mapsQuery = `${road.center[1]},${road.center[0]}`;
 
   const structured = {
     "@context": "https://schema.org",
@@ -80,7 +86,12 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         name: road.name,
         description: road.description,
         url: `${siteUrl}/roads/${road.id}`,
-        address: { "@type": "PostalAddress", addressRegion: "CA", addressCountry: "US" },
+        // "CA" was hardcoded here before a second state existed. Southern
+        // Appalachians roads straddle several real states (Tail of the Dragon
+        // alone touches both NC and TN), so there's no single accurate
+        // addressRegion for that grouping — omit rather than guess one.
+        ...(mapRegions[road.mapRegion ?? "bay-area"].state === "california"
+          ? { address: { "@type": "PostalAddress", addressRegion: "CA", addressCountry: "US" } } : {}),
         geo: { "@type": "GeoCoordinates", latitude: road.center[1], longitude: road.center[0] },
       },
     ],
@@ -106,7 +117,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         <nav className="detail-actions" aria-label="Road shortcuts">
           <Link href={roadMapHref(road)}>Explore on the map →</Link>
           {editorial && <a href="#drive-notes">Plan the drive ↓</a>}
-          {videos.length > 0 && <a href="#on-the-road">Watch the road ↓</a>}
+          {(videos.length > 0 || embedVideo) && <a href="#on-the-road">Watch the road ↓</a>}
           {relatedDrives.length > 0 && <a href="#driving-guides">Drives with this road ↓</a>}
           <a href="#nearby">Nearby roads ↓</a>
         </nav>
@@ -117,7 +128,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <span className="fine"> · Reviewed {road.access.checked}</span>
         </p>}
 
-        <RoadVideos videos={videos} />
+        {videos.length > 0 ? <RoadVideos videos={videos} /> : embedVideo && <EmbeddedVideo video={embedVideo} />}
 
         {editorial && <section className="road-planning" aria-labelledby="drive-notes">
           <h2 id="drive-notes">Planning the drive</h2>
