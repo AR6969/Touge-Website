@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: siteUrl, lastModified, changeFrequency: "monthly", priority: 1 },
-    ...(["san-diego", "los-angeles", "southern-appalachians"] as const).map(region => ({
+    ...(["san-diego", "los-angeles", "southern-appalachians", "colorado"] as const).map(region => ({
       url: `${siteUrl}/${region}`,
       lastModified: latestDate(roads.filter(road => road.mapRegion === region).map(road => road.reviewed)),
       changeFrequency: "monthly" as const,

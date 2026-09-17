@@ -1,0 +1,198 @@
+[
+  {
+    "id": "independence-pass",
+    "name": "Independence Pass \u00b7 CO 82",
+    "area": "Sawatch Range & the Divide",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "36 miles of Colorado Highway 82 between Aspen and Twin Lakes, crossing the Continental Divide at 12,095 ft \u2014 the highest paved state highway in Colorado. Narrow, with sections that have no centerline and no guardrail.",
+    "sources": [
+      {
+        "title": "Wikipedia: Colorado State Highway 82",
+        "url": "https://en.wikipedia.org/wiki/Colorado_State_Highway_82"
+      },
+      {
+        "title": "Aspen Chamber: Everything you need to know about Independence Pass",
+        "url": "https://aspenchamber.org/blog/everything-you-need-know-about-independence-pass/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 25 and 55 mph depending on the section (town streets in Aspen vs. open highway), but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter \u2014 typically mid-to-late November through late May \u2014 with gates at Lincoln Creek Road on the west side and Graham Gulch on the east. CDOT also bans any vehicle (or vehicle-plus-trailer combination) over 35 ft at any time, year-round, due to the narrow, winding road. Both are firm rules, not general caution.",
+      "url": "https://www.codot.gov/travel/independencepass",
+      "checked": "2026-09-17"
+    },
+    "names": [],
+    "refs": [
+      "CO 82"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -106.81794,
+          39.1904171
+        ],
+        "maxSnapM": 100
+      },
+      {
+        "near": [
+          -106.394144,
+          39.077425
+        ],
+        "maxSnapM": 700
+      }
+    ]
+  },
+  {
+    "id": "million-dollar-highway",
+    "name": "Million Dollar Highway \u00b7 US 550",
+    "area": "San Juan Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "23 miles of US 550 between Ouray and Silverton over Red Mountain Pass (11,018 ft), part of the San Juan Skyway. Narrow, with sharp switchbacks, steep drop-offs and long stretches with no guardrail.",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 550",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_550"
+      },
+      {
+        "title": "Visit Ouray: Million Dollar Highway",
+        "url": "https://www.visitouray.com/million-dollar-highway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Red Mountain Pass has real, recurring closure history: permanent avalanche-control equipment was installed after years of active winter avalanche mitigation, and the road has also closed for rockfall (November 2024) and flood/debris removal (July 2026). Check current conditions before relying on this being open.",
+      "url": "https://www.codot.gov/travel/coloradobyways",
+      "checked": "2026-09-17"
+    },
+    "names": [],
+    "refs": [
+      "US 550"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -107.6715425,
+          38.0286284
+        ],
+        "maxSnapM": 100
+      },
+      {
+        "near": [
+          -107.6712643,
+          37.8055473
+        ],
+        "maxSnapM": 1000
+      }
+    ]
+  },
+  {
+    "id": "trail-ridge-road",
+    "name": "Trail Ridge Road \u00b7 US 34",
+    "area": "Rocky Mountain National Park",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "47 miles of US 34 across Rocky Mountain National Park between Estes Park and Grand Lake, reaching 12,183 ft \u2014 the highest continuous paved road in North America. Wide sweeping curves above treeline rather than tight switchbacks.",
+    "sources": [
+      {
+        "title": "Wikipedia: Trail Ridge Road",
+        "url": "https://en.wikipedia.org/wiki/Trail_Ridge_Road"
+      },
+      {
+        "title": "NPS: Trail Ridge Road and Old Fall River Road opening and closing dates",
+        "url": "https://www.nps.gov/romo/learn/photosmultimedia/opening_closing_trr_ofr.htm"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter, typically late October through Memorial Day weekend \u2014 the exact dates depend on snowfall and are announced each year, not fixed. A National Park entrance fee applies. This is inside Rocky Mountain National Park, not open backcountry highway.",
+      "url": "https://www.nps.gov/romo/planyourvisit/road_status.htm",
+      "checked": "2026-09-17"
+    },
+    "names": [],
+    "refs": [
+      "US 34"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -105.5223711,
+          40.3803062
+        ],
+        "maxSnapM": 500
+      },
+      {
+        "near": [
+          -105.8349749,
+          40.2519862
+        ],
+        "maxSnapM": 1200
+      }
+    ]
+  },
+  {
+    "id": "lizard-head-pass",
+    "name": "Lizard Head Pass \u00b7 CO 145",
+    "area": "San Juan Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "24 miles of CO 145 between Telluride and Rico over Lizard Head Pass (10,222 ft), the western leg of the San Juan Skyway. Sweeping mountain curves through the San Juan National Forest.",
+    "sources": [
+      {
+        "title": "Wikipedia: Lizard Head Pass",
+        "url": "https://en.wikipedia.org/wiki/Lizard_Head_Pass"
+      },
+      {
+        "title": "Wikipedia: San Juan Skyway Scenic and Historic Byway",
+        "url": "https://en.wikipedia.org/wiki/San_Juan_Skyway_Scenic_and_Historic_Byway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Colorado road conditions before a winter trip; mountain sections can ice over and this pass sees real snowfall.",
+      "url": "https://www.codot.gov/travel/coloradobyways",
+      "checked": "2026-09-17"
+    },
+    "names": [],
+    "refs": [
+      "CO 145"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -107.8718891,
+          37.9471204
+        ],
+        "maxSnapM": 5500
+      },
+      {
+        "near": [
+          -108.0315197,
+          37.6927436
+        ],
+        "maxSnapM": 300
+      }
+    ]
+  }
+]

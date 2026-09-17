@@ -2,26 +2,26 @@ import type { Metadata } from "next";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, slugifyArea, toSummary } from "../lib/roads";
+import { bayAreaRoads, coloradoRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
-const roads = southernAppalachiansRoads;
+const roads = coloradoRoads;
 
-const title = "Best Driving Roads in the Southern Appalachians";
-const description = "Tail of the Dragon and the Great Smoky Mountains on one map. Corner counts measured from OpenStreetMap geometry, elevation from USGS data — the same method used for every road on this site.";
+const title = "Best Driving Roads in Colorado";
+const description = "Million Dollar Highway, Independence Pass, Trail Ridge Road and Lizard Head Pass on one map. Corner counts measured from OpenStreetMap geometry, elevation from USGS data — the same method used for every road on this site.";
 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/southern-appalachians" },
-  openGraph: { url: "/southern-appalachians", title, description },
+  alternates: { canonical: "/colorado" },
+  openGraph: { url: "/colorado", title, description },
 };
 
 const areas = [...new Set(roads.map(road => road.area))];
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 
-export default function SouthernAppalachians() {
+export default function Colorado() {
   const structured = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -34,40 +34,40 @@ export default function SouthernAppalachians() {
 
   return (
     <>
-      {/* This map only ever opens to southern-appalachians: the in-map region
-          switcher is California-only (see site-chrome.tsx), so there is no
-          onRegionChange here and no way to land on this state by mistake. */}
+      {/* This map only ever opens to colorado: the in-map region switcher is
+          California-only (see site-chrome.tsx), so there is no onRegionChange
+          here and no way to land on this state by mistake. */}
       <HomeMap
-        initialRegion="southern-appalachians"
+        initialRegion="colorado"
         data={{
           california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california"), popular: popularRoadsFor("california") },
           "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area"), popular: popularRoadsFor("bay-area") },
           "los-angeles": { roads: losAngelesRoads.map(toSummary), landmarks: landmarksFor("los-angeles"), popular: popularRoadsFor("los-angeles") },
           "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
-          "southern-appalachians": { roads: roads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
-          colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
+          "southern-appalachians": { roads: southernAppalachiansRoads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
+          colorado: { roads: roads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
         }}
       />
       <MapIntro
-        title={<>Best driving roads in the Southern Appalachians</>}
+        title={<>Best driving roads in Colorado</>}
         stats={[
           { value: String(roads.length), label: "Roads" },
           { value: totalMiles.toLocaleString(), label: "Miles" },
           { value: totalBends.toLocaleString(), label: "Counted bends" },
           { value: String(areas.length), label: "Areas" },
         ]}
-        linksLabel="Southern Appalachians driving areas"
+        linksLabel="Colorado driving areas"
         links={[
           ...areas.map(area => ({ href: `/regions/${slugifyArea(area)}`, label: area })),
         ]}
       >
-        Our first map outside California: Tail of the Dragon on US 129, between Deals Gap and Chilhowee Lake
-        on the North Carolina–Tennessee line. Built with the same sourced, measured method as every other
-        road here — more roads in this region are on the way.
+        Four of Colorado&rsquo;s highest paved passes: the Million Dollar Highway and Lizard Head Pass in the San
+        Juans, Independence Pass over the Divide, and Trail Ridge Road through Rocky Mountain National Park.
+        Every one of these closes for winter — check current conditions before a trip.
       </MapIntro>
 
-      <SiteFooter roadStatus={{ label: "TN 511 / TDOT SmartWay", url: "https://www.tn.gov/tdot/welcome-to-tennessee-511.html" }} />
+      <SiteFooter roadStatus={{ label: "CDOT COtrip.org", url: "https://cotrip.org/" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
     </>
   );

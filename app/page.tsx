@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { drives } from "./lib/drives";
 import { siteName, siteUrl } from "./lib/site";
@@ -69,6 +69,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
           "southern-appalachians": { roads: southernAppalachiansRoads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
+          colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
         }}
       />
       <main className="prose landing" id="about">
@@ -125,8 +126,9 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
         </section>
 
         <p className="lede">
-          Also now mapping <Link href="/southern-appalachians">the Southern Appalachians</Link> — starting with
-          Tail of the Dragon on US 129, our first road outside California.
+          Also now mapping <Link href="/southern-appalachians">the Southern Appalachians</Link> — Tail of the Dragon
+          and five more roads across Tennessee, North Carolina, Virginia and Georgia — and <Link href="/colorado">Colorado</Link>,
+          from the Million Dollar Highway to Trail Ridge Road.
         </p>
 
         <nav className="intro-links" aria-label="Sections">

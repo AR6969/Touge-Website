@@ -25474,5 +25474,828 @@
       "climb": 21,
       "technical": 10
     }
+  },
+  {
+    "id": "independence-pass",
+    "name": "Independence Pass · CO 82",
+    "area": "Sawatch Range & the Divide",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "36 miles of Colorado Highway 82 between Aspen and Twin Lakes, crossing the Continental Divide at 12,095 ft — the highest paved state highway in Colorado. Narrow, with sections that have no centerline and no guardrail.",
+    "sources": [
+      {
+        "title": "Wikipedia: Colorado State Highway 82",
+        "url": "https://en.wikipedia.org/wiki/Colorado_State_Highway_82"
+      },
+      {
+        "title": "Aspen Chamber: Everything you need to know about Independence Pass",
+        "url": "https://aspenchamber.org/blog/everything-you-need-know-about-independence-pass/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 25 and 55 mph depending on the section (town streets in Aspen vs. open highway), but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter — typically mid-to-late November through late May — with gates at Lincoln Creek Road on the west side and Graham Gulch on the east. CDOT also bans any vehicle (or vehicle-plus-trailer combination) over 35 ft at any time, year-round, due to the narrow, winding road. Both are firm rules, not general caution.",
+      "url": "https://www.codot.gov/travel/independencepass",
+      "checked": "2026-09-17"
+    },
+    "mapRegion": "colorado",
+    "center": [
+      -106.5776244,
+      39.1231379
+    ],
+    "bounds": [
+      [
+        -106.81794,
+        39.062651
+      ],
+      [
+        -106.394144,
+        39.1904171
+      ]
+    ],
+    "osmWayIds": [
+      17119700,
+      17121155,
+      99250045,
+      99250065,
+      131933389,
+      262596876,
+      318095700,
+      318095701,
+      318095702,
+      318095703,
+      318096963,
+      318096964,
+      399659452,
+      627645535,
+      627645536,
+      627645537,
+      627645538,
+      627645539,
+      627645540,
+      627645541,
+      627645542,
+      627645543,
+      627645544,
+      627645545,
+      627645546,
+      627645547,
+      627645548,
+      627645549,
+      627645550,
+      627645551,
+      627645552,
+      627645553,
+      627645554,
+      627645555,
+      627645556,
+      627645557,
+      627645558,
+      627650059,
+      627650063,
+      627650069,
+      627650077,
+      627650086,
+      627650098,
+      627657502,
+      627657506,
+      627657510,
+      627657514,
+      627657517,
+      627657521,
+      627657524,
+      627657526,
+      627657529,
+      627657531,
+      627657533,
+      631947492,
+      723926098,
+      724187742,
+      724187743,
+      724187744,
+      724187745,
+      724187746,
+      724641136,
+      724641137,
+      724641138,
+      724641139,
+      1214072104,
+      1214072105
+    ],
+    "reviewed": "2026-09-17",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/colorado-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -106.81794,
+        39.1904171
+      ],
+      "end": [
+        -106.394144,
+        39.077425
+      ],
+      "wayNames": [
+        "CO 82",
+        "East Cooper Avenue",
+        "East Main Street",
+        "South Original Street"
+      ]
+    },
+    "shape": {
+      "lengthMi": 36.1,
+      "bends": 84,
+      "switchbacks": 7,
+      "curvature": 270,
+      "bendsPerMile": 2.3
+    },
+    "elevation": {
+      "climbFt": 7269,
+      "highFt": 12097,
+      "lowFt": 7896,
+      "reliefFt": 4201,
+      "maxGradient": 6.7,
+      "climbPerMile": 201
+    },
+    "profile": {
+      "points": [
+        7898,
+        7937,
+        8036,
+        8024,
+        8038,
+        8035,
+        8055,
+        8065,
+        8134,
+        8309,
+        8475,
+        8598,
+        8738,
+        8866,
+        9051,
+        9214,
+        9359,
+        9425,
+        9542,
+        9723,
+        9860,
+        10029,
+        10113,
+        10204,
+        10279,
+        10362,
+        10428,
+        10507,
+        10663,
+        10766,
+        10836,
+        10962,
+        11069,
+        11176,
+        11357,
+        11508,
+        11672,
+        11844,
+        12005,
+        12065,
+        11895,
+        11761,
+        11609,
+        11470,
+        11313,
+        11171,
+        11051,
+        10885,
+        10769,
+        10728,
+        10650,
+        10623,
+        10534,
+        10412,
+        10377,
+        10273,
+        10177,
+        10139,
+        10037,
+        10022,
+        9980,
+        9900,
+        9820,
+        9785,
+        9712,
+        9705,
+        9580,
+        9468,
+        9348,
+        9247,
+        9242,
+        9228
+      ],
+      "miles": 36.1,
+      "coverage": 100
+    },
+    "score": {
+      "score": 41,
+      "corners": 7,
+      "climb": 14,
+      "technical": 20
+    }
+  },
+  {
+    "id": "million-dollar-highway",
+    "name": "Million Dollar Highway · US 550",
+    "area": "San Juan Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "23 miles of US 550 between Ouray and Silverton over Red Mountain Pass (11,018 ft), part of the San Juan Skyway. Narrow, with sharp switchbacks, steep drop-offs and long stretches with no guardrail.",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 550",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_550"
+      },
+      {
+        "title": "Visit Ouray: Million Dollar Highway",
+        "url": "https://www.visitouray.com/million-dollar-highway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Red Mountain Pass has real, recurring closure history: permanent avalanche-control equipment was installed after years of active winter avalanche mitigation, and the road has also closed for rockfall (November 2024) and flood/debris removal (July 2026). Check current conditions before relying on this being open.",
+      "url": "https://www.codot.gov/travel/coloradobyways",
+      "checked": "2026-09-17"
+    },
+    "mapRegion": "colorado",
+    "center": [
+      -107.7010399,
+      37.9149499
+    ],
+    "bounds": [
+      [
+        -107.7362868,
+        37.8055473
+      ],
+      [
+        -107.6497116,
+        38.0286284
+      ]
+    ],
+    "osmWayIds": [
+      17114801,
+      17114830,
+      17141860,
+      29985494,
+      172241463,
+      172241464,
+      193698189,
+      193698190,
+      194351191,
+      194351192,
+      194377400,
+      194377401,
+      1073455801,
+      1159242672,
+      1159247326,
+      1159247327,
+      1159411613,
+      1159411614,
+      1159411615,
+      1159411616,
+      1299535156
+    ],
+    "reviewed": "2026-09-17",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/colorado-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -107.6715425,
+        38.0286284
+      ],
+      "end": [
+        -107.6712643,
+        37.8055473
+      ],
+      "wayNames": [
+        "Main Street",
+        "Million Dollar Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 23.2,
+      "bends": 66,
+      "switchbacks": 18,
+      "curvature": 393,
+      "bendsPerMile": 2.8
+    },
+    "elevation": {
+      "climbFt": 5195,
+      "highFt": 11086,
+      "lowFt": 7720,
+      "reliefFt": 3366,
+      "maxGradient": 6.9,
+      "climbPerMile": 224
+    },
+    "profile": {
+      "points": [
+        7721,
+        7767,
+        7818,
+        7889,
+        7991,
+        8080,
+        8184,
+        8266,
+        8344,
+        8464,
+        8551,
+        8665,
+        8756,
+        8846,
+        8979,
+        9064,
+        9198,
+        9319,
+        9441,
+        9536,
+        9616,
+        9615,
+        9628,
+        9649,
+        9668,
+        9690,
+        9724,
+        9830,
+        9906,
+        10003,
+        10096,
+        10201,
+        10278,
+        10410,
+        10484,
+        10591,
+        10659,
+        10741,
+        10848,
+        10949,
+        11016,
+        11088,
+        11030,
+        10949,
+        10866,
+        10762,
+        10661,
+        10563,
+        10473,
+        10415,
+        10332,
+        10252,
+        10229,
+        10183,
+        10160,
+        10140,
+        10099,
+        10066,
+        10024,
+        9978,
+        9888,
+        9777,
+        9689,
+        9616,
+        9546,
+        9481,
+        9421,
+        9396,
+        9368,
+        9349,
+        9291,
+        9265
+      ],
+      "miles": 23.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 45,
+      "corners": 9,
+      "climb": 16,
+      "technical": 20
+    }
+  },
+  {
+    "id": "trail-ridge-road",
+    "name": "Trail Ridge Road · US 34",
+    "area": "Rocky Mountain National Park",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "47 miles of US 34 across Rocky Mountain National Park between Estes Park and Grand Lake, reaching 12,183 ft — the highest continuous paved road in North America. Wide sweeping curves above treeline rather than tight switchbacks.",
+    "sources": [
+      {
+        "title": "Wikipedia: Trail Ridge Road",
+        "url": "https://en.wikipedia.org/wiki/Trail_Ridge_Road"
+      },
+      {
+        "title": "NPS: Trail Ridge Road and Old Fall River Road opening and closing dates",
+        "url": "https://www.nps.gov/romo/learn/photosmultimedia/opening_closing_trr_ofr.htm"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter, typically late October through Memorial Day weekend — the exact dates depend on snowfall and are announced each year, not fixed. A National Park entrance fee applies. This is inside Rocky Mountain National Park, not open backcountry highway.",
+      "url": "https://www.nps.gov/romo/planyourvisit/road_status.htm",
+      "checked": "2026-09-17"
+    },
+    "mapRegion": "colorado",
+    "center": [
+      -105.7572197,
+      40.4260526
+    ],
+    "bounds": [
+      [
+        -105.8579918,
+        40.2519862
+      ],
+      [
+        -105.5223711,
+        40.4471469
+      ]
+    ],
+    "osmWayIds": [
+      6169169,
+      6170584,
+      17062042,
+      174615105,
+      174615106,
+      301541161,
+      301541162,
+      301545133,
+      308279184,
+      328388445,
+      328427355,
+      328427356,
+      328457452,
+      328471502,
+      328471504,
+      328471507,
+      328471511,
+      328471513,
+      328471514,
+      328885633,
+      328885645,
+      329057774,
+      329057775,
+      329057776,
+      329057777,
+      329057779,
+      329058494,
+      329058497,
+      329059069,
+      329059071,
+      329059072,
+      329059074,
+      329060334,
+      329060338,
+      329060347,
+      329060349,
+      329060352,
+      456529757,
+      727646558,
+      727646559,
+      834038569,
+      834038570,
+      977025415,
+      1105411383,
+      1105411384,
+      1105411385,
+      1105411386,
+      1152851117,
+      1153627873,
+      1295128868,
+      1295128869,
+      1409638504,
+      1409638506,
+      1409641713,
+      1483799052
+    ],
+    "reviewed": "2026-09-17",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/colorado-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -105.5223711,
+        40.3803062
+      ],
+      "end": [
+        -105.8349749,
+        40.2519862
+      ],
+      "wayNames": [
+        "Fall River Road",
+        "Trail Ridge Road",
+        "US 34",
+        "West Wonderview Avenue"
+      ]
+    },
+    "shape": {
+      "lengthMi": 47.3,
+      "bends": 111,
+      "switchbacks": 23,
+      "curvature": 274,
+      "bendsPerMile": 2.3
+    },
+    "elevation": {
+      "climbFt": 9620,
+      "highFt": 12168,
+      "lowFt": 7577,
+      "reliefFt": 4590,
+      "maxGradient": 6.9,
+      "climbPerMile": 203
+    },
+    "profile": {
+      "points": [
+        7569,
+        7728,
+        7682,
+        7778,
+        7856,
+        7996,
+        8141,
+        8292,
+        8492,
+        8530,
+        8525,
+        8663,
+        8865,
+        9026,
+        8974,
+        9143,
+        9221,
+        9413,
+        9607,
+        9755,
+        9913,
+        10093,
+        10318,
+        10520,
+        10707,
+        10881,
+        11083,
+        11295,
+        11553,
+        11729,
+        11922,
+        12100,
+        12139,
+        11939,
+        11912,
+        12099,
+        12141,
+        11942,
+        11779,
+        11607,
+        11383,
+        11187,
+        11026,
+        10852,
+        10760,
+        10698,
+        10526,
+        10321,
+        10086,
+        9911,
+        9698,
+        9574,
+        9376,
+        9191,
+        9052,
+        9010,
+        8968,
+        8919,
+        8896,
+        8869,
+        8859,
+        8805,
+        8800,
+        8764,
+        8771,
+        8794,
+        8734,
+        8712,
+        8702,
+        8707,
+        8572,
+        8434
+      ],
+      "miles": 47.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 32,
+      "corners": 7,
+      "climb": 14,
+      "technical": 10
+    }
+  },
+  {
+    "id": "lizard-head-pass",
+    "name": "Lizard Head Pass · CO 145",
+    "area": "San Juan Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "24 miles of CO 145 between Telluride and Rico over Lizard Head Pass (10,222 ft), the western leg of the San Juan Skyway. Sweeping mountain curves through the San Juan National Forest.",
+    "sources": [
+      {
+        "title": "Wikipedia: Lizard Head Pass",
+        "url": "https://en.wikipedia.org/wiki/Lizard_Head_Pass"
+      },
+      {
+        "title": "Wikipedia: San Juan Skyway Scenic and Historic Byway",
+        "url": "https://en.wikipedia.org/wiki/San_Juan_Skyway_Scenic_and_Historic_Byway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Colorado road conditions before a winter trip; mountain sections can ice over and this pass sees real snowfall.",
+      "url": "https://www.codot.gov/travel/coloradobyways",
+      "checked": "2026-09-17"
+    },
+    "mapRegion": "colorado",
+    "center": [
+      -107.9116874,
+      37.8091639
+    ],
+    "bounds": [
+      [
+        -108.0346858,
+        37.6927436
+      ],
+      [
+        -107.8697463,
+        37.9471204
+      ]
+    ],
+    "osmWayIds": [
+      17037369,
+      17146343,
+      122021170,
+      122021171,
+      316309528,
+      316309530,
+      316309540,
+      316612713,
+      316612726,
+      316740559,
+      766354959,
+      766354962,
+      766358070,
+      766358071,
+      766358073,
+      766358074,
+      766358075,
+      766358077,
+      766358079,
+      766358080
+    ],
+    "reviewed": "2026-09-17",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/colorado-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -107.8718891,
+        37.9471204
+      ],
+      "end": [
+        -108.0315197,
+        37.6927436
+      ],
+      "wayNames": [
+        "CO 145",
+        "North Glasgow Avenue"
+      ]
+    },
+    "shape": {
+      "lengthMi": 23.9,
+      "bends": 31,
+      "switchbacks": 1,
+      "curvature": 137,
+      "bendsPerMile": 1.3
+    },
+    "elevation": {
+      "climbFt": 4649,
+      "highFt": 10256,
+      "lowFt": 8687,
+      "reliefFt": 1569,
+      "maxGradient": 7.5,
+      "climbPerMile": 195
+    },
+    "profile": {
+      "points": [
+        8671,
+        8818,
+        8963,
+        9098,
+        9226,
+        9344,
+        9427,
+        9459,
+        9480,
+        9407,
+        9433,
+        9533,
+        9557,
+        9598,
+        9591,
+        9652,
+        9583,
+        9471,
+        9360,
+        9275,
+        9230,
+        9226,
+        9374,
+        9401,
+        9477,
+        9517,
+        9454,
+        9507,
+        9604,
+        9751,
+        9843,
+        9941,
+        10063,
+        10122,
+        10218,
+        10257,
+        10203,
+        10182,
+        10155,
+        10104,
+        10077,
+        10034,
+        9963,
+        9872,
+        9728,
+        9617,
+        9549,
+        9528,
+        9465,
+        9412,
+        9369,
+        9340,
+        9279,
+        9237,
+        9216,
+        9193,
+        9163,
+        9135,
+        9127,
+        9114,
+        9101,
+        9059,
+        9050,
+        9037,
+        9026,
+        9072,
+        9018,
+        8910,
+        8866,
+        8827,
+        8761,
+        8809
+      ],
+      "miles": 24.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 28,
+      "corners": 4,
+      "climb": 14,
+      "technical": 10
+    }
   }
 ]

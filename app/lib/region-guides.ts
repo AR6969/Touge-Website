@@ -3,7 +3,7 @@ import { regions, roads } from "./roads";
 
 // These are navigation groups, not new map tabs. Sierra roads deliberately stay
 // inside the statewide map while remaining easy to find in the written catalog.
-const groupOrder: MapRegion[] = ["bay-area", "los-angeles", "san-diego", "sierra", "southern-appalachians"];
+const groupOrder: MapRegion[] = ["bay-area", "los-angeles", "san-diego", "sierra", "southern-appalachians", "colorado"];
 
 export const roadGroups = groupOrder.map(id => ({
   id,
@@ -36,4 +36,7 @@ export const regionIntroductions: Record<string, string> = {
   "clinch-mountain-southwest-virginia": "Back of the Dragon (VA 16) is Virginia's officially designated motorcycle route, commonly paired with Tail of the Dragon further south by people touring the Appalachian circuit. Check current Virginia road conditions before a trip; mountain sections ice over in winter.",
   "blue-ridge-parkway-corridor-north-carolina": "Devil's Whip (NC 80) drops from Buck Creek Gap on the Blue Ridge Parkway to Marion, with real landslide and wildfire closure history — check DriveNC.gov rather than assuming a mapped road is currently open.",
   "north-georgia-mountains": "Wolf Pen Gap Road (GA 180) is the western, name-branded 11-mile section near Suches; the state route continues east under a different name past the US 19/129 concurrency. Richard B. Russell Scenic Highway (GA 348) between Helen and Blairsville is a gentler, rolling counterpart with one unexpectedly steep section — check each road's own page for the difference.",
+  "sawatch-range-the-divide": "Independence Pass (CO 82) crosses the Continental Divide at 12,095 ft between Aspen and Twin Lakes — the highest paved state highway in Colorado, closed every winter without exception.",
+  "san-juan-mountains": "The Million Dollar Highway (US 550) and Lizard Head Pass (CO 145) are the two western legs of the San Juan Skyway, joined at Ridgway. Red Mountain Pass on the Million Dollar Highway has real, recurring avalanche and rockfall closure history — check current conditions before relying on it.",
+  "rocky-mountain-national-park": "Trail Ridge Road (US 34) is the highest continuous paved road in North America, and inside a National Park — an entrance fee applies, and it closes every winter on a schedule set by that year's snowfall, not a fixed date.",
 };

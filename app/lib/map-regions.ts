@@ -1,15 +1,16 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado";
 
 // The state a region belongs to. California's regions keep their existing
 // flat paths and their own in-map tab switcher (see site-chrome.tsx); a
 // region belonging to a different state gets its own dedicated page instead
 // of joining that switcher, since swapping states is a bigger jump than
 // swapping California sub-regions.
-export type StateId = "california" | "southern-appalachians";
+export type StateId = "california" | "southern-appalachians" | "colorado";
 
 export const states: Record<StateId, { name: string; defaultRegion: MapRegion }> = {
   california: { name: "California", defaultRegion: "california" },
   "southern-appalachians": { name: "Southern Appalachians", defaultRegion: "southern-appalachians" },
+  colorado: { name: "Colorado", defaultRegion: "colorado" },
 };
 
 export const mapRegions: Record<MapRegion, {
@@ -85,5 +86,15 @@ export const mapRegions: Record<MapRegion, {
     // Framed around the Deals Gap / Chilhowee Lake cluster with room to grow
     // toward the Cherohala Skyway and North Georgia without needing a resize.
     bounds: [[-84.35, 35.15], [-83.30, 35.80]],
+  },
+  colorado: {
+    name: "Colorado",
+    href: "/colorado",
+    pickerTitle: "San Juans, the Divide & the Front Range",
+    state: "colorado",
+    center: [-106.8, 39.3],
+    // Wide enough to frame the San Juans (Ouray/Silverton) in the southwest
+    // and Rocky Mountain NP / the Front Range corridor in the north at once.
+    bounds: [[-108.2, 37.6], [-105.3, 40.5]],
   },
 };

@@ -413,6 +413,54 @@ const roadGuides: Record<string, RoadGuide> = {
     ],
     connections: [],
   },
+  "independence-pass": {
+    heading: "Independence Pass: Aspen to Twin Lakes",
+    title: "Independence Pass (CO 82): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Independence Pass crossing: 84 bends over 36 miles, a 12,095 ft summit, and the real 35-ft vehicle length limit that applies year-round.",
+    updated: "2026-09-17",
+    notes: [
+      { text: "The pass climbs 84 counted bends and 7 switchbacks over 36 miles to the Continental Divide at 12,095 ft — our own measured high point came back at 12,097 ft, essentially exact. The west side hairpins are the tightest part: well under two lanes wide in places, with a rock wall on one side and a drop on the other, and little sightline to see oncoming traffic before you're committed to the turn.", source: { title: "CDOT: Independence Pass travel information", url: "https://www.codot.gov/travel/independencepass" } },
+      { text: "Two firm rules, not general caution: CDOT bans any vehicle or vehicle-plus-trailer combination over 35 ft at any time, year-round, and the pass closes completely every winter — typically mid-to-late November through late May, with the exact dates set by snowpack each year rather than a fixed calendar. Check current status before planning a trip near either end of the season." },
+    ],
+    connections: [],
+  },
+  "million-dollar-highway": {
+    heading: "Million Dollar Highway: Ouray to Silverton",
+    title: "Million Dollar Highway (US 550): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Million Dollar Highway over Red Mountain Pass: 66 bends over 23 miles, no guardrail by design, and real recurring avalanche and rockfall closure history.",
+    updated: "2026-09-17",
+    notes: [
+      { text: "This road has no guardrail for a specific reason, not neglect: the roadway is too narrow in most places to fit one. 66 counted bends and 18 switchbacks climb to 11,086 ft over Red Mountain Pass, carved across sheer cliff faces with little to no shoulder. It's legal for commercial vehicles and there's no length restriction like Independence Pass, but this isn't a road to learn mountain driving on — narrow lanes and blind hairpins the whole way.", source: { title: "Wikipedia: U.S. Route 550", url: "https://en.wikipedia.org/wiki/U.S._Route_550" } },
+      { text: "Closures here are frequent and real, not theoretical: CDOT installed permanent avalanche-control equipment after years of active winter mitigation work on Red Mountain Pass, and the road has also shut for rockfall (November 2024) and flood debris removal (July 2026). Summer construction has also brought one-lane alternating traffic with an 11 ft width limit in past seasons. Check current conditions before relying on this being open." },
+    ],
+    connections: [
+      { roadId: "lizard-head-pass", note: "The other San Juan Skyway leg, joined at Ridgway — a much gentler, more sweeping character." },
+    ],
+  },
+  "trail-ridge-road": {
+    heading: "Trail Ridge Road: Estes Park to Grand Lake",
+    title: "Trail Ridge Road (US 34): Route, Map & Driving Notes | TougeMap",
+    description: "Plan Trail Ridge Road through Rocky Mountain National Park: 111 bends over 47 miles, 11 miles above treeline, and why this drives nothing like a technical mountain road.",
+    updated: "2026-09-17",
+    notes: [
+      { text: "The highest continuous paved road in North America drives more like a sustained high-altitude cruise than a technical climb: 111 bends over 47 miles is a density of 2.3 per mile, wide sweeping curves with real sightlines rather than blind switchbacks. 11 miles of it sit above treeline on open alpine tundra with no guardrail, climbing to 12,168 ft against a well-documented 12,183 ft summit — close enough to confirm the trace. Wildlife (elk, bighorn sheep, marmots) crosses the road regularly and can stop traffic outright.", source: { title: "NPS: Enjoy a scenic drive on Trail Ridge Road", url: "https://www.nps.gov/thingstodo/enjoy-a-scenic-drive-on-trail-ridge-road.htm" } },
+      { text: "This is inside Rocky Mountain National Park, not open backcountry highway: a park entrance fee applies, and altitude sickness at 12,000+ ft is a real, documented risk, not a throwaway warning — descend if you feel dizzy, short of breath or get a headache. The road closes completely every winter on a schedule set by that year's snowfall, typically late October to Memorial Day weekend, not a fixed date." },
+    ],
+    connections: [],
+  },
+  "lizard-head-pass": {
+    heading: "Lizard Head Pass: Telluride to Rico",
+    title: "Lizard Head Pass (CO 145): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Lizard Head Pass drive, the gentler western leg of the San Juan Skyway: 31 bends over 24 miles, mild grades, suitable for any vehicle.",
+    updated: "2026-09-17",
+    notes: [
+      { text: "Lizard Head is the counterpoint to the Million Dollar Highway it connects to at Ridgway: 31 bends and just 1 switchback over 24 miles, a density of 1.3 bends per mile — the lowest of any Colorado road in this catalog. Grades are mild on both sides (7.5% at the steepest), well maintained, and suitable for any vehicle rather than demanding mountain-driving experience. This is the pass to choose if you want the San Juan scenery without the Million Dollar Highway's technical demands.", source: { title: "Wikipedia: Lizard Head Pass", url: "https://en.wikipedia.org/wiki/Lizard_Head_Pass" } },
+      { text: "The San Juans are known for rapidly changing weather even in open season, and this pass sees real snowfall in winter. Check current Colorado road conditions before a winter or shoulder-season trip." },
+    ],
+    connections: [
+      { roadId: "million-dollar-highway", note: "The tighter, more technical San Juan Skyway leg, joined at Ridgway." },
+    ],
+  },
 };
 
 export function getRoadGuide(id: string): RoadGuide | undefined {
