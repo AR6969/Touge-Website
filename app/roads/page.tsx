@@ -8,8 +8,8 @@ import { siteUrl } from "../lib/site";
 
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 
-const title = "California Driving Roads by Region | TougeMap";
-const description = `Browse ${roads.length} California driving roads by region: Bay Area, Los Angeles, San Diego and Sierra Nevada. Find road maps, access notes and connected driving guides.`;
+const title = "All Driving Roads by Region | TougeMap";
+const description = `Browse ${roads.length} driving roads by region: California's Bay Area, Los Angeles, San Diego and Sierra Nevada, plus the Southern Appalachians. Find road maps, access notes and connected driving guides.`;
 export const metadata: Metadata = {
   title: { absolute: title }, description,
   alternates: { canonical: "/roads" },
@@ -21,7 +21,7 @@ export default function RoadsIndex() {
   const structured = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "CollectionPage", "@id": `${siteUrl}/roads#webpage`, url: `${siteUrl}/roads`, name: "California driving roads", description, mainEntity: { "@id": `${siteUrl}/roads#list` } },
+      { "@type": "CollectionPage", "@id": `${siteUrl}/roads#webpage`, url: `${siteUrl}/roads`, name: "All driving roads", description, mainEntity: { "@id": `${siteUrl}/roads#list` } },
       { "@type": "BreadcrumbList", itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
         { "@type": "ListItem", position: 2, name: "Roads", item: `${siteUrl}/roads` },
@@ -43,9 +43,9 @@ export default function RoadsIndex() {
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <Link href="/">Home</Link> <span aria-hidden="true">/</span> Roads
         </nav>
-        <h1>California driving roads</h1>
+        <h1>All driving roads</h1>
         <p className="lede">
-          Browse {roads.length} roads across {totalMiles.toLocaleString()} mapped miles of California. Pick a region, then open a road for its map, character and access notes.
+          Browse {roads.length} roads across {totalMiles.toLocaleString()} mapped miles, from California to the Southern Appalachians. Pick a region, then open a road for its map, character and access notes.
         </p>
         <nav className="intro-links" aria-label="Road regions">
           {roadGroups.map(group => <a key={group.id} href={`#roads-${group.id}`}>{group.name}</a>)}

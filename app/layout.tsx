@@ -6,12 +6,12 @@ import { siteName, siteUrl } from "./lib/site";
 import { gaMeasurementId } from "./lib/analytics";
 
 const description =
-  "Explore California driving roads, from the Bay Area and Sierra Nevada to Los Angeles and San Diego. Road maps, driving guides, terrain and sourced access information.";
+  "Explore driving roads from California's Bay Area, Sierra Nevada, Los Angeles and San Diego to the Southern Appalachians. Road maps, driving guides, terrain and sourced access information.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Best Driving Roads in California",
+    default: "Best Driving Roads, State by State",
     // Road and region pages set only their own name; this appends the brand.
     template: `%s | ${siteName}`,
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName,
     locale: "en_US",
     url: "/",
-    title: "Best Driving Roads in California",
+    title: "Best Driving Roads, State by State",
     description,
   },
   // Only the card type. Setting a title/description here would pin the site

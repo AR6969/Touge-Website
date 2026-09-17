@@ -115,7 +115,7 @@ export default async function RegionPage({ params }: PageProps<"/regions/[slug]"
         )}
         <section aria-labelledby="explore">
           <h2 id="explore">Keep exploring</h2>
-          <p><Link href="/regions">Browse other regions</Link> or <Link href="/roads">compare all California roads</Link>.</p>
+          <p><Link href="/regions">Browse other regions</Link> or <Link href="/roads">compare every road on the site</Link>.</p>
         </section>
       </main>
       <SiteFooter />

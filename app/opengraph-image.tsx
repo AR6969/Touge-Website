@@ -4,7 +4,7 @@ import { collectionShapeUri } from "./lib/road-shape";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "California driving roads: Bay Area, Los Angeles, San Diego and the Sierra Nevada";
+export const alt = "TougeMap: driving roads from California's Bay Area, Los Angeles, San Diego and the Sierra Nevada to the Southern Appalachians";
 
 export default async function Image() {
   const shape = await collectionShapeUri(560, 560, "#a8d8c6");
@@ -17,9 +17,9 @@ export default async function Image() {
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "space-between", paddingRight: 40 }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             {/* Satori has no CJK font loaded, so the 峠 mark is left to the site itself. */}
-            <div style={{ fontSize: 22, color: "#a8d8c6", letterSpacing: 2, display: "flex" }}>CALIFORNIA TOUGE</div>
+            <div style={{ fontSize: 22, color: "#a8d8c6", letterSpacing: 2, display: "flex" }}>TOUGEMAP</div>
             <div style={{ fontSize: 62, fontWeight: 700, lineHeight: 1.08, marginTop: 28, letterSpacing: -2 }}>
-              The best driving roads in California
+              The best driving roads, state by state
             </div>
           </div>
           <div style={{ display: "flex", gap: 52 }}>

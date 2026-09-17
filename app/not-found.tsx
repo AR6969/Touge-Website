@@ -22,7 +22,7 @@ export default function NotFound() {
         <nav className="home-links" aria-label="Sections">
           <Link href="/"><strong>The map</strong><span>All {roads.length} roads at once</span></Link>
           <Link href="/roads"><strong>All {roads.length} roads</strong><span>Ranked and compared in one table</span></Link>
-          <Link href="/regions"><strong>Browse by region</strong><span>{regions.length} areas across Northern California</span></Link>
+          <Link href="/regions"><strong>Browse by region</strong><span>{regions.length} areas, California to the Appalachians</span></Link>
           <Link href="/method"><strong>How this is built</strong><span>Ratings, measurements and sources</span></Link>
         </nav>
 
