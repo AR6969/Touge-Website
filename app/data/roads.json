@@ -24963,5 +24963,352 @@
       "climb": 18,
       "technical": 20
     }
+  },
+  {
+    "id": "devils-whip",
+    "name": "Devil's Whip · NC 80",
+    "area": "Blue Ridge Parkway corridor, North Carolina",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "12 miles of North Carolina Highway 80 between Buck Creek Gap on the Blue Ridge Parkway and Marion, NC, with around 160 curves and roughly 2,000 ft of elevation change along Buck Creek.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads: North Carolina's Route 80 (Devil's Whip)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/north-carolina/north-carolinas-route-80-aka-devils-whip"
+      },
+      {
+        "title": "Wikipedia: North Carolina Highway 80",
+        "url": "https://en.wikipedia.org/wiki/North_Carolina_Highway_80"
+      },
+      {
+        "title": "Wikipedia: Buck Creek Gap",
+        "url": "https://en.wikipedia.org/wiki/Buck_Creek_Gap"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 35 and 55 mph depending on the section, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "This road has real closure history: a mudslide shut part of it in 2018, and a nearby wildfire closed a section as recently as March 2026. It also crosses the Blue Ridge Parkway at Buck Creek Gap, which has its own seasonal and weather closures. Check DriveNC.gov before a trip.",
+      "url": "https://drivenc.gov/",
+      "checked": "2026-09-16"
+    },
+    "mapRegion": "southern-appalachians",
+    "center": [
+      -82.1204921,
+      35.7362407
+    ],
+    "bounds": [
+      [
+        -82.1662021,
+        35.692096
+      ],
+      [
+        -82.061916,
+        35.770728
+      ]
+    ],
+    "osmWayIds": [
+      16653777,
+      16660900,
+      315684573,
+      315684574,
+      1131053066,
+      1131053067,
+      1131053068,
+      1131053069,
+      1131053070,
+      1131053071,
+      1131053074,
+      1131053075
+    ],
+    "reviewed": "2026-09-16",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/appalachia-overpass.json",
+      "osmTimestamp": "2026-09-17T04:43:35Z",
+      "start": [
+        -82.164715,
+        35.770728
+      ],
+      "end": [
+        -82.061916,
+        35.692096
+      ],
+      "wayNames": [
+        "Buck Creek Road",
+        "Lake Tahoma Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 12.1,
+      "bends": 70,
+      "switchbacks": 14,
+      "curvature": 650,
+      "bendsPerMile": 5.8
+    },
+    "elevation": {
+      "climbFt": 2245,
+      "highFt": 3343,
+      "lowFt": 1264,
+      "reliefFt": 2079,
+      "maxGradient": 7.8,
+      "climbPerMile": 186
+    },
+    "profile": {
+      "points": [
+        3351,
+        3290,
+        3230,
+        3160,
+        3099,
+        3046,
+        2982,
+        2916,
+        2841,
+        2785,
+        2716,
+        2643,
+        2581,
+        2519,
+        2439,
+        2379,
+        2321,
+        2248,
+        2175,
+        2107,
+        2046,
+        1978,
+        1919,
+        1874,
+        1854,
+        1812,
+        1785,
+        1748,
+        1730,
+        1715,
+        1689,
+        1664,
+        1656,
+        1639,
+        1630,
+        1651,
+        1625,
+        1606,
+        1598,
+        1561,
+        1507,
+        1501,
+        1473,
+        1458,
+        1457,
+        1433,
+        1436,
+        1418,
+        1419,
+        1412,
+        1447,
+        1414,
+        1425,
+        1423,
+        1419,
+        1416,
+        1410,
+        1436,
+        1394,
+        1331,
+        1325,
+        1316,
+        1309,
+        1306,
+        1303,
+        1304,
+        1297,
+        1297,
+        1289,
+        1284,
+        1270,
+        1264
+      ],
+      "miles": 12.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 52,
+      "corners": 19,
+      "climb": 13,
+      "technical": 20
+    }
+  },
+  {
+    "id": "wolf-pen-gap",
+    "name": "Wolf Pen Gap Road · GA 180",
+    "area": "North Georgia Mountains",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "The 11-mile western section of Georgia Highway 180 between Suches and the US 19/129 concurrency, a favorite of the North Georgia riding community. The road continues east as a separate named section (Bald Mountain Road) after the concurrency, not mapped here.",
+    "sources": [
+      {
+        "title": "Motorcycle Cruiser: Georgia's State Route 180, Wolf Pen Gap Road",
+        "url": "https://www.motorcyclecruiser.com/touring/georgias-state-route-180-wolf-pen-gap-road/"
+      },
+      {
+        "title": "Wikipedia: Georgia State Route 180",
+        "url": "https://en.wikipedia.org/wiki/Georgia_State_Route_180"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this section at 35 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Georgia road conditions before a trip; mountain sections can ice over in winter.",
+      "url": "https://www.dot.ga.gov/DriveSmart/RoadConditions",
+      "checked": "2026-09-16"
+    },
+    "mapRegion": "southern-appalachians",
+    "center": [
+      -83.9767162,
+      34.7476554
+    ],
+    "bounds": [
+      [
+        -84.022341,
+        34.6888578
+      ],
+      [
+        -83.914225,
+        34.7726107
+      ]
+    ],
+    "osmWayIds": [
+      9507403,
+      133093049,
+      512353911,
+      1395638338
+    ],
+    "reviewed": "2026-09-16",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/appalachia-overpass.json",
+      "osmTimestamp": "2026-09-17T04:43:35Z",
+      "start": [
+        -84.022341,
+        34.6888578
+      ],
+      "end": [
+        -83.914225,
+        34.7718601
+      ],
+      "wayNames": [
+        "Wolf Pen Gap Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 11.2,
+      "bends": 63,
+      "switchbacks": 4,
+      "curvature": 529,
+      "bendsPerMile": 5.6
+    },
+    "elevation": {
+      "climbFt": 2443,
+      "highFt": 3304,
+      "lowFt": 2207,
+      "reliefFt": 1096,
+      "maxGradient": 7.4,
+      "climbPerMile": 218
+    },
+    "profile": {
+      "points": [
+        2794,
+        2822,
+        2852,
+        2852,
+        2871,
+        2861,
+        2835,
+        2838,
+        2832,
+        2828,
+        2833,
+        2853,
+        2891,
+        2904,
+        2861,
+        2808,
+        2843,
+        2871,
+        2909,
+        2966,
+        3000,
+        3009,
+        2984,
+        2958,
+        2946,
+        2923,
+        2931,
+        2913,
+        2910,
+        2922,
+        2914,
+        2905,
+        2874,
+        2829,
+        2782,
+        2766,
+        2783,
+        2765,
+        2782,
+        2814,
+        2835,
+        2851,
+        2897,
+        2951,
+        3015,
+        3078,
+        3137,
+        3195,
+        3244,
+        3289,
+        3296,
+        3249,
+        3197,
+        3135,
+        3076,
+        3030,
+        2973,
+        2901,
+        2864,
+        2808,
+        2748,
+        2684,
+        2627,
+        2567,
+        2503,
+        2439,
+        2380,
+        2329,
+        2292,
+        2265,
+        2206,
+        2224
+      ],
+      "miles": 11.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 43,
+      "corners": 18,
+      "climb": 15,
+      "technical": 10
+    }
   }
 ]

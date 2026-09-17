@@ -381,6 +381,27 @@ const roadGuides: Record<string, RoadGuide> = {
     ],
     connections: [],
   },
+  "devils-whip": {
+    heading: "Devil's Whip: Buck Creek Gap to Marion",
+    title: "Devil's Whip (NC 80): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Devil's Whip descent from the Blue Ridge Parkway to Marion, NC: 70 bends, 2,079 ft of relief, and real landslide and wildfire closure history.",
+    updated: "2026-09-16",
+    notes: [
+      { text: "The Whip drops from Buck Creek Gap on the Blue Ridge Parkway to Marion in 12.1 miles, with 70 counted bends and 14 switchbacks following Buck Creek down the mountain. Our own elevation data puts the high point at 3,343 ft and the relief at 2,079 ft — both line up closely with the road's own reputation, which is a useful cross-check that the mapped section is the real one." },
+      { text: "This is a road with real, recent closure history: a mudslide shut part of it in 2018, and a nearby wildfire closed a section as recently as March 2026. It also crosses the Blue Ridge Parkway itself at Buck Creek Gap, which has its own separate seasonal and weather closures. Check DriveNC.gov rather than assuming a mapped road is a currently open one.", source: { title: "WLOS: closed roads in McDowell County", url: "https://wlos.com/news/local/closed-roads-in-mcdowell-county" } },
+    ],
+    connections: [],
+  },
+  "wolf-pen-gap": {
+    heading: "Wolf Pen Gap Road: North Georgia",
+    title: "Wolf Pen Gap Road (GA 180): Route, Map & Driving Notes | TougeMap",
+    description: "Plan the Wolf Pen Gap Road drive near Suches, Georgia: 63 bends over 11.2 miles, and why this is only the western half of GA 180.",
+    updated: "2026-09-16",
+    notes: [
+      { text: "Wolf Pen Gap Road is specifically the western 11.2-mile section of Georgia Highway 180, from Suches to where it merges into a concurrency with US 19/129. GA 180 continues east from there as a separately named section (Bald Mountain Road) that isn't mapped here — a good example of how one state route number can cover roads with genuinely different names and identities along its length. 63 bends and 4 full switchbacks make this a flowing, technical road rather than a switchback-heavy one.", source: { title: "Motorcycle Cruiser: Georgia's State Route 180, Wolf Pen Gap Road", url: "https://www.motorcyclecruiser.com/touring/georgias-state-route-180-wolf-pen-gap-road/" } },
+    ],
+    connections: [],
+  },
 };
 
 export function getRoadGuide(id: string): RoadGuide | undefined {

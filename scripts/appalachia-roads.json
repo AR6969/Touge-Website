@@ -128,5 +128,92 @@
         "maxSnapM": 10
       }
     ]
+  },
+  {
+    "id": "devils-whip",
+    "name": "Devil's Whip · NC 80",
+    "area": "Blue Ridge Parkway corridor, North Carolina",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "12 miles of North Carolina Highway 80 between Buck Creek Gap on the Blue Ridge Parkway and Marion, NC, with around 160 curves and roughly 2,000 ft of elevation change along Buck Creek.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads: North Carolina's Route 80 (Devil's Whip)",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/north-carolina/north-carolinas-route-80-aka-devils-whip"
+      },
+      {
+        "title": "Wikipedia: North Carolina Highway 80",
+        "url": "https://en.wikipedia.org/wiki/North_Carolina_Highway_80"
+      },
+      {
+        "title": "Wikipedia: Buck Creek Gap",
+        "url": "https://en.wikipedia.org/wiki/Buck_Creek_Gap"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 35 and 55 mph depending on the section, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "This road has real closure history: a mudslide shut part of it in 2018, and a nearby wildfire closed a section as recently as March 2026. It also crosses the Blue Ridge Parkway at Buck Creek Gap, which has its own seasonal and weather closures. Check DriveNC.gov before a trip.",
+      "url": "https://drivenc.gov/",
+      "checked": "2026-09-16"
+    },
+    "names": [],
+    "refs": ["NC 80"],
+    "anchors": [
+      {
+        "near": [-82.164562, 35.7709529],
+        "maxSnapM": 50
+      },
+      {
+        "near": [-82.061916, 35.692096],
+        "maxSnapM": 10
+      }
+    ]
+  },
+  {
+    "id": "wolf-pen-gap",
+    "name": "Wolf Pen Gap Road · GA 180",
+    "area": "North Georgia Mountains",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "The 11-mile western section of Georgia Highway 180 between Suches and the US 19/129 concurrency, a favorite of the North Georgia riding community. The road continues east as a separate named section (Bald Mountain Road) after the concurrency, not mapped here.",
+    "sources": [
+      {
+        "title": "Motorcycle Cruiser: Georgia's State Route 180, Wolf Pen Gap Road",
+        "url": "https://www.motorcyclecruiser.com/touring/georgias-state-route-180-wolf-pen-gap-road/"
+      },
+      {
+        "title": "Wikipedia: Georgia State Route 180",
+        "url": "https://en.wikipedia.org/wiki/Georgia_State_Route_180"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this section at 35 mph, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current Georgia road conditions before a trip; mountain sections can ice over in winter.",
+      "url": "https://www.dot.ga.gov/DriveSmart/RoadConditions",
+      "checked": "2026-09-16"
+    },
+    "names": [
+      "Wolf Pen Gap Road"
+    ],
+    "anchors": [
+      {
+        "near": [-84.022341, 34.6888578],
+        "maxSnapM": 10
+      },
+      {
+        "near": [-83.914225, 34.7718601],
+        "maxSnapM": 10
+      }
+    ]
   }
 ]
