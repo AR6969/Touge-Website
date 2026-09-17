@@ -3,7 +3,7 @@ import { regions, roads } from "./roads";
 
 // These are navigation groups, not new map tabs. Sierra roads deliberately stay
 // inside the statewide map while remaining easy to find in the written catalog.
-const groupOrder: MapRegion[] = ["bay-area", "los-angeles", "san-diego", "sierra"];
+const groupOrder: MapRegion[] = ["bay-area", "los-angeles", "san-diego", "sierra", "southern-appalachians"];
 
 export const roadGroups = groupOrder.map(id => ({
   id,
@@ -31,4 +31,7 @@ export const regionIntroductions: Record<string, string> = {
   "palomar-north-county": "Palomar has separate South Grade and East Grade road pages, each with its own shape and character. Mesa Grande, Highland Valley and Couser Canyon add other North County choices. Open the road maps to compare the selected sections before planning your drive.",
   "laguna-cuyamaca-mountains": "Sunrise Highway, Highway 79 through Cuyamaca and Banner Grade give three different starting points for the San Diego mountain roads. The road pages show their selected sections, elevation profiles and nearby options.",
   "sierra-nevada": "Compare the Sonora and Tioga pass crossings with destination roads such as Rock Creek, Bishop Creek Canyon and Horseshoe Meadow. These are mapped sections rather than a single connected itinerary; check each road's access sources when planning a mountain drive.",
+  "great-smoky-mountains": "Tail of the Dragon is the anchor: 318 curves in 11 miles at Deals Gap. Cherohala Skyway meets it at the Robbinsville end with a completely different, longer-sweeper character. Check each road's access notes — winter conditions and detour traffic both affect this area.",
+  "cherokee-nantahala-national-forests": "The Cherohala Skyway's own page covers its full 41.6-mile crossing between Tennessee and North Carolina. It connects to Tail of the Dragon at the Robbinsville end for a genuinely different kind of driving on the same trip.",
+  "clinch-mountain-southwest-virginia": "Back of the Dragon (VA 16) is Virginia's officially designated motorcycle route, commonly paired with Tail of the Dragon further south by people touring the Appalachian circuit. Check current Virginia road conditions before a trip; mountain sections ice over in winter.",
 };

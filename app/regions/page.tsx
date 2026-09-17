@@ -6,7 +6,7 @@ import { roadGroups } from "../lib/region-guides";
 import { siteUrl } from "../lib/site";
 
 const title = "Driving Roads by Region";
-const description = "Find California driving roads by area: the Bay Area, Malibu, Angeles mountains, Orange County, San Diego and Sierra Nevada. Choose a region to compare roads and find a drive.";
+const description = "Find driving roads by area: California's Bay Area, Malibu, Angeles mountains, Orange County, San Diego and Sierra Nevada, plus the Southern Appalachians. Choose a region to compare roads and find a drive.";
 
 export const metadata: Metadata = {
   title,
@@ -36,10 +36,10 @@ export default function RegionsIndex() {
         </nav>
         <h1>Driving roads by region</h1>
         <p className="lede">
-          Find a drive in one of {regions.length} California areas. Pick a region to compare its roads,
+          Find a drive in one of {regions.length} areas across every region on this site. Pick a region to compare its roads,
           open their maps and find related driving guides.
         </p>
-        <nav className="intro-links" aria-label="Jump to a part of California">
+        <nav className="intro-links" aria-label="Jump to a region">
           {roadGroups.map(group => <a key={group.id} href={`#${group.id}`}>{group.name}</a>)}
         </nav>
         {roadGroups.map(group => (
