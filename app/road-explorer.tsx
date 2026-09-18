@@ -138,6 +138,19 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
           started = true;
           try {
             if (disposed) return;
+            // Every road on the site, on every map, all the time — not scoped to
+            // whichever region is active. Without this, zooming out from Colorado
+            // (say) showed nothing at all past its own bounds: the "roads" source
+            // below only ever holds the current region's data, swapped out
+            // entirely on every region switch, so another state's roads were
+            // never on the map to begin with, loaded or not. Fetched once here
+            // (not in the per-region effect) since it's the same combined file
+            // regardless of which region is active, and drawn first so the
+            // current region's own interactive layers below paint on top of it.
+            current.addSource("all-roads", { type: "geojson", data: EMPTY });
+            current.addLayer({ id: "all-roads-casing", type: "line", source: "all-roads", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": "#111817", "line-width": ["interpolate", ["linear"], ["zoom"], 4, 1, 10, 4], "line-opacity": 0.6 } });
+            current.addLayer({ id: "all-roads-lines", type: "line", source: "all-roads", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": roadColor, "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.6, 10, 2], "line-opacity": 0.45 } });
+
             // Empty to begin with. Switching region swaps the data on these same
             // sources rather than building a whole new map, which is what made
             // every click on the region tabs cost a fresh style download.
@@ -184,6 +197,13 @@ export default function RoadExplorer({ roads, landmarks, popular = [], region = 
             current.on("mousemove", event => {
               current.getCanvas().style.cursor = current.queryRenderedFeatures(event.point, { layers: ["landmark-dots", "landmark-names", "road-names", "road-hit"] }).length ? "pointer" : "";
             });
+            // One fetch, ever, for the whole session: this file already covers
+            // every road on every map (it's the same file the statewide
+            // California view uses), so there's no per-region variant to swap.
+            fetch("/data/roads.geojson", { signal: abort.signal })
+              .then(response => response.ok ? response.json() : null)
+              .then(all => { if (all && !disposed) (current.getSource("all-roads") as mapboxgl.GeoJSONSource)?.setData(all); })
+              .catch(() => { /* the background layer is a nice-to-have; the current region's own roads still load separately */ });
             loaded = true;
             setReady(true);
             const roadId = new URLSearchParams(window.location.search).get("road");
