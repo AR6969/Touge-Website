@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
@@ -66,6 +67,19 @@ export default function Colorado() {
         Juans, Independence Pass over the Divide, and Trail Ridge Road through Rocky Mountain National Park.
         Every one of these closes for winter — check current conditions before a trip.
       </MapIntro>
+
+      <section aria-labelledby="colorado-roads" className="prose">
+        <h2 id="colorado-roads">The roads</h2>
+        <ul className="card-list">
+          {roads.map(road => <li key={road.id}>
+            <Link href={`/roads/${road.id}`}>
+              <strong>{road.name}</strong>
+              <span className="card-meta">{road.area} · {road.shape.lengthMi} mi</span>
+              <span className="card-body">{road.description}</span>
+            </Link>
+          </li>)}
+        </ul>
+      </section>
 
       <SiteFooter roadStatus={{ label: "CDOT COtrip.org", url: "https://cotrip.org/" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />

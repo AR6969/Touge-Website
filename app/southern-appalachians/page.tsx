@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
@@ -62,10 +63,23 @@ export default function SouthernAppalachians() {
           ...areas.map(area => ({ href: `/regions/${slugifyArea(area)}`, label: area })),
         ]}
       >
-        Our first map outside California: Tail of the Dragon on US 129, between Deals Gap and Chilhowee Lake
-        on the North Carolina–Tennessee line. Built with the same sourced, measured method as every other
-        road here — more roads in this region are on the way.
+        Our first region outside California: {roads.length} roads across Tennessee, North Carolina, Virginia and
+        Georgia, anchored by Tail of the Dragon on US 129. Built with the same sourced, measured method as every
+        other road on this site.
       </MapIntro>
+
+      <section aria-labelledby="appalachia-roads" className="prose">
+        <h2 id="appalachia-roads">The roads</h2>
+        <ul className="card-list">
+          {roads.map(road => <li key={road.id}>
+            <Link href={`/roads/${road.id}`}>
+              <strong>{road.name}</strong>
+              <span className="card-meta">{road.area} · {road.shape.lengthMi} mi</span>
+              <span className="card-body">{road.description}</span>
+            </Link>
+          </li>)}
+        </ul>
+      </section>
 
       <SiteFooter roadStatus={{ label: "TN 511 / TDOT SmartWay", url: "https://www.tn.gov/tdot/welcome-to-tennessee-511.html" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
