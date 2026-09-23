@@ -49,4 +49,8 @@ export const regionIntroductions: Record<string, string> = {
   "mount-rainier": "Chinook Pass (SR 410) and Stevens Canyon Road both touch Mount Rainier National Park from different sides — Chinook Pass is a long highway crossing that closes every winter, while Stevens Canyon Road is a short, switchback-heavy park road with its own separate seasonal closure.",
   "south-cascades": "White Pass (US 12) stays open year-round, unlike Chinook Pass or the North Cascades Highway nearby — the real seasonal constraint here is a chain law that runs every November through April regardless of conditions on the day.",
   "columbia-river-gorge": "SR 14 follows the Washington side of the Columbia River Gorge with sweeping curves rather than tight corners — the draw is the cliffs and river views, and wind is the thing to actually plan around.",
+  "mckenzie-river": "McKenzie Pass (OR 242) is the most technical Oregon road in this catalog — 24 switchbacks through a lava flow, closed roughly seven months a year.",
+  "columbia-river-gorge-oregon": "The Historic Columbia River Highway is America's first planned scenic roadway, built specifically for the waterfalls it passes — expect real weekend congestion, not a clear run. Larch Mountain Road branches off near Corbett for a completely different, technical climb.",
+  "willamette-national-forest": "Aufderheide Drive runs 58 miles through old-growth forest with no gas stations or cell service anywhere on the route — a Forest Service road, not a state highway, so plan accordingly.",
+  "santiam-canyon": "Santiam Pass (US 20) stays open year-round, unlike McKenzie Pass just to the south — the two byways combine into one loop with very different characters, from sustained approach to technical lava-field switchbacks.",
 };

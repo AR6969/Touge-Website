@@ -29312,5 +29312,971 @@
       "climb": 8,
       "technical": 0
     }
+  },
+  {
+    "id": "mckenzie-pass",
+    "name": "McKenzie Pass · OR 242",
+    "area": "McKenzie River",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "37 miles of Oregon Route 242 between Belknap Springs and Sisters, crossing McKenzie Pass through a 65-square-mile lava flow. Narrow and winding, with the Dee Wright Observatory at the summit and one of the longest seasonal closures of any road in this catalog.",
+    "sources": [
+      {
+        "title": "Wikipedia: Oregon Route 242",
+        "url": "https://en.wikipedia.org/wiki/Oregon_Route_242"
+      },
+      {
+        "title": "Travel Oregon: McKenzie Pass–Santiam Pass Scenic Byway",
+        "url": "https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/mckenzie-pass-santiam-pass-scenic-byway/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every year from November through mid-June due to snow — one of the longest closures of any road in this catalog, not a short winter gap. Check current status before a spring or fall trip specifically.",
+      "url": "https://tripcheck.com/Pages/Scenic-Byways-McKenzie-Pass-Santiam-Pass",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -121.861053,
+      44.239867
+    ],
+    "bounds": [
+      [
+        -122.0735551,
+        44.158964
+      ],
+      [
+        -121.5578972,
+        44.3098903
+      ]
+    ],
+    "osmWayIds": [
+      5374426,
+      5486088,
+      88406782,
+      337491578,
+      1088864121,
+      1088864122,
+      1088864123
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.072844,
+        44.184452
+      ],
+      "end": [
+        -121.5578972,
+        44.2936654
+      ],
+      "wayNames": [
+        "McKenzie Highway",
+        "Old McKenzie Highway",
+        "West Sisters Park Drive"
+      ]
+    },
+    "shape": {
+      "lengthMi": 36.5,
+      "bends": 128,
+      "switchbacks": 24,
+      "curvature": 375,
+      "bendsPerMile": 3.5
+    },
+    "elevation": {
+      "climbFt": 6164,
+      "highFt": 5330,
+      "lowFt": 1664,
+      "reliefFt": 3666,
+      "maxGradient": 6.1,
+      "climbPerMile": 169
+    },
+    "profile": {
+      "points": [
+        1666,
+        1702,
+        1709,
+        1726,
+        1778,
+        1843,
+        1877,
+        1937,
+        1997,
+        2090,
+        2172,
+        2271,
+        2432,
+        2541,
+        2685,
+        2852,
+        3003,
+        3118,
+        3251,
+        3422,
+        3550,
+        3701,
+        3828,
+        3981,
+        4097,
+        4257,
+        4405,
+        4596,
+        4699,
+        4729,
+        4758,
+        4780,
+        4801,
+        4820,
+        4915,
+        5076,
+        5043,
+        5042,
+        5119,
+        5168,
+        5237,
+        5265,
+        5299,
+        5269,
+        5203,
+        5116,
+        5016,
+        4928,
+        4900,
+        4871,
+        4736,
+        4598,
+        4464,
+        4324,
+        4169,
+        4047,
+        3948,
+        3807,
+        3714,
+        3654,
+        3546,
+        3504,
+        3466,
+        3412,
+        3373,
+        3333,
+        3296,
+        3258,
+        3244,
+        3219,
+        3197,
+        3185
+      ],
+      "miles": 36.6,
+      "coverage": 100
+    },
+    "score": {
+      "score": 33,
+      "corners": 11,
+      "climb": 12,
+      "technical": 10
+    }
+  },
+  {
+    "id": "historic-columbia-river-highway",
+    "name": "Historic Columbia River Highway · US 30 Historic",
+    "area": "Columbia River Gorge, Oregon",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "24 miles of the original 1913–1922 Historic Columbia River Highway from Troutdale through the waterfall corridor — Latourell, Shepperd's Dell, Bridal Veil, Wahkeena and Multnomah Falls among them — toward Dodson. America's first planned scenic roadway, now a narrow two-lane road shared with heavy tourist and cyclist traffic.",
+    "sources": [
+      {
+        "title": "Wikipedia: Historic Columbia River Highway",
+        "url": "https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway"
+      },
+      {
+        "title": "Oregon State Parks: Historic Columbia River Highway State Trail",
+        "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=113"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Multnomah Falls and other popular stops see real vehicle and pedestrian congestion, especially on weekends and in summer — a parking permit system is in effect at Multnomah Falls during peak season. This is a historic tourist road first, not a road to treat as a clear run.",
+      "url": "https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/the-historic-columbia-river-highway/",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.2405345,
+      45.5380238
+    ],
+    "bounds": [
+      [
+        -122.4116701,
+        45.5124072
+      ],
+      [
+        -122.0439044,
+        45.6005501
+      ]
+    ],
+    "osmWayIds": [
+      5529940,
+      5542670,
+      5542705,
+      30409622,
+      30454253,
+      32075933,
+      55527480,
+      71284217,
+      71284224,
+      77332467,
+      120564273,
+      128435824,
+      128445538,
+      128445539,
+      128445541,
+      128445542,
+      128445544,
+      128454289,
+      131824639,
+      131824646,
+      131824649,
+      150731730,
+      150731731,
+      151181886,
+      151181887,
+      173692169,
+      173692172,
+      179097650,
+      179097663,
+      196904324,
+      196927416,
+      196927418,
+      196927421,
+      196928455,
+      196928456,
+      196928457,
+      319229392,
+      319229393,
+      319229394,
+      319229395,
+      319229396,
+      320613680,
+      387625338,
+      451641070,
+      452198433,
+      452198434,
+      452198435,
+      452198436,
+      452198437,
+      452198438,
+      452198439,
+      452198440,
+      453191336,
+      453205338,
+      473413664,
+      481096655,
+      481096657,
+      654731095,
+      676155707,
+      676155708,
+      676161484,
+      676161485,
+      729224537,
+      1070705807,
+      1070705809,
+      1070705816,
+      1070705833,
+      1070705835,
+      1196981301,
+      1223312622,
+      1250547134,
+      1319911967,
+      1340001090,
+      1369232637,
+      1413050375,
+      1458189978,
+      1473530958
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.4116701,
+        45.5412903
+      ],
+      "end": [
+        -122.0439044,
+        45.6005501
+      ],
+      "wayNames": [
+        "East Historic Columbia River Highway",
+        "West Historic Columbia River Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 23.7,
+      "bends": 58,
+      "switchbacks": 11,
+      "curvature": 298,
+      "bendsPerMile": 2.4
+    },
+    "elevation": {
+      "climbFt": 2725,
+      "highFt": 916,
+      "lowFt": 35,
+      "reliefFt": 881,
+      "maxGradient": 5.2,
+      "climbPerMile": 115
+    },
+    "profile": {
+      "points": [
+        77,
+        68,
+        79,
+        91,
+        69,
+        40,
+        59,
+        62,
+        56,
+        55,
+        64,
+        60,
+        62,
+        65,
+        74,
+        134,
+        159,
+        233,
+        282,
+        335,
+        426,
+        499,
+        558,
+        622,
+        632,
+        668,
+        669,
+        678,
+        740,
+        824,
+        833,
+        869,
+        893,
+        888,
+        754,
+        682,
+        591,
+        535,
+        434,
+        355,
+        261,
+        173,
+        166,
+        128,
+        154,
+        178,
+        138,
+        158,
+        212,
+        162,
+        117,
+        106,
+        95,
+        85,
+        52,
+        56,
+        46,
+        97,
+        54,
+        47,
+        62,
+        101,
+        114,
+        142,
+        126,
+        47,
+        46,
+        50,
+        62,
+        70,
+        77,
+        82
+      ],
+      "miles": 23.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 26,
+      "corners": 8,
+      "climb": 8,
+      "technical": 10
+    }
+  },
+  {
+    "id": "larch-mountain-road",
+    "name": "Larch Mountain Road",
+    "area": "Columbia River Gorge, Oregon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "14 miles from the fork near Corbett to the Larch Mountain picnic area and trailhead, the highest road in Multnomah County's jurisdiction at 4,055 ft. Narrow in places with limited visibility, and heavily used by road cyclists.",
+    "sources": [
+      {
+        "title": "Multnomah County: Larch Mountain Road",
+        "url": "https://multco.us/info/larch-mountain-road"
+      },
+      {
+        "title": "Wikipedia: Larch Mountain (Multnomah County, Oregon)",
+        "url": "https://en.wikipedia.org/wiki/Larch_Mountain_(Multnomah_County,_Oregon)"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter and spring, typically reopening in May and closing again in late November — exact dates depend on snow, not a fixed calendar.",
+      "url": "https://multco.us/info/larch-mountain-road",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.1450177,
+      45.5206973
+    ],
+    "bounds": [
+      [
+        -122.253646,
+        45.5108118
+      ],
+      [
+        -122.081437,
+        45.5498218
+      ]
+    ],
+    "osmWayIds": [
+      72459688,
+      131826279,
+      591396609,
+      591396610,
+      705568523,
+      760211966,
+      998067786
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.253646,
+        45.531478
+      ],
+      "end": [
+        -122.0875047,
+        45.5289049
+      ],
+      "wayNames": [
+        "East Larch Mountain Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 14.1,
+      "bends": 35,
+      "switchbacks": 6,
+      "curvature": 276,
+      "bendsPerMile": 2.5
+    },
+    "elevation": {
+      "climbFt": 3179,
+      "highFt": 3860,
+      "lowFt": 895,
+      "reliefFt": 2965,
+      "maxGradient": 6.4,
+      "climbPerMile": 225
+    },
+    "profile": {
+      "points": [
+        891,
+        928,
+        979,
+        1031,
+        982,
+        950,
+        1060,
+        1122,
+        1145,
+        1191,
+        1189,
+        1210,
+        1235,
+        1259,
+        1244,
+        1242,
+        1262,
+        1303,
+        1347,
+        1375,
+        1408,
+        1453,
+        1480,
+        1527,
+        1580,
+        1622,
+        1665,
+        1737,
+        1779,
+        1784,
+        1838,
+        1824,
+        1866,
+        1906,
+        1966,
+        1996,
+        2067,
+        2115,
+        2133,
+        2149,
+        2172,
+        2201,
+        2244,
+        2250,
+        2333,
+        2384,
+        2444,
+        2510,
+        2547,
+        2583,
+        2629,
+        2698,
+        2750,
+        2819,
+        2863,
+        2935,
+        2990,
+        3070,
+        3137,
+        3186,
+        3247,
+        3314,
+        3375,
+        3438,
+        3487,
+        3536,
+        3591,
+        3640,
+        3698,
+        3743,
+        3806,
+        3868
+      ],
+      "miles": 14.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 34,
+      "corners": 8,
+      "climb": 16,
+      "technical": 10
+    }
+  },
+  {
+    "id": "aufderheide-drive",
+    "name": "Aufderheide Drive · FR 19",
+    "area": "Willamette National Forest",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "58 miles of Forest Road 19 connecting Highway 58 at Westfir to Highway 126 at McKenzie Bridge, a National Scenic Byway through old-growth forest along the North Fork Willamette and McKenzie Rivers. Minimal traffic and, notably, no gas stations or cell service for the entire route.",
+    "sources": [
+      {
+        "title": "Travel Oregon: Aufderheide National Scenic Byway",
+        "url": "https://traveloregon.com/things-to-do/aufderheide-national-scenic-byway/"
+      },
+      {
+        "title": "Wikipedia: West Cascades Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/West_Cascades_Scenic_Byway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "No gas stations and no cell service anywhere along this route — fuel up and tell someone your plan before starting. A Forest Service road, not a state highway, so winter maintenance is not guaranteed the way it is on OR 242 or US 20.",
+      "url": "https://www.eugenecascadescoast.org/listing/aufderheide-drive-(forest-service-rd-19)/953/",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.0853124,
+      43.8879682
+    ],
+    "bounds": [
+      [
+        -122.4953291,
+        43.7582556
+      ],
+      [
+        -122.0666173,
+        44.1656834
+      ]
+    ],
+    "osmWayIds": [
+      5500561,
+      199484603,
+      277931870,
+      278950369,
+      278950372,
+      280287600,
+      280287601,
+      280409168,
+      280409169,
+      280409170,
+      280409171,
+      358570021,
+      358570022,
+      531346104,
+      591696377,
+      591696382,
+      1019611817,
+      1019611818,
+      1498663782
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.4953291,
+        43.7582556
+      ],
+      "end": [
+        -122.26062,
+        44.1656834
+      ],
+      "wayNames": [
+        "Aufderheide Drive"
+      ]
+    },
+    "shape": {
+      "lengthMi": 57.6,
+      "bends": 143,
+      "switchbacks": 10,
+      "curvature": 256,
+      "bendsPerMile": 2.5
+    },
+    "elevation": {
+      "climbFt": 7034,
+      "highFt": 3751,
+      "lowFt": 1066,
+      "reliefFt": 2684,
+      "maxGradient": 6.8,
+      "climbPerMile": 122
+    },
+    "profile": {
+      "points": [
+        1069,
+        1110,
+        1134,
+        1149,
+        1150,
+        1191,
+        1206,
+        1237,
+        1269,
+        1333,
+        1332,
+        1417,
+        1425,
+        1505,
+        1527,
+        1749,
+        1908,
+        1964,
+        2021,
+        2031,
+        2030,
+        2112,
+        2110,
+        2194,
+        2210,
+        2227,
+        2282,
+        2325,
+        2405,
+        2470,
+        2573,
+        2595,
+        2707,
+        2782,
+        2839,
+        2821,
+        2868,
+        3041,
+        3395,
+        3728,
+        3687,
+        3491,
+        3213,
+        2879,
+        2639,
+        2595,
+        2512,
+        2401,
+        2412,
+        2266,
+        2271,
+        2153,
+        2126,
+        2126,
+        1970,
+        1927,
+        1864,
+        1806,
+        1750,
+        1706,
+        1815,
+        1866,
+        1747,
+        1736,
+        1732,
+        1726,
+        1734,
+        1711,
+        1551,
+        1318,
+        1164,
+        1164
+      ],
+      "miles": 57.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 17,
+      "corners": 8,
+      "climb": 9,
+      "technical": 0
+    }
+  },
+  {
+    "id": "santiam-pass",
+    "name": "Santiam Pass · US 20",
+    "area": "Santiam Canyon",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "72 miles of US 20 between Sweet Home and Sisters, crossing Santiam Pass (4,817 ft) along the South Santiam River. Narrow and winding through Cascadia and the pass itself; corners tighten enough that carrying too much speed puts riders into the gravel shoulder.",
+    "sources": [
+      {
+        "title": "Wikipedia: Santiam Pass",
+        "url": "https://en.wikipedia.org/wiki/Santiam_Pass"
+      },
+      {
+        "title": "TripCheck: McKenzie Pass–Santiam Pass Scenic Byway",
+        "url": "https://tripcheck.com/Pages/Scenic-Byways-McKenzie-Pass-Santiam-Pass"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Stays open year-round unlike McKenzie Pass nearby, but ice and sudden weather changes are real between October and March — check current conditions before a winter trip.",
+      "url": "https://tripcheck.com/",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.151213,
+      44.3943438
+    ],
+    "bounds": [
+      [
+        -122.7361174,
+        44.3066237
+      ],
+      [
+        -121.5688958,
+        44.4365695
+      ]
+    ],
+    "osmWayIds": [
+      5447109,
+      5505844,
+      5506933,
+      5507027,
+      5512867,
+      38607724,
+      117181995,
+      186715012,
+      186715014,
+      205969659,
+      205969660,
+      205969661,
+      205969662,
+      507828730,
+      565181222,
+      579269953,
+      692905670,
+      692905671,
+      714335962,
+      714335963,
+      736903099,
+      841532965,
+      1020116694,
+      1111922530,
+      1111922531,
+      1111922532,
+      1111922533,
+      1111922534,
+      1111922535,
+      1111922536,
+      1111922537,
+      1111922538,
+      1111922539,
+      1267054215,
+      1267054216,
+      1430365117,
+      1430365122
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.7361174,
+        44.397629
+      ],
+      "end": [
+        -121.5688958,
+        44.3066237
+      ],
+      "wayNames": [
+        "Main Street",
+        "Santiam Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 71.7,
+      "bends": 97,
+      "switchbacks": 11,
+      "curvature": 135,
+      "bendsPerMile": 1.4
+    },
+    "elevation": {
+      "climbFt": 9661,
+      "highFt": 4825,
+      "lowFt": 528,
+      "reliefFt": 4298,
+      "maxGradient": 5.6,
+      "climbPerMile": 135
+    },
+    "profile": {
+      "points": [
+        528,
+        552,
+        617,
+        622,
+        654,
+        673,
+        681,
+        784,
+        681,
+        709,
+        724,
+        752,
+        782,
+        814,
+        846,
+        883,
+        917,
+        987,
+        1082,
+        1102,
+        1162,
+        1199,
+        1274,
+        1310,
+        1347,
+        1409,
+        1548,
+        1822,
+        2077,
+        2323,
+        2579,
+        2872,
+        3164,
+        3445,
+        3705,
+        3959,
+        4241,
+        3993,
+        3755,
+        3486,
+        3343,
+        3295,
+        3397,
+        3486,
+        3359,
+        3546,
+        3715,
+        3755,
+        4072,
+        4002,
+        4230,
+        4469,
+        4751,
+        4817,
+        4623,
+        4444,
+        4179,
+        3912,
+        3665,
+        3478,
+        3342,
+        3290,
+        3366,
+        3332,
+        3375,
+        3339,
+        3346,
+        3243,
+        3246,
+        3230,
+        3220,
+        3205
+      ],
+      "miles": 71.8,
+      "coverage": 100
+    },
+    "score": {
+      "score": 24,
+      "corners": 4,
+      "climb": 9,
+      "technical": 10
+    }
   }
 ]

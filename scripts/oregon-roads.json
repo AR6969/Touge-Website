@@ -1,0 +1,177 @@
+[
+  {
+    "id": "mckenzie-pass",
+    "name": "McKenzie Pass · OR 242",
+    "area": "McKenzie River",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "37 miles of Oregon Route 242 between Belknap Springs and Sisters, crossing McKenzie Pass through a 65-square-mile lava flow. Narrow and winding, with the Dee Wright Observatory at the summit and one of the longest seasonal closures of any road in this catalog.",
+    "sources": [
+      {
+        "title": "Wikipedia: Oregon Route 242",
+        "url": "https://en.wikipedia.org/wiki/Oregon_Route_242"
+      },
+      {
+        "title": "Travel Oregon: McKenzie Pass–Santiam Pass Scenic Byway",
+        "url": "https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/mckenzie-pass-santiam-pass-scenic-byway/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every year from November through mid-June due to snow — one of the longest closures of any road in this catalog, not a short winter gap. Check current status before a spring or fall trip specifically.",
+      "url": "https://tripcheck.com/Pages/Scenic-Byways-McKenzie-Pass-Santiam-Pass",
+      "checked": "2026-09-23"
+    },
+    "names": [],
+    "refs": ["OR 242"],
+    "anchors": [
+      { "near": [-122.072844, 44.184452], "maxSnapM": 50 },
+      { "near": [-121.5578972, 44.2936654], "maxSnapM": 800 }
+    ]
+  },
+  {
+    "id": "historic-columbia-river-highway",
+    "name": "Historic Columbia River Highway · US 30 Historic",
+    "area": "Columbia River Gorge, Oregon",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "24 miles of the original 1913–1922 Historic Columbia River Highway from Troutdale through the waterfall corridor — Latourell, Shepperd's Dell, Bridal Veil, Wahkeena and Multnomah Falls among them — toward Dodson. America's first planned scenic roadway, now a narrow two-lane road shared with heavy tourist and cyclist traffic.",
+    "sources": [
+      {
+        "title": "Wikipedia: Historic Columbia River Highway",
+        "url": "https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway"
+      },
+      {
+        "title": "Oregon State Parks: Historic Columbia River Highway State Trail",
+        "url": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=113"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Multnomah Falls and other popular stops see real vehicle and pedestrian congestion, especially on weekends and in summer — a parking permit system is in effect at Multnomah Falls during peak season. This is a historic tourist road first, not a road to treat as a clear run.",
+      "url": "https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/the-historic-columbia-river-highway/",
+      "checked": "2026-09-23"
+    },
+    "names": ["East Historic Columbia River Highway", "West Historic Columbia River Highway"],
+    "refs": ["US 30 Historic"],
+    "anchors": [
+      { "near": [-122.4116701, 45.5412903], "maxSnapM": 50 },
+      { "near": [-122.0439044, 45.6005501], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "larch-mountain-road",
+    "name": "Larch Mountain Road",
+    "area": "Columbia River Gorge, Oregon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "14 miles from the fork near Corbett to the Larch Mountain picnic area and trailhead, the highest road in Multnomah County's jurisdiction at 4,055 ft. Narrow in places with limited visibility, and heavily used by road cyclists.",
+    "sources": [
+      {
+        "title": "Multnomah County: Larch Mountain Road",
+        "url": "https://multco.us/info/larch-mountain-road"
+      },
+      {
+        "title": "Wikipedia: Larch Mountain (Multnomah County, Oregon)",
+        "url": "https://en.wikipedia.org/wiki/Larch_Mountain_(Multnomah_County,_Oregon)"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter and spring, typically reopening in May and closing again in late November — exact dates depend on snow, not a fixed calendar.",
+      "url": "https://multco.us/info/larch-mountain-road",
+      "checked": "2026-09-23"
+    },
+    "names": ["Larch Mountain Road", "East Larch Mountain Road", "Northwest Larch Mountain Road"],
+    "refs": [],
+    "anchors": [
+      { "near": [-122.253646, 45.531478], "maxSnapM": 50 },
+      { "near": [-122.0875047, 45.5289049], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "aufderheide-drive",
+    "name": "Aufderheide Drive · FR 19",
+    "area": "Willamette National Forest",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "58 miles of Forest Road 19 connecting Highway 58 at Westfir to Highway 126 at McKenzie Bridge, a National Scenic Byway through old-growth forest along the North Fork Willamette and McKenzie Rivers. Minimal traffic and, notably, no gas stations or cell service for the entire route.",
+    "sources": [
+      {
+        "title": "Travel Oregon: Aufderheide National Scenic Byway",
+        "url": "https://traveloregon.com/things-to-do/aufderheide-national-scenic-byway/"
+      },
+      {
+        "title": "Wikipedia: West Cascades Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/West_Cascades_Scenic_Byway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "No gas stations and no cell service anywhere along this route — fuel up and tell someone your plan before starting. A Forest Service road, not a state highway, so winter maintenance is not guaranteed the way it is on OR 242 or US 20.",
+      "url": "https://www.eugenecascadescoast.org/listing/aufderheide-drive-(forest-service-rd-19)/953/",
+      "checked": "2026-09-23"
+    },
+    "names": ["Aufderheide Drive"],
+    "refs": [],
+    "anchors": [
+      { "near": [-122.4953291, 43.7582556], "maxSnapM": 50 },
+      { "near": [-122.26062, 44.1656834], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "santiam-pass",
+    "name": "Santiam Pass · US 20",
+    "area": "Santiam Canyon",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "72 miles of US 20 between Sweet Home and Sisters, crossing Santiam Pass (4,817 ft) along the South Santiam River. Narrow and winding through Cascadia and the pass itself; corners tighten enough that carrying too much speed puts riders into the gravel shoulder.",
+    "sources": [
+      {
+        "title": "Wikipedia: Santiam Pass",
+        "url": "https://en.wikipedia.org/wiki/Santiam_Pass"
+      },
+      {
+        "title": "TripCheck: McKenzie Pass–Santiam Pass Scenic Byway",
+        "url": "https://tripcheck.com/Pages/Scenic-Byways-McKenzie-Pass-Santiam-Pass"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Stays open year-round unlike McKenzie Pass nearby, but ice and sudden weather changes are real between October and March — check current conditions before a winter trip.",
+      "url": "https://tripcheck.com/",
+      "checked": "2026-09-23"
+    },
+    "names": ["Santiam Highway", "Santiam Highway Southeast", "Central Oregon Highway", "McKenzie-Bend Highway"],
+    "refs": ["US 20"],
+    "anchors": [
+      { "near": [-122.7361174, 44.397629], "maxSnapM": 100 },
+      { "near": [-121.5688958, 44.3066237], "maxSnapM": 5000 }
+    ]
+  }
+]

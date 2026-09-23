@@ -1,17 +1,18 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado" | "washington";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado" | "washington" | "oregon";
 
 // The state a region belongs to. California's regions keep their existing
 // flat paths and their own in-map tab switcher (see site-chrome.tsx); a
 // region belonging to a different state gets its own dedicated page instead
 // of joining that switcher, since swapping states is a bigger jump than
 // swapping California sub-regions.
-export type StateId = "california" | "southern-appalachians" | "colorado" | "washington";
+export type StateId = "california" | "southern-appalachians" | "colorado" | "washington" | "oregon";
 
 export const states: Record<StateId, { name: string; defaultRegion: MapRegion }> = {
   california: { name: "California", defaultRegion: "california" },
   "southern-appalachians": { name: "Southern Appalachians", defaultRegion: "southern-appalachians" },
   colorado: { name: "Colorado", defaultRegion: "colorado" },
   washington: { name: "Washington", defaultRegion: "washington" },
+  oregon: { name: "Oregon", defaultRegion: "oregon" },
 };
 
 export const mapRegions: Record<MapRegion, {
@@ -108,5 +109,15 @@ export const mapRegions: Record<MapRegion, {
     // River Gorge in the south, and Sherman Pass out toward the Idaho
     // border in the northeast, without the state's western edge dominating.
     bounds: [[-122.7, 45.4], [-117.9, 48.9]],
+  },
+  oregon: {
+    name: "Oregon",
+    href: "/oregon",
+    pickerTitle: "The Gorge, McKenzie River & the Cascades",
+    state: "oregon",
+    center: [-122.15, 44.68],
+    // Frames the Columbia Gorge roads in the north down through the
+    // McKenzie River / Willamette National Forest cluster in the south.
+    bounds: [[-123.0, 43.6], [-121.3, 45.75]],
   },
 };

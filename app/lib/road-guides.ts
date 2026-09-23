@@ -660,4 +660,72 @@ export function getRoadGuide(id: string): RoadGuide | undefined {
   return roadGuides[id];
 }
 
+roadGuides["mckenzie-pass"] = {
+  heading: "McKenzie Pass: Belknap Springs to Sisters",
+  title: "McKenzie Pass (OR 242): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the McKenzie Pass crossing: 37 miles of OR 242 through a lava flow, 128 bends and 24 switchbacks, and one of the longest seasonal closures of any road in this catalog.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "McKenzie Pass is the most technical Oregon road in this catalog by the numbers: 128 counted bends and 24 switchbacks over 36.5 miles, a density of 3.5 per mile that outpaces every other Cascades crossing mapped here. Our own measured summit came back at 5,330 ft against the pass's documented 5,325 ft — essentially exact. The road crosses a 65-square-mile lava flow, with the Dee Wright Observatory built right into the rock at the summit.", source: { title: "Wikipedia: Oregon Route 242", url: "https://en.wikipedia.org/wiki/Oregon_Route_242" } },
+    { text: "This closes every year from November through mid-June — not a short winter gap but roughly seven months, among the longest closures of any road mapped here. The narrow, twisting lava-field sections have essentially no shoulder in places, so plan around the closure rather than assuming a spring or fall trip will find it open.", source: { title: "TripCheck: McKenzie Pass–Santiam Pass Scenic Byway", url: "https://tripcheck.com/Pages/Scenic-Byways-McKenzie-Pass-Santiam-Pass" } },
+  ],
+  connections: [
+    { roadId: "santiam-pass", note: "The two byways combine into the McKenzie Pass–Santiam Pass Scenic Byway loop." },
+  ],
+};
+
+roadGuides["historic-columbia-river-highway"] = {
+  heading: "Historic Columbia River Highway: Troutdale to Dodson",
+  title: "Historic Columbia River Highway (US 30 Historic): Route, Map & Driving Notes | TougeMap",
+  description: "Plan a drive on the Historic Columbia River Highway: America's first planned scenic roadway, 24 miles past Latourell, Bridal Veil, Wahkeena and Multnomah Falls, with real weekend congestion to plan around.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Built between 1913 and 1922, this is widely credited as the first planned scenic roadway in the United States — designed specifically to bring travelers up close to the Gorge's waterfalls rather than just to move traffic. 58 counted bends over 23.7 miles at a gentle 5.2% maximum grade makes this an easy road to drive technically; the difficulty here is entirely about what's sharing it with you.", source: { title: "Wikipedia: Historic Columbia River Highway", url: "https://en.wikipedia.org/wiki/Historic_Columbia_River_Highway" } },
+    { text: "Multnomah Falls alone draws enough traffic that a parking permit system runs during peak season, and the narrow two-lane road backs up behind cars stopping for every waterfall pull-out. Treat this as a scenic drive to take slowly with stops planned in, not a road to run — weekday mornings are the way to get it with less congestion.", source: { title: "Travel Oregon: The Historic Columbia River Highway", url: "https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/the-historic-columbia-river-highway/" } },
+  ],
+  connections: [
+    { roadId: "larch-mountain-road", note: "Branches off near Corbett, a different kind of drive entirely — technical switchbacks instead of a waterfall tour." },
+  ],
+};
+
+roadGuides["larch-mountain-road"] = {
+  heading: "Larch Mountain Road: The Corbett Climb",
+  title: "Larch Mountain Road: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Larch Mountain Road climb from Corbett: 14 miles to the highest road in Multnomah County, narrow with limited visibility and heavy cyclist traffic.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "This climbs from the fork near Corbett to 3,860 ft at our own measured high point, on the way to the Larch Mountain picnic area and trailhead — the highest road under Multnomah County's jurisdiction. 35 counted bends and 6 switchbacks over 14.1 miles at a 6.4% maximum grade, narrow in places with genuinely limited visibility around blind corners.", source: { title: "Multnomah County: Larch Mountain Road", url: "https://multco.us/info/larch-mountain-road" } },
+    { text: "Road cyclists use this climb heavily, so expect to share the full width of the road on weekends. It closes every winter and spring, typically reopening in May and closing again around late November — exact dates depend on snowfall, not a fixed calendar." },
+  ],
+  connections: [
+    { roadId: "historic-columbia-river-highway", note: "The Corbett fork is a short distance from the Historic Highway's waterfall corridor — a completely different kind of driving nearby." },
+  ],
+};
+
+roadGuides["aufderheide-drive"] = {
+  heading: "Aufderheide Drive: Westfir to McKenzie Bridge",
+  title: "Aufderheide Drive (FR 19): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Aufderheide Drive: 58 miles of Forest Road 19 through old-growth forest, with no gas stations or cell service anywhere along the route.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Aufderheide runs 143 counted bends over 57.6 miles, a moderate 2.5 per mile density and a gentle-by-Cascades-standards 6.8% maximum grade — this is a long, sustained forest byway along the North Fork Willamette and McKenzie Rivers, not a technical switchback climb. The National Scenic Byway designation reflects the old-growth forest and river scenery more than the driving itself." },
+    { text: "There are no gas stations and no cell service anywhere on this 58-mile route — fuel up and tell someone your plan before starting, the same way you would for genuine backcountry driving. As a Forest Service road rather than a state highway, winter maintenance isn't guaranteed the way it is on a numbered route like OR 242 or US 20.", source: { title: "Eugene, Cascades & Coast: Aufderheide Drive (Forest Service Rd 19)", url: "https://www.eugenecascadescoast.org/listing/aufderheide-drive-(forest-service-rd-19)/953/" } },
+  ],
+  connections: [],
+};
+
+roadGuides["santiam-pass"] = {
+  heading: "Santiam Pass: Sweet Home to Sisters",
+  title: "Santiam Pass (US 20): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Santiam Pass crossing: 72 miles of US 20 along the South Santiam River, open year-round unlike McKenzie Pass nearby, with real ice risk October through March.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "US 20 runs 97 counted bends over 71.7 miles at a 1.4 per mile density — the lowest of any Oregon road in this catalog, reflecting a long approach through Cascadia before the real mountain crossing near the summit. Our own measured high point came back at 4,825 ft against the pass's documented 4,817 ft, essentially exact. Corners tighten enough near the pass that carrying too much speed puts you in the gravel shoulder.", source: { title: "Wikipedia: Santiam Pass", url: "https://en.wikipedia.org/wiki/Santiam_Pass" } },
+    { text: "Unlike McKenzie Pass just to the south, Santiam Pass stays open year-round — but ice and sudden weather changes are real here between October and March, and conditions can shift faster than they do at lower elevations nearby. Check current conditions before a winter trip rather than assuming the road being open means it's clear." },
+  ],
+  connections: [
+    { roadId: "mckenzie-pass", note: "The two byways combine into the McKenzie Pass–Santiam Pass Scenic Byway loop." },
+  ],
+};
+
 export const guidedRoadIds = Object.keys(roadGuides);

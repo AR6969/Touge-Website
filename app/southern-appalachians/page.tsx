@@ -3,7 +3,7 @@ import Link from "next/link";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, oregonRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
 const roads = southernAppalachiansRoads;
@@ -49,6 +49,7 @@ export default function SouthernAppalachians() {
           "southern-appalachians": { roads: roads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
           colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
           washington: { roads: washingtonRoads.map(toSummary), landmarks: landmarksFor("washington"), popular: popularRoadsFor("washington") },
+          oregon: { roads: oregonRoads.map(toSummary), landmarks: landmarksFor("oregon"), popular: popularRoadsFor("oregon") },
         }}
       />
       <MapIntro

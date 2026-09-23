@@ -6,23 +6,23 @@ import { SiteFooter } from "../site-chrome";
 import { bayAreaRoads, coloradoRoads, landmarksFor, losAngelesRoads, oregonRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
-const roads = coloradoRoads;
+const roads = oregonRoads;
 
-const title = "Best Driving Roads in Colorado";
-const description = "Million Dollar Highway, Independence Pass, Trail Ridge Road and Lizard Head Pass on one map. Corner counts measured from OpenStreetMap geometry, elevation from USGS data — the same method used for every road on this site.";
+const title = "Best Driving Roads in Oregon";
+const description = "The Historic Columbia River Highway, McKenzie Pass, Larch Mountain Road and more on one map. Corner counts measured from OpenStreetMap geometry, elevation from USGS data — the same method used for every road on this site.";
 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/colorado" },
-  openGraph: { url: "/colorado", title, description },
+  alternates: { canonical: "/oregon" },
+  openGraph: { url: "/oregon", title, description },
 };
 
 const areas = [...new Set(roads.map(road => road.area))];
 const totalMiles = Math.round(roads.reduce((sum, road) => sum + road.shape.lengthMi, 0));
 const totalBends = roads.reduce((sum, road) => sum + road.shape.bends, 0);
 
-export default function Colorado() {
+export default function Oregon() {
   const structured = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -35,11 +35,11 @@ export default function Colorado() {
 
   return (
     <>
-      {/* This map only ever opens to colorado: the in-map region switcher is
+      {/* This map only ever opens to oregon: the in-map region switcher is
           California-only (see site-chrome.tsx), so there is no onRegionChange
           here and no way to land on this state by mistake. */}
       <HomeMap
-        initialRegion="colorado"
+        initialRegion="oregon"
         data={{
           california: { roads: allRoads.map(toSummary), landmarks: landmarksFor("california"), popular: popularRoadsFor("california") },
           "bay-area": { roads: bayAreaRoads.map(toSummary), landmarks: landmarksFor("bay-area"), popular: popularRoadsFor("bay-area") },
@@ -47,31 +47,32 @@ export default function Colorado() {
           "san-diego": { roads: sanDiegoRoads.map(toSummary), landmarks: landmarksFor("san-diego"), popular: popularRoadsFor("san-diego") },
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
           "southern-appalachians": { roads: southernAppalachiansRoads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
-          colorado: { roads: roads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
+          colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
           washington: { roads: washingtonRoads.map(toSummary), landmarks: landmarksFor("washington"), popular: popularRoadsFor("washington") },
-          oregon: { roads: oregonRoads.map(toSummary), landmarks: landmarksFor("oregon"), popular: popularRoadsFor("oregon") },
+          oregon: { roads: roads.map(toSummary), landmarks: landmarksFor("oregon"), popular: popularRoadsFor("oregon") },
         }}
       />
       <MapIntro
-        title={<>Best driving roads in Colorado</>}
+        title={<>Best driving roads in Oregon</>}
         stats={[
           { value: String(roads.length), label: "Roads" },
           { value: totalMiles.toLocaleString(), label: "Miles" },
           { value: totalBends.toLocaleString(), label: "Counted bends" },
           { value: String(areas.length), label: "Areas" },
         ]}
-        linksLabel="Colorado driving areas"
+        linksLabel="Oregon driving areas"
         links={[
           ...areas.map(area => ({ href: `/regions/${slugifyArea(area)}`, label: area })),
         ]}
       >
-        Four of Colorado&rsquo;s highest paved passes: the Million Dollar Highway and Lizard Head Pass in the San
-        Juans, Independence Pass over the Divide, and Trail Ridge Road through Rocky Mountain National Park.
-        Every one of these closes for winter — check current conditions before a trip.
+        Five roads spanning the Columbia River Gorge to the Willamette National Forest: the Historic Columbia River
+        Highway is America&rsquo;s first planned scenic roadway, McKenzie Pass and Santiam Pass combine into one loop with
+        very different characters, and Aufderheide Drive runs 58 miles with no gas or cell service. Several close
+        for winter — check current conditions before a trip.
       </MapIntro>
 
-      <section aria-labelledby="colorado-roads" className="prose">
-        <h2 id="colorado-roads">The roads</h2>
+      <section aria-labelledby="oregon-roads" className="prose">
+        <h2 id="oregon-roads">The roads</h2>
         <ul className="card-list">
           {roads.map(road => <li key={road.id}>
             <Link href={`/roads/${road.id}`}>
@@ -83,7 +84,7 @@ export default function Colorado() {
         </ul>
       </section>
 
-      <SiteFooter roadStatus={{ label: "CDOT COtrip.org", url: "https://cotrip.org/" }} />
+      <SiteFooter roadStatus={{ label: "TripCheck road conditions", url: "https://tripcheck.com/" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structured).replace(/</g, "\\u003c") }} />
     </>
   );
