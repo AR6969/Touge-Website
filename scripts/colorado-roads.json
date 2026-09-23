@@ -194,5 +194,156 @@
         "maxSnapM": 300
       }
     ]
+  },
+  {
+    "id": "lookout-mountain-road",
+    "name": "Lookout Mountain Road",
+    "area": "Front Range",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "The Lariat Loop's switchback climb from Golden up Lookout Mountain, about 6 miles with a gentle-by-comparison 5% average grade but a steady sequence of hairpins. One of the most popular close-to-Denver climbs, shared heavily with road cyclists.",
+    "sources": [
+      {
+        "title": "Visit Golden: Lookout Mountain Mile-by-Mile Guide",
+        "url": "https://www.visitgolden.com/blog/post/lookout-mountain-mile-by-mile-guide/"
+      },
+      {
+        "title": "Wikipedia: Lookout Mountain (Colorado)",
+        "url": "https://en.wikipedia.org/wiki/Lookout_Mountain_(Colorado)"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Heavily used by road cyclists year-round, including as a training climb for professional races; expect to share the full width of the road on weekends and mornings.",
+      "url": "https://www.visitgolden.com/blog/post/lookout-mountain-mile-by-mile-guide/",
+      "checked": "2026-09-22"
+    },
+    "names": [
+      "Lookout Mountain Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -105.2537721,
+          39.7160725
+        ],
+        "maxSnapM": 50
+      },
+      {
+        "near": [
+          -105.2285123,
+          39.7423216
+        ],
+        "maxSnapM": 50
+      }
+    ]
+  },
+  {
+    "id": "mount-blue-sky-road",
+    "name": "Mount Blue Sky Road \u00b7 CO 5",
+    "area": "Front Range",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "Colorado Highway 5, formerly Mount Evans Road \u2014 the highest paved road in North America, reaching 14,130 ft. Narrow with hairpin turns and no guardrails on the upper section between Echo Lake and the summit.",
+    "sources": [
+      {
+        "title": "Wikipedia: Mount Blue Sky Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/Mount_Blue_Sky_Scenic_Byway"
+      },
+      {
+        "title": "CDOT: Mount Blue Sky (formerly Mount Evans)",
+        "url": "https://www.codot.gov/travel/coloradobyways/north-central/mount-evans"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed for a multi-year improvement project through 2025; scheduled to reopen for the 2026 season around Memorial Day weekend, timed entry and a reservation required in season. This is a seasonal high-altitude road, not a year-round route \u2014 check current status and the reservation system before a trip.",
+      "url": "https://www.fs.usda.gov/r02/arp/recreation/mount-blue-sky-recreation-area-scenic-byway",
+      "checked": "2026-09-22"
+    },
+    "names": [
+      "Mount Blue Sky Road"
+    ],
+    "refs": [
+      "CO 5"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -105.596298,
+          39.656757
+        ],
+        "maxSnapM": 50
+      },
+      {
+        "near": [
+          -105.6442659,
+          39.579279
+        ],
+        "maxSnapM": 800
+      }
+    ]
+  },
+  {
+    "id": "deer-creek-canyon-road",
+    "name": "Deer Creek Canyon Road",
+    "area": "Front Range",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "A foothills canyon road between Chatfield Reservoir and Evergreen, about 9.5 miles of sweeping and sharp turns following the creek up into the mountains. A long-standing local favorite for motorcyclists and sports car drivers.",
+    "sources": [
+      {
+        "title": "The Gazette: Cycling Colorado \u2014 Deer Creek Canyon",
+        "url": "https://gazette.com/life/cycling-colorado-deer-creek-canyon/article_ef20e7e2-d67b-5c49-b038-94de61ecb472.html"
+      },
+      {
+        "title": "Motorcycle Roads: Deer Creek Canyon",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/colorado/deer-creek-canyon"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Pavement is generally decent but carries loose gravel in spots; weekends bring meaningfully heavier traffic than weekdays.",
+      "url": "https://www.motorcycleroads.com/motorcycle-roads/colorado/deer-creek-canyon",
+      "checked": "2026-09-22"
+    },
+    "names": [
+      "South Deer Creek Canyon Road",
+      "West Deer Creek Canyon Road",
+      "Deer Creek Canyon Road"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -105.0870194,
+          39.5494533
+        ],
+        "maxSnapM": 50
+      },
+      {
+        "near": [
+          -105.2172916,
+          39.5727635
+        ],
+        "maxSnapM": 50
+      }
+    ]
   }
 ]

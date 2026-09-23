@@ -257,5 +257,169 @@
         "maxSnapM": 10
       }
     ]
+  },
+  {
+    "id": "moonshiner-28",
+    "name": "Moonshiner 28 · NC 28",
+    "area": "Great Smoky Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "55 miles of North Carolina Highway 28 south from Deals Gap to Franklin, nearly continuous curves the whole way and named for the bootleggers who used it to cross state lines during Prohibition. Picks up right where the Tail of the Dragon ends.",
+    "sources": [
+      {
+        "title": "Rider Magazine: Riding 'Shine Country — the Tail of the Dragon and North Carolina's Moonshiner 28",
+        "url": "https://ridermagazine.com/2020/02/25/riding-shine-country-the-tail-of-the-dragon-and-north-carolinas-moonshiner-28/"
+      },
+      {
+        "title": "Wikipedia: North Carolina Highway 28",
+        "url": "https://en.wikipedia.org/wiki/North_Carolina_Highway_28"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "OpenStreetMap tags this route between 35 and 55 mph depending on the section, but this project does not treat OSM tags alone as a verified source. Follow posted signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current North Carolina road conditions before a trip; NC 511 covers statewide closures and this stretch runs through mountain terrain that sees rockslides and washouts.",
+      "url": "https://drivenc.gov/",
+      "checked": "2026-09-22"
+    },
+    "names": [],
+    "refs": ["NC 28"],
+    "anchors": [
+      {
+        "near": [-83.919303, 35.4647032],
+        "maxSnapM": 3000
+      },
+      {
+        "near": [-83.3759211, 35.1848393],
+        "maxSnapM": 700
+      }
+    ]
+  },
+  {
+    "id": "cullasaja-gorge",
+    "name": "Cullasaja Gorge · US 64",
+    "area": "Nantahala National Forest",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "US 64 from Highlands toward Franklin, dropping through the Cullasaja River Gorge past multiple waterfalls in the first several miles. Part of the Mountain Waters Scenic Byway, with real, recent closure history from storm damage.",
+    "sources": [
+      {
+        "title": "Wikipedia: Mountain Waters Scenic Byway",
+        "url": "https://en.wikipedia.org/wiki/Mountain_Waters_Scenic_Byway"
+      },
+      {
+        "title": "Wikipedia: Cullasaja River",
+        "url": "https://en.wikipedia.org/wiki/Cullasaja_River"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "This road has real, recent closure history from storm damage: an 80-ft embankment washout closed it for over two weeks in January 2024 ($275,000 in repairs), and a failing basket wall closed a section in 2022. Check current conditions before a trip.",
+      "url": "https://www.ncdot.gov/news/press-releases",
+      "checked": "2026-09-22"
+    },
+    "names": [],
+    "refs": ["US 64"],
+    "anchors": [
+      {
+        "near": [-83.1965708, 35.053663],
+        "maxSnapM": 400
+      },
+      {
+        "near": [-83.3155398, 35.153437],
+        "maxSnapM": 10
+      }
+    ]
+  },
+  {
+    "id": "foothills-parkway",
+    "name": "Foothills Parkway",
+    "area": "Great Smoky Mountains",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "The western section of this National Park Service parkway, about 33 miles between US 129 at Chilhowee (the Tail of the Dragon's own northern end) and US 321 at Wears Valley. Wide lanes and sweeping curves rather than tight technical corners, with sustained ridge views of the Smokies.",
+    "sources": [
+      {
+        "title": "Wikipedia: Foothills Parkway",
+        "url": "https://en.wikipedia.org/wiki/Foothills_Parkway"
+      },
+      {
+        "title": "Tail of the Dragon: Foothills Parkway",
+        "url": "https://tailofthedragon.com/road/foothills-parkway/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "National Park Service road; check current conditions before a trip, as sections have a history of weather and construction closures separate from the Dragon or Cherohala.",
+      "url": "https://www.nps.gov/grsm/planyourvisit/conditions.htm",
+      "checked": "2026-09-22"
+    },
+    "names": ["Foothills Parkway"],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [-84.0099976, 35.5574083],
+        "maxSnapM": 50
+      },
+      {
+        "near": [-83.6437225, 35.7204776],
+        "maxSnapM": 400
+      }
+    ]
+  },
+  {
+    "id": "roan-mountain",
+    "name": "Roan Mountain · NC 261 & TN 143",
+    "area": "Roan Highlands",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "NC 261 and TN 143 combine into one continuous 25-mile route over Roan Mountain, meeting at Carvers Gap (5,500 ft) where the state line and the Appalachian Trail cross the road. Very curvy on both sides of the gap, through Cherokee National Forest and Roan Mountain State Park.",
+    "sources": [
+      {
+        "title": "Wikipedia: North Carolina Highway 261",
+        "url": "https://en.wikipedia.org/wiki/North_Carolina_Highway_261"
+      },
+      {
+        "title": "Wikipedia: Tennessee State Route 143",
+        "url": "https://en.wikipedia.org/wiki/Tennessee_State_Route_143"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Carvers Gap sits at 5,500 ft and this route sees real winter weather; check current conditions before a cold-season trip.",
+      "url": "https://www.tn.gov/tdot/welcome-to-tennessee-511.html",
+      "checked": "2026-09-22"
+    },
+    "names": [],
+    "refs": ["NC 261", "SR 143"],
+    "anchors": [
+      {
+        "near": [-82.0728703, 36.1998419],
+        "maxSnapM": 50
+      },
+      {
+        "near": [-82.1587724, 36.0154143],
+        "maxSnapM": 50
+      }
+    ]
   }
 ]

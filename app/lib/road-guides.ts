@@ -355,6 +355,7 @@ const roadGuides: Record<string, RoadGuide> = {
     ],
     connections: [
       { roadId: "cherohala-skyway", note: "A completely different character at the Robbinsville end: long sweepers over a much longer climb instead of tight switchbacks." },
+      { roadId: "moonshiner-28", note: "Picks up right where the Dragon ends at Deals Gap and continues south for 55 more miles toward Franklin." },
     ],
   },
   "cherohala-skyway": {
@@ -461,6 +462,94 @@ const roadGuides: Record<string, RoadGuide> = {
       { roadId: "million-dollar-highway", note: "The tighter, more technical San Juan Skyway leg, joined at Ridgway." },
     ],
   },
+};
+
+roadGuides["moonshiner-28"] = {
+  heading: "Moonshiner 28: Deals Gap to Franklin",
+  title: "Moonshiner 28 (NC 28): Route, Map & Driving Notes | TougeMap",
+  description: "Plan Moonshiner 28 south from Deals Gap: 220 bends over 55.5 miles, nearly continuous curves the whole way, named for its Prohibition-era history.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "This picks up exactly where the Tail of the Dragon ends and doesn't let up: 220 counted bends and 25 switchbacks over 55.5 miles, a sustained density (4.0 bends per mile) held over five times the distance of the Dragon itself. The name is real history, not marketing — bootleggers used this route to move liquor across the NC/TN line during Prohibition because its remoteness and endless curves made it hard to intercept.", source: { title: "Rider Magazine: Riding 'Shine Country", url: "https://ridermagazine.com/2020/02/25/riding-shine-country-the-tail-of-the-dragon-and-north-carolinas-moonshiner-28/" } },
+    { text: "Far less trafficked than the Dragon it connects to — most visitors turn around at Deals Gap rather than continuing south — which is the appeal and the risk in the same breath: fewer other cars, but also fewer people around if something goes wrong on a long remote stretch. Check current North Carolina road conditions before relying on it; this is mountain terrain that sees real rockslides and washouts." },
+  ],
+  connections: [
+    { roadId: "tail-of-the-dragon", note: "Starts exactly where the Dragon ends at Deals Gap." },
+  ],
+};
+
+roadGuides["cullasaja-gorge"] = {
+  heading: "Cullasaja Gorge: Highlands toward Franklin",
+  title: "Cullasaja Gorge (US 64): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Cullasaja Gorge drive out of Highlands: 61 bends over 13.6 miles past waterfalls, and real, recent closure history from storm damage.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "The gorge itself is concentrated in the first several miles out of Highlands, where US 64 drops alongside the Cullasaja River past multiple named waterfalls with 61 counted bends and 11 switchbacks over the mapped 13.6-mile stretch — a density of 4.5 bends per mile. The character changes as it opens up toward Franklin, so the tightest, most technical driving is front-loaded near the Highlands end rather than spread evenly." },
+    { text: "This road has real, recent closure history, not just generic mountain-weather caution: an 80-ft embankment washout closed it for over two weeks in January 2024 after storm runoff overwhelmed the drainage system ($275,000 in repairs), and a failing basket wall closed a different section in 2022. Check current conditions before a trip.", source: { title: "WLOS: US 64 in Cullasaja Gorge closed for embankment repair", url: "https://wlos.com/news/local/us-64-in-cullasaja-gorge-to-be-closed-several-weeks-to-repair-storm-damaged-embankment" } },
+  ],
+  connections: [],
+};
+
+roadGuides["lookout-mountain-road"] = {
+  heading: "Lookout Mountain Road: The Lariat Loop Climb",
+  title: "Lookout Mountain Road: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Lookout Mountain Road climb out of Golden: 51 bends over 6.2 miles, a moderate grade, and heavy year-round cyclist traffic.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "This is the Lariat Loop's switchback climb out of Golden, 51 counted bends and 13 switchbacks over 6.2 miles — a dense sequence of turns, but at a comparatively gentle 6.3% maximum grade rather than a steep pass. That combination (lots of direction changes, moderate steepness) is what makes it one of the most popular close-to-Denver climbs for road cyclists, including as a professional race training climb, so expect to share the full width of the road.", source: { title: "Visit Golden: Lookout Mountain Mile-by-Mile Guide", url: "https://www.visitgolden.com/blog/post/lookout-mountain-mile-by-mile-guide/" } },
+    { text: "The climb tops out around 7,500 ft near the historic summit area — Buffalo Bill Cody's gravesite and museum sit up here — so this pairs naturally with a stop rather than a straight run-and-return. Weekday mornings and evenings are the way to get the road with less cyclist traffic than a weekend." },
+  ],
+  connections: [],
+};
+
+roadGuides["mount-blue-sky-road"] = {
+  heading: "Mount Blue Sky Road: The Highest Paved Road in North America",
+  title: "Mount Blue Sky Road (CO 5): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Mount Blue Sky Road drive, formerly Mount Evans Road: 39 bends climbing toward 14,000 ft, no guardrails on the upper section, and the reservation system now required to drive it.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "Colorado Highway 5 is the highest paved road in North America, and our own mapped trace tops out at 13,674 ft — within reach of the 14,130 ft summit itself. 39 counted bends and 14 switchbacks over 12.8 miles at a moderate 6.1% maximum grade means the difficulty here isn't tight technical corners, it's altitude and exposure: no guardrails on the upper section, thin air that affects both car and driver, and weather that can turn fast at 13,000+ ft even in summer.", source: { title: "Wikipedia: Mount Blue Sky Scenic Byway", url: "https://en.wikipedia.org/wiki/Mount_Blue_Sky_Scenic_Byway" } },
+    { text: "This road was closed for a multi-year improvement project through all of 2025 and is scheduled to reopen for the 2026 season around Memorial Day weekend, with timed entry and a reservation required in season — this is not a spontaneous drive-up road anymore. The mountain itself was renamed from Mount Evans to Mount Blue Sky in 2023, and CDOT has been updating signage and the highway's own name to match; expect to see both names still in use. Check current status and the reservation system before planning a trip.", source: { title: "US Forest Service: Mount Blue Sky Recreation Area & Scenic Byway", url: "https://www.fs.usda.gov/r02/arp/recreation/mount-blue-sky-recreation-area-scenic-byway" } },
+  ],
+  connections: [],
+};
+
+roadGuides["deer-creek-canyon-road"] = {
+  heading: "Deer Creek Canyon Road: Chatfield to Evergreen",
+  title: "Deer Creek Canyon Road: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Deer Creek Canyon Road drive from Chatfield Reservoir toward Evergreen: 34 bends over 9.6 miles of sweeping foothills curves, a long-standing local favorite.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "Deer Creek Canyon runs 34 counted bends over 9.6 miles at a 7.0% maximum grade, following the creek up out of the Chatfield Reservoir area into the foothills — sweeping and sharp turns rather than sustained switchbacks, with only 3 full switchbacks in the whole run. It's been a long-standing local favorite for motorcyclists and sports car drivers specifically because it delivers real curves within a short drive of Denver.", source: { title: "The Gazette: Cycling Colorado — Deer Creek Canyon", url: "https://gazette.com/life/cycling-colorado-deer-creek-canyon/article_ef20e7e2-d67b-5c49-b038-94de61ecb472.html" } },
+    { text: "Pavement is generally decent but carries loose gravel in spots, and weekends bring meaningfully heavier traffic — both other drivers and cyclists — than weekdays. The road ends near Evergreen, which makes a natural stop before heading back." },
+  ],
+  connections: [],
+};
+
+roadGuides["foothills-parkway"] = {
+  heading: "Foothills Parkway: Chilhowee to Wears Valley",
+  title: "Foothills Parkway: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Foothills Parkway drive from the Tail of the Dragon's own end toward Wears Valley: 90 bends over 31.6 miles of wide, sweeping ridge road, nothing like the Dragon it connects to.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "This western section of the Foothills Parkway starts at US 129 in Chilhowee — literally the Tail of the Dragon's own northern end — and runs 31.6 miles to US 321 at Wears Valley. Despite starting where the Dragon does, it drives nothing like it: 90 bends over that distance is a density of 2.8 per mile, wide lanes and sweeping curves built for sustained ridge views of the Smokies rather than tight technical work. Treat it as the decompression drive after the Dragon, not a second dose of the same thing.", source: { title: "Wikipedia: Foothills Parkway", url: "https://en.wikipedia.org/wiki/Foothills_Parkway" } },
+    { text: "This is a National Park Service road, and it has its own separate history of weather and construction closures apart from the Dragon or the Cherohala Skyway nearby — a clear US 129 doesn't mean the Parkway is open. Check current NPS conditions before relying on it." },
+  ],
+  connections: [
+    { roadId: "tail-of-the-dragon", note: "Starts at the exact same US 129 junction where the Dragon ends, at the Chilhowee end." },
+  ],
+};
+
+roadGuides["roan-mountain"] = {
+  heading: "Roan Mountain: NC 261 and TN 143 over Carvers Gap",
+  title: "Roan Mountain (NC 261 & TN 143): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Roan Mountain drive over Carvers Gap, where NC 261 and TN 143 combine into one continuous 25-mile route: 87 bends, the Appalachian Trail crossing, and real winter closure risk.",
+  updated: "2026-09-22",
+  notes: [
+    { text: "NC 261 and TN 143 are two different state highways that function as one continuous drive, meeting at Carvers Gap (5,500 ft, matched almost exactly by our own measured high point of 5,509 ft), where the Appalachian Trail itself crosses the road. 87 counted bends and 18 switchbacks over 25.4 miles at an 8.0% maximum grade make this genuinely technical on both sides of the gap, not just a connector between two towns.", source: { title: "Wikipedia: North Carolina Highway 261", url: "https://en.wikipedia.org/wiki/North_Carolina_Highway_261" } },
+    { text: "Carvers Gap sits high enough to see real winter weather well before it arrives in the surrounding valleys, and this route runs through Cherokee National Forest and Roan Mountain State Park for most of its length — remote enough that a closure or a problem isn't quickly reached by help. Check current Tennessee and North Carolina road conditions before a cold-season trip." },
+  ],
+  connections: [],
 };
 
 export function getRoadGuide(id: string): RoadGuide | undefined {
