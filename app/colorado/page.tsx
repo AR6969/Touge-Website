@@ -3,7 +3,7 @@ import Link from "next/link";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
-import { bayAreaRoads, coloradoRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, slugifyArea, toSummary } from "../lib/roads";
+import { bayAreaRoads, coloradoRoads, landmarksFor, losAngelesRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
 import { siteUrl } from "../lib/site";
 
 const roads = coloradoRoads;
@@ -48,6 +48,7 @@ export default function Colorado() {
           sierra: { roads: sierraRoads.map(toSummary), landmarks: landmarksFor("sierra"), popular: popularRoadsFor("sierra") },
           "southern-appalachians": { roads: southernAppalachiansRoads.map(toSummary), landmarks: landmarksFor("southern-appalachians"), popular: popularRoadsFor("southern-appalachians") },
           colorado: { roads: roads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
+          washington: { roads: washingtonRoads.map(toSummary), landmarks: landmarksFor("washington"), popular: popularRoadsFor("washington") },
         }}
       />
       <MapIntro

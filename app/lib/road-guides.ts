@@ -552,6 +552,110 @@ roadGuides["roan-mountain"] = {
   connections: [],
 };
 
+roadGuides["north-cascades-highway"] = {
+  heading: "North Cascades Highway: Marblemount to Winthrop",
+  title: "North Cascades Highway (SR 20): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the North Cascades Highway crossing: 86 miles from Marblemount over Washington Pass to Winthrop, the last major road built across the Cascades in Washington, closed completely every winter.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "This is a sustained mountain crossing, not a short technical burst: 87 counted bends over 86 miles is a density of 1.0 per mile, wide sweeping curves through old-growth forest rather than tight switchbacks. Our own measured high point came back at 5,457 ft against Washington Pass's documented 5,477 ft — close enough to confirm the trace. The road wasn't completed until 1972, the last major crossing of the Cascade Range in Washington to be built.", source: { title: "NPS: North Cascades Highway", url: "https://www.nps.gov/noca/planyourvisit/north-cascades-highway.htm" } },
+    { text: "This road closes completely every winter, typically mid-November through late April or early May, with the exact dates set by that year's snowpack rather than a fixed calendar — gates go up at both ends and the mountain section is genuinely impassable, not just discouraged. Check current WSDOT mountain pass status before planning a trip near either end of the season." },
+  ],
+  connections: [
+    { roadId: "sherman-pass", note: "The same SR 20 continues much further east to a second, lower-traffic mountain crossing near Republic." },
+  ],
+};
+
+roadGuides["sherman-pass"] = {
+  heading: "Sherman Pass: Republic to Kettle Falls",
+  title: "Sherman Pass (SR 20): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Sherman Pass crossing: 43 miles of SR 20 between Republic and Kettle Falls, Washington's highest maintained pass and the only major one kept open all year.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Sherman Pass is the odd one out among Washington's major mountain crossings: at 5,508 ft measured (5,575 ft is the pass's own documented elevation), it's the highest maintained pass in the state, yet it's also the one kept open year-round rather than gated for winter. 54 bends over 43 miles at a 1.2 per mile density makes this a remote, moderate-traffic crossing through the Colville National Forest rather than a technical destination road.", source: { title: "National Scenic Byway Foundation: Sherman Pass Scenic Byway", url: "https://nsbfoundation.com/sb/sherman-pass-scenic-byway/" } },
+    { text: "Being plowed rather than gated doesn't mean winter driving here is casual — this is still a 5,500 ft mountain pass, and ice and snow conditions apply on the same days lower-elevation Washington roads are clear. Check current conditions before a winter or shoulder-season trip." },
+  ],
+  connections: [
+    { roadId: "north-cascades-highway", note: "The same SR 20, much further west across the higher-traffic North Cascades crossing." },
+  ],
+};
+
+roadGuides["chuckanut-drive"] = {
+  heading: "Chuckanut Drive: Bellingham to Blanchard",
+  title: "Chuckanut Drive (SR 11): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Chuckanut Drive run along the Puget Sound coast: 18 miles of narrow, cliff-hugging road nicknamed Washington's Big Sur, with real rockslide risk and heavy weekend crowds.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Chuckanut runs 16 counted bends over 17.9 miles, a lower density than its \"twisty\" reputation suggests — the difficulty here isn't corner count, it's exposure: a narrow two-lane road cut into sandstone cliffs with forest on one side and Puget Sound directly below on the other, and blind corners where other drivers cut the line. That combination is what earns the Big Sur comparison, not sheer bend count.", source: { title: "Motorcycle Roads: Chuckanut Drive", url: "https://www.motorcycleroads.com/motorcycle-roads/washington/chuckanut-drive" } },
+    { text: "Watch for rockslides on the cliff sections, and expect the road to be genuinely crowded on weekends rather than lightly used — this is a well-known drive close to Bellingham, not a hidden one. A weekday run gets you a meaningfully different road." },
+  ],
+  connections: [],
+};
+
+roadGuides["yakima-canyon-road"] = {
+  heading: "Yakima Canyon Road: Selah to Ellensburg",
+  title: "Yakima Canyon Road (SR 821): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Yakima Canyon Road drive: 25 miles of SR 821 following the Yakima River past basalt cliffs, with tight curves and esses that reward full attention.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Canyon Road runs 30 counted bends over 25.3 miles, a mix of esses and sweepers following the Yakima River between basalt rock formations — wildlife along the route includes deer and bighorn sheep, so sightlines matter as much as the curves themselves. At a 4.7% maximum grade this isn't a steep climb, it's a sustained, engaging river-canyon drive.", source: { title: "Motorcycle Roads NorthWest: SR 821 “Canyon Road”", url: "https://www.roadsnw.com/rnw/119/" } },
+    { text: "Outside holiday weekends, traffic is reported as minimal — no RVs, no fast drivers, next to nothing to contend with. Narrow shoulders are the main hazard the rest of the time, especially if an RV does appear." },
+  ],
+  connections: [],
+};
+
+roadGuides["chinook-pass"] = {
+  heading: "Chinook Pass: Enumclaw to Naches",
+  title: "Chinook Pass (SR 410): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Chinook Pass crossing: 92 miles of SR 410 from Enumclaw to US 12 near Naches, along Mount Rainier's eastern edge, closed every winter for avalanche safety.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "SR 410 runs 92 miles end to end with 67 counted bends, a density of 0.7 per mile — the lowest of any Washington road in this catalog, which makes sense for a highway that mostly connects towns rather than climbing continuously. Our own measured summit came back at 5,432 ft against the pass's documented 5,430 ft, essentially exact. The character is a long approach followed by the real mountain crossing near Mount Rainier National Park's eastern boundary, not sustained technical driving the whole way.", source: { title: "Wikipedia: Washington State Route 410", url: "https://en.wikipedia.org/wiki/Washington_State_Route_410" } },
+    { text: "This closes every winter, typically mid-November, specifically for avalanche danger and limited snow storage along the road — not just general difficulty driving in snow. It reopens around Memorial Day weekend depending on snowmelt, and commercial vehicles are barred from the pass section even in season.", source: { title: "NPS: SR 410 Chinook Pass and SR 123 Cayuse Pass close for the season", url: "https://www.nps.gov/mora/learn/news/sr-410-chinook-pass-and-sr-123-cayuse-pass-close-for-the-season.htm" } },
+  ],
+  connections: [
+    { roadId: "stevens-canyon-road", note: "A separate in-park road nearby, reached via SR 123 at the Cayuse Pass junction." },
+  ],
+};
+
+roadGuides["white-pass"] = {
+  heading: "White Pass: Packwood to Naches",
+  title: "White Pass (US 12): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the White Pass crossing: 59 miles of US 12 southeast of Mount Rainier, with a genuine chain law each winter and a steeper climb from the west than the descent to the east.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "White Pass covers 65 bends over 58.9 miles at a moderate 6.0% maximum grade, with a real asymmetry: about 10 miles of steeper climbing on the west side up to the 4,500 ft summit (our own measured high point: 4,476 ft), then a notably gentler descent on the east side toward Naches. That's the opposite of the front-loaded steepness pattern on some other passes, worth knowing before you plan which direction to drive it." },
+    { text: "Carrying chains is required by law here from November 1 through April 1 every year, regardless of what conditions actually look like on the day you're driving — a firm date-based rule, not discretionary caution. Unlike Chinook Pass or the North Cascades Highway, White Pass stays open year-round; the chain requirement is the real seasonal constraint here, not a closure.", source: { title: "WSDOT: White Pass US 12", url: "https://www.wsdot.com/traffic/passes/white/default.aspx" } },
+  ],
+  connections: [],
+};
+
+roadGuides["stevens-canyon-road"] = {
+  heading: "Stevens Canyon Road: Paradise to SR 123",
+  title: "Stevens Canyon Road: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Stevens Canyon Road drive inside Mount Rainier National Park: 19 miles with the highest switchback density of any Washington road in this catalog.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "This is the most technical Washington road in this catalog by the numbers: 43 counted bends and 12 switchbacks over just 19 miles — a density of 2.3 bends per mile, more than double any other Washington road mapped here. Unlike the long mountain-pass highways nearby, this is a compact, switchback-heavy park road connecting the Paradise area to the SR 123 entrance, with sustained views of Mount Rainier along the way." },
+    { text: "This road is entirely inside Mount Rainier National Park: a park entrance fee applies, and it closes seasonally with the rest of the park's high-elevation road system, typically outside the summer season. Check current NPS conditions before a trip rather than assuming it matches the status of nearby state highways.", source: { title: "NPS: Mount Rainier National Park road information", url: "https://www.nps.gov/mora/planyourvisit/conditions.htm" } },
+  ],
+  connections: [
+    { roadId: "chinook-pass", note: "A separate SR 410 mountain crossing nearby, reached via SR 123 at the Cayuse Pass junction." },
+  ],
+};
+
+roadGuides["columbia-river-gorge-wa"] = {
+  heading: "Columbia River Gorge: Washougal to Stevenson",
+  title: "Columbia River Gorge (SR 14): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Washington-side Columbia River Gorge drive: 28 miles of SR 14 between Washougal and Stevenson, following dramatic river-cut cliffs with sweeping curves rather than tight technical corners.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "SR 14 runs 33 counted bends over 27.8 miles with zero full switchbacks — this is a road built to follow the river, not to climb a mountain, so the curves sweep rather than switch back on themselves. The draw is the scenery: dramatic gorge cliffs and river views for the whole run, with a gentle 5.3% maximum grade that never turns technical." },
+    { text: "The Columbia Gorge is a well-known wind corridor, and high-profile vehicles specifically should expect that to matter more here than anywhere else in this catalog. Check current conditions before a trip, particularly if towing or driving something tall." },
+  ],
+  connections: [],
+};
+
 export function getRoadGuide(id: string): RoadGuide | undefined {
   return roadGuides[id];
 }

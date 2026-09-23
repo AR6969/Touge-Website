@@ -1,0 +1,300 @@
+[
+  {
+    "id": "north-cascades-highway",
+    "name": "North Cascades Highway · SR 20",
+    "area": "North Cascades",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "86 miles of State Route 20 from Marblemount to Winthrop, the last major road built across the Cascade Range in Washington (opened 1972) and the highest state highway pass crossing in the state at Washington Pass (5,477 ft). Old-growth forest, waterfalls and alpine scenery on a sustained mountain crossing rather than a short technical burst.",
+    "sources": [
+      {
+        "title": "NPS: North Cascades Highway",
+        "url": "https://www.nps.gov/noca/planyourvisit/north-cascades-highway.htm"
+      },
+      {
+        "title": "Wikipedia: Washington State Route 20",
+        "url": "https://en.wikipedia.org/wiki/Washington_State_Route_20"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closed every winter across the mountain section — typically mid-November through late April or early May, with exact dates set by snowpack each year, not a fixed calendar. This is the single most common way people get caught out here: a mapped road is not the same as a currently open one.",
+      "url": "https://wsdot.com/travel/real-time/mountainpasses/northcascades",
+      "checked": "2026-09-23"
+    },
+    "names": [
+      "State Route 20",
+      "North Cascades Highway",
+      "Highway 20",
+      "State Highway 20",
+      "Cascade Highway",
+      "Methow Valley Highway"
+    ],
+    "refs": ["SR 20"],
+    "anchors": [
+      { "near": [-121.4306402, 48.532482], "maxSnapM": 100 },
+      { "near": [-120.1867314, 48.4772026], "maxSnapM": 100 }
+    ]
+  },
+  {
+    "id": "sherman-pass",
+    "name": "Sherman Pass · SR 20",
+    "area": "Colville National Forest",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "43 miles of State Route 20 between Republic and Kettle Falls, crossing Sherman Pass (5,575 ft) — Washington's highest maintained mountain pass and the only one of the state's major passes kept open year-round. Part of a designated National Forest Scenic Byway through the Colville National Forest.",
+    "sources": [
+      {
+        "title": "National Scenic Byway Foundation: Sherman Pass Scenic Byway",
+        "url": "https://nsbfoundation.com/sb/sherman-pass-scenic-byway/"
+      },
+      {
+        "title": "Wikipedia: Sherman Pass (Washington)",
+        "url": "https://en.wikipedia.org/wiki/Sherman_Pass_(Washington)"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Unlike Washington's other major passes, Sherman Pass is maintained and kept open all year, though winter driving conditions (ice, snow) still apply. Check current conditions before a winter trip regardless.",
+      "url": "https://wsdot.com/travel/real-time/mountainpasses/sherman",
+      "checked": "2026-09-23"
+    },
+    "names": [
+      "State Route 20",
+      "North Cascades Highway",
+      "Highway 20",
+      "State Highway 20",
+      "Cascade Highway",
+      "Methow Valley Highway"
+    ],
+    "refs": ["SR 20"],
+    "anchors": [
+      { "near": [-118.7386275, 48.6476617], "maxSnapM": 100 },
+      { "near": [-118.0614033, 48.6105911], "maxSnapM": 100 }
+    ]
+  },
+  {
+    "id": "chuckanut-drive",
+    "name": "Chuckanut Drive · SR 11",
+    "area": "Puget Sound",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "18 miles of State Route 11 hugging the sandstone cliffs of the Puget Sound coast between Bellingham and Blanchard, nicknamed \"Washington's Big Sur.\" Narrow two-lane road with forest on one side and water below on the other; twisty and technical in places rather than a fast sweeper.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads: Chuckanut Drive",
+        "url": "https://www.motorcycleroads.com/motorcycle-roads/washington/chuckanut-drive"
+      },
+      {
+        "title": "Wikipedia: Washington State Route 11",
+        "url": "https://en.wikipedia.org/wiki/Washington_State_Route_11"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Watch for rockslides and for other cars cutting corners on the narrow, cliff-hugging sections. Gets notably crowded on weekends.",
+      "url": "https://wsdot.wa.gov/travel/real-time/seattle",
+      "checked": "2026-09-23"
+    },
+    "names": ["Chuckanut Drive"],
+    "refs": [],
+    "anchors": [
+      { "near": [-122.4963069, 48.6962426], "maxSnapM": 50 },
+      { "near": [-122.3384728, 48.4859054], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "yakima-canyon-road",
+    "name": "Yakima Canyon Road · SR 821",
+    "area": "Yakima River Canyon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "25 miles of State Route 821 (\"Canyon Road\") following the Yakima River between Selah and Ellensburg, past basalt rock formations of the Yakima River Canyon. Tight curves, esses and sweepers that demand full attention, with generally light traffic outside holiday weekends.",
+    "sources": [
+      {
+        "title": "Motorcycle Roads NorthWest: Washington State Route 821 “Canyon Road”",
+        "url": "https://www.roadsnw.com/rnw/119/"
+      },
+      {
+        "title": "Wikipedia: Washington State Route 821",
+        "url": "https://en.wikipedia.org/wiki/Washington_State_Route_821"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Narrow shoulders throughout; RV and holiday-weekend traffic is the main variable — outside those periods, traffic is described as minimal.",
+      "url": "https://wsdot.wa.gov/travel/real-time/southcentral",
+      "checked": "2026-09-23"
+    },
+    "names": ["Canyon Road"],
+    "refs": ["SR 821"],
+    "anchors": [
+      { "near": [-120.4971775, 46.9262133], "maxSnapM": 50 },
+      { "near": [-120.4801428, 46.6772042], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "chinook-pass",
+    "name": "Chinook Pass · SR 410",
+    "area": "Mount Rainier",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "92 miles of State Route 410 from Enumclaw to its junction with US 12 near Naches, crossing Chinook Pass (5,432 ft) along the Chinook Scenic Byway through Mount Rainier National Park's eastern edge. A sustained mountain crossing with real seasonal closure, not a short technical climb.",
+    "sources": [
+      {
+        "title": "Wikipedia: Washington State Route 410",
+        "url": "https://en.wikipedia.org/wiki/Washington_State_Route_410"
+      },
+      {
+        "title": "NPS: SR 410 Chinook Pass and SR 123 Cayuse Pass close for the season",
+        "url": "https://www.nps.gov/mora/learn/news/sr-410-chinook-pass-and-sr-123-cayuse-pass-close-for-the-season.htm"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Closes every winter, typically mid-November, due to avalanche danger and limited snow storage along the road — reopens around Memorial Day weekend depending on snowmelt. Commercial vehicles are prohibited on the pass section.",
+      "url": "https://wsdot.com/travel/real-time/mountainpasses/chinook",
+      "checked": "2026-09-23"
+    },
+    "names": [
+      "State Route 410",
+      "State Route 410 East",
+      "Chinook Pass Highway",
+      "Enumclaw Chinook Pass Road",
+      "Southeast Enumclaw Chinook Pass Road",
+      "Southeast Enumclaw-Chinook Pass Road"
+    ],
+    "refs": ["SR 410"],
+    "anchors": [
+      { "near": [-121.9884077, 47.1994327], "maxSnapM": 100 },
+      { "near": [-120.7884645, 46.7483124], "maxSnapM": 100 }
+    ]
+  },
+  {
+    "id": "white-pass",
+    "name": "White Pass · US 12",
+    "area": "South Cascades",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "59 miles of US Route 12 between Packwood and Naches over White Pass (4,500 ft), southeast of Mount Rainier. About 10 miles of steeper grade on the west-to-east climb to the summit; the east-side descent toward Naches is notably gentler.",
+    "sources": [
+      {
+        "title": "Wikipedia: White Pass (Washington)",
+        "url": "https://en.wikipedia.org/wiki/White_Pass_(Washington)"
+      },
+      {
+        "title": "WSDOT: White Pass US 12",
+        "url": "https://www.wsdot.com/traffic/passes/white/default.aspx"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Chains are required to be carried from November 1 through April 1 regardless of conditions on the day — a firm seasonal rule, not general caution. Stays open year-round, unlike the higher passes nearby, but winter driving conditions apply.",
+      "url": "https://www.wsdot.com/traffic/passes/white/default.aspx",
+      "checked": "2026-09-23"
+    },
+    "names": [],
+    "refs": ["US 12"],
+    "anchors": [
+      { "near": [-121.671109, 46.606444], "maxSnapM": 50 },
+      { "near": [-120.695251, 46.7268032], "maxSnapM": 500 }
+    ]
+  },
+  {
+    "id": "stevens-canyon-road",
+    "name": "Stevens Canyon Road",
+    "area": "Mount Rainier",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "19 miles inside Mount Rainier National Park connecting the Paradise area to the SR 123/Stevens Canyon entrance, with switchbacks and sustained mountain views. Part of the larger Mount Rainier loop drive combining SR 410, SR 123 and this road.",
+    "sources": [
+      {
+        "title": "NPS: Mount Rainier National Park road information",
+        "url": "https://www.nps.gov/mora/planyourvisit/conditions.htm"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Inside Mount Rainier National Park — a park entrance fee applies, and this road closes seasonally with the rest of the park's high-elevation road system. Check current NPS conditions before a trip, especially outside summer.",
+      "url": "https://www.nps.gov/mora/planyourvisit/conditions.htm",
+      "checked": "2026-09-23"
+    },
+    "names": ["Stevens Canyon Road"],
+    "refs": [],
+    "anchors": [
+      { "near": [-121.7396233, 46.7790676], "maxSnapM": 50 },
+      { "near": [-121.5568944, 46.7546722], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "columbia-river-gorge-wa",
+    "name": "Columbia River Gorge · SR 14",
+    "area": "Columbia River Gorge",
+    "difficulty": 1,
+    "character": "Medium speed",
+    "description": "28 miles of State Route 14 along the Washington side of the Columbia River Gorge between Washougal and Stevenson, with dramatic river-cut cliffs and sweeping curves following the water rather than tight technical corners.",
+    "sources": [
+      {
+        "title": "Wikipedia: Washington State Route 14",
+        "url": "https://en.wikipedia.org/wiki/Washington_State_Route_14"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "The Columbia Gorge is a well-known wind corridor, which can affect high-profile vehicles more than the road surface itself. Check current conditions before a trip.",
+      "url": "https://wsdot.wa.gov/travel/real-time/southwest",
+      "checked": "2026-09-23"
+    },
+    "names": [
+      "Lewis and Clark Trail Highway",
+      "Lewis and Clark Highway",
+      "Evergreen Highway",
+      "Southeast Lewis and Clark Highway"
+    ],
+    "refs": ["SR 14"],
+    "anchors": [
+      { "near": [-122.3561592, 45.5768587], "maxSnapM": 50 },
+      { "near": [-121.8869777, 45.6918262], "maxSnapM": 50 }
+    ]
+  }
+]

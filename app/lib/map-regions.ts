@@ -1,16 +1,17 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado" | "washington";
 
 // The state a region belongs to. California's regions keep their existing
 // flat paths and their own in-map tab switcher (see site-chrome.tsx); a
 // region belonging to a different state gets its own dedicated page instead
 // of joining that switcher, since swapping states is a bigger jump than
 // swapping California sub-regions.
-export type StateId = "california" | "southern-appalachians" | "colorado";
+export type StateId = "california" | "southern-appalachians" | "colorado" | "washington";
 
 export const states: Record<StateId, { name: string; defaultRegion: MapRegion }> = {
   california: { name: "California", defaultRegion: "california" },
   "southern-appalachians": { name: "Southern Appalachians", defaultRegion: "southern-appalachians" },
   colorado: { name: "Colorado", defaultRegion: "colorado" },
+  washington: { name: "Washington", defaultRegion: "washington" },
 };
 
 export const mapRegions: Record<MapRegion, {
@@ -96,5 +97,16 @@ export const mapRegions: Record<MapRegion, {
     // Wide enough to frame the San Juans (Ouray/Silverton) in the southwest
     // and Rocky Mountain NP / the Front Range corridor in the north at once.
     bounds: [[-108.2, 37.6], [-105.3, 40.5]],
+  },
+  washington: {
+    name: "Washington",
+    href: "/washington",
+    pickerTitle: "Cascades, the Gorge & Puget Sound",
+    state: "washington",
+    center: [-120.28, 47.14],
+    // Wide enough to frame Chuckanut Drive in the northwest, the Columbia
+    // River Gorge in the south, and Sherman Pass out toward the Idaho
+    // border in the northeast, without the state's western edge dominating.
+    bounds: [[-122.7, 45.4], [-117.9, 48.9]],
   },
 };
