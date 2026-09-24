@@ -30278,5 +30278,584 @@
       "climb": 9,
       "technical": 10
     }
+  },
+  {
+    "id": "dead-indian-memorial-road",
+    "name": "Dead Indian Memorial Road · CR 722",
+    "area": "Ashland",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "36 miles between Ashland and the Cascade-Siskiyou area, one of the oldest trans-Cascade travel routes in southern Oregon, climbing through Rogue River-Siskiyou National Forest toward the Upper Klamath Basin. Wide, open, sustained curves rather than tight technical work.",
+    "sources": [
+      {
+        "title": "Oregon Encyclopedia: Dead Indian Memorial Road",
+        "url": "https://www.oregonencyclopedia.org/articles/dead_indian_memorial_road/"
+      },
+      {
+        "title": "Motorcycle road review: Dead Indian Memorial Rd (Hwy 722)",
+        "url": "https://www.youtube.com/watch?v=mIft7NlW57s"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Climbs to roughly 5,000 ft, so winter ice and snow are real; check current Jackson County road conditions before a cold-season trip.",
+      "url": "https://jacksoncountyor.gov/roads",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.429088,
+      42.27344
+    ],
+    "bounds": [
+      [
+        -122.6555889,
+        42.1825534
+      ],
+      [
+        -122.1909259,
+        42.3981726
+      ]
+    ],
+    "osmWayIds": [
+      5165082,
+      5491227,
+      712383967,
+      712383968,
+      758722396,
+      758722397,
+      1372275128,
+      1481150582
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.6555889,
+        42.1825534
+      ],
+      "end": [
+        -122.1909425,
+        42.3981726
+      ],
+      "wayNames": [
+        "Dead Indian Memorial Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 36.4,
+      "bends": 67,
+      "switchbacks": 7,
+      "curvature": 190,
+      "bendsPerMile": 1.8
+    },
+    "elevation": {
+      "climbFt": 6581,
+      "highFt": 5407,
+      "lowFt": 1885,
+      "reliefFt": 3521,
+      "maxGradient": 7.6,
+      "climbPerMile": 181
+    },
+    "profile": {
+      "points": [
+        1921,
+        1924,
+        1895,
+        1957,
+        1995,
+        2063,
+        2125,
+        2213,
+        2378,
+        2536,
+        2726,
+        2886,
+        3058,
+        3229,
+        3263,
+        3443,
+        3611,
+        3751,
+        3919,
+        4104,
+        4316,
+        4486,
+        4702,
+        4852,
+        5081,
+        5210,
+        5123,
+        5086,
+        4978,
+        4893,
+        4768,
+        4641,
+        4546,
+        4553,
+        4566,
+        4568,
+        4566,
+        4587,
+        4616,
+        4689,
+        4732,
+        4724,
+        4640,
+        4728,
+        4740,
+        4766,
+        4775,
+        4886,
+        4957,
+        5039,
+        5130,
+        5143,
+        5298,
+        5404,
+        5331,
+        5189,
+        5165,
+        5171,
+        5169,
+        5330,
+        5290,
+        5126,
+        4973,
+        4971,
+        5012,
+        5068,
+        5060,
+        5016,
+        5004,
+        4997,
+        4985,
+        4976
+      ],
+      "miles": 36.4,
+      "coverage": 100
+    },
+    "score": {
+      "score": 28,
+      "corners": 6,
+      "climb": 13,
+      "technical": 10
+    }
+  },
+  {
+    "id": "highway-66-green-springs",
+    "name": "Highway 66 · Green Springs Highway",
+    "area": "Ashland",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "60 miles of Oregon Route 66 between Ashland and Klamath Falls, leaving Ashland on tight rhythmic hairpins that gain 2,500 ft in a few miles before settling into a longer mountain crossing. Narrow shoulders and stingily placed guardrails above Tyler Creek Canyon.",
+    "sources": [
+      {
+        "title": "Pashnit: Highway 66 – Green Springs Highway, Oregon",
+        "url": "https://www.pashnit.com/post/highway-66-green-springs-highway-oregon"
+      },
+      {
+        "title": "Motorcycle Roads NorthWest: Oregon State Route 66 (Ashland to Klamath Falls)",
+        "url": "https://www.roadsnw.com/rnw/49/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current ODOT conditions before a winter trip; the climb out of Ashland gains significant elevation quickly and sees real weather.",
+      "url": "https://tripcheck.com/",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.2667104,
+      42.1251444
+    ],
+    "bounds": [
+      [
+        -122.6918604,
+        42.1084669
+      ],
+      [
+        -121.8042154,
+        42.191156
+      ]
+    ],
+    "osmWayIds": [
+      5157899,
+      5159140,
+      5160610,
+      5160823,
+      5167150,
+      5484774,
+      5484775,
+      5490229,
+      5491919,
+      27277400,
+      27277415,
+      27277416,
+      96459168,
+      96459175,
+      156725051,
+      156725056,
+      156725060,
+      168720858,
+      168720859,
+      194690019,
+      194690020,
+      194690021,
+      194690022,
+      195110329,
+      195384276,
+      250250827,
+      250250828,
+      421319535,
+      421319536,
+      441504683,
+      441504686,
+      441504691,
+      441506027,
+      441506030,
+      441506031,
+      441506032,
+      607736608,
+      607736609,
+      607736610,
+      694130689,
+      694130691,
+      694130693,
+      694130694,
+      694130695,
+      694130696,
+      694130698,
+      694130700,
+      694130701,
+      694130704,
+      758722399,
+      758722400,
+      758722401,
+      791454142,
+      1049454415,
+      1049454416,
+      1116059008,
+      1116059009,
+      1116059010,
+      1216143641,
+      1216143642,
+      1216143644,
+      1216143647,
+      1364449526,
+      1364449527,
+      1364449528,
+      1369503003,
+      1369503004,
+      1369503005,
+      1369503006,
+      1372275125,
+      1372275127,
+      1372275132,
+      1372893505,
+      1375136448,
+      1393430089,
+      1393430090,
+      1481150581,
+      1535330382,
+      1557285964,
+      1557285965,
+      1557285978,
+      1557285979,
+      1557285989
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.6918604,
+        42.1855311
+      ],
+      "end": [
+        -121.8042154,
+        42.191156
+      ],
+      "wayNames": [
+        "Ashland Street",
+        "Green Springs Highway",
+        "Greensprings Drive"
+      ]
+    },
+    "shape": {
+      "lengthMi": 59.0,
+      "bends": 119,
+      "switchbacks": 10,
+      "curvature": 201,
+      "bendsPerMile": 2.0
+    },
+    "elevation": {
+      "climbFt": 9029,
+      "highFt": 4695,
+      "lowFt": 1910,
+      "reliefFt": 2785,
+      "maxGradient": 6.2,
+      "climbPerMile": 153
+    },
+    "profile": {
+      "points": [
+        1998,
+        2004,
+        1926,
+        1937,
+        2005,
+        2086,
+        2212,
+        2263,
+        2250,
+        2353,
+        2262,
+        2277,
+        2539,
+        2817,
+        3072,
+        3328,
+        3594,
+        3857,
+        4147,
+        4397,
+        4458,
+        4473,
+        4530,
+        4325,
+        4120,
+        3911,
+        3697,
+        3647,
+        3537,
+        3411,
+        3626,
+        3749,
+        3918,
+        4057,
+        4186,
+        4352,
+        4257,
+        4105,
+        4021,
+        4097,
+        4182,
+        4305,
+        4411,
+        4532,
+        4632,
+        4658,
+        4695,
+        4498,
+        4386,
+        4221,
+        4007,
+        3874,
+        3865,
+        3824,
+        3872,
+        4021,
+        4183,
+        4256,
+        4267,
+        4331,
+        4158,
+        4095,
+        4102,
+        4098,
+        4102,
+        4124,
+        4124,
+        4138,
+        4118,
+        4113,
+        4192,
+        4219
+      ],
+      "miles": 59.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 37,
+      "corners": 6,
+      "climb": 11,
+      "technical": 20
+    }
+  },
+  {
+    "id": "hyatt-prairie-road",
+    "name": "Hyatt Prairie Road",
+    "area": "Ashland",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "10 miles connecting Highway 66 near Green Springs Inn to Dead Indian Memorial Road, past Hyatt Lake. Narrow, mostly single-lane in character and rougher pavement than either road it connects — but it turns the two into a genuine loop instead of an out-and-back.",
+    "sources": [
+      {
+        "title": "OpenStreetMap: Hyatt Prairie Road",
+        "url": "https://www.openstreetmap.org/way/35581026"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Narrower and rougher than the two roads it connects; treat it as a deliberate, slower link between them rather than a road to carry speed on.",
+      "url": "https://jacksoncountyor.gov/roads",
+      "checked": "2026-09-23"
+    },
+    "mapRegion": "oregon",
+    "center": [
+      -122.416802,
+      42.216012
+    ],
+    "bounds": [
+      [
+        -122.4701784,
+        42.174271
+      ],
+      [
+        -122.414839,
+        42.265921
+      ]
+    ],
+    "osmWayIds": [
+      318482109
+    ],
+    "reviewed": "2026-09-23",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/oregon-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -122.4701163,
+        42.174271
+      ],
+      "end": [
+        -122.449339,
+        42.265921
+      ],
+      "wayNames": [
+        "Hyatt Prairie Road"
+      ]
+    },
+    "shape": {
+      "lengthMi": 9.6,
+      "bends": 19,
+      "switchbacks": 1,
+      "curvature": 182,
+      "bendsPerMile": 2.0
+    },
+    "elevation": {
+      "climbFt": 929,
+      "highFt": 5049,
+      "lowFt": 4549,
+      "reliefFt": 500,
+      "maxGradient": 6.7,
+      "climbPerMile": 97
+    },
+    "profile": {
+      "points": [
+        5025,
+        5035,
+        5031,
+        5031,
+        5034,
+        5035,
+        5033,
+        5035,
+        5029,
+        5043,
+        5034,
+        5032,
+        5037,
+        5027,
+        5040,
+        5038,
+        5029,
+        5040,
+        5050,
+        5033,
+        5039,
+        5029,
+        5033,
+        5025,
+        5011,
+        5014,
+        5024,
+        4980,
+        4924,
+        4834,
+        4804,
+        4740,
+        4701,
+        4668,
+        4649,
+        4632,
+        4604,
+        4570,
+        4573,
+        4578,
+        4590,
+        4563,
+        4584,
+        4585,
+        4601,
+        4596,
+        4617,
+        4640,
+        4648,
+        4661,
+        4641,
+        4609,
+        4590,
+        4589,
+        4590,
+        4589,
+        4585,
+        4610,
+        4614,
+        4625,
+        4626,
+        4621,
+        4618,
+        4627,
+        4620,
+        4598,
+        4583,
+        4581,
+        4571,
+        4564,
+        4548,
+        4552
+      ],
+      "miles": 9.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 23,
+      "corners": 6,
+      "climb": 7,
+      "technical": 10
+    }
   }
 ]

@@ -173,5 +173,106 @@
       { "near": [-122.7361174, 44.397629], "maxSnapM": 100 },
       { "near": [-121.5688958, 44.3066237], "maxSnapM": 5000 }
     ]
+  },
+  {
+    "id": "dead-indian-memorial-road",
+    "name": "Dead Indian Memorial Road · CR 722",
+    "area": "Ashland",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "36 miles between Ashland and the Cascade-Siskiyou area, one of the oldest trans-Cascade travel routes in southern Oregon, climbing through Rogue River-Siskiyou National Forest toward the Upper Klamath Basin. Wide, open, sustained curves rather than tight technical work.",
+    "sources": [
+      {
+        "title": "Oregon Encyclopedia: Dead Indian Memorial Road",
+        "url": "https://www.oregonencyclopedia.org/articles/dead_indian_memorial_road/"
+      },
+      {
+        "title": "Motorcycle road review: Dead Indian Memorial Rd (Hwy 722)",
+        "url": "https://www.youtube.com/watch?v=mIft7NlW57s"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Climbs to roughly 5,000 ft, so winter ice and snow are real; check current Jackson County road conditions before a cold-season trip.",
+      "url": "https://jacksoncountyor.gov/roads",
+      "checked": "2026-09-23"
+    },
+    "names": ["Dead Indian Memorial Road"],
+    "refs": ["CR 722"],
+    "anchors": [
+      { "near": [-122.6555889, 42.1825534], "maxSnapM": 50 },
+      { "near": [-122.1909425, 42.3981726], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "highway-66-green-springs",
+    "name": "Highway 66 · Green Springs Highway",
+    "area": "Ashland",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "60 miles of Oregon Route 66 between Ashland and Klamath Falls, leaving Ashland on tight rhythmic hairpins that gain 2,500 ft in a few miles before settling into a longer mountain crossing. Narrow shoulders and stingily placed guardrails above Tyler Creek Canyon.",
+    "sources": [
+      {
+        "title": "Pashnit: Highway 66 – Green Springs Highway, Oregon",
+        "url": "https://www.pashnit.com/post/highway-66-green-springs-highway-oregon"
+      },
+      {
+        "title": "Motorcycle Roads NorthWest: Oregon State Route 66 (Ashland to Klamath Falls)",
+        "url": "https://www.roadsnw.com/rnw/49/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Check current ODOT conditions before a winter trip; the climb out of Ashland gains significant elevation quickly and sees real weather.",
+      "url": "https://tripcheck.com/",
+      "checked": "2026-09-23"
+    },
+    "names": ["Ashland Street", "Green Springs Highway", "Greensprings Drive"],
+    "refs": ["OR 66"],
+    "anchors": [
+      { "near": [-122.6918604, 42.1855311], "maxSnapM": 50 },
+      { "near": [-121.8042154, 42.191156], "maxSnapM": 50 }
+    ]
+  },
+  {
+    "id": "hyatt-prairie-road",
+    "name": "Hyatt Prairie Road",
+    "area": "Ashland",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "10 miles connecting Highway 66 near Green Springs Inn to Dead Indian Memorial Road, past Hyatt Lake. Narrow, mostly single-lane in character and rougher pavement than either road it connects — but it turns the two into a genuine loop instead of an out-and-back.",
+    "sources": [
+      {
+        "title": "OpenStreetMap: Hyatt Prairie Road",
+        "url": "https://www.openstreetmap.org/way/35581026"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Narrower and rougher than the two roads it connects; treat it as a deliberate, slower link between them rather than a road to carry speed on.",
+      "url": "https://jacksoncountyor.gov/roads",
+      "checked": "2026-09-23"
+    },
+    "names": ["Hyatt Prairie Road", "Old Hyatt Prairie Road"],
+    "refs": [],
+    "anchors": [
+      { "near": [-122.4701163, 42.174271], "maxSnapM": 50 },
+      { "near": [-122.449339, 42.265921], "maxSnapM": 50 }
+    ]
   }
 ]

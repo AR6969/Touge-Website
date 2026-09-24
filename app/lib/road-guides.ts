@@ -728,4 +728,49 @@ roadGuides["santiam-pass"] = {
   ],
 };
 
+roadGuides["dead-indian-memorial-road"] = {
+  heading: "Dead Indian Memorial Road: Ashland to the Cascade-Siskiyou",
+  title: "Dead Indian Memorial Road (CR 722): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Dead Indian Memorial Road drive: 36 miles of one of the oldest trans-Cascade routes in southern Oregon, wide and open rather than tight, climbing above 5,000 ft.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "This is one of the oldest trans-Cascade travel routes in southern Oregon, connecting Ashland and the Rogue River Valley with the Upper Klamath Basin. 67 counted bends over 36.4 miles at a 1.8 per mile density makes this a wide, open, sustained-curve road rather than a tight technical one — well suited to a car with real power, since there's room to actually use it between corners. Our own measured high point came back at 5,407 ft.", source: { title: "Oregon Encyclopedia: Dead Indian Memorial Road", url: "https://www.oregonencyclopedia.org/articles/dead_indian_memorial_road/" } },
+    { text: "Combined with Highway 66 back into Ashland, this forms one of the classic southern Oregon driving loops — Hyatt Prairie Road cuts across between the two if you want to shorten it rather than doing a long out-and-back on either road alone." },
+  ],
+  connections: [
+    { roadId: "highway-66-green-springs", note: "The two roads form a loop back into Ashland; Hyatt Prairie Road cuts across between them." },
+    { roadId: "hyatt-prairie-road", note: "A narrower, rougher shortcut across to Highway 66 near Green Springs Inn." },
+  ],
+};
+
+roadGuides["highway-66-green-springs"] = {
+  heading: "Highway 66: Ashland to Klamath Falls",
+  title: "Highway 66 / Green Springs Highway: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Highway 66 drive from Ashland to Klamath Falls: tight rhythmic hairpins gaining 2,500 ft in the first few miles, then a longer mountain crossing with narrow shoulders and thin guardrail.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "Leaving Ashland, OR 66 immediately climbs a series of tight, rhythmic hairpins that gain roughly 2,500 ft in a handful of miles — our own measured high point of 4,695 ft lines up almost exactly with Ashland's own elevation (about 1,900 ft) plus that climb. 119 counted bends over 59 miles at a 2.0 per mile density, narrower and tighter than Dead Indian Memorial Road nearby, with thin guardrail above Tyler Creek Canyon on the way up.", source: { title: "Pashnit: Highway 66 – Green Springs Highway, Oregon", url: "https://www.pashnit.com/post/highway-66-green-springs-highway-oregon" } },
+    { text: "This is consistently recommended in motorcycle touring communities as one of the best roads in southern Oregon, often paired with a stop at the Green Springs Inn partway up. Hyatt Prairie Road branches off near the inn if you want to cut across to Dead Indian Memorial Road instead of running the whole highway to Klamath Falls." },
+  ],
+  connections: [
+    { roadId: "dead-indian-memorial-road", note: "The two roads form a loop back into Ashland; Hyatt Prairie Road cuts across between them." },
+    { roadId: "hyatt-prairie-road", note: "Branches off near Green Springs Inn toward Dead Indian Memorial Road." },
+  ],
+};
+
+roadGuides["hyatt-prairie-road"] = {
+  heading: "Hyatt Prairie Road: The Shortcut Between Them",
+  title: "Hyatt Prairie Road: Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Hyatt Prairie Road connector: 10 miles linking Highway 66 to Dead Indian Memorial Road past Hyatt Lake, narrower and rougher than either road it joins.",
+  updated: "2026-09-23",
+  notes: [
+    { text: "This is the link that turns Highway 66 and Dead Indian Memorial Road into an actual loop instead of two separate out-and-back drives: 10 miles past Hyatt Lake, climbing to 5,049 ft. 19 counted bends over that distance at a 2.0 per mile density — similar density to Highway 66 itself, but narrower and described by people who drive it regularly as mostly single-lane in character with rougher pavement than either road it connects." },
+    { text: "Treat this as the deliberate, slower link in the loop rather than a road to carry speed on — the payoff is completing the loop, not the segment itself. It's the kind of road that rewards knowing it's there rather than one that shows up in general trip-planning searches." },
+  ],
+  connections: [
+    { roadId: "highway-66-green-springs", note: "Meets Highway 66 near Green Springs Inn." },
+    { roadId: "dead-indian-memorial-road", note: "Meets Dead Indian Memorial Road at its northern end." },
+  ],
+};
+
 export const guidedRoadIds = Object.keys(roadGuides);

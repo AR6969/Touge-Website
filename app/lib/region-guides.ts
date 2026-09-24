@@ -53,4 +53,5 @@ export const regionIntroductions: Record<string, string> = {
   "columbia-river-gorge-oregon": "The Historic Columbia River Highway is America's first planned scenic roadway, built specifically for the waterfalls it passes — expect real weekend congestion, not a clear run. Larch Mountain Road branches off near Corbett for a completely different, technical climb.",
   "willamette-national-forest": "Aufderheide Drive runs 58 miles through old-growth forest with no gas stations or cell service anywhere on the route — a Forest Service road, not a state highway, so plan accordingly.",
   "santiam-canyon": "Santiam Pass (US 20) stays open year-round, unlike McKenzie Pass just to the south — the two byways combine into one loop with very different characters, from sustained approach to technical lava-field switchbacks.",
+  "ashland": "Dead Indian Memorial Road and Highway 66 form a classic loop out of Ashland — wide and open on one side, tight hairpins on the other — with Hyatt Prairie Road as the narrower, rougher shortcut across between them.",
 };
