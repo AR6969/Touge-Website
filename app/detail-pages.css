@@ -31,3 +31,8 @@
 .road-connections li { padding: 8px 0 14px; border-bottom: 1px solid #2f3b34; }
 .road-connections a { display: inline-flex; align-items: center; min-height: 44px; }
 .road-connections span { display: block; color: #a4b4aa; font-size: 14px; }
+.further-reading { list-style: none; padding: 0; }
+.further-reading li { padding: 8px 0 14px; border-bottom: 1px solid #2f3b34; }
+.further-reading a { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; }
+.further-reading .card-meta { margin-bottom: 4px; }
+.further-reading li > span:last-child { display: block; color: #a4b4aa; font-size: 14px; }

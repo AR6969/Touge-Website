@@ -13,8 +13,9 @@ import { siteUrl } from "../../lib/site";
 import { drives } from "../../lib/drives";
 import RoadVideos from "../../road-videos";
 import { videosForRoads } from "../../lib/road-videos";
-import EmbeddedVideo from "../../embedded-video";
-import { embedVideoForRoad } from "../../lib/embed-videos";
+import EmbeddedVideos from "../../embedded-video";
+import { embedVideosForRoad } from "../../lib/embed-videos";
+import { readingForRoad } from "../../lib/further-reading";
 import { getRoadGuide } from "../../lib/road-guides";
 import ExternalArrow from "../../external-arrow";
 import "../../detail-pages.css";
@@ -57,7 +58,8 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
   const nearby = nearbyRoads(road);
   const relatedDrives = drives.filter(drive => drive.steps.some(step => step.roadId === road.id));
   const videos = videosForRoads([road.id]);
-  const embedVideo = embedVideoForRoad(road.id);
+  const embedVideos = embedVideosForRoad(road.id);
+  const reading = readingForRoad(road.id);
   const color = colorFor(road.character);
   // Coordinates rather than a "name, area, California" text query: that
   // hardcoded state name broke the link outright for every road outside
@@ -118,7 +120,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
         <nav className="detail-actions" aria-label="Road shortcuts">
           <Link href={roadMapHref(road)}>Explore on the map →</Link>
           {editorial && <a href="#drive-notes">Plan the drive ↓</a>}
-          {(videos.length > 0 || embedVideo) && <a href="#on-the-road">Watch the road ↓</a>}
+          {(videos.length > 0 || embedVideos.length > 0) && <a href="#on-the-road">Watch the road ↓</a>}
           {relatedDrives.length > 0 && <a href="#driving-guides">Drives with this road ↓</a>}
           <a href="#nearby">Nearby roads ↓</a>
         </nav>
@@ -129,7 +131,7 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <span className="fine"> · Reviewed {road.access.checked}</span>
         </p>}
 
-        {videos.length > 0 ? <RoadVideos videos={videos} /> : embedVideo && <EmbeddedVideo video={embedVideo} />}
+        {videos.length > 0 ? <RoadVideos videos={videos} /> : embedVideos.length > 0 && <EmbeddedVideos videos={embedVideos} />}
 
         {editorial && <section className="road-planning" aria-labelledby="drive-notes">
           <h2 id="drive-notes">Planning the drive</h2>
@@ -145,6 +147,18 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           </ul>
           {relatedDrives.length > 0 && <p>Full route: <Link href={`/drives/${relatedDrives[0].slug}`}>{relatedDrives[0].title} →</Link></p>}
           <p className="fine">Driving notes updated <time dateTime={editorial.updated}>{new Date(`${editorial.updated}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>.</p>
+        </section>}
+
+        {reading.length > 0 && <section aria-labelledby="further-reading">
+          <h2 id="further-reading">Further reading</h2>
+          <ul className="further-reading">
+            {reading.map(link => <li key={link.url}>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title} <ExternalArrow /></a>
+              <span className="card-meta">{link.publisher} · <time dateTime={link.published}>{new Date(`${link.published}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })}</time></span>
+              <span>{link.note}</span>
+            </li>)}
+          </ul>
+          <p className="fine">Outside writing we recommend, not TougeMap&rsquo;s. Dates are when each piece was published, so check current access before you go.</p>
         </section>}
 
         <section aria-labelledby="shape">

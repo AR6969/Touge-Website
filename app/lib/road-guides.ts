@@ -224,8 +224,8 @@ const roadGuides: Record<string, RoadGuide> = {
   "the-snake": {
     "heading": "The Snake: Mulholland Highway",
     "title": "The Snake on Mulholland Highway: Road Guide | TougeMap",
-    "description": "Explore the Snake on Mulholland Highway between Kanan and Sierra Creek roads. Map, tight mountain bends, Rock Store context and official access information.",
-    "updated": "2026-09-15",
+    "description": "Explore the Snake on Mulholland Highway between Kanan and Sierra Creek roads. Map, tight mountain bends, Rock Store context, the 2025 reopening, ride videos and official access information.",
+    "updated": "2026-11-13",
     "notes": [
       {
         "text": "The Snake is the compact, twisting Mulholland Highway section in the Santa Monica Mountains near the Rock Store. This page maps the Kanan Road to Sierra Creek Road corridor, including the famous bends. It is part of Mulholland Highway in the Malibu mountains, separate from Mulholland Drive in the Hollywood Hills.",
@@ -239,6 +239,13 @@ const roadGuides: Record<string, RoadGuide> = {
         "source": {
           "title": "LA County: current road closures",
           "url": "https://pw.lacounty.gov/roadclosures/"
+        }
+      },
+      {
+        "text": "The Snake was closed for about seven years after the 2018 Woolsey Fire and reopened quietly in late 2025, after LA County Public Works found it didn't meet the criteria for a permanent closure. Neighbors near Seminole Springs still deal with crashes and engine noise, which is a big part of why the reopening was kept low-key. Keep it quiet through the residential stretch.",
+        "source": {
+          "title": "LAist: The Snake has reopened (December 2025)",
+          "url": "https://laist.com/news/la-history/an-iconic-stretch-of-mulholland-called-the-snake-has-reopened-ever-so-quietly-heres-its-roaring-history"
         }
       }
     ],
