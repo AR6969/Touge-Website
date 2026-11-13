@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latestDate([
         indexUpdated,
         ...region.roads.map(road => road.reviewed),
+        ...region.roads.flatMap(road => getRoadGuide(road.id)?.updated ?? []),
         ...drives.filter(drive => drive.steps.some(step => region.roads.some(road => road.id === step.roadId))).map(drive => drive.updated),
       ]),
       changeFrequency: "monthly" as const,

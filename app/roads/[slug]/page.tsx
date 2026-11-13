@@ -154,11 +154,11 @@ export default async function RoadPage({ params }: PageProps<"/roads/[slug]">) {
           <ul className="further-reading">
             {reading.map(link => <li key={link.url}>
               <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title} <ExternalArrow /></a>
-              <span className="card-meta">{link.publisher} · <time dateTime={link.published}>{new Date(`${link.published}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })}</time></span>
+              <span className="card-meta">{link.publisher}{link.published && <> · <time dateTime={link.published}>{new Date(`${link.published}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })}</time></>}</span>
               <span>{link.note}</span>
             </li>)}
           </ul>
-          <p className="fine">Outside writing we recommend, not TougeMap&rsquo;s. Dates are when each piece was published, so check current access before you go.</p>
+          <p className="fine">Outside writing we recommend, not TougeMap&rsquo;s. Dates show when each piece was published, so check current access before you go.</p>
         </section>}
 
         <section aria-labelledby="shape">

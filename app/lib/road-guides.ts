@@ -353,12 +353,15 @@ const roadGuides: Record<string, RoadGuide> = {
   },
   "tail-of-the-dragon": {
     heading: "Tail of the Dragon: Deals Gap to Chilhowee Lake",
-    title: "Tail of the Dragon (US 129): Route, Map & Driving Notes | TougeMap",
-    description: "Plan a run on the Tail of the Dragon: 318 curves in 11 miles, no intersections or driveways, and what that actually means for how the road drives.",
-    updated: "2026-09-16",
+    title: "Tail of the Dragon (US 129): Map, 318 Curves, History & Videos | TougeMap",
+    description: "Plan a run on the Tail of the Dragon: 318 curves in 11 miles, the Tree of Shame at Deals Gap, the dam from The Fugitive, ride videos, history and what the road is really like to drive.",
+    updated: "2026-11-13",
     notes: [
       { text: "The Dragon packs 115 counted bends and 24 switchbacks into 11.0 miles — 10.5 bends per mile, in the same range as this catalog's tightest California roads, sustained over a much longer stretch than most of them manage. What makes it unusual isn't just the count: there are no intersections, driveways or side roads anywhere on it, so every vehicle on the road is there to drive it, not to get somewhere. Much of it also has no guardrail, with the road cut into the hillside above the Little Tennessee River gorge.", source: { title: "US129DragonsTail.com: Tail of the Dragon overview", url: "https://www.us129dragonstail.com/" } },
       { text: "Go on a weekday if you want the road to yourself; April through October is the season, and weekends bring heavy motorcycle and sports-car traffic in both directions on a road with no passing lanes. The road currently also carries detour traffic from I-40 repairs near the state line, so TDOT and NCDOT enforce a strict length limit — no truck-trailer combinations or single units over 30 ft — check current conditions before relying on it being clear.", source: { title: "TDOT: Tennessee 511 traveler information", url: "https://www.tn.gov/tdot/welcome-to-tennessee-511.html" } },
+      { text: "Long before it was a destination, this was a working route, and bootleggers are said to have used its curves to outrun the law. At the Deals Gap end, the motorcycle resort's Tree of Shame is hung with parts from crashed cars and bikes, and photographers from outfits like Killboy shoot every vehicle that comes through and post the pictures by date.", source: { title: "The Globe and Mail: Tail of the Dragon, a road trip for people who love driving", url: "https://www.theglobeandmail.com/globe-drive/news/off-the-streets/tail-of-the-dragon-a-road-trip-for-people-who-love-driving/article19467615/" } },
+      { text: "Just south of Deals Gap on US 129, Cheoah Dam is where The Fugitive (1993) filmed Harrison Ford's dam jump. The crew shot it on location, rigging a pipe out over the lip of the dam so the camera could sit behind Ford with the real drop in frame. There are pull-offs along 129 with a view of the dam.", source: { title: "SlashFilm: How The Fugitive pulled off its brilliant dam jump scene", url: "https://www.slashfilm.com/815419/how-the-fugitive-pulled-off-its-brilliant-dam-jump-scene/" } },
+      { text: "The \"Tail of the Dragon\" name dates to 1981; locally it's Calderwood Highway on the Tennessee side and Tapoco Road in North Carolina. The fame has a real cost. About 37 people died in crashes on this stretch between 2000 and 2017, and on summer weekends the Blount County Rescue Squad stages nearby because an ambulance can take over an hour to arrive. The speed limit dropped from 55 to 30 mph in 2005, and Tennessee enforcement has stepped up sharply since 2007.", source: { title: "Wikipedia: Deals Gap, North Carolina", url: "https://en.wikipedia.org/wiki/Deals_Gap,_North_Carolina" } },
     ],
     connections: [
       { roadId: "cherohala-skyway", note: "A completely different character at the Robbinsville end: long sweepers over a much longer climb instead of tight switchbacks." },
@@ -367,9 +370,9 @@ const roadGuides: Record<string, RoadGuide> = {
   },
   "cherohala-skyway": {
     heading: "Cherohala Skyway: Tellico Plains to Robbinsville",
-    title: "Cherohala Skyway: Route, Map & Driving Notes | TougeMap",
-    description: "Plan the Cherohala Skyway: 41.6 miles of long, sweeping mountain curves climbing to over 5,300 ft between Tennessee and North Carolina, and what that means next to the Dragon's tight switchbacks.",
-    updated: "2026-09-16",
+    title: "Cherohala Skyway: Route, Map, History & Videos | TougeMap",
+    description: "Plan the Cherohala Skyway: 41.6 miles of long, sweeping mountain curves climbing to over 5,300 ft, the 34-year story behind it, ride videos, and how it compares to the Dragon.",
+    updated: "2026-11-13",
     notes: [
       { text: "The Skyway is built for a completely different rhythm than the Dragon it connects to: 149 bends and 34 switchbacks sound similar until you spread them over 41.6 miles instead of 11 — a density of 3.6 per mile against the Dragon's 10.5. These are long, high-speed sweepers with real sightlines, not blind hairpins, climbing steadily to 5,382 ft. It rewards a smooth, sustained rhythm rather than the Dragon's braking-and-recovery demands.", source: { title: "National Scenic Byway Foundation: Cherohala Skyway", url: "https://nsbfoundation.com/nb/cherohala-skyway-nc/" } },
       { text: "The road closes without much warning above roughly 4,000 ft when ice or snow hits, typically November through March. North Carolina plows its side; Tennessee's side doesn't get the same treatment, so a closed gate at the Robbinsville end can mean the upper sections are out even when the Tennessee approach looks clear. Check current status before a winter or early-spring run.", source: { title: "Cherohala.org: winter conditions", url: "http://www.cherohala.org/winter.html" } },
@@ -473,12 +476,14 @@ const roadGuides: Record<string, RoadGuide> = {
 
 roadGuides["moonshiner-28"] = {
   heading: "Moonshiner 28: Deals Gap to Franklin",
-  title: "Moonshiner 28 (NC 28): Route, Map & Driving Notes | TougeMap",
-  description: "Plan Moonshiner 28 south from Deals Gap: 220 bends over 55.5 miles, nearly continuous curves the whole way, named for its Prohibition-era history.",
-  updated: "2026-09-22",
+  title: "Moonshiner 28 (NC 28): Route, Map, Moonshine History & Videos | TougeMap",
+  description: "Plan Moonshiner 28 south from Deals Gap: 220 bends over 55.5 miles, its Prohibition-era bootlegging history, Fontana Dam, and ride videos.",
+  updated: "2026-11-13",
   notes: [
     { text: "This picks up exactly where the Tail of the Dragon ends and doesn't let up: 220 counted bends and 25 switchbacks over 55.5 miles, a sustained density (4.0 bends per mile) held over five times the distance of the Dragon itself. The name is real history, not marketing — bootleggers used this route to move liquor across the NC/TN line during Prohibition because its remoteness and endless curves made it hard to intercept.", source: { title: "Rider Magazine: Riding 'Shine Country", url: "https://ridermagazine.com/2020/02/25/riding-shine-country-the-tail-of-the-dragon-and-north-carolinas-moonshiner-28/" } },
     { text: "Far less trafficked than the Dragon it connects to — most visitors turn around at Deals Gap rather than continuing south — which is the appeal and the risk in the same breath: fewer other cars, but also fewer people around if something goes wrong on a long remote stretch. Check current North Carolina road conditions before relying on it; this is mountain terrain that sees real rockslides and washouts." },
+    { text: "North Carolina went dry in 1908, twelve years before national Prohibition, and that long dry spell built a backwoods trade in moonshine. Winding, state-line-crossing roads like this one were the getaway routes, which is where the Moonshiner 28 nickname comes from.", source: { title: "Islands: A secret two-lane route through North Carolina's moonshine country", url: "https://www.islands.com/1912945/secret-scenic-two-lane-route-moonshiner-28-north-carolina-moonshine-country-crowd-free-road-trip/" } },
+    { text: "Part of today's road exists because of a dam. When the TVA built Fontana Dam between 1942 and 1944, the new lake swallowed most of old NC 288. The replacement road along the lake was finished between Fontana and Almond, and the whole route was renumbered NC 28 in 1954. The dam is a short detour off the route.", source: { title: "Wikipedia: North Carolina Highway 28", url: "https://en.wikipedia.org/wiki/North_Carolina_Highway_28" } },
   ],
   connections: [
     { roadId: "tail-of-the-dragon", note: "Starts exactly where the Dragon ends at Deals Gap." },
@@ -536,11 +541,12 @@ roadGuides["deer-creek-canyon-road"] = {
 roadGuides["foothills-parkway"] = {
   heading: "Foothills Parkway: Chilhowee to Wears Valley",
   title: "Foothills Parkway: Route, Map & Driving Notes | TougeMap",
-  description: "Plan the Foothills Parkway drive from the Tail of the Dragon's own end toward Wears Valley: 90 bends over 31.6 miles of wide, sweeping ridge road, nothing like the Dragon it connects to.",
-  updated: "2026-09-22",
+  description: "Plan the Foothills Parkway drive from the Tail of the Dragon's own end toward Wears Valley: 90 bends over 31.6 miles of sweeping ridge road, and the story of the Missing Link that took until 2018 to finish.",
+  updated: "2026-11-13",
   notes: [
     { text: "This western section of the Foothills Parkway starts at US 129 in Chilhowee — literally the Tail of the Dragon's own northern end — and runs 31.6 miles to US 321 at Wears Valley. Despite starting where the Dragon does, it drives nothing like it: 90 bends over that distance is a density of 2.8 per mile, wide lanes and sweeping curves built for sustained ridge views of the Smokies rather than tight technical work. Treat it as the decompression drive after the Dragon, not a second dose of the same thing.", source: { title: "Wikipedia: Foothills Parkway", url: "https://en.wikipedia.org/wiki/Foothills_Parkway" } },
     { text: "This is a National Park Service road, and it has its own separate history of weather and construction closures apart from the Dragon or the Cherohala Skyway nearby — a clear US 129 doesn't mean the Parkway is open. Check current NPS conditions before relying on it." },
+    { text: "The Walland to Wears Valley stretch went unfinished for almost 30 years. Work started in 1966, then stopped in 1989 on a 1.65-mile gap nicknamed the Missing Link, after retaining walls failed and crews hit pyrite that turns acidic in rain. The fix was a run of nine bridges, the longest an 800-ft S-curve, and the full section finally opened on November 10, 2018.", source: { title: "NPS: A Step Closer to Completing the \"Missing Link\"", url: "https://www.nps.gov/grsm/learn/news/bridge-2-complete.htm" } },
   ],
   connections: [
     { roadId: "tail-of-the-dragon", note: "Starts at the exact same US 129 junction where the Dragon ends, at the Chilhowee end." },
@@ -842,6 +848,66 @@ roadGuides["coronado-trail"] = {
     { text: "The road is narrow and has no shoulders along the mountain sections, and Hannagan Meadow is the only stop between the mine and Alpine. There's no fuel and little cell service, so fill up in Morenci or Alpine and check snow conditions at the high end before going in winter.", source: { title: "Wikipedia: U.S. Route 191 in Arizona", url: "https://en.wikipedia.org/wiki/U.S._Route_191_in_Arizona" } },
   ],
   connections: [],
+};
+
+roadGuides["mulholland-highway-malibu"] = {
+  heading: "Mulholland Highway: Decker Road to Kanan Dume",
+  title: "Mulholland Highway (Malibu): Route, Map, History & Videos | TougeMap",
+  description: "Plan the western Mulholland Highway between Decker and Kanan Dume roads: 37 bends over 5.2 miles, its 1928 history, the Rock Store, Paramount Ranch, and further reading.",
+  updated: "2026-11-13",
+  notes: [
+    { text: "Mulholland Highway was built through the 1920s and opened in 1928, named for engineer William Mulholland, as a way to get Angelenos from the city to the ocean. Only two parts of it are official California scenic highway: the stretch from PCH to Kanan, and the section through Malibu Creek State Park. Decker Canyon Road and Kanan Road were original major junctions, and they still frame this mapped section: 37 counted bends over 5.2 miles along the ridge.", source: { title: "Wikipedia: Mulholland Highway", url: "https://en.wikipedia.org/wiki/Mulholland_Highway" } },
+    { text: "Nearby Paramount Ranch, a movie ranch since Paramount bought it in 1927, lost its Western Town in the 2018 Woolsey Fire. A $26 million rebuild was nearly finished in September 2026, with a reopening planned around the ranch's 2027 centennial.", source: { title: "KCLU: The Paramount Ranch is rising from the ashes", url: "https://www.kclu.org/local-news/2026-09-08/the-paramount-ranch-is-rising-from-the-ashes-after-its-destruction-in-the-2018-woolsey-fire" } },
+  ],
+  connections: [
+    { roadId: "the-snake", note: "Continue east past Kanan to the Snake's hairpins and the Rock Store in Cornell, the motorcycle stop at its foot." },
+    { roadId: "kanan-dume", note: "The eastern junction; Kanan Dume drops through the tunnels to PCH." },
+    { roadId: "decker-canyon", note: "The western junction; Decker (SR 23) is the steep, tight way down to the coast." },
+  ],
+};
+
+roadGuides["decker-canyon"] = {
+  heading: "Decker Canyon: PCH to Mulholland on SR 23",
+  title: "Decker Canyon Road (SR 23): Route, Map & Videos | TougeMap",
+  description: "Plan Decker Canyon Road (SR 23) from PCH to Mulholland: 44 bends and 10 switchbacks in 4.7 miles, the steepest measured grade in the Malibu canyons at 12.4%, plus ride videos.",
+  updated: "2026-11-13",
+  notes: [
+    { text: "Decker climbs from 111 ft at Pacific Coast Highway to 1,668 ft at Mulholland in just 4.7 miles, with 44 counted bends and 10 switchbacks. Our steepest measured grade, 12.4%, is the highest of any Malibu canyon road in this catalog. It's a state highway (SR 23), but it's narrow, with steep drops and little room to pull over, so it's slower going than the route number suggests.", source: { title: "Caltrans: State Route 23 conditions", url: "https://roads.dot.ca.gov/?roadnumber=23" } },
+    { text: "Decker meets Mulholland Highway at one of its original 1920s junctions. Turn east for the ridge run toward Kanan and the Snake, or west toward Yerba Buena and Neptune's Net at the county line.", source: { title: "Wikipedia: Mulholland Highway", url: "https://en.wikipedia.org/wiki/Mulholland_Highway" } },
+  ],
+  connections: [
+    { roadId: "mulholland-highway-malibu", note: "Meets Mulholland at the top; head east for Kanan and the Snake." },
+    { roadId: "yerba-buena-little-sycamore", note: "The tighter, longer canyon to the west, ending near Neptune's Net." },
+  ],
+};
+
+roadGuides["yerba-buena-little-sycamore"] = {
+  heading: "Yerba Buena & Little Sycamore: Neptune's Net to Mulholland",
+  title: "Yerba Buena Road & Little Sycamore: Route, Map, Neptune's Net & Videos | TougeMap",
+  description: "Plan Yerba Buena Road and Little Sycamore Canyon: 127 bends over 10.9 miles, the twistiest Malibu canyon by bends per mile, starting near Neptune's Net, the PCH stop from The Fast and the Furious.",
+  updated: "2026-11-13",
+  notes: [
+    { text: "By the numbers this is the twistiest road in the Malibu mountains: 127 counted bends over 10.9 miles, 11.7 per mile, climbing from 47 ft near the coast to 2,294 ft. It runs narrow and quiet across the Ventura County line, and the touge community around LA rates it highly for exactly that reason. Treat it as a narrow back road with blind corners, not a place to push.", source: { title: "r/Touge: LA-area road recommendations", url: "https://www.reddit.com/r/Touge/comments/1rfuxan/attention_all_who_live_in_and_around_los_angeles/" } },
+    { text: "At the coast end is Neptune's Net, a seafood stop at the LA–Ventura county line since the 1950s. It's where Dom and Brian meet in The Fast and the Furious (2001), and it also shows up in Point Break. It's the natural start or finish for this road.", source: { title: "Discover Los Angeles: Fast and the Furious filming locations", url: "https://www.discoverlosangeles.com/things-to-do/go-on-location-los-angeles-locations-from-the-fast-and-the-furious-movies" } },
+  ],
+  connections: [
+    { roadId: "decker-canyon", note: "The next canyon east, shorter and steeper, back down to PCH." },
+    { roadId: "mulholland-highway-malibu", note: "Little Sycamore and Yerba Buena both reach Mulholland Highway inland." },
+  ],
+};
+
+roadGuides["malibu-canyon-las-virgenes"] = {
+  heading: "Malibu Canyon: PCH to Las Virgenes and the M*A*S*H Country",
+  title: "Malibu Canyon Road & Las Virgenes: Route, Map, Film History & Videos | TougeMap",
+  description: "Plan the Malibu Canyon and Las Virgenes drive: 9.7 miles of sweeping canyon road past Malibu Creek State Park, the old 20th Century Fox Ranch where M*A*S*H and Planet of the Apes were filmed.",
+  updated: "2026-11-13",
+  notes: [
+    { text: "This is the wide, sweeping way through the mountains rather than a tight one: 17 counted bends over 9.7 miles, with no switchbacks at all, following Malibu Creek from PCH up through the canyon and onto Las Virgenes Road. It carries real through traffic between the coast and US 101, so it's more of a scenic drive than a back road.", source: { title: "Helen's Cycles: favorite rides and routes", url: "https://www.helenscycles.com/events/our-favorite-rides-and-routes-pg1456.htm" } },
+    { text: "Malibu Creek State Park, along the inland end, was 20th Century Fox's movie ranch from 1946 until the state bought it in 1974. The original Planet of the Apes (1968) was largely shot here, and the park still holds the outdoor set of M*A*S*H, which draws fans from all over the world. A cage prop from Beneath the Planet of the Apes still sits near Cage Creek Trail.", source: { title: "Malibu Creek State Park: Movies and TV", url: "https://malibucreekstatepark.org/about/movies-tv/" } },
+  ],
+  connections: [
+    { roadId: "mulholland-highway-malibu", note: "Las Virgenes meets Mulholland Highway at the edge of the state park." },
+  ],
 };
 
 export const guidedRoadIds = Object.keys(roadGuides);
