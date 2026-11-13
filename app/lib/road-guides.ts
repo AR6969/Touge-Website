@@ -898,7 +898,7 @@ roadGuides["yerba-buena-little-sycamore"] = {
 
 roadGuides["malibu-canyon-las-virgenes"] = {
   heading: "Malibu Canyon: PCH to Las Virgenes and the M*A*S*H Country",
-  title: "Malibu Canyon Road & Las Virgenes: Route, Map, Film History & Videos | TougeMap",
+  title: "Malibu Canyon Road & Las Virgenes: Route, Map & M*A*S*H Film History | TougeMap",
   description: "Plan the Malibu Canyon and Las Virgenes drive: 9.7 miles of sweeping canyon road past Malibu Creek State Park, the old 20th Century Fox Ranch where M*A*S*H and Planet of the Apes were filmed.",
   updated: "2026-11-13",
   notes: [
