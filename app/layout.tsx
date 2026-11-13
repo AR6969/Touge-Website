@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { siteName, siteUrl } from "./lib/site";
 import { gaMeasurementId } from "./lib/analytics";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <Analytics />
+        <SpeedInsights />
         {/* Loads only once NEXT_PUBLIC_GA_MEASUREMENT_ID is set. Region
             switches and road/landmark selections are also sent — see
             lib/analytics.ts and the calls in home-map.tsx / road-explorer.tsx. */}
