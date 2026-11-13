@@ -773,4 +773,68 @@ roadGuides["hyatt-prairie-road"] = {
   ],
 };
 
+roadGuides["mount-lemmon"] = {
+  heading: "Mount Lemmon Highway: Tucson to Summerhaven",
+  title: "Mount Lemmon Highway (Catalina Highway): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Mount Lemmon drive: 28.9 miles of the Catalina Highway from Tanque Verde Road to Summerhaven, 100 counted bends and a measured 6,600 ft of climbing from desert to pine forest.",
+  updated: "2026-11-12",
+  notes: [
+    { text: "We measured 6,604 ft of climbing from 2,558 ft at Tanque Verde Road to 8,178 ft near Summerhaven, which matches the published figure of more than 6,000 ft. Over 28.9 miles we counted 100 bends and 18 switchbacks, and the grade never goes past 6.4%, so it's a long, steady climb rather than a steep one. The plant life changes from saguaros to pine, fir and aspen on the way up.", source: { title: "Wikipedia: Catalina Highway", url: "https://en.wikipedia.org/wiki/Catalina_Highway" } },
+    { text: "The FHWA counts about a million visitors a year, and local cycling groups sometimes take 200+ riders to the top at once. Weekend mornings are the busiest time for bikes. Snow can close the upper switchbacks or require chains in winter, so check AZ 511 first.", source: { title: "AZ 511: Arizona road conditions", url: "https://az511.com/" } },
+  ],
+  connections: [],
+};
+
+roadGuides["oak-creek-canyon"] = {
+  heading: "Oak Creek Canyon: Sedona to the Mogollon Rim",
+  title: "Oak Creek Canyon (SR 89A): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Oak Creek Canyon drive: 15.6 miles of SR 89A from the Sedona Y past Slide Rock to the top of the switchbacks at 6,445 ft, with real weekend congestion to plan around.",
+  updated: "2026-11-12",
+  notes: [
+    { text: "Most of the canyon is a gentle run beside the creek. The driving is at the north end, where 8 switchbacks climb the Mogollon Rim to a measured 6,445 ft, up from 4,302 ft in Sedona. Trucks over 50 ft are barred from the hairpins. We counted 47 bends over the 15.6 miles.", source: { title: "Wikipedia: Arizona State Route 89A", url: "https://en.wikipedia.org/wiki/Arizona_State_Route_89A" } },
+    { text: "ADOT readers voted this Arizona's top scenic drive, and the traffic shows it. Slide Rock State Park and the Uptown Sedona roundabouts back up on summer and fall weekends. An early weekday start is the way to get the switchbacks without a line of cars ahead.", source: { title: "ADOT: SR 89A through Oak Creek Canyon rules Arizona's scenic drives", url: "https://azdot.gov/adot-blog/your-opinion-sr-89a-through-oak-creek-canyon-rules-arizonas-scenic-drives" } },
+  ],
+  connections: [
+    { roadId: "mingus-mountain", note: "The other half of SR 89A's Verde Valley crossing, about 30 miles southwest through Cottonwood." },
+  ],
+};
+
+roadGuides["mingus-mountain"] = {
+  heading: "Mingus Mountain: Jerome to Prescott Valley",
+  title: "Mingus Mountain (SR 89A): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Mingus Mountain drive: 16.1 miles of SR 89A from Jerome over a measured 7,026 ft summit to Prescott Valley, with 75 counted bends and 17 switchbacks.",
+  updated: "2026-11-12",
+  notes: [
+    { text: "By the numbers this is the twistiest Arizona road per mile in this catalog: 75 bends and 17 switchbacks over 16.1 miles, with grades up to 7.4%. Our measured summit came back at 7,026 ft, right in line with the roughly 7,000 ft crest riders quote. Jerome sits on the mountainside below, and its narrow main street is the slow start.", source: { title: "Wikipedia: Arizona State Route 89A", url: "https://en.wikipedia.org/wiki/Arizona_State_Route_89A" } },
+    { text: "Riders regularly name this one of the best motorcycling roads in Arizona, with guard rails and long views over the Verde Valley. In winter the summit hairpins can carry snow and cinders after a storm, so check conditions before heading up.", source: { title: "Rider Magazine: Favorite Ride: Jerome to Oatman, Arizona", url: "https://ridermagazine.com/2021/10/01/favorite-ride-jerome-to-oatman-arizona/" } },
+  ],
+  connections: [
+    { roadId: "oak-creek-canyon", note: "Continue northeast on SR 89A through Cottonwood and Sedona to reach the canyon." },
+  ],
+};
+
+roadGuides["salt-river-canyon"] = {
+  heading: "Salt River Canyon: Rim to Rim on US 60",
+  title: "Salt River Canyon (US 60): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Salt River Canyon drive: 14 miles of US 60 dropping to the river at a measured 3,408 ft and climbing back out, with 8 switchbacks and the original 1934 bridge at the bottom.",
+  updated: "2026-11-12",
+  notes: [
+    { text: "This section runs from the south rim down to the Salt River and back up the north side. We measured the river crossing at 3,408 ft and counted 40 bends and 8 switchbacks over 14 miles, with grades up to 7.0%. The rest area at the bottom has a viewpoint under the bridge, and the original steel bridge next to the newer one is open to walk across.", source: { title: "Arizona Highways: Salt River Canyon", url: "https://www.arizonahighways.com/salt-river-canyon" } },
+    { text: "US 60 crosses the San Carlos and Fort Apache Indian Reservations here and is the main route between Globe and Show Low, so expect trucks. Rain and snow make the canyon hairpins slick, so this works best as a fair-weather drive.", source: { title: "Wikipedia: U.S. Route 60 in Arizona", url: "https://en.wikipedia.org/wiki/U.S._Route_60_in_Arizona" } },
+  ],
+  connections: [],
+};
+
+roadGuides["coronado-trail"] = {
+  heading: "Coronado Trail: Morenci to Alpine",
+  title: "Coronado Trail (US 191): Route, Map & Driving Notes | TougeMap",
+  description: "Plan the Coronado Trail: 79 miles of US 191 from the Morenci mine to Alpine, 290 counted bends and 49 switchbacks, climbing to a measured 9,370 ft with no fuel in between.",
+  updated: "2026-11-12",
+  notes: [
+    { text: "ADOT cites 460 curves between Clifton and Springerville. On our shorter Morenci-to-Alpine section we counted 290 bends and 49 switchbacks over 79.2 miles; we count fewer because our method merges small wiggles into one bend. The high point came back at 9,370 ft, near the published 9,200 ft at Blue Vista. The road was US 666, the \"Devil's Highway,\" until 1992.", source: { title: "ADOT: Coronado Trail leads to Arizona's heavenly high country", url: "https://azdot.gov/adot-blog/coronado-trail-leads-arizonas-heavenly-high-country" } },
+    { text: "The road is narrow and has no shoulders along the mountain sections, and Hannagan Meadow is the only stop between the mine and Alpine. There's no fuel and little cell service, so fill up in Morenci or Alpine and check snow conditions at the high end before going in winter.", source: { title: "Wikipedia: U.S. Route 191 in Arizona", url: "https://en.wikipedia.org/wiki/U.S._Route_191_in_Arizona" } },
+  ],
+  connections: [],
+};
+
 export const guidedRoadIds = Object.keys(roadGuides);

@@ -1,11 +1,11 @@
-export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado" | "washington" | "oregon";
+export type MapRegion = "california" | "bay-area" | "los-angeles" | "san-diego" | "sierra" | "southern-appalachians" | "colorado" | "washington" | "oregon" | "arizona";
 
 // The state a region belongs to. California's regions keep their existing
 // flat paths and their own in-map tab switcher (see site-chrome.tsx); a
 // region belonging to a different state gets its own dedicated page instead
 // of joining that switcher, since swapping states is a bigger jump than
 // swapping California sub-regions.
-export type StateId = "california" | "southern-appalachians" | "colorado" | "washington" | "oregon";
+export type StateId = "california" | "southern-appalachians" | "colorado" | "washington" | "oregon" | "arizona";
 
 export const states: Record<StateId, { name: string; defaultRegion: MapRegion }> = {
   california: { name: "California", defaultRegion: "california" },
@@ -13,6 +13,7 @@ export const states: Record<StateId, { name: string; defaultRegion: MapRegion }>
   colorado: { name: "Colorado", defaultRegion: "colorado" },
   washington: { name: "Washington", defaultRegion: "washington" },
   oregon: { name: "Oregon", defaultRegion: "oregon" },
+  arizona: { name: "Arizona", defaultRegion: "arizona" },
 };
 
 export const mapRegions: Record<MapRegion, {
@@ -119,5 +120,15 @@ export const mapRegions: Record<MapRegion, {
     // Frames the Columbia Gorge roads in the north down through the
     // McKenzie River / Willamette National Forest cluster in the south.
     bounds: [[-123.0, 43.6], [-121.3, 45.75]],
+  },
+  arizona: {
+    name: "Arizona",
+    href: "/arizona",
+    pickerTitle: "Sedona, Mount Lemmon & the White Mountains",
+    state: "arizona",
+    center: [-110.8, 33.6],
+    // Frames Oak Creek Canyon and Mingus Mountain in the northwest down to
+    // Mount Lemmon in the south and the Coronado Trail in the east.
+    bounds: [[-112.5, 32.15], [-108.9, 35.15]],
   },
 };

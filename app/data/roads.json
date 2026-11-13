@@ -30857,5 +30857,975 @@
       "climb": 7,
       "technical": 10
     }
+  },
+  {
+    "id": "mount-lemmon",
+    "name": "Mount Lemmon Highway · Catalina Highway",
+    "area": "Santa Catalina Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The Catalina Highway (General Hitchcock Highway) from Tanque Verde Road in Tucson to Summerhaven, climbing more than 6,000 feet from Sonoran Desert saguaros to pine, fir and aspen forest. The only paved road up the Santa Catalinas, with switchbacks above Molino Canyon and heavy cyclist and weekend traffic.",
+    "sources": [
+      {
+        "title": "Wikipedia: Catalina Highway",
+        "url": "https://en.wikipedia.org/wiki/Catalina_Highway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round, but winter snow can bring chain requirements or closures near the top. The FHWA counts about a million visitors a year, and big group cycling rides use it, so expect riders on every switchback.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "mapRegion": "arizona",
+    "center": [
+      -110.7144723,
+      32.3626761
+    ],
+    "bounds": [
+      [
+        -110.7990867,
+        32.2579374
+      ],
+      [
+        -110.6875548,
+        32.4481602
+      ]
+    ],
+    "osmWayIds": [
+      16915314,
+      16925663,
+      16937282,
+      16937359,
+      16939053,
+      45494337,
+      234502971,
+      234502972,
+      234502973,
+      234502974,
+      548277986,
+      635211089,
+      692350097,
+      692350100,
+      795455720,
+      901398559,
+      901398560,
+      901398561,
+      901398562,
+      901398563,
+      992368359,
+      1050443477,
+      1362028388,
+      1362028389
+    ],
+    "reviewed": "2026-11-12",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/arizona-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -110.7990867,
+        32.2579374
+      ],
+      "end": [
+        -110.755105,
+        32.4481602
+      ],
+      "wayNames": [
+        "East Catalina Highway",
+        "General Hitchcock Highway",
+        "North General Hitchcock Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 28.9,
+      "bends": 100,
+      "switchbacks": 18,
+      "curvature": 363,
+      "bendsPerMile": 3.5
+    },
+    "elevation": {
+      "climbFt": 6604,
+      "highFt": 8178,
+      "lowFt": 2558,
+      "reliefFt": 5620,
+      "maxGradient": 6.4,
+      "climbPerMile": 229
+    },
+    "profile": {
+      "points": [
+        2556,
+        2578,
+        2605,
+        2618,
+        2646,
+        2689,
+        2685,
+        2704,
+        2722,
+        2754,
+        2794,
+        2856,
+        2977,
+        3087,
+        3194,
+        3315,
+        3416,
+        3521,
+        3616,
+        3736,
+        3860,
+        3968,
+        4072,
+        4187,
+        4302,
+        4386,
+        4509,
+        4636,
+        4741,
+        4874,
+        4982,
+        5117,
+        5267,
+        5271,
+        5382,
+        5464,
+        5532,
+        5688,
+        5798,
+        5864,
+        5925,
+        6029,
+        6186,
+        6309,
+        6447,
+        6547,
+        6677,
+        6677,
+        6784,
+        6930,
+        6953,
+        7064,
+        7184,
+        7256,
+        7388,
+        7483,
+        7606,
+        7735,
+        7822,
+        7937,
+        8039,
+        8155,
+        8181,
+        8075,
+        7992,
+        7881,
+        7752,
+        7823,
+        7927,
+        7973,
+        7968,
+        7908
+      ],
+      "miles": 29.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 37,
+      "corners": 11,
+      "climb": 16,
+      "technical": 10
+    }
+  },
+  {
+    "id": "oak-creek-canyon",
+    "name": "Oak Creek Canyon · SR 89A",
+    "area": "Oak Creek Canyon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "State Route 89A from the Sedona \"Y\" north through Oak Creek Canyon, past Midgley Bridge and Slide Rock State Park, then up a run of hairpins to the Mogollon Rim at Oak Creek Vista. Voted Arizona's favorite scenic drive in an ADOT reader poll, and drives like it on weekends: slow tourist traffic most of the way.",
+    "sources": [
+      {
+        "title": "Wikipedia: Arizona State Route 89A",
+        "url": "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+      },
+      {
+        "title": "ADOT: Your opinion: SR 89A through Oak Creek Canyon rules Arizona's scenic drives",
+        "url": "https://azdot.gov/adot-blog/your-opinion-sr-89a-through-oak-creek-canyon-rules-arizonas-scenic-drives"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. Trucks over 50 ft are barred from the switchbacks. Summer and fall weekends back up badly around Slide Rock and in Uptown Sedona, so go early on a weekday.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "mapRegion": "arizona",
+    "center": [
+      -111.7535815,
+      34.9587119
+    ],
+    "bounds": [
+      [
+        -111.7611533,
+        34.8693805
+      ],
+      [
+        -111.7276666,
+        35.0319848
+      ]
+    ],
+    "osmWayIds": [
+      112119128,
+      112119134,
+      114306719,
+      280348524,
+      280348525,
+      280348526,
+      280348527,
+      561589534,
+      561589536,
+      772044505,
+      813735664,
+      813735665,
+      813735666,
+      813735667,
+      1049961747,
+      1049961748,
+      1049961751,
+      1049961752,
+      1125497477,
+      1125497478,
+      1125497479,
+      1125497480,
+      1125497481,
+      1125497482,
+      1125497483,
+      1125497484,
+      1125497485,
+      1125497486,
+      1203013603,
+      1203013606,
+      1389674391,
+      1389674392
+    ],
+    "reviewed": "2026-11-12",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/arizona-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -111.7611533,
+        34.8693805
+      ],
+      "end": [
+        -111.7341176,
+        35.0319848
+      ],
+      "wayNames": [
+        "AZ 89A",
+        "Prescott–Flagstaff Highway",
+        "Pumphouse Wash Bridge"
+      ]
+    },
+    "shape": {
+      "lengthMi": 15.6,
+      "bends": 47,
+      "switchbacks": 8,
+      "curvature": 335,
+      "bendsPerMile": 3.0
+    },
+    "elevation": {
+      "climbFt": 2488,
+      "highFt": 6445,
+      "lowFt": 4302,
+      "reliefFt": 2143,
+      "maxGradient": 6.2,
+      "climbPerMile": 159
+    },
+    "profile": {
+      "points": [
+        4340,
+        4320,
+        4307,
+        4342,
+        4388,
+        4456,
+        4510,
+        4521,
+        4544,
+        4541,
+        4545,
+        4547,
+        4518,
+        4493,
+        4521,
+        4542,
+        4522,
+        4543,
+        4578,
+        4633,
+        4689,
+        4658,
+        4683,
+        4741,
+        4728,
+        4730,
+        4814,
+        4816,
+        4834,
+        4862,
+        4898,
+        4948,
+        4965,
+        4986,
+        5022,
+        5060,
+        5055,
+        5110,
+        5128,
+        5186,
+        5211,
+        5227,
+        5236,
+        5270,
+        5306,
+        5333,
+        5331,
+        5326,
+        5368,
+        5392,
+        5434,
+        5429,
+        5455,
+        5476,
+        5488,
+        5510,
+        5542,
+        5579,
+        5603,
+        5635,
+        5681,
+        5750,
+        5813,
+        5884,
+        5951,
+        6010,
+        6082,
+        6159,
+        6225,
+        6300,
+        6382,
+        6449
+      ],
+      "miles": 15.7,
+      "coverage": 100
+    },
+    "score": {
+      "score": 31,
+      "corners": 10,
+      "climb": 11,
+      "technical": 10
+    }
+  },
+  {
+    "id": "mingus-mountain",
+    "name": "Mingus Mountain · SR 89A",
+    "area": "Verde Valley",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "State Route 89A from the hillside mining town of Jerome over Mingus Mountain and down into Prescott Valley. The Mingus Mountain Scenic Road climbs the Black Hills through a series of guard-railed hairpins, and it's one of the most-recommended roads in Arizona among riders.",
+    "sources": [
+      {
+        "title": "Wikipedia: Arizona State Route 89A",
+        "url": "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+      },
+      {
+        "title": "Rider Magazine: Favorite Ride: Jerome to Oatman, Arizona",
+        "url": "https://ridermagazine.com/2021/10/01/favorite-ride-jerome-to-oatman-arizona/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. Winter storms can put snow and cinders on the hairpins near the summit, and Jerome's main street is slow, narrow and full of pedestrians.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "mapRegion": "arizona",
+    "center": [
+      -112.1515168,
+      34.70501
+    ],
+    "bounds": [
+      [
+        -112.2544698,
+        34.6618242
+      ],
+      [
+        -112.1137717,
+        34.7517838
+      ]
+    ],
+    "osmWayIds": [
+      156237128,
+      156237144,
+      194185871,
+      385302698,
+      561604282,
+      561604283,
+      561604286,
+      649297616,
+      649297617,
+      649297618,
+      649297619,
+      649297620,
+      649297623,
+      649297624,
+      649297625,
+      649297627,
+      649297629,
+      649297630,
+      1015758896,
+      1015758901,
+      1015758902,
+      1015758903,
+      1015758904,
+      1015758907,
+      1015758908,
+      1015758911,
+      1015758912,
+      1015758913,
+      1015758914,
+      1015758915,
+      1015758916,
+      1015758917,
+      1015758918,
+      1015758919,
+      1015758936,
+      1015758937,
+      1107581739,
+      1107581740,
+      1203016028,
+      1259172776,
+      1466152248,
+      1466152249
+    ],
+    "reviewed": "2026-11-12",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/arizona-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -112.1140372,
+        34.7489021
+      ],
+      "end": [
+        -112.2544698,
+        34.6618242
+      ],
+      "wayNames": [
+        "Clark Street",
+        "Main Street",
+        "Prescott–Flagstaff Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 16.1,
+      "bends": 75,
+      "switchbacks": 17,
+      "curvature": 518,
+      "bendsPerMile": 4.7
+    },
+    "elevation": {
+      "climbFt": 4149,
+      "highFt": 7026,
+      "lowFt": 5088,
+      "reliefFt": 1938,
+      "maxGradient": 7.4,
+      "climbPerMile": 258
+    },
+    "profile": {
+      "points": [
+        5073,
+        5176,
+        5187,
+        5157,
+        5200,
+        5291,
+        5348,
+        5419,
+        5489,
+        5558,
+        5629,
+        5708,
+        5792,
+        5851,
+        5915,
+        5987,
+        6067,
+        6154,
+        6196,
+        6290,
+        6344,
+        6259,
+        6243,
+        6326,
+        6412,
+        6459,
+        6521,
+        6593,
+        6663,
+        6732,
+        6804,
+        6871,
+        6936,
+        6935,
+        7012,
+        7008,
+        6907,
+        6856,
+        6748,
+        6661,
+        6696,
+        6593,
+        6482,
+        6393,
+        6381,
+        6278,
+        6239,
+        6176,
+        6098,
+        6028,
+        5979,
+        5961,
+        5909,
+        5883,
+        5830,
+        5770,
+        5708,
+        5662,
+        5624,
+        5581,
+        5537,
+        5504,
+        5472,
+        5433,
+        5391,
+        5363,
+        5326,
+        5290,
+        5270,
+        5242,
+        5210,
+        5179
+      ],
+      "miles": 16.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 53,
+      "corners": 15,
+      "climb": 18,
+      "technical": 20
+    }
+  },
+  {
+    "id": "salt-river-canyon",
+    "name": "Salt River Canyon · US 60",
+    "area": "Salt River Canyon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "US 60 between Globe and Show Low, dropping through a series of hairpins to the Salt River and climbing out the other side. The 1934 steel bridge still stands next to the newer one, and the rest area at the bottom is the place to stop. Traffic is usually lighter than on the better-known drives around Sedona.",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 60 in Arizona",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_60_in_Arizona"
+      },
+      {
+        "title": "Arizona Highways: Salt River Canyon",
+        "url": "https://www.arizonahighways.com/salt-river-canyon"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. This crosses the San Carlos and Fort Apache Indian Reservations. It's a main truck route, and rain or snow makes the canyon hairpins slick, so treat it as a fair-weather drive.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "mapRegion": "arizona",
+    "center": [
+      -110.5042298,
+      33.7953154
+    ],
+    "bounds": [
+      [
+        -110.5294222,
+        33.7304934
+      ],
+      [
+        -110.448965,
+        33.8327241
+      ]
+    ],
+    "osmWayIds": [
+      154563360,
+      154563369,
+      154563370,
+      154566078,
+      154566085,
+      154566126,
+      154566131,
+      154566141,
+      286194264
+    ],
+    "reviewed": "2026-11-12",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/arizona-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -110.5256624,
+        33.7304934
+      ],
+      "end": [
+        -110.448965,
+        33.8327241
+      ],
+      "wayNames": [
+        "Globe-Show Low Highway"
+      ]
+    },
+    "shape": {
+      "lengthMi": 14.0,
+      "bends": 40,
+      "switchbacks": 8,
+      "curvature": 331,
+      "bendsPerMile": 2.9
+    },
+    "elevation": {
+      "climbFt": 3837,
+      "highFt": 5479,
+      "lowFt": 3408,
+      "reliefFt": 2071,
+      "maxGradient": 7.0,
+      "climbPerMile": 274
+    },
+    "profile": {
+      "points": [
+        5489,
+        5423,
+        5350,
+        5280,
+        5226,
+        5175,
+        5091,
+        5038,
+        4959,
+        4897,
+        4848,
+        4800,
+        4788,
+        4787,
+        4796,
+        4839,
+        4803,
+        4762,
+        4687,
+        4635,
+        4567,
+        4512,
+        4459,
+        4397,
+        4365,
+        4355,
+        4287,
+        4235,
+        4168,
+        4109,
+        4067,
+        4004,
+        3914,
+        3863,
+        3791,
+        3734,
+        3675,
+        3595,
+        3541,
+        3466,
+        3430,
+        3450,
+        3513,
+        3579,
+        3628,
+        3685,
+        3734,
+        3806,
+        3874,
+        3953,
+        4007,
+        4077,
+        4126,
+        4179,
+        4274,
+        4328,
+        4399,
+        4435,
+        4428,
+        4419,
+        4493,
+        4560,
+        4610,
+        4656,
+        4716,
+        4788,
+        4829,
+        4899,
+        4921,
+        4878,
+        4836,
+        4873
+      ],
+      "miles": 14.0,
+      "coverage": 100
+    },
+    "score": {
+      "score": 39,
+      "corners": 9,
+      "climb": 19,
+      "technical": 10
+    }
+  },
+  {
+    "id": "coronado-trail",
+    "name": "Coronado Trail · US 191",
+    "area": "White Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "US 191 from the Morenci copper mine north to Alpine, through the Apache-Sitgreaves National Forest. ADOT cites 460 curves between Clifton and Springerville, and the road climbs from desert scrub to about 9,000 feet. It's narrow and shoulderless with almost nothing in between: Hannagan Meadow is the only stop. Formerly US 666, the \"Devil's Highway.\"",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 191 in Arizona",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_191_in_Arizona"
+      },
+      {
+        "title": "ADOT: Coronado Trail leads to Arizona's heavenly high country",
+        "url": "https://azdot.gov/adot-blog/coronado-trail-leads-arizonas-heavenly-high-country"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Winter snow at the high end can close or restrict the road. There's no fuel between Morenci and Alpine and patchy cell service, so fill up first and check conditions before you go.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "mapRegion": "arizona",
+    "center": [
+      -109.3455496,
+      33.4865234
+    ],
+    "bounds": [
+      [
+        -109.3935185,
+        33.1437535
+      ],
+      [
+        -109.1465069,
+        33.8484231
+      ]
+    ],
+    "osmWayIds": [
+      16847193,
+      34792032,
+      106736003,
+      106736007,
+      106736095,
+      106736099,
+      303106472,
+      303106473,
+      303106474,
+      303106475,
+      303106476,
+      303106477,
+      303106478,
+      303106479,
+      303106480,
+      303106481,
+      303106482,
+      303106483,
+      303106484,
+      303106485,
+      303106486,
+      303106487,
+      303106488,
+      430628702,
+      430628703,
+      957387091,
+      957387092,
+      957700353,
+      1019354997,
+      1019354998,
+      1019354999,
+      1019355000,
+      1019355001,
+      1019355002,
+      1019355003,
+      1019355004,
+      1019355005,
+      1019355006,
+      1090352819,
+      1090352820,
+      1090352821,
+      1090352822,
+      1235461911,
+      1235461913,
+      1378694311
+    ],
+    "reviewed": "2026-11-12",
+    "mappedSpeed": "Not verified",
+    "taggedPercent": 0,
+    "geometryEvidence": {
+      "snapshot": "data/arizona-overpass.json",
+      "osmTimestamp": null,
+      "start": [
+        -109.3747757,
+        33.1437535
+      ],
+      "end": [
+        -109.1465069,
+        33.8484231
+      ],
+      "wayNames": [
+        "Coronado Trail",
+        "US 191"
+      ]
+    },
+    "shape": {
+      "lengthMi": 79.2,
+      "bends": 290,
+      "switchbacks": 49,
+      "curvature": 403,
+      "bendsPerMile": 3.7
+    },
+    "elevation": {
+      "climbFt": 15822,
+      "highFt": 9370,
+      "lowFt": 5231,
+      "reliefFt": 4139,
+      "maxGradient": 7.1,
+      "climbPerMile": 200
+    },
+    "profile": {
+      "points": [
+        5245,
+        5337,
+        5707,
+        6033,
+        6377,
+        6686,
+        7062,
+        7188,
+        7369,
+        7155,
+        7049,
+        6781,
+        6699,
+        6347,
+        6152,
+        6133,
+        6190,
+        6247,
+        6340,
+        6578,
+        6354,
+        6587,
+        6700,
+        6871,
+        7158,
+        7076,
+        7068,
+        7260,
+        7574,
+        8015,
+        8295,
+        8064,
+        7790,
+        7481,
+        7268,
+        7222,
+        7146,
+        7154,
+        7305,
+        7272,
+        7533,
+        7661,
+        8044,
+        8431,
+        8785,
+        9189,
+        9228,
+        9307,
+        9257,
+        9055,
+        9109,
+        9082,
+        8954,
+        8750,
+        8512,
+        8256,
+        8180,
+        8130,
+        8069,
+        8180,
+        8195,
+        7976,
+        7709,
+        7987,
+        8027,
+        7920,
+        8060,
+        8254,
+        8497,
+        8450,
+        8098,
+        7988
+      ],
+      "miles": 79.2,
+      "coverage": 100
+    },
+    "score": {
+      "score": 46,
+      "corners": 12,
+      "climb": 14,
+      "technical": 20
+    }
   }
 ]

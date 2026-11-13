@@ -54,6 +54,7 @@ export const southernAppalachiansRoads = roads.filter(road => road.mapRegion ===
 export const coloradoRoads = roads.filter(road => road.mapRegion === "colorado");
 export const washingtonRoads = roads.filter(road => road.mapRegion === "washington");
 export const oregonRoads = roads.filter(road => road.mapRegion === "oregon");
+export const arizonaRoads = roads.filter(road => road.mapRegion === "arizona");
 
 export function roadMapHref(road: Road) {
   const href = mapRegions[road.mapRegion ?? "bay-area"].href;
@@ -92,6 +93,7 @@ const popularIds: Record<MapRegion, string[]> = {
   colorado: ["million-dollar-highway", "independence-pass", "trail-ridge-road", "lizard-head-pass"],
   washington: ["north-cascades-highway", "chuckanut-drive", "chinook-pass", "yakima-canyon-road"],
   oregon: ["historic-columbia-river-highway", "mckenzie-pass", "larch-mountain-road", "santiam-pass"],
+  arizona: ["mount-lemmon", "oak-creek-canyon", "mingus-mountain", "coronado-trail"],
 };
 
 export function popularRoadsFor(region: MapRegion): { id: string; name: string }[] {

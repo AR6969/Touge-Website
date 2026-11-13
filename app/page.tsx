@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomeMap from "./home-map";
 import { SiteFooter } from "./site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, oregonRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, toSummary } from "./lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, oregonRoads, arizonaRoads, popularRoadsFor, roads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, toSummary } from "./lib/roads";
 import { mapRegions, type MapRegion } from "./lib/map-regions";
 import { drives } from "./lib/drives";
 import { siteName, siteUrl } from "./lib/site";
@@ -72,6 +72,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
           washington: { roads: washingtonRoads.map(toSummary), landmarks: landmarksFor("washington"), popular: popularRoadsFor("washington") },
           oregon: { roads: oregonRoads.map(toSummary), landmarks: landmarksFor("oregon"), popular: popularRoadsFor("oregon") },
+          arizona: { roads: arizonaRoads.map(toSummary), landmarks: landmarksFor("arizona"), popular: popularRoadsFor("arizona") },
         }}
       />
       <main className="prose landing" id="about">
@@ -131,8 +132,9 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ r
           Also now mapping <Link href="/southern-appalachians">the Southern Appalachians</Link> — Tail of the Dragon
           and nine more roads across Tennessee, North Carolina, Virginia and Georgia — <Link href="/colorado">Colorado</Link>,
           from the Million Dollar Highway to Trail Ridge Road, <Link href="/washington">Washington</Link>, from the
-          North Cascades Highway to Chuckanut Drive, and <Link href="/oregon">Oregon</Link>, from the Historic
-          Columbia River Highway to McKenzie Pass.
+          North Cascades Highway to Chuckanut Drive, <Link href="/oregon">Oregon</Link>, from the Historic
+          Columbia River Highway to McKenzie Pass, and <Link href="/arizona">Arizona</Link>, from Mount Lemmon to the
+          Coronado Trail.
         </p>
 
         <nav className="intro-links" aria-label="Sections">

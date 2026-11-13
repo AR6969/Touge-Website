@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import HomeMap from "../home-map";
 import MapIntro from "../map-intro";
 import { SiteFooter } from "../site-chrome";
-import { bayAreaRoads, landmarksFor, losAngelesRoads, oregonRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
+import { bayAreaRoads, landmarksFor, losAngelesRoads, oregonRoads, arizonaRoads, popularRoadsFor, roads as allRoads, sanDiegoRoads, sierraRoads, southernAppalachiansRoads, coloradoRoads, washingtonRoads, slugifyArea, toSummary } from "../lib/roads";
 
 const roads = losAngelesRoads;
 import { siteUrl } from "../lib/site";
@@ -46,6 +46,7 @@ export default function LosAngeles() {
           colorado: { roads: coloradoRoads.map(toSummary), landmarks: landmarksFor("colorado"), popular: popularRoadsFor("colorado") },
           washington: { roads: washingtonRoads.map(toSummary), landmarks: landmarksFor("washington"), popular: popularRoadsFor("washington") },
           oregon: { roads: oregonRoads.map(toSummary), landmarks: landmarksFor("oregon"), popular: popularRoadsFor("oregon") },
+          arizona: { roads: arizonaRoads.map(toSummary), landmarks: landmarksFor("arizona"), popular: popularRoadsFor("arizona") },
         }}
       />
       <MapIntro

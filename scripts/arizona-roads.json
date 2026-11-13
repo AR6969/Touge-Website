@@ -1,0 +1,245 @@
+[
+  {
+    "id": "mount-lemmon",
+    "name": "Mount Lemmon Highway · Catalina Highway",
+    "area": "Santa Catalina Mountains",
+    "difficulty": 2,
+    "character": "Medium speed",
+    "description": "The Catalina Highway (General Hitchcock Highway) from Tanque Verde Road in Tucson to Summerhaven, climbing more than 6,000 feet from Sonoran Desert saguaros to pine, fir and aspen forest. The only paved road up the Santa Catalinas, with switchbacks above Molino Canyon and heavy cyclist and weekend traffic.",
+    "sources": [
+      {
+        "title": "Wikipedia: Catalina Highway",
+        "url": "https://en.wikipedia.org/wiki/Catalina_Highway"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round, but winter snow can bring chain requirements or closures near the top. The FHWA counts about a million visitors a year, and big group cycling rides use it, so expect riders on every switchback.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "names": [
+      "East Catalina Highway",
+      "North General Hitchcock Highway",
+      "General Hitchcock Highway"
+    ],
+    "refs": [],
+    "anchors": [
+      {
+        "near": [
+          -110.7991,
+          32.2579
+        ],
+        "maxSnapM": 100
+      },
+      {
+        "near": [
+          -110.755105,
+          32.4481602
+        ],
+        "maxSnapM": 100
+      }
+    ]
+  },
+  {
+    "id": "oak-creek-canyon",
+    "name": "Oak Creek Canyon · SR 89A",
+    "area": "Oak Creek Canyon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "State Route 89A from the Sedona \"Y\" north through Oak Creek Canyon, past Midgley Bridge and Slide Rock State Park, then up a run of hairpins to the Mogollon Rim at Oak Creek Vista. Voted Arizona's favorite scenic drive in an ADOT reader poll, and drives like it on weekends: slow tourist traffic most of the way.",
+    "sources": [
+      {
+        "title": "Wikipedia: Arizona State Route 89A",
+        "url": "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+      },
+      {
+        "title": "ADOT: Your opinion: SR 89A through Oak Creek Canyon rules Arizona's scenic drives",
+        "url": "https://azdot.gov/adot-blog/your-opinion-sr-89a-through-oak-creek-canyon-rules-arizonas-scenic-drives"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. Trucks over 50 ft are barred from the switchbacks. Summer and fall weekends back up badly around Slide Rock and in Uptown Sedona, so go early on a weekday.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "names": [],
+    "refs": [
+      "AZ 89A"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -111.761,
+          34.8694
+        ],
+        "maxSnapM": 400
+      },
+      {
+        "near": [
+          -111.7341,
+          35.032
+        ],
+        "maxSnapM": 100
+      }
+    ]
+  },
+  {
+    "id": "mingus-mountain",
+    "name": "Mingus Mountain · SR 89A",
+    "area": "Verde Valley",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "State Route 89A from the hillside mining town of Jerome over Mingus Mountain and down into Prescott Valley. The Mingus Mountain Scenic Road climbs the Black Hills through a series of guard-railed hairpins, and it's one of the most-recommended roads in Arizona among riders.",
+    "sources": [
+      {
+        "title": "Wikipedia: Arizona State Route 89A",
+        "url": "https://en.wikipedia.org/wiki/Arizona_State_Route_89A"
+      },
+      {
+        "title": "Rider Magazine: Favorite Ride: Jerome to Oatman, Arizona",
+        "url": "https://ridermagazine.com/2021/10/01/favorite-ride-jerome-to-oatman-arizona/"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. Winter storms can put snow and cinders on the hairpins near the summit, and Jerome's main street is slow, narrow and full of pedestrians.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "names": [],
+    "refs": [
+      "AZ 89A"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -112.114,
+          34.7489
+        ],
+        "maxSnapM": 400
+      },
+      {
+        "near": [
+          -112.26,
+          34.674
+        ],
+        "maxSnapM": 2500
+      }
+    ]
+  },
+  {
+    "id": "salt-river-canyon",
+    "name": "Salt River Canyon · US 60",
+    "area": "Salt River Canyon",
+    "difficulty": 2,
+    "character": "Technical",
+    "description": "US 60 between Globe and Show Low, dropping through a series of hairpins to the Salt River and climbing out the other side. The 1934 steel bridge still stands next to the newer one, and the rest area at the bottom is the place to stop. Traffic is usually lighter than on the better-known drives around Sedona.",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 60 in Arizona",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_60_in_Arizona"
+      },
+      {
+        "title": "Arizona Highways: Salt River Canyon",
+        "url": "https://www.arizonahighways.com/salt-river-canyon"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Open year-round. This crosses the San Carlos and Fort Apache Indian Reservations. It's a main truck route, and rain or snow makes the canyon hairpins slick, so treat it as a fair-weather drive.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "names": [],
+    "refs": [
+      "US 60"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -110.5256624,
+          33.7304934
+        ],
+        "maxSnapM": 50
+      },
+      {
+        "near": [
+          -110.448965,
+          33.8327241
+        ],
+        "maxSnapM": 50
+      }
+    ]
+  },
+  {
+    "id": "coronado-trail",
+    "name": "Coronado Trail · US 191",
+    "area": "White Mountains",
+    "difficulty": 3,
+    "character": "Technical",
+    "description": "US 191 from the Morenci copper mine north to Alpine, through the Apache-Sitgreaves National Forest. ADOT cites 460 curves between Clifton and Springerville, and the road climbs from desert scrub to about 9,000 feet. It's narrow and shoulderless with almost nothing in between: Hannagan Meadow is the only stop. Formerly US 666, the \"Devil's Highway.\"",
+    "sources": [
+      {
+        "title": "Wikipedia: U.S. Route 191 in Arizona",
+        "url": "https://en.wikipedia.org/wiki/U.S._Route_191_in_Arizona"
+      },
+      {
+        "title": "ADOT: Coronado Trail leads to Arizona's heavenly high country",
+        "url": "https://azdot.gov/adot-blog/coronado-trail-leads-arizonas-heavenly-high-country"
+      }
+    ],
+    "speed": {
+      "value": "Not verified",
+      "kind": "Unverified",
+      "note": "No reliable posted limit was found for this selected section. Follow current signs.",
+      "source": null
+    },
+    "access": {
+      "note": "Winter snow at the high end can close or restrict the road. There's no fuel between Morenci and Alpine and patchy cell service, so fill up first and check conditions before you go.",
+      "url": "https://az511.com/",
+      "checked": "2026-11-12"
+    },
+    "names": [],
+    "refs": [
+      "US 191"
+    ],
+    "anchors": [
+      {
+        "near": [
+          -109.3747757,
+          33.1437535
+        ],
+        "maxSnapM": 1500
+      },
+      {
+        "near": [
+          -109.1465069,
+          33.8484231
+        ],
+        "maxSnapM": 100
+      }
+    ]
+  }
+]
